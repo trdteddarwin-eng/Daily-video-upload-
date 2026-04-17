@@ -51,6 +51,22 @@ jobs:
           echo "Topic: $(jq -r '.title' topic.json)"
           echo "Scenes: $(jq -r 'length' script.json)"
 
+      - name: Sanitize tsconfig.json (strip bad ignoreDeprecations)
+        run: |
+          python3 -c "
+          import json, re
+          with open('tsconfig.json') as f:
+              text = f.read()
+          # Remove ignoreDeprecations line entirely — it causes breakage when set wrong
+          text = re.sub(r',?\s*\"ignoreDeprecations\"\s*:\s*\"[^\"]*\"', '', text)
+          # Clean up any trailing commas
+          text = re.sub(r',(\s*})', r'\1', text)
+          with open('tsconfig.json', 'w') as f:
+              f.write(text)
+          print('tsconfig sanitized')
+          "
+          cat tsconfig.json
+
       - name: Generate TTS audio
         env:
           KIE_API_KEY: ${{ secrets.KIE_API_KEY }}
