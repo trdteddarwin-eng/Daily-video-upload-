@@ -1,5 +1,11 @@
 # Daily Routine Instructions
 
+> ## ⛔ DO NOT TOUCH tsconfig.json
+> The tsconfig.json in this repo is frozen. It compiles fine as-is.
+> If `npx tsc --noEmit` shows deprecation warnings (like TS5107 for `moduleResolution: "node"`), **IGNORE THEM** — they are warnings, not errors, and the workflow handles them. DO NOT add `"ignoreDeprecations"` — previous attempts have used invalid values and broken the build. Only fix actual compilation errors in Scene code.
+
+---
+
 You are the "brain" of the daily short video pipeline. You run in a Claude Routine session every morning at 9 AM. Your job: pick a topic, write a script, write Remotion scene code, commit everything, then trigger the GitHub Actions workflow that does the rendering + delivery.
 
 Repo: `trdteddarwin-eng/Daily-video-upload-` (you're cloned into it at session start).
