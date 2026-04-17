@@ -1,0 +1,77 @@
+name: Daily Short Video
+
+on:
+  # Manual trigger (for testing)
+  workflow_dispatch:
+  # Triggered by the Claude Routine via API
+  repository_dispatch:
+    types: [render-video]
+
+jobs:
+  render-and-deliver:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install system deps (ffmpeg + Chrome)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: Install npm deps
+        run: npm ci --no-audit --prefer-offline
+
+      - name: Verify pipeline inputs exist
+        run: |
+          test -f topic.json || (echo "ERROR: topic.json missing" && exit 1)
+          test -f script.json || (echo "ERROR: script.json missing" && exit 1)
+          test -f src/DAILY/Main.tsx || (echo "ERROR: src/DAILY/Main.tsx missing" && exit 1)
+          echo "Inputs present."
+          echo "Topic: $(jq -r '.title' topic.json)"
+          echo "Scenes: $(jq -r 'length' script.json)"
+
+      - name: Generate TTS audio
+        env:
+          KIE_API_KEY: ${{ secrets.KIE_API_KEY }}
+        run: python3 pipeline/generate_audio.py
+
+      - name: Render video
+        run: python3 pipeline/render_video.py
+
+      - name: Generate metadata
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: python3 pipeline/generate_metadata.py
+
+      - name: Deliver to Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python3 pipeline/send_telegram.py
+
+      - name: Upload artifacts (for debugging)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: render-artifacts
+          path: |
+            out/video.mp4
+            topic.json
+            script.json
+            metadata.json
+          retention-days: 7
