@@ -1,0 +1,38 @@
+[
+  {
+    "scene": 1,
+    "narration": "While you're stacking cash in your checking account feeling safe, millionaires keep exactly $2,467 in theirs. Here's why they're doing the opposite of you.",
+    "visual": "Split screen: Left side shows a regular bank account app with $8,000+ balance, right side shows a millionaire's checking account with exactly $2,467. Golden glow around the millionaire side.",
+    "accent_color": "amber"
+  },
+  {
+    "scene": 2,
+    "narration": "The average person keeps 3.2 months of expenses just sitting in checking, earning basically nothing. That's dead money collecting dust at 0.01% interest.",
+    "visual": "Animated stack of dollar bills sitting motionless in a transparent checking account box labeled '0.01%'. Dust particles and cobwebs appear on the bills. Calculator shows tiny pennies earned.",
+    "accent_color": "amber"
+  },
+  {
+    "scene": 3,
+    "narration": "Millionaires keep only what they need for monthly bills in checking. Everything else immediately gets moved to accounts actually making money.",
+    "visual": "Animated conveyor belt showing dollar bills: small stack stops at checking account symbol, while larger stacks continue moving right toward glowing high-yield account and investment symbols.",
+    "accent_color": "amber"
+  },
+  {
+    "scene": 4,
+    "narration": "High-yield savings accounts are paying 5.3% right now. On ten thousand dollars, that's $530 a year versus one dollar in regular checking.",
+    "visual": "Side-by-side comparison: Left shows sad piggy bank with '$1' floating above it, right shows happy piggy bank with '$530' in bold amber numbers floating and multiplying above it.",
+    "accent_color": "amber"
+  },
+  {
+    "scene": 5,
+    "narration": "The wealthy follow this exact formula: one month expenses in checking, three to six months in high-yield savings, everything else invested.",
+    "visual": "Three labeled buckets filling with coins: Small bucket '1 month - Checking', medium bucket '3-6 months - High-Yield 5.3%', large bucket 'Rest - Invested'. Coins flow into each sequentially.",
+    "accent_color": "amber"
+  },
+  {
+    "scene": 6,
+    "narration": "Your bank is making money off your idle cash while paying you nothing. Move it today and start thinking like the wealthy do.",
+    "visual": "Bank building icon taking dollar bills from person silhouette, then transformation showing empowered person moving money to high-yield account. 'Make Your Money Work' text appears in amber.",
+    "accent_color": "amber"
+  }
+]
