@@ -6,6 +6,13 @@ on:
   # Triggered by the Claude Routine via API
   repository_dispatch:
     types: [render-video]
+  # Auto-trigger when daily content files are pushed to main
+  push:
+    branches: [main]
+    paths:
+      - 'src/DAILY/Main.tsx'
+      - 'topic.json'
+      - 'script.json'
 
 jobs:
   render-and-deliver:
