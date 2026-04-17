@@ -87,13 +87,20 @@ def main():
         metadata = json.load(f)
 
     print("Sending package text...")
-    send_text(format_message(topic, metadata))
+    text_resp = send_text(format_message(topic, metadata))
+    if not text_resp.get("ok"):
+        print(f"ERROR sending text: {text_resp}")
+        sys.exit(1)
+    print(f"  text OK (msg_id {text_resp['result']['message_id']})")
 
     caption = metadata["tiktok"]["caption"] + "\n" + " ".join(metadata["tiktok"]["hashtags"])
     size_mb = os.path.getsize(VIDEO_PATH) / 1024 / 1024
     print(f"Uploading video ({size_mb:.1f} MB)...")
-    send_video(VIDEO_PATH, caption)
-    print(f"✓ Delivered to {CHAT_ID}")
+    video_resp = send_video(VIDEO_PATH, caption)
+    if not video_resp.get("ok"):
+        print(f"ERROR uploading video: {video_resp}")
+        sys.exit(1)
+    print(f"✓ Delivered to {CHAT_ID} (msg_id {video_resp['result']['message_id']})")
 
 
 if __name__ == "__main__":
