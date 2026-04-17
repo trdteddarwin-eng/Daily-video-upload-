@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Here's a wild one: MIT researchers proved that paying with a card makes you spend up to 47% more than cash. Your brain literally can't feel the money leaving.",
-    "visual": "Split screen: left shows a hand holding cash ($100 bill) with a red brain glow and pain signal. Right shows a card tap with brain grayed out, no pain signal. Amber accent on card side.",
-    "accent_color": "amber"
+    "narration": "That 'four easy payments' button is literally hijacking your wallet. BNPL users spend forty-five percent more per purchase — and most have no idea.",
+    "visual": "Smartphone showing BNPL checkout screen with '4 EASY PAYMENTS OF $25' button glowing red. Large '45%' stat flies in from the right side.",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "There's a region of your brain called the insula — it fires when you feel physical pain. Cash triggers it every time. Cards? They basically turn it off.",
-    "visual": "SVG brain outline center-screen. Cash symbol on left side lights up a glowing hot-spot on the brain. Card symbol on right side — brain stays dark and cold. Labels: CASH = PAIN ACTIVE, CARD = PAIN OFF.",
-    "accent_color": "amber"
+    "narration": "Here's why — your brain doesn't process four twenty-five dollar payments as one hundred dollars. It files each one as 'small,' and that mental trick destroys your budget.",
+    "visual": "Brain diagram split down the middle: left side shows a large red pulsing $100 circle (cash pain signal active), right side shows four tiny gray $25 circles (BNPL barely registers).",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "In one study, people bidding with credit cards paid $28 for something cash users paid only $9. That same gap is happening at every coffee shop, restaurant, and checkout line.",
-    "visual": "Auction podium with two people. Cash bidder holds a $9 sign in green. Card bidder holds a $28 sign in red. Dollar gap counter shows +$19 EXTRA in large amber text.",
-    "accent_color": "amber"
+    "narration": "Add up your active BNPL loans across all your apps right now. The average person has three to four running at the same time — totaling over nine hundred dollars.",
+    "visual": "Three BNPL loan cards (Klarna, Afterpay, Affirm) slide in one by one with their balances. A running counter climbs from $0 to $940 at the bottom.",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "The average American now carries $6,200 in credit card debt. It's not because they bought one big thing — it's a thousand tiny purchases their brain never registered as painful.",
-    "visual": "Credit card SVG in center. Around it: coffee cup, phone, shopping bag, restaurant fork — each icon has a small dollar amount ($4, $12, $35, $60). Totals accumulate at bottom to $6,200.",
-    "accent_color": "amber"
+    "narration": "And thirty-four percent of users miss at least one payment. Every late hit costs up to thirty-four dollars — and those fees stack up faster than you'd think.",
+    "visual": "April calendar with four payment due dates highlighted in red. X marks appear on each missed date one by one. A fee counter below climbs: $34, $68, $102, $136.",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Number one fix: use cash for your discretionary spending — eating out, coffee, clothes, entertainment. Studies show people spend up to $3,000 less per year just from this switch.",
-    "visual": "Wallet with cash bills fanning out. Icons for dining, coffee, clothes, fun each have a decreasing spend bar. Annual savings counter ticks up to $3,000 in green.",
-    "accent_color": "amber"
+    "narration": "Factor in those late fees and some BNPL plans hit the equivalent of twenty-five percent APR — the same as a high-interest credit card, just dressed up as 'free financing.'",
+    "visual": "Side-by-side bar chart: credit card bar grows to ~20% APR, BNPL bar grows taller to ~25% APR. 'FREE FINANCING' text is crossed out below.",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Your card company loves that your brain doesn't feel the pain. Pull out $200 cash on Sunday, and when it's gone it's gone. Start building real wealth instead of debt.",
-    "visual": "Hand pulling $200 cash from ATM. Piggy bank grows as the week progresses (Mon–Sun day counter). Bold CTA banner: THE $200 SUNDAY RULE. Light background.",
-    "accent_color": "amber"
+    "narration": "The rule that actually works: one purchase, one payment. If you can't write down your total BNPL balance from memory right now, that's your wake-up call. Start today.",
+    "visual": "Piggy bank with coins falling in from above. Bold CTA banner slides up: 'ONE PURCHASE ONE PAYMENT'. Sub-text: 'OPEN YOUR APPS. ADD IT UP.'",
+    "accent_color": "red"
   }
 ]
