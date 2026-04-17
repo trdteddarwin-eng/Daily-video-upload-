@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "That 'four easy payments' button is literally hijacking your wallet. BNPL users spend forty-five percent more per purchase — and most have no idea.",
-    "visual": "Smartphone showing BNPL checkout screen with '4 EASY PAYMENTS OF $25' button glowing red. Large '45%' stat flies in from the right side.",
-    "accent_color": "red"
+    "narration": "If you've got money sitting in a regular bank savings account right now, it's quietly disappearing. Here's the math they don't want you to see.",
+    "visual": "Piggy bank center-screen with coins slowly draining out the bottom. 'YOUR SAVINGS' label fades in. Amber accent numbers tick downward.",
+    "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "Here's why — your brain doesn't process four twenty-five dollar payments as one hundred dollars. It files each one as 'small,' and that mental trick destroys your budget.",
-    "visual": "Brain diagram split down the middle: left side shows a large red pulsing $100 circle (cash pain signal active), right side shows four tiny gray $25 circles (BNPL barely registers).",
-    "accent_color": "red"
+    "narration": "The average big bank pays you just 0.06% interest. Meanwhile inflation runs around 4% a year. Your money is losing real value every single day.",
+    "visual": "Two bar charts side by side: 'YOUR BANK 0.06%' (tiny bar) vs 'INFLATION 4%' (tall bar). Dollar signs erode off the savings bar.",
+    "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Add up your active BNPL loans across all your apps right now. The average person has three to four running at the same time — totaling over nine hundred dollars.",
-    "visual": "Three BNPL loan cards (Klarna, Afterpay, Affirm) slide in one by one with their balances. A running counter climbs from $0 to $940 at the bottom.",
-    "accent_color": "red"
+    "narration": "Park ten thousand dollars in a traditional savings account and you lose about $400 in real purchasing power every year. That's money just... evaporating.",
+    "visual": "Stack of $10,000 bills, coins flying away animated. Counter ticking down to -$400/YEAR label. 'PER YEAR' badge pulses.",
+    "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "And thirty-four percent of users miss at least one payment. Every late hit costs up to thirty-four dollars — and those fees stack up faster than you'd think.",
-    "visual": "April calendar with four payment due dates highlighted in red. X marks appear on each missed date one by one. A fee counter below climbs: $34, $68, $102, $136.",
-    "accent_color": "red"
+    "narration": "Banks designed this on purpose. They bury the APY in fine print, slap the word 'safe' on it, and count on you never shopping around.",
+    "visual": "Bank building SVG. Magnifying glass zooms into a document revealing tiny '0.06% APY' text. Red warning stamp appears.",
+    "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "Factor in those late fees and some BNPL plans hit the equivalent of twenty-five percent APR — the same as a high-interest credit card, just dressed up as 'free financing.'",
-    "visual": "Side-by-side bar chart: credit card bar grows to ~20% APR, BNPL bar grows taller to ~25% APR. 'FREE FINANCING' text is crossed out below.",
-    "accent_color": "red"
+    "narration": "High-yield savings accounts pay forty to eighty times more — and your money is equally protected up to $250,000 by the FDIC. Same safety. Way more money.",
+    "visual": "Side-by-side bar comparison: 'BIG BANK 0.06%' tiny bar vs 'HYSA 4-5%' tall amber bar. FDIC shield badge animates in.",
+    "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "The rule that actually works: one purchase, one payment. If you can't write down your total BNPL balance from memory right now, that's your wake-up call. Start today.",
-    "visual": "Piggy bank with coins falling in from above. Bold CTA banner slides up: 'ONE PURCHASE ONE PAYMENT'. Sub-text: 'OPEN YOUR APPS. ADD IT UP.'",
-    "accent_color": "red"
+    "narration": "The switch takes ten minutes online. Keep your regular bank for bills. Park your savings somewhere that actually pays you. Your future self will thank you.",
+    "visual": "Clock showing 10 minutes, piggy bank growing taller with coins raining in, 'START TODAY' CTA banner springs up.",
+    "accent_color": "amber"
   }
 ]
