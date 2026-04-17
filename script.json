@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "While you're stacking cash in your checking account feeling safe, millionaires keep exactly $2,467 in theirs. Here's why they're doing the opposite of you.",
-    "visual": "Split screen: Left side shows a regular bank account app with $8,000+ balance, right side shows a millionaire's checking account with exactly $2,467. Golden glow around the millionaire side.",
-    "accent_color": "amber"
+    "narration": "You just got a raise — congrats. But here's the wild thing: 80% of people end up poorer after a raise. It's called the raise trap.",
+    "visual": "Person silhouette celebrating with a RAISE badge popping in, then dollar coins draining downward off screen. Dark background with green accent.",
+    "accent_color": "green"
   },
   {
     "scene": 2,
-    "narration": "The average person keeps 3.2 months of expenses just sitting in checking, earning basically nothing. That's dead money collecting dust at 0.01% interest.",
-    "visual": "Animated stack of dollar bills sitting motionless in a transparent checking account box labeled '0.01%'. Dust particles and cobwebs appear on the bills. Calculator shows tiny pennies earned.",
-    "accent_color": "amber"
+    "narration": "It's called lifestyle creep, and it's savage. For every $100 raise you get, the average person spends $120 more. You're losing ground.",
+    "visual": "Two vertical bar charts growing from a baseline — EARN bar reaches $100 in green, SPEND bar overshoots to $120 in red. Light background.",
+    "accent_color": "green"
   },
   {
     "scene": 3,
-    "narration": "Millionaires keep only what they need for monthly bills in checking. Everything else immediately gets moved to accounts actually making money.",
-    "visual": "Animated conveyor belt showing dollar bills: small stack stops at checking account symbol, while larger stacks continue moving right toward glowing high-yield account and investment symbols.",
-    "accent_color": "amber"
+    "narration": "Number one trigger is the car upgrade. New car searches jump 34% right after raises. That $400-a-month payment just ate your whole raise.",
+    "visual": "SVG car rolling in from the right, a price tag showing $400/month pops in, then green dollar bills flow into the car and disappear.",
+    "accent_color": "green"
   },
   {
     "scene": 4,
-    "narration": "High-yield savings accounts are paying 5.3% right now. On ten thousand dollars, that's $530 a year versus one dollar in regular checking.",
-    "visual": "Side-by-side comparison: Left shows sad piggy bank with '$1' floating above it, right shows happy piggy bank with '$530' in bold amber numbers floating and multiplying above it.",
-    "accent_color": "amber"
+    "narration": "Number two is apartment envy. Moving somewhere nicer feels like a reward. But $500 more per month costs you $180,000 in wealth over 30 years.",
+    "visual": "Small house on left, arrow pointing right, large fancy house on right. Cost counter ticks up to $180,000 in red. Light background.",
+    "accent_color": "green"
   },
   {
     "scene": 5,
-    "narration": "The wealthy follow this exact formula: one month expenses in checking, three to six months in high-yield savings, everything else invested.",
-    "visual": "Three labeled buckets filling with coins: Small bucket '1 month - Checking', medium bucket '3-6 months - High-Yield 5.3%', large bucket 'Rest - Invested'. Coins flow into each sequentially.",
-    "accent_color": "amber"
+    "narration": "Number three: the invisible splurge. Restaurants, subscriptions, clothes — it all creeps up silently. Your raise is gone in 6 months with no big purchase.",
+    "visual": "Piggy bank center with four lifestyle icons at corners: coffee cup, phone, shopping bag, fork. Month counter ticks 1 through 6 at bottom.",
+    "accent_color": "green"
   },
   {
     "scene": 6,
-    "narration": "Your bank is making money off your idle cash while paying you nothing. Move it today and start thinking like the wealthy do.",
-    "visual": "Bank building icon taking dollar bills from person silhouette, then transformation showing empowered person moving money to high-yield account. 'Make Your Money Work' text appears in amber.",
-    "accent_color": "amber"
+    "narration": "Here's the fix. On raise day, auto-transfer the extra before your lifestyle adjusts. Bank 50% of every raise and start building real wealth today.",
+    "visual": "Phone screen showing auto-transfer button, arrow sending money to a filling piggy bank. Bold CTA banner: THE 50% RULE. Light background.",
+    "accent_color": "green"
   }
 ]
