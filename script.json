@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You just got a raise — congrats. But here's the wild thing: 80% of people end up poorer after a raise. It's called the raise trap.",
-    "visual": "Person silhouette celebrating with a RAISE badge popping in, then dollar coins draining downward off screen. Dark background with green accent.",
-    "accent_color": "green"
+    "narration": "Here's a wild one: MIT researchers proved that paying with a card makes you spend up to 47% more than cash. Your brain literally can't feel the money leaving.",
+    "visual": "Split screen: left shows a hand holding cash ($100 bill) with a red brain glow and pain signal. Right shows a card tap with brain grayed out, no pain signal. Amber accent on card side.",
+    "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "It's called lifestyle creep, and it's savage. For every $100 raise you get, the average person spends $120 more. You're losing ground.",
-    "visual": "Two vertical bar charts growing from a baseline — EARN bar reaches $100 in green, SPEND bar overshoots to $120 in red. Light background.",
-    "accent_color": "green"
+    "narration": "There's a region of your brain called the insula — it fires when you feel physical pain. Cash triggers it every time. Cards? They basically turn it off.",
+    "visual": "SVG brain outline center-screen. Cash symbol on left side lights up a glowing hot-spot on the brain. Card symbol on right side — brain stays dark and cold. Labels: CASH = PAIN ACTIVE, CARD = PAIN OFF.",
+    "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Number one trigger is the car upgrade. New car searches jump 34% right after raises. That $400-a-month payment just ate your whole raise.",
-    "visual": "SVG car rolling in from the right, a price tag showing $400/month pops in, then green dollar bills flow into the car and disappear.",
-    "accent_color": "green"
+    "narration": "In one study, people bidding with credit cards paid $28 for something cash users paid only $9. That same gap is happening at every coffee shop, restaurant, and checkout line.",
+    "visual": "Auction podium with two people. Cash bidder holds a $9 sign in green. Card bidder holds a $28 sign in red. Dollar gap counter shows +$19 EXTRA in large amber text.",
+    "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "Number two is apartment envy. Moving somewhere nicer feels like a reward. But $500 more per month costs you $180,000 in wealth over 30 years.",
-    "visual": "Small house on left, arrow pointing right, large fancy house on right. Cost counter ticks up to $180,000 in red. Light background.",
-    "accent_color": "green"
+    "narration": "The average American now carries $6,200 in credit card debt. It's not because they bought one big thing — it's a thousand tiny purchases their brain never registered as painful.",
+    "visual": "Credit card SVG in center. Around it: coffee cup, phone, shopping bag, restaurant fork — each icon has a small dollar amount ($4, $12, $35, $60). Totals accumulate at bottom to $6,200.",
+    "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "Number three: the invisible splurge. Restaurants, subscriptions, clothes — it all creeps up silently. Your raise is gone in 6 months with no big purchase.",
-    "visual": "Piggy bank center with four lifestyle icons at corners: coffee cup, phone, shopping bag, fork. Month counter ticks 1 through 6 at bottom.",
-    "accent_color": "green"
+    "narration": "Number one fix: use cash for your discretionary spending — eating out, coffee, clothes, entertainment. Studies show people spend up to $3,000 less per year just from this switch.",
+    "visual": "Wallet with cash bills fanning out. Icons for dining, coffee, clothes, fun each have a decreasing spend bar. Annual savings counter ticks up to $3,000 in green.",
+    "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "Here's the fix. On raise day, auto-transfer the extra before your lifestyle adjusts. Bank 50% of every raise and start building real wealth today.",
-    "visual": "Phone screen showing auto-transfer button, arrow sending money to a filling piggy bank. Bold CTA banner: THE 50% RULE. Light background.",
-    "accent_color": "green"
+    "narration": "Your card company loves that your brain doesn't feel the pain. Pull out $200 cash on Sunday, and when it's gone it's gone. Start building real wealth instead of debt.",
+    "visual": "Hand pulling $200 cash from ATM. Piggy bank grows as the week progresses (Mon–Sun day counter). Bold CTA banner: THE $200 SUNDAY RULE. Light background.",
+    "accent_color": "amber"
   }
 ]
