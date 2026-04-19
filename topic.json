@@ -1,12 +1,7 @@
 {
-  "title": "The $400/Year Hidden Tax Inside Your Savings Account",
-  "hook": "Your bank pays you almost nothing while inflation eats your savings alive — and they're counting on you not noticing.",
-  "angle": "Traditional big-bank savings accounts quietly destroy purchasing power; switching to a high-yield account takes 10 minutes and pays 40-80x more with identical FDIC protection.",
-  "audience": "Anyone with money parked in a big-bank savings account earning less than 1% APY",
-  "key_numbers": [
-    "Average big-bank savings APY: 0.06%",
-    "Annual inflation: ~3-4%",
-    "$400 lost in purchasing power per $10k per year",
-    "HYSA pays 40-80x more, still FDIC insured to $250k"
-  ]
+  "title": "Your 12 Subscriptions Are Stealing $265,000 From You",
+  "hook": "You can name 4 of your subscriptions. The other 8 are quietly wrecking your retirement.",
+  "angle": "Subscription blindness + compound opportunity cost: $14.99/month feels painless but costs $265K over 30 years",
+  "audience": "Millennials and Gen Z with multiple streaming/app subscriptions who underestimate the total cost",
+  "key_numbers": ["$219/month average subscription spend", "$2,628/year total", "$265,000 in 30-year opportunity cost at 7%"]
 }

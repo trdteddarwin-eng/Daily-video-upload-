@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "If you've got money sitting in a regular bank savings account right now, it's quietly disappearing. Here's the math they don't want you to see.",
-    "visual": "Piggy bank center-screen with coins slowly draining out the bottom. 'YOUR SAVINGS' label fades in. Amber accent numbers tick downward.",
-    "accent_color": "amber"
+    "narration": "You're paying for over twelve subscriptions right now. But here's the wild part — you can probably only name about four. And the rest are quietly wrecking your retirement.",
+    "visual": "Phone screen showing a grid of 12 subscription app icons (streaming, music, fitness, cloud, gaming, etc.), dollar coins floating away from the screen. Text overlay: YOU HAVE 12+ SUBSCRIPTIONS",
+    "accent_color": "green"
   },
   {
     "scene": 2,
-    "narration": "The average big bank pays you just 0.06% interest. Meanwhile inflation runs around 4% a year. Your money is losing real value every single day.",
-    "visual": "Two bar charts side by side: 'YOUR BANK 0.06%' (tiny bar) vs 'INFLATION 4%' (tall bar). Dollar signs erode off the savings bar.",
-    "accent_color": "amber"
+    "narration": "The average American spends two hundred and nineteen dollars a month on subscriptions. That's twenty-six hundred bucks a year — mostly on stuff you barely touch.",
+    "visual": "Animated dollar counter ticking from $0 up to $219/month, then annual total of $2,628 appearing below it. Large bold numbers on a light background.",
+    "accent_color": "green"
   },
   {
     "scene": 3,
-    "narration": "Park ten thousand dollars in a traditional savings account and you lose about $400 in real purchasing power every year. That's money just... evaporating.",
-    "visual": "Stack of $10,000 bills, coins flying away animated. Counter ticking down to -$400/YEAR label. 'PER YEAR' badge pulses.",
-    "accent_color": "amber"
+    "narration": "Here's the gut-punch: if you invested that two-nineteen a month at seven percent returns, in thirty years you'd have two hundred and sixty-five thousand dollars. Gone to subscriptions.",
+    "visual": "Side-by-side bar chart: left bar (red, short) labeled SUBSCRIPTIONS, right bar (green, tall) labeled INVESTED @7%. $265K label springs in above the tall bar.",
+    "accent_color": "green"
   },
   {
     "scene": 4,
-    "narration": "Banks designed this on purpose. They bury the APY in fine print, slap the word 'safe' on it, and count on you never shopping around.",
-    "visual": "Bank building SVG. Magnifying glass zooms into a document revealing tiny '0.06% APY' text. Red warning stamp appears.",
-    "accent_color": "amber"
+    "narration": "The psychology is genius — and evil. Fourteen ninety-nine a month is below your brain's pain threshold for spending. That's not an accident, that's a product decision.",
+    "visual": "SVG credit card with $14.99 highlighted in red, brain icon below with 'PAIN THRESHOLD' zone marked. Arrow pointing to the price in the danger zone.",
+    "accent_color": "green"
   },
   {
     "scene": 5,
-    "narration": "High-yield savings accounts pay forty to eighty times more — and your money is equally protected up to $250,000 by the FDIC. Same safety. Way more money.",
-    "visual": "Side-by-side bar comparison: 'BIG BANK 0.06%' tiny bar vs 'HYSA 4-5%' tall amber bar. FDIC shield badge animates in.",
-    "accent_color": "amber"
+    "narration": "Number one: open your bank statement. Number two: filter for recurring charges. Most people find they can cut eighty to a hundred-twenty dollars a month — instantly.",
+    "visual": "Bank statement showing recurring subscription line items, one by one getting a strikethrough line drawn through them as coins are saved. Green checkmarks appear.",
+    "accent_color": "green"
   },
   {
     "scene": 6,
-    "narration": "The switch takes ten minutes online. Keep your regular bank for bills. Park your savings somewhere that actually pays you. Your future self will thank you.",
-    "visual": "Clock showing 10 minutes, piggy bank growing taller with coins raining in, 'START TODAY' CTA banner springs up.",
-    "accent_color": "amber"
+    "narration": "That eighty dollars a month you free up, invested at seven percent for thirty years, becomes over a hundred thousand dollars. Do the audit today — it takes twenty minutes.",
+    "visual": "Piggy bank growing in size as coins drop in from above, green compound growth progress bar filling from left to right. CTA card: DO THE AUDIT TODAY | 20 MINUTES = $100K+",
+    "accent_color": "green"
   }
 ]
