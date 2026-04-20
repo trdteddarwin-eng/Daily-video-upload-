@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You're paying for over twelve subscriptions right now. But here's the wild part — you can probably only name about four. And the rest are quietly wrecking your retirement.",
-    "visual": "Phone screen showing a grid of 12 subscription app icons (streaming, music, fitness, cloud, gaming, etc.), dollar coins floating away from the screen. Text overlay: YOU HAVE 12+ SUBSCRIPTIONS",
-    "accent_color": "green"
+    "narration": "The average tax refund is $3,011. It hits your account and feels like free money — but here's the thing: it's actually a trap.",
+    "visual": "Phone falling into frame showing a +$3,011 direct deposit notification from IRS. Animated dollar counter spinning up to $3,011. Text overlay: 'FEELS LIKE FREE MONEY'.",
+    "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "The average American spends two hundred and nineteen dollars a month on subscriptions. That's twenty-six hundred bucks a year — mostly on stuff you barely touch.",
-    "visual": "Animated dollar counter ticking from $0 up to $219/month, then annual total of $2,628 appearing below it. Large bold numbers on a light background.",
-    "accent_color": "green"
+    "narration": "That refund isn't a gift — it's an interest-free loan you gave the IRS. They held your money all year and paid you back zero percent.",
+    "visual": "Grid of 12 month boxes (JAN-DEC) on light background, each showing -$251 flowing toward the IRS with an arrow. Small return arrow showing $3,011 back. Red banner: 'AT 0% INTEREST'.",
+    "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Here's the gut-punch: if you invested that two-nineteen a month at seven percent returns, in thirty years you'd have two hundred and sixty-five thousand dollars. Gone to subscriptions.",
-    "visual": "Side-by-side bar chart: left bar (red, short) labeled SUBSCRIPTIONS, right bar (green, tall) labeled INVESTED @7%. $265K label springs in above the tall bar.",
-    "accent_color": "green"
+    "narration": "And 65% of people spend their full refund within 30 days. Number one: electronics. Number two: vacations. Number three: random impulse buys that change nothing.",
+    "visual": "Dark background with three items springing in: TV (electronics #1), airplane (vacations #2), shopping bag (impulse #3). Progress bar filling up labeled '30-DAY WINDOW'.",
+    "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "The psychology is genius — and evil. Fourteen ninety-nine a month is below your brain's pain threshold for spending. That's not an accident, that's a product decision.",
-    "visual": "SVG credit card with $14.99 highlighted in red, brain icon below with 'PAIN THRESHOLD' zone marked. Arrow pointing to the price in the danger zone.",
-    "accent_color": "green"
+    "narration": "But if you invested that same $3,000 at 8% returns, in 30 years you'd have $30,187. One decision, three decades of difference.",
+    "visual": "Light background. Growing bar chart showing $3,000 compounding over 7 milestones yr0 to yr30. Final bar glows amber. Counter animates to $30,187. Label: '+907% GROWTH'.",
+    "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "Number one: open your bank statement. Number two: filter for recurring charges. Most people find they can cut eighty to a hundred-twenty dollars a month — instantly.",
-    "visual": "Bank statement showing recurring subscription line items, one by one getting a strikethrough line drawn through them as coins are saved. Green checkmarks appear.",
-    "accent_color": "green"
+    "narration": "The fix is simple — adjust your W-4 so you take home $250 more each month. Invest it automatically as it comes in, instead of waiting for a lump sum.",
+    "visual": "Dark background. W-4 form slides in from the left. Twelve monthly green bars build up one by one representing $250/month. Green banner: 'INVEST MONTHLY'.",
+    "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "That eighty dollars a month you free up, invested at seven percent for thirty years, becomes over a hundred thousand dollars. Do the audit today — it takes twenty minutes.",
-    "visual": "Piggy bank growing in size as coins drop in from above, green compound growth progress bar filling from left to right. CTA card: DO THE AUDIT TODAY | 20 MINUTES = $100K+",
-    "accent_color": "green"
+    "narration": "Your refund isn't a bonus — it's your own money holding you back. Comment 'REFUND' and I'll show you exactly how to fix your W-4 right now.",
+    "visual": "Dark background. Piggy bank springs in with gold coins falling into the slot. Bold text: 'HOLDING YOU BACK.' Amber CTA button: 'COMMENT REFUND'.",
+    "accent_color": "amber"
   }
 ]
