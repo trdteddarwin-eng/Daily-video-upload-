@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "The average tax refund is $3,011. It hits your account and feels like free money — but here's the thing: it's actually a trap.",
-    "visual": "Phone falling into frame showing a +$3,011 direct deposit notification from IRS. Animated dollar counter spinning up to $3,011. Text overlay: 'FEELS LIKE FREE MONEY'.",
+    "narration": "Most Americans get $3,167 back in tax refunds every spring — and 90% of them spend it all within a month. Here's the psychology behind why.",
+    "visual": "Dark background. Person silhouette springs in. Dollar counter animates up to $3,167 in amber. Red progress bar fills 90% labeled '90% GONE IN 30 DAYS'. 'WHERE DID IT GO?' fades in at end.",
     "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "That refund isn't a gift — it's an interest-free loan you gave the IRS. They held your money all year and paid you back zero percent.",
-    "visual": "Grid of 12 month boxes (JAN-DEC) on light background, each showing -$251 flowing toward the IRS with an arrow. Small return arrow showing $3,011 back. Red banner: 'AT 0% INTEREST'.",
+    "narration": "Here's the thing — your refund isn't a gift from the IRS. It's your own cash they held all year, and paid you exactly zero interest on.",
+    "visual": "Light background. IRS government building SVG. Twelve calendar month boxes sweep amber left-to-right. 'ZERO INTEREST EARNED' red stamp appears rotated at bottom.",
     "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "And 65% of people spend their full refund within 30 days. Number one: electronics. Number two: vacations. Number three: random impulse buys that change nothing.",
-    "visual": "Dark background with three items springing in: TV (electronics #1), airplane (vacations #2), shopping bag (impulse #3). Progress bar filling up labeled '30-DAY WINDOW'.",
+    "narration": "Your brain uses something called mental accounting. Paycheck money feels protected — but windfall money? That's labeled 'safe to spend.'",
+    "visual": "Dark background. Purple brain SVG springs in. Two buckets spring out: green 'PAYCHECK — PROTECTED' with lock on left, red 'WINDFALL — SPEND IT' with burst icon on right.",
     "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "But if you invested that same $3,000 at 8% returns, in 30 years you'd have $30,187. One decision, three decades of difference.",
-    "visual": "Light background. Growing bar chart showing $3,000 compounding over 7 milestones yr0 to yr30. Final bar glows amber. Counter animates to $30,187. Label: '+907% GROWTH'.",
+    "narration": "Studies show people save five times more of that money when it comes monthly in their paycheck versus as a lump refund. Same dollars — totally different outcome.",
+    "visual": "Light background. Two animated stacked bar charts: left 'LUMP REFUND' mostly red (90% spent, 10% saved), right 'MONTHLY' equal halves (50% saved). '5x MORE SAVINGS' amber badge springs in.",
     "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "The fix is simple — adjust your W-4 so you take home $250 more each month. Invest it automatically as it comes in, instead of waiting for a lump sum.",
-    "visual": "Dark background. W-4 form slides in from the left. Twelve monthly green bars build up one by one representing $250/month. Green banner: 'INVEST MONTHLY'.",
+    "narration": "The fix is simple — adjust your W-4 at work. Stop lending the IRS your money. Get your $264 back in every paycheck instead of waiting a year.",
+    "visual": "Dark background. W-4 form document with animated pencil sweeping across. Before/after: '$3,167 ONCE A YEAR' fades, '$264 EVERY MONTH' in green springs in.",
     "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "Your refund isn't a bonus — it's your own money holding you back. Comment 'REFUND' and I'll show you exactly how to fix your W-4 right now.",
-    "visual": "Dark background. Piggy bank springs in with gold coins falling into the slot. Bold text: 'HOLDING YOU BACK.' Amber CTA button: 'COMMENT REFUND'.",
+    "narration": "Or if you still get a refund, transfer it to savings the same day it hits — before your free money brain kicks in. Follow for more.",
+    "visual": "Amber background. Phone with bank transfer UI on left, arrow pointing to piggy bank labeled 'SAVINGS' on right. 'SAME DAY RULE' header. Dark 'FOLLOW FOR MORE' CTA banner at bottom.",
     "accent_color": "amber"
   }
 ]
