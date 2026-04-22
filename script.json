@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Most Americans get $3,167 back in tax refunds every spring — and 90% of them spend it all within a month. Here's the psychology behind why.",
-    "visual": "Dark background. Person silhouette springs in. Dollar counter animates up to $3,167 in amber. Red progress bar fills 90% labeled '90% GONE IN 30 DAYS'. 'WHERE DID IT GO?' fades in at end.",
+    "narration": "One-third of people earning $250,000 still run out of money before payday. Wild, right? There's a hidden reason why more income doesn't automatically mean more savings.",
+    "visual": "Large '36%' stat in amber, person in suit with $250K salary badge, empty wallet below — dark background",
     "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "Here's the thing — your refund isn't a gift from the IRS. It's your own cash they held all year, and paid you exactly zero interest on.",
-    "visual": "Light background. IRS government building SVG. Twelve calendar month boxes sweep amber left-to-right. 'ZERO INTEREST EARNED' red stamp appears rotated at bottom.",
+    "narration": "It's called Parkinson's Law of Money — your expenses always expand to match your income. Get a raise, and somehow your lifestyle costs exactly that much more.",
+    "visual": "Two bar charts on light background growing in sync: green INCOME bar and red EXPENSES bar climbing together, dashed amber line showing they always track each other",
     "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Your brain uses something called mental accounting. Paycheck money feels protected — but windfall money? That's labeled 'safe to spend.'",
-    "visual": "Dark background. Purple brain SVG springs in. Two buckets spring out: green 'PAYCHECK — PROTECTED' with lock on left, red 'WINDFALL — SPEND IT' with burst icon on right.",
+    "narration": "Studies show Americans save roughly five to seven percent of income — no matter if they earn forty thousand or one-sixty thousand. The savings rate barely moves.",
+    "visual": "Three income bars ($40K, $80K, $160K) growing taller on dark background, each with a tiny amber savings sliver at the top staying proportionally the same",
     "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "Studies show people save five times more of that money when it comes monthly in their paycheck versus as a lump refund. Same dollars — totally different outcome.",
-    "visual": "Light background. Two animated stacked bar charts: left 'LUMP REFUND' mostly red (90% spent, 10% saved), right 'MONTHLY' equal halves (50% saved). '5x MORE SAVINGS' amber badge springs in.",
+    "narration": "The culprit is status spending — bigger rent, nicer car, pricier restaurants. Each feels small, but together they swallow every extra dollar before you can save it.",
+    "visual": "House, car, and fork/plate icons appearing one by one with price tags (+$900/mo, +$450/mo, +$350/mo), then '$1,700/MO CONSUMED' total — light background",
     "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "The fix is simple — adjust your W-4 at work. Stop lending the IRS your money. Get your $264 back in every paycheck instead of waiting a year.",
-    "visual": "Dark background. W-4 form document with animated pencil sweeping across. Before/after: '$3,167 ONCE A YEAR' fades, '$264 EVERY MONTH' in green springs in.",
+    "narration": "Wealthy people break this cycle by automating savings before lifestyle sees the money. They treat savings like a fixed bill — number one priority, always paid first.",
+    "visual": "Flow diagram: PAYCHECK ARRIVES arrow pointing to SAVINGS FIRST badge then piggy bank — dark background with amber accents",
     "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "Or if you still get a refund, transfer it to savings the same day it hits — before your free money brain kicks in. Follow for more.",
-    "visual": "Amber background. Phone with bank transfer UI on left, arrow pointing to piggy bank labeled 'SAVINGS' on right. 'SAME DAY RULE' header. Dark 'FOLLOW FOR MORE' CTA banner at bottom.",
+    "narration": "Here's the fix: every raise you get, automatically lock away half. Don't let lifestyle see it. That one habit compounded over time is worth seven figures.",
+    "visual": "Raise arrow splitting 50/50 — coin stack labeled SAVED and house labeled SPENT — then '7 FIGURES' CTA badge springs in — light background",
     "accent_color": "amber"
   }
 ]
