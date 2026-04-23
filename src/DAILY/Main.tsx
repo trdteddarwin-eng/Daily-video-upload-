@@ -1,9 +1,9 @@
 import React from 'react';
-import { AbsoluteFill, Series, useCurrentFrame, useVideoConfig, interpolate, spring } from 'remotion';
+import { AbsoluteFill, Series, useCurrentFrame, useVideoConfig, interpolate, spring, Easing } from 'remotion';
 
 const BG_DARK = '#121212';
 const BG_LIGHT = '#F5F5F5';
-const ACCENT = '#F59E0B';
+const ACCENT = '#F97316';
 const WHITE = '#F5F5F5';
 const BLACK = '#121212';
 const FONT = '"Arial Black", "Helvetica Neue", Arial, sans-serif';
@@ -28,382 +28,503 @@ const FadeScene: React.FC<{ children: React.ReactNode; bg: string; dur: number }
   return <AbsoluteFill style={{ background: bg, opacity }}>{children}</AbsoluteFill>;
 };
 
-// ─── Scene 1: Dark — 36% stat + suited person + empty wallet ─────────────────
+// Car SVG (side view: body + wheels + windows)
+const CarSVG: React.FC<{ x: number; y: number; scale?: number; color?: string }> = ({ x, y, scale = 1, color = '#6B7280' }) => (
+  <g transform={`translate(${x},${y}) scale(${scale})`}>
+    {/* Body */}
+    <rect x="-130" y="-40" width="260" height="80" rx="18" fill={color} />
+    {/* Roof */}
+    <rect x="-80" y="-90" width="160" height="56" rx="14" fill={color} />
+    {/* Windshield */}
+    <rect x="-65" y="-85" width="60" height="48" rx="8" fill="#93C5FD" opacity="0.7" />
+    {/* Rear window */}
+    <rect x="10" y="-85" width="55" height="48" rx="8" fill="#93C5FD" opacity="0.7" />
+    {/* Front wheel */}
+    <circle cx="80" cy="44" r="30" fill="#1F2937" />
+    <circle cx="80" cy="44" r="18" fill="#9CA3AF" />
+    <circle cx="80" cy="44" r="6" fill="#374151" />
+    {/* Rear wheel */}
+    <circle cx="-80" cy="44" r="30" fill="#1F2937" />
+    <circle cx="-80" cy="44" r="18" fill="#9CA3AF" />
+    <circle cx="-80" cy="44" r="6" fill="#374151" />
+    {/* Headlight */}
+    <ellipse cx="128" cy="-5" rx="10" ry="16" fill="#FCD34D" opacity="0.8" />
+    {/* Grill */}
+    <rect x="118" y="-12" width="18" height="6" rx="3" fill="#374151" />
+    <rect x="118" y="0" width="18" height="6" rx="3" fill="#374151" />
+  </g>
+);
 
+// Dealership building SVG
+const DealershipSVG: React.FC<{ x: number; y: number; scale?: number }> = ({ x, y, scale = 1 }) => (
+  <g transform={`translate(${x},${y}) scale(${scale})`}>
+    <rect x="-160" y="-120" width="320" height="160" fill="#1F2937" />
+    <rect x="-160" y="-120" width="320" height="36" fill={ACCENT} />
+    <text x="0" y="-92" textAnchor="middle" fontFamily={FONT} fontSize="22" fill={WHITE} letterSpacing="0.1em">AUTO DEALER</text>
+    <rect x="-100" y="-50" width="80" height="90" rx="4" fill="#93C5FD" opacity="0.4" />
+    <rect x="20" y="-50" width="80" height="90" rx="4" fill="#93C5FD" opacity="0.4" />
+    <rect x="-20" y="-20" width="40" height="60" rx="4" fill="#374151" />
+  </g>
+);
+
+// Piggy bank SVG
+const PiggyBank: React.FC<{ x: number; y: number; scale?: number; color?: string }> = ({ x, y, scale = 1, color = '#F9A8D4' }) => (
+  <g transform={`translate(${x},${y}) scale(${scale})`}>
+    <ellipse cx="0" cy="0" rx="90" ry="75" fill={color} />
+    <circle cx="65" cy="-35" r="28" fill={color} />
+    <rect x="-10" y="55" width="20" height="35" rx="6" fill={color} />
+    <rect x="30" y="55" width="20" height="35" rx="6" fill={color} />
+    <rect x="-50" y="55" width="20" height="35" rx="6" fill={color} />
+    <ellipse cx="78" cy="-38" rx="8" ry="6" fill="#F3E8FF" />
+    <rect x="-75" y="-8" width="18" height="8" rx="4" fill={color} />
+    <rect x="-40" y="-55" width="30" height="10" rx="4" fill="#9CA3AF" />
+  </g>
+);
+
+// Scene 1: Car rolls off lot, bills fly off, -$9,600 counter
 const Scene1: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  const titleOpacity = interpolate(frame, [0, 24], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const titleY = interpolate(frame, [0, 24], [30, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const personSpring = spring({ frame: frame - 30, fps, config: { damping: 12, stiffness: 70 } });
-  const badgeOpacity = interpolate(frame, [60, 85], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const walletOpacity = interpolate(frame, [90, 115], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const walletY = interpolate(frame, [90, 115], [20, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const subOpacity = interpolate(frame, [140, 165], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const carX = interpolate(frame, [0, 80], [-200, 400], {
+    extrapolateRight: 'clamp',
+    easing: Easing.out(Easing.quad),
+  });
+
+  const dealerScale = spring({ frame, fps, config: { damping: 14, stiffness: 80 } });
+  const titleOpacity = interpolate(frame, [0, 20], [0, 1], { extrapolateRight: 'clamp' });
+
+  const counterVal = interpolate(frame, [50, 160], [0, 9600], { extrapolateRight: 'clamp', easing: Easing.out(Easing.quad) });
+  const counterOpacity = interpolate(frame, [45, 65], [0, 1], { extrapolateRight: 'clamp' });
+
+  // Dollar bills flying off (seeded positions)
+  const billData = [
+    { ox: 0, oy: -30, vx: 60, vy: -80, delay: 50 },
+    { ox: 40, oy: -20, vx: 100, vy: -60, delay: 60 },
+    { ox: -20, oy: -10, vx: -40, vy: -90, delay: 55 },
+    { ox: 80, oy: -40, vx: 140, vy: -50, delay: 65 },
+    { ox: -60, oy: -30, vx: -80, vy: -70, delay: 70 },
+    { ox: 120, oy: 0, vx: 160, vy: -40, delay: 75 },
+  ];
 
   return (
     <FadeScene bg={BG_DARK} dur={dur}>
-      <AbsoluteFill>
-        <div style={{
-          position: 'absolute', top: 100, width: '100%', textAlign: 'center',
-          opacity: titleOpacity, transform: `translateY(${titleY}px)`,
-        }}>
-          <h1 style={{ ...headline(120, ACCENT), lineHeight: 1 }}>36%</h1>
-          <h2 style={{ ...headline(44, WHITE), padding: '0 60px', marginTop: 8 }}>OF $250K EARNERS</h2>
-          <h2 style={{ ...headline(44, WHITE), padding: '0 60px' }}>STILL BROKE</h2>
-        </div>
+      <svg width="1080" height="1920" viewBox="0 0 1080 1920">
+        {/* Title */}
+        <text x="540" y="200" textAnchor="middle" fontFamily={FONT} fontSize="54" fill={WHITE}
+          letterSpacing="0.1em" opacity={titleOpacity}>DROVE OFF</text>
+        <text x="540" y="280" textAnchor="middle" fontFamily={FONT} fontSize="54" fill={WHITE}
+          letterSpacing="0.1em" opacity={titleOpacity}>THE LOT?</text>
 
-        <div style={{
-          position: 'absolute', top: 430, left: '50%',
-          transform: `translateX(-50%) scale(${personSpring})`,
-        }}>
-          <svg width="220" height="290">
-            <circle cx="110" cy="58" r="50" fill={WHITE} />
-            <rect x="60" y="114" width="100" height="118" rx="18" fill={WHITE} />
-            <rect x="14" y="116" width="46" height="20" rx="9" fill={WHITE} />
-            <rect x="160" y="116" width="46" height="20" rx="9" fill={WHITE} />
-            <polygon points="110,122 102,152 110,182 118,152" fill={ACCENT} />
-            <rect x="72" y="130" width="66" height="26" rx="6" fill={ACCENT} opacity={badgeOpacity} />
-            <text x="105" y="148" textAnchor="middle" fill={BLACK} fontSize="13" fontWeight="bold" fontFamily={FONT} opacity={badgeOpacity}>$250K</text>
-          </svg>
-        </div>
+        {/* Road */}
+        <rect x="0" y="1100" width="1080" height="40" fill="#374151" />
+        <rect x="0" y="1112" width="1080" height="6" fill="#9CA3AF" opacity="0.4" />
+        {[0, 180, 360, 540, 720, 900].map((lx, i) => (
+          <rect key={i} x={lx + (frame * 4 % 180)} y="1128" width="100" height="8" rx="4" fill="#FCD34D" opacity="0.6" />
+        ))}
 
-        <div style={{
-          position: 'absolute', top: 750, left: '50%',
-          transform: `translateX(-50%) translateY(${walletY}px)`,
-          opacity: walletOpacity,
-        }}>
-          <svg width="220" height="118">
-            <rect x="10" y="16" width="200" height="88" rx="12" fill="none" stroke={ACCENT} strokeWidth="4" />
-            <path d="M10 40 Q110 18 210 40" stroke={ACCENT} strokeWidth="4" fill="none" />
-            <circle cx="172" cy="68" r="16" fill="none" stroke={ACCENT} strokeWidth="3" />
-            <text x="84" y="76" fill="#666666" fontSize="15" fontFamily={FONT}>EMPTY</text>
-          </svg>
-        </div>
+        {/* Dealership */}
+        <g transform={`translate(200, 1000) scale(${dealerScale})`}>
+          <DealershipSVG x={0} y={0} scale={1} />
+        </g>
 
-        <div style={{ position: 'absolute', bottom: 130, width: '100%', textAlign: 'center', opacity: subOpacity }}>
-          <div style={{ display: 'inline-block', background: '#1A1A1A', border: `3px solid ${ACCENT}`, padding: '16px 44px', borderRadius: 16 }}>
-            <div style={{ ...headline(22, WHITE), fontFamily: 'Arial,sans-serif' }}>EVEN AT $250K / YEAR</div>
-          </div>
-        </div>
-      </AbsoluteFill>
+        {/* Car moving right */}
+        <g transform={`translate(${carX}, 1060)`}>
+          <CarSVG x={0} y={0} scale={1.6} color="#3B82F6" />
+        </g>
+
+        {/* Dollar bills flying off */}
+        {billData.map((b, i) => {
+          const elapsed = Math.max(0, frame - b.delay);
+          const bx = carX + b.ox + b.vx * elapsed * 0.04;
+          const by = 1060 + b.oy + b.vy * elapsed * 0.04 - 4 * elapsed * elapsed * 0.002;
+          const bop = interpolate(frame, [b.delay, b.delay + 10, b.delay + 60, b.delay + 80], [0, 1, 1, 0], { extrapolateRight: 'clamp' });
+          return (
+            <g key={i} opacity={bop} transform={`rotate(${elapsed * 3}, ${bx + 25}, ${by + 15})`}>
+              <rect x={bx} y={by} width="50" height="26" rx="5" fill="#22C55E" />
+              <text x={bx + 25} y={by + 17} textAnchor="middle" fontFamily={FONT} fontSize="14" fill={WHITE}>$$$</text>
+            </g>
+          );
+        })}
+
+        {/* -$9,600 counter */}
+        <g opacity={counterOpacity}>
+          <text x="540" y="1350" textAnchor="middle" fontFamily={FONT} fontSize="110" fill="#EF4444"
+            letterSpacing="0.05em">-${Math.floor(counterVal).toLocaleString()}</text>
+          <text x="540" y="1450" textAnchor="middle" fontFamily={FONT} fontSize="40" fill={WHITE}
+            letterSpacing="0.1em">INSTANTLY</text>
+        </g>
+
+        <text x="540" y="1620" textAnchor="middle" fontFamily={FONT} fontSize="34" fill="#9CA3AF"
+          letterSpacing="0.08em"
+          opacity={interpolate(frame, [140, 165], [0, 1], { extrapolateRight: 'clamp' })}>
+          HERE'S THE MATH
+        </text>
+      </svg>
     </FadeScene>
   );
 };
 
-// ─── Scene 2: Light — Parkinson's Law: income + expenses bars in sync ─────────
-
+// Scene 2: $48K car, 20% slice cut out, $9,600 GONE label — light background
 const Scene2: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
 
-  const titleOpacity = interpolate(frame, [0, 20], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const incomeBarProg = interpolate(frame, [30, 130], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const expBarProg = interpolate(frame, [50, 150], [0, 0.92], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const arrowOpacity = interpolate(frame, [140, 165], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const subOpacity = interpolate(frame, [165, 190], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const titleOpacity = interpolate(frame, [0, 18], [0, 1], { extrapolateRight: 'clamp' });
+  const carScale = spring({ frame, fps, config: { damping: 14, stiffness: 100 } });
 
-  const BASE_Y = 500;
-  const MAX_H = 340;
-  const incH = Math.max(0, incomeBarProg * MAX_H);
-  const expH = Math.max(0, expBarProg * MAX_H);
+  const sliceReveal = interpolate(frame, [40, 130], [0, 1], { extrapolateRight: 'clamp', easing: Easing.out(Easing.quad) });
+  const labelOpacity = interpolate(frame, [110, 135], [0, 1], { extrapolateRight: 'clamp' });
+  const labelScale = spring({ frame: Math.max(0, frame - 110), fps, config: { damping: 10, stiffness: 180 } });
+
+  // 20% of $48K = $9,600
+  const barTotalW = 700;
+  const depreciationW = barTotalW * 0.20 * sliceReveal;
 
   return (
     <FadeScene bg={BG_LIGHT} dur={dur}>
-      <AbsoluteFill>
-        <div style={{ position: 'absolute', top: 110, width: '100%', textAlign: 'center', opacity: titleOpacity }}>
-          <h2 style={{ ...headline(54, BLACK), padding: '0 40px' }}>PARKINSON'S LAW</h2>
-          <p style={{ ...headline(26, ACCENT), fontFamily: 'Arial,sans-serif', letterSpacing: '0.05em', marginTop: 10 }}>
-            OF MONEY
-          </p>
-        </div>
+      <svg width="1080" height="1920" viewBox="0 0 1080 1920">
+        {/* Title */}
+        <text x="540" y="180" textAnchor="middle" fontFamily={FONT} fontSize="52" fill={BLACK}
+          letterSpacing="0.1em" opacity={titleOpacity}>20% GONE</text>
+        <text x="540" y="260" textAnchor="middle" fontFamily={FONT} fontSize="44" fill={ACCENT}
+          letterSpacing="0.1em" opacity={titleOpacity}>IN YEAR ONE</text>
 
-        <div style={{ position: 'absolute', top: 290, left: '50%', transform: 'translateX(-50%)' }}>
-          <svg width="800" height="560">
-            <line x1="40" y1={BASE_Y} x2="760" y2={BASE_Y} stroke="#CCCCCC" strokeWidth="3" />
-            <rect x="100" y={BASE_Y - incH} width="220" height={Math.max(0, incH)} rx="10" fill="#10B981" />
-            <text x="210" y={BASE_Y - incH - 16} textAnchor="middle" fill="#10B981" fontSize="24" fontWeight="bold" fontFamily={FONT} opacity={Math.min(1, incomeBarProg * 3)}>INCOME</text>
-            <text x="210" y={BASE_Y + 38} textAnchor="middle" fill={BLACK} fontSize="22" fontWeight="bold" fontFamily={FONT}>YOUR PAY</text>
-            <rect x="480" y={BASE_Y - expH} width="220" height={Math.max(0, expH)} rx="10" fill="#EF4444" />
-            <text x="590" y={BASE_Y - expH - 16} textAnchor="middle" fill="#EF4444" fontSize="24" fontWeight="bold" fontFamily={FONT} opacity={Math.min(1, expBarProg * 3)}>EXPENSES</text>
-            <text x="590" y={BASE_Y + 38} textAnchor="middle" fill={BLACK} fontSize="22" fontWeight="bold" fontFamily={FONT}>LIFESTYLE</text>
-            <line x1="320" y1={BASE_Y - incH * 0.5} x2="480" y2={BASE_Y - expH * 0.5}
-              stroke={ACCENT} strokeWidth="4" strokeDasharray="12 6" opacity={arrowOpacity} />
-            <text x="400" y={BASE_Y - incH * 0.5 - 20} textAnchor="middle" fill={ACCENT} fontSize="20" fontWeight="bold" fontFamily={FONT} opacity={arrowOpacity}>ALWAYS FOLLOWS</text>
-          </svg>
-        </div>
+        {/* Car */}
+        <g transform={`translate(540, 700) scale(${carScale * 2.0})`}>
+          <CarSVG x={0} y={0} scale={1} color="#3B82F6" />
+        </g>
 
-        <div style={{ position: 'absolute', bottom: 130, width: '100%', textAlign: 'center', opacity: subOpacity }}>
-          <div style={{ display: 'inline-block', background: '#EF4444', padding: '16px 44px', borderRadius: 12 }}>
-            <div style={{ ...headline(24, WHITE) }}>EXPENSES FILL YOUR INCOME</div>
-          </div>
-        </div>
-      </AbsoluteFill>
+        {/* Price tag */}
+        <g opacity={titleOpacity}>
+          <rect x="360" y="840" width="360" height="70" rx="14" fill={BLACK} />
+          <text x="540" y="886" textAnchor="middle" fontFamily={FONT} fontSize="40" fill={WHITE}
+            letterSpacing="0.08em">$48,000</text>
+        </g>
+
+        {/* Value bar */}
+        <rect x="190" y="1020" width={barTotalW} height="60" rx="10" fill="#D1D5DB" />
+        <rect x="190" y="1020" width={depreciationW} height="60" rx="10" fill="#EF4444" />
+        <text x="190" y="1110" fontFamily={FONT} fontSize="26" fill="#EF4444" opacity={sliceReveal > 0.1 ? 1 : 0}>
+          20% LOST
+        </text>
+        <text x="890" y="1110" textAnchor="end" fontFamily={FONT} fontSize="26" fill={BLACK} opacity={titleOpacity}>
+          $48K VALUE
+        </text>
+
+        {/* $9,600 GONE stamp */}
+        <g transform={`translate(540, 1350) scale(${labelScale})`} opacity={labelOpacity}>
+          <rect x="-240" y="-80" width="480" height="160" rx="20" fill={ACCENT} />
+          <text x="0" y="-12" textAnchor="middle" fontFamily={FONT} fontSize="48" fill={WHITE}
+            letterSpacing="0.1em">$9,600</text>
+          <text x="0" y="52" textAnchor="middle" fontFamily={FONT} fontSize="38" fill={WHITE}
+            letterSpacing="0.1em">VANISHED</text>
+        </g>
+
+        <text x="540" y="1620" textAnchor="middle" fontFamily={FONT} fontSize="30" fill={BLACK}
+          letterSpacing="0.08em" opacity={labelOpacity}>
+          BEFORE YOUR FIRST OIL CHANGE
+        </text>
+      </svg>
     </FadeScene>
   );
 };
 
-// ─── Scene 3: Dark — savings rate ~5–7% at every income level ─────────────────
-
+// Scene 3: Timeline Year 0→3, value bar shrinking, $24K loss — dark background
 const Scene3: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
 
-  const titleOpacity = interpolate(frame, [0, 20], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const bar1Prog = interpolate(frame, [20, 70], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const bar2Prog = interpolate(frame, [60, 110], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const bar3Prog = interpolate(frame, [100, 150], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const labelOpacity = interpolate(frame, [155, 180], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const titleOpacity = interpolate(frame, [0, 18], [0, 1], { extrapolateRight: 'clamp' });
+  const lineReveal = interpolate(frame, [20, 120], [0, 1], { extrapolateRight: 'clamp', easing: Easing.out(Easing.quad) });
+  const finalOpacity = interpolate(frame, [130, 160], [0, 1], { extrapolateRight: 'clamp' });
+  const finalScale = spring({ frame: Math.max(0, frame - 130), fps, config: { damping: 10, stiffness: 160 } });
 
-  const BASE_Y = 460;
-  const h1 = Math.max(0, bar1Prog * 160);
-  const h2 = Math.max(0, bar2Prog * 270);
-  const h3 = Math.max(0, bar3Prog * 370);
+  const timelineY = 1100;
+  const timelineLeft = 120;
+  const timelineRight = 960;
+  const timelineW = timelineRight - timelineLeft;
+
+  // Value at each year: $48K, $38.4K, $32K, $24K
+  const years = [
+    { label: 'YR 0', value: 48000, x: timelineLeft },
+    { label: 'YR 1', value: 38400, x: timelineLeft + timelineW * 0.33 },
+    { label: 'YR 2', value: 32000, x: timelineLeft + timelineW * 0.66 },
+    { label: 'YR 3', value: 24000, x: timelineRight },
+  ];
+
+  const maxBarH = 380;
+  const maxVal = 48000;
 
   return (
     <FadeScene bg={BG_DARK} dur={dur}>
-      <AbsoluteFill>
-        <div style={{ position: 'absolute', top: 100, width: '100%', textAlign: 'center', opacity: titleOpacity }}>
-          <h2 style={{ ...headline(50, WHITE), padding: '0 40px' }}>SAVINGS RATE:</h2>
-          <h1 style={{ ...headline(88, ACCENT), lineHeight: 1 }}>~5–7%</h1>
-          <p style={{ ...headline(28, '#888888'), fontFamily: 'Arial,sans-serif', marginTop: 8 }}>AT EVERY INCOME LEVEL</p>
-        </div>
+      <svg width="1080" height="1920" viewBox="0 0 1080 1920">
+        {/* Title */}
+        <text x="540" y="180" textAnchor="middle" fontFamily={FONT} fontSize="52" fill={WHITE}
+          letterSpacing="0.1em" opacity={titleOpacity}>BY YEAR 3</text>
+        <text x="540" y="260" textAnchor="middle" fontFamily={FONT} fontSize="52" fill={ACCENT}
+          letterSpacing="0.1em" opacity={titleOpacity}>HALF IS GONE</text>
 
-        <div style={{ position: 'absolute', top: 390, left: '50%', transform: 'translateX(-50%)' }}>
-          <svg width="840" height="420">
-            <line x1="40" y1={BASE_Y} x2="800" y2={BASE_Y} stroke="#333333" strokeWidth="3" />
-            <rect x="80" y={BASE_Y - h1} width="160" height={Math.max(0, h1)} rx="8" fill="#3B82F6" opacity="0.7" />
-            <rect x="80" y={BASE_Y - h1} width="160" height={Math.max(0, h1 * 0.07)} rx="8" fill={ACCENT} />
-            <text x="160" y={BASE_Y + 32} textAnchor="middle" fill={WHITE} fontSize="18" fontWeight="bold" fontFamily={FONT}>$40K</text>
-            <rect x="340" y={BASE_Y - h2} width="160" height={Math.max(0, h2)} rx="8" fill="#3B82F6" opacity="0.7" />
-            <rect x="340" y={BASE_Y - h2} width="160" height={Math.max(0, h2 * 0.07)} rx="8" fill={ACCENT} />
-            <text x="420" y={BASE_Y + 32} textAnchor="middle" fill={WHITE} fontSize="18" fontWeight="bold" fontFamily={FONT}>$80K</text>
-            <rect x="600" y={BASE_Y - h3} width="160" height={Math.max(0, h3)} rx="8" fill="#3B82F6" opacity="0.7" />
-            <rect x="600" y={BASE_Y - h3} width="160" height={Math.max(0, h3 * 0.07)} rx="8" fill={ACCENT} />
-            <text x="680" y={BASE_Y + 32} textAnchor="middle" fill={WHITE} fontSize="18" fontWeight="bold" fontFamily={FONT}>$160K</text>
-            <text x="420" y="26" textAnchor="middle" fill={ACCENT} fontSize="19" fontWeight="bold" fontFamily={FONT} opacity={labelOpacity}>↑ SAVINGS SLIVER STAYS THE SAME</text>
-          </svg>
-        </div>
+        {/* Timeline baseline */}
+        <line x1={timelineLeft} y1={timelineY} x2={timelineRight} y2={timelineY}
+          stroke="#4B5563" strokeWidth="4"
+          opacity={lineReveal} />
 
-        <div style={{ position: 'absolute', bottom: 130, width: '100%', textAlign: 'center', opacity: labelOpacity }}>
-          <div style={{ display: 'inline-block', background: '#1A1A1A', border: `3px solid ${ACCENT}`, padding: '14px 40px', borderRadius: 16 }}>
-            <div style={{ ...headline(22, WHITE), fontFamily: 'Arial,sans-serif' }}>INCOME DOUBLED → SAVINGS SAME</div>
-          </div>
-        </div>
-      </AbsoluteFill>
+        {/* Bars and labels */}
+        {years.map((yr, i) => {
+          const barH = (yr.value / maxVal) * maxBarH;
+          const delay = i * 20;
+          const barReveal = interpolate(frame, [20 + delay, 60 + delay], [0, 1], { extrapolateRight: 'clamp' });
+          const isLost = i > 0;
+          return (
+            <g key={i}>
+              {/* Bar */}
+              <rect
+                x={yr.x - 50}
+                y={timelineY - barH * barReveal}
+                width="100"
+                height={barH * barReveal}
+                rx="6"
+                fill={i === 0 ? '#10B981' : ACCENT}
+                opacity={0.85}
+              />
+              {/* Year label */}
+              <text x={yr.x} y={timelineY + 44} textAnchor="middle" fontFamily={FONT} fontSize="28"
+                fill={WHITE} opacity={barReveal}>{yr.label}</text>
+              {/* Value label */}
+              <text x={yr.x} y={timelineY - barH * barReveal - 16} textAnchor="middle" fontFamily={FONT}
+                fontSize="24" fill={i === 0 ? '#10B981' : '#FCA5A5'} opacity={barReveal}>
+                ${(yr.value / 1000).toFixed(0)}K
+              </text>
+            </g>
+          );
+        })}
+
+        {/* Red shading between yr0 bar top and yr3 bar top */}
+        <rect x={timelineLeft - 50} y={timelineY - maxBarH} width={timelineW + 100} height={maxBarH - (24000 / maxVal) * maxBarH}
+          fill="#EF4444" opacity={lineReveal * 0.12} />
+
+        {/* $24,000 EVAPORATED */}
+        <g transform={`translate(540, 1560) scale(${finalScale})`} opacity={finalOpacity}>
+          <rect x="-260" y="-70" width="520" height="130" rx="18" fill="none" stroke={ACCENT} strokeWidth="10" />
+          <text x="0" y="-6" textAnchor="middle" fontFamily={FONT} fontSize="48" fill={ACCENT}
+            letterSpacing="0.08em">$24,000</text>
+          <text x="0" y="52" textAnchor="middle" fontFamily={FONT} fontSize="36" fill={WHITE}
+            letterSpacing="0.1em">EVAPORATED</text>
+        </g>
+      </svg>
     </FadeScene>
   );
 };
 
-// ─── Scene 4: Light — status spending icons with price tags ──────────────────
-
+// Scene 4: Two cars side-by-side, NEW $48K vs CPO $37K, SAVE $11K — light background
 const Scene4: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  const titleOpacity = interpolate(frame, [0, 20], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const houseSpring = spring({ frame: frame - 20, fps, config: { damping: 12, stiffness: 70 } });
-  const carSpring = spring({ frame: frame - 70, fps, config: { damping: 12, stiffness: 70 } });
-  const dineSpring = spring({ frame: frame - 120, fps, config: { damping: 12, stiffness: 70 } });
-  const totalOpacity = interpolate(frame, [165, 190], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const titleOpacity = interpolate(frame, [0, 18], [0, 1], { extrapolateRight: 'clamp' });
+  const leftScale = spring({ frame, fps, config: { damping: 14, stiffness: 100 } });
+  const rightScale = spring({ frame: Math.max(0, frame - 20), fps, config: { damping: 14, stiffness: 100 } });
+  const badgeScale = spring({ frame: Math.max(0, frame - 100), fps, config: { damping: 10, stiffness: 200 } });
+  const badgeOpacity = interpolate(frame, [100, 118], [0, 1], { extrapolateRight: 'clamp' });
 
   return (
     <FadeScene bg={BG_LIGHT} dur={dur}>
-      <AbsoluteFill>
-        <div style={{ position: 'absolute', top: 110, width: '100%', textAlign: 'center', opacity: titleOpacity }}>
-          <h2 style={{ ...headline(54, BLACK), padding: '0 40px' }}>STATUS</h2>
-          <h2 style={{ ...headline(54, ACCENT), padding: '0 40px' }}>SPENDING</h2>
-        </div>
+      <svg width="1080" height="1920" viewBox="0 0 1080 1920">
+        {/* Title */}
+        <text x="540" y="180" textAnchor="middle" fontFamily={FONT} fontSize="50" fill={BLACK}
+          letterSpacing="0.1em" opacity={titleOpacity}>THE FLIP SIDE</text>
 
-        <div style={{
-          position: 'absolute', top: 390, left: '50%', transform: 'translateX(-50%)',
-          display: 'flex', gap: 56, alignItems: 'center',
-        }}>
-          <div style={{ textAlign: 'center', transform: `scale(${houseSpring})` }}>
-            <svg width="150" height="148">
-              <rect x="18" y="68" width="114" height="80" rx="6" fill={BLACK} />
-              <polygon points="4,72 75,10 146,72" fill={ACCENT} />
-              <rect x="56" y="106" width="38" height="42" rx="5" fill={BG_LIGHT} />
-              <rect x="24" y="80" width="32" height="24" rx="4" fill={BG_LIGHT} />
-              <rect x="94" y="80" width="32" height="24" rx="4" fill={BG_LIGHT} />
-            </svg>
-            <div style={{ ...headline(20, BLACK), marginTop: 8 }}>+$900/MO</div>
-            <div style={{ ...headline(15, '#555555'), marginTop: 4 }}>BIGGER PLACE</div>
-          </div>
+        {/* Left: NEW car */}
+        <g transform={`translate(260, 800) scale(${leftScale * 1.3})`}>
+          <CarSVG x={0} y={0} scale={1} color="#3B82F6" />
+        </g>
+        <text x="260" y="960" textAnchor="middle" fontFamily={FONT} fontSize="32" fill={BLACK}
+          letterSpacing="0.06em" opacity={titleOpacity}>NEW</text>
+        <rect x="100" y="980" width="320" height="60" rx="12" fill="#EF4444" opacity={titleOpacity} />
+        <text x="260" y="1020" textAnchor="middle" fontFamily={FONT} fontSize="36" fill={WHITE}
+          letterSpacing="0.08em" opacity={titleOpacity}>$48,000</text>
 
-          <div style={{ textAlign: 'center', transform: `scale(${carSpring})` }}>
-            <svg width="160" height="110">
-              <rect x="6" y="42" width="148" height="46" rx="12" fill={BLACK} />
-              <path d="M22 42 Q36 14 100 14 Q126 14 148 42 Z" fill={BLACK} />
-              <path d="M32 40 Q42 20 68 20 L68 40 Z" fill="#87CEEB" opacity="0.7" />
-              <path d="M72 40 L72 20 Q98 20 118 40 Z" fill="#87CEEB" opacity="0.7" />
-              <circle cx="40" cy="88" r="18" fill="#333333" />
-              <circle cx="40" cy="88" r="9" fill="#888888" />
-              <circle cx="120" cy="88" r="18" fill="#333333" />
-              <circle cx="120" cy="88" r="9" fill="#888888" />
-            </svg>
-            <div style={{ ...headline(20, BLACK), marginTop: 8 }}>+$450/MO</div>
-            <div style={{ ...headline(15, '#555555'), marginTop: 4 }}>NICER CAR</div>
-          </div>
+        {/* Divider */}
+        <line x1="540" y1="600" x2="540" y2="1200" stroke="#D1D5DB" strokeWidth="3" />
 
-          <div style={{ textAlign: 'center', transform: `scale(${dineSpring})` }}>
-            <svg width="150" height="148">
-              <circle cx="75" cy="76" r="58" fill="none" stroke={BLACK} strokeWidth="6" />
-              <circle cx="75" cy="76" r="40" fill="none" stroke="#CCCCCC" strokeWidth="2" />
-              <line x1="56" y1="22" x2="56" y2="92" stroke={BLACK} strokeWidth="5" strokeLinecap="round" />
-              <line x1="48" y1="22" x2="48" y2="52" stroke={BLACK} strokeWidth="4" strokeLinecap="round" />
-              <line x1="56" y1="22" x2="56" y2="52" stroke={BLACK} strokeWidth="4" strokeLinecap="round" />
-              <line x1="64" y1="22" x2="64" y2="52" stroke={BLACK} strokeWidth="4" strokeLinecap="round" />
-              <line x1="96" y1="22" x2="96" y2="92" stroke={BLACK} strokeWidth="5" strokeLinecap="round" />
-              <path d="M96 22 Q108 38 96 54" fill={BLACK} />
-            </svg>
-            <div style={{ ...headline(20, BLACK), marginTop: 8 }}>+$350/MO</div>
-            <div style={{ ...headline(15, '#555555'), marginTop: 4 }}>DINING OUT</div>
-          </div>
-        </div>
+        {/* Right: CPO car */}
+        <g transform={`translate(820, 800) scale(${rightScale * 1.3})`}>
+          <CarSVG x={0} y={0} scale={1} color="#10B981" />
+        </g>
+        <text x="820" y="960" textAnchor="middle" fontFamily={FONT} fontSize="32" fill={BLACK}
+          letterSpacing="0.06em" opacity={titleOpacity}>CPO 2-YR</text>
+        <rect x="660" y="980" width="320" height="60" rx="12" fill="#10B981" opacity={titleOpacity} />
+        <text x="820" y="1020" textAnchor="middle" fontFamily={FONT} fontSize="36" fill={WHITE}
+          letterSpacing="0.08em" opacity={titleOpacity}>$37,000</text>
 
-        <div style={{ position: 'absolute', bottom: 100, width: '100%', textAlign: 'center', opacity: totalOpacity }}>
-          <div style={{ ...headline(30, BLACK) }}>TOTAL EXTRA:</div>
-          <div style={{ ...headline(78, '#EF4444'), lineHeight: 1 }}>$1,700/MO</div>
-          <div style={{ ...headline(28, '#555555'), marginTop: 8 }}>CONSUMED EVERY MONTH</div>
-        </div>
-      </AbsoluteFill>
+        {/* Green checkmark on right */}
+        <g opacity={interpolate(frame, [60, 80], [0, 1], { extrapolateRight: 'clamp' })}>
+          <circle cx="820" cy="1100" r="36" fill="#10B981" />
+          <path d="M 800 1100 L 815 1118 L 840 1085" stroke={WHITE} strokeWidth="7" fill="none"
+            strokeLinecap="round" strokeLinejoin="round" />
+        </g>
+
+        {/* Red X on left */}
+        <g opacity={interpolate(frame, [60, 80], [0, 1], { extrapolateRight: 'clamp' })}>
+          <circle cx="260" cy="1100" r="36" fill="#EF4444" />
+          <line x1="242" y1="1082" x2="278" y2="1118" stroke={WHITE} strokeWidth="7" strokeLinecap="round" />
+          <line x1="278" y1="1082" x2="242" y2="1118" stroke={WHITE} strokeWidth="7" strokeLinecap="round" />
+        </g>
+
+        {/* SAVE $11K badge */}
+        <g transform={`translate(540, 1380) scale(${badgeScale})`} opacity={badgeOpacity}>
+          <rect x="-240" y="-70" width="480" height="140" rx="20" fill={ACCENT} />
+          <text x="0" y="-6" textAnchor="middle" fontFamily={FONT} fontSize="48" fill={WHITE}
+            letterSpacing="0.1em">SAVE $11K</text>
+          <text x="0" y="52" textAnchor="middle" fontFamily={FONT} fontSize="30" fill={WHITE}
+            letterSpacing="0.1em">UPFRONT</text>
+        </g>
+
+        <text x="540" y="1610" textAnchor="middle" fontFamily={FONT} fontSize="30" fill={BLACK}
+          letterSpacing="0.06em" opacity={badgeOpacity}>SOMEONE ELSE TOOK THE HIT</text>
+      </svg>
     </FadeScene>
   );
 };
 
-// ─── Scene 5: Dark — pay yourself first flow ──────────────────────────────────
-
+// Scene 5: 5 cars lifetime, counter to $80K+, retirement piggy — dark background
 const Scene5: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  const titleOpacity = interpolate(frame, [0, 20], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const paycheckOpacity = interpolate(frame, [20, 45], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const arrowOpacity = interpolate(frame, [32, 56], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const firstBadgeSpring = spring({ frame: frame - 60, fps, config: { damping: 10, stiffness: 60 } });
-  const piggySpring = spring({ frame: frame - 85, fps, config: { damping: 12, stiffness: 70 } });
-  const thenOpacity = interpolate(frame, [130, 155], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const ctaOpacity = interpolate(frame, [170, 195], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const titleOpacity = interpolate(frame, [0, 18], [0, 1], { extrapolateRight: 'clamp' });
+  const counterVal = interpolate(frame, [60, 180], [0, 80000], { extrapolateRight: 'clamp', easing: Easing.out(Easing.quad) });
+  const counterOpacity = interpolate(frame, [55, 75], [0, 1], { extrapolateRight: 'clamp' });
+  const piggyScale = spring({ frame: Math.max(0, frame - 120), fps, config: { damping: 12, stiffness: 100 } });
+
+  const numCars = 5;
 
   return (
     <FadeScene bg={BG_DARK} dur={dur}>
-      <AbsoluteFill>
-        <div style={{ position: 'absolute', top: 110, width: '100%', textAlign: 'center', opacity: titleOpacity }}>
-          <h2 style={{ ...headline(52, WHITE), padding: '0 40px' }}>PAY YOURSELF</h2>
-          <h2 style={{ ...headline(52, ACCENT), padding: '0 40px' }}>FIRST</h2>
-        </div>
+      <svg width="1080" height="1920" viewBox="0 0 1080 1920">
+        {/* Title */}
+        <text x="540" y="180" textAnchor="middle" fontFamily={FONT} fontSize="50" fill={WHITE}
+          letterSpacing="0.1em" opacity={titleOpacity}>BUY NEW</text>
+        <text x="540" y="260" textAnchor="middle" fontFamily={FONT} fontSize="50" fill={WHITE}
+          letterSpacing="0.1em" opacity={titleOpacity}>5 TIMES IN LIFE?</text>
 
-        <div style={{ position: 'absolute', top: 400, width: '100%', textAlign: 'center', opacity: paycheckOpacity }}>
-          <div style={{ ...headline(34, ACCENT) }}>PAYCHECK ARRIVES</div>
-        </div>
+        {/* 5 cars in a row with money stacks draining */}
+        {Array(Math.max(0, Math.floor(numCars))).fill(0).map((_, i) => {
+          const cx = 130 + i * 170;
+          const delay = 10 + i * 18;
+          const carOp = interpolate(frame, [delay, delay + 20], [0, 1], { extrapolateRight: 'clamp' });
+          const stackH = interpolate(frame, [delay + 20, delay + 60], [0, 80], { extrapolateRight: 'clamp' });
+          return (
+            <g key={i} opacity={carOp}>
+              <g transform={`translate(${cx}, 700) scale(0.85)`}>
+                <CarSVG x={0} y={0} scale={1} color="#6B7280" />
+              </g>
+              {/* Money stack draining below */}
+              <rect x={cx - 30} y={760} width="60" height={stackH} rx="6" fill="#EF4444" opacity="0.8" />
+              <text x={cx} y={760 + stackH + 24} textAnchor="middle" fontFamily={FONT} fontSize="20" fill="#FCA5A5">
+                -$16K
+              </text>
+            </g>
+          );
+        })}
 
-        <svg width="1080" height="90" style={{ position: 'absolute', top: 462, opacity: arrowOpacity }}>
-          <line x1="540" y1="8" x2="540" y2="62" stroke={ACCENT} strokeWidth="6" />
-          <polygon points="540,80 520,54 560,54" fill={ACCENT} />
-        </svg>
+        {/* Total counter */}
+        <text x="540" y="1100" textAnchor="middle" fontFamily={FONT} fontSize="38" fill={WHITE}
+          letterSpacing="0.08em" opacity={counterOpacity}>TOTAL DEPRECIATION LOST:</text>
+        <text x="540" y="1220" textAnchor="middle" fontFamily={FONT} fontSize="110" fill={ACCENT}
+          letterSpacing="0.05em" opacity={counterOpacity}>
+          ${Math.floor(counterVal / 1000)}K+
+        </text>
 
-        <div style={{ position: 'absolute', top: 562, width: '100%', textAlign: 'center', transform: `scale(${firstBadgeSpring})` }}>
-          <div style={{ display: 'inline-block', background: ACCENT, padding: '14px 44px', borderRadius: 40 }}>
-            <div style={{ ...headline(26, BLACK) }}>SAVINGS — FIRST</div>
-          </div>
-        </div>
-
-        <div style={{ position: 'absolute', top: 650, left: '50%', transform: `translateX(-50%) scale(${piggySpring})` }}>
-          <svg width="260" height="280">
-            <ellipse cx="130" cy="168" rx="108" ry="90" fill={ACCENT} />
-            <rect x="108" y="78" width="44" height="12" rx="6" fill="#92400E" />
-            <ellipse cx="32" cy="142" rx="34" ry="25" fill={ACCENT} opacity="0.85" />
-            <ellipse cx="228" cy="142" rx="34" ry="25" fill={ACCENT} opacity="0.85" />
-            <ellipse cx="130" cy="192" rx="24" ry="18" fill="#B45309" />
-            <circle cx="121" cy="190" r="4" fill={BLACK} />
-            <circle cx="139" cy="190" r="4" fill={BLACK} />
-            <circle cx="102" cy="152" r="10" fill={BLACK} />
-            <circle cx="158" cy="152" r="10" fill={BLACK} />
-            <circle cx="105" cy="148" r="3.5" fill={WHITE} />
-            <circle cx="161" cy="148" r="3.5" fill={WHITE} />
-            <path d="M 114 212 Q 130 226 146 212" stroke={BLACK} strokeWidth="4" fill="none" strokeLinecap="round" />
-            <rect x="72" y="252" width="22" height="28" rx="11" fill="#B45309" />
-            <rect x="102" y="252" width="22" height="28" rx="11" fill="#B45309" />
-            <rect x="136" y="252" width="22" height="28" rx="11" fill="#B45309" />
-            <rect x="166" y="252" width="22" height="28" rx="11" fill="#B45309" />
-          </svg>
-        </div>
-
-        <div style={{ position: 'absolute', bottom: 200, width: '100%', textAlign: 'center', opacity: thenOpacity }}>
-          <div style={{ ...headline(24, '#888888') }}>THEN: SPEND WHATEVER'S LEFT</div>
-        </div>
-
-        <div style={{ position: 'absolute', bottom: 120, width: '100%', textAlign: 'center', opacity: ctaOpacity }}>
-          <div style={{ ...headline(26, WHITE), padding: '0 80px' }}>AUTOMATE IT — DON'T RELY ON WILLPOWER</div>
-        </div>
-      </AbsoluteFill>
+        {/* Retirement piggy comparison */}
+        <g transform={`translate(540, 1480) scale(${piggyScale * 1.8})`}>
+          <PiggyBank x={0} y={0} scale={1} color="#6EE7B7" />
+        </g>
+        <text x="540" y="1700" textAnchor="middle" fontFamily={FONT} fontSize="34" fill="#6EE7B7"
+          letterSpacing="0.08em"
+          opacity={interpolate(frame, [130, 155], [0, 1], { extrapolateRight: 'clamp' })}>
+          THAT'S A RETIREMENT ACCOUNT
+        </text>
+      </svg>
     </FadeScene>
   );
 };
 
-// ─── Scene 6: Light — split every raise 50/50 CTA ────────────────────────────
-
+// Scene 6: Two paths — BUY NEW (shrinking wallet) vs BUY 2-YR USED (growing piggy), CTA — light bg
 const Scene6: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  const titleOpacity = interpolate(frame, [0, 20], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const diagramSpring = spring({ frame: frame - 20, fps, config: { damping: 12, stiffness: 70 } });
-  const splitOpacity = interpolate(frame, [55, 80], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const savingsOpacity = interpolate(frame, [80, 105], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const lifestyleOpacity = interpolate(frame, [100, 125], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const ctaSpring = spring({ frame: frame - 148, fps, config: { damping: 10, stiffness: 60 } });
-  const ctaOpacity = interpolate(frame, [148, 170], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const titleOpacity = interpolate(frame, [0, 18], [0, 1], { extrapolateRight: 'clamp' });
+  const leftCarScale = spring({ frame, fps, config: { damping: 14, stiffness: 100 } });
+  const rightCarScale = spring({ frame: Math.max(0, frame - 15), fps, config: { damping: 14, stiffness: 100 } });
+
+  // Left wallet shrinks over time
+  const walletScale = interpolate(frame, [0, dur - 30], [1.0, 0.4], { extrapolateRight: 'clamp', easing: Easing.in(Easing.quad) });
+  // Right piggy grows
+  const piggyGrow = interpolate(frame, [0, dur - 30], [0.8, 2.0], { extrapolateRight: 'clamp', easing: Easing.out(Easing.quad) });
+
+  const ctaScale = spring({ frame: Math.max(0, frame - 120), fps, config: { damping: 10, stiffness: 200 } });
+  const ctaOpacity = interpolate(frame, [120, 145], [0, 1], { extrapolateRight: 'clamp' });
 
   return (
     <FadeScene bg={BG_LIGHT} dur={dur}>
-      <AbsoluteFill>
-        <div style={{ position: 'absolute', top: 110, width: '100%', textAlign: 'center', opacity: titleOpacity }}>
-          <h2 style={{ ...headline(50, BLACK), padding: '0 40px' }}>EVERY RAISE:</h2>
-          <h2 style={{ ...headline(50, ACCENT), padding: '0 40px' }}>SPLIT IN HALF</h2>
-        </div>
+      <svg width="1080" height="1920" viewBox="0 0 1080 1920">
+        {/* Title */}
+        <text x="540" y="160" textAnchor="middle" fontFamily={FONT} fontSize="52" fill={BLACK}
+          letterSpacing="0.1em" opacity={titleOpacity}>THE RULE:</text>
+        <text x="540" y="250" textAnchor="middle" fontFamily={FONT} fontSize="44" fill={ACCENT}
+          letterSpacing="0.1em" opacity={titleOpacity}>ALWAYS BUY 2-3 YRS USED</text>
 
-        <div style={{ position: 'absolute', top: 330, left: '50%', transform: `translateX(-50%) scale(${diagramSpring})` }}>
-          <svg width="820" height="490">
-            <line x1="410" y1="24" x2="410" y2="110" stroke={ACCENT} strokeWidth="7" />
-            <polygon points="410,12 392,38 428,38" fill={ACCENT} />
-            <text x="410" y="140" textAnchor="middle" fill={ACCENT} fontSize="22" fontWeight="bold" fontFamily={FONT}>YOUR RAISE</text>
-            <line x1="410" y1="158" x2="410" y2="208" stroke={BLACK} strokeWidth="5" opacity={splitOpacity} />
-            <line x1="410" y1="208" x2="180" y2="278" stroke={BLACK} strokeWidth="5" opacity={splitOpacity} />
-            <line x1="410" y1="208" x2="640" y2="278" stroke={BLACK} strokeWidth="5" opacity={splitOpacity} />
-            <g opacity={savingsOpacity}>
-              {[0, 1, 2, 3].map((i) => (
-                <rect key={`coin-${i}`} x={100 + i * 4} y={330 - i * 16} width="160" height="46" rx="23"
-                  fill={ACCENT} stroke="#92400E" strokeWidth="2" />
-              ))}
-              <text x="182" y="356" textAnchor="middle" fill={BLACK} fontSize="20" fontWeight="bold" fontFamily={FONT}>$$$</text>
-              <text x="182" y="406" textAnchor="middle" fill="#10B981" fontSize="24" fontWeight="bold" fontFamily={FONT}>50% SAVED</text>
-            </g>
-            <g opacity={lifestyleOpacity}>
-              <rect x="572" y="300" width="136" height="104" rx="6" fill="#6B7280" />
-              <polygon points="550,304 640,244 730,304" fill="#9CA3AF" />
-              <rect x="596" y="340" width="36" height="52" rx="5" fill={BG_LIGHT} />
-              <rect x="574" y="316" width="38" height="28" rx="4" fill="#93C5FD" opacity="0.7" />
-              <rect x="660" y="316" width="38" height="28" rx="4" fill="#93C5FD" opacity="0.7" />
-              <text x="640" y="440" textAnchor="middle" fill="#EF4444" fontSize="24" fontWeight="bold" fontFamily={FONT}>50% SPEND</text>
-            </g>
-          </svg>
-        </div>
+        {/* Left path: BUY NEW */}
+        <text x="260" y="420" textAnchor="middle" fontFamily={FONT} fontSize="32" fill="#EF4444"
+          letterSpacing="0.06em" opacity={titleOpacity}>BUY NEW</text>
+        <line x1="260" y1="440" x2="260" y2="1300" stroke="#EF4444" strokeWidth="4" strokeDasharray="16 8" opacity="0.5" />
+        <g transform={`translate(260, 760) scale(${leftCarScale * 1.1})`}>
+          <CarSVG x={0} y={0} scale={1} color="#9CA3AF" />
+        </g>
+        {/* Shrinking wallet below */}
+        <g transform={`translate(260, 1060) scale(${walletScale})`}>
+          <rect x="-60" y="-40" width="120" height="80" rx="12" fill="none" stroke="#EF4444" strokeWidth="6" />
+          <path d="M-60 -8 Q 0 -28 60 -8" stroke="#EF4444" strokeWidth="5" fill="none" />
+          <circle cx="36" cy="16" r="10" fill="none" stroke="#EF4444" strokeWidth="4" />
+        </g>
+        <text x="260" y="1200" textAnchor="middle" fontFamily={FONT} fontSize="26" fill="#EF4444"
+          letterSpacing="0.04em" opacity={titleOpacity}>WALLET SHRINKS</text>
 
-        <div style={{
-          position: 'absolute', bottom: 110, width: '100%', textAlign: 'center',
-          opacity: ctaOpacity, transform: `scale(${ctaSpring})`,
-        }}>
-          <div style={{ ...headline(32, BLACK) }}>THAT ONE HABIT =</div>
-          <div style={{ ...headline(76, ACCENT), lineHeight: 1 }}>7 FIGURES</div>
-          <div style={{ ...headline(26, '#555555'), marginTop: 8 }}>FOLLOW FOR MORE</div>
-        </div>
-      </AbsoluteFill>
+        {/* Divider */}
+        <line x1="540" y1="380" x2="540" y2="1320" stroke="#D1D5DB" strokeWidth="3" />
+
+        {/* Right path: BUY USED */}
+        <text x="820" y="420" textAnchor="middle" fontFamily={FONT} fontSize="32" fill="#10B981"
+          letterSpacing="0.06em" opacity={titleOpacity}>BUY USED</text>
+        <line x1="820" y1="440" x2="820" y2="1300" stroke="#10B981" strokeWidth="4" strokeDasharray="16 8" opacity="0.5" />
+        <g transform={`translate(820, 760) scale(${rightCarScale * 1.1})`}>
+          <CarSVG x={0} y={0} scale={1} color="#10B981" />
+        </g>
+        {/* Growing piggy bank */}
+        <g transform={`translate(820, 1060) scale(${piggyGrow * 0.7})`}>
+          <PiggyBank x={0} y={0} scale={1} color="#6EE7B7" />
+        </g>
+        <text x="820" y="1200" textAnchor="middle" fontFamily={FONT} fontSize="26" fill="#10B981"
+          letterSpacing="0.04em" opacity={titleOpacity}>WEALTH GROWS</text>
+
+        {/* CTA */}
+        <g transform={`translate(540, 1500) scale(${ctaScale})`} opacity={ctaOpacity}>
+          <rect x="-340" y="-80" width="680" height="160" rx="22" fill={ACCENT} />
+          <text x="0" y="-12" textAnchor="middle" fontFamily={FONT} fontSize="50" fill={WHITE}
+            letterSpacing="0.1em">SAVE $80K+</text>
+          <text x="0" y="56" textAnchor="middle" fontFamily={FONT} fontSize="36" fill={WHITE}
+            letterSpacing="0.08em">OVER YOUR LIFETIME</text>
+        </g>
+
+        <text x="540" y="1730" textAnchor="middle" fontFamily={FONT} fontSize="28" fill="#6B7280"
+          letterSpacing="0.06em" opacity={ctaOpacity}>LET SOMEONE ELSE PAY THE TAX</text>
+      </svg>
     </FadeScene>
   );
 };
-
-// ─── Root composition ─────────────────────────────────────────────────────────
 
 export default function DAILY() {
   return (

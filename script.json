@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "One-third of people earning $250,000 still run out of money before payday. Wild, right? There's a hidden reason why more income doesn't automatically mean more savings.",
-    "visual": "Large '36%' stat in amber, person in suit with $250K salary badge, empty wallet below — dark background",
-    "accent_color": "amber"
+    "narration": "The second you drove your new car off the dealership lot, it lost about $9,600 in value. Not in a year — instantly.",
+    "visual": "Car SVG rolling off dealership lot, dollar bills flying off the vehicle. '-$9,600' counter drops in red. Dealership building in background.",
+    "accent_color": "orange"
   },
   {
     "scene": 2,
-    "narration": "It's called Parkinson's Law of Money — your expenses always expand to match your income. Get a raise, and somehow your lifestyle costs exactly that much more.",
-    "visual": "Two bar charts on light background growing in sync: green INCOME bar and red EXPENSES bar climbing together, dashed amber line showing they always track each other",
-    "accent_color": "amber"
+    "narration": "New cars depreciate roughly 20% in their very first year. On the average $48,000 vehicle, that's nearly ten grand — vanished before your first oil change.",
+    "visual": "Car with '$48,000' price tag, then a large 20% orange slice cuts out of the car's value. '$9,600 GONE' flashes below on light background.",
+    "accent_color": "orange"
   },
   {
     "scene": 3,
-    "narration": "Studies show Americans save roughly five to seven percent of income — no matter if they earn forty thousand or one-sixty thousand. The savings rate barely moves.",
-    "visual": "Three income bars ($40K, $80K, $160K) growing taller on dark background, each with a tiny amber savings sliver at the top staying proportionally the same",
-    "accent_color": "amber"
+    "narration": "By year three it gets worse. Half the car's original value has evaporated — over $24,000 handed to time and the dealership, not you.",
+    "visual": "Timeline bar from Year 0 to Year 3, car icon above, value bar shrinking from $48K to $24K. Red shading fills the lost portion.",
+    "accent_color": "orange"
   },
   {
     "scene": 4,
-    "narration": "The culprit is status spending — bigger rent, nicer car, pricier restaurants. Each feels small, but together they swallow every extra dollar before you can save it.",
-    "visual": "House, car, and fork/plate icons appearing one by one with price tags (+$900/mo, +$450/mo, +$350/mo), then '$1,700/MO CONSUMED' total — light background",
-    "accent_color": "amber"
+    "narration": "Here's the flip side — a two-year-old certified pre-owned car has already absorbed that depreciation hit. Someone else took the loss. Not you.",
+    "visual": "Two cars side by side: 'NEW $48K' left, 'CPO 2YR $37K' right with green checkmark. Arrow points to the right car. Savings badge: 'SAVE $11K'.",
+    "accent_color": "orange"
   },
   {
     "scene": 5,
-    "narration": "Wealthy people break this cycle by automating savings before lifestyle sees the money. They treat savings like a fixed bill — number one priority, always paid first.",
-    "visual": "Flow diagram: PAYCHECK ARRIVES arrow pointing to SAVINGS FIRST badge then piggy bank — dark background with amber accents",
-    "accent_color": "amber"
+    "narration": "Buy new five times across your lifetime, and you've quietly surrendered over eighty thousand dollars in pure depreciation. That's a retirement account.",
+    "visual": "Five car icons in a row on dark background, each shedding a red money stack. Counter builds to '$80,000+'. Retirement piggy bank comparison.",
+    "accent_color": "orange"
   },
   {
     "scene": 6,
-    "narration": "Here's the fix: every raise you get, automatically lock away half. Don't let lifestyle see it. That one habit compounded over time is worth seven figures.",
-    "visual": "Raise arrow splitting 50/50 — coin stack labeled SAVED and house labeled SPENT — then '7 FIGURES' CTA badge springs in — light background",
-    "accent_color": "amber"
+    "narration": "Always buy two to three years used. Let the first owner pay the new-car tax. That one rule saves six figures over your lifetime.",
+    "visual": "Two path arrows: left 'BUY NEW' leading to shrinking wallet, right 'BUY 2-YR USED' leading to growing piggy bank. 'SAVE $80K+' CTA badge springs in.",
+    "accent_color": "orange"
   }
 ]
