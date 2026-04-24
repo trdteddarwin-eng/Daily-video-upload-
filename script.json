@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "The second you drove your new car off the dealership lot, it lost about $9,600 in value. Not in a year — instantly.",
-    "visual": "Car SVG rolling off dealership lot, dollar bills flying off the vehicle. '-$9,600' counter drops in red. Dealership building in background.",
-    "accent_color": "orange"
+    "narration": "Your employer is handing you free money with a 100% guaranteed return — and one in three workers refuses to take it. Here's why that's insane.",
+    "visual": "Person silhouette standing next to a glowing green money bag labeled '$2,820'. Question mark above person's head. '100% RETURN' pulsing text. Dark background.",
+    "accent_color": "green"
   },
   {
     "scene": 2,
-    "narration": "New cars depreciate roughly 20% in their very first year. On the average $48,000 vehicle, that's nearly ten grand — vanished before your first oil change.",
-    "visual": "Car with '$48,000' price tag, then a large 20% orange slice cuts out of the car's value. '$9,600 GONE' flashes below on light background.",
-    "accent_color": "orange"
+    "narration": "It's called the 401k employer match. Every dollar you put in up to 4.7% of your salary, your company doubles — instantly. That's a 100% return before the market does anything.",
+    "visual": "Two stacked bars side-by-side: 'YOUR MONEY' and 'EMPLOYER MATCH' (equal size, green), with '= 100% INSTANT RETURN' badge appearing. Light background.",
+    "accent_color": "green"
   },
   {
     "scene": 3,
-    "narration": "By year three it gets worse. Half the car's original value has evaporated — over $24,000 handed to time and the dealership, not you.",
-    "visual": "Timeline bar from Year 0 to Year 3, car icon above, value bar shrinking from $48K to $24K. Red shading fills the lost portion.",
-    "accent_color": "orange"
+    "narration": "On a $60,000 salary, that's $2,820 in free employer money every single year. Most people leave every dollar of it sitting on the table.",
+    "visual": "Salary bar '$60K' with a 4.7% slice highlighted. '$2,820 FREE' stamp springs in below in green. 'PER YEAR' label. Dark background.",
+    "accent_color": "green"
   },
   {
     "scene": 4,
-    "narration": "Here's the flip side — a two-year-old certified pre-owned car has already absorbed that depreciation hit. Someone else took the loss. Not you.",
-    "visual": "Two cars side by side: 'NEW $48K' left, 'CPO 2YR $37K' right with green checkmark. Arrow points to the right car. Savings badge: 'SAVE $11K'.",
-    "accent_color": "orange"
+    "narration": "Over 30 years, that $2,820 a year grows to $375,000 at normal market returns. That's a quarter of your retirement — just from the free match.",
+    "visual": "Growth bar chart from Year 0 to Year 30, bar rising to $375K label at top. Two-tone bar: your contributions (dark green) vs employer match (bright green). Light background.",
+    "accent_color": "green"
   },
   {
     "scene": 5,
-    "narration": "Buy new five times across your lifetime, and you've quietly surrendered over eighty thousand dollars in pure depreciation. That's a retirement account.",
-    "visual": "Five car icons in a row on dark background, each shedding a red money stack. Counter builds to '$80,000+'. Retirement piggy bank comparison.",
-    "accent_color": "orange"
+    "narration": "Wild, right? One in three eligible workers don't contribute enough to capture the full match. They're leaving tens of thousands on the table every decade.",
+    "visual": "Three person silhouettes in a row. Two are green with a checkmark and money bags. One is red, walking away from a pile of cash. '1 IN 3 REFUSE' label. Dark background.",
+    "accent_color": "green"
   },
   {
     "scene": 6,
-    "narration": "Always buy two to three years used. Let the first owner pay the new-car tax. That one rule saves six figures over your lifetime.",
-    "visual": "Two path arrows: left 'BUY NEW' leading to shrinking wallet, right 'BUY 2-YR USED' leading to growing piggy bank. 'SAVE $80K+' CTA badge springs in.",
-    "accent_color": "orange"
+    "narration": "The rule is dead simple — always contribute at least enough to grab every dollar of your employer match. It's the only guaranteed 100% return on earth. Don't leave it.",
+    "visual": "Checklist: person checking off 'Contribute to match' box. Piggy bank growing larger. '$375,000' target badge springs in. 'TAKE THE FREE MONEY' CTA. Light background.",
+    "accent_color": "green"
   }
 ]
