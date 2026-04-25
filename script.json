@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Your employer is handing you free money with a 100% guaranteed return — and one in three workers refuses to take it. Here's why that's insane.",
-    "visual": "Person silhouette standing next to a glowing green money bag labeled '$2,820'. Question mark above person's head. '100% RETURN' pulsing text. Dark background.",
-    "accent_color": "green"
+    "narration": "You got your credit card bill. Minimum payment: $104. Feels manageable, right? But that number was deliberately engineered to keep you in debt for sixteen years.",
+    "visual": "SVG credit card springs in from top, statement box slides up showing $5,000 balance and MIN PAYMENT $104 highlighted in red. Headline: ENGINEERED TO TRAP YOU.",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "It's called the 401k employer match. Every dollar you put in up to 4.7% of your salary, your company doubles — instantly. That's a 100% return before the market does anything.",
-    "visual": "Two stacked bars side-by-side: 'YOUR MONEY' and 'EMPLOYER MATCH' (equal size, green), with '= 100% INSTANT RETURN' badge appearing. Light background.",
-    "accent_color": "green"
+    "narration": "On a $5,000 balance at 24% APR, pay only the minimum every month. You finish in 2042 — and you've paid $7,400 just in interest. That's 148% of what you originally borrowed.",
+    "visual": "Animated timeline bar slowly stretching to 16 YEARS label, interest counter counting up to $7,400. Comparison boxes: $5,000 borrowed vs $12,400 paid back.",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "On a $60,000 salary, that's $2,820 in free employer money every single year. Most people leave every dollar of it sitting on the table.",
-    "visual": "Salary bar '$60K' with a 4.7% slice highlighted. '$2,820 FREE' stamp springs in below in green. 'PER YEAR' label. Dark background.",
-    "accent_color": "green"
+    "narration": "Banks cap your minimum at just 2% of your balance. As you pay it down, the minimum shrinks — so you stay in debt even longer. It's a self-tightening trap.",
+    "visual": "Bank building SVG, formula box showing 2% OF BALANCE OR $25 WHICHEVER IS HIGHER. Two animated progress bars showing balance and minimum payment both shrinking in sync.",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Over 30 years, that $2,820 a year grows to $375,000 at normal market returns. That's a quarter of your retirement — just from the free match.",
-    "visual": "Growth bar chart from Year 0 to Year 30, bar rising to $375K label at top. Two-tone bar: your contributions (dark green) vs employer match (bright green). Light background.",
-    "accent_color": "green"
+    "narration": "But bump your payment to $250 a month. Same five-thousand-dollar debt — gone in two years and four months. You'd save sixty-two hundred dollars. Same income, completely different outcome.",
+    "visual": "Two horizontal comparison bars: red bar stretching to 16 YEARS for $104/month, short green bar for 2.4 YEARS at $250/month. Green $6,200 SAVED box springs in.",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Wild, right? One in three eligible workers don't contribute enough to capture the full match. They're leaving tens of thousands on the table every decade.",
-    "visual": "Three person silhouettes in a row. Two are green with a checkmark and money bags. One is red, walking away from a pile of cash. '1 IN 3 REFUSE' label. Dark background.",
-    "accent_color": "green"
+    "narration": "The minimum payment is designed to feel responsible. Your brain checks 'bill paid' and relaxes. But you just agreed to repay nearly one-and-a-half times what you borrowed.",
+    "visual": "Stylized brain SVG, green checkmark appears with BILL PAID label. Then red 148% stat pulses large, debt amount grows below it with label YOU AGREED TO THIS.",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "The rule is dead simple — always contribute at least enough to grab every dollar of your employer match. It's the only guaranteed 100% return on earth. Don't leave it.",
-    "visual": "Checklist: person checking off 'Contribute to match' box. Piggy bank growing larger. '$375,000' target badge springs in. 'TAKE THE FREE MONEY' CTA. Light background.",
-    "accent_color": "green"
+    "narration": "Tonight, open your credit card statement. Find the 'if you pay minimum only' box — it's legally required to be there. That number is your bank's profit timeline. Now go ruin it.",
+    "visual": "Credit card statement mockup with the legally required minimum payment warning box highlighted with red border and arrow. CTA text: FIND THIS BOX TONIGHT / NOW GO RUIN IT.",
+    "accent_color": "red"
   }
 ]
