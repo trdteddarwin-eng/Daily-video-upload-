@@ -1,7 +1,7 @@
 {
-  "title": "Banks Designed Your Minimum Payment to Trap You",
-  "hook": "Your minimum payment wasn't random — it was engineered to keep you paying interest for 16 years.",
-  "angle": "Most people know minimum payments are bad, but the specific math showing you'll repay 148% of what you borrowed — and that banks deliberately calculated the 2% formula to maximize profit — is genuinely shocking.",
-  "audience": "Anyone carrying credit card debt — roughly 1 in 3 American adults with a balance",
-  "key_numbers": ["$5,000 average credit card balance", "24% average APR", "16 years to pay off at minimum payment", "$7,400 in interest charges on $5,000 borrowed", "Pay $250/month instead: clear it in 2.4 years and save $6,200"]
+  "title": "Paying Off Debt Can Drop Your Score 40 Points",
+  "hook": "You just paid off a loan and your credit score dropped — that's not a glitch, it's the algorithm punishing you for doing the right thing.",
+  "angle": "Credit scoring algorithms reward active debt: closing accounts erases 15% account-age credit and 10% credit-mix credit overnight.",
+  "audience": "Anyone paying off debt while trying to improve credit for a mortgage, car loan, or refinance",
+  "key_numbers": ["40-point score drop", "15% of score is account age", "10% is credit mix", "1-9% utilization beats 0%"]
 }

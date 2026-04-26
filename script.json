@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You got your credit card bill. Minimum payment: $104. Feels manageable, right? But that number was deliberately engineered to keep you in debt for sixteen years.",
-    "visual": "SVG credit card springs in from top, statement box slides up showing $5,000 balance and MIN PAYMENT $104 highlighted in red. Headline: ENGINEERED TO TRAP YOU.",
-    "accent_color": "red"
+    "narration": "You just paid off your car loan. Congrats — except your credit score just dropped forty points. Here's why the system is built against you.",
+    "visual": "Dark background. Credit score gauge animating from 720 down to 680. Red down arrow. Badge: DOWN 40 PTS.",
+    "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "On a $5,000 balance at 24% APR, pay only the minimum every month. You finish in 2042 — and you've paid $7,400 just in interest. That's 148% of what you originally borrowed.",
-    "visual": "Animated timeline bar slowly stretching to 16 YEARS label, interest counter counting up to $7,400. Comparison boxes: $5,000 borrowed vs $12,400 paid back.",
-    "accent_color": "red"
+    "narration": "Your credit score has five parts. Account age makes up fifteen percent — and closing an old account can tank that number overnight.",
+    "visual": "Light background. Animated pie chart of 5 credit score components. The Account Age slice (15%) is enlarged and highlighted in amber.",
+    "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Banks cap your minimum at just 2% of your balance. As you pay it down, the minimum shrinks — so you stay in debt even longer. It's a self-tightening trap.",
-    "visual": "Bank building SVG, formula box showing 2% OF BALANCE OR $25 WHICHEVER IS HIGHER. Two animated progress bars showing balance and minimum payment both shrinking in sync.",
-    "accent_color": "red"
+    "narration": "Credit mix is another ten percent. Lenders want to see cards, loans, and a mortgage all at once. Pay one off, and you lose that bonus.",
+    "visual": "Dark background. Three SVG icons side by side: credit card, car (auto loan), house (mortgage). Badge: PAY ONE OFF = LOSE THE MIX.",
+    "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "But bump your payment to $250 a month. Same five-thousand-dollar debt — gone in two years and four months. You'd save sixty-two hundred dollars. Same income, completely different outcome.",
-    "visual": "Two horizontal comparison bars: red bar stretching to 16 YEARS for $104/month, short green bar for 2.4 YEARS at $250/month. Green $6,200 SAVED box springs in.",
-    "accent_color": "red"
+    "narration": "Wild right? The algorithm rewards a small balance. Carrying one to nine percent utilization actually scores higher than zero percent.",
+    "visual": "Light background. SVG credit card. Utilization bar animating to 9%. Label: 1-9% UTILIZATION SWEET SPOT FOR YOUR SCORE.",
+    "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "The minimum payment is designed to feel responsible. Your brain checks 'bill paid' and relaxes. But you just agreed to repay nearly one-and-a-half times what you borrowed.",
-    "visual": "Stylized brain SVG, green checkmark appears with BILL PAID label. Then red 148% stat pulses large, debt amount grows below it with label YOU AGREED TO THIS.",
-    "accent_color": "red"
+    "narration": "Here's the fifty-dollar-a-month trick: keep old accounts open with a tiny recurring charge, like a streaming sub. Account age stays alive.",
+    "visual": "Dark background. Credit card with streaming play-button icon. $50/MONTH label. Two green checkmarks: ACCOUNT STAYS OPEN and ACCOUNT AGE PRESERVED.",
+    "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "Tonight, open your credit card statement. Find the 'if you pay minimum only' box — it's legally required to be there. That number is your bank's profit timeline. Now go ruin it.",
-    "visual": "Credit card statement mockup with the legally required minimum payment warning box highlighted with red border and arrow. CTA text: FIND THIS BOX TONIGHT / NOW GO RUIN IT.",
-    "accent_color": "red"
+    "narration": "The credit score system wasn't built to reward you for getting out of debt. It was built to keep you in it. Follow for more money traps nobody teaches.",
+    "visual": "Light background. Person silhouette trapped behind red vertical bars. CTA badge: FOLLOW FOR MORE MONEY TRAPS.",
+    "accent_color": "amber"
   }
 ]
