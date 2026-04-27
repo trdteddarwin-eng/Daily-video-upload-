@@ -181,19 +181,23 @@ Commit these files to main:
 - `src/DAILY/Main.tsx`
 - `topics-used.json`
 
-Then trigger the render workflow:
-```bash
-gh workflow run daily-short.yml
+Then **trigger the render workflow using `mcp__github__push_files`** (this is the only reliable method in this environment — `gh` CLI is not available and `$GITHUB_TOKEN` is not set):
+
+```
+mcp__github__push_files(
+  owner  = "trdteddarwin-eng",
+  repo   = "Daily-video-upload-",
+  branch = "main",
+  message = "Trigger render: <topic title>",
+  files  = [{ path: "topic.json", content: <exact current topic.json content> }]
+)
 ```
 
-Or via API:
-```bash
-curl -X POST \
-  -H "Authorization: Bearer $GITHUB_TOKEN" \
-  -H "Accept: application/vnd.github+json" \
-  https://api.github.com/repos/trdteddarwin-eng/Daily-video-upload-/dispatches \
-  -d '{"event_type":"render-video"}'
-```
+This creates a push commit on `topic.json` (a workflow trigger path), which fires `daily-short.yml` via its `push` rule. **Always do this step even though you already did `git push` — the git push alone has proven unreliable for triggering delivery.**
+
+Do NOT rely on:
+- `gh workflow run` — `gh` CLI is not installed
+- `curl` + `$GITHUB_TOKEN` — token is not available in this environment
 
 That's the end of your job. The workflow handles audio generation, rendering, metadata, and Telegram delivery.
 
@@ -203,7 +207,7 @@ That's the end of your job. The workflow handles audio generation, rendering, me
 
 When you finish, you should have:
 - ✓ Committed `topic.json`, `script.json`, `src/DAILY/Main.tsx`, updated `topics-used.json`
-- ✓ Triggered the daily-short workflow
+- ✓ Triggered the daily-short workflow via `mcp__github__push_files`
 - ✓ Brief status message confirming the topic picked
 
 Do NOT:
