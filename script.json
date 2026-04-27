@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You just paid off your car loan. Congrats — except your credit score just dropped forty points. Here's why the system is built against you.",
-    "visual": "Dark background. Credit score gauge animating from 720 down to 680. Red down arrow. Badge: DOWN 40 PTS.",
-    "accent_color": "amber"
+    "narration": "There's a hidden enemy inside your retirement account — invisible, automatic, and it costs more than a house. It's called the expense ratio. You've probably never looked at it.",
+    "visual": "Dark background. Vault SVG with spinning dial. 'YOUR RETIREMENT HAS A SECRET ENEMY' springs in. 'THE 1% FEE' subtitle fades in green. Tagline 'Invisible. Automatic. Costs more than a house.' fades below.",
+    "accent_color": "green"
   },
   {
     "scene": 2,
-    "narration": "Your credit score has five parts. Account age makes up fifteen percent — and closing an old account can tank that number overnight.",
-    "visual": "Light background. Animated pie chart of 5 credit score components. The Account Age slice (15%) is enlarged and highlighted in amber.",
-    "accent_color": "amber"
+    "narration": "Every mutual fund charges a management fee called an expense ratio. The average actively managed fund charges about one percent per year. Sounds tiny, right?",
+    "visual": "Light background. Fund prospectus document slides in from left. 'EXPENSE RATIO: 1.00%' highlighted in green. 'MANAGEMENT FEE' label fades in. Expanding green pill shows '~1% PER YEAR'. Quote 'Sounds tiny, right?' fades below.",
+    "accent_color": "green"
   },
   {
     "scene": 3,
-    "narration": "Credit mix is another ten percent. Lenders want to see cards, loans, and a mortgage all at once. Pay one off, and you lose that bonus.",
-    "visual": "Dark background. Three SVG icons side by side: credit card, car (auto loan), house (mortgage). Badge: PAY ONE OFF = LOSE THE MIX.",
-    "accent_color": "amber"
+    "narration": "Here's where it gets ugly. On a hundred-thousand-dollar investment growing at seven percent, that one percent fee silently eats your compounding growth — year after year.",
+    "visual": "Dark background. Bar grows upward as year counter ticks from 0 to 40. Red-to-orange gradient bar beside live counter showing cumulative fees lost up to $199K. Note 'Compound growth you'll never see.' fades in.",
+    "accent_color": "green"
   },
   {
     "scene": 4,
-    "narration": "Wild right? The algorithm rewards a small balance. Carrying one to nine percent utilization actually scores higher than zero percent.",
-    "visual": "Light background. SVG credit card. Utilization bar animating to 9%. Label: 1-9% UTILIZATION SWEET SPOT FOR YOUR SCORE.",
-    "accent_color": "amber"
+    "narration": "Over forty years, the difference between a one-percent fund and a zero-point-zero-four-percent index fund is three hundred and twenty thousand dollars. That's not a typo.",
+    "visual": "Light background. Two bars grow side by side — red $1.03M bar for 1% fund and taller green $1.35M bar for index fund. '$320,000 DIFFERENCE' badge springs in. Bottom text confirms the amount.",
+    "accent_color": "green"
   },
   {
     "scene": 5,
-    "narration": "Here's the fifty-dollar-a-month trick: keep old accounts open with a tiny recurring charge, like a streaming sub. Account age stays alive.",
-    "visual": "Dark background. Credit card with streaming play-button icon. $50/MONTH label. Two green checkmarks: ACCOUNT STAYS OPEN and ACCOUNT AGE PRESERVED.",
-    "accent_color": "amber"
+    "narration": "Ten trillion dollars — with a T — is sitting in high-fee actively managed funds right now. The fund managers pocket billions every year. Are you getting any of that?",
+    "visual": "Dark background. Six stacks of illustrated cash bills appear one by one. '$10T' counter animates upward in green. 'TRILLION' label below. Punchline 'Fund managers get rich. Do you?' fades in.",
+    "accent_color": "green"
   },
   {
     "scene": 6,
-    "narration": "The credit score system wasn't built to reward you for getting out of debt. It was built to keep you in it. Follow for more money traps nobody teaches.",
-    "visual": "Light background. Person silhouette trapped behind red vertical bars. CTA badge: FOLLOW FOR MORE MONEY TRAPS.",
-    "accent_color": "amber"
+    "narration": "Pull up your 401k right now. Tap each fund and find the expense ratio. If it's above zero-point-one percent, swap it for the index fund version. Keep that three hundred and twenty thousand.",
+    "visual": "Dark background. Phone SVG with 401k app screen. Three numbered checklist items appear: 1 Open your 401k app, 2 Find each fund's expense ratio, 3 Above 0.1%? Switch. Green 'KEEP $320,000' badge springs in at bottom.",
+    "accent_color": "green"
   }
 ]
