@@ -70,6 +70,8 @@ jobs:
       - name: Generate TTS audio
         env:
           KIE_API_KEY: ${{ secrets.KIE_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python3 pipeline/generate_audio.py
 
       - name: Render video
