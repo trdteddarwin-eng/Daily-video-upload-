@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You walked in for milk. You left spending forty-seven dollars more than you planned. That's not an accident — that's the design.",
-    "visual": "Shopping cart rolling in with a milk carton, counter animating from $0 up to +$47, bold text 'YOU CAME IN FOR MILK' on dark background with orange accent",
-    "accent_color": "orange"
+    "narration": "You walked in for a $160 blender, but they put a $400 one right next to it. Suddenly $160 feels like a steal — that's not luck. It's called anchoring.",
+    "visual": "Two price tags spring in side by side — red $400 labeled ANCHOR, amber $160 labeled FEELS CHEAP. Person silhouette appears reaching for the cheaper one.",
+    "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "Milk, eggs, and bread are always in the farthest corners. You have to walk past two hundred dollars of temptation just to grab them.",
-    "visual": "Top-down store map showing milk, eggs, and bread icons placed in far corners with a winding dotted path from the entrance through the whole store",
-    "accent_color": "orange"
+    "narration": "Anchoring was discovered in 1974 by Kahneman and Tversky. Your brain locks onto the first number it sees and adjusts everything else from there.",
+    "visual": "Three steps slide in sequentially: step 1 YOU SEE $400 FIRST in red, step 2 YOU SEE $160 NEXT in amber, step 3 $160 FEELS CHEAP in green. Badge: DISCOVERED 1974.",
+    "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Those end-cap displays scream 'sale' — but forty-seven percent of them aren't actually discounted. The sign just tricks your brain.",
-    "visual": "Shelf end-cap with a big orange SALE banner, price tags showing original and sale price are identical, a red strikethrough line animates across the original price",
-    "accent_color": "orange"
+    "narration": "Restaurant menus do this on purpose. That $95 Wagyu steak isn't meant to sell — it's the anchor. Next to it, your $42 salmon suddenly feels responsible.",
+    "visual": "SVG restaurant menu card — $95 Wagyu Ribeye at top in red, $42 Atlantic Salmon highlighted in amber as THE REAL TARGET badge.",
+    "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "Eye level is buy level. Premium brands pay thousands a month for that shelf spot. The cheaper option's right below — they're counting on you not looking.",
-    "visual": "Vertical shelf cross-section with three rows, eye-level row glowing in orange with PREMIUM brand labels, cheaper store brands shown above and below with a green arrow pointing down",
-    "accent_color": "orange"
+    "narration": "Car dealers always walk you to the $58,000 loaded model first. By the time you see the $43,000 base, your brain screams savings. It's not.",
+    "visual": "SVG car with two floating price badges — red $58,000 FULLY LOADED, amber $43,000 BASE MODEL. Text: YOUR BRAIN says I'M SAVING $15K vs REALITY: SPENDING $43K.",
+    "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "The slow music overhead isn't random. Studies show slower background music makes shoppers spend thirty-eight percent more. Your cart literally gets heavier.",
-    "visual": "Musical notes floating upward, shopping cart silhouette growing larger frame by frame, dollar amount counter increasing from $80 to $147",
-    "accent_color": "orange"
+    "narration": "Anchored shoppers spend 28% more on average. On a $50,000 annual spend, that's $14,000 leaving your wallet every year because of a number they chose — not you.",
+    "visual": "Piggy bank SVG springs in. Counter animates from $0 to $14,000. Progress bar fills to 28% labeled 28% OVERSPEND FROM ANCHORING.",
+    "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "Here's the counter-move: shop the perimeter, bring a list, and never shop hungry. That one habit saves the average family twenty-four hundred dollars a year.",
-    "visual": "Three checklist items sliding in with orange checkmarks — SHOP THE PERIMETER, ALWAYS USE A LIST, NEVER SHOP HUNGRY — then a bold orange badge: $2,400 PER YEAR SAVED",
-    "accent_color": "orange"
+    "narration": "The fix? Research your target price before you walk in. Come with your own anchor. Don't let the store set it — and you could keep up to $14,000 a year.",
+    "visual": "Three checkmarks slide in: RESEARCH PRICE FIRST, SET YOUR OWN ANCHOR, IGNORE THE DECOY. Amber badge pulses: KEEP UP TO $14,000 PER YEAR.",
+    "accent_color": "amber"
   }
 ]
