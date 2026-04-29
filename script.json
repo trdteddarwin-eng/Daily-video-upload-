@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You walked in for a $160 blender, but they put a $400 one right next to it. Suddenly $160 feels like a steal — that's not luck. It's called anchoring.",
-    "visual": "Two price tags spring in side by side — red $400 labeled ANCHOR, amber $160 labeled FEELS CHEAP. Person silhouette appears reaching for the cheaper one.",
-    "accent_color": "amber"
+    "narration": "Buy new sneakers, and suddenly your old bag looks shabby. Then your jacket. Then everything. That cascading urge is called the Diderot Effect.",
+    "visual": "Orange sneaker SVG springs in from center. Arrow points to old bag with red X overlay. $3,000 counter fades in. Text: ONE PURCHASE TRIGGERS THEM ALL.",
+    "accent_color": "orange"
   },
   {
     "scene": 2,
-    "narration": "Anchoring was discovered in 1974 by Kahneman and Tversky. Your brain locks onto the first number it sees and adjusts everything else from there.",
-    "visual": "Three steps slide in sequentially: step 1 YOU SEE $400 FIRST in red, step 2 YOU SEE $160 NEXT in amber, step 3 $160 FEELS CHEAP in green. Badge: DISCOVERED 1974.",
-    "accent_color": "amber"
+    "narration": "Philosopher Denis Diderot got a fancy robe in 1769. Suddenly his study felt wrong — he bought a new desk, then a chair, then everything.",
+    "visual": "Coat/robe SVG springs in, arrow appears, desk SVG fades in, second arrow, chair SVG fades in. Badge: NAMED AFTER PHILOSOPHER DENIS DIDEROT.",
+    "accent_color": "orange"
   },
   {
     "scene": 3,
-    "narration": "Restaurant menus do this on purpose. That $95 Wagyu steak isn't meant to sell — it's the anchor. Next to it, your $42 salmon suddenly feels responsible.",
-    "visual": "SVG restaurant menu card — $95 Wagyu Ribeye at top in red, $42 Atlantic Salmon highlighted in amber as THE REAL TARGET badge.",
-    "accent_color": "amber"
+    "narration": "Your brain craves harmony — psychologists call it unity theory. One upgrade breaks that balance, so your brain demands everything else gets upgraded too.",
+    "visual": "Brain SVG with UNITY THEORY label. Three numbered steps slide in: BUY SOMETHING NEW, OLD STUFF LOOKS WRONG, BUY MORE TO MATCH.",
+    "accent_color": "orange"
   },
   {
     "scene": 4,
-    "narration": "Car dealers always walk you to the $58,000 loaded model first. By the time you see the $43,000 base, your brain screams savings. It's not.",
-    "visual": "SVG car with two floating price badges — red $58,000 FULLY LOADED, amber $43,000 BASE MODEL. Text: YOUR BRAIN says I'M SAVING $15K vs REALITY: SPENDING $43K.",
-    "accent_color": "amber"
+    "narration": "Studies show the average Diderot cascade costs $3,000. Triggered by big purchases — furniture, cars, electronics, or even a single outfit.",
+    "visual": "Counter animates $0 to $3,000. Four SVG icons spring in sequentially: couch, phone, car, shirt. Title: THE $3,000 SPIRAL.",
+    "accent_color": "orange"
   },
   {
     "scene": 5,
-    "narration": "Anchored shoppers spend 28% more on average. On a $50,000 annual spend, that's $14,000 leaving your wallet every year because of a number they chose — not you.",
-    "visual": "Piggy bank SVG springs in. Counter animates from $0 to $14,000. Progress bar fills to 28% labeled 28% OVERSPEND FROM ANCHORING.",
-    "accent_color": "amber"
+    "narration": "Seventy-three percent of people feel this after a big purchase. It's not a personal flaw — it's your brain's wiring. And now you can stop it.",
+    "visual": "Large 73% text fades in. Progress bar fills to 73%. Ten person silhouettes appear — seven orange (affected), three grey. Badge: IT'S BRAIN WIRING.",
+    "accent_color": "orange"
   },
   {
     "scene": 6,
-    "narration": "The fix? Research your target price before you walk in. Come with your own anchor. Don't let the store set it — and you could keep up to $14,000 a year.",
-    "visual": "Three checkmarks slide in: RESEARCH PRICE FIRST, SET YOUR OWN ANCHOR, IGNORE THE DECOY. Amber badge pulses: KEEP UP TO $14,000 PER YEAR.",
-    "accent_color": "amber"
+    "narration": "The fix? One in, one out — every time something new comes in, something old goes out. People who follow it save an average of $2,400 a year.",
+    "visual": "ONE IN box and ONE OUT box spring in with arrow between. Two checkmarks slide in. Orange badge: SAVES THE AVERAGE PERSON $2,400 PER YEAR.",
+    "accent_color": "orange"
   }
 ]

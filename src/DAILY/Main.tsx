@@ -3,7 +3,7 @@ import { AbsoluteFill, Series, useCurrentFrame, useVideoConfig, interpolate, spr
 
 const BG_DARK = '#121212';
 const BG_LIGHT = '#F5F5F5';
-const ACCENT = '#F59E0B';
+const ACCENT = '#F97316';
 const WHITE = '#F5F5F5';
 const BLACK = '#121212';
 const FONT = '"Arial Black", "Helvetica Neue", Arial, sans-serif';
@@ -28,80 +28,17 @@ const FadeScene: React.FC<{ children: React.ReactNode; bg: string; dur: number }
   return <AbsoluteFill style={{ background: bg, opacity }}>{children}</AbsoluteFill>;
 };
 
-const Scene1: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
-  const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
-
-  const titleOpacity = interpolate(frame, [5, 30], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const leftTagSpring = spring({ frame, fps, config: { damping: 14, stiffness: 80 } });
-  const rightTagSpring = spring({ frame: frame - 22, fps, config: { damping: 14, stiffness: 80 } });
-  const personOpacity = interpolate(frame, [65, 85], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const subOpacity = interpolate(frame, [140, 165], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-
-  return (
-    <FadeScene bg={BG_DARK} dur={dur}>
-      <AbsoluteFill style={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        padding: 60,
-        gap: 28,
-      }}>
-        <p style={{ ...headline(50, WHITE), opacity: titleOpacity }}>YOUR BRAIN IS BEING PLAYED</p>
-
-        <div style={{ display: 'flex', gap: 40, alignItems: 'flex-start' }}>
-          <div style={{ transform: `scale(${leftTagSpring})`, transformOrigin: 'center' }}>
-            <svg width={270} height={265} viewBox="0 0 270 265">
-              <rect x="10" y="55" width="250" height="200" rx="18" fill="#1E1E1E" stroke="#EF4444" strokeWidth="5" />
-              <polygon points="135,10 112,55 158,55" fill="#EF4444" />
-              <circle cx="135" cy="14" r="10" fill="#1E1E1E" stroke="#EF4444" strokeWidth="4" />
-              <text x="135" y="120" textAnchor="middle" fill="#EF4444" fontSize="24" fontFamily={FONT} fontWeight="bold">ANCHOR</text>
-              <text x="135" y="196" textAnchor="middle" fill={WHITE} fontSize="65" fontFamily={FONT} fontWeight="bold">$400</text>
-              <text x="135" y="232" textAnchor="middle" fill="#888" fontSize="20" fontFamily={FONT}>BLENDER PRO</text>
-            </svg>
-          </div>
-
-          <div style={{ transform: `scale(${rightTagSpring})`, transformOrigin: 'center' }}>
-            <svg width={270} height={265} viewBox="0 0 270 265">
-              <rect x="10" y="55" width="250" height="200" rx="18" fill="#1A2E1A" stroke={ACCENT} strokeWidth="5" />
-              <polygon points="135,10 112,55 158,55" fill={ACCENT} />
-              <circle cx="135" cy="14" r="10" fill="#1A2E1A" stroke={ACCENT} strokeWidth="4" />
-              <text x="135" y="118" textAnchor="middle" fill={ACCENT} fontSize="22" fontFamily={FONT} fontWeight="bold">FEELS CHEAP</text>
-              <text x="135" y="196" textAnchor="middle" fill={WHITE} fontSize="65" fontFamily={FONT} fontWeight="bold">$160</text>
-              <text x="135" y="232" textAnchor="middle" fill="#888" fontSize="20" fontFamily={FONT}>BLENDER LITE</text>
-            </svg>
-          </div>
-        </div>
-
-        <svg width={120} height={100} viewBox="0 0 120 100" style={{ opacity: personOpacity }}>
-          <circle cx="60" cy="18" r="18" fill={WHITE} />
-          <rect x="44" y="38" width="32" height="42" rx="6" fill={WHITE} />
-          <line x1="44" y1="50" x2="22" y2="72" stroke={WHITE} strokeWidth="7" strokeLinecap="round" />
-          <line x1="76" y1="50" x2="98" y2="42" stroke={WHITE} strokeWidth="7" strokeLinecap="round" />
-        </svg>
-
-        <p style={{ ...headline(30, ACCENT), opacity: subOpacity }}>PRICE ANCHORING — EVERY STORE DOES IT</p>
-      </AbsoluteFill>
-    </FadeScene>
-  );
-};
-
 const Scene2: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
   const titleOpacity = interpolate(frame, [5, 30], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const step1Anim = spring({ frame: frame - 15, fps, config: { damping: 14, stiffness: 80 } });
-  const step2Anim = spring({ frame: frame - 55, fps, config: { damping: 14, stiffness: 80 } });
-  const step3Anim = spring({ frame: frame - 95, fps, config: { damping: 14, stiffness: 80 } });
-  const badgeOpacity = interpolate(frame, [150, 175], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-
-  const steps = [
-    { label: 'YOU SEE $400 FIRST', sub: 'BRAIN LOCKS IN THE NUMBER', color: '#EF4444', anim: step1Anim },
-    { label: 'YOU SEE $160 NEXT', sub: 'BRAIN COMPARES TO $400', color: ACCENT, anim: step2Anim },
-    { label: '$160 FEELS CHEAP', sub: 'DECISION MADE BY ANCHOR', color: '#10B981', anim: step3Anim },
-  ];
+  const robeScale = spring({ frame, fps, config: { damping: 14, stiffness: 70 } });
+  const arrow1Opacity = interpolate(frame, [32, 52], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const deskOpacity = interpolate(frame, [42, 64], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const arrow2Opacity = interpolate(frame, [72, 92], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const chairOpacity = interpolate(frame, [82, 104], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const badgeOpacity = interpolate(frame, [148, 172], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
 
   return (
     <FadeScene bg={BG_LIGHT} dur={dur}>
@@ -111,47 +48,54 @@ const Scene2: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
         alignItems: 'center',
         justifyContent: 'center',
         padding: 72,
-        gap: 28,
+        gap: 20,
       }}>
-        <p style={{ ...headline(46, BLACK), opacity: titleOpacity }}>HOW YOUR BRAIN GETS PLAYED</p>
+        <p style={{ ...headline(44, BLACK), opacity: titleOpacity }}>1769 — HOW IT STARTED</p>
 
-        <div style={{ width: '100%', maxWidth: 720, display: 'flex', flexDirection: 'column', gap: 22 }}>
-          {steps.map((s, i) => (
-            <div key={i} style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: 24,
-              opacity: s.anim,
-              transform: `translateX(${interpolate(s.anim, [0, 1], [-80, 0])}px)`,
-            }}>
-              <div style={{
-                width: 64,
-                height: 64,
-                borderRadius: '50%',
-                background: s.color,
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                flexShrink: 0,
-              }}>
-                <span style={{ fontFamily: FONT, fontSize: 30, color: WHITE, fontWeight: 'bold' }}>{i + 1}</span>
-              </div>
-              <div>
-                <p style={{ fontFamily: FONT, fontSize: 32, color: BLACK, margin: 0, letterSpacing: '0.1em', textTransform: 'uppercase' as const }}>{s.label}</p>
-                <p style={{ fontFamily: FONT, fontSize: 20, color: '#666', margin: 0, letterSpacing: '0.08em', textTransform: 'uppercase' as const }}>{s.sub}</p>
-              </div>
-            </div>
-          ))}
+        <div style={{ display: 'flex', alignItems: 'flex-end', gap: 14 }}>
+          <div style={{ transform: `scale(${robeScale})`, transformOrigin: 'bottom center', textAlign: 'center' as const }}>
+            <svg width={120} height={190} viewBox="0 0 120 190">
+              <circle cx="60" cy="17" r="15" fill="#F5CBA7" />
+              <path d="M 60 32 Q 42 42 26 58 L 12 178 L 60 172 L 108 178 L 94 58 Q 78 42 60 32 Z" fill={ACCENT} />
+              <path d="M 60 32 Q 52 46 47 66 L 60 70 L 73 66 Q 68 46 60 32 Z" fill="#E5650A" />
+              <text x="60" y="122" textAnchor="middle" fill={WHITE} fontSize="12" fontFamily={FONT} fontWeight="bold">FANCY</text>
+              <text x="60" y="140" textAnchor="middle" fill={WHITE} fontSize="12" fontFamily={FONT} fontWeight="bold">ROBE</text>
+            </svg>
+          </div>
+
+          <svg width={42} height={34} viewBox="0 0 42 34" style={{ opacity: arrow1Opacity, marginBottom: 66 }}>
+            <line x1="3" y1="17" x2="31" y2="17" stroke={BLACK} strokeWidth="4" strokeLinecap="round" />
+            <polyline points="23,8 38,17 23,26" fill="none" stroke={BLACK} strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+
+          <div style={{ opacity: deskOpacity, textAlign: 'center' as const }}>
+            <svg width={138} height={150} viewBox="0 0 138 150">
+              <rect x="14" y="52" width="110" height="15" rx="4" fill="#8B5E3C" />
+              <rect x="20" y="67" width="12" height="72" rx="4" fill="#7A5230" />
+              <rect x="106" y="67" width="12" height="72" rx="4" fill="#7A5230" />
+              <rect x="22" y="14" width="94" height="40" rx="4" fill={WHITE} stroke="#CCC" strokeWidth="2" />
+              <text x="69" y="114" textAnchor="middle" fill={BLACK} fontSize="12" fontFamily={FONT} fontWeight="bold">NEW DESK</text>
+            </svg>
+          </div>
+
+          <svg width={42} height={34} viewBox="0 0 42 34" style={{ opacity: arrow2Opacity, marginBottom: 66 }}>
+            <line x1="3" y1="17" x2="31" y2="17" stroke={BLACK} strokeWidth="4" strokeLinecap="round" />
+            <polyline points="23,8 38,17 23,26" fill="none" stroke={BLACK} strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+
+          <div style={{ opacity: chairOpacity, textAlign: 'center' as const }}>
+            <svg width={112} height={150} viewBox="0 0 112 150">
+              <rect x="16" y="60" width="80" height="14" rx="5" fill="#8B5E3C" />
+              <rect x="28" y="74" width="13" height="50" rx="4" fill="#7A5230" />
+              <rect x="71" y="74" width="13" height="50" rx="4" fill="#7A5230" />
+              <rect x="16" y="18" width="80" height="44" rx="8" fill={ACCENT} />
+              <text x="56" y="136" textAnchor="middle" fill={BLACK} fontSize="12" fontFamily={FONT} fontWeight="bold">NEW CHAIR</text>
+            </svg>
+          </div>
         </div>
 
-        <div style={{
-          opacity: badgeOpacity,
-          background: BLACK,
-          borderRadius: 20,
-          padding: '18px 48px',
-          textAlign: 'center',
-        }}>
-          <p style={headline(22, WHITE)}>DISCOVERED 1974 — KAHNEMAN &amp; TVERSKY</p>
+        <div style={{ opacity: badgeOpacity, background: BLACK, borderRadius: 20, padding: '16px 44px', textAlign: 'center' as const }}>
+          <p style={headline(20, WHITE)}>NAMED AFTER PHILOSOPHER DENIS DIDEROT</p>
         </div>
       </AbsoluteFill>
     </FadeScene>
@@ -163,12 +107,87 @@ const Scene3: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const { fps } = useVideoConfig();
 
   const titleOpacity = interpolate(frame, [5, 30], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const menuScale = spring({ frame, fps, config: { damping: 14, stiffness: 70 } });
-  const item1Opacity = interpolate(frame, [30, 52], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const item2Opacity = interpolate(frame, [58, 80], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const item3Opacity = interpolate(frame, [86, 108], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const highlightOpacity = interpolate(frame, [118, 142], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const tagOpacity = interpolate(frame, [148, 172], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const brainScale = spring({ frame, fps, config: { damping: 14, stiffness: 70 } });
+  const step1Anim = spring({ frame: frame - 42, fps, config: { damping: 14, stiffness: 80 } });
+  const step2Anim = spring({ frame: frame - 80, fps, config: { damping: 14, stiffness: 80 } });
+  const step3Anim = spring({ frame: frame - 118, fps, config: { damping: 14, stiffness: 80 } });
+  const theoryOpacity = interpolate(frame, [152, 175], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+
+  const steps = [
+    { text: 'BUY SOMETHING NEW', sub: 'Standard purchase', anim: step1Anim },
+    { text: 'OLD STUFF LOOKS WRONG', sub: 'Brain detects mismatch', anim: step2Anim },
+    { text: 'BUY MORE TO MATCH', sub: 'The cascade begins', anim: step3Anim },
+  ];
+
+  return (
+    <FadeScene bg={BG_DARK} dur={dur}>
+      <AbsoluteFill style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: 60,
+        gap: 22,
+      }}>
+        <p style={{ ...headline(46, WHITE), opacity: titleOpacity }}>WHY YOUR BRAIN DOES IT</p>
+
+        <div style={{ transform: `scale(${brainScale})`, transformOrigin: 'center' }}>
+          <svg width={200} height={158} viewBox="0 0 200 158">
+            <path d="M 100 22 Q 58 10 36 42 Q 14 68 24 95 Q 34 122 62 132 Q 80 138 100 136 Q 120 138 138 132 Q 166 122 176 95 Q 186 68 164 42 Q 142 10 100 22 Z" fill={ACCENT} opacity={0.92} />
+            <line x1="100" y1="22" x2="100" y2="136" stroke="#E5650A" strokeWidth="2" strokeDasharray="7 5" />
+            <line x1="36" y1="84" x2="164" y2="84" stroke="#E5650A" strokeWidth="2" strokeDasharray="7 5" />
+            <text x="100" y="73" textAnchor="middle" fill={WHITE} fontSize="16" fontFamily={FONT} fontWeight="bold">UNITY</text>
+            <text x="100" y="93" textAnchor="middle" fill={WHITE} fontSize="16" fontFamily={FONT} fontWeight="bold">THEORY</text>
+          </svg>
+        </div>
+
+        <div style={{ width: '100%', maxWidth: 700, display: 'flex', flexDirection: 'column', gap: 18 }}>
+          {steps.map((s, i) => (
+            <div key={i} style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: 22,
+              opacity: s.anim,
+              transform: `translateX(${interpolate(s.anim, [0, 1], [-80, 0])}px)`,
+            }}>
+              <div style={{
+                width: 54,
+                height: 54,
+                borderRadius: '50%',
+                background: ACCENT,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                flexShrink: 0,
+              }}>
+                <span style={{ fontFamily: FONT, fontSize: 27, color: WHITE, fontWeight: 'bold' }}>{i + 1}</span>
+              </div>
+              <div>
+                <p style={{ fontFamily: FONT, fontSize: 30, color: WHITE, margin: 0, letterSpacing: '0.1em', textTransform: 'uppercase' as const }}>{s.text}</p>
+                <p style={{ fontFamily: FONT, fontSize: 18, color: '#888', margin: 0, letterSpacing: '0.08em', textTransform: 'uppercase' as const }}>{s.sub}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div style={{ opacity: theoryOpacity, background: ACCENT, borderRadius: 16, padding: '12px 36px' }}>
+          <p style={headline(22, WHITE)}>YOUR BRAIN CRAVES HARMONY — AT ANY COST</p>
+        </div>
+      </AbsoluteFill>
+    </FadeScene>
+  );
+};
+
+const Scene1: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+
+  const titleOpacity = interpolate(frame, [5, 30], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const sneakerScale = spring({ frame, fps, config: { damping: 14, stiffness: 80 } });
+  const arrowOpacity = interpolate(frame, [28, 48], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const bagOpacity = interpolate(frame, [36, 58], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const counterOpacity = interpolate(frame, [100, 125], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const subOpacity = interpolate(frame, [150, 175], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
 
   return (
     <FadeScene bg={BG_DARK} dur={dur}>
@@ -180,48 +199,39 @@ const Scene3: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
         padding: 60,
         gap: 24,
       }}>
-        <p style={{ ...headline(48, WHITE), opacity: titleOpacity }}>THE $95 DECOY STEAK</p>
+        <p style={{ ...headline(52, WHITE), opacity: titleOpacity }}>THE DIDEROT TRAP</p>
 
-        <svg width={600} height={390} viewBox="0 0 600 390"
-          style={{ transform: `scale(${menuScale})`, transformOrigin: 'center' }}>
-          <rect x="20" y="10" width="560" height="370" rx="16" fill="#1E1E1E" stroke="#444" strokeWidth="3" />
-          <rect x="20" y="10" width="560" height="58" rx="16" fill="#2A2A2A" />
-          <rect x="20" y="48" width="560" height="20" fill="#2A2A2A" />
-          <text x="300" y="48" textAnchor="middle" fill={WHITE} fontSize="26" fontFamily={FONT} fontWeight="bold">ENTRÉES</text>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 24 }}>
+          <div style={{ transform: `scale(${sneakerScale})`, transformOrigin: 'center' }}>
+            <svg width={160} height={130} viewBox="0 0 160 130">
+              <ellipse cx="80" cy="95" rx="72" ry="22" fill="#222" />
+              <path d="M 20 90 Q 30 55 55 50 L 110 48 Q 135 50 142 70 L 148 90 Z" fill={ACCENT} />
+              <path d="M 55 50 Q 65 30 80 28 Q 95 26 105 48 Z" fill="#E5650A" />
+              <line x1="62" y1="68" x2="98" y2="68" stroke={WHITE} strokeWidth="4" strokeLinecap="round" />
+              <line x1="60" y1="78" x2="100" y2="78" stroke={WHITE} strokeWidth="4" strokeLinecap="round" />
+              <text x="80" y="118" textAnchor="middle" fill={ACCENT} fontSize="13" fontFamily={FONT} fontWeight="bold">NEW SNEAKERS</text>
+            </svg>
+          </div>
 
-          <g opacity={item1Opacity}>
-            <text x="50" y="100" fill="#EF4444" fontSize="22" fontFamily={FONT} fontWeight="bold">WAGYU RIBEYE</text>
-            <text x="550" y="100" textAnchor="end" fill="#EF4444" fontSize="26" fontFamily={FONT} fontWeight="bold">$95</text>
-            <text x="50" y="122" fill="#666" fontSize="16" fontFamily={FONT}>A5 grade, truffle butter, micro greens</text>
-            <text x="550" y="122" textAnchor="end" fill="#555" fontSize="15" fontFamily={FONT}>⚓ ANCHOR</text>
-          </g>
+          <svg width={60} height={40} viewBox="0 0 60 40" style={{ opacity: arrowOpacity }}>
+            <line x1="5" y1="20" x2="45" y2="20" stroke={WHITE} strokeWidth="4" strokeLinecap="round" />
+            <polyline points="35,10 50,20 35,30" fill="none" stroke={WHITE} strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
 
-          <line x1="40" y1="142" x2="560" y2="142" stroke="#333" strokeWidth="2" opacity={item1Opacity} />
+          <div style={{ opacity: bagOpacity }}>
+            <svg width={140} height={130} viewBox="0 0 140 130">
+              <rect x="20" y="45" width="100" height="75" rx="10" fill="#1E1E1E" stroke="#444" strokeWidth="3" />
+              <path d="M 42 45 Q 42 18 70 18 Q 98 18 98 45" fill="none" stroke="#555" strokeWidth="6" strokeLinecap="round" />
+              <line x1="30" y1="55" x2="110" y2="115" stroke="#EF4444" strokeWidth="8" strokeLinecap="round" />
+              <line x1="110" y1="55" x2="30" y2="115" stroke="#EF4444" strokeWidth="8" strokeLinecap="round" />
+              <text x="70" y="30" textAnchor="middle" fill="#666" fontSize="11" fontFamily={FONT}>OLD BAG — NOW LOOKS WRONG</text>
+            </svg>
+          </div>
+        </div>
 
-          <rect x="30" y="150" width="540" height="82" rx="8" fill={ACCENT}
-            opacity={interpolate(highlightOpacity, [0, 1], [0, 0.18])} />
-
-          <g opacity={item2Opacity}>
-            <text x="50" y="188" fill={WHITE} fontSize="22" fontFamily={FONT} fontWeight="bold">ATLANTIC SALMON</text>
-            <text x="550" y="188" textAnchor="end" fill={ACCENT} fontSize="26" fontFamily={FONT} fontWeight="bold">$42</text>
-            <text x="50" y="212" fill="#888" fontSize="16" fontFamily={FONT}>Lemon caper butter, seasonal vegetables</text>
-          </g>
-
-          <g opacity={tagOpacity}>
-            <rect x="376" y="157" width="164" height="38" rx="19" fill={ACCENT} />
-            <text x="458" y="182" textAnchor="middle" fill={WHITE} fontSize="16" fontFamily={FONT} fontWeight="bold">THE REAL TARGET</text>
-          </g>
-
-          <line x1="40" y1="244" x2="560" y2="244" stroke="#333" strokeWidth="2" opacity={item2Opacity} />
-
-          <g opacity={item3Opacity}>
-            <text x="50" y="278" fill={WHITE} fontSize="22" fontFamily={FONT} fontWeight="bold">ROAST CHICKEN</text>
-            <text x="550" y="278" textAnchor="end" fill={WHITE} fontSize="26" fontFamily={FONT} fontWeight="bold">$36</text>
-            <text x="50" y="300" fill="#666" fontSize="16" fontFamily={FONT}>Herb jus, roasted potatoes</text>
-          </g>
-        </svg>
-
-        <p style={{ ...headline(28, ACCENT), opacity: tagOpacity }}>$95 STEAK MAKES $42 FEEL RESPONSIBLE</p>
+        <p style={{ ...headline(84, ACCENT), opacity: counterOpacity }}>$3,000</p>
+        <p style={{ ...headline(26, WHITE), opacity: counterOpacity }}>AVERAGE CASCADE COST</p>
+        <p style={{ ...headline(22, ACCENT), opacity: subOpacity }}>ONE PURCHASE TRIGGERS THEM ALL</p>
       </AbsoluteFill>
     </FadeScene>
   );
@@ -232,10 +242,16 @@ const Scene4: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const { fps } = useVideoConfig();
 
   const titleOpacity = interpolate(frame, [5, 30], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const carScale = spring({ frame, fps, config: { damping: 14, stiffness: 70 } });
-  const premiumOpacity = interpolate(frame, [35, 60], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const baseOpacity = interpolate(frame, [90, 115], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const brainOpacity = interpolate(frame, [145, 168], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const counterVal = Math.floor(
+    interpolate(frame, [25, 175], [0, 3000], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })
+  );
+  const counterOpacity = interpolate(frame, [20, 40], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const item1Scale = spring({ frame: frame - 15, fps, config: { damping: 14, stiffness: 80 } });
+  const item2Scale = spring({ frame: frame - 52, fps, config: { damping: 14, stiffness: 80 } });
+  const item3Scale = spring({ frame: frame - 89, fps, config: { damping: 14, stiffness: 80 } });
+  const item4Scale = spring({ frame: frame - 126, fps, config: { damping: 14, stiffness: 80 } });
+
+  const fmtD = (n: number) => n.toLocaleString('en-US');
 
   return (
     <FadeScene bg={BG_LIGHT} dur={dur}>
@@ -245,44 +261,57 @@ const Scene4: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
         alignItems: 'center',
         justifyContent: 'center',
         padding: 60,
-        gap: 20,
+        gap: 18,
       }}>
-        <p style={{ ...headline(46, BLACK), opacity: titleOpacity }}>THE CAR LOT PLAY</p>
+        <p style={{ ...headline(50, BLACK), opacity: titleOpacity }}>THE $3,000 SPIRAL</p>
 
-        <svg width={700} height={380} viewBox="0 0 700 380"
-          style={{ transform: `scale(${carScale})`, transformOrigin: 'center' }}>
-          <line x1="60" y1="310" x2="640" y2="310" stroke="#CCC" strokeWidth="3" />
-          <rect x="90" y="210" width="520" height="90" rx="12" fill="#2C3E50" />
-          <path d="M 188 210 Q 226 138 282 126 L 418 126 Q 474 138 512 210 Z" fill="#34495E" />
-          <path d="M 214 210 Q 242 152 280 140 L 420 140 Q 458 152 486 210 Z" fill="#AED6F1" opacity={0.65} />
-          <circle cx="200" cy="310" r="52" fill="#1A1A1A" />
-          <circle cx="200" cy="310" r="32" fill="#5A5A5A" />
-          <circle cx="200" cy="310" r="12" fill="#888" />
-          <circle cx="500" cy="310" r="52" fill="#1A1A1A" />
-          <circle cx="500" cy="310" r="32" fill="#5A5A5A" />
-          <circle cx="500" cy="310" r="12" fill="#888" />
-          <ellipse cx="98" cy="248" rx="20" ry="13" fill="#F39C12" />
-          <ellipse cx="602" cy="248" rx="20" ry="13" fill="#E74C3C" />
+        <p style={{ ...headline(106, ACCENT), opacity: counterOpacity }}>${fmtD(counterVal)}</p>
 
-          <g opacity={premiumOpacity}>
-            <rect x="55" y="28" width="236" height="96" rx="14" fill="#EF4444" />
-            <text x="173" y="68" textAnchor="middle" fill={WHITE} fontSize="18" fontFamily={FONT} fontWeight="bold">FULLY LOADED</text>
-            <text x="173" y="108" textAnchor="middle" fill={WHITE} fontSize="36" fontFamily={FONT} fontWeight="bold">$58,000</text>
-            <line x1="200" y1="124" x2="210" y2="208" stroke="#EF4444" strokeWidth="4" strokeDasharray="6 4" />
-          </g>
+        <div style={{ display: 'flex', gap: 20, alignItems: 'flex-end' }}>
+          <div style={{ transform: `scale(${item1Scale})`, transformOrigin: 'bottom center', textAlign: 'center' as const }}>
+            <svg width={120} height={80} viewBox="0 0 120 80">
+              <rect x="4" y="36" width="112" height="34" rx="10" fill={ACCENT} />
+              <rect x="4" y="36" width="20" height="40" rx="8" fill="#E5650A" />
+              <rect x="96" y="36" width="20" height="40" rx="8" fill="#E5650A" />
+              <rect x="24" y="16" width="72" height="32" rx="8" fill="#E5650A" />
+              <rect x="26" y="70" width="12" height="8" rx="3" fill="#999" />
+              <rect x="82" y="70" width="12" height="8" rx="3" fill="#999" />
+            </svg>
+            <p style={{ fontFamily: FONT, fontSize: 14, color: BLACK, textAlign: 'center' as const, margin: 0, textTransform: 'uppercase' as const }}>FURNITURE</p>
+          </div>
 
-          <g opacity={baseOpacity}>
-            <rect x="409" y="28" width="236" height="96" rx="14" fill={ACCENT} />
-            <text x="527" y="68" textAnchor="middle" fill={WHITE} fontSize="18" fontFamily={FONT} fontWeight="bold">BASE MODEL</text>
-            <text x="527" y="108" textAnchor="middle" fill={WHITE} fontSize="36" fontFamily={FONT} fontWeight="bold">$43,000</text>
-            <line x1="500" y1="124" x2="490" y2="208" stroke={ACCENT} strokeWidth="4" strokeDasharray="6 4" />
-          </g>
-        </svg>
+          <div style={{ transform: `scale(${item2Scale})`, transformOrigin: 'bottom center', textAlign: 'center' as const }}>
+            <svg width={68} height={118} viewBox="0 0 68 118">
+              <rect x="6" y="4" width="56" height="104" rx="11" fill="#1E1E1E" stroke="#444" strokeWidth="3" />
+              <rect x="12" y="16" width="44" height="72" rx="4" fill="#2D4A8A" />
+              <circle cx="34" cy="100" r="7" fill="#444" />
+            </svg>
+            <p style={{ fontFamily: FONT, fontSize: 14, color: BLACK, textAlign: 'center' as const, margin: 0, textTransform: 'uppercase' as const }}>ELECTRONICS</p>
+          </div>
 
-        <div style={{ opacity: brainOpacity, textAlign: 'center' }}>
-          <p style={headline(28, '#EF4444')}>YOUR BRAIN: "I'M SAVING $15,000!"</p>
-          <p style={{ ...headline(24, BLACK), marginTop: 10 }}>REALITY: YOU'RE SPENDING $43,000</p>
+          <div style={{ transform: `scale(${item3Scale})`, transformOrigin: 'bottom center', textAlign: 'center' as const }}>
+            <svg width={138} height={88} viewBox="0 0 138 88">
+              <rect x="9" y="38" width="120" height="36" rx="8" fill="#2C3E50" />
+              <path d="M 37 38 Q 48 16 63 12 L 88 12 Q 103 16 112 38 Z" fill="#34495E" />
+              <path d="M 44 38 Q 53 20 65 16 L 86 16 Q 98 20 106 38 Z" fill="#AED6F1" opacity={0.6} />
+              <circle cx="30" cy="74" r="15" fill="#1A1A1A" />
+              <circle cx="30" cy="74" r="8" fill="#555" />
+              <circle cx="108" cy="74" r="15" fill="#1A1A1A" />
+              <circle cx="108" cy="74" r="8" fill="#555" />
+            </svg>
+            <p style={{ fontFamily: FONT, fontSize: 14, color: BLACK, textAlign: 'center' as const, margin: 0, textTransform: 'uppercase' as const }}>CAR</p>
+          </div>
+
+          <div style={{ transform: `scale(${item4Scale})`, transformOrigin: 'bottom center', textAlign: 'center' as const }}>
+            <svg width={98} height={108} viewBox="0 0 98 108">
+              <path d="M 22 17 L 4 42 L 25 51 L 25 103 L 73 103 L 73 51 L 94 42 L 76 17 Q 63 27 49 27 Q 35 27 22 17 Z" fill={ACCENT} />
+              <path d="M 40 17 Q 49 33 58 17" fill="none" stroke="#E5650A" strokeWidth="5" strokeLinecap="round" />
+            </svg>
+            <p style={{ fontFamily: FONT, fontSize: 14, color: BLACK, textAlign: 'center' as const, margin: 0, textTransform: 'uppercase' as const }}>OUTFIT</p>
+          </div>
         </div>
+
+        <p style={{ ...headline(26, BLACK), opacity: titleOpacity }}>AVERAGE COST PER CASCADE</p>
       </AbsoluteFill>
     </FadeScene>
   );
@@ -290,17 +319,13 @@ const Scene4: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
 
 const Scene5: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
 
   const titleOpacity = interpolate(frame, [5, 30], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const piggyScale = spring({ frame, fps, config: { damping: 14, stiffness: 70 } });
-  const counterVal = Math.floor(
-    interpolate(frame, [40, 190], [0, 14000], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })
-  );
-  const barProgress = interpolate(frame, [50, 172], [0, 28], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const statOpacity = interpolate(frame, [160, 184], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const bigNumOpacity = interpolate(frame, [15, 40], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const barProgress = interpolate(frame, [20, 162], [0, 73], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const subOpacity = interpolate(frame, [158, 180], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
 
-  const fmtDollars = (n: number) => n.toLocaleString('en-US');
+  const personCount = 10;
 
   return (
     <FadeScene bg={BG_DARK} dur={dur}>
@@ -312,39 +337,34 @@ const Scene5: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
         padding: 60,
         gap: 20,
       }}>
-        <p style={{ ...headline(48, WHITE), opacity: titleOpacity }}>THE REAL COST</p>
+        <p style={{ ...headline(46, WHITE), opacity: titleOpacity }}>YOU'RE NOT ALONE</p>
 
-        <svg width={300} height={260} viewBox="0 0 300 260"
-          style={{ transform: `scale(${piggyScale})`, transformOrigin: 'center' }}>
-          <ellipse cx="148" cy="152" rx="108" ry="88" fill={ACCENT} />
-          <ellipse cx="248" cy="132" rx="52" ry="48" fill={ACCENT} />
-          <ellipse cx="244" cy="86" rx="17" ry="13" fill="#E5890A" />
-          <circle cx="266" cy="120" r="7" fill={BG_DARK} />
-          <ellipse cx="288" cy="140" rx="17" ry="13" fill="#E5890A" />
-          <circle cx="283" cy="138" r="4" fill={BG_DARK} />
-          <circle cx="293" cy="138" r="4" fill={BG_DARK} />
-          <rect x="82" y="228" width="26" height="26" rx="5" fill="#E5890A" />
-          <rect x="118" y="228" width="26" height="26" rx="5" fill="#E5890A" />
-          <rect x="158" y="228" width="26" height="26" rx="5" fill="#E5890A" />
-          <rect x="194" y="228" width="26" height="26" rx="5" fill="#E5890A" />
-          <rect x="128" y="62" width="36" height="8" rx="4" fill={BG_DARK} />
-          <path d="M 44 142 Q 20 122 30 102 Q 40 82 20 72" fill="none" stroke="#E5890A" strokeWidth="8" strokeLinecap="round" />
-        </svg>
-
-        <p style={headline(96, ACCENT)}>${fmtDollars(counterVal)}</p>
+        <p style={{ ...headline(148, ACCENT), opacity: bigNumOpacity, lineHeight: 1 }}>73%</p>
+        <p style={{ ...headline(26, WHITE), opacity: bigNumOpacity }}>OF PEOPLE FEEL THIS PULL</p>
 
         <div style={{ width: '80%', maxWidth: 620 }}>
-          <p style={{ ...headline(22, WHITE), marginBottom: 12 }}>28% OVERSPEND FROM ANCHORING</p>
           <div style={{ width: '100%', height: 28, background: '#333', borderRadius: 14, overflow: 'hidden' }}>
             <div style={{ width: `${barProgress}%`, height: '100%', background: ACCENT, borderRadius: 14 }} />
           </div>
           <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 8 }}>
             <span style={{ fontFamily: FONT, fontSize: 20, color: WHITE }}>0%</span>
-            <span style={{ fontFamily: FONT, fontSize: 20, color: ACCENT }}>28%</span>
+            <span style={{ fontFamily: FONT, fontSize: 20, color: ACCENT }}>73%</span>
           </div>
         </div>
 
-        <p style={{ ...headline(26, WHITE), opacity: statOpacity }}>ON $50K SPEND = $14K LOST PER YEAR</p>
+        <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' as const, justifyContent: 'center', maxWidth: 600 }}>
+          {Array.from({ length: personCount }).map((_, i) => (
+            <svg key={i} width={48} height={74} viewBox="0 0 48 74"
+              style={{ opacity: interpolate(frame, [28 + i * 7, 48 + i * 7], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }) }}>
+              <circle cx="24" cy="13" r="12" fill={i < 7 ? ACCENT : '#444'} />
+              <rect x="13" y="26" width="22" height="29" rx="6" fill={i < 7 ? ACCENT : '#444'} />
+              <line x1="13" y1="38" x2="3" y2="56" stroke={i < 7 ? ACCENT : '#444'} strokeWidth="7" strokeLinecap="round" />
+              <line x1="35" y1="38" x2="45" y2="56" stroke={i < 7 ? ACCENT : '#444'} strokeWidth="7" strokeLinecap="round" />
+            </svg>
+          ))}
+        </div>
+
+        <p style={{ ...headline(24, WHITE), opacity: subOpacity }}>IT'S BRAIN WIRING — AND NOW YOU KNOW IT</p>
       </AbsoluteFill>
     </FadeScene>
   );
@@ -355,16 +375,17 @@ const Scene6: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const { fps } = useVideoConfig();
 
   const titleOpacity = interpolate(frame, [5, 30], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const item1Anim = spring({ frame: frame - 20, fps, config: { damping: 14, stiffness: 80 } });
-  const item2Anim = spring({ frame: frame - 55, fps, config: { damping: 14, stiffness: 80 } });
-  const item3Anim = spring({ frame: frame - 90, fps, config: { damping: 14, stiffness: 80 } });
-  const badgeScale = spring({ frame: frame - 140, fps, config: { damping: 10, stiffness: 60 } });
-  const badgeOpacity = interpolate(frame, [140, 165], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const box1Scale = spring({ frame: frame - 10, fps, config: { damping: 14, stiffness: 70 } });
+  const arrowOpacity = interpolate(frame, [44, 65], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const box2Scale = spring({ frame: frame - 55, fps, config: { damping: 14, stiffness: 70 } });
+  const item1Anim = spring({ frame: frame - 98, fps, config: { damping: 14, stiffness: 80 } });
+  const item2Anim = spring({ frame: frame - 128, fps, config: { damping: 14, stiffness: 80 } });
+  const badgeScale = spring({ frame: frame - 158, fps, config: { damping: 10, stiffness: 60 } });
+  const badgeOpacity = interpolate(frame, [158, 180], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
 
   const items = [
-    { label: 'RESEARCH PRICE FIRST', sub: 'Before walking into any store', anim: item1Anim },
-    { label: 'SET YOUR OWN ANCHOR', sub: 'Know your target number cold', anim: item2Anim },
-    { label: 'IGNORE THE DECOY', sub: "The expensive one is a plant", anim: item3Anim },
+    { label: 'RESEARCH BEFORE YOU BUY', anim: item1Anim },
+    { label: 'ONE IN — ONE OUT — ALWAYS', anim: item2Anim },
   ];
 
   return (
@@ -375,30 +396,58 @@ const Scene6: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
         alignItems: 'center',
         justifyContent: 'center',
         padding: 72,
-        gap: 28,
+        gap: 22,
       }}>
-        <p style={{ ...headline(50, BLACK), opacity: titleOpacity }}>THE COUNTER-MOVE</p>
+        <p style={{ ...headline(50, BLACK), opacity: titleOpacity }}>BREAK THE SPIRAL</p>
 
-        <div style={{ width: '100%', maxWidth: 720 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 18 }}>
+          <div style={{ transform: `scale(${box1Scale})`, transformOrigin: 'center', textAlign: 'center' as const }}>
+            <svg width={148} height={132} viewBox="0 0 148 132">
+              <rect x="8" y="26" width="132" height="98" rx="14" fill={ACCENT} />
+              <path d="M 8 50 L 140 50" stroke="#E5650A" strokeWidth="3" />
+              <path d="M 50 6 L 98 6 L 98 26 L 50 26 Z" fill={ACCENT} />
+              <text x="74" y="20" textAnchor="middle" fill={WHITE} fontSize="13" fontFamily={FONT} fontWeight="bold">IN</text>
+              <text x="74" y="82" textAnchor="middle" fill={WHITE} fontSize="16" fontFamily={FONT} fontWeight="bold">NEW ITEM</text>
+              <polyline points="60,102 72,114 90,96" fill="none" stroke={WHITE} strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+            <p style={{ fontFamily: FONT, fontSize: 19, color: ACCENT, textTransform: 'uppercase' as const, margin: 0 }}>ONE IN</p>
+          </div>
+
+          <svg width={50} height={36} viewBox="0 0 50 36" style={{ opacity: arrowOpacity }}>
+            <line x1="4" y1="18" x2="38" y2="18" stroke={BLACK} strokeWidth="5" strokeLinecap="round" />
+            <polyline points="28,8 44,18 28,28" fill="none" stroke={BLACK} strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+
+          <div style={{ transform: `scale(${box2Scale})`, transformOrigin: 'center', textAlign: 'center' as const }}>
+            <svg width={148} height={132} viewBox="0 0 148 132">
+              <rect x="8" y="26" width="132" height="98" rx="14" fill="#EF4444" />
+              <path d="M 8 50 L 140 50" stroke="#CC2222" strokeWidth="3" />
+              <path d="M 50 6 L 98 6 L 98 26 L 50 26 Z" fill="#EF4444" />
+              <text x="74" y="20" textAnchor="middle" fill={WHITE} fontSize="13" fontFamily={FONT} fontWeight="bold">OUT</text>
+              <text x="74" y="82" textAnchor="middle" fill={WHITE} fontSize="16" fontFamily={FONT} fontWeight="bold">OLD ITEM</text>
+              <line x1="60" y1="98" x2="88" y2="116" stroke={WHITE} strokeWidth="6" strokeLinecap="round" />
+              <line x1="88" y1="98" x2="60" y2="116" stroke={WHITE} strokeWidth="6" strokeLinecap="round" />
+            </svg>
+            <p style={{ fontFamily: FONT, fontSize: 19, color: '#EF4444', textTransform: 'uppercase' as const, margin: 0 }}>ONE OUT</p>
+          </div>
+        </div>
+
+        <div style={{ width: '100%', maxWidth: 680 }}>
           {items.map((item, i) => (
             <div key={i} style={{
               display: 'flex',
               alignItems: 'center',
-              gap: 24,
-              marginBottom: 24,
+              gap: 20,
+              marginBottom: 16,
               opacity: item.anim,
-              transform: `translateX(${interpolate(item.anim, [0, 1], [-80, 0])}px)`,
+              transform: `translateX(${interpolate(item.anim, [0, 1], [-60, 0])}px)`,
             }}>
-              <svg width={60} height={60} viewBox="0 0 60 60" style={{ flexShrink: 0 }}>
-                <circle cx="30" cy="30" r="28" fill={ACCENT} />
-                <polyline points="16,30 26,40 44,20"
-                  fill="none" stroke={WHITE} strokeWidth="6"
+              <svg width={52} height={52} viewBox="0 0 52 52" style={{ flexShrink: 0 }}>
+                <circle cx="26" cy="26" r="24" fill={ACCENT} />
+                <polyline points="14,26 22,34 38,18" fill="none" stroke={WHITE} strokeWidth="5"
                   strokeLinecap="round" strokeLinejoin="round" />
               </svg>
-              <div>
-                <p style={{ fontFamily: FONT, fontSize: 30, color: BLACK, margin: 0, letterSpacing: '0.1em', textTransform: 'uppercase' as const }}>{item.label}</p>
-                <p style={{ fontFamily: FONT, fontSize: 19, color: '#666', margin: 0, marginTop: 4, letterSpacing: '0.06em', textTransform: 'uppercase' as const }}>{item.sub}</p>
-              </div>
+              <p style={{ fontFamily: FONT, fontSize: 28, color: BLACK, margin: 0, letterSpacing: '0.1em', textTransform: 'uppercase' as const }}>{item.label}</p>
             </div>
           ))}
         </div>
@@ -409,12 +458,12 @@ const Scene6: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
           transformOrigin: 'center',
           background: ACCENT,
           borderRadius: 28,
-          padding: '26px 56px',
-          textAlign: 'center',
+          padding: '22px 48px',
+          textAlign: 'center' as const,
         }}>
-          <p style={{ ...headline(34, WHITE), marginBottom: 4 }}>KEEP UP TO</p>
-          <p style={headline(92, WHITE)}>$14,000</p>
-          <p style={{ ...headline(30, WHITE), marginTop: 4 }}>PER YEAR</p>
+          <p style={{ ...headline(26, WHITE), marginBottom: 4 }}>SAVES THE AVERAGE PERSON</p>
+          <p style={headline(88, WHITE)}>$2,400</p>
+          <p style={{ ...headline(24, WHITE), marginTop: 4 }}>PER YEAR</p>
         </div>
       </AbsoluteFill>
     </FadeScene>
@@ -435,6 +484,3 @@ export default function DAILY() {
     </AbsoluteFill>
   );
 }
-
-
-
