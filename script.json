@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Buy new sneakers, and suddenly your old bag looks shabby. Then your jacket. Then everything. That cascading urge is called the Diderot Effect.",
-    "visual": "Orange sneaker SVG springs in from center. Arrow points to old bag with red X overlay. $3,000 counter fades in. Text: ONE PURCHASE TRIGGERS THEM ALL.",
-    "accent_color": "orange"
+    "narration": "Seventy percent of lottery winners are broke within five years of their win. Wild, right? Here's the psychology no one tells you about.",
+    "visual": "Dark background. Lottery ticket SVG springs in from below. '70%' counter animates up in giant amber text. Amber bars sweep across top and bottom. Text: GO BROKE IN 5 YEARS.",
+    "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "Philosopher Denis Diderot got a fancy robe in 1769. Suddenly his study felt wrong — he bought a new desk, then a chair, then everything.",
-    "visual": "Coat/robe SVG springs in, arrow appears, desk SVG fades in, second arrow, chair SVG fades in. Badge: NAMED AFTER PHILOSOPHER DENIS DIDEROT.",
-    "accent_color": "orange"
+    "narration": "Suddenly getting millions rewires how your brain calculates 'normal.' A coffee feels cheap. A four-million-dollar mansion? Totally reasonable. It's called hedonic recalibration.",
+    "visual": "Light background. Coffee cup SVG springs in from left, mansion SVG from right. Price tags animate in: '$6 — CHEAP?' and '$4M — REASONABLE?' Text: BRAIN RECALIBRATES WHAT'S NORMAL.",
+    "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Your brain craves harmony — psychologists call it unity theory. One upgrade breaks that balance, so your brain demands everything else gets upgraded too.",
-    "visual": "Brain SVG with UNITY THEORY label. Three numbered steps slide in: BUY SOMETHING NEW, OLD STUFF LOOKS WRONG, BUY MORE TO MATCH.",
-    "accent_color": "orange"
+    "narration": "In year one, winners average over four hundred requests for money — from friends, family, even strangers. Most can't say no, and give away tens of thousands.",
+    "visual": "Dark background. Center person SVG surrounded by 8 smaller silhouettes with '$$$' labels reaching in. Counter animates 0 to 400+. Text: REQUESTS IN YEAR ONE.",
+    "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "Studies show the average Diderot cascade costs $3,000. Triggered by big purchases — furniture, cars, electronics, or even a single outfit.",
-    "visual": "Counter animates $0 to $3,000. Four SVG icons spring in sequentially: couch, phone, car, shirt. Title: THE $3,000 SPIRAL.",
-    "accent_color": "orange"
+    "narration": "Then the IRS shows up. A fifty-million jackpot becomes thirty million as a lump sum, then drops to around seventeen million after taxes. Less than half.",
+    "visual": "Light background. Three animated bars growing in sequence: JACKPOT $50M (amber), LUMP SUM $30M (orange), AFTER TAX ~$17M (red). Title: WHAT YOU ACTUALLY KEEP.",
+    "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "Seventy-three percent of people feel this after a big purchase. It's not a personal flaw — it's your brain's wiring. And now you can stop it.",
-    "visual": "Large 73% text fades in. Progress bar fills to 73%. Ten person silhouettes appear — seven orange (affected), three grey. Badge: IT'S BRAIN WIRING.",
-    "accent_color": "orange"
+    "narration": "The cruelest part? Happiness returns to your baseline in about twelve months. The mansion feels ordinary, excitement fades — but the spending never stops.",
+    "visual": "Dark background. SVG line graph with happiness curve peaking at WIN marker then falling back to baseline. Amber dot traces the curve. Month labels M3 M6 M9 M12. Title: HAPPINESS RESETS IN 12 MONTHS.",
+    "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "The fix? One in, one out — every time something new comes in, something old goes out. People who follow it save an average of $2,400 a year.",
-    "visual": "ONE IN box and ONE OUT box spring in with arrow between. Two checkmarks slide in. Orange badge: SAVES THE AVERAGE PERSON $2,400 PER YEAR.",
-    "accent_color": "orange"
+    "narration": "This hits any windfall — bonus, inheritance, same trap. Wait six months, invest eighty percent, tell no one. Follow for more money psychology.",
+    "visual": "Light background. Piggy bank SVG with coins dropping in. Three rules reveal one by one: 01 WAIT 6 MONTHS, 02 INVEST 80%, 03 TELL NO ONE. Amber FOLLOW FOR MORE button fades in.",
+    "accent_color": "amber"
   }
 ]
