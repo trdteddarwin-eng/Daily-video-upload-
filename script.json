@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Seventy percent of lottery winners are broke within five years of their win. Wild, right? Here's the psychology no one tells you about.",
-    "visual": "Dark background. Lottery ticket SVG springs in from below. '70%' counter animates up in giant amber text. Amber bars sweep across top and bottom. Text: GO BROKE IN 5 YEARS.",
+    "narration": "The average American blows thirty-one thousand dollars on regretted impulse buys every single decade. That's not a willpower problem — it's a brain problem. And one simple rule fixes it.",
+    "visual": "Dark background. Amber person silhouette surrounded by floating white price tags ($47, $89, $124, $220) drifting upward. '$31,000' in large amber text at top with 'IMPULSE BUY TRAP' subtitle.",
     "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "Suddenly getting millions rewires how your brain calculates 'normal.' A coffee feels cheap. A four-million-dollar mansion? Totally reasonable. It's called hedonic recalibration.",
-    "visual": "Light background. Coffee cup SVG springs in from left, mansion SVG from right. Price tags animate in: '$6 — CHEAP?' and '$4M — REASONABLE?' Text: BRAIN RECALIBRATES WHAT'S NORMAL.",
+    "narration": "Your brain floods with dopamine the moment you see something you want — not when you actually buy it. That rush fades on its own within seventy-two hours. You don't need willpower, you need time.",
+    "visual": "Light background. Dark head silhouette with amber brain pulsing inside. Dopamine sparks radiate outward. Clock below shows '72 HRS' with hand sweeping. Text: YOUR BRAIN WANTS IT NOW.",
     "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "In year one, winners average over four hundred requests for money — from friends, family, even strangers. Most can't say no, and give away tens of thousands.",
-    "visual": "Dark background. Center person SVG surrounded by 8 smaller silhouettes with '$$$' labels reaching in. Counter animates 0 to 400+. Text: REQUESTS IN YEAR ONE.",
+    "narration": "The rule is dead simple. Never buy anything non-essential over thirty dollars in the moment. Write it down. Wait seventy-two hours. Then decide.",
+    "visual": "Dark background. Green $30 bill with red X crossing it out. Three checklist items spring in one by one: 'NON-ESSENTIAL?', 'OVER $30?', 'WAIT 72 HOURS'. Amber '72 HOURS' at bottom.",
     "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "Then the IRS shows up. A fifty-million jackpot becomes thirty million as a lump sum, then drops to around seventeen million after taxes. Less than half.",
-    "visual": "Light background. Three animated bars growing in sequence: JACKPOT $50M (amber), LUMP SUM $30M (orange), AFTER TAX ~$17M (red). Title: WHAT YOU ACTUALLY KEEP.",
+    "narration": "People who use the rule cancel eighty-seven percent of impulse purchases after waiting. On a hundred-dollar item, that's eighty-seven dollars back in your pocket every single time.",
+    "visual": "Light background. Two-bar chart animates up: tall amber bar (100 impulse buys) vs short green bar (13 actually needed). '87% NEVER BOUGHT' label. Percentage counter grows to 87.",
     "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "The cruelest part? Happiness returns to your baseline in about twelve months. The mansion feels ordinary, excitement fades — but the spending never stops.",
-    "visual": "Dark background. SVG line graph with happiness curve peaking at WIN marker then falling back to baseline. Amber dot traces the curve. Month labels M3 M6 M9 M12. Title: HAPPINESS RESETS IN 12 MONTHS.",
+    "narration": "The trick is keeping a 'someday list' on your phone instead of adding things to a cart. Most items fall off the list by themselves within a week — without you spending a cent.",
+    "visual": "Dark background. Phone outline with 'SOMEDAY LIST' on screen, three items appearing one by one, third item crossed out. Pink piggy bank beside phone with coin dropping in repeatedly.",
     "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "This hits any windfall — bonus, inheritance, same trap. Wait six months, invest eighty percent, tell no one. Follow for more money psychology.",
-    "visual": "Light background. Piggy bank SVG with coins dropping in. Three rules reveal one by one: 01 WAIT 6 MONTHS, 02 INVEST 80%, 03 TELL NO ONE. Amber FOLLOW FOR MORE button fades in.",
+    "narration": "Next time you want to click 'buy now,' add it to the list instead. Give it seventy-two hours. That one pause saves you thirty-one thousand dollars this decade. Start the list tonight.",
+    "visual": "Light background. Phone showing someday list with pulsing amber 'ADD TO LIST' button. Savings counter grows from $0 to $31,000. Bold 'START TONIGHT' in black at bottom.",
     "accent_color": "amber"
   }
 ]
