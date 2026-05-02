@@ -3,9 +3,11 @@ import { AbsoluteFill, Series, useCurrentFrame, useVideoConfig, interpolate, spr
 
 const BG_DARK = '#121212';
 const BG_LIGHT = '#F5F5F5';
-const ACCENT = '#F59E0B';
+const ACCENT = '#EF4444';
 const WHITE = '#F5F5F5';
 const BLACK = '#121212';
+const AMBER = '#F59E0B';
+const GREEN = '#10B981';
 const FONT = '"Arial Black", "Helvetica Neue", Arial, sans-serif';
 
 const headline = (size: number, color: string): React.CSSProperties => ({
@@ -27,606 +29,529 @@ const FadeScene: React.FC<{ children: React.ReactNode; bg: string; dur: number }
   return <AbsoluteFill style={{ background: bg, opacity }}>{children}</AbsoluteFill>;
 };
 
-// ─── SCENES ──────────────────────────────────────────────────────────────────
-
-// Scene 1: Hook — person silhouette + floating price tags + $31,000 title
+// ─── SCENE 1 ─────────────────────────────────────────────────────────────────
 const Scene1: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  const titleS = spring({ frame, fps, config: { damping: 14, stiffness: 90 } });
-  const personS = spring({ frame, fps, config: { damping: 12, stiffness: 70 } });
-  const hookOp = interpolate(frame, [60, 90], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const titleSlide = interpolate(frame, [20, 45], [80, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const titleOpacity = interpolate(frame, [20, 45], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
 
-  const tags = [
-    { label: '$47',  x: 155, startY: 680, delay: 18 },
-    { label: '$89',  x: 890, startY: 760, delay: 32 },
-    { label: '$124', x: 200, startY: 1060, delay: 48 },
-    { label: '$220', x: 855, startY: 620, delay: 24 },
-    { label: '$67',  x: 120, startY: 870, delay: 40 },
-    { label: '$155', x: 910, startY: 1010, delay: 14 },
-  ];
+  const leftGlow = interpolate(frame, [30, 70], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const rightDim = interpolate(frame, [50, 90], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+
+  const labelOpacity = interpolate(frame, [80, 110], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
 
   return (
     <FadeScene bg={BG_DARK} dur={dur}>
-      <AbsoluteFill>
-        <svg width="1080" height="1920" style={{ position: 'absolute', top: 0, left: 0 }}>
-          {/* Person silhouette */}
-          <g
-            transform={`translate(540,950) scale(${personS}) translate(-540,-950)`}
-            opacity={0.18}
-          >
-            <circle cx="540" cy="710" r="78" fill={ACCENT} />
-            <rect x="458" y="798" width="164" height="265" rx="22" fill={ACCENT} />
-            <rect x="298" y="815" width="162" height="46" rx="23" fill={ACCENT} />
-            <rect x="622" y="815" width="162" height="46" rx="23" fill={ACCENT} />
-            <rect x="466" y="1058" width="66" height="185" rx="22" fill={ACCENT} />
-            <rect x="550" y="1058" width="66" height="185" rx="22" fill={ACCENT} />
-          </g>
+      {/* Title */}
+      <div style={{
+        position: 'absolute', top: 120, left: 0, right: 0,
+        display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12,
+        opacity: titleOpacity, transform: `translateY(${titleSlide}px)`,
+      }}>
+        <p style={headline(52, WHITE)}>YOUR BRAIN</p>
+        <p style={headline(52, ACCENT)}>ON BROKE</p>
+      </div>
 
-          {/* Floating price tags */}
-          {tags.map((tag, i) => {
-            const tagOp = interpolate(frame, [tag.delay, tag.delay + 22], [0, 1], {
-              extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
-            });
-            const ty = interpolate(frame, [tag.delay, dur], [tag.startY, tag.startY - 200], {
-              extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
-            });
-            return (
-              <g key={i} transform={`translate(${tag.x},${ty})`} opacity={tagOp}>
-                <rect x="-54" y="-28" width="108" height="56" rx="8" fill={WHITE} />
-                <circle cx="-54" cy="0" r="7" fill={BG_DARK} />
-                <line x1="-47" y1="0" x2="-47" y2="-28" stroke={BG_DARK} strokeWidth="1.5" />
-                <text
-                  x="6"
-                  y="9"
-                  textAnchor="middle"
-                  fontSize="23"
-                  fontFamily={FONT}
-                  fill={BLACK}
-                >
-                  {tag.label}
-                </text>
-              </g>
-            );
+      {/* Brain SVG — split in half */}
+      <svg width="480" height="340" viewBox="0 0 480 340" style={{ position: 'absolute', top: 280, left: 300 }}>
+        {/* Left brain half — glowing amber */}
+        <g opacity={leftGlow}>
+          <ellipse cx="195" cy="170" rx="140" ry="115" fill="#1a1000" stroke={AMBER} strokeWidth="3" />
+          <path d="M195 55 Q195 170 195 285" stroke={AMBER} strokeWidth="2" fill="none" strokeDasharray="8,4" />
+          {/* brain folds left */}
+          <path d="M120 120 Q150 100 170 130 Q150 160 120 140 Z" fill={AMBER} opacity="0.3" />
+          <path d="M100 160 Q130 145 155 170 Q130 195 100 180 Z" fill={AMBER} opacity="0.3" />
+          <path d="M115 200 Q145 185 165 210 Q145 235 115 220 Z" fill={AMBER} opacity="0.3" />
+          {/* Gear icon left */}
+          <circle cx="150" cy="170" r="22" fill="none" stroke={AMBER} strokeWidth="3" />
+          <circle cx="150" cy="170" r="10" fill={AMBER} opacity="0.6" />
+          {[0,45,90,135,180,225,270,315].map((angle, i) => {
+            const rad = (angle * Math.PI) / 180;
+            const x1 = 150 + 22 * Math.cos(rad);
+            const y1 = 170 + 22 * Math.sin(rad);
+            const x2 = 150 + 30 * Math.cos(rad);
+            const y2 = 170 + 30 * Math.sin(rad);
+            return <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} stroke={AMBER} strokeWidth="4" strokeLinecap="round" />;
           })}
-        </svg>
+          {/* Lightbulb left */}
+          <ellipse cx="150" cy="230" rx="12" ry="16" fill="none" stroke={AMBER} strokeWidth="2.5" />
+          <path d="M142 246 Q150 258 158 246" fill="none" stroke={AMBER} strokeWidth="2.5" />
+          <line x1="146" y1="258" x2="154" y2="258" stroke={AMBER} strokeWidth="2.5" />
+        </g>
 
-        {/* Title */}
-        <div
-          style={{
-            position: 'absolute',
-            top: 110,
-            left: 0,
-            right: 0,
-            display: 'flex',
-            flexDirection: 'column' as const,
-            alignItems: 'center',
-            gap: 10,
-            opacity: titleS,
-            transform: `translateY(${interpolate(titleS, [0, 1], [70, 0])}px)`,
-          }}
-        >
-          <p style={headline(108, ACCENT)}>$31,000</p>
-          <p style={headline(40, WHITE)}>IMPULSE BUY TRAP</p>
-          <p style={{ ...headline(26, WHITE), opacity: 0.55 }}>EVERY DECADE</p>
-        </div>
+        {/* Right brain half — dimmed red */}
+        <g opacity={rightDim}>
+          <ellipse cx="285" cy="170" rx="140" ry="115" fill="#1a0000" stroke={ACCENT} strokeWidth="3" />
+          <path d="M285 55 Q285 170 285 285" stroke={ACCENT} strokeWidth="2" fill="none" strokeDasharray="8,4" />
+          {/* brain folds right */}
+          <path d="M360 120 Q330 100 310 130 Q330 160 360 140 Z" fill={ACCENT} opacity="0.25" />
+          <path d="M380 160 Q350 145 325 170 Q350 195 380 180 Z" fill={ACCENT} opacity="0.25" />
+          <path d="M365 200 Q335 185 315 210 Q335 235 365 220 Z" fill={ACCENT} opacity="0.25" />
+          {/* Dollar signs scattered */}
+          {[[310, 140], [340, 175], [315, 205]].map(([x, y], i) => (
+            <text key={i} x={x} y={y} fontSize="22" fill={ACCENT} opacity="0.6" fontFamily="Arial" textAnchor="middle">$</text>
+          ))}
+          {/* Question marks */}
+          {[[355, 155], [330, 210]].map(([x, y], i) => (
+            <text key={i} x={x} y={y} fontSize="20" fill={ACCENT} opacity="0.5" fontFamily="Arial" textAnchor="middle">?</text>
+          ))}
+        </g>
 
-        {/* Hook line */}
-        <div
-          style={{
-            position: 'absolute',
-            bottom: 210,
-            left: 60,
-            right: 60,
-            opacity: hookOp,
-          }}
-        >
-          <p
-            style={{
-              fontFamily: FONT,
-              fontSize: 36,
-              color: WHITE,
-              textAlign: 'center' as const,
-              margin: 0,
-              lineHeight: 1.45,
-            }}
-          >
-            One simple rule fixes it.
-          </p>
+        {/* Dividing line */}
+        <line x1="240" y1="55" x2="240" y2="285" stroke={WHITE} strokeWidth="2" opacity="0.4" />
+      </svg>
+
+      {/* Labels */}
+      <div style={{
+        position: 'absolute', top: 650, left: 0, right: 0,
+        display: 'flex', justifyContent: 'center', gap: 120,
+        opacity: labelOpacity,
+      }}>
+        <div style={{ textAlign: 'center' }}>
+          <p style={headline(26, AMBER)}>NORMAL</p>
         </div>
-      </AbsoluteFill>
+        <div style={{ textAlign: 'center' }}>
+          <p style={headline(26, ACCENT)}>SCARCITY</p>
+          <p style={headline(26, ACCENT)}>MODE</p>
+        </div>
+      </div>
+
+      {/* Subtitle */}
+      <div style={{
+        position: 'absolute', bottom: 220, left: 60, right: 60,
+        opacity: labelOpacity,
+      }}>
+        <p style={{ ...headline(32, WHITE), lineHeight: 1.3 }}>
+          WORRYING ABOUT MONEY<br />
+          <span style={{ color: ACCENT }}>MAKES YOU WORSE AT IT</span>
+        </p>
+      </div>
     </FadeScene>
   );
 };
 
-// Scene 2: Brain psychology — head with pulsing brain + dopamine sparks + 72h clock
+// ─── SCENE 2 ─────────────────────────────────────────────────────────────────
+
 const Scene2: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  const headS = spring({ frame, fps, config: { damping: 14, stiffness: 90 } });
-  const sparkProg = interpolate(frame, [25, 85], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const textOp = interpolate(frame, [50, 80], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const clockProg = interpolate(frame, [0, dur], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-
-  // Brain pulse (looping)
-  const brainPulse = interpolate(frame % 50, [0, 25, 50], [1, 1.09, 1], {
-    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
-  });
-
-  // 8 dopamine sparks at evenly spaced angles
-  const sparkAngles = [0, 45, 90, 135, 180, 225, 270, 315];
+  const titleIn = interpolate(frame, [10, 35], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const needleAngle = interpolate(frame, [30, 90], [-80, -20], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const barHeight = interpolate(frame, [60, 110], [0, 180], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const numDisplay = interpolate(frame, [70, 120], [100, 87], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const badgeIn = spring({ frame: frame - 110, fps, config: { damping: 14, stiffness: 120 } });
 
   return (
     <FadeScene bg={BG_LIGHT} dur={dur}>
-      <AbsoluteFill>
-        <svg width="1080" height="1920" style={{ position: 'absolute', top: 0, left: 0 }}>
-          {/* Head silhouette */}
-          <g transform={`translate(540,800) scale(${headS}) translate(-540,-800)`}>
-            <circle cx="540" cy="800" r="210" fill="#2A2A2A" />
-            {/* Brain inside */}
-            <ellipse
-              cx="540"
-              cy="770"
-              rx={142 * brainPulse}
-              ry={112 * brainPulse}
-              fill={ACCENT}
-              opacity={0.92}
-            />
-            {/* Brain folds */}
-            <path d="M 428 770 Q 484 742 540 770 Q 596 798 652 770" stroke={BLACK} strokeWidth="3" fill="none" opacity="0.4" />
-            <path d="M 440 795 Q 490 812 540 795" stroke={BLACK} strokeWidth="2" fill="none" opacity="0.4" />
-            <line x1="540" y1="680" x2="540" y2="875" stroke={BLACK} strokeWidth="2" opacity="0.3" />
-            {/* Neck */}
-            <rect x="494" y="1005" width="92" height="75" rx="10" fill="#2A2A2A" />
-          </g>
+      {/* Title */}
+      <div style={{ position: 'absolute', top: 100, left: 0, right: 0, opacity: titleIn }}>
+        <p style={headline(44, BLACK)}>HARVARD</p>
+        <p style={headline(44, ACCENT)}>RESEARCH FOUND:</p>
+      </div>
 
-          {/* Dopamine sparks */}
-          {sparkAngles.map((angle, i) => {
-            const rad = (angle * Math.PI) / 180;
-            const r = interpolate(sparkProg, [0, 1], [225, 330 + i * 8]);
-            const cx = 540 + Math.cos(rad) * r;
-            const cy = 800 + Math.sin(rad) * r;
-            const sOp = interpolate(sparkProg, [0, 0.25, 0.75, 1], [0, 1, 1, 0]);
-            return (
-              <circle key={i} cx={cx} cy={cy} r={13 - i * 0.4} fill={ACCENT} opacity={sOp} />
-            );
-          })}
+      {/* IQ Meter — semicircle gauge */}
+      <svg width="500" height="300" viewBox="0 0 500 300" style={{ position: 'absolute', top: 280, left: 290 }}>
+        {/* Gauge arc */}
+        <path d="M60 250 A190 190 0 0 1 440 250" fill="none" stroke="#ddd" strokeWidth="28" strokeLinecap="round" />
+        <path d="M60 250 A190 190 0 0 1 440 250" fill="none" stroke={ACCENT} strokeWidth="28" strokeLinecap="round"
+          strokeDasharray="596" strokeDashoffset={interpolate(frame, [30, 90], [596, 149], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })} />
 
-          {/* Clock */}
-          <g transform="translate(540,1380)">
-            <circle cx="0" cy="0" r="105" fill="none" stroke={BLACK} strokeWidth="6" />
-            {[0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330].map((a, i) => {
-              const r2 = (a * Math.PI) / 180;
-              return (
-                <line
-                  key={i}
-                  x1={Math.cos(r2) * 88}
-                  y1={Math.sin(r2) * 88}
-                  x2={Math.cos(r2) * 105}
-                  y2={Math.sin(r2) * 105}
-                  stroke={BLACK}
-                  strokeWidth={i % 3 === 0 ? 5 : 2}
-                />
-              );
-            })}
-            {/* Hour hand */}
-            <line
-              x1="0" y1="0"
-              x2={Math.cos(((clockProg * 360 - 90) * Math.PI) / 180) * 58}
-              y2={Math.sin(((clockProg * 360 - 90) * Math.PI) / 180) * 58}
-              stroke={BLACK} strokeWidth="6" strokeLinecap="round"
-            />
-            {/* Minute hand */}
-            <line
-              x1="0" y1="0"
-              x2={Math.cos((((clockProg * 360 * 12) % 360 - 90) * Math.PI) / 180) * 82}
-              y2={Math.sin((((clockProg * 360 * 12) % 360 - 90) * Math.PI) / 180) * 82}
-              stroke={ACCENT} strokeWidth="4" strokeLinecap="round"
-            />
-            <circle cx="0" cy="0" r="7" fill={BLACK} />
-          </g>
-        </svg>
+        {/* Needle */}
+        <g transform={`translate(250,250) rotate(${needleAngle})`}>
+          <line x1="0" y1="0" x2="0" y2="-165" stroke={BLACK} strokeWidth="4" strokeLinecap="round" />
+          <circle cx="0" cy="0" r="10" fill={BLACK} />
+        </g>
 
-        {/* Top label */}
-        <div style={{ position: 'absolute', top: 108, left: 60, right: 60, opacity: textOp }}>
-          <p style={headline(50, BLACK)}>YOUR BRAIN</p>
-          <p style={{ ...headline(50, ACCENT), marginTop: 6 }}>WANTS IT NOW</p>
+        {/* IQ labels */}
+        <text x="55" y="290" fontSize="22" fill="#888" fontFamily="Arial" textAnchor="middle">70</text>
+        <text x="250" y="60" fontSize="22" fill="#888" fontFamily="Arial" textAnchor="middle">100</text>
+        <text x="445" y="290" fontSize="22" fill="#888" fontFamily="Arial" textAnchor="middle">130</text>
+
+        {/* Current IQ number */}
+        <text x="250" y="230" fontSize="72" fill={ACCENT} fontFamily='"Arial Black", Arial' textAnchor="middle" fontWeight="900">
+          {Math.floor(numDisplay)}
+        </text>
+        <text x="250" y="275" fontSize="22" fill="#555" fontFamily="Arial" textAnchor="middle">IQ POINTS</text>
+      </svg>
+
+      {/* Stress bar */}
+      <div style={{ position: 'absolute', top: 340, left: 80, width: 160 }}>
+        <p style={{ ...headline(20, '#555'), marginBottom: 10 }}>STRESS LEVEL</p>
+        <div style={{ width: 50, height: 200, background: '#ddd', borderRadius: 8, overflow: 'hidden', position: 'relative' }}>
+          <div style={{
+            position: 'absolute', bottom: 0, left: 0, right: 0,
+            height: barHeight, background: ACCENT, borderRadius: 8,
+          }} />
         </div>
+      </div>
 
-        {/* 72 HRS label */}
-        <div style={{ position: 'absolute', bottom: 200, left: 60, right: 60, opacity: textOp }}>
-          <p style={headline(78, BLACK)}>72 HOURS</p>
-          <p style={{ ...headline(30, BLACK), opacity: 0.55, marginTop: 8 }}>AND THE URGE IS GONE</p>
+      {/* -13 badge */}
+      <div style={{
+        position: 'absolute', top: 620, left: 0, right: 0, display: 'flex', justifyContent: 'center',
+        transform: `scale(${badgeIn})`,
+      }}>
+        <div style={{
+          background: ACCENT, borderRadius: 20, padding: '20px 50px',
+        }}>
+          <p style={headline(72, WHITE)}>-13</p>
+          <p style={headline(28, WHITE)}>IQ POINTS</p>
         </div>
-      </AbsoluteFill>
+      </div>
+
+      <div style={{ position: 'absolute', bottom: 180, left: 60, right: 60, opacity: titleIn }}>
+        <p style={{ ...headline(28, BLACK), lineHeight: 1.4 }}>
+          LIKE RUNNING ON<br /><span style={{ color: ACCENT }}>ZERO SLEEP — EVERY DAY</span>
+        </p>
+      </div>
     </FadeScene>
   );
 };
 
-// Scene 3: The Rule — $30 bill with X + 3-item checklist
+// ─── SCENE 3 ─────────────────────────────────────────────────────────────────
 const Scene3: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
 
-  const titleS = spring({ frame, fps, config: { damping: 14, stiffness: 90 } });
-  const billS = spring({ frame, fps, config: { damping: 12, stiffness: 80 } });
-  const xOp = interpolate(frame, [28, 58], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-
-  const item1S = spring({ frame: Math.max(0, frame - 48), fps, config: { damping: 14, stiffness: 100 } });
-  const item2S = spring({ frame: Math.max(0, frame - 72), fps, config: { damping: 14, stiffness: 100 } });
-  const item3S = spring({ frame: Math.max(0, frame - 96), fps, config: { damping: 14, stiffness: 100 } });
-  const bottomOp = interpolate(frame, [110, 145], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const titleIn = interpolate(frame, [8, 30], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const bar1W = interpolate(frame, [30, 75], [0, 330], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const bar2W = interpolate(frame, [55, 95], [0, 110], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const bar3W = interpolate(frame, [80, 115], [0, 110], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const lab1 = interpolate(frame, [75, 100], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const lab2 = interpolate(frame, [95, 115], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const lab3 = interpolate(frame, [115, 135], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const noteIn = interpolate(frame, [140, 165], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
 
   return (
     <FadeScene bg={BG_DARK} dur={dur}>
-      <AbsoluteFill>
-        <svg width="1080" height="1920" style={{ position: 'absolute', top: 0, left: 0 }}>
-          {/* $30 Bill */}
-          <g transform={`translate(540,600) scale(${billS}) translate(-540,-600)`}>
-            <rect x="230" y="478" width="620" height="244" rx="14" fill="#1a5c2a" />
-            <rect x="244" y="492" width="592" height="216" rx="8" fill="none" stroke="#2d8a42" strokeWidth="3" />
-            <text x="540" y="626" textAnchor="middle" fontSize="110" fontFamily={FONT} fill="#e8f5e9">$30</text>
-            <text x="262" y="612" textAnchor="middle" fontSize="22" fontFamily={FONT} fill="#2d8a42">30</text>
-            <text x="818" y="612" textAnchor="middle" fontSize="22" fontFamily={FONT} fill="#2d8a42">30</text>
-            <circle cx="540" cy="600" r="58" fill="none" stroke="#2d8a42" strokeWidth="3" />
-          </g>
+      <div style={{ position: 'absolute', top: 110, left: 0, right: 0, opacity: titleIn }}>
+        <p style={headline(44, WHITE)}>MENTAL</p>
+        <p style={headline(44, ACCENT)}>BANDWIDTH</p>
+      </div>
 
-          {/* Red X over bill */}
-          <g opacity={xOp}>
-            <line x1="230" y1="478" x2="850" y2="722" stroke="#EF4444" strokeWidth="9" strokeLinecap="round" />
-            <line x1="850" y1="478" x2="230" y2="722" stroke="#EF4444" strokeWidth="9" strokeLinecap="round" />
-          </g>
-
-          {/* Checklist */}
-          <g transform="translate(100,870)">
-            {/* Item 1 */}
-            <g
-              opacity={item1S}
-              transform={`translate(${interpolate(item1S, [0, 1], [-55, 0])},0)`}
-            >
-              <rect x="0" y="0" width="44" height="44" rx="8" fill={ACCENT} />
-              <text x="22" y="31" textAnchor="middle" fontSize="26" fontFamily={FONT} fill={BLACK}>1</text>
-              <text x="62" y="31" fontSize="30" fontFamily={FONT} fill={WHITE}>NON-ESSENTIAL?</text>
-            </g>
-
-            {/* Item 2 */}
-            <g
-              opacity={item2S}
-              transform={`translate(${interpolate(item2S, [0, 1], [-55, 0])},80)`}
-            >
-              <rect x="0" y="0" width="44" height="44" rx="8" fill={ACCENT} />
-              <text x="22" y="31" textAnchor="middle" fontSize="26" fontFamily={FONT} fill={BLACK}>2</text>
-              <text x="62" y="31" fontSize="30" fontFamily={FONT} fill={WHITE}>OVER $30?</text>
-            </g>
-
-            {/* Item 3 */}
-            <g
-              opacity={item3S}
-              transform={`translate(${interpolate(item3S, [0, 1], [-55, 0])},160)`}
-            >
-              <rect x="0" y="0" width="44" height="44" rx="8" fill={ACCENT} />
-              <text x="22" y="31" textAnchor="middle" fontSize="26" fontFamily={FONT} fill={BLACK}>3</text>
-              <text x="62" y="31" fontSize="30" fontFamily={FONT} fill={WHITE}>WAIT 72 HOURS</text>
-            </g>
-          </g>
-        </svg>
-
-        {/* Title */}
-        <div
-          style={{
-            position: 'absolute',
-            top: 106,
-            left: 60,
-            right: 60,
-            opacity: titleS,
-            transform: `translateY(${interpolate(titleS, [0, 1], [44, 0])}px)`,
-          }}
-        >
-          <p style={headline(58, ACCENT)}>THE RULE</p>
-          <p style={{ ...headline(30, WHITE), marginTop: 8 }}>THAT CHANGES EVERYTHING</p>
+      <div style={{ position: 'absolute', top: 300, left: 80, right: 80 }}>
+        <div style={{ width: 550, height: 60, background: '#2a2a2a', borderRadius: 12, overflow: 'hidden', display: 'flex' }}>
+          <div style={{ width: bar1W, height: '100%', background: ACCENT, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            {bar1W > 80 && <span style={{ ...headline(18, WHITE), letterSpacing: '0.05em' }}>BILL WORRY</span>}
+          </div>
+          <div style={{ width: bar2W, height: '100%', background: '#F97316', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            {bar2W > 50 && <span style={{ ...headline(14, WHITE), letterSpacing: '0.05em' }}>STRESS</span>}
+          </div>
+          <div style={{ width: bar3W, height: '100%', background: GREEN, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            {bar3W > 50 && <span style={{ ...headline(13, WHITE), letterSpacing: '0.02em' }}>SMART</span>}
+          </div>
         </div>
-
-        {/* Bottom amber label */}
-        <div style={{ position: 'absolute', bottom: 195, left: 60, right: 60, opacity: bottomOp }}>
-          <p style={headline(52, ACCENT)}>72 HOURS</p>
-          <p style={{ ...headline(26, WHITE), opacity: 0.65, marginTop: 6 }}>BEFORE YOU BUY</p>
+        <div style={{ display: 'flex', marginTop: 16, gap: 0 }}>
+          <div style={{ width: 330, opacity: lab1, textAlign: 'center' }}>
+            <p style={headline(22, ACCENT)}>60%</p>
+          </div>
+          <div style={{ width: 110, opacity: lab2, textAlign: 'center' }}>
+            <p style={headline(22, '#F97316')}>20%</p>
+          </div>
+          <div style={{ width: 110, opacity: lab3, textAlign: 'center' }}>
+            <p style={headline(22, GREEN)}>20%</p>
+          </div>
         </div>
-      </AbsoluteFill>
+      </div>
+
+      <svg width="220" height="180" viewBox="0 0 220 180" style={{ position: 'absolute', top: 430, left: 215, opacity: titleIn }}>
+        <ellipse cx="110" cy="90" rx="95" ry="75" fill="none" stroke={WHITE} strokeWidth="3" opacity="0.3" />
+        <path d="M110 15 Q110 90 110 165" stroke={WHITE} strokeWidth="2" fill="none" strokeDasharray="6,4" opacity="0.3" />
+        <path d="M55 65 Q80 50 95 75 Q80 100 55 85 Z" fill={ACCENT} opacity="0.4" />
+        <path d="M45 100 Q70 88 88 108 Q70 128 45 115 Z" fill={ACCENT} opacity="0.4" />
+        <path d="M165 65 Q140 50 125 75 Q140 100 165 85 Z" fill={GREEN} opacity="0.2" />
+        <path d="M175 100 Q150 88 132 108 Q150 128 175 115 Z" fill={GREEN} opacity="0.2" />
+      </svg>
+
+      <div style={{ position: 'absolute', bottom: 200, left: 60, right: 60, opacity: noteIn }}>
+        <p style={{ ...headline(30, WHITE), lineHeight: 1.4 }}>
+          NOT LAZINESS —<br /><span style={{ color: ACCENT }}>IT'S BIOLOGY</span>
+        </p>
+      </div>
     </FadeScene>
   );
 };
 
-// Scene 4: The Math — two-bar chart + 87% counter
+// ─── SCENE 4 ─────────────────────────────────────────────────────────────────
 const Scene4: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  const barS = spring({ frame: Math.max(0, frame - 18), fps, config: { damping: 18, stiffness: 55 } });
-  const labelOp = interpolate(frame, [70, 100], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const pctCount = Math.floor(
-    interpolate(frame, [45, 170], [0, 87], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })
-  );
-
-  const BAR_H = 560;
-  const bar1H = barS * BAR_H;
-  const bar2H = barS * BAR_H * 0.13;
+  const titleIn = interpolate(frame, [8, 32], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const piggyIn = spring({ frame: frame - 20, fps, config: { damping: 16, stiffness: 100 } });
+  const crackOpacity = interpolate(frame, [60, 85], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const icon1In = spring({ frame: frame - 90, fps, config: { damping: 14, stiffness: 110 } });
+  const icon2In = spring({ frame: frame - 115, fps, config: { damping: 14, stiffness: 110 } });
+  const icon3In = spring({ frame: frame - 140, fps, config: { damping: 14, stiffness: 110 } });
+  const amountIn = interpolate(frame, [155, 185], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
 
   return (
     <FadeScene bg={BG_LIGHT} dur={dur}>
-      <AbsoluteFill>
-        <svg width="1080" height="1920" style={{ position: 'absolute', top: 0, left: 0 }}>
-          {/* Baseline */}
-          <line x1="80" y1="1130" x2="1000" y2="1130" stroke={BLACK} strokeWidth="3" opacity={0.15} />
+      <div style={{ position: 'absolute', top: 100, left: 0, right: 0, opacity: titleIn }}>
+        <p style={headline(42, BLACK)}>THE REAL</p>
+        <p style={headline(42, ACCENT)}>COST OF STRESS</p>
+      </div>
 
-          {/* Bar 1 — all impulse buys (amber) */}
-          <g transform="translate(290,1130)">
-            <rect x="-130" y={-bar1H} width="260" height={bar1H} rx="14" fill={ACCENT} />
-            <text x="0" y="52" textAnchor="middle" fontSize="26" fontFamily={FONT} fill={BLACK}>100</text>
-            <text x="0" y="82" textAnchor="middle" fontSize="20" fontFamily={FONT} fill="#555">IMPULSE</text>
-            <text x="0" y="106" textAnchor="middle" fontSize="20" fontFamily={FONT} fill="#555">BUYS</text>
-          </g>
+      <svg width="300" height="260" viewBox="0 0 300 260"
+        style={{ position: 'absolute', top: 260, left: 390, transform: `scale(${piggyIn})`, transformOrigin: 'center' }}>
+        <ellipse cx="145" cy="155" rx="110" ry="90" fill="#F9A8D4" stroke="#E879A0" strokeWidth="3" />
+        <circle cx="245" cy="125" r="55" fill="#F9A8D4" stroke="#E879A0" strokeWidth="3" />
+        <ellipse cx="268" cy="138" rx="22" ry="16" fill="#F472B6" />
+        <circle cx="262" cy="136" r="5" fill="#9D174D" />
+        <circle cx="274" cy="136" r="5" fill="#9D174D" />
+        <circle cx="250" cy="112" r="6" fill="#9D174D" />
+        <ellipse cx="237" cy="78" rx="14" ry="20" fill="#F9A8D4" stroke="#E879A0" strokeWidth="2" />
+        <rect x="65" y="228" width="30" height="28" rx="8" fill="#F9A8D4" stroke="#E879A0" strokeWidth="2" />
+        <rect x="108" y="232" width="30" height="24" rx="8" fill="#F9A8D4" stroke="#E879A0" strokeWidth="2" />
+        <rect x="158" y="232" width="30" height="24" rx="8" fill="#F9A8D4" stroke="#E879A0" strokeWidth="2" />
+        <rect x="200" y="228" width="30" height="28" rx="8" fill="#F9A8D4" stroke="#E879A0" strokeWidth="2" />
+        <path d="M35 140 Q10 120 20 100 Q30 80 45 95" fill="none" stroke="#E879A0" strokeWidth="4" strokeLinecap="round" />
+        <rect x="120" y="68" width="38" height="8" rx="4" fill="#9D174D" />
+        <g opacity={crackOpacity}>
+          <path d="M90 140 L105 125 L95 115 L115 100" stroke={ACCENT} strokeWidth="3" fill="none" strokeLinecap="round" />
+          <path d="M160 160 L175 145 L165 135" stroke={ACCENT} strokeWidth="3" fill="none" strokeLinecap="round" />
+        </g>
+        {[0, 1, 2, 3, 4].map((i) => {
+          const startFrame = 60 + i * 30;
+          const coinY = interpolate(frame, [startFrame, startFrame + 40], [80, 180], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+          const coinOpacity = interpolate(frame, [startFrame, startFrame + 10, startFrame + 35, startFrame + 40], [0, 1, 1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+          const xPos = [105, 130, 115, 145, 125][i];
+          return <circle key={i} cx={xPos} cy={coinY} r="8" fill={AMBER} opacity={coinOpacity} />;
+        })}
+      </svg>
 
-          {/* Bar 2 — actually needed (green) */}
-          <g transform="translate(720,1130)">
-            <rect x="-130" y={-bar2H} width="260" height={bar2H} rx="14" fill="#10B981" />
-            <text x="0" y="52" textAnchor="middle" fontSize="26" fontFamily={FONT} fill={BLACK}>13</text>
-            <text x="0" y="82" textAnchor="middle" fontSize="20" fontFamily={FONT} fill="#555">ACTUALLY</text>
-            <text x="0" y="106" textAnchor="middle" fontSize="20" fontFamily={FONT} fill="#555">NEEDED</text>
-          </g>
-
-          {/* 87% annotation */}
-          <g opacity={labelOp}>
-            <rect x="160" y="505" width="470" height="62" rx="10" fill="#EF4444" />
-            <text x="395" y="544" textAnchor="middle" fontSize="28" fontFamily={FONT} fill={WHITE}>
-              87% CANCELLED
-            </text>
-          </g>
-
-          {/* Counter badge */}
-          <g transform="translate(540,1580)" opacity={labelOp}>
-            <rect x="-235" y="-58" width="470" height="96" rx="18" fill={ACCENT} />
-            <text x="0" y="10" textAnchor="middle" fontSize="52" fontFamily={FONT} fill={BLACK}>
-              {pctCount}% AVOIDED
-            </text>
-          </g>
-        </svg>
-
-        {/* Title */}
-        <div style={{ position: 'absolute', top: 110, left: 60, right: 60 }}>
-          <p style={headline(82, BLACK)}>87%</p>
-          <p style={{ ...headline(38, BLACK), marginTop: 4 }}>NEVER BOUGHT</p>
-          <p style={{ ...headline(26, ACCENT), marginTop: 12 }}>AFTER WAITING 72 HOURS</p>
+      <div style={{ position: 'absolute', top: 570, left: 0, right: 0, display: 'flex', justifyContent: 'center', gap: 50 }}>
+        <div style={{ textAlign: 'center', transform: `scale(${icon1In})`, transformOrigin: 'center bottom' }}>
+          <svg width="80" height="80" viewBox="0 0 80 80">
+            <circle cx="40" cy="40" r="34" fill="none" stroke={ACCENT} strokeWidth="4" />
+            <line x1="40" y1="40" x2="40" y2="18" stroke={ACCENT} strokeWidth="3.5" strokeLinecap="round" />
+            <line x1="40" y1="40" x2="56" y2="52" stroke={ACCENT} strokeWidth="3.5" strokeLinecap="round" />
+            <circle cx="40" cy="40" r="4" fill={ACCENT} />
+          </svg>
+          <p style={headline(18, BLACK)}>LATE FEES</p>
         </div>
-      </AbsoluteFill>
+        <div style={{ textAlign: 'center', transform: `scale(${icon2In})`, transformOrigin: 'center bottom' }}>
+          <svg width="80" height="80" viewBox="0 0 80 80">
+            <path d="M15 15 L15 45 L42 72 L68 46 L40 18 Z" fill="none" stroke={ACCENT} strokeWidth="4" strokeLinejoin="round" />
+            <circle cx="28" cy="28" r="5" fill={ACCENT} />
+            <line x1="35" y1="50" x2="55" y2="30" stroke={ACCENT} strokeWidth="3" strokeLinecap="round" />
+          </svg>
+          <p style={headline(18, BLACK)}>MISSED DEALS</p>
+        </div>
+        <div style={{ textAlign: 'center', transform: `scale(${icon3In})`, transformOrigin: 'center bottom' }}>
+          <svg width="80" height="80" viewBox="0 0 80 80">
+            <rect x="12" y="28" width="56" height="42" rx="6" fill="none" stroke={ACCENT} strokeWidth="4" />
+            <path d="M28 28 Q28 14 40 14 Q52 14 52 28" fill="none" stroke={ACCENT} strokeWidth="4" strokeLinecap="round" />
+            <line x1="12" y1="42" x2="68" y2="42" stroke={ACCENT} strokeWidth="2.5" />
+          </svg>
+          <p style={headline(18, BLACK)}>IMPULSE BUYS</p>
+        </div>
+      </div>
+
+      <div style={{ position: 'absolute', bottom: 160, left: 0, right: 0, opacity: amountIn, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <p style={headline(80, ACCENT)}>$1,800</p>
+        <p style={headline(32, BLACK)}>LOST EVERY YEAR</p>
+      </div>
     </FadeScene>
   );
 };
 
-// Scene 5: Someday List — phone + items appearing + piggy bank with coin
+// ─── SCENE 5 ─────────────────────────────────────────────────────────────────
 const Scene5: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  const phoneS = spring({ frame, fps, config: { damping: 14, stiffness: 88 } });
-  const piggyS = spring({ frame: Math.max(0, frame - 28), fps, config: { damping: 12, stiffness: 78 } });
+  const titleIn = interpolate(frame, [8, 32], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const node1 = spring({ frame: frame - 20, fps, config: { damping: 14, stiffness: 100 } });
+  const node2 = spring({ frame: frame - 55, fps, config: { damping: 14, stiffness: 100 } });
+  const node3 = spring({ frame: frame - 90, fps, config: { damping: 14, stiffness: 100 } });
+  const node4 = spring({ frame: frame - 125, fps, config: { damping: 14, stiffness: 100 } });
+  const arrow1 = interpolate(frame, [45, 70], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const arrow2 = interpolate(frame, [80, 105], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const arrow3 = interpolate(frame, [115, 140], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const arrow4 = interpolate(frame, [148, 170], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const tagIn = interpolate(frame, [165, 185], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
 
-  const i1S = spring({ frame: Math.max(0, frame - 38), fps, config: { damping: 14, stiffness: 100 } });
-  const i2S = spring({ frame: Math.max(0, frame - 65), fps, config: { damping: 14, stiffness: 100 } });
-  const i3S = spring({ frame: Math.max(0, frame - 92), fps, config: { damping: 14, stiffness: 100 } });
-  const crossW = interpolate(frame, [140, 182], [0, 185], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-
-  // Coin drop (looping every 55 frames)
-  const coinLoop = frame % 55;
-  const coinY = interpolate(coinLoop, [0, 38, 55], [892, 985, 985], {
-    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
+  const nodeStyle = (scale: number, color: string): React.CSSProperties => ({
+    width: 180,
+    height: 70,
+    background: color,
+    borderRadius: 14,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    transform: `scale(${scale})`,
+    transformOrigin: 'center',
   });
-  const coinOp = interpolate(coinLoop, [0, 6, 34, 46], [0, 1, 1, 0], {
-    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
-  });
-
-  const titleOp = spring({ frame, fps, config: { damping: 14, stiffness: 90 } });
-  const hintOp = interpolate(frame, [85, 120], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
 
   return (
     <FadeScene bg={BG_DARK} dur={dur}>
-      <AbsoluteFill>
-        <svg width="1080" height="1920" style={{ position: 'absolute', top: 0, left: 0 }}>
-          {/* Phone */}
-          <g transform={`translate(290,950) scale(${phoneS}) translate(-290,-950)`}>
-            <rect x="90" y="580" width="400" height="760" rx="42" fill="#222222" />
-            <rect x="110" y="640" width="360" height="638" rx="14" fill="#0d0d1e" />
-            <circle cx="290" cy="622" r="11" fill="#333" />
-            <circle cx="290" cy="1308" r="22" fill="#333" />
+      <div style={{ position: 'absolute', top: 110, left: 0, right: 0, opacity: titleIn }}>
+        <p style={headline(44, WHITE)}>THE</p>
+        <p style={headline(44, ACCENT)}>SCARCITY LOOP</p>
+      </div>
 
-            {/* Screen header */}
-            <text x="145" y="696" fontSize="24" fontFamily={FONT} fill={ACCENT}>SOMEDAY LIST</text>
-            <line x1="120" y1="708" x2="460" y2="708" stroke={ACCENT} strokeWidth="1" opacity={0.45} />
-
-            {/* Item 1 */}
-            <g opacity={i1S} transform={`translate(${interpolate(i1S, [0, 1], [-40, 0])},0)`}>
-              <circle cx="138" cy="742" r="8" fill={ACCENT} opacity={0.7} />
-              <text x="156" y="748" fontSize="21" fontFamily="Arial, sans-serif" fill={WHITE}>New running shoes</text>
-            </g>
-
-            {/* Item 2 */}
-            <g opacity={i2S} transform={`translate(${interpolate(i2S, [0, 1], [-40, 0])},0)`}>
-              <circle cx="138" cy="784" r="8" fill={ACCENT} opacity={0.7} />
-              <text x="156" y="790" fontSize="21" fontFamily="Arial, sans-serif" fill={WHITE}>Wireless headphones</text>
-            </g>
-
-            {/* Item 3 — crossed out */}
-            <g opacity={i3S} transform={`translate(${interpolate(i3S, [0, 1], [-40, 0])},0)`}>
-              <circle cx="138" cy="826" r="8" fill="#555" />
-              <text x="156" y="832" fontSize="21" fontFamily="Arial, sans-serif" fill="#666">Kitchen gadget</text>
-              <line x1="156" y1="832" x2={156 + crossW} y2="832" stroke="#EF4444" strokeWidth="2.5" />
-            </g>
-          </g>
-
-          {/* Piggy Bank */}
-          <g transform={`translate(770,950) scale(${piggyS}) translate(-770,-950)`}>
-            {/* Body */}
-            <ellipse cx="770" cy="980" rx="155" ry="128" fill="#F9A8D4" />
-            {/* Head area */}
-            <ellipse cx="640" cy="900" rx="82" ry="72" fill="#F9A8D4" />
-            {/* Ear */}
-            <ellipse cx="670" cy="852" rx="32" ry="26" fill="#F9A8D4" />
-            <ellipse cx="670" cy="852" rx="20" ry="16" fill="#FBBF24" />
-            {/* Eye */}
-            <circle cx="618" cy="892" r="8" fill={BLACK} />
-            <circle cx="620" cy="890" r="3" fill={WHITE} />
-            {/* Snout */}
-            <ellipse cx="592" cy="922" rx="28" ry="20" fill="#F472B6" />
-            <circle cx="584" cy="922" r="5.5" fill="#DB2777" />
-            <circle cx="600" cy="922" r="5.5" fill="#DB2777" />
-            {/* Coin slot */}
-            <rect x="748" y="856" width="42" height="9" rx="4.5" fill="#9D174D" />
-            {/* Legs */}
-            <rect x="655" y="1082" width="48" height="52" rx="12" fill="#F9A8D4" />
-            <rect x="722" y="1082" width="48" height="52" rx="12" fill="#F9A8D4" />
-            <rect x="792" y="1082" width="48" height="52" rx="12" fill="#F9A8D4" />
-            <rect x="859" y="1082" width="48" height="52" rx="12" fill="#F9A8D4" />
-            {/* Tail curl */}
-            <path d="M 912 975 Q 952 940 934 912 Q 916 882 940 865" stroke="#F9A8D4" strokeWidth="12" fill="none" strokeLinecap="round" />
-          </g>
-
-          {/* Falling coin */}
-          <g opacity={coinOp}>
-            <circle cx="769" cy={coinY} r="16" fill={ACCENT} />
-            <text x="769" y={coinY + 6} textAnchor="middle" fontSize="16" fontFamily={FONT} fill={BG_DARK}>$</text>
-          </g>
-        </svg>
-
-        {/* Title */}
-        <div
-          style={{
-            position: 'absolute',
-            top: 116,
-            left: 60,
-            right: 60,
-            opacity: titleOp,
-            transform: `translateY(${interpolate(titleOp, [0, 1], [44, 0])}px)`,
-          }}
-        >
-          <p style={headline(54, ACCENT)}>SOMEDAY LIST</p>
-          <p style={{ ...headline(30, WHITE), marginTop: 8 }}>NOT A SHOPPING CART</p>
+      {/* Loop diagram — 4 nodes arranged in a diamond */}
+      <div style={{ position: 'absolute', top: 290, left: 0, right: 0 }}>
+        {/* Top node */}
+        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 10 }}>
+          <div style={nodeStyle(node1, ACCENT)}>
+            <p style={headline(16, WHITE)}>FINANCIAL STRESS</p>
+          </div>
         </div>
-
-        {/* Hint */}
-        <div style={{ position: 'absolute', bottom: 185, left: 60, right: 60, opacity: hintOp }}>
-          <p
-            style={{
-              fontFamily: FONT,
-              fontSize: 30,
-              color: WHITE,
-              textAlign: 'center' as const,
-              margin: 0,
-              lineHeight: 1.45,
-            }}
-          >
-            Most items disappear on their own.
-          </p>
+        {/* Arrow down-right */}
+        <div style={{ display: 'flex', justifyContent: 'center', opacity: arrow1 }}>
+          <svg width="200" height="40" viewBox="0 0 200 40">
+            <line x1="60" y1="5" x2="140" y2="35" stroke={ACCENT} strokeWidth="3" opacity="0.7" />
+            <polygon points="135,28 148,38 138,26" fill={ACCENT} opacity="0.7" />
+          </svg>
         </div>
-      </AbsoluteFill>
+        {/* Middle row */}
+        <div style={{ display: 'flex', justifyContent: 'center', gap: 120, marginBottom: 10 }}>
+          <div style={nodeStyle(node4, '#7C3AED')}>
+            <p style={headline(15, WHITE)}>MORE DEBT</p>
+          </div>
+          <div style={nodeStyle(node2, '#DC2626')}>
+            <p style={headline(13, WHITE)}>REDUCED BANDWIDTH</p>
+          </div>
+        </div>
+        {/* Arrow down-left */}
+        <div style={{ display: 'flex', justifyContent: 'center', opacity: arrow3 }}>
+          <svg width="200" height="40" viewBox="0 0 200 40">
+            <line x1="140" y1="5" x2="60" y2="35" stroke={ACCENT} strokeWidth="3" opacity="0.7" />
+            <polygon points="65,28 52,38 62,26" fill={ACCENT} opacity="0.7" />
+          </svg>
+        </div>
+        {/* Arrow down */}
+        <div style={{ position: 'absolute', top: 70, right: 185, opacity: arrow2 }}>
+          <svg width="40" height="100" viewBox="0 0 40 100">
+            <line x1="20" y1="5" x2="20" y2="85" stroke={ACCENT} strokeWidth="3" opacity="0.7" />
+            <polygon points="12,78 20,95 28,78" fill={ACCENT} opacity="0.7" />
+          </svg>
+        </div>
+        {/* Bottom node */}
+        <div style={{ display: 'flex', justifyContent: 'center', marginTop: 10 }}>
+          <div style={nodeStyle(node3, '#B45309')}>
+            <p style={headline(14, WHITE)}>WORSE DECISIONS</p>
+          </div>
+        </div>
+        {/* Arrow back up-left */}
+        <div style={{ display: 'flex', justifyContent: 'center', marginTop: 8, opacity: arrow4 }}>
+          <svg width="300" height="20" viewBox="0 0 300 20">
+            <path d="M150 10 Q80 -20 20 10" fill="none" stroke={ACCENT} strokeWidth="2.5" strokeDasharray="6,3" opacity="0.6" />
+            <polygon points="16,4 14,16 24,8" fill={ACCENT} opacity="0.6" />
+          </svg>
+        </div>
+      </div>
+
+      <div style={{ position: 'absolute', bottom: 190, left: 60, right: 60, opacity: tagIn }}>
+        <p style={{ ...headline(30, WHITE), lineHeight: 1.4 }}>
+          NOT A CHARACTER FLAW —<br /><span style={{ color: ACCENT }}>A FEEDBACK LOOP</span>
+        </p>
+      </div>
     </FadeScene>
   );
 };
 
-// Scene 6: CTA — phone + pulsing button + savings counter + START TONIGHT
+// ─── SCENE 6 ─────────────────────────────────────────────────────────────────
 const Scene6: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  const titleS = spring({ frame, fps, config: { damping: 14, stiffness: 90 } });
-  const phoneS = spring({ frame: Math.max(0, frame - 18), fps, config: { damping: 14, stiffness: 82 } });
+  const titleIn = interpolate(frame, [8, 32], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const phoneIn = spring({ frame: frame - 20, fps, config: { damping: 16, stiffness: 90 } });
+  const toggleMove = interpolate(frame, [70, 100], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const checkIn = spring({ frame: frame - 105, fps, config: { damping: 12, stiffness: 130 } });
+  const personIn = spring({ frame: frame - 120, fps, config: { damping: 14, stiffness: 100 } });
+  const bulbGlow = interpolate(frame, [135, 165], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const ctaIn = interpolate(frame, [150, 180], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
 
-  const savings = Math.floor(
-    interpolate(frame, [38, 210], [0, 31000], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })
-  );
-
-  // Button pulse (looping every 44 frames)
-  const btnPulse = interpolate(frame % 44, [0, 22, 44], [1, 1.06, 1], {
-    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
-  });
-
-  const ctaOp = interpolate(frame, [145, 185], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const counterOp = interpolate(frame, [30, 58], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const toggleBg = toggleMove > 0.5 ? GREEN : '#ccc';
+  const toggleX = interpolate(toggleMove, [0, 1], [4, 34]);
 
   return (
     <FadeScene bg={BG_LIGHT} dur={dur}>
-      <AbsoluteFill>
-        <svg width="1080" height="1920" style={{ position: 'absolute', top: 0, left: 0 }}>
-          {/* Phone */}
-          <g transform={`translate(540,900) scale(${phoneS}) translate(-540,-900)`}>
-            <rect x="340" y="595" width="400" height="700" rx="42" fill="#1a1a1a" />
-            <rect x="360" y="650" width="360" height="590" rx="14" fill="#0d0d1e" />
-            <circle cx="540" cy="630" r="12" fill="#333" />
+      <div style={{ position: 'absolute', top: 100, left: 0, right: 0, opacity: titleIn }}>
+        <p style={headline(40, BLACK)}>BREAK THE LOOP</p>
+        <p style={headline(40, GREEN)}>WITH ONE STEP</p>
+      </div>
 
-            {/* Screen content */}
-            <text x="540" y="712" textAnchor="middle" fontSize="24" fontFamily={FONT} fill={ACCENT}>SOMEDAY LIST</text>
-            <line x1="370" y1="722" x2="710" y2="722" stroke={ACCENT} strokeWidth="1" opacity={0.45} />
-            <text x="378" y="762" fontSize="21" fontFamily="Arial, sans-serif" fill={WHITE}>• New running shoes</text>
-            <text x="378" y="798" fontSize="21" fontFamily="Arial, sans-serif" fill={WHITE}>• Wireless headphones</text>
-            <text x="378" y="834" fontSize="21" fontFamily="Arial, sans-serif" fill="#555">• Kitchen gadget  ✕</text>
+      {/* Phone SVG */}
+      <svg width="280" height="460" viewBox="0 0 280 460"
+        style={{ position: 'absolute', top: 260, left: 120, transform: `scale(${phoneIn})`, transformOrigin: 'center top' }}>
+        {/* Phone body */}
+        <rect x="20" y="10" width="240" height="440" rx="30" fill={BG_DARK} stroke="#555" strokeWidth="3" />
+        <rect x="30" y="25" width="220" height="410" rx="22" fill="#1e1e1e" />
+        {/* Screen content */}
+        <text x="140" y="80" fontSize="20" fill={WHITE} fontFamily="Arial" textAnchor="middle" fontWeight="bold">AUTO-PAY</text>
+        <line x1="50" y1="95" x2="230" y2="95" stroke="#333" strokeWidth="1" />
+        {/* Row 1 */}
+        <text x="70" y="135" fontSize="17" fill={WHITE} fontFamily="Arial">Electricity</text>
+        <rect x="175" y="115" width="56" height="28" rx="14" fill={toggleBg} />
+        <circle cx={175 + toggleX + 10} cy="129" r="11" fill={WHITE} />
+        {/* Row 2 */}
+        <text x="70" y="178" fontSize="17" fill="#888" fontFamily="Arial">Internet</text>
+        <rect x="175" y="158" width="56" height="28" rx="14" fill="#ccc" />
+        <circle cx="189" cy="172" r="11" fill={WHITE} />
+        {/* Row 3 */}
+        <text x="70" y="220" fontSize="17" fill="#888" fontFamily="Arial">Phone</text>
+        <rect x="175" y="200" width="56" height="28" rx="14" fill="#ccc" />
+        <circle cx="189" cy="214" r="11" fill={WHITE} />
+      </svg>
 
-            {/* Pulsing ADD TO LIST button */}
-            <g transform={`translate(540,1048) scale(${btnPulse}) translate(-540,-1048)`}>
-              <rect x="388" y="1018" width="304" height="60" rx="30" fill={ACCENT} />
-              <text x="540" y="1055" textAnchor="middle" fontSize="22" fontFamily={FONT} fill={BLACK}>
-                + ADD TO LIST
-              </text>
-            </g>
-          </g>
+      {/* Checkmark */}
+      <svg width="100" height="100" viewBox="0 0 100 100"
+        style={{ position: 'absolute', top: 320, left: 380, transform: `scale(${checkIn})`, transformOrigin: 'center' }}>
+        <circle cx="50" cy="50" r="44" fill={GREEN} />
+        <path d="M24 50 L42 68 L76 32" fill="none" stroke={WHITE} strokeWidth="7" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
 
-          {/* Savings counter */}
-          <g transform="translate(540,1510)" opacity={counterOp}>
-            <rect x="-265" y="-62" width="530" height="102" rx="20" fill={ACCENT} />
-            <text x="0" y="8" textAnchor="middle" fontSize="50" fontFamily={FONT} fill={BLACK}>
-              ${savings.toLocaleString()}
-            </text>
-            <text x="0" y="46" textAnchor="middle" fontSize="22" fontFamily={FONT} fill={BLACK}>SAVED THIS DECADE</text>
-          </g>
-        </svg>
+      {/* Person with lightbulb */}
+      <svg width="160" height="240" viewBox="0 0 160 240"
+        style={{ position: 'absolute', top: 430, left: 560, transform: `scale(${personIn})`, transformOrigin: 'center bottom' }}>
+        {/* Bulb glow */}
+        <circle cx="80" cy="30" r="35" fill={AMBER} opacity={bulbGlow * 0.2} />
+        {/* Lightbulb */}
+        <ellipse cx="80" cy="30" rx="22" ry="26" fill="none" stroke={AMBER} strokeWidth="3" opacity={bulbGlow} />
+        <path d="M64 56 Q80 68 96 56" fill="none" stroke={AMBER} strokeWidth="3" strokeLinecap="round" opacity={bulbGlow} />
+        <line x1="72" y1="66" x2="88" y2="66" stroke={AMBER} strokeWidth="3" strokeLinecap="round" opacity={bulbGlow} />
+        <line x1="74" y1="73" x2="86" y2="73" stroke={AMBER} strokeWidth="3" strokeLinecap="round" opacity={bulbGlow} />
+        {/* Person head */}
+        <circle cx="80" cy="120" r="28" fill="#F4A261" />
+        {/* Body */}
+        <path d="M80 148 L80 210" stroke="#555" strokeWidth="10" strokeLinecap="round" />
+        {/* Arms — up in victory */}
+        <path d="M80 162 L45 135" stroke="#555" strokeWidth="8" strokeLinecap="round" />
+        <path d="M80 162 L115 135" stroke="#555" strokeWidth="8" strokeLinecap="round" />
+        {/* Legs */}
+        <path d="M80 210 L58 240" stroke="#555" strokeWidth="8" strokeLinecap="round" />
+        <path d="M80 210 L102 240" stroke="#555" strokeWidth="8" strokeLinecap="round" />
+      </svg>
 
-        {/* Title */}
-        <div
-          style={{
-            position: 'absolute',
-            top: 108,
-            left: 60,
-            right: 60,
-            opacity: titleS,
-            transform: `translateY(${interpolate(titleS, [0, 1], [52, 0])}px)`,
-          }}
-        >
-          <p style={headline(66, BLACK)}>ONE PAUSE.</p>
-          <p style={{ ...headline(50, ACCENT), marginTop: 6 }}>$31,000 SAVED.</p>
+      {/* CTA */}
+      <div style={{ position: 'absolute', bottom: 160, left: 50, right: 50, opacity: ctaIn }}>
+        <div style={{ background: BLACK, borderRadius: 20, padding: '22px 30px' }}>
+          <p style={headline(30, WHITE)}>AUTOMATE = FREE</p>
+          <p style={headline(30, GREEN)}>YOUR BRAIN</p>
+          <p style={{ ...headline(22, '#aaa'), marginTop: 12 }}>START WITH ONE BILL TODAY</p>
         </div>
-
-        {/* CTA */}
-        <div style={{ position: 'absolute', bottom: 150, left: 60, right: 60, opacity: ctaOp }}>
-          <p style={headline(68, BLACK)}>START TONIGHT</p>
-          <p style={{ ...headline(28, BLACK), opacity: 0.52, marginTop: 10 }}>
-            NEXT IMPULSE → THE LIST
-          </p>
-        </div>
-      </AbsoluteFill>
+      </div>
     </FadeScene>
   );
 };
 
-// ─── ROOT COMPOSITION ─────────────────────────────────────────────────────────
+// ─── COMPOSITION ─────────────────────────────────────────────────────────────
 export default function DAILY() {
   return (
     <AbsoluteFill style={{ background: BG_DARK }}>
       <Series>
-        <Series.Sequence durationInFrames={225}><Scene1 dur={225} /></Series.Sequence>
-        <Series.Sequence durationInFrames={225}><Scene2 dur={225} /></Series.Sequence>
-        <Series.Sequence durationInFrames={225}><Scene3 dur={225} /></Series.Sequence>
-        <Series.Sequence durationInFrames={225}><Scene4 dur={225} /></Series.Sequence>
-        <Series.Sequence durationInFrames={225}><Scene5 dur={225} /></Series.Sequence>
-        <Series.Sequence durationInFrames={225}><Scene6 dur={225} /></Series.Sequence>
+        <Series.Sequence durationInFrames={225}><Scene1 /></Series.Sequence>
+        <Series.Sequence durationInFrames={225}><Scene2 /></Series.Sequence>
+        <Series.Sequence durationInFrames={225}><Scene3 /></Series.Sequence>
+        <Series.Sequence durationInFrames={225}><Scene4 /></Series.Sequence>
+        <Series.Sequence durationInFrames={225}><Scene5 /></Series.Sequence>
+        <Series.Sequence durationInFrames={225}><Scene6 /></Series.Sequence>
       </Series>
     </AbsoluteFill>
   );

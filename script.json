@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "The average American blows thirty-one thousand dollars on regretted impulse buys every single decade. That's not a willpower problem — it's a brain problem. And one simple rule fixes it.",
-    "visual": "Dark background. Amber person silhouette surrounded by floating white price tags ($47, $89, $124, $220) drifting upward. '$31,000' in large amber text at top with 'IMPULSE BUY TRAP' subtitle.",
-    "accent_color": "amber"
+    "narration": "Here's something wild — the less money you have, the worse your brain gets at managing it. Scientists call it the scarcity mindset tax, and it's measurable.",
+    "visual": "Dark background. Brain SVG split in half: left side glowing amber labeled 'NORMAL', right side dimmed red labeled 'SCARCITY MODE'. Title: 'YOUR BRAIN ON BROKE' springs in from below.",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Your brain floods with dopamine the moment you see something you want — not when you actually buy it. That rush fades on its own within seventy-two hours. You don't need willpower, you need time.",
-    "visual": "Light background. Dark head silhouette with amber brain pulsing inside. Dopamine sparks radiate outward. Clock below shows '72 HRS' with hand sweeping. Text: YOUR BRAIN WANTS IT NOW.",
-    "accent_color": "amber"
+    "narration": "Harvard researchers found that financial stress drops your effective IQ by 13 points. That's like functioning on zero sleep — every single day.",
+    "visual": "Light background. IQ meter with needle animated from 100 down to 87. Red stress bar rising beside it. Large text: '-13 IQ POINTS'. Dollar sign with downward arrow.",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "The rule is dead simple. Never buy anything non-essential over thirty dollars in the moment. Write it down. Wait seventy-two hours. Then decide.",
-    "visual": "Dark background. Green $30 bill with red X crossing it out. Three checklist items spring in one by one: 'NON-ESSENTIAL?', 'OVER $30?', 'WAIT 72 HOURS'. Amber '72 HOURS' at bottom.",
-    "accent_color": "amber"
+    "narration": "Why? Your brain has limited bandwidth. When it's busy worrying about bills, there's less left for smart decisions. It's not laziness — it's biology.",
+    "visual": "Dark background. Horizontal progress bar labeled 'MENTAL BANDWIDTH' being filled: 60% red 'BILL WORRY', 20% orange 'DAILY STRESS', 20% green 'SMART DECISIONS'. Animated fill.",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "People who use the rule cancel eighty-seven percent of impulse purchases after waiting. On a hundred-dollar item, that's eighty-seven dollars back in your pocket every single time.",
-    "visual": "Light background. Two-bar chart animates up: tall amber bar (100 impulse buys) vs short green bar (13 actually needed). '87% NEVER BOUGHT' label. Percentage counter grows to 87.",
-    "accent_color": "amber"
+    "narration": "That drain costs real money — about $1,800 a year in worse decisions. Late fees, missed discounts, impulse buys you'd never make with a clear head.",
+    "visual": "Light background. Piggy bank SVG with cracks, coins falling out. Three icons appear: clock (late fees), price tag (missed deals), shopping bag (impulse buys). '$1,800/YEAR' in red.",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "The trick is keeping a 'someday list' on your phone instead of adding things to a cart. Most items fall off the list by themselves within a week — without you spending a cent.",
-    "visual": "Dark background. Phone outline with 'SOMEDAY LIST' on screen, three items appearing one by one, third item crossed out. Pink piggy bank beside phone with coin dropping in repeatedly.",
-    "accent_color": "amber"
+    "narration": "And here's the trap: worse decisions mean tighter money, which creates more stress, which drains more bandwidth. It's a loop — not a character flaw.",
+    "visual": "Dark background. Four-node circular loop diagram: 'FINANCIAL STRESS' → 'REDUCED BANDWIDTH' → 'WORSE DECISIONS' → 'MORE DEBT' → back to start. Each node pulses red in sequence.",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Next time you want to click 'buy now,' add it to the list instead. Give it seventy-two hours. That one pause saves you thirty-one thousand dollars this decade. Start the list tonight.",
-    "visual": "Light background. Phone showing someday list with pulsing amber 'ADD TO LIST' button. Savings counter grows from $0 to $31,000. Bold 'START TONIGHT' in black at bottom.",
-    "accent_color": "amber"
+    "narration": "Breaking the loop isn't about willpower — it's about fewer decisions. Automate one bill payment today. Free up bandwidth. That's where the escape starts.",
+    "visual": "Light background. Phone SVG with payment toggle switching ON. Green checkmark springs in. Text: 'AUTOMATE = FREE YOUR BRAIN'. Person silhouette with lightbulb above head glowing amber.",
+    "accent_color": "red"
   }
 ]
