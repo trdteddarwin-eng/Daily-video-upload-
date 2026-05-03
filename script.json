@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Here's something wild — the less money you have, the worse your brain gets at managing it. Scientists call it the scarcity mindset tax, and it's measurable.",
-    "visual": "Dark background. Brain SVG split in half: left side glowing amber labeled 'NORMAL', right side dimmed red labeled 'SCARCITY MODE'. Title: 'YOUR BRAIN ON BROKE' springs in from below.",
-    "accent_color": "red"
+    "narration": "Here's a weird money trick your brain pulls on you every single time. It puts your money into invisible buckets — and those buckets are costing you over six thousand dollars a year.",
+    "visual": "Dark background. A large piggy bank SVG center-screen. Three glowing labeled buckets appear around it: BONUS, PAYCHECK, GIFT. Each bucket fills with animated coin drops at different speeds.",
+    "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "Harvard researchers found that financial stress drops your effective IQ by 13 points. That's like functioning on zero sleep — every single day.",
-    "visual": "Light background. IQ meter with needle animated from 100 down to 87. Red stress bar rising beside it. Large text: '-13 IQ POINTS'. Dollar sign with downward arrow.",
-    "accent_color": "red"
+    "narration": "Nobel Prize winner Richard Thaler called it mental accounting. The rule says all money is equal — a dollar is a dollar. But your brain completely ignores that rule.",
+    "visual": "Light background. Person silhouette with thought bubble containing two dollar bills — one labeled BONUS glowing amber, one labeled PAYCHECK in gray. An equals sign between them gets crossed out.",
+    "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Why? Your brain has limited bandwidth. When it's busy worrying about bills, there's less left for smart decisions. It's not laziness — it's biology.",
-    "visual": "Dark background. Horizontal progress bar labeled 'MENTAL BANDWIDTH' being filled: 60% red 'BILL WORRY', 20% orange 'DAILY STRESS', 20% green 'SMART DECISIONS'. Animated fill.",
-    "accent_color": "red"
+    "narration": "Number one: you spend windfall money — bonuses, tax refunds, gifts — three times faster than your regular paycheck. It feels like found money, so your brain gives it a free pass.",
+    "visual": "Dark background. Split screen: left shows paycheck with slow-draining bar; right shows bonus check with rapidly emptying bar labeled 3x FASTER. Animated dollar signs fly out of the right bar.",
+    "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "That drain costs real money — about $1,800 a year in worse decisions. Late fees, missed discounts, impulse buys you'd never make with a clear head.",
-    "visual": "Light background. Piggy bank SVG with cracks, coins falling out. Three icons appear: clock (late fees), price tag (missed deals), shopping bag (impulse buys). '$1,800/YEAR' in red.",
-    "accent_color": "red"
+    "narration": "Number two: only twelve percent of bonuses ever get saved, versus thirty-two percent of equivalent regular income. Same money, completely different fate — just because of where it came from.",
+    "visual": "Light background. Two bar charts side by side: BONUS SAVED 12% (short amber bar) vs PAYCHECK SAVED 32% (taller green bar). Percentage numbers count up. A house icon sits above the green bar.",
+    "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "And here's the trap: worse decisions mean tighter money, which creates more stress, which drains more bandwidth. It's a loop — not a character flaw.",
-    "visual": "Dark background. Four-node circular loop diagram: 'FINANCIAL STRESS' → 'REDUCED BANDWIDTH' → 'WORSE DECISIONS' → 'MORE DEBT' → back to start. Each node pulses red in sequence.",
-    "accent_color": "red"
+    "narration": "Number three: seventy-three percent of people have a secret fun money bucket for gift cards and cash gifts — and they blow it guilt-free on stuff they'd never buy with a paycheck.",
+    "visual": "Light background. A gift card and cash bills float into a glowing bucket labeled FUN MONEY — NO RULES. A guilt-o-meter shows zero. Then credit card and shopping bag appear with red X through the paycheck icon.",
+    "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "Breaking the loop isn't about willpower — it's about fewer decisions. Automate one bill payment today. Free up bandwidth. That's where the escape starts.",
-    "visual": "Light background. Phone SVG with payment toggle switching ON. Green checkmark springs in. Text: 'AUTOMATE = FREE YOUR BRAIN'. Person silhouette with lightbulb above head glowing amber.",
-    "accent_color": "red"
+    "narration": "The fix is dead simple: when a windfall hits, move it to your main account and wait seventy-two hours. Your brain stops treating it as free money — and you keep the six thousand dollars.",
+    "visual": "Dark background. Bonus check arrow pointing into bank account icon. A 72-hour countdown timer ticks down. Piggy bank fills up glowing amber with $6,200 SAVED text appearing. Follow for more money psychology.",
+    "accent_color": "amber"
   }
 ]
