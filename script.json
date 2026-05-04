@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Here's a weird money trick your brain pulls on you every single time. It puts your money into invisible buckets — and those buckets are costing you over six thousand dollars a year.",
-    "visual": "Dark background. A large piggy bank SVG center-screen. Three glowing labeled buckets appear around it: BONUS, PAYCHECK, GIFT. Each bucket fills with animated coin drops at different speeds.",
-    "accent_color": "amber"
+    "narration": "Your salary sounds great on paper. But once you count what your job actually costs you in time and money, your real wage might shock you.",
+    "visual": "Dark background. Pay stub SVG with $55,000 gross pay, showing a question mark where taxes and deductions should be. Red question mark springs in.",
+    "accent_color": "blue"
   },
   {
     "scene": 2,
-    "narration": "Nobel Prize winner Richard Thaler called it mental accounting. The rule says all money is equal — a dollar is a dollar. But your brain completely ignores that rule.",
-    "visual": "Light background. Person silhouette with thought bubble containing two dollar bills — one labeled BONUS glowing amber, one labeled PAYCHECK in gray. An equals sign between them gets crossed out.",
-    "accent_color": "amber"
+    "narration": "First, taxes hit. A fifty-five thousand dollar salary becomes about forty-two thousand nine hundred after your effective rate — and that's just the beginning.",
+    "visual": "Light background. Horizontal bar labeled $55,000 animates in full width. Red chunk cuts from the right showing 22% tax. $42,900 springs in below.",
+    "accent_color": "blue"
   },
   {
     "scene": 3,
-    "narration": "Number one: you spend windfall money — bonuses, tax refunds, gifts — three times faster than your regular paycheck. It feels like found money, so your brain gives it a free pass.",
-    "visual": "Dark background. Split screen: left shows paycheck with slow-draining bar; right shows bonus check with rapidly emptying bar labeled 3x FASTER. Animated dollar signs fly out of the right bar.",
-    "accent_color": "amber"
+    "narration": "Twenty-seven minutes each way. That's two hundred twenty-five hours of unpaid time every year, and nobody counts it in your salary.",
+    "visual": "Dark background. Animated clock with spinning hands. Car SVG drives back and forth on a road. Counter climbs to 225 hours.",
+    "accent_color": "blue"
   },
   {
     "scene": 4,
-    "narration": "Number two: only twelve percent of bonuses ever get saved, versus thirty-two percent of equivalent regular income. Same money, completely different fate — just because of where it came from.",
-    "visual": "Light background. Two bar charts side by side: BONUS SAVED 12% (short amber bar) vs PAYCHECK SAVED 32% (taller green bar). Percentage numbers count up. A house icon sits above the green bar.",
-    "accent_color": "amber"
+    "narration": "Then count what work costs you directly — clothes, lunches, commute gas, and stress spending. Studies show it runs about five thousand a year.",
+    "visual": "Light background. Work shirt, coffee cup, gas pump, and wine glass SVGs spring in one by one. Dollar counter climbs to $5,000.",
+    "accent_color": "blue"
   },
   {
     "scene": 5,
-    "narration": "Number three: seventy-three percent of people have a secret fun money bucket for gift cards and cash gifts — and they blow it guilt-free on stuff they'd never buy with a paycheck.",
-    "visual": "Light background. A gift card and cash bills float into a glowing bucket labeled FUN MONEY — NO RULES. A guilt-o-meter shows zero. Then credit card and shopping bag appear with red X through the paycheck icon.",
-    "accent_color": "amber"
+    "narration": "Real math: thirty-seven thousand nine hundred dollars divided by twenty-two twenty-five actual hours. Your true hourly wage is seventeen dollars. Wild, right?",
+    "visual": "Dark background. Three sequential calculation cards: (1) $42,900 minus $5,000 equals $37,900, (2) 2,000 plus 225 equals 2,225 hrs, (3) $37,900 divided by 2,225 equals $17/hr springs in big.",
+    "accent_color": "blue"
   },
   {
     "scene": 6,
-    "narration": "The fix is dead simple: when a windfall hits, move it to your main account and wait seventy-two hours. Your brain stops treating it as free money — and you keep the six thousand dollars.",
-    "visual": "Dark background. Bonus check arrow pointing into bank account icon. A 72-hour countdown timer ticks down. Piggy bank fills up glowing amber with $6,200 SAVED text appearing. Follow for more money psychology.",
-    "accent_color": "amber"
+    "narration": "Now reprice everything in real hours. That forty-dollar dinner is two-point-three real hours of work. Follow for money math that changes everything.",
+    "visual": "Light background. Price tag SVG ($40) with arrow to 2.3 HRS. Then three rows: $200 shoes equals 11.8 hrs, $500 phone equals 29.4 hrs, $30K car equals 1,765 hrs. Follow CTA.",
+    "accent_color": "blue"
   }
 ]
