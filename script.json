@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You're paying for a gym you haven't visited in months. A streaming service you forgot exists. A stock you know is dead. But you can't stop — and there's a name for why.",
-    "visual": "Dark background. Person silhouette at a cobweb-covered gym door, credit card floating nearby with recurring charge animation. Bold headline: PAYING FOR NOTHING?",
-    "accent_color": "red"
+    "narration": "Your neighbor just pulled up in a brand new car — and without even knowing it, your brain started spending. That urge has a name, and a six-thousand-dollar price tag.",
+    "visual": "Dark background. Two houses side by side. Neighbor's house has a gleaming amber car in driveway. Your house has a dull grey car. Envy arrow animates between them. Text: THE JONESES EFFECT.",
+    "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "It's called the sunk cost fallacy. Your brain refuses to accept a loss, so it keeps throwing good money after bad. It affects 78% of people — and you're probably one of them.",
-    "visual": "Light background. SVG brain with dollar coins draining out the bottom. Text overlay: SUNK COST FALLACY. Counter animating to 78% with a red progress bar.",
-    "accent_color": "red"
+    "narration": "Studies show you're 40% more likely to make a major purchase within weeks of a neighbor or coworker buying something nice. Your brain is wired to close status gaps.",
+    "visual": "Light background. Two stick figures side by side. One gets a star/upgrade badge, comparison arrow shoots to the other. Brain icon with 40% counter animating up. Red pulse on the second figure.",
+    "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Take gyms. The average unused membership costs $600 a year. And 67% of members don't exercise regularly — they're literally paying monthly just to feel guilty.",
-    "visual": "Dark background. Gym building SVG with a chain-and-lock on the door. Calendar with red X marks across 6 months. Money bag shrinking. Text: $600/YEAR GONE.",
-    "accent_color": "red"
+    "narration": "That pressure adds up to over $6,200 a year for the average American. Invested instead over 30 years, that's a hundred and eighty-six thousand dollars gone.",
+    "visual": "Dark background. Dollar counter animating from $0 to $6,200 with a year label. Then a 30-year bar growing to reveal $186,000. Piggy bank cracking open with coins spilling.",
+    "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "Same thing in investing. People hold losing stocks 60% longer than winning ones. Your brain says if I sell, the loss becomes real — but here's the thing, it's already real.",
-    "visual": "Light background. Stock chart SVG trending sharply down. Person figure gripping the chart line with both hands. Red arrow pointing down labeled: 60% LONGER.",
-    "accent_color": "red"
+    "narration": "Here's how it cascades. One neighbor gets a new car, so you feel your kitchen looks dated. New kitchen means the living room furniture looks wrong. It never stops.",
+    "visual": "Light background. Chain reaction: car icon triggers arrow to house, arrow to sofa, arrow to TV, arrow to wallet emptying. Each icon animates in sequence with amber arrows connecting them.",
+    "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "Add it all up — the gym, the dead subscriptions, the bad positions you're sitting on. The average person loses $4,700 every single year to sunk cost thinking.",
-    "visual": "Dark background. Cracked piggy bank SVG with coins leaking out. Three labeled icons below: GYM, SUBSCRIPTIONS, STOCKS. Dollar counter animating up to $4,700.",
-    "accent_color": "red"
+    "narration": "The move millionaires use is called anchor-switching. Instead of comparing up to people with more, deliberately compare down — and suddenly what you have feels like plenty.",
+    "visual": "Dark background. Person figure in center. Arrow pointing up toward mansion and yacht labeled BROKE. Arrow pointing down toward small house labeled RICH FEELING. Choose the down arrow, it glows amber.",
+    "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "The fix is one question: if I didn't already own this, would I buy it today? If the answer is no — cut it now. Your future self gets to keep that $4,700.",
-    "visual": "Light background. Two-path fork road SVG: left path labeled KEEP (LOSE) in red, right path labeled CUT (WIN) in green. Bold question text above. Follow CTA at bottom.",
-    "accent_color": "red"
+    "narration": "Next time you feel that itch to upgrade, ask yourself: am I spending for me, or for them? That one question is worth $186,000. Follow for one money trick a day.",
+    "visual": "Light background. Two-path sign: FOR THEM (red, money flying away) vs FOR ME (amber, piggy bank growing). Bold $186,000 text. Follow phone icon with subscribe CTA at bottom.",
+    "accent_color": "amber"
   }
 ]
