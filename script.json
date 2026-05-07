@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Your neighbor just pulled up in a brand new car — and without even knowing it, your brain started spending. That urge has a name, and a six-thousand-dollar price tag.",
-    "visual": "Dark background. Two houses side by side. Neighbor's house has a gleaming amber car in driveway. Your house has a dull grey car. Envy arrow animates between them. Text: THE JONESES EFFECT.",
-    "accent_color": "amber"
+    "narration": "Your rewards card is paying you back — but that's not the whole story. Studies show people spend 23% more with rewards cards than with cash. Wild, right?",
+    "visual": "Dark background. Large credit card SVG with a golden star badge. Coins arc upward toward the card. Text: 23% MORE animates in bold green.",
+    "accent_color": "green"
   },
   {
     "scene": 2,
-    "narration": "Studies show you're 40% more likely to make a major purchase within weeks of a neighbor or coworker buying something nice. Your brain is wired to close status gaps.",
-    "visual": "Light background. Two stick figures side by side. One gets a star/upgrade badge, comparison arrow shoots to the other. Brain icon with 40% counter animating up. Red pulse on the second figure.",
-    "accent_color": "amber"
+    "narration": "MIT ran a real study where people paid double for the same item when using a card versus cash. The reward psychology literally shuts off your spending pain.",
+    "visual": "Light background. Two price tags side by side: cash tag shows $21, card tag shows $42. Dollar bill icon above left, credit card icon above right. MIT STUDY label.",
+    "accent_color": "green"
   },
   {
     "scene": 3,
-    "narration": "That pressure adds up to over $6,200 a year for the average American. Invested instead over 30 years, that's a hundred and eighty-six thousand dollars gone.",
-    "visual": "Dark background. Dollar counter animating from $0 to $6,200 with a year label. Then a 30-year bar growing to reveal $186,000. Piggy bank cracking open with coins spilling.",
-    "accent_color": "amber"
+    "narration": "The average rewards user earns about $167 in cashback per year. But that 23% extra spending adds up to over $2,400 in purchases you wouldn't have made otherwise.",
+    "visual": "Dark background. A balance scale SVG. Left pan holds small coin stack labeled $167 EARNED. Right pan holds tall money stack labeled $2,400 EXTRA — scale tips hard right.",
+    "accent_color": "green"
   },
   {
     "scene": 4,
-    "narration": "Here's how it cascades. One neighbor gets a new car, so you feel your kitchen looks dated. New kitchen means the living room furniture looks wrong. It never stops.",
-    "visual": "Light background. Chain reaction: car icon triggers arrow to house, arrow to sofa, arrow to TV, arrow to wallet emptying. Each icon animates in sequence with amber arrows connecting them.",
-    "accent_color": "amber"
+    "narration": "Here's why: every points notification is a tiny dopamine hit. Your brain starts chasing rewards instead of tracking what you're spending — and that's the trap.",
+    "visual": "Light background. Phone SVG with notification popup showing a star and 'You earned 50 pts!'. Circular arrow loop: SPEND → REWARD → SPEND. Brain icon pulsing.",
+    "accent_color": "green"
   },
   {
     "scene": 5,
-    "narration": "The move millionaires use is called anchor-switching. Instead of comparing up to people with more, deliberately compare down — and suddenly what you have feels like plenty.",
-    "visual": "Dark background. Person figure in center. Arrow pointing up toward mansion and yacht labeled BROKE. Arrow pointing down toward small house labeled RICH FEELING. Choose the down arrow, it glows amber.",
-    "accent_color": "amber"
+    "narration": "The fix isn't cutting your card. Use it only for fixed bills — rent, utilities, subscriptions. Never for groceries or impulse shopping. Capture rewards without the behavior trigger.",
+    "visual": "Dark background. Checklist: RENT ✓, ELECTRIC ✓, INTERNET ✓ — each in green. Then GROCERIES and SHOPPING with red X marks. Card icon locked to the checked items only.",
+    "accent_color": "green"
   },
   {
     "scene": 6,
-    "narration": "Next time you feel that itch to upgrade, ask yourself: am I spending for me, or for them? That one question is worth $186,000. Follow for one money trick a day.",
-    "visual": "Light background. Two-path sign: FOR THEM (red, money flying away) vs FOR ME (amber, piggy bank growing). Bold $186,000 text. Follow phone icon with subscribe CTA at bottom.",
-    "accent_color": "amber"
+    "narration": "Card companies made $189 billion in interchange fees last year. They can afford your 2% cashback — follow for the money tricks they hope you never find out.",
+    "visual": "Light background. Bank building SVG with arrows showing money flowing IN. Large text: $189 BILLION. Small cashback coin flying back labeled 2%. Follow CTA at bottom.",
+    "accent_color": "green"
   }
 ]
