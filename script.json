@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Every price tag ending in nine was put there on purpose. That $9.99 isn't saving you a penny — it's a psychological weapon costing you $1,400 a year.",
-    "visual": "Dark background. Large price tag SVG showing $9.99 with a red strikethrough animating across it. Text below: 'Your brain says: ≈ $9'. Title CHARM PRICING fades in amber.",
+    "narration": "Whenever you see three pricing tiers, one of them is fake. It's called the decoy effect, and MIT proved it can nearly triple how many people choose the most expensive option.",
+    "visual": "Dark background. Three pricing tier boxes spring in: BASIC $9, STANDARD $18 (red border, DECOY label), PREMIUM $20 (amber glow). Title THE DECOY EFFECT in amber.",
     "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "Here's the trick: your brain reads left to right and anchors on the first digit. So $9.99 feels way closer to nine dollars than to ten — even though it's almost ten.",
-    "visual": "Light background. Brain SVG. Number '9' springs in large and highlighted in amber. Arrow pointing left labeled 'anchors here'. The '.99' fades out in gray.",
+    "narration": "Dan Ariely tested this at MIT using The Economist. Web-only was $59, print-only was $125, and web plus print was also $125 — who'd ever pay the same price for less?",
+    "visual": "Light background. Three subscription option cards stack in: Web-only $59 (green), Print-only $125 (red, big X animates over it), Web+Print $125 (amber, 'Best value!' label).",
     "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Sixty percent of all retail prices end in nine — not by accident. You run into over two hundred of these charm prices every grocery trip, and each one nudges you to buy.",
-    "visual": "Dark background. Nine animated price tags spring in: $1.99, $4.99, $9.99, $14.99, $19.99, $29.99, $39.99, $49.99, $99.99. Counter animates to 60%.",
+    "narration": "Without the decoy, only 32 percent chose the expensive bundle. Add that useless print-only option back in and 84 percent picked it. One fake price nearly tripled premium sales.",
+    "visual": "Dark background. Two bar charts grow upward side by side: left bar gray '32% — No decoy', right bar amber '84% — With decoy'. Label 'Nearly 3x' appears with an upward arrow.",
     "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "MIT tested this with the same dress sold at $34 and $39. The $39 version outsold $34 by twenty-four percent — a higher price sold more, all because of the nine.",
-    "visual": "Light background. Two dress SVGs side by side. Left: gray dress labeled $34. Right: amber dress labeled $39 with a checkmark. Bar chart grows: $39 bar towers 24% taller.",
+    "narration": "This trap is everywhere — streaming services, gym memberships, coffee sizes, restaurant menus. Wherever there are three options, the middle one is almost always there to push you toward the top.",
+    "visual": "Light background. Three service examples appear as cards: Streaming (Basic/Standard/Premium), Gym (Silver/Gold/Platinum), Coffee (Small/Medium/Large). Middle tier highlighted amber as 'DECOY' on each.",
     "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "Across groceries, clothing, and subscriptions, charm pricing costs the average American $1,400 every year. Over forty years, that's $56,000 — gone because of a one-cent trick.",
-    "visual": "Dark background. Piggy bank SVG. Dollar counter animates from $0 to $1,400 with amber glow. Then '$56,000 over 40 years' springs in red below.",
+    "narration": "The average American makes 35 decoy-influenced purchases a year, overspending $80 per trigger. That's $2,800 every year — drained by a price that was never meant to be chosen.",
+    "visual": "Dark background. Piggy bank SVG. Dollar counter animates from $0 to $2,800 in amber. Then '$112,000 invested over 40 years' springs in red below.",
     "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "Your defense: mentally round every price up to the next dollar. $9.99 is ten dollars. That two-second habit can save you $1,400 a year — follow for more tricks like this.",
-    "visual": "Light background. Shield SVG with checkmark. Two steps spring in: 1) Round UP — $9.99 = $10. 2) Ask 'Would I buy it at $10?' CTA: follow for money psychology.",
+    "narration": "Your defense: ignore the middle option entirely. Compare only the cheapest and most expensive — does the jump justify the cost? That two-second habit saves you $2,800 every single year.",
+    "visual": "Light background. Shield SVG with animated checkmark. Two steps spring in: 1) Skip the middle tier. 2) Compare cheapest vs. priciest only. CTA: follow for more money psychology.",
     "accent_color": "amber"
   }
 ]
