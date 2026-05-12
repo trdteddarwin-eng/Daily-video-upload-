@@ -1,12 +1,13 @@
 {
-  "title": "The Fake Price That Makes You Buy the Expensive One",
-  "hook": "Stores add a fake middle option just to make the priciest choice feel like a steal — and MIT proved it triples premium sales.",
-  "angle": "The decoy effect (asymmetric dominance) is a documented cognitive bias systematically weaponized in pricing — Dan Ariely's Economist subscription experiment is the canonical proof with precise numbers",
-  "audience": "Anyone who subscribes to streaming services, gyms, or software — or shops anywhere with three pricing tiers",
+  "title": "The Endowment Effect: You're Holding a $9,200 Mistake",
+  "hook": "Your brain triples the value of anything you own — and that's keeping you in losing stocks, overpriced homes, and underpaid jobs.",
+  "angle": "The ownership illusion is a well-documented bias (Kahneman, Ariely) but almost nobody frames it as a dollar-amount financial trap across investing, real estate, and careers simultaneously.",
+  "audience": "Anyone who has ever held a losing investment too long, overpriced something they sold, or stayed at a job past its prime",
   "key_numbers": [
-    "84% chose the expensive bundle when the decoy was present",
-    "Only 32% without the decoy — it nearly tripled premium sales",
-    "$2,800/year average extra spending from decoy-influenced purchases",
-    "73% of subscription services use 3-tier pricing intentionally"
+    "3× — brain's average markup on things you own",
+    "$9,200 — average retail investor's trapped losing position",
+    "71% — traders who hold losses 2× longer than winners",
+    "22% — how much home sellers overprice on average",
+    "50% — lifetime earnings gap between loyal employees and job switchers"
   ]
 }

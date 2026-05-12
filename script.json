@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Whenever you see three pricing tiers, one of them is fake. It's called the decoy effect, and MIT proved it can nearly triple how many people choose the most expensive option.",
-    "visual": "Dark background. Three pricing tier boxes spring in: BASIC $9, STANDARD $18 (red border, DECOY label), PREMIUM $20 (amber glow). Title THE DECOY EFFECT in amber.",
+    "narration": "The second you own something, your brain secretly triples its value. That's the endowment effect — and it's quietly wrecking your finances right now.",
+    "visual": "Dark background. 'THE ENDOWMENT EFFECT' title springs in from top in amber. SVG brain outline pops in with spring animation. Large '×3' counter animates from ×1 to ×3 in white. Subtitle fades in below.",
     "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "Dan Ariely tested this at MIT using The Economist. Web-only was $59, print-only was $125, and web plus print was also $125 — who'd ever pay the same price for less?",
-    "visual": "Light background. Three subscription option cards stack in: Web-only $59 (green), Print-only $125 (red, big X animates over it), Web+Print $125 (amber, 'Best value!' label).",
+    "narration": "Cornell gave students a coffee mug. Owners wanted $7.12 to sell it. Non-owners only offered $2.87. Same mug — but ownership inflated the value 148%. Wild, right?",
+    "visual": "Light background. Two coffee mugs spring in side by side labeled OWNER (amber mug) and BUYER (white mug). Price tags animate in: $7.12 vs $2.87. '+148% MARKUP' badge pops in at bottom.",
     "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Without the decoy, only 32 percent chose the expensive bundle. Add that useless print-only option back in and 84 percent picked it. One fake price nearly tripled premium sales.",
-    "visual": "Dark background. Two bar charts grow upward side by side: left bar gray '32% — No decoy', right bar amber '84% — With decoy'. Label 'Nearly 3x' appears with an upward arrow.",
+    "narration": "In your brokerage account, this gets brutal. Seventy-one percent of traders hold losing stocks twice as long as winners — because selling makes the loss feel real. Average stuck position: nine thousand dollars.",
+    "visual": "Dark background. Red stock chart line animates drawing downward trend from left to right. '71%' stat counter appears large in red. '$9,200 AVG STUCK POSITION' panel fades in below.",
     "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "This trap is everywhere — streaming services, gym memberships, coffee sizes, restaurant menus. Wherever there are three options, the middle one is almost always there to push you toward the top.",
-    "visual": "Light background. Three service examples appear as cards: Streaming (Basic/Standard/Premium), Gym (Silver/Gold/Platinum), Coffee (Small/Medium/Large). Middle tier highlighted amber as 'DECOY' on each.",
+    "narration": "Home sellers are the worst victims. The average seller overprices by 22%, sitting 73 extra days on market — before caving to a lower offer anyway. The endowment effect costs you months of mortgage payments.",
+    "visual": "Light background. SVG house (triangle roof, rectangle body, windows, door) springs in. '+22% OVER MARKET VALUE' price tag appears. Calendar icon with '73 DAYS' fades in. Strikethrough price with red lower price animates in.",
     "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "The average American makes 35 decoy-influenced purchases a year, overspending $80 per trigger. That's $2,800 every year — drained by a price that was never meant to be chosen.",
-    "visual": "Dark background. Piggy bank SVG. Dollar counter animates from $0 to $2,800 in amber. Then '$112,000 invested over 40 years' springs in red below.",
+    "narration": "It even traps you at work. Employees who stay two-plus years at one company earn 50% less over their career than job switchers — but leaving feels like losing something you own.",
+    "visual": "Dark background. Two person silhouettes with growing salary bars. Left bar labeled LOYAL EMPLOYEE (shorter, white). Right bar labeled JOB SWITCHER (taller, amber). '50% MORE LIFETIME EARNINGS' badge animates in.",
     "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "Your defense: ignore the middle option entirely. Compare only the cheapest and most expensive — does the jump justify the cost? That two-second habit saves you $2,800 every single year.",
-    "visual": "Light background. Shield SVG with animated checkmark. Two steps spring in: 1) Skip the middle tier. 2) Compare cheapest vs. priciest only. CTA: follow for more money psychology.",
+    "narration": "Beat it with one question: would I buy this today if I didn't already own it? If the answer's no, that's your endowment effect talking. Follow for more money psychology.",
+    "visual": "Light background. Large question mark SVG pops in with spring. Amber box appears with the question text. Green checkmark circle springs in. Black CTA box fades in: 'FOLLOW FOR MORE MONEY PSYCHOLOGY'.",
     "accent_color": "amber"
   }
 ]
