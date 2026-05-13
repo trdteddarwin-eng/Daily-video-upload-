@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "The second you own something, your brain secretly triples its value. That's the endowment effect — and it's quietly wrecking your finances right now.",
-    "visual": "Dark background. 'THE ENDOWMENT EFFECT' title springs in from top in amber. SVG brain outline pops in with spring animation. Large '×3' counter animates from ×1 to ×3 in white. Subtitle fades in below.",
+    "narration": "You've promised yourself you'd start saving next week hundreds of times. That one habit has a six-figure price tag. Let's do the math.",
+    "visual": "Dark background. Title 'THE START MONDAY TRAP' springs in. Calendar SVG with NEXT WEEK header, big red X over dates. Counter animates 0 to 312 labeled BROKEN PROMISES TO START.",
     "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "Cornell gave students a coffee mug. Owners wanted $7.12 to sell it. Non-owners only offered $2.87. Same mug — but ownership inflated the value 148%. Wild, right?",
-    "visual": "Light background. Two coffee mugs spring in side by side labeled OWNER (amber mug) and BUYER (white mug). Price tags animate in: $7.12 vs $2.87. '+148% MARKUP' badge pops in at bottom.",
+    "narration": "Your brain is wired to pick now over later — scientists call it hyperbolic discounting. It's not a willpower problem. And it costs a lot.",
+    "visual": "Light background. Large amber NOW bubble and small gray LATER bubble. Red arrow labeled BRAIN PICKS points at NOW. 87% stat fades in below with 'OF NON-SAVERS SAY THEY'LL START SOON'.",
     "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "In your brokerage account, this gets brutal. Seventy-one percent of traders hold losing stocks twice as long as winners — because selling makes the loss feel real. Average stuck position: nine thousand dollars.",
-    "visual": "Dark background. Red stock chart line animates drawing downward trend from left to right. '71%' stat counter appears large in red. '$9,200 AVG STUCK POSITION' panel fades in below.",
+    "narration": "Here's the math: start at twenty-five instead of twenty-eight and you're a hundred and eighty-seven thousand dollars richer at retirement. Same investment, three extra years.",
+    "visual": "Dark background. Two diverging line charts animate in — amber line Age 25 climbs steeply, dim white line Age 28 lags behind. '-$187,000 THE DELAY PENALTY' red badge appears.",
     "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "Home sellers are the worst victims. The average seller overprices by 22%, sitting 73 extra days on market — before caving to a lower offer anyway. The endowment effect costs you months of mortgage payments.",
-    "visual": "Light background. SVG house (triangle roof, rectangle body, windows, door) springs in. '+22% OVER MARKET VALUE' price tag appears. Calendar icon with '73 DAYS' fades in. Strikethrough price with red lower price animates in.",
+    "narration": "Each year you delay burns fifty-eight thousand dollars of future wealth. That math locks in the moment you postpone — the clock is always running.",
+    "visual": "Light background. Piggy bank SVG with red X marks. Dollar counter animates $0 to $58K in red. Amber badge reads 'PER YEAR OF DELAY at 7% return'.",
     "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "It even traps you at work. Employees who stay two-plus years at one company earn 50% less over their career than job switchers — but leaving feels like losing something you own.",
-    "visual": "Dark background. Two person silhouettes with growing salary bars. Left bar labeled LOYAL EMPLOYEE (shorter, white). Right bar labeled JOB SWITCHER (taller, amber). '50% MORE LIFETIME EARNINGS' badge animates in.",
+    "narration": "Seven in ten non-savers say they'll start soon. The average real delay is three point two years. That's the most expensive soon ever measured.",
+    "visual": "Dark background. Row of 10 person silhouettes reveal one by one — 7 amber, 3 gray. Large '7 IN 10' stat. Red '3.2 YRS AVERAGE DELAY' badge fades in below.",
     "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "Beat it with one question: would I buy this today if I didn't already own it? If the answer's no, that's your endowment effect talking. Follow for more money psychology.",
-    "visual": "Light background. Large question mark SVG pops in with spring. Amber box appears with the question text. Green checkmark circle springs in. Black CTA box fades in: 'FOLLOW FOR MORE MONEY PSYCHOLOGY'.",
+    "narration": "The fix isn't willpower — it's automation. Set up one dollar a day right now, not Monday. Your future self doesn't get a vote on the delay.",
+    "visual": "Light background. Calendar with today's date circled in amber. Amber box: AUTOMATE TODAY — Not Monday. Not next month. Today. Green dollar circle pops in. Black FOLLOW FOR MORE CTA badge.",
     "accent_color": "amber"
   }
 ]
