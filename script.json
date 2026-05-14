@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You've promised yourself you'd start saving next week hundreds of times. That one habit has a six-figure price tag. Let's do the math.",
-    "visual": "Dark background. Title 'THE START MONDAY TRAP' springs in. Calendar SVG with NEXT WEEK header, big red X over dates. Counter animates 0 to 312 labeled BROKEN PROMISES TO START.",
+    "narration": "Here's something wild — handing over cash literally triggers pain in your brain. Scientists measured it. And that pain? It's quietly making some people 30% richer.",
+    "visual": "Dark background. Brain silhouette with glowing pain-signal pulse near the insula region. Stat '30% LESS SPENDING' springs up in amber.",
     "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "Your brain is wired to pick now over later — scientists call it hyperbolic discounting. It's not a willpower problem. And it costs a lot.",
-    "visual": "Light background. Large amber NOW bubble and small gray LATER bubble. Red arrow labeled BRAIN PICKS points at NOW. 87% stat fades in below with 'OF NON-SAVERS SAY THEY'LL START SOON'.",
+    "narration": "MIT researchers gave people the same item to buy — once with cash, once with a card. Card users paid up to two times more for the exact same thing. Your card turns off your wallet's alarm.",
+    "visual": "Light background. Two price tags side by side — 'CASH $20' and 'CARD $40'. Card tag glows amber. '2X MORE' badge pops in with spring animation.",
     "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Here's the math: start at twenty-five instead of twenty-eight and you're a hundred and eighty-seven thousand dollars richer at retirement. Same investment, three extra years.",
-    "visual": "Dark background. Two diverging line charts animate in — amber line Age 25 climbs steeply, dim white line Age 28 lags behind. '-$187,000 THE DELAY PENALTY' red badge appears.",
+    "narration": "When you swipe, your brain never really feels the money leaving. It's abstract. But when you peel bills from your wallet, your insula fires — that financial pain actually works.",
+    "visual": "Dark background. SVG hand holding a wallet. Bills animate out and stack. Brain icon with radiating amber pulse rings labeled 'PAIN SIGNAL'.",
     "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "Each year you delay burns fifty-eight thousand dollars of future wealth. That math locks in the moment you postpone — the clock is always running.",
-    "visual": "Light background. Piggy bank SVG with red X marks. Dollar counter animates $0 to $58K in red. Amber badge reads 'PER YEAR OF DELAY at 7% return'.",
+    "narration": "Now do the math. Spend $1,500 a month and cut 30% by using cash — that's $450 freed every month. Invested at 7%, that grows to $31,000 in ten years.",
+    "visual": "Light background. Bar chart animates: 'CARD $1,500' vs 'CASH $1,050'. Arrow points to piggy bank labeled '$31,000 IN 10 YRS'.",
     "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "Seven in ten non-savers say they'll start soon. The average real delay is three point two years. That's the most expensive soon ever measured.",
-    "visual": "Dark background. Row of 10 person silhouettes reveal one by one — 7 amber, 3 gray. Large '7 IN 10' stat. Red '3.2 YRS AVERAGE DELAY' badge fades in below.",
+    "narration": "The cash envelope method is old-school on purpose. Divide your budget into labeled envelopes — groceries, dining, fun. When the envelope is empty, you stop. No app, no willpower needed.",
+    "visual": "Dark background. Three labeled envelopes: 'GROCERIES', 'DINING', 'FUN'. Bills slide into each. One envelope empties and shows a red X.",
     "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "The fix isn't willpower — it's automation. Set up one dollar a day right now, not Monday. Your future self doesn't get a vote on the delay.",
-    "visual": "Light background. Calendar with today's date circled in amber. Amber box: AUTOMATE TODAY — Not Monday. Not next month. Today. Green dollar circle pops in. Black FOLLOW FOR MORE CTA badge.",
+    "narration": "93% of transactions are now cashless — almost nobody feels that pain anymore. Use cash for just your top two spending categories and watch your balance grow. Your brain does the work.",
+    "visual": "Dark background. Person silhouette holding cash on one side, phone on the other. Stat '93% CASHLESS' fades in. CTA text 'CASH = BUILT-IN WILLPOWER' slides up in amber.",
     "accent_color": "amber"
   }
 ]
