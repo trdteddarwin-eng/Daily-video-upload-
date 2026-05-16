@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Here's something wild — handing over cash literally triggers pain in your brain. Scientists measured it. And that pain? It's quietly making some people 30% richer.",
-    "visual": "Dark background. Brain silhouette with glowing pain-signal pulse near the insula region. Stat '30% LESS SPENDING' springs up in amber.",
+    "narration": "Here's a math fact that'll change every purchase you make. Every dollar you spend in your thirties is secretly worth seven dollars in retirement.",
+    "visual": "Dark background. Large dollar coin with amber pulse rings. Arrow pointing to a 7x coin. Amber badge springs in: '$1 TODAY = $7.61 LATER · 7% returns · 30 years'.",
     "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "MIT researchers gave people the same item to buy — once with cash, once with a card. Card users paid up to two times more for the exact same thing. Your card turns off your wallet's alarm.",
-    "visual": "Light background. Two price tags side by side — 'CASH $20' and 'CARD $40'. Card tag glows amber. '2X MORE' badge pops in with spring animation.",
+    "narration": "Seven percent returns over thirty years turns one dollar into seven sixty-one. That's compound interest always running silently in the background.",
+    "visual": "Light background. Animated bar chart — bars grow from left to right showing $1 at year 0 growing to $7.61 at year 30, with milestone labels at years 5, 10, 15, 20, 25, 30.",
     "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "When you swipe, your brain never really feels the money leaving. It's abstract. But when you peel bills from your wallet, your insula fires — that financial pain actually works.",
-    "visual": "Dark background. SVG hand holding a wallet. Bills animate out and stack. Brain icon with radiating amber pulse rings labeled 'PAIN SIGNAL'.",
+    "narration": "Number one — that two-hundred-dollar dinner. Your retirement account sees that as fourteen hundred dollars walking out the door, not two hundred.",
+    "visual": "Dark background. Fork-and-knife SVG icon. $200 price tag slides in. Times-7 arrow. Red $1,400 badge springs in labeled 'RETIREMENT COST'.",
     "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "Now do the math. Spend $1,500 a month and cut 30% by using cash — that's $450 freed every month. Invested at 7%, that grows to $31,000 in ten years.",
-    "visual": "Light background. Bar chart animates: 'CARD $1,500' vs 'CASH $1,050'. Arrow points to piggy bank labeled '$31,000 IN 10 YRS'.",
+    "narration": "Number two — Americans spend almost fifteen hundred dollars every month on non-essentials. In retirement value that's over a hundred twenty-five thousand dollars a year your future self won't have.",
+    "visual": "Light background. List of expense rows animate in — Dining $340, Shopping $280, Entertainment $220, Subscriptions $265, Impulse Buys $392. Red total badge: '$125,748/YEAR IN RETIREMENT VALUE'.",
     "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "The cash envelope method is old-school on purpose. Divide your budget into labeled envelopes — groceries, dining, fun. When the envelope is empty, you stop. No app, no willpower needed.",
-    "visual": "Dark background. Three labeled envelopes: 'GROCERIES', 'DINING', 'FUN'. Bills slide into each. One envelope empties and shows a red X.",
+    "narration": "Number three — millionaires don't spend less because they're cheap. They ask one question before every purchase: is this worth seven times the price to future me?",
+    "visual": "Dark background. Two person silhouettes — gray spender with money flying away, amber saver with growing piggy bank. Question bubble at bottom: 'IS THIS WORTH 7× TO FUTURE ME?'.",
     "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "93% of transactions are now cashless — almost nobody feels that pain anymore. Use cash for just your top two spending categories and watch your balance grow. Your brain does the work.",
-    "visual": "Dark background. Person silhouette holding cash on one side, phone on the other. Stat '93% CASHLESS' fades in. CTA text 'CASH = BUILT-IN WILLPOWER' slides up in amber.",
+    "narration": "Before your next big purchase, multiply the price by seven. If it's still worth it, buy it guilt-free. If not, your future self just got a lot richer.",
+    "visual": "Light background. Calculator SVG with × 7 display counting up. Amber CTA badge: 'STILL WORTH IT? BUY IT. / IF NOT — FUTURE YOU WINS.'",
     "accent_color": "amber"
   }
 ]
