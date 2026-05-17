@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Here's a math fact that'll change every purchase you make. Every dollar you spend in your thirties is secretly worth seven dollars in retirement.",
-    "visual": "Dark background. Large dollar coin with amber pulse rings. Arrow pointing to a 7x coin. Amber badge springs in: '$1 TODAY = $7.61 LATER · 7% returns · 30 years'.",
-    "accent_color": "amber"
+    "narration": "Every time you say 'let's just split it evenly,' your brain switches into a completely different spending mode. And it's costing you over a thousand dollars a year.",
+    "visual": "Dark background. Restaurant plate SVG with fork and knife. Large orange 'SPLIT IT?' text springs in. Dollar signs float in from corners. Badge: '$1,100/YEAR'.",
+    "accent_color": "orange"
   },
   {
     "scene": 2,
-    "narration": "Seven percent returns over thirty years turns one dollar into seven sixty-one. That's compound interest always running silently in the background.",
-    "visual": "Light background. Animated bar chart — bars grow from left to right showing $1 at year 0 growing to $7.61 at year 30, with milestone labels at years 5, 10, 15, 20, 25, 30.",
-    "accent_color": "amber"
+    "narration": "Here's why — when costs are shared equally, your brain recalculates every item at a fraction of its real price. That twenty-dollar cocktail suddenly feels like it only costs you five bucks.",
+    "visual": "Light background. Brain SVG. Three thought-bubble cards slide in from the right: 'LOBSTER — ONLY $8 EACH', 'COCKTAIL — JUST $4 EACH', 'DESSERT — WHY NOT?' Label: 'SHARED COST = MORE SPENDING'.",
+    "accent_color": "orange"
   },
   {
     "scene": 3,
-    "narration": "Number one — that two-hundred-dollar dinner. Your retirement account sees that as fourteen hundred dollars walking out the door, not two hundred.",
-    "visual": "Dark background. Fork-and-knife SVG icon. $200 price tag slides in. Times-7 arrow. Red $1,400 badge springs in labeled 'RETIREMENT COST'.",
-    "accent_color": "amber"
+    "narration": "Researchers at the University of California found that equal-split diners spend thirty percent more per person than people who pay for exactly what they ordered. Thirty percent every single time.",
+    "visual": "Dark background. Two bar charts side by side. White bar labeled 'PAY OWN: $48' and orange bar labeled 'SPLIT EQUAL: $62'. Orange '+30% MORE' badge springs in below.",
+    "accent_color": "orange"
   },
   {
     "scene": 4,
-    "narration": "Number two — Americans spend almost fifteen hundred dollars every month on non-essentials. In retirement value that's over a hundred twenty-five thousand dollars a year your future self won't have.",
-    "visual": "Light background. List of expense rows animate in — Dining $340, Shopping $280, Entertainment $220, Subscriptions $265, Impulse Buys $392. Red total badge: '$125,748/YEAR IN RETIREMENT VALUE'.",
-    "accent_color": "amber"
+    "narration": "And nobody speaks up because nobody wants to look cheap. So everyone silently orders more, and everyone silently pays more — for every single group meal.",
+    "visual": "Light background. Two person silhouettes at a table. Matching orange thought bubbles above each: 'I LOOK CHEAP'. Plate between them. Label: 'EVERYONE ORDERS MORE / NOBODY SAYS ANYTHING'.",
+    "accent_color": "orange"
   },
   {
     "scene": 5,
-    "narration": "Number three — millionaires don't spend less because they're cheap. They ask one question before every purchase: is this worth seven times the price to future me?",
-    "visual": "Dark background. Two person silhouettes — gray spender with money flying away, amber saver with growing piggy bank. Question bubble at bottom: 'IS THIS WORTH 7× TO FUTURE ME?'.",
-    "accent_color": "amber"
+    "narration": "On a three-thousand-dollar annual dining budget, that thirty percent tax is eleven hundred dollars a year. Invested at seven percent for ten years, that's fifteen thousand three hundred dollars you handed to the table.",
+    "visual": "Dark background. Orange piggy bank SVG. Progress bar fills. Counter animates from zero up to $15,300. Label below: 'AT 7% ANNUAL RETURN OVER 10 YEARS'.",
+    "accent_color": "orange"
   },
   {
     "scene": 6,
-    "narration": "Before your next big purchase, multiply the price by seven. If it's still worth it, buy it guilt-free. If not, your future self just got a lot richer.",
-    "visual": "Light background. Calculator SVG with × 7 display counting up. Amber CTA badge: 'STILL WORTH IT? BUY IT. / IF NOT — FUTURE YOU WINS.'",
-    "accent_color": "amber"
+    "narration": "The fix is simple — split by item, not by table total. Use Splitwise or just ask for separate checks. Small habit, eleven hundred dollars back in your pocket every year.",
+    "visual": "Light background. Phone SVG showing itemized receipt. Three action cards slide in: 'SPLIT BY ITEM NOT TOTAL', 'USE SPLITWISE OR VENMO', orange highlight card 'SAVE $1,100 A YEAR'. CTA: 'FOLLOW FOR MORE MONEY HACKS'.",
+    "accent_color": "orange"
   }
 ]
