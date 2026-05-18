@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Every time you say 'let's just split it evenly,' your brain switches into a completely different spending mode. And it's costing you over a thousand dollars a year.",
-    "visual": "Dark background. Restaurant plate SVG with fork and knife. Large orange 'SPLIT IT?' text springs in. Dollar signs float in from corners. Badge: '$1,100/YEAR'.",
-    "accent_color": "orange"
+    "narration": "Sixty-three percent of workers never negotiate their salary — not once. That silence has a price tag, and it'll make you sick to hear it.",
+    "visual": "Person silhouette standing at a desk on dark background, large $1,500,000 counter animating up from zero in green text",
+    "accent_color": "green"
   },
   {
     "scene": 2,
-    "narration": "Here's why — when costs are shared equally, your brain recalculates every item at a fraction of its real price. That twenty-dollar cocktail suddenly feels like it only costs you five bucks.",
-    "visual": "Light background. Brain SVG. Three thought-bubble cards slide in from the right: 'LOBSTER — ONLY $8 EACH', 'COCKTAIL — JUST $4 EACH', 'DESSERT — WHY NOT?' Label: 'SHARED COST = MORE SPENDING'.",
-    "accent_color": "orange"
+    "narration": "Here's number one: every job offer you see is a floor, not a ceiling. Companies almost always budget five to ten thousand above what they first offer — and they're counting on you to just say yes.",
+    "visual": "Two side-by-side bars on light background: shorter 'THEIR OFFER $65K' vs taller 'REAL BUDGET $75K' with a $5K-$10K gap badge",
+    "accent_color": "green"
   },
   {
     "scene": 3,
-    "narration": "Researchers at the University of California found that equal-split diners spend thirty percent more per person than people who pay for exactly what they ordered. Thirty percent every single time.",
-    "visual": "Dark background. Two bar charts side by side. White bar labeled 'PAY OWN: $48' and orange bar labeled 'SPLIT EQUAL: $62'. Orange '+30% MORE' badge springs in below.",
-    "accent_color": "orange"
+    "narration": "Number two: every raise you get is a percentage of that starting number. Accept a low first offer, and you're stuck compounding on a smaller base for the rest of your career.",
+    "visual": "Two diverging salary lines on dark background — green line climbing steeply labeled NEGOTIATED, faded white line barely rising labeled SILENT",
+    "accent_color": "green"
   },
   {
     "scene": 4,
-    "narration": "And nobody speaks up because nobody wants to look cheap. So everyone silently orders more, and everyone silently pays more — for every single group meal.",
-    "visual": "Light background. Two person silhouettes at a table. Matching orange thought bubbles above each: 'I LOOK CHEAP'. Plate between them. Label: 'EVERYONE ORDERS MORE / NOBODY SAYS ANYTHING'.",
-    "accent_color": "orange"
+    "narration": "That five thousand dollars you left on the table at twenty-five — at seven percent compounded for forty years — turns into $634,000. One conversation. Six figures.",
+    "visual": "Animated stack of green coins on light background, counter ticking up from $5,000 to $634,000 with a progress bar",
+    "accent_color": "green"
   },
   {
     "scene": 5,
-    "narration": "On a three-thousand-dollar annual dining budget, that thirty percent tax is eleven hundred dollars a year. Invested at seven percent for ten years, that's fifteen thousand three hundred dollars you handed to the table.",
-    "visual": "Dark background. Orange piggy bank SVG. Progress bar fills. Counter animates from zero up to $15,300. Label below: 'AT 7% ANNUAL RETURN OVER 10 YEARS'.",
-    "accent_color": "orange"
+    "narration": "Over a full forty-year career, consistent negotiators earn one point five million dollars more than those who never ask. Bonuses, 401k matches — all calculated off the number you were afraid to challenge.",
+    "visual": "Two piggy banks side by side on dark background — large green one labeled NEGOTIATED $2.5M+, small faded one labeled SILENT $1M, with $1.5M DIFFERENCE badge",
+    "accent_color": "green"
   },
   {
     "scene": 6,
-    "narration": "The fix is simple — split by item, not by table total. Use Splitwise or just ask for separate checks. Small habit, eleven hundred dollars back in your pocket every year.",
-    "visual": "Light background. Phone SVG showing itemized receipt. Three action cards slide in: 'SPLIT BY ITEM NOT TOTAL', 'USE SPLITWISE OR VENMO', orange highlight card 'SAVE $1,100 A YEAR'. CTA: 'FOLLOW FOR MORE MONEY HACKS'.",
-    "accent_color": "orange"
+    "narration": "Before your next review, look up your market rate and ask for ten percent above it. The worst answer is no — but silence already cost you a million and a half.",
+    "visual": "Phone showing salary market rate data, three action cards sliding in: LOOK UP YOUR MARKET RATE, ASK 10% ABOVE THAT, WORST THEY SAY IS NO (highlighted in green)",
+    "accent_color": "green"
   }
 ]
