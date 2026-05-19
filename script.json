@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Sixty-three percent of workers never negotiate their salary — not once. That silence has a price tag, and it'll make you sick to hear it.",
-    "visual": "Person silhouette standing at a desk on dark background, large $1,500,000 counter animating up from zero in green text",
-    "accent_color": "green"
+    "narration": "You're scrolling your phone at 9PM and suddenly you've bought things you didn't plan on. That's not weak willpower — your brain is just out of gas.",
+    "visual": "Person silhouette lying on couch holding a glowing orange phone, clock showing 9:00 PM, three shopping bags appearing one by one",
+    "accent_color": "orange"
   },
   {
     "scene": 2,
-    "narration": "Here's number one: every job offer you see is a floor, not a ceiling. Companies almost always budget five to ten thousand above what they first offer — and they're counting on you to just say yes.",
-    "visual": "Two side-by-side bars on light background: shorter 'THEIR OFFER $65K' vs taller 'REAL BUDGET $75K' with a $5K-$10K gap badge",
-    "accent_color": "green"
+    "narration": "Scientists call it decision fatigue. Your brain makes over 200 decisions every day, and by 9PM your financial judgment is basically gone.",
+    "visual": "Brain SVG outline with battery meter draining from full to nearly empty, decision counter ticking up to 200-plus, brain turning red when depleted",
+    "accent_color": "orange"
   },
   {
     "scene": 3,
-    "narration": "Number two: every raise you get is a percentage of that starting number. Accept a low first offer, and you're stuck compounding on a smaller base for the rest of your career.",
-    "visual": "Two diverging salary lines on dark background — green line climbing steeply labeled NEGOTIATED, faded white line barely rising labeled SILENT",
-    "accent_color": "green"
+    "narration": "Here's the dark part — retailers know this. They send their biggest deals between 8PM and midnight, right when your resistance is at its lowest.",
+    "visual": "Shopping cart icon next to ringing notification bell, 24-hour time bar chart with 8PM-to-midnight columns lit up in orange, 'DEAL ENDS SOON' alert badge",
+    "accent_color": "orange"
   },
   {
     "scene": 4,
-    "narration": "That five thousand dollars you left on the table at twenty-five — at seven percent compounded for forty years — turns into $634,000. One conversation. Six figures.",
-    "visual": "Animated stack of green coins on light background, counter ticking up from $5,000 to $634,000 with a progress bar",
-    "accent_color": "green"
+    "narration": "The average American racks up $2,100 in late-night impulse buys every year. Over a decade, that's $21,000 gone from evening scroll sessions.",
+    "visual": "Piggy bank SVG with a crack forming, dollar counter animating up to $2,100, decade total badge of $21,000 springing in below",
+    "accent_color": "orange"
   },
   {
     "scene": 5,
-    "narration": "Over a full forty-year career, consistent negotiators earn one point five million dollars more than those who never ask. Bonuses, 401k matches — all calculated off the number you were afraid to challenge.",
-    "visual": "Two piggy banks side by side on dark background — large green one labeled NEGOTIATED $2.5M+, small faded one labeled SILENT $1M, with $1.5M DIFFERENCE badge",
-    "accent_color": "green"
+    "narration": "Here's the fix — and it doesn't need willpower. Block shopping apps after 8PM. People who do this save an average of $1,800 a year without any budget.",
+    "visual": "Phone SVG with red X over a shopping cart icon, gold lock symbol springing in, green '$1,800 SAVED' badge and checkmark appearing",
+    "accent_color": "orange"
   },
   {
     "scene": 6,
-    "narration": "Before your next review, look up your market rate and ask for ten percent above it. The worst answer is no — but silence already cost you a million and a half.",
-    "visual": "Phone showing salary market rate data, three action cards sliding in: LOOK UP YOUR MARKET RATE, ASK 10% ABOVE THAT, WORST THEY SAY IS NO (highlighted in green)",
-    "accent_color": "green"
+    "narration": "You don't need more discipline — you need a smarter schedule. Delete shopping apps from your home screen tonight, and follow for more money psychology.",
+    "visual": "Person silhouette standing upright with orange glow, stack of gold coins building up beside them, orange 'FOLLOW FOR MORE' CTA badge",
+    "accent_color": "orange"
   }
 ]
