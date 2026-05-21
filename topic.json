@@ -1,11 +1,7 @@
 {
-  "title": "You Make Your Worst Money Moves After 9PM",
-  "hook": "After 9PM your brain's willpower is basically gone — and every online retailer knows exactly when to hit you.",
-  "angle": "Decision fatigue as a measurable, exploitable financial vulnerability with a simple schedule-based fix — no budgets, no willpower required",
-  "audience": "Anyone who has ever woken up to regret a late-night online purchase",
-  "key_numbers": [
-    "200+ daily decisions drain your willpower by 9PM",
-    "$2,100/year average in late-night impulse buys",
-    "$1,800 saved per year by blocking shopping apps after 8PM"
-  ]
+  "title": "Your Car Insurer Charges 19% More for Loyalty",
+  "hook": "Your car insurance company's best rates go to strangers — loyal customers like you pay 19% more, and they're counting on your inertia.",
+  "angle": "The insurance loyalty penalty is counterintuitive: staying loyal to a brand normally feels virtuous, but auto insurers actively charge long-term customers more than new ones.",
+  "audience": "Anyone who hasn't shopped their auto insurance in the past 2 years — practically everyone.",
+  "key_numbers": ["19% loyalty penalty vs new customers", "$847 average annual overpayment", "15-minute call to fix it", "$8,470 lost over a decade"]
 }

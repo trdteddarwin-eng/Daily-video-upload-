@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You're scrolling your phone at 9PM and suddenly you've bought things you didn't plan on. That's not weak willpower — your brain is just out of gas.",
-    "visual": "Person silhouette lying on couch holding a glowing orange phone, clock showing 9:00 PM, three shopping bags appearing one by one",
-    "accent_color": "orange"
+    "narration": "Your car insurance company charges new customers less than you. The longer you stay, the more you overpay — it's called the loyalty penalty.",
+    "visual": "Car SVG with two price tags: 'NEW CUSTOMER $1,200' and 'YOU $1,771', red arrow pointing at the higher price, title 'LOYALTY TAX' in red",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Scientists call it decision fatigue. Your brain makes over 200 decisions every day, and by 9PM your financial judgment is basically gone.",
-    "visual": "Brain SVG outline with battery meter draining from full to nearly empty, decision counter ticking up to 200-plus, brain turning red when depleted",
-    "accent_color": "orange"
+    "narration": "Studies show loyal auto insurance customers pay 19% more than brand-new ones. That's not a coincidence — that's policy. They count on you not noticing.",
+    "visual": "Bar chart comparing NEW (short bar, green) vs YOU (taller bar, red) with '19% MORE' label and red upward arrow, person silhouette looking away",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Here's the dark part — retailers know this. They send their biggest deals between 8PM and midnight, right when your resistance is at its lowest.",
-    "visual": "Shopping cart icon next to ringing notification bell, 24-hour time bar chart with 8PM-to-midnight columns lit up in orange, 'DEAL ENDS SOON' alert badge",
-    "accent_color": "orange"
+    "narration": "Do the math. The average American pays $1,771 a year for car insurance. That 19% loyalty penalty costs you $847 every single year you don't act.",
+    "visual": "Dollar counter animating to $847 labeled 'LOYALTY TAX / YEAR', calendar icon, decade total badge '$8,470' springing in below",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "The average American racks up $2,100 in late-night impulse buys every year. Over a decade, that's $21,000 gone from evening scroll sessions.",
-    "visual": "Piggy bank SVG with a crack forming, dollar counter animating up to $2,100, decade total badge of $21,000 springing in below",
-    "accent_color": "orange"
+    "narration": "Why do they do it? Because most people never call. Every renewal you skip is another year of silent overpayment — and they're banking on your inertia.",
+    "visual": "Phone SVG with speech bubble showing auto-renew notification, piggy bank with coins draining out, 'AUTO-RENEWED' badge in red",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Here's the fix — and it doesn't need willpower. Block shopping apps after 8PM. People who do this save an average of $1,800 a year without any budget.",
-    "visual": "Phone SVG with red X over a shopping cart icon, gold lock symbol springing in, green '$1,800 SAVED' badge and checkmark appearing",
-    "accent_color": "orange"
+    "narration": "Here's the fix — one fifteen-minute call. Tell them you got a competing quote, or just ask for their loyalty discount. Most people get $300 to $500 off immediately.",
+    "visual": "Phone handset SVG with green speech bubble '$300–$500 OFF', checkmark, two competing quote papers side by side labeled YOUR INSURER vs COMPETITOR",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "You don't need more discipline — you need a smarter schedule. Delete shopping apps from your home screen tonight, and follow for more money psychology.",
-    "visual": "Person silhouette standing upright with orange glow, stack of gold coins building up beside them, orange 'FOLLOW FOR MORE' CTA badge",
-    "accent_color": "orange"
+    "narration": "Over a decade that's $8,470 back in your pocket from one call you've been putting off. Follow for more money moves the industry hopes you never learn.",
+    "visual": "Stack of coins growing to represent $8,470, person silhouette with arms raised, red 'FOLLOW FOR MORE' CTA badge with glow",
+    "accent_color": "red"
   }
 ]
