@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Your car insurance company charges new customers less than you. The longer you stay, the more you overpay — it's called the loyalty penalty.",
-    "visual": "Car SVG with two price tags: 'NEW CUSTOMER $1,200' and 'YOU $1,771', red arrow pointing at the higher price, title 'LOYALTY TAX' in red",
-    "accent_color": "red"
+    "narration": "Every time you see a sale, your brain says you're winning. But here's the thing — science proves you're actually spending more, not less.",
+    "visual": "Large orange price tag SVG with '40% OFF' springs in with rotation, text 'YOU THINK SALES SAVE MONEY' fades in below on dark background",
+    "accent_color": "orange"
   },
   {
     "scene": 2,
-    "narration": "Studies show loyal auto insurance customers pay 19% more than brand-new ones. That's not a coincidence — that's policy. They count on you not noticing.",
-    "visual": "Bar chart comparing NEW (short bar, green) vs YOU (taller bar, red) with '19% MORE' label and red upward arrow, person silhouette looking away",
-    "accent_color": "red"
+    "narration": "Seeing the word 'SALE' floods your brain's reward center with dopamine. It literally shuts off rational thinking — the same way gambling does.",
+    "visual": "Simplified brain outline SVG on light background with glowing orange reward center pulsing, text 'DISCOUNTS HIJACK YOUR BRAIN'",
+    "accent_color": "orange"
   },
   {
     "scene": 3,
-    "narration": "Do the math. The average American pays $1,771 a year for car insurance. That 19% loyalty penalty costs you $847 every single year you don't act.",
-    "visual": "Dollar counter animating to $847 labeled 'LOYALTY TAX / YEAR', calendar icon, decade total badge '$8,470' springing in below",
-    "accent_color": "red"
+    "narration": "Here are the numbers: 72% of sale purchases were never on your shopping list. And the average shopper loses $800 a year on unplanned deals.",
+    "visual": "Progress bar animating to 72% with counting percentage, then dollar counter climbing to $800, all on dark background",
+    "accent_color": "orange"
   },
   {
     "scene": 4,
-    "narration": "Why do they do it? Because most people never call. Every renewal you skip is another year of silent overpayment — and they're banking on your inertia.",
-    "visual": "Phone SVG with speech bubble showing auto-renew notification, piggy bank with coins draining out, 'AUTO-RENEWED' badge in red",
-    "accent_color": "red"
+    "narration": "When you see $100 crossed out with $60 underneath it, your brain doesn't feel poorer — it feels like you just earned $40. That's the trap.",
+    "visual": "Two SVG price tags: gray $100 with red strikethrough, arrow pointing to orange $60 tag labeled 'SAVE $40!', on light background",
+    "accent_color": "orange"
   },
   {
     "scene": 5,
-    "narration": "Here's the fix — one fifteen-minute call. Tell them you got a competing quote, or just ask for their loyalty discount. Most people get $300 to $500 off immediately.",
-    "visual": "Phone handset SVG with green speech bubble '$300–$500 OFF', checkmark, two competing quote papers side by side labeled YOUR INSURER vs COMPETITOR",
-    "accent_color": "red"
+    "narration": "Retailers know this cold. They inflate prices up to 83% before the sale — so that 40% off was never a real discount at all.",
+    "visual": "Bar chart: red bar rising to $140 'INFLATED', then orange bar at $84 'SALE' appears with spinning sale badge, dark background",
+    "accent_color": "orange"
   },
   {
     "scene": 6,
-    "narration": "Over a decade that's $8,470 back in your pocket from one call you've been putting off. Follow for more money moves the industry hopes you never learn.",
-    "visual": "Stack of coins growing to represent $8,470, person silhouette with arms raised, red 'FOLLOW FOR MORE' CTA badge with glow",
-    "accent_color": "red"
+    "narration": "Beat the trap with three rules: make a list before you shop, wait 48 hours on any deal, and never browse without a goal. Save this.",
+    "visual": "Checklist on light background with three rules, checkboxes animating in one by one with orange checkmarks, CTA text fades in at bottom",
+    "accent_color": "orange"
   }
 ]
