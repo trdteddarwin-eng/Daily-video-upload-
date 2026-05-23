@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Every time you see a sale, your brain says you're winning. But here's the thing — science proves you're actually spending more, not less.",
-    "visual": "Large orange price tag SVG with '40% OFF' springs in with rotation, text 'YOU THINK SALES SAVE MONEY' fades in below on dark background",
-    "accent_color": "orange"
+    "narration": "You've probably said it yourself — 'I'll just pay it off next month.' The average American carries $6,360 in credit card debt with that exact plan. Here's what it's really costing them.",
+    "visual": "Red credit card springs down from top. Below it: italic white quote 'I'll pay it off next month.' A dollar counter animates from $0 up to $6,360 in large red digits on dark background.",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Seeing the word 'SALE' floods your brain's reward center with dopamine. It literally shuts off rational thinking — the same way gambling does.",
-    "visual": "Simplified brain outline SVG on light background with glowing orange reward center pulsing, text 'DISCOUNTS HIJACK YOUR BRAIN'",
-    "accent_color": "orange"
+    "narration": "At today's average APR of 24%, that balance racks up $1,527 every year in interest. Not on new purchases — just to sit there. That's next-month money, gone forever.",
+    "visual": "Light background. Dollar signs rain down faintly. A dark card '$6,360 @ 24% APR' scales in. Then a red card '$1,527 / year — JUST TO EXIST' scales in below it.",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Here are the numbers: 72% of sale purchases were never on your shopping list. And the average shopper loses $800 a year on unplanned deals.",
-    "visual": "Progress bar animating to 72% with counting percentage, then dollar counter climbing to $800, all on dark background",
-    "accent_color": "orange"
+    "narration": "Here's the psychology — your brain is wired to discount future pain. Scientists call it temporal discounting. Next-month-you feels like a stranger, so future interest feels basically fake.",
+    "visual": "Dark background. Red brain SVG on the left, an arrow, then a calendar SVG with 'NEXT MONTH' header slides in from the right. Caption fades in: 'Future pain feels unreal.'",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "When you see $100 crossed out with $60 underneath it, your brain doesn't feel poorer — it feels like you just earned $40. That's the trap.",
-    "visual": "Two SVG price tags: gray $100 with red strikethrough, arrow pointing to orange $60 tag labeled 'SAVE $40!', on light background",
-    "accent_color": "orange"
+    "narration": "Make only the minimum payment and it takes 16 years to clear. By then you've handed your bank $8,400 in pure interest. On money you already spent.",
+    "visual": "Light background. A red bar chart grows showing cumulative interest paid at Year 0, 4, 8, 12, and 16 — each bar taller than the last. Callout box: '16 YEARS / $8,400 IN PURE INTEREST.'",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Retailers know this cold. They inflate prices up to 83% before the sale — so that 40% off was never a real discount at all.",
-    "visual": "Bar chart: red bar rising to $140 'INFLATED', then orange bar at $84 'SALE' appears with spinning sale badge, dark background",
-    "accent_color": "orange"
+    "narration": "The average cardholder has three credit cards. Run this math across all three and the interest alone tops $25,000 over a decade. That's not debt — it's a decade-long punishment.",
+    "visual": "Dark background. Three red credit cards fan out with staggered spring animations. Big text below: '$25K+' in red. Subtitle: 'in interest across just 3 cards.'",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Beat the trap with three rules: make a list before you shop, wait 48 hours on any deal, and never browse without a goal. Save this.",
-    "visual": "Checklist on light background with three rules, checkboxes animating in one by one with orange checkmarks, CTA text fades in at bottom",
-    "accent_color": "orange"
+    "narration": "The fix is dead simple — set autopay above the minimum today. Even $50 extra a month cuts 16 years down to 4. Your future self is $8,400 richer for one five-minute decision.",
+    "visual": "Light background. Phone SVG with an autopay screen and green checkmark. A savings counter animates up to $8,400. CTA box: 'Follow for daily money moves.'",
+    "accent_color": "red"
   }
 ]
