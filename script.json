@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You've probably said it yourself — 'I'll just pay it off next month.' The average American carries $6,360 in credit card debt with that exact plan. Here's what it's really costing them.",
-    "visual": "Red credit card springs down from top. Below it: italic white quote 'I'll pay it off next month.' A dollar counter animates from $0 up to $6,360 in large red digits on dark background.",
-    "accent_color": "red"
+    "narration": "You're not just paying for food — you're paying a $3,100 annual subscription you never agreed to. Here's what delivery apps don't want you to add up.",
+    "visual": "Dark background. Phone SVG with a delivery app order screen springs in from below. Animated dollar counter climbs to $3,100 in large orange digits. Subtitle: 'The Hidden Subscription'.",
+    "accent_color": "orange"
   },
   {
     "scene": 2,
-    "narration": "At today's average APR of 24%, that balance racks up $1,527 every year in interest. Not on new purchases — just to sit there. That's next-month money, gone forever.",
-    "visual": "Light background. Dollar signs rain down faintly. A dark card '$6,360 @ 24% APR' scales in. Then a red card '$1,527 / year — JUST TO EXIST' scales in below it.",
-    "accent_color": "red"
+    "narration": "Every order stacks a delivery fee, a service fee, a small-order fee, and a tip. That's $12 to $18 extra on top — every single time. Not for food. For the app.",
+    "visual": "Light background. A receipt SVG unrolls with line items: DELIVERY FEE $3.99, SERVICE FEE $4.49, SMALL ORDER FEE $2.00, TIP $6.00 — each animating in one by one. Running total grows in orange.",
+    "accent_color": "orange"
   },
   {
     "scene": 3,
-    "narration": "Here's the psychology — your brain is wired to discount future pain. Scientists call it temporal discounting. Next-month-you feels like a stranger, so future interest feels basically fake.",
-    "visual": "Dark background. Red brain SVG on the left, an arrow, then a calendar SVG with 'NEXT MONTH' header slides in from the right. Caption fades in: 'Future pain feels unreal.'",
-    "accent_color": "red"
+    "narration": "Here's the trick — your brain sees one total, not five fees. Psychologists call it fee bundling, and it makes you 40% less likely to register the real cost. That's by design.",
+    "visual": "Dark background. A brain SVG on the left. On the right, a receipt with a single total circled. Orange text fades in: '40% LESS LIKELY TO NOTICE'. Arrow connecting the two.",
+    "accent_color": "orange"
   },
   {
     "scene": 4,
-    "narration": "Make only the minimum payment and it takes 16 years to clear. By then you've handed your bank $8,400 in pure interest. On money you already spent.",
-    "visual": "Light background. A red bar chart grows showing cumulative interest paid at Year 0, 4, 8, 12, and 16 — each bar taller than the last. Callout box: '16 YEARS / $8,400 IN PURE INTEREST.'",
-    "accent_color": "red"
+    "narration": "Order just five times a week — pretty average for a millennial — and those fees alone hit $3,120 a year. That's not a meal. That's a car payment.",
+    "visual": "Light background. A 7-day week grid with delivery phone icons on 5 days. Below it, a counter animates from $0 up to $3,120. Caption: '5 ORDERS/WEEK × 52 WEEKS'.",
+    "accent_color": "orange"
   },
   {
     "scene": 5,
-    "narration": "The average cardholder has three credit cards. Run this math across all three and the interest alone tops $25,000 over a decade. That's not debt — it's a decade-long punishment.",
-    "visual": "Dark background. Three red credit cards fan out with staggered spring animations. Big text below: '$25K+' in red. Subtitle: 'in interest across just 3 cards.'",
-    "accent_color": "red"
+    "narration": "If you invested that $3,120 every year at seven percent, in 30 years you'd have $251,000. You're not buying convenience — you're selling your future.",
+    "visual": "Dark background. A growing bar chart showing investment value at years 10, 20, and 30 — each bar taller, capped at $251K label in orange. Subtitle: 'THE REAL PRICE OF DELIVERY'.",
+    "accent_color": "orange"
   },
   {
     "scene": 6,
-    "narration": "The fix is dead simple — set autopay above the minimum today. Even $50 extra a month cuts 16 years down to 4. Your future self is $8,400 richer for one five-minute decision.",
-    "visual": "Light background. Phone SVG with an autopay screen and green checkmark. A savings counter animates up to $8,400. CTA box: 'Follow for daily money moves.'",
-    "accent_color": "red"
+    "narration": "Cut to twice a week and you pocket $1,870 a year. Invested over 30 years, that's $150,000. One habit change. Follow for daily moves that actually compound.",
+    "visual": "Light background. Two columns: '5x/WEEK -$3,120/yr' on the left in red, '2x/WEEK -$1,250/yr' on the right in green. Savings badge animates: 'SAVE $1,870/yr'. CTA box: 'FOLLOW FOR DAILY MONEY MOVES'.",
+    "accent_color": "orange"
   }
 ]
