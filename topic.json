@@ -1,7 +1,11 @@
 {
-  "title": "Your Delivery Apps Charge a Secret $3,100/Year Tax",
-  "hook": "You think you're paying for food — but delivery apps buried a $3,100 annual fee inside every order, and most people never do the math.",
-  "angle": "Reframes convenience spending not as a luxury but as a recurring hidden subscription — then hits with the 30-year compounding cost to make it visceral.",
-  "audience": "Millennials and Gen Z who use delivery apps regularly and underestimate the true annual cost vs. what they could invest.",
-  "key_numbers": ["$12–$18 in hidden fees per delivery order", "$3,120/year for someone ordering 5x/week", "$251,000 lost in 30-year compounding at 7%"]
+  "title": "Your 401k Default Setting Is Quietly Stealing $342K",
+  "hook": "Your employer auto-enrolled you at 3% — and 68% of workers never change it. Here's what that silent setting is actually costing you.",
+  "angle": "Most people trust HR picked the right default. It was chosen to minimize admin cost, not fund your retirement — and status quo bias locks you in forever.",
+  "audience": "Workers with 401k access who haven't reviewed their contribution rate in years",
+  "key_numbers": [
+    "68% of auto-enrolled workers never change their default contribution rate",
+    "$342,000 difference between contributing 3% vs 15% over 30 years",
+    "$138/month (3%) vs $687/month (15%) on a $55,000 salary"
+  ]
 }
