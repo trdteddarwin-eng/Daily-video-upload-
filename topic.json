@@ -1,11 +1,11 @@
 {
-  "title": "Your 401k Default Setting Is Quietly Stealing $342K",
-  "hook": "Your employer auto-enrolled you at 3% — and 68% of workers never change it. Here's what that silent setting is actually costing you.",
-  "angle": "Most people trust HR picked the right default. It was chosen to minimize admin cost, not fund your retirement — and status quo bias locks you in forever.",
-  "audience": "Workers with 401k access who haven't reviewed their contribution rate in years",
+  "title": "Banks Flip Your Transactions to Drain $12 Billion",
+  "hook": "Your bank secretly reorders your transactions largest-to-smallest — one quiet trick that cost Americans $12 billion in overdraft fees last year.",
+  "angle": "Most people think overdraft fees are their own fault. They're not — banks deliberately sort debits high-to-low to maximize the number of overdraft triggers on a single day.",
+  "audience": "Anyone with a checking account who has ever been hit with an unexpected overdraft fee",
   "key_numbers": [
-    "68% of auto-enrolled workers never change their default contribution rate",
-    "$342,000 difference between contributing 3% vs 15% over 30 years",
-    "$138/month (3%) vs $687/month (15%) on a $55,000 salary"
+    "$12 billion collected in overdraft fees by US banks in 2023",
+    "High-to-low transaction reordering can turn 1 overdraft into 5 on a single day",
+    "Average overdraft fee: $35 — charged per transaction, not per day"
   ]
 }

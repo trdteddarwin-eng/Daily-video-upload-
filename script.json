@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Your employer auto-enrolled you in your 401k at 3%. Sounds reasonable — except that one default is quietly costing you three hundred and forty-two thousand dollars.",
-    "visual": "401k enrollment form slides up from bottom with '3%' highlighted in amber. Counter ticks up from $0 to $342,000 below the form.",
-    "accent_color": "amber"
+    "narration": "Your bank hit you with an overdraft fee — but here's the thing, it probably wasn't your fault. Banks secretly reorder your transactions to drain $12 billion a year from customers.",
+    "visual": "Bank building SVG with dollar signs raining down into a vault. Counter ticks up: '$12,000,000,000 COLLECTED IN OVERDRAFT FEES'. Red accent badge pulses.",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Here's the wild part — 68% of auto-enrolled workers never change that default rate. They just trusted HR set it correctly. They didn't.",
-    "visual": "Pie chart springs in: 68% amber slice labeled 'NEVER CHANGED', 32% green slice labeled 'CHANGED IT'. Legend fades in below.",
-    "accent_color": "amber"
+    "narration": "Here's how the trick works. Say you had $200 in your account and made five purchases — a $180 rent payment, then four small ones. Normal, right?",
+    "visual": "Checking account balance shows $200. Five transaction cards slide in sequentially: $180 rent, $12 coffee, $8 lunch, $6 snack, $5 app. All look fine.",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "On a $55,000 salary, 3% means you're saving just $138 a month. The recommended 15% is $687. That $549 gap, compounded over time, is where your retirement disappears.",
-    "visual": "Two side-by-side cards spring in: amber card shows $138/month at 3%, green card shows $687/month at 15%. Red badge shows $549/MONTH GAP.",
-    "accent_color": "amber"
+    "narration": "Your bank secretly flips those transactions — largest first. The $180 hits, wipes your account, and suddenly every small purchase is an overdraft. One day, five fees.",
+    "visual": "Transactions reorder before your eyes: $180 jumps to top, balance drops to $20, then red X marks explode on each smaller transaction. '$35 FEE' badges stack up.",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Run the math over 30 years at 7% returns — 3% gives you $170,000. Fifteen percent grows to $512,000. The only difference is a number you never changed.",
-    "visual": "Two bar charts grow upward: amber bar reaches $170K, green bar reaches $512K. Callout badge shows $342,000 DIFFERENCE.",
-    "accent_color": "amber"
+    "narration": "Instead of one overdraft, you get five. That's $175 in fees on a day you were only $25 short. Banks call it 'high-to-low processing' — wild, right?",
+    "visual": "Calculator SVG shows the math: 5 × $35 = $175 in red. Counter animates from $0 to $175. Side note: 'YOU WERE ONLY $25 SHORT' in amber.",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Your employer picked 3% because it meets the legal minimum — not because it funds your retirement. Status quo bias does the rest — you never change it.",
-    "visual": "Person silhouette at HR desk with a document stamped 'CONTRIBUTION RATE: 3%'. Amber badge: 'MINIMUM = LOW PAPERWORK'.",
-    "accent_color": "amber"
+    "narration": "Wells Fargo, Bank of America, and JPMorgan Chase have all been sued over this — and paid out over $1.4 billion in settlements. They kept doing it anyway.",
+    "visual": "Three bank logos (represented as shield icons) each get a gavel strike. Settlement amount '$1.4 BILLION' appears below. 'STILL DOING IT' badge in red.",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Log into your 401k right now. If you see 3%, change it. Even bumping to 10% puts $200,000 back in your future. Follow for the move that takes two minutes.",
-    "visual": "Phone shows 401k app, contribution rate animates from 3% to 10% with progress bar. Green badge: '$200,000 BACK IN YOUR FUTURE'. CTA banner fades in.",
-    "accent_color": "amber"
+    "narration": "Turn on low-balance alerts. Link a savings account as overdraft backup. Or switch to a credit union — they charge $0 to $10. Don't let them engineer your next fee.",
+    "visual": "Phone with notification bell showing '$35 ALERT SAVED'. Piggy bank icon links to a shield icon with '$0 FEE'. CTA: 'FOLLOW FOR MORE MONEY TRAPS'.",
+    "accent_color": "red"
   }
 ]
