@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Your bank hit you with an overdraft fee — but here's the thing, it probably wasn't your fault. Banks secretly reorder your transactions to drain $12 billion a year from customers.",
-    "visual": "Bank building SVG with dollar signs raining down into a vault. Counter ticks up: '$12,000,000,000 COLLECTED IN OVERDRAFT FEES'. Red accent badge pulses.",
+    "narration": "Here's something wild — being poor actually costs you more money. Low-income Americans pay up to $1,300 extra a year for the same life. It's called the poverty premium.",
+    "visual": "Two person silhouettes side by side: red LOW INCOME figure with '+$1,300' price tag bubble, green HIGH INCOME figure with '$0 EXTRA' tag. Counter animates from $0 to $1,300.",
     "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Here's how the trick works. Say you had $200 in your account and made five purchases — a $180 rent payment, then four small ones. Normal, right?",
-    "visual": "Checking account balance shows $200. Five transaction cards slide in sequentially: $180 rent, $12 coffee, $8 lunch, $6 snack, $5 app. All look fine.",
+    "narration": "Number one: food. Without cash for bulk packs, you pay 43% more per ounce at corner stores. That's $800 a year extra, just on groceries.",
+    "visual": "Two shopping bags slide in from opposite sides. Small red bag: '$3.49/oz CORNER STORE'. Large green bag: '$0.99/oz BULK STORE'. '43% MORE EXPENSIVE' badge animates in.",
     "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Your bank secretly flips those transactions — largest first. The $180 hits, wipes your account, and suddenly every small purchase is an overdraft. One day, five fees.",
-    "visual": "Transactions reorder before your eyes: $180 jumps to top, balance drops to $20, then red X marks explode on each smaller transaction. '$35 FEE' badges stack up.",
+    "narration": "Number two: banking. No minimum balance? You pay $600 a year just to access your own money. Check-cashing fees, overdrafts — they charge you for being broke.",
+    "visual": "Bank building SVG with dollar signs flying upward away from the building. Fee counter animates from $0 to $600/YR below the building.",
     "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Instead of one overdraft, you get five. That's $175 in fees on a day you were only $25 short. Banks call it 'high-to-low processing' — wild, right?",
-    "visual": "Calculator SVG shows the math: 5 × $35 = $175 in red. Counter animates from $0 to $175. Side note: 'YOU WERE ONLY $25 SHORT' in amber.",
+    "narration": "Number three: credit. Rich people borrow at 3% APR. Payday loans charge 400%. Same $500 loan — one costs twenty bucks, the other costs two thousand.",
+    "visual": "Two storefronts side by side: blue BANK with '3% APR' badge, red PAYDAY LOANS storefront with APR counter animating from 0% to 400%. '133× MORE INTEREST' label appears.",
     "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Wells Fargo, Bank of America, and JPMorgan Chase have all been sued over this — and paid out over $1.4 billion in settlements. They kept doing it anyway.",
-    "visual": "Three bank logos (represented as shield icons) each get a gavel strike. Settlement amount '$1.4 BILLION' appears below. 'STILL DOING IT' badge in red.",
+    "narration": "Number four: insurance. Just your zip code adds $500 a year to your car insurance. Same driver, same car — different address means a different financial fate.",
+    "visual": "Two houses side by side with zip code labels: ZIP 60612 (red house, $2,100/yr) vs ZIP 90210 (blue house, $1,600/yr). '+$500/YR ZIP CODE PENALTY' counter animates.",
     "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Turn on low-balance alerts. Link a savings account as overdraft backup. Or switch to a credit union — they charge $0 to $10. Don't let them engineer your next fee.",
-    "visual": "Phone with notification bell showing '$35 ALERT SAVED'. Piggy bank icon links to a shield icon with '$0 FEE'. CTA: 'FOLLOW FOR MORE MONEY TRAPS'.",
+    "narration": "These four traps add up to $1,300 a year just for being poor. Knowing the system is step one to beating it. Follow for more money hacks.",
+    "visual": "Animated bar chart with four rows — FOOD, BANKING, CREDIT, INSURANCE — growing left to right with dollar amounts. Total counter hits $1,300/YR. Red 'FOLLOW FOR MORE' CTA button.",
     "accent_color": "red"
   }
 ]

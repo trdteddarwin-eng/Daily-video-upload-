@@ -1,11 +1,7 @@
 {
-  "title": "Banks Flip Your Transactions to Drain $12 Billion",
-  "hook": "Your bank secretly reorders your transactions largest-to-smallest — one quiet trick that cost Americans $12 billion in overdraft fees last year.",
-  "angle": "Most people think overdraft fees are their own fault. They're not — banks deliberately sort debits high-to-low to maximize the number of overdraft triggers on a single day.",
-  "audience": "Anyone with a checking account who has ever been hit with an unexpected overdraft fee",
-  "key_numbers": [
-    "$12 billion collected in overdraft fees by US banks in 2023",
-    "High-to-low transaction reordering can turn 1 overdraft into 5 on a single day",
-    "Average overdraft fee: $35 — charged per transaction, not per day"
-  ]
+  "title": "Being Broke Costs $1,300/Year More Than Being Rich",
+  "hook": "Low-income Americans pay up to $1,300 extra a year for the exact same life — and the system designed it that way.",
+  "angle": "The poverty premium is a documented economic trap: food, banking, credit, and insurance all cost more when you're poor, creating a cycle that's hard to escape.",
+  "audience": "Low-income earners, anyone living paycheck to paycheck, people frustrated with financial systems working against them",
+  "key_numbers": ["$1,300/year poverty premium", "43% more per ounce on food without bulk buying", "$600/year in banking fees for unbanked Americans", "400% APR on payday loans vs 3% at a bank", "$500/year extra car insurance for low-income zip codes"]
 }
