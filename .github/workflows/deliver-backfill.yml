@@ -27,6 +27,8 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          # Remove the repo's committed copies so the artifact's versions can extract over them
+          rm -f topic.json script.json metadata.json
           gh run download "${{ inputs.run_id }}" -n render-artifacts -D . --repo "${{ github.repository }}"
           echo "Downloaded:"
           ls -la out/ topic.json metadata.json 2>/dev/null || true
