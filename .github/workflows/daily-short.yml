@@ -77,12 +77,6 @@ jobs:
       - name: Render video
         run: python3 pipeline/render_video.py
 
-      - name: Generate metadata
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-        run: python3 pipeline/generate_metadata.py
-
       - name: Deliver to Telegram
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}

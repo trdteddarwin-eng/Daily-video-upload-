@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Cloud: Upload MP4 + metadata package to Telegram."""
+"""Cloud: Upload MP4 + metadata package to Telegram.
+
+Delivery is resilient: if metadata.json is missing, unparseable, or partial,
+we synthesize a fallback from topic.json and merge any real metadata over it.
+Delivery only fails (exit 1) on genuine Telegram API errors or a missing video.
+"""
 import json
 import os
 import sys
@@ -51,25 +56,95 @@ def send_video(path, caption=""):
         return json.loads(r.read().decode("utf-8"))
 
 
+def fallback_metadata(topic):
+    """Synthesize a metadata package from topic.json when metadata.json is unusable."""
+    title = topic.get("title", "Daily Short")
+    hook = topic.get("hook", title)
+    key_numbers = topic.get("key_numbers", [])
+    if not isinstance(key_numbers, list):
+        key_numbers = []
+    key_numbers = [str(n) for n in key_numbers]
+
+    description_parts = [hook]
+    if key_numbers:
+        description_parts.append("\n".join(key_numbers))
+    description_parts.append("#finance #money")
+    description = "\n\n".join(description_parts)
+
+    return {
+        "tiktok": {
+            "caption": hook[:140],
+            "hashtags": ["#finance", "#money", "#moneytok", "#personalfinance", "#financialliteracy"],
+        },
+        "youtube_short": {
+            "title": title[:60],
+            "title_alternatives": [],
+            "description": description,
+            "tags": ["finance", "money", "personal finance", "money psychology"],
+        },
+        "hook_line": title,
+    }
+
+
+def merge_metadata(fallback, real):
+    """Merge real metadata over the fallback so real values win and missing ones fall back."""
+    if not isinstance(real, dict):
+        return fallback
+    merged = dict(fallback)
+    for key, default_val in fallback.items():
+        real_val = real.get(key)
+        if isinstance(default_val, dict) and isinstance(real_val, dict):
+            sub = dict(default_val)
+            for sk, sv in real_val.items():
+                if sv is not None:
+                    sub[sk] = sv
+            merged[key] = sub
+        elif real_val is not None:
+            merged[key] = real_val
+    # Carry over any extra top-level keys present only in real metadata.
+    for key, val in real.items():
+        if key not in merged and val is not None:
+            merged[key] = val
+    return merged
+
+
+def load_metadata(topic):
+    """Load metadata.json resiliently, falling back to topic.json-derived data."""
+    fallback = fallback_metadata(topic)
+    if not os.path.exists(METADATA_PATH):
+        print("metadata.json missing/invalid — using topic.json fallback")
+        return fallback
+    try:
+        with open(METADATA_PATH) as f:
+            real = json.load(f)
+    except (ValueError, OSError) as e:
+        print(f"metadata.json missing/invalid ({e}) — using topic.json fallback")
+        return fallback
+    if not isinstance(real, dict):
+        print("metadata.json missing/invalid — using topic.json fallback")
+        return fallback
+    return merge_metadata(fallback, real)
+
+
 def format_message(topic, metadata):
-    tiktok = metadata["tiktok"]
-    yt = metadata["youtube_short"]
+    tiktok = metadata.get("tiktok", {}) or {}
+    yt = metadata.get("youtube_short", {}) or {}
     parts = [
         f"<b>📱 DAILY SHORT — {datetime.now().strftime('%b %d')}</b>",
         "",
-        f"<b>Topic:</b> {topic['title']}",
+        f"<b>Topic:</b> {topic.get('title', 'Daily Short')}",
         "",
         f"<b>━━━ TIKTOK ━━━</b>",
-        f"<b>Caption:</b> {tiktok['caption']}",
-        f"<b>Hashtags:</b> {' '.join(tiktok['hashtags'])}",
+        f"<b>Caption:</b> {tiktok.get('caption', '')}",
+        f"<b>Hashtags:</b> {' '.join(tiktok.get('hashtags', []))}",
         "",
         f"<b>━━━ YOUTUBE SHORT ━━━</b>",
-        f"<b>Title:</b> {yt['title']}",
+        f"<b>Title:</b> {yt.get('title', '')}",
     ]
-    for t in yt.get("title_alternatives", []):
+    for t in yt.get("title_alternatives", []) or []:
         parts.append(f"  alt: {t}")
     parts += [
-        f"<b>Description:</b> {yt['description']}",
+        f"<b>Description:</b> {yt.get('description', '')}",
         f"<b>Tags:</b> {', '.join(yt.get('tags', []))}",
         f"<b>Hook overlay:</b> {metadata.get('hook_line', '')}",
     ]
@@ -83,8 +158,7 @@ def main():
 
     with open(TOPIC_PATH) as f:
         topic = json.load(f)
-    with open(METADATA_PATH) as f:
-        metadata = json.load(f)
+    metadata = load_metadata(topic)
 
     print("Sending package text...")
     text_resp = send_text(format_message(topic, metadata))
@@ -93,7 +167,8 @@ def main():
         sys.exit(1)
     print(f"  text OK (msg_id {text_resp['result']['message_id']})")
 
-    caption = metadata["tiktok"]["caption"] + "\n" + " ".join(metadata["tiktok"]["hashtags"])
+    tiktok = metadata.get("tiktok", {}) or {}
+    caption = tiktok.get("caption", "") + "\n" + " ".join(tiktok.get("hashtags", []))
     size_mb = os.path.getsize(VIDEO_PATH) / 1024 / 1024
     print(f"Uploading video ({size_mb:.1f} MB)...")
     video_resp = send_video(VIDEO_PATH, caption)
