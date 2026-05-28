@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Your social feed isn't entertainment — it's a store. The average American loses $2,100 a year inside it, and never sees it coming.",
-    "visual": "Smartphone SVG showing a scrolling social feed with product cards, dollar signs flying upward out of the phone screen, counter animating up to $2,100, title 'TIKTOK MADE YOU BUY IT' springs in from top",
-    "accent_color": "orange"
+    "narration": "You bought a four-hundred-thousand-dollar home. But add up all thirty years of payments and the bank collects nine hundred fifty-eight thousand from you.",
+    "visual": "House SVG (triangle roof, rectangle body, windows, door) with '$400K' price tag. Counter animates from $400,000 up to $958,000. 'YOUR $400K HOME ACTUALLY COSTS' springs in from top. Red shock badge '$558K GOES TO INTEREST' pops in at the end.",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Number one — the algorithm tracks every pause and like to learn exactly what makes you spend. It has unlimited time to study you, and it never forgets.",
-    "visual": "Phone SVG on the left beside a large eye icon representing the algorithm watching, dashed data lines connecting to three glowing orange nodes, 'TRACKS EVERY PAUSE + LIKE' badge reveals with spring animation",
-    "accent_color": "orange"
+    "narration": "Every month you pay twenty-six sixty-one. The bank takes twenty-three thirty-three of that as interest. Only three-twenty-eight is actually building your equity.",
+    "visual": "Light background. Big '$2,661 / MONTH' box in black. Two horizontal progress bars animate in: wide red bar '$2,333 — TO THE BANK', thin green bar '$328 — YOUR EQUITY'. Badge '87% GOES TO THE BANK' springs in.",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Number two — '847 bought this today' fires your FOMO alarm. Seventy-three percent of Gen Z has purchased something directly from a social post.",
-    "visual": "Orange notification badge with counter animating up to 847, ten person silhouettes where seven are highlighted orange representing 73%, progress bar filling to 73% with 'GEN Z BOUGHT FROM A SOCIAL POST' label",
-    "accent_color": "orange"
+    "narration": "It stays that way for years. In your first decade, over eighty percent of every payment is pure interest — not equity, not ownership.",
+    "visual": "Dark background. Stacked bar chart showing 5 columns (YR 1, YR 5, YR 10, YR 20, YR 30). Bars animate upward — early years almost entirely red (interest), later years shift to green (equity). Legend: red = INTEREST, green = YOUR EQUITY. Badge '80%+ INTEREST FOR 7+ YEARS' fades in.",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Number three — one-tap checkout is the kill shot. No wallet, no friction, no second thoughts. Removing checkout friction increases your spending by thirty-five percent.",
-    "visual": "Credit card SVG centered with chip and contactless waves, glowing 'BUY NOW — 1 TAP' button pulses with spring animation, counter animates to +35% SPEND",
-    "accent_color": "orange"
+    "narration": "Over thirty years, you hand the bank five hundred fifty-eight thousand in interest alone. That's more than the home itself is worth today.",
+    "visual": "Light background. Bank building SVG (columns, pediment, dollar sign). Counter animates from $0 to $558,000 in red. Comparison line below: 'vs your home: $400,000' in green. 'BANK KEEPS $558K IN INTEREST' headline.",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Here's the real cost. That $2,100 invested at eight percent instead grows to $315,000 by retirement. Your scroll-and-buy habit just consumed a down payment.",
-    "visual": "Two side-by-side growing bar charts: orange 'SPENT' bar static at $2,100, green 'INVESTED' bar grows dramatically with animated counter to $315,000, star icon floats above the growing bar",
-    "accent_color": "orange"
+    "narration": "Make one extra payment a year — that's it. You save eighty-five thousand dollars and own your home four years sooner.",
+    "visual": "Dark background. Two side-by-side bars animate up: tall red bar 'NORMAL — $558K INTEREST — 30 YRS' and shorter green bar '+1/YEAR — $473K INTEREST — 26 YRS'. Green badge 'SAVES $85,000 + 4 YEARS' springs in.",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Turn off one-tap checkout. Unlink your saved card from every shopping app. Friction is your only firewall — follow for one money truth every day.",
-    "visual": "Smartphone SVG with three toggle switches animating from ON (orange) to OFF (grey) in sequence — one-tap checkout, saved payment, auto-buy alerts — then 'FOLLOW FOR MORE' CTA button springs in",
-    "accent_color": "orange"
+    "narration": "Biweekly payments, rounded-up amounts, or one extra per year — any of these chips tens of thousands off your total. Follow for one money truth every day.",
+    "visual": "Light background. Three action cards slide in from left in sequence: checkmark + 'SWITCH TO BIWEEKLY (saves ~$56K)', 'ROUND UP PAYMENTS (even $50/mo helps)', 'ONE EXTRA/YEAR (saves $85K + 4 yrs)'. 'FOLLOW FOR MORE' CTA button springs in at the bottom.",
+    "accent_color": "red"
   }
 ]
