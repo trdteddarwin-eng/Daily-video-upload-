@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Here's something wild — being poor actually costs you more money. Low-income Americans pay up to $1,300 extra a year for the same life. It's called the poverty premium.",
-    "visual": "Two person silhouettes side by side: red LOW INCOME figure with '+$1,300' price tag bubble, green HIGH INCOME figure with '$0 EXTRA' tag. Counter animates from $0 to $1,300.",
-    "accent_color": "red"
+    "narration": "Your social feed isn't entertainment — it's a store. The average American loses $2,100 a year inside it, and never sees it coming.",
+    "visual": "Smartphone SVG showing a scrolling social feed with product cards, dollar signs flying upward out of the phone screen, counter animating up to $2,100, title 'TIKTOK MADE YOU BUY IT' springs in from top",
+    "accent_color": "orange"
   },
   {
     "scene": 2,
-    "narration": "Number one: food. Without cash for bulk packs, you pay 43% more per ounce at corner stores. That's $800 a year extra, just on groceries.",
-    "visual": "Two shopping bags slide in from opposite sides. Small red bag: '$3.49/oz CORNER STORE'. Large green bag: '$0.99/oz BULK STORE'. '43% MORE EXPENSIVE' badge animates in.",
-    "accent_color": "red"
+    "narration": "Number one — the algorithm tracks every pause and like to learn exactly what makes you spend. It has unlimited time to study you, and it never forgets.",
+    "visual": "Phone SVG on the left beside a large eye icon representing the algorithm watching, dashed data lines connecting to three glowing orange nodes, 'TRACKS EVERY PAUSE + LIKE' badge reveals with spring animation",
+    "accent_color": "orange"
   },
   {
     "scene": 3,
-    "narration": "Number two: banking. No minimum balance? You pay $600 a year just to access your own money. Check-cashing fees, overdrafts — they charge you for being broke.",
-    "visual": "Bank building SVG with dollar signs flying upward away from the building. Fee counter animates from $0 to $600/YR below the building.",
-    "accent_color": "red"
+    "narration": "Number two — '847 bought this today' fires your FOMO alarm. Seventy-three percent of Gen Z has purchased something directly from a social post.",
+    "visual": "Orange notification badge with counter animating up to 847, ten person silhouettes where seven are highlighted orange representing 73%, progress bar filling to 73% with 'GEN Z BOUGHT FROM A SOCIAL POST' label",
+    "accent_color": "orange"
   },
   {
     "scene": 4,
-    "narration": "Number three: credit. Rich people borrow at 3% APR. Payday loans charge 400%. Same $500 loan — one costs twenty bucks, the other costs two thousand.",
-    "visual": "Two storefronts side by side: blue BANK with '3% APR' badge, red PAYDAY LOANS storefront with APR counter animating from 0% to 400%. '133× MORE INTEREST' label appears.",
-    "accent_color": "red"
+    "narration": "Number three — one-tap checkout is the kill shot. No wallet, no friction, no second thoughts. Removing checkout friction increases your spending by thirty-five percent.",
+    "visual": "Credit card SVG centered with chip and contactless waves, glowing 'BUY NOW — 1 TAP' button pulses with spring animation, counter animates to +35% SPEND",
+    "accent_color": "orange"
   },
   {
     "scene": 5,
-    "narration": "Number four: insurance. Just your zip code adds $500 a year to your car insurance. Same driver, same car — different address means a different financial fate.",
-    "visual": "Two houses side by side with zip code labels: ZIP 60612 (red house, $2,100/yr) vs ZIP 90210 (blue house, $1,600/yr). '+$500/YR ZIP CODE PENALTY' counter animates.",
-    "accent_color": "red"
+    "narration": "Here's the real cost. That $2,100 invested at eight percent instead grows to $315,000 by retirement. Your scroll-and-buy habit just consumed a down payment.",
+    "visual": "Two side-by-side growing bar charts: orange 'SPENT' bar static at $2,100, green 'INVESTED' bar grows dramatically with animated counter to $315,000, star icon floats above the growing bar",
+    "accent_color": "orange"
   },
   {
     "scene": 6,
-    "narration": "These four traps add up to $1,300 a year just for being poor. Knowing the system is step one to beating it. Follow for more money hacks.",
-    "visual": "Animated bar chart with four rows — FOOD, BANKING, CREDIT, INSURANCE — growing left to right with dollar amounts. Total counter hits $1,300/YR. Red 'FOLLOW FOR MORE' CTA button.",
-    "accent_color": "red"
+    "narration": "Turn off one-tap checkout. Unlink your saved card from every shopping app. Friction is your only firewall — follow for one money truth every day.",
+    "visual": "Smartphone SVG with three toggle switches animating from ON (orange) to OFF (grey) in sequence — one-tap checkout, saved payment, auto-buy alerts — then 'FOLLOW FOR MORE' CTA button springs in",
+    "accent_color": "orange"
   }
 ]
