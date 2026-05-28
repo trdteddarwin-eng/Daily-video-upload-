@@ -1,0 +1,39 @@
+name: Deliver Backfill
+
+# One-off: re-deliver an ALREADY-rendered video to Telegram by pulling the
+# render-artifacts from a past workflow run (no re-render, no TTS cost).
+# Usage: Actions → Deliver Backfill → Run workflow → enter the run_id.
+
+on:
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: "Workflow run ID whose render-artifacts (out/video.mp4 + topic.json) should be delivered"
+        required: true
+
+jobs:
+  deliver:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Download render-artifacts from the source run
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh run download "${{ inputs.run_id }}" -n render-artifacts -D . --repo "${{ github.repository }}"
+          echo "Downloaded:"
+          ls -la out/ topic.json metadata.json 2>/dev/null || true
+          test -f out/video.mp4 || (echo "ERROR: out/video.mp4 not in artifact ${{ inputs.run_id }}" && exit 1)
+
+      - name: Deliver to Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python3 pipeline/send_telegram.py
