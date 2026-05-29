@@ -1,12 +1,7 @@
 {
-  "title": "You're Paying $558K Interest on a $400K House",
-  "hook": "Nobody tells you the actual price tag on a 30-year mortgage — and when you see the real number, it changes everything.",
-  "angle": "The full interest cost of a standard 30-year mortgage exceeds the home's purchase price — banks don't advertise this and most buyers never calculate it",
-  "audience": "First-time homebuyers, current homeowners, anyone considering a mortgage in the next 5 years",
-  "key_numbers": [
-    "$558,000 in interest on a $400K home at 7%",
-    "$958,000 total paid over 30 years — 2.4x the purchase price",
-    "First decade: 80%+ of every payment goes to interest, not equity",
-    "One extra payment per year saves $85,000 and 4 years"
-  ]
+  "title": "That Credit Limit Increase Is a $2,400 Debt Trap",
+  "hook": "Your bank just 'rewarded' you with a higher credit limit — and that gift is statistically about to cost you $2,400.",
+  "angle": "Banks raise credit limits strategically to trigger the wealth effect — 68% of people spend up to the new limit within 18 months",
+  "audience": "Anyone who's ever received a credit limit increase and felt briefly validated by it",
+  "key_numbers": ["68% spend up to the new limit within 18 months", "$2,400 average new debt after a limit increase", "$576/year in interest at 24% APR"]
 }

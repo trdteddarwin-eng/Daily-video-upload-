@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You bought a four-hundred-thousand-dollar home. But add up all thirty years of payments and the bank collects nine hundred fifty-eight thousand from you.",
-    "visual": "House SVG (triangle roof, rectangle body, windows, door) with '$400K' price tag. Counter animates from $400,000 up to $958,000. 'YOUR $400K HOME ACTUALLY COSTS' springs in from top. Red shock badge '$558K GOES TO INTEREST' pops in at the end.",
+    "narration": "Your bank just raised your credit limit and called it a reward. But this gift was designed to make you spend more — and the numbers prove it.",
+    "visual": "Animated credit card SVG centered on dark background, credit limit counter animating from $5,000 to $8,500, green 'LIMIT INCREASED' badge, then red 'OR IS IT A TRAP?' warning fades in",
     "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Every month you pay twenty-six sixty-one. The bank takes twenty-three thirty-three of that as interest. Only three-twenty-eight is actually building your equity.",
-    "visual": "Light background. Big '$2,661 / MONTH' box in black. Two horizontal progress bars animate in: wide red bar '$2,333 — TO THE BANK', thin green bar '$328 — YOUR EQUITY'. Badge '87% GOES TO THE BANK' springs in.",
+    "narration": "The second your limit jumps, your brain recalibrates. Psychologists call it the wealth effect — you feel richer, so you start spending like it.",
+    "visual": "Brain SVG with folds on light background, dollar-sign thought bubble animates in, person silhouette below, 'THE WEALTH EFFECT' label slides up",
     "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "It stays that way for years. In your first decade, over eighty percent of every payment is pure interest — not equity, not ownership.",
-    "visual": "Dark background. Stacked bar chart showing 5 columns (YR 1, YR 5, YR 10, YR 20, YR 30). Bars animate upward — early years almost entirely red (interest), later years shift to green (equity). Legend: red = INTEREST, green = YOUR EQUITY. Badge '80%+ INTEREST FOR 7+ YEARS' fades in.",
+    "narration": "Here's the stat they bury: 68% of people spend up to their new limit within 18 months. Your brain fills the bucket every single time.",
+    "visual": "Large '68%' counter animates from 0 to 68 on dark background, red progress bar fills to 68%, 'WITHIN 18 MONTHS' badge springs in",
     "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Over thirty years, you hand the bank five hundred fifty-eight thousand in interest alone. That's more than the home itself is worth today.",
-    "visual": "Light background. Bank building SVG (columns, pediment, dollar sign). Counter animates from $0 to $558,000 in red. Comparison line below: 'vs your home: $400,000' in green. 'BANK KEEPS $558K IN INTEREST' headline.",
+    "narration": "Banks don't raise limits randomly. They analyze your spending history, find your sweet spot, and time the offer perfectly — it's science, not generosity.",
+    "visual": "Bank building SVG (columns, triangle roof) on light background, arrow pointing from bank to credit card, 'NOT RANDOM. CALCULATED.' text fades in",
     "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Make one extra payment a year — that's it. You save eighty-five thousand dollars and own your home four years sooner.",
-    "visual": "Dark background. Two side-by-side bars animate up: tall red bar 'NORMAL — $558K INTEREST — 30 YRS' and shorter green bar '+1/YEAR — $473K INTEREST — 26 YRS'. Green badge 'SAVES $85,000 + 4 YEARS' springs in.",
+    "narration": "The average American takes on $2,400 in new debt after a limit increase. At 24% APR, that free upgrade costs you $576 a year just in interest.",
+    "visual": "$2,400 debt counter animating on dark background, growing red bar chart columns, '$576/YR IN INTEREST' badge reveals at the end",
     "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Biweekly payments, rounded-up amounts, or one extra per year — any of these chips tens of thousands off your total. Follow for one money truth every day.",
-    "visual": "Light background. Three action cards slide in from left in sequence: checkmark + 'SWITCH TO BIWEEKLY (saves ~$56K)', 'ROUND UP PAYMENTS (even $50/mo helps)', 'ONE EXTRA/YEAR (saves $85K + 4 yrs)'. 'FOLLOW FOR MORE' CTA button springs in at the bottom.",
+    "narration": "Here's your counter-move: call your bank and ask them to lower your limit. Remove the ceiling, remove the trap — your future self wins.",
+    "visual": "Phone SVG on light background, green checkmark springs in beside it, 'CALL YOUR BANK. REQUEST LOWER LIMIT.' text, dark CTA card 'REMOVE THE CEILING / REMOVE THE TRAP'",
     "accent_color": "red"
   }
 ]
