@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Your bank just raised your credit limit and called it a reward. But this gift was designed to make you spend more — and the numbers prove it.",
-    "visual": "Animated credit card SVG centered on dark background, credit limit counter animating from $5,000 to $8,500, green 'LIMIT INCREASED' badge, then red 'OR IS IT A TRAP?' warning fades in",
-    "accent_color": "red"
+    "narration": "You signed up with good intentions — probably January first, maybe after a rough week. Here's the thing: the gym was counting on you to quit.",
+    "visual": "Gym membership card SVG springs in on dark background, $58/MONTH text on card, bar chart animates showing visit frequency — spike in JAN then drops to near-zero by JUN",
+    "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "The second your limit jumps, your brain recalibrates. Psychologists call it the wealth effect — you feel richer, so you start spending like it.",
-    "visual": "Brain SVG with folds on light background, dollar-sign thought bubble animates in, person silhouette below, 'THE WEALTH EFFECT' label slides up",
-    "accent_color": "red"
+    "narration": "Sixty-seven percent of gym memberships are completely unused. That's two out of three people paying month after month for a gym they literally never visit.",
+    "visual": "Large '67%' counter animating from 0 on light background, amber progress bar fills to 67%, three person silhouettes — two grayed out one amber, '2 OUT OF 3 PEOPLE' badge springs in",
+    "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Here's the stat they bury: 68% of people spend up to their new limit within 18 months. Your brain fills the bucket every single time.",
-    "visual": "Large '68%' counter animates from 0 to 68 on dark background, red progress bar fills to 68%, 'WITHIN 18 MONTHS' badge springs in",
-    "accent_color": "red"
+    "narration": "This isn't an accident — it's the business model. Planet Fitness packs 6,500 members into gyms that hold 300. They literally can't serve everyone, and they don't want to.",
+    "visual": "Gym building SVG with columns and 'GYM' sign on dark background, crowd of 12 person silhouettes crowded inside, '6,500 MEMBERS vs 300 CAPACITY' stats reveal",
+    "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "Banks don't raise limits randomly. They analyze your spending history, find your sweet spot, and time the offer perfectly — it's science, not generosity.",
-    "visual": "Bank building SVG (columns, triangle roof) on light background, arrow pointing from bank to credit card, 'NOT RANDOM. CALCULATED.' text fades in",
-    "accent_color": "red"
+    "narration": "It's called purchase intention bias. Buying the membership feels like working out — your brain gets a dopamine hit from just signing up, so you never actually go.",
+    "visual": "Brain SVG on light background with dumbbell thought bubble, satisfaction meter fills to 100% just from the membership card, 'BUYING IT = DOING IT (TO YOUR BRAIN)' fades in",
+    "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "The average American takes on $2,400 in new debt after a limit increase. At 24% APR, that free upgrade costs you $576 a year just in interest.",
-    "visual": "$2,400 debt counter animating on dark background, growing red bar chart columns, '$576/YR IN INTEREST' badge reveals at the end",
-    "accent_color": "red"
+    "narration": "The average gym membership runs $696 a year. Americans waste 1.8 billion dollars every year on gyms they never use — and you've probably been part of that number.",
+    "visual": "$696 counter animating up on dark background, progress bar fills, '$1.8 BILLION WASTED' in red fades in below, 'ON GYMS THEY NEVER USE' badge springs in",
+    "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "Here's your counter-move: call your bank and ask them to lower your limit. Remove the ceiling, remove the trap — your future self wins.",
-    "visual": "Phone SVG on light background, green checkmark springs in beside it, 'CALL YOUR BANK. REQUEST LOWER LIMIT.' text, dark CTA card 'REMOVE THE CEILING / REMOVE THE TRAP'",
-    "accent_color": "red"
+    "narration": "Here's your move: count how many times you've been in the last 30 days. Under four? Cancel today and redirect that $58 somewhere that actually works for you.",
+    "visual": "Calendar SVG with 4 green checkmarks on light background, piggy bank with $58 label beside it, 'UNDER 4 VISITS? CANCEL TODAY.' text, dark CTA card 'REDIRECT THAT $58 / INTO SAVINGS INSTEAD'",
+    "accent_color": "amber"
   }
 ]
