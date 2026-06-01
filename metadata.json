@@ -1,16 +1,16 @@
 {
   "tiktok": {
-    "caption": "67% of gym memberships are never used — and gyms literally designed it that way on purpose",
-    "hashtags": ["#moneytips", "#personalfinance", "#gymtrap", "#moneymindset", "#financetok", "#savemoney", "#moneypsychology"]
+    "caption": "That free trial asked for your card for a reason — and it had nothing to do with your convenience",
+    "hashtags": ["#moneytips", "#personalfinance", "#freetrial", "#moneymindset", "#financetok", "#savemoney", "#moneypsychology", "#darkpatterns"]
   },
   "youtube_short": {
-    "title": "67% of Gym Members Never Go (By Design)",
+    "title": "Free Trials Are Designed to Drain $1,200/Year",
     "title_alternatives": [
-      "Your Gym Is Betting You Never Show Up",
-      "The $696 Gym Trap Nobody Talks About"
+      "Why Free Trials Always Need Your Credit Card",
+      "The Free Trial Psychology Trap Costing You $1,183/Year"
     ],
-    "description": "Two out of three gym memberships are completely unused — and that's not a bug, it's the feature. Gyms like Planet Fitness pack 6,500 members into spaces built for 300. They need you to stay home. We break down the purchase-intention psychology behind it and the one-question test that tells you whether to cancel today. #moneytips #personalfinance #gymtrap #moneypsychology",
-    "tags": ["personal finance", "money psychology", "gym membership", "save money", "financial tips", "money habits", "gym trap", "fitness spending", "cancel gym", "money mindset"]
+    "description": "That free trial form wasn't built for your convenience — it was built so you'd forget to cancel. Companies deliberately set 7-14 day windows, design 7-screen cancellation mazes, and count on 48% of people never noticing the charge. The average American is carrying 3.4 of these forgotten subscriptions right now, draining $1,183 a year. Pull up your bank statement, look for any charge under $15, and bet you find one you forgot. #moneytips #personalfinance #freetrial #moneypsychology #savemoney",
+    "tags": ["personal finance", "money psychology", "free trial trap", "save money", "financial tips", "subscription trap", "dark patterns", "money mindset", "cancel subscriptions", "hidden charges"]
   },
-  "hook_line": "67% of gym members never go — and gyms built the business model around it"
+  "hook_line": "Free trials ask for your card for one reason — and it's not your convenience"
 }

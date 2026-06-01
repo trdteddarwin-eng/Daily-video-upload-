@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You signed up with good intentions — probably January first, maybe after a rough week. Here's the thing: the gym was counting on you to quit.",
-    "visual": "Gym membership card SVG springs in on dark background, $58/MONTH text on card, bar chart animates showing visit frequency — spike in JAN then drops to near-zero by JUN",
-    "accent_color": "amber"
+    "narration": "You signed up for a free trial — totally harmless, right? But that credit card field wasn't there for your convenience. It was there for theirs.",
+    "visual": "Laptop SVG showing free trial signup form with 'Credit card required *' field highlighted in red on dark background, credit card SVG floating in from right, countdown timer ticking from 14 days",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Sixty-seven percent of gym memberships are completely unused. That's two out of three people paying month after month for a gym they literally never visit.",
-    "visual": "Large '67%' counter animating from 0 on light background, amber progress bar fills to 67%, three person silhouettes — two grayed out one amber, '2 OUT OF 3 PEOPLE' badge springs in",
-    "accent_color": "amber"
+    "narration": "Number one — the forgetting window. Companies set trials to 7 to 14 days on purpose. That's exactly when you're busiest and most likely to forget you ever signed up.",
+    "visual": "Calendar grid on light background: week 1 days in neutral grey, week 2 days all highlighted red with 'DANGER ZONE' label, '7-14 DAYS SET ON PURPOSE' badge springs in, red banner at bottom",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "This isn't an accident — it's the business model. Planet Fitness packs 6,500 members into gyms that hold 300. They literally can't serve everyone, and they don't want to.",
-    "visual": "Gym building SVG with columns and 'GYM' sign on dark background, crowd of 12 person silhouettes crowded inside, '6,500 MEMBERS vs 300 CAPACITY' stats reveal",
-    "accent_color": "amber"
+    "narration": "Number two — the silent charge. 48% of people had zero memory of the charge when it showed up on their statement. That's not a mistake — it's literally the design.",
+    "visual": "Bank statement rows on dark background showing Netflix, Spotify, Amazon Prime — then 'APP TRIAL CHARGE $8.99' flashes red repeatedly, '48%' stat animates in large below",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "It's called purchase intention bias. Buying the membership feels like working out — your brain gets a dopamine hit from just signing up, so you never actually go.",
-    "visual": "Brain SVG on light background with dumbbell thought bubble, satisfaction meter fills to 100% just from the membership card, 'BUYING IT = DOING IT (TO YOUR BRAIN)' fades in",
-    "accent_color": "amber"
+    "narration": "Number three — the cancel maze. Three clicks to sign up, seven screens to cancel. Every extra screen is engineered friction — not a bug, it's the revenue model.",
+    "visual": "Side-by-side comparison on light background: green SIGN UP column with 3 checkmarks labeled '3 CLICKS', red CANCEL column with 7 X steps labeled '7 SCREENS', 'INTENTIONAL FRICTION' dark banner",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "The average gym membership runs $696 a year. Americans waste 1.8 billion dollars every year on gyms they never use — and you've probably been part of that number.",
-    "visual": "$696 counter animating up on dark background, progress bar fills, '$1.8 BILLION WASTED' in red fades in below, 'ON GYMS THEY NEVER USE' badge springs in",
-    "accent_color": "amber"
+    "narration": "Number four — the compound cost. The average American carries 3.4 of these forgotten subscriptions right now. At $29 a month each, that's $1,183 drained every single year.",
+    "visual": "Four subscription cards spring in one-by-one on dark background each labeled TRIAL #1-4 at $29/mo, dollar counter animates from $0 up to $1,183, '3.4 FORGOTTEN SUBSCRIPTIONS' fades in",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Here's your move: count how many times you've been in the last 30 days. Under four? Cancel today and redirect that $58 somewhere that actually works for you.",
-    "visual": "Calendar SVG with 4 green checkmarks on light background, piggy bank with $58 label beside it, 'UNDER 4 VISITS? CANCEL TODAY.' text, dark CTA card 'REDIRECT THAT $58 / INTO SAVINGS INSTEAD'",
-    "accent_color": "amber"
+    "narration": "Right now, pull up your bank statement and look for any charge under fifteen dollars. Bet you find one you forgot. Save this — it just saved you money.",
+    "visual": "Phone SVG showing bank app on light background, two unrecognized charges flash red repeatedly, red CTA card 'FOUND ONE? CANCEL IT NOW', 'FOLLOW FOR MORE TRAPS LIKE THIS' fades in",
+    "accent_color": "red"
   }
 ]
