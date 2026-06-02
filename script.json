@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You signed up for a free trial — totally harmless, right? But that credit card field wasn't there for your convenience. It was there for theirs.",
-    "visual": "Laptop SVG showing free trial signup form with 'Credit card required *' field highlighted in red on dark background, credit card SVG floating in from right, countdown timer ticking from 14 days",
-    "accent_color": "red"
+    "narration": "Here's something stores will never tell you — when you're stressed or sad, you spend 30% more. And they are counting on every single dollar.",
+    "visual": "Person silhouette slumped on couch holding phone, shopping cart filling up on-screen. '30%' counter animates up from 0. Orange '$3,200/YEAR' tag fades in at bottom.",
+    "accent_color": "orange"
   },
   {
     "scene": 2,
-    "narration": "Number one — the forgetting window. Companies set trials to 7 to 14 days on purpose. That's exactly when you're busiest and most likely to forget you ever signed up.",
-    "visual": "Calendar grid on light background: week 1 days in neutral grey, week 2 days all highlighted red with 'DANGER ZONE' label, '7-14 DAYS SET ON PURPOSE' badge springs in, red banner at bottom",
-    "accent_color": "red"
+    "narration": "Buying something triggers the same dopamine hit as eating sugar. Your brain calls it relief — but the bill always shows up the next morning.",
+    "visual": "SVG brain with orange glowing reward center pulsing. Six dopamine dots radiate outward. 'SAME RUSH AS EATING SUGAR' label appears, then '\"RELIEF\"' in large orange text.",
+    "accent_color": "orange"
   },
   {
     "scene": 3,
-    "narration": "Number two — the silent charge. 48% of people had zero memory of the charge when it showed up on their statement. That's not a mistake — it's literally the design.",
-    "visual": "Bank statement rows on dark background showing Netflix, Spotify, Amazon Prime — then 'APP TRIAL CHARGE $8.99' flashes red repeatedly, '48%' stat animates in large below",
-    "accent_color": "red"
+    "narration": "Retailers track your emotional state through browsing patterns — late Friday, just got bad news, post-breakup. That's when the targeted ads hit hardest.",
+    "visual": "Four trigger tags spring in from left: STRESSED, SAD, BORED, LATE FRIDAY. Phone on right shows targeted ad popup flashing orange border. 'YOUR MOOD IS THEIR AD SIGNAL' banner.",
+    "accent_color": "orange"
   },
   {
     "scene": 4,
-    "narration": "Number three — the cancel maze. Three clicks to sign up, seven screens to cancel. Every extra screen is engineered friction — not a bug, it's the revenue model.",
-    "visual": "Side-by-side comparison on light background: green SIGN UP column with 3 checkmarks labeled '3 CLICKS', red CANCEL column with 7 X steps labeled '7 SCREENS', 'INTENTIONAL FRICTION' dark banner",
-    "accent_color": "red"
+    "narration": "75% of emotional purchases are regretted within 24 hours. You bought for the feeling — and the feeling was already gone by morning.",
+    "visual": "Large '75%' fades in with subtitle 'OF EMOTIONAL BUYS'. Orange regret bar fills to 75%. Package box with orange X through it appears. 'THE DOPAMINE WAS THE POINT' banner.",
+    "accent_color": "orange"
   },
   {
     "scene": 5,
-    "narration": "Number four — the compound cost. The average American carries 3.4 of these forgotten subscriptions right now. At $29 a month each, that's $1,183 drained every single year.",
-    "visual": "Four subscription cards spring in one-by-one on dark background each labeled TRIAL #1-4 at $29/mo, dollar counter animates from $0 up to $1,183, '3.4 FORGOTTEN SUBSCRIPTIONS' fades in",
-    "accent_color": "red"
+    "narration": "The average American blows $3,200 a year on emotional buys. Invested at 8% instead, that's $363,000 gone over 30 years — from feelings.",
+    "visual": "Dollar counter rises from $0 to $3,200. Bar chart builds: 10Y=$46K, 20Y=$146K, 30Y=$363K in orange bars. '$363K STOLEN BY FEELINGS' banner appears.",
+    "accent_color": "orange"
   },
   {
     "scene": 6,
-    "narration": "Right now, pull up your bank statement and look for any charge under fifteen dollars. Bet you find one you forgot. Save this — it just saved you money.",
-    "visual": "Phone SVG showing bank app on light background, two unrecognized charges flash red repeatedly, red CTA card 'FOUND ONE? CANCEL IT NOW', 'FOLLOW FOR MORE TRAPS LIKE THIS' fades in",
-    "accent_color": "red"
+    "narration": "Next time the urge hits, close the app and wait 48 hours. 70% of those urges just vanish — and that one pause puts $2,240 back in your pocket. Follow for more.",
+    "visual": "Clock SVG with hand spinning. Two rule cards appear: 'WAIT 48 HOURS / CLOSE THE APP' and '70% OF URGES DISAPPEAR / $2,240 SAVED'. Orange CTA follow button.",
+    "accent_color": "orange"
   }
 ]
