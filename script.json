@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Here's something stores will never tell you — when you're stressed or sad, you spend 30% more. And they are counting on every single dollar.",
-    "visual": "Person silhouette slumped on couch holding phone, shopping cart filling up on-screen. '30%' counter animates up from 0. Orange '$3,200/YEAR' tag fades in at bottom.",
-    "accent_color": "orange"
+    "narration": "You opted into overdraft protection to avoid embarrassment at checkout. What your bank never told you — it's not protection at all.",
+    "visual": "Dark background. A cracked shield with a dollar sign inside springs onto screen. Title 'OVERDRAFT PROTECTION' fades in below it. Red accent.",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Buying something triggers the same dopamine hit as eating sugar. Your brain calls it relief — but the bill always shows up the next morning.",
-    "visual": "SVG brain with orange glowing reward center pulsing. Six dopamine dots radiate outward. 'SAME RUSH AS EATING SUGAR' label appears, then '\"RELIEF\"' in large orange text.",
-    "accent_color": "orange"
+    "narration": "The average overdraft is just $24. Your bank charges $35 to cover it — and that works out to a 17,000 percent annual interest rate.",
+    "visual": "Light background. Two animated bars rise side by side: a gray '$24 YOU SPENT' bar and a taller red '$35 BANK FEE' bar. A red APR counter races up to 17,000%.",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Retailers track your emotional state through browsing patterns — late Friday, just got bad news, post-breakup. That's when the targeted ads hit hardest.",
-    "visual": "Four trigger tags spring in from left: STRESSED, SAD, BORED, LATE FRIDAY. Phone on right shows targeted ad popup flashing orange border. 'YOUR MOOD IS THEIR AD SIGNAL' banner.",
-    "accent_color": "orange"
+    "narration": "Banks collected $15 billion in overdraft fees last year. Wild, right? And 80 percent of that came from just 9 percent of their customers.",
+    "visual": "Dark background. '$15B' counter animates up. Falling red dollar signs in background. A pie chart sweeps in showing the 80% slice labeled '9% OF CUSTOMERS'.",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "75% of emotional purchases are regretted within 24 hours. You bought for the feeling — and the feeling was already gone by morning.",
-    "visual": "Large '75%' fades in with subtitle 'OF EMOTIONAL BUYS'. Orange regret bar fills to 75%. Package box with orange X through it appears. 'THE DOPAMINE WAS THE POINT' banner.",
-    "accent_color": "orange"
+    "narration": "It happens completely automatically. Spend one dollar over your balance and $35 disappears — no warning, no choice, no way to stop it.",
+    "visual": "Light background. Bank building SVG with rectangle body, triangle roof, columns. A red '-$35' chip falls from the bank. 'AUTOMATIC' flashes below it.",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "The average American blows $3,200 a year on emotional buys. Invested at 8% instead, that's $363,000 gone over 30 years — from feelings.",
-    "visual": "Dollar counter rises from $0 to $3,200. Bar chart builds: 10Y=$46K, 20Y=$146K, 30Y=$363K in orange bars. '$363K STOLEN BY FEELINGS' banner appears.",
-    "accent_color": "orange"
+    "narration": "Most banks will quietly refund one overdraft fee per year if you just call and ask. Linking a savings account removes the fee entirely.",
+    "visual": "Dark background. A phone SVG springs in. Two dark option cards appear: 'CALL YOUR BANK — most refund 1 fee per year' and 'LINK A SAVINGS ACCOUNT — zero fee coverage'.",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Next time the urge hits, close the app and wait 48 hours. 70% of those urges just vanish — and that one pause puts $2,240 back in your pocket. Follow for more.",
-    "visual": "Clock SVG with hand spinning. Two rule cards appear: 'WAIT 48 HOURS / CLOSE THE APP' and '70% OF URGES DISAPPEAR / $2,240 SAVED'. Orange CTA follow button.",
-    "accent_color": "orange"
+    "narration": "Call your bank today and ask for that refund. Then turn off overdraft protection and link your savings account — that's real protection.",
+    "visual": "Light background. A shield with a red X through it. Three numbered step cards appear one by one: call, opt out, link savings. Red follow CTA at bottom.",
+    "accent_color": "red"
   }
 ]
