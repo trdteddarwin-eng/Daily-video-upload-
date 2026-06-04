@@ -1,13 +1,13 @@
 {
-  "title": "Overdraft 'Protection' Is a 17,000% Interest Rate",
-  "hook": "You opted into overdraft protection to avoid embarrassment at checkout — and your bank is charging the equivalent of a 17,000% annual interest rate.",
-  "angle": "Banks frame overdraft as a safety net when it's actually one of the most expensive short-term loans ever created — and they profit $15 billion a year from it while most customers don't even notice",
-  "audience": "Anyone who has ever been hit with an overdraft fee, especially younger adults and lower-income households living paycheck to paycheck",
+  "title": "Quitting Your Job Could Cost You $14,000",
+  "hook": "Your 401k match is already in your account — but quit too soon and your company takes it all back. That's the vesting trap most workers never see coming.",
+  "angle": "Most employees think their employer's 401k match is theirs the moment it hits the account — but vesting schedules mean you could have zero legal claim to it for years, and 1 in 3 workers quit before fully vesting",
+  "audience": "Anyone with a 401k who has changed jobs or is thinking about it, especially workers in their 20s-40s",
   "key_numbers": [
-    "$35 average overdraft fee",
-    "$24 average transaction that triggers it",
-    "17,000% equivalent APR",
-    "$15 billion collected by banks annually",
-    "80% of fees paid by just 9% of customers"
+    "57% of 401k plans use vesting schedules",
+    "1 in 3 workers quits before fully vesting",
+    "$3,500 average annual employer match",
+    "$14,000 potential forfeiture over a 4-year job",
+    "3 years until cliff vesting unlocks 100%"
   ]
 }

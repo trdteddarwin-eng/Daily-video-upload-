@@ -1,16 +1,16 @@
 {
   "tiktok": {
-    "caption": "You opted into overdraft protection. Your bank is charging you 17,000% interest on it.",
-    "hashtags": ["#overdraftfees", "#bankfees", "#moneytips", "#personalfinance", "#financetok", "#savemoney", "#psychologyofmoney", "#moneyhacks", "#financialfreedom"]
+    "caption": "Your 401k match is already in your account. Quit too soon and your company takes it all back — legally. Most workers have no idea.",
+    "hashtags": ["#401k", "#personalfinance", "#moneytips", "#investing", "#retirement", "#jobchange", "#financetok", "#moneyhacks", "#financialfreedom", "#wealthbuilding"]
   },
   "youtube_short": {
-    "title": "Overdraft 'Protection' Is a 17,000% APR Loan",
+    "title": "Quitting Your Job Could Cost You $14,000",
     "title_alternatives": [
-      "Your Bank's 'Protection' Fee Is Actually a 17,000% Loan",
-      "The Hidden Loan Your Bank Designed to Keep You Paying"
+      "Your 401k Match Isn't Yours Yet — Here's Why",
+      "The 401k Vesting Trap Nobody Warns You About"
     ],
-    "description": "You signed up for overdraft protection to avoid embarrassment at the register — but your bank forgot to mention it's one of the most expensive loans ever designed. The average overdraft is $24. Your bank charges $35 to cover it, which works out to a 17,000% annual interest rate. Banks collected $15 billion in overdraft fees last year, and 80% came from just 9% of customers. Most banks will quietly refund one fee per year if you call and ask — and linking a savings account removes the fee entirely. Follow for more money traps hiding in plain sight. #overdraftfees #bankfees #moneytips #personalfinance",
-    "tags": ["overdraft fees", "bank fees", "personal finance", "money tips", "save money", "financial literacy", "banking traps", "money psychology", "overdraft protection", "financial trap", "money hacks", "budgeting"]
+    "description": "Most people assume their employer's 401k match belongs to them the moment it hits their account — but vesting schedules mean your company can legally take it all back if you quit too soon. 57% of plans use vesting schedules, and 1 in 3 workers leaves before they're fully vested, forfeiting an average of $14,000. Before your next job change, look up your vest date — waiting even a few extra months could change everything. Follow for more money traps hiding in plain sight. #401k #personalfinance #retirement #investing #moneytips",
+    "tags": ["401k", "vesting", "employer match", "personal finance", "retirement", "money tips", "investing", "job change", "quit job", "wealth building", "financial literacy", "money psychology"]
   },
-  "hook_line": "Your bank charges 17,000% interest — and called it 'protection'"
+  "hook_line": "Your company can take back your 401k match"
 }

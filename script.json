@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You opted into overdraft protection to avoid embarrassment at checkout. What your bank never told you — it's not protection at all.",
-    "visual": "Dark background. A cracked shield with a dollar sign inside springs onto screen. Title 'OVERDRAFT PROTECTION' fades in below it. Red accent.",
-    "accent_color": "red"
+    "narration": "Your company matches your 401k — sounds like free money, right? Here's what they don't tell you: that match might not actually be yours yet.",
+    "visual": "Amber piggy bank SVG springs in with a black padlock snapping shut on top; text overlay fades in: YOUR MATCH ISN'T YOURS YET; subtitle: THE VESTING TRAP",
+    "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "The average overdraft is just $24. Your bank charges $35 to cover it — and that works out to a 17,000 percent annual interest rate.",
-    "visual": "Light background. Two animated bars rise side by side: a gray '$24 YOU SPENT' bar and a taller red '$35 BANK FEE' bar. A red APR counter races up to 17,000%.",
-    "accent_color": "red"
+    "narration": "It's called vesting. Most plans make you wait three full years before the company's money is legally yours. Leave before year three and you walk away with zero.",
+    "visual": "Horizontal timeline of Year 1 through Year 6 with lock icons; years 1 and 2 show gray locked padlocks labeled 0%; year 3 unlocks in green labeled 100%; warning box: QUIT BEFORE YEAR 3 = $0",
+    "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Banks collected $15 billion in overdraft fees last year. Wild, right? And 80 percent of that came from just 9 percent of their customers.",
-    "visual": "Dark background. '$15B' counter animates up. Falling red dollar signs in background. A pie chart sweeps in showing the 80% slice labeled '9% OF CUSTOMERS'.",
-    "accent_color": "red"
+    "narration": "The average match is $3,500 a year. Two years of contributions sitting in your account — quit on year two and your employer legally takes back all $7,000.",
+    "visual": "Three growing bar charts: Year 1 $3,500, Year 2 $7,000, Year 3 $10,500 in amber; bars for years 1 and 2 then drain to zero and turn red labeled FORFEITED; large text: -$7,000",
+    "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "It happens completely automatically. Spend one dollar over your balance and $35 disappears — no warning, no choice, no way to stop it.",
-    "visual": "Light background. Bank building SVG with rectangle body, triangle roof, columns. A red '-$35' chip falls from the bank. 'AUTOMATIC' flashes below it.",
-    "accent_color": "red"
+    "narration": "57% of 401k plans have vesting rules. One in three workers quits before they're fully vested — most of them never even knew they left that money behind.",
+    "visual": "Grid of 9 person silhouettes; 3 silhouettes turn gray with red X marks representing the one-in-three; stat cards animate in showing 57% and 1-IN-3",
+    "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "Most banks will quietly refund one overdraft fee per year if you just call and ask. Linking a savings account removes the fee entirely.",
-    "visual": "Dark background. A phone SVG springs in. Two dark option cards appear: 'CALL YOUR BANK — most refund 1 fee per year' and 'LINK A SAVINGS ACCOUNT — zero fee coverage'.",
-    "accent_color": "red"
+    "narration": "Some companies use graded vesting — you earn 20% per year over five years. Still, quit at year two and you're only 40% vested, forfeiting $4,200 back to your boss.",
+    "visual": "Five horizontal progress bars labeled Year 1-5, each filling to 20% 40% 60% 80% 100% with dollar amounts; red forfeit callout at bottom: QUIT YEAR 2 = LOSE $4,200",
+    "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "Call your bank today and ask for that refund. Then turn off overdraft protection and link your savings account — that's real protection.",
-    "visual": "Light background. A shield with a red X through it. Three numbered step cards appear one by one: call, opt out, link savings. Red follow CTA at bottom.",
-    "accent_color": "red"
+    "narration": "Before you quit your next job, look up your vesting date. Waiting even a few extra months could mean keeping $14,000 that's already sitting in your account. Follow for more.",
+    "visual": "Calendar SVG with a date circled and green checkmark animating in; text: CHECK BEFORE YOU QUIT; three action step cards slide in; amber CTA banner: FOLLOW FOR MORE MONEY TRAPS",
+    "accent_color": "amber"
   }
 ]
