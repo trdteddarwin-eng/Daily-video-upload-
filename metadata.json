@@ -1,16 +1,16 @@
 {
   "tiktok": {
-    "caption": "Your 401k match is already in your account. Quit too soon and your company takes it all back — legally. Most workers have no idea.",
-    "hashtags": ["#401k", "#personalfinance", "#moneytips", "#investing", "#retirement", "#jobchange", "#financetok", "#moneyhacks", "#financialfreedom", "#wealthbuilding"]
+    "caption": "Vanguard studied 100 years of data — lump sum investing beats 'invest a little each month' 68% of the time. Fear is expensive.",
+    "hashtags": ["#investing", "#personalfinance", "#stockmarket", "#moneytips", "#dollarcostaverageing", "#wealthbuilding", "#financetok", "#moneyhacks", "#financialfreedom", "#investingtips"]
   },
   "youtube_short": {
-    "title": "Quitting Your Job Could Cost You $14,000",
+    "title": "Why 'Invest Monthly' Costs You $23,000",
     "title_alternatives": [
-      "Your 401k Match Isn't Yours Yet — Here's Why",
-      "The 401k Vesting Trap Nobody Warns You About"
+      "Lump Sum Beats Dollar Cost Averaging — Vanguard Proved It",
+      "The 'Safe' Investing Strategy That Costs You Thousands"
     ],
-    "description": "Most people assume their employer's 401k match belongs to them the moment it hits their account — but vesting schedules mean your company can legally take it all back if you quit too soon. 57% of plans use vesting schedules, and 1 in 3 workers leaves before they're fully vested, forfeiting an average of $14,000. Before your next job change, look up your vest date — waiting even a few extra months could change everything. Follow for more money traps hiding in plain sight. #401k #personalfinance #retirement #investing #moneytips",
-    "tags": ["401k", "vesting", "employer match", "personal finance", "retirement", "money tips", "investing", "job change", "quit job", "wealth building", "financial literacy", "money psychology"]
+    "description": "Dollar cost averaging feels safe — spreading your investments over time sounds smart. But Vanguard's century of data shows lump sum investing wins 68% of the time, with an average $3,400 edge on a $50,000 investment. Markets go up 75% of all trading days, so every month you wait is probably a month you missed a gain. If you've got cash sitting on the sidelines waiting for the 'right time,' that hesitation has a $23,000 price tag over 20 years. Follow for more money traps hiding in plain sight. #investing #personalfinance #wealthbuilding #stockmarket #moneytips",
+    "tags": ["investing", "dollar cost averaging", "lump sum investing", "personal finance", "stock market", "money tips", "wealth building", "financial literacy", "Vanguard", "money psychology", "savings", "compound interest"]
   },
-  "hook_line": "Your company can take back your 401k match"
+  "hook_line": "Investing monthly is costing you $23,000"
 }

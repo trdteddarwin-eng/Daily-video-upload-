@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Your company matches your 401k — sounds like free money, right? Here's what they don't tell you: that match might not actually be yours yet.",
-    "visual": "Amber piggy bank SVG springs in with a black padlock snapping shut on top; text overlay fades in: YOUR MATCH ISN'T YOURS YET; subtitle: THE VESTING TRAP",
-    "accent_color": "amber"
+    "narration": "Everyone says invest a little every month — dollar cost averaging, right? Sounds safe. But Vanguard ran 100 years of data and found it's costing you thousands.",
+    "visual": "Person silhouette dropping coins one by one into a calendar with monthly slots; coins bounce off a growing green arrow chart; text overlay: THE $23,000 MISTAKE",
+    "accent_color": "green"
   },
   {
     "scene": 2,
-    "narration": "It's called vesting. Most plans make you wait three full years before the company's money is legally yours. Leave before year three and you walk away with zero.",
-    "visual": "Horizontal timeline of Year 1 through Year 6 with lock icons; years 1 and 2 show gray locked padlocks labeled 0%; year 3 unlocks in green labeled 100%; warning box: QUIT BEFORE YEAR 3 = $0",
-    "accent_color": "amber"
+    "narration": "Vanguard studied every 12-month window since 1926. Lump sum investing beat dollar cost averaging 68% of the time — across the US, UK, and Australian markets.",
+    "visual": "Three globe icons for US, UK, Australia spring in; a large 68% stat animates to full size in green; bar comparing lump sum win rate vs DCA win rate",
+    "accent_color": "green"
   },
   {
     "scene": 3,
-    "narration": "The average match is $3,500 a year. Two years of contributions sitting in your account — quit on year two and your employer legally takes back all $7,000.",
-    "visual": "Three growing bar charts: Year 1 $3,500, Year 2 $7,000, Year 3 $10,500 in amber; bars for years 1 and 2 then drain to zero and turn red labeled FORFEITED; large text: -$7,000",
-    "accent_color": "amber"
+    "narration": "Here's the math. You've got $50,000. Invest it all today, and on average you end up $3,400 ahead versus dripping it in over 12 months. That gap keeps compounding.",
+    "visual": "Two side-by-side growing bar charts: LUMP SUM taller in green vs DCA shorter in gray; $3,400 difference highlighted with an arrow; dollar signs raining down on lump sum side",
+    "accent_color": "green"
   },
   {
     "scene": 4,
-    "narration": "57% of 401k plans have vesting rules. One in three workers quits before they're fully vested — most of them never even knew they left that money behind.",
-    "visual": "Grid of 9 person silhouettes; 3 silhouettes turn gray with red X marks representing the one-in-three; stat cards animate in showing 57% and 1-IN-3",
-    "accent_color": "amber"
+    "narration": "Here's why. Markets go up about 75% of all trading days. Every month you wait to invest, you're probably sitting out a gain — and fear has a $23,000 price tag.",
+    "visual": "Grid of calendar days: 75% marked with small green up-arrows, 25% with red down-arrows; running tally shows missed gains; large text: FEAR COSTS $23,000",
+    "accent_color": "green"
   },
   {
     "scene": 5,
-    "narration": "Some companies use graded vesting — you earn 20% per year over five years. Still, quit at year two and you're only 40% vested, forfeiting $4,200 back to your boss.",
-    "visual": "Five horizontal progress bars labeled Year 1-5, each filling to 20% 40% 60% 80% 100% with dollar amounts; red forfeit callout at bottom: QUIT YEAR 2 = LOSE $4,200",
-    "accent_color": "amber"
+    "narration": "Now — if you don't have a lump sum, investing each paycheck is great. The real trap is hoarding cash on the sidelines, waiting for the 'perfect' entry point that never comes.",
+    "visual": "Piggy bank overflowing with cash sitting on a shelf labeled WAITING FOR THE DIP; vs. a growth chart steadily climbing; red X over the waiting piggy bank",
+    "accent_color": "green"
   },
   {
     "scene": 6,
-    "narration": "Before you quit your next job, look up your vesting date. Waiting even a few extra months could mean keeping $14,000 that's already sitting in your account. Follow for more.",
-    "visual": "Calendar SVG with a date circled and green checkmark animating in; text: CHECK BEFORE YOU QUIT; three action step cards slide in; amber CTA banner: FOLLOW FOR MORE MONEY TRAPS",
-    "accent_color": "amber"
+    "narration": "If you've got cash parked in savings waiting to invest, that's the most expensive hesitation of your life. Put it in today — then follow for the next one.",
+    "visual": "Green upward investment chart with a person silhouette pushing a pile of money onto it; CTA card: TIME IN THE MARKET BEATS TIMING THE MARKET; green follow banner",
+    "accent_color": "green"
   }
 ]
