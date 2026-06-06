@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Everyone says invest a little every month — dollar cost averaging, right? Sounds safe. But Vanguard ran 100 years of data and found it's costing you thousands.",
-    "visual": "Person silhouette dropping coins one by one into a calendar with monthly slots; coins bounce off a growing green arrow chart; text overlay: THE $23,000 MISTAKE",
-    "accent_color": "green"
+    "narration": "You're making extra mortgage payments feeling like a total financial genius. But the math says that habit could cost you over a million dollars. Stick around.",
+    "visual": "SVG house with person silhouette dropping gold coins into a slot in the roof; animated coins fall one by one; large text THE $1,000,000 MISTAKE fades in; amber tag THE MATH WILL SHOCK YOU",
+    "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "Vanguard studied every 12-month window since 1926. Lump sum investing beat dollar cost averaging 68% of the time — across the US, UK, and Australian markets.",
-    "visual": "Three globe icons for US, UK, Australia spring in; a large 68% stat animates to full size in green; bar comparing lump sum win rate vs DCA win rate",
-    "accent_color": "green"
+    "narration": "Your mortgage charges you around 7% interest, so paying it off early feels like a guaranteed 7% return. Here's exactly where that logic breaks down completely.",
+    "visual": "SVG mortgage document with INTEREST RATE 7.0% line highlighted in amber; satisfied person silhouette; large amber question mark springs in beside the document",
+    "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Here's the math. You've got $50,000. Invest it all today, and on average you end up $3,400 ahead versus dripping it in over 12 months. That gap keeps compounding.",
-    "visual": "Two side-by-side growing bar charts: LUMP SUM taller in green vs DCA shorter in gray; $3,400 difference highlighted with an arrow; dollar signs raining down on lump sum side",
-    "accent_color": "green"
+    "narration": "The stock market has averaged 10% a year for over a hundred years. Every dollar going to your mortgage instead of investing loses you that 3% gap — every single year, compounding.",
+    "visual": "Two animated bar charts side by side: MORTGAGE gray bar at 7%, MARKET amber bar at 10% growing taller; gap arrow labeled +3% EVERY YEAR springs in below",
+    "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "Here's why. Markets go up about 75% of all trading days. Every month you wait to invest, you're probably sitting out a gain — and fear has a $23,000 price tag.",
-    "visual": "Grid of calendar days: 75% marked with small green up-arrows, 25% with red down-arrows; running tally shows missed gains; large text: FEAR COSTS $23,000",
-    "accent_color": "green"
+    "narration": "Here's the actual math. Put $500 extra a month toward your mortgage and you save $128,000 in interest. Invest that same $500 monthly and you end up with $1.13 million.",
+    "visual": "Split screen: left panel shows house icon with $128K INTEREST SAVED fading in; right panel shows growing amber bar chart with $1.13M INVESTED BALANCE fading in; amber banner THAT'S A $1,000,000+ GAP",
+    "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "Now — if you don't have a lump sum, investing each paycheck is great. The real trap is hoarding cash on the sidelines, waiting for the 'perfect' entry point that never comes.",
-    "visual": "Piggy bank overflowing with cash sitting on a shelf labeled WAITING FOR THE DIP; vs. a growth chart steadily climbing; red X over the waiting piggy bank",
-    "accent_color": "green"
+    "narration": "There are only two valid reasons to pay early: your rate's above 8%, or you genuinely can't sleep with debt. Outside of that, 71% of homeowners are leaving a fortune on the table.",
+    "visual": "Two checklist items spring in with amber checkmarks: RATE IS ABOVE 8% and CAN'T SLEEP WITH DEBT; then large red 71% stat animates in; row of seven person silhouettes — five in red",
+    "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "If you've got cash parked in savings waiting to invest, that's the most expensive hesitation of your life. Put it in today — then follow for the next one.",
-    "visual": "Green upward investment chart with a person silhouette pushing a pile of money onto it; CTA card: TIME IN THE MARKET BEATS TIMING THE MARKET; green follow banner",
-    "accent_color": "green"
+    "narration": "If your rate's under 7%, your mortgage might be the cheapest debt you'll ever have. Invest the difference and your future self will thank you. Follow for more money math.",
+    "visual": "Left card: gray house PAID OFF HOUSE $128K; right card: amber bar chart INVEST INSTEAD $1.13M grows taller; person silhouette with amber arrow pointing right; CTA banner FOLLOW FOR MORE MONEY MATH",
+    "accent_color": "amber"
   }
 ]

@@ -1,16 +1,16 @@
 {
   "tiktok": {
-    "caption": "Vanguard studied 100 years of data — lump sum investing beats 'invest a little each month' 68% of the time. Fear is expensive.",
-    "hashtags": ["#investing", "#personalfinance", "#stockmarket", "#moneytips", "#dollarcostaverageing", "#wealthbuilding", "#financetok", "#moneyhacks", "#financialfreedom", "#investingtips"]
+    "caption": "Paying off your mortgage early could cost you $1,000,000. Here's the math nobody shows you.",
+    "hashtags": ["#mortgage", "#personalfinance", "#moneytips", "#investing", "#homeowner", "#financialeducation", "#wealthbuilding", "#realestate", "#moneymindset", "#financetok"]
   },
   "youtube_short": {
-    "title": "Why 'Invest Monthly' Costs You $23,000",
+    "title": "Paying Off Your Mortgage Early = $1M Mistake",
     "title_alternatives": [
-      "Lump Sum Beats Dollar Cost Averaging — Vanguard Proved It",
-      "The 'Safe' Investing Strategy That Costs You Thousands"
+      "Why Mortgage Payoff Is the Worst Financial Move",
+      "The $1,000,000 Mistake 71% of Homeowners Make"
     ],
-    "description": "Dollar cost averaging feels safe — spreading your investments over time sounds smart. But Vanguard's century of data shows lump sum investing wins 68% of the time, with an average $3,400 edge on a $50,000 investment. Markets go up 75% of all trading days, so every month you wait is probably a month you missed a gain. If you've got cash sitting on the sidelines waiting for the 'right time,' that hesitation has a $23,000 price tag over 20 years. Follow for more money traps hiding in plain sight. #investing #personalfinance #wealthbuilding #stockmarket #moneytips",
-    "tags": ["investing", "dollar cost averaging", "lump sum investing", "personal finance", "stock market", "money tips", "wealth building", "financial literacy", "Vanguard", "money psychology", "savings", "compound interest"]
+    "description": "Your mortgage might be the cheapest debt you'll ever have — so why are you rushing to pay it off? The S&P 500 averages 10% a year while your mortgage costs around 7%. That 3% gap on just $500 a month compounds into over a million dollars over 30 years. There are only two valid reasons to pay early: your rate is above 8%, or debt genuinely keeps you up at night. Otherwise, invest the difference and let compounding do the heavy lifting. #mortgage #personalfinance #investing #moneytips Follow for more money math every day.",
+    "tags": ["mortgage", "personal finance", "investing", "money tips", "home ownership", "wealth building", "real estate", "financial education", "money psychology", "retirement", "compound interest", "opportunity cost"]
   },
-  "hook_line": "Investing monthly is costing you $23,000"
+  "hook_line": "Paying off your mortgage early = $1M mistake"
 }
