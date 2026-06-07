@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You're making extra mortgage payments feeling like a total financial genius. But the math says that habit could cost you over a million dollars. Stick around.",
-    "visual": "SVG house with person silhouette dropping gold coins into a slot in the roof; animated coins fall one by one; large text THE $1,000,000 MISTAKE fades in; amber tag THE MATH WILL SHOCK YOU",
-    "accent_color": "amber"
+    "narration": "The cashier just asked — 'do you want the protection plan?' And statistically, you said yes. That was probably a $399 mistake.",
+    "visual": "SVG cash register with glowing screen showing 'PROTECTION PLAN? ADD FOR $399?'; animated red exclamation popup springs in; large 'THAT YES COSTS YOU THOUSANDS' text fades in; red badge '$40 BILLION SCAM / YEAR'",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Your mortgage charges you around 7% interest, so paying it off early feels like a guaranteed 7% return. Here's exactly where that logic breaks down completely.",
-    "visual": "SVG mortgage document with INTEREST RATE 7.0% line highlighted in amber; satisfied person silhouette; large amber question mark springs in beside the document",
-    "accent_color": "amber"
+    "narration": "Americans spend $40 billion a year on extended warranties — more than we spend on pet food. And about 80% of that goes straight to the retailer as pure profit.",
+    "visual": "Two animated bar charts growing upward side by side: red bar labeled WARRANTIES $40B grows taller than gray bar labeled PET FOOD $30B; red callout AND 80% IS PURE PROFIT FOR THE RETAILER fades in",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "The stock market has averaged 10% a year for over a hundred years. Every dollar going to your mortgage instead of investing loses you that 3% gap — every single year, compounding.",
-    "visual": "Two animated bar charts side by side: MORTGAGE gray bar at 7%, MARKET amber bar at 10% growing taller; gap arrow labeled +3% EVERY YEAR springs in below",
-    "accent_color": "amber"
+    "narration": "Here's the brutal math — only 12% of extended warranties are ever used. That means 88 cents of every dollar you hand over goes directly into the retailer's pocket.",
+    "visual": "Donut chart animating from empty to 12% filled red (EVER USED) with 88% gray background; large '88¢ OF EVERY DOLLAR TO PROFIT' text fades in; bottom callout '88% ARE NEVER CLAIMED — IT'S THE BUSINESS MODEL'",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Here's the actual math. Put $500 extra a month toward your mortgage and you save $128,000 in interest. Invest that same $500 monthly and you end up with $1.13 million.",
-    "visual": "Split screen: left panel shows house icon with $128K INTEREST SAVED fading in; right panel shows growing amber bar chart with $1.13M INVESTED BALANCE fading in; amber banner THAT'S A $1,000,000+ GAP",
-    "accent_color": "amber"
+    "narration": "Here's why you keep saying yes. Your brain fears loss way more than it values gain — and retailers engineered that checkout question to trigger exactly that fear.",
+    "visual": "Person silhouette with fear thought bubble 'WHAT IF IT BREAKS?!'; beside it a math panel showing ACTUAL ODDS: 1 IN 8 with a 12.5% progress bar; red callout THEY ENGINEERED THAT FEAR RIGHT AT CHECKOUT",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "There are only two valid reasons to pay early: your rate's above 8%, or you genuinely can't sleep with debt. Outside of that, 71% of homeowners are leaving a fortune on the table.",
-    "visual": "Two checklist items spring in with amber checkmarks: RATE IS ABOVE 8% and CAN'T SLEEP WITH DEBT; then large red 71% stat animates in; row of seven person silhouettes — five in red",
-    "accent_color": "amber"
+    "narration": "What they don't tell you — most premium credit cards already include free purchase protection for one to two years. And the money you'd spend on warranties? Put it in a repair fund and keep what you don't use.",
+    "visual": "Credit card SVG with red shield badge showing free protection; piggy bank SVG beside it with $400/YR redirected label growing in; red outlined callout MOST CARDS PROTECT YOU FREE",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "If your rate's under 7%, your mortgage might be the cheapest debt you'll ever have. Invest the difference and your future self will thank you. Follow for more money math.",
-    "visual": "Left card: gray house PAID OFF HOUSE $128K; right card: amber bar chart INVEST INSTEAD $1.13M grows taller; person silhouette with amber arrow pointing right; CTA banner FOLLOW FOR MORE MONEY MATH",
-    "accent_color": "amber"
+    "narration": "Skip every extended warranty over your lifetime and you keep over $8,000. Next time they ask at checkout, you know exactly what to say.",
+    "visual": "Large '$8K+' number growing with spring animation; person silhouette with green money bag; red banner NEXT TIME THEY ASK: JUST SAY NO; dark CTA banner FOLLOW FOR MORE MONEY MATH",
+    "accent_color": "red"
   }
 ]
