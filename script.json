@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You see '12 months zero interest' and hit accept. But that offer has a hidden timer — and most people don't know what happens when it runs out.",
-    "visual": "SVG store checkout screen showing '0% APR FOR 12 MONTHS' in green; animated bomb icon springs in at top-right corner of screen; 'LOOKS LIKE A DEAL / IT'S A TRAP' text fades in below; red badge '73% OF SHOPPERS GET HIT'",
-    "accent_color": "red"
+    "narration": "Most renters think you need twenty percent down to buy a home. That single belief is keeping millions locked out for fourteen extra years.",
+    "visual": "Apartment building with FOR RENT sign. Large '73%' statistic in blue. 'NEED 20% DOWN' text with animated red strikethrough extending across it.",
+    "accent_color": "blue"
   },
   {
     "scene": 2,
-    "narration": "Here's the thing — two kinds of zero interest exist. Waived means it's gone forever. Deferred means it's hiding, quietly building in the background the whole time.",
-    "visual": "Two side-by-side boxes spring in: left box green with checkmark labeled 'WAIVED — INTEREST GONE FOREVER'; right box red with dollar signs labeled 'DEFERRED — QUIETLY BUILDING'; callout 'MOST STORE OFFERS = DEFERRED' fades in below",
-    "accent_color": "red"
+    "narration": "Here's the thing — banks invented the twenty percent rule to protect themselves, not you. It's been quietly outdated for decades, but nobody told renters.",
+    "visual": "Bank building with dollar sign on pediment on light background. Three info pills appear sequentially: 'CREATED IN 1934', 'TO PROTECT BANKS' (blue), 'NOT YOU' (red).",
+    "accent_color": "blue"
   },
   {
     "scene": 3,
-    "narration": "Miss that payment deadline and every month of interest backdates all at once — all twelve months. It doesn't phase in. The whole bill lands in seconds.",
-    "visual": "Horizontal timeline bar animating across 12 month dots; bomb icon springs in at month 12 marker; dark red panel appears: 'MISS BY ONE DAY → ALL 12 MONTHS HIT AT ONCE'",
-    "accent_color": "red"
+    "narration": "FHA loans need just three and a half percent down. VA and USDA programs let qualifying buyers in with literally zero dollars.",
+    "visual": "Three loan program cards spring in one by one: FHA LOAN 3.5% (blue border), VA LOAN 0% (green, for veterans), USDA LOAN 0% (amber, rural areas).",
+    "accent_color": "blue"
   },
   {
     "scene": 4,
-    "narration": "On a $2,400 TV at 26.99% APR, one missed deadline means a $648 surprise bill on top. Your TV just went from $2,400 to $3,048 overnight.",
-    "visual": "SVG TV labeled $2,400 on left; plus sign fades in; red bill labeled '$648 INTEREST BILL' springs in; equals sign and large '$3,048' text grows in with spring; red banner 'NOT THE $2,400 YOU PLANNED'",
-    "accent_color": "red"
+    "narration": "The math is brutal. Renting fourteen extra years at fifteen hundred a month means handing your landlord over two hundred fifty thousand dollars.",
+    "visual": "14-year calendar grid with red boxes filling in year by year. Rent counter climbs to $252,000. Bold warning box: 'YOUR EQUITY BUILT: $0'.",
+    "accent_color": "blue"
   },
   {
     "scene": 5,
-    "narration": "Four words in the fine print tell you everything: 'if paid in full.' Any offer with that phrase is deferred. Safe offers say 'no interest' — full stop.",
-    "visual": "SVG document with blurred gray lines of text; 'IF PAID IN FULL' phrase highlighted in red and springs into view; two comparison labels below: red 'DEFERRED' with 'IF PAID IN FULL' vs green 'WAIVED' with 'NO INTEREST'",
-    "accent_color": "red"
+    "narration": "Sure, there's PMI with a smaller down payment — around one-fifty a month. But PMI cancels at twenty percent equity, and your rent doesn't.",
+    "visual": "Red PMI badge '$150/mo' fades as equity progress bar grows. At 20%, green 'PMI CANCELLED' badge appears. Side-by-side: PMI per year $1,800 vs. rent per year $18,000.",
+    "accent_color": "blue"
   },
   {
     "scene": 6,
-    "narration": "Set a calendar reminder for month eleven, then pay it off before the clock runs out. One alarm protects you from a $648 gut-punch. Don't let the timer win.",
-    "visual": "SVG calendar with red alarm dot on month 11; piggy bank SVG with fill level animating upward; red CTA banner 'ONE REMINDER SAVES $648'; dark follow-for-more banner at bottom",
-    "accent_color": "red"
+    "narration": "A five-eighty credit score and three and a half percent down is all it takes for FHA approval. The door might already be open.",
+    "visual": "House SVG with green checkmark badge and animated sliding key. Three requirement boxes: CREDIT SCORE 580+, DOWN PAYMENT 3.5%, INCOME PROOF checkmark. Blue CTA button: 'THE DOOR IS OPEN.'",
+    "accent_color": "blue"
   }
 ]
