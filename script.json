@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Most renters think you need twenty percent down to buy a home. That single belief is keeping millions locked out for fourteen extra years.",
-    "visual": "Apartment building with FOR RENT sign. Large '73%' statistic in blue. 'NEED 20% DOWN' text with animated red strikethrough extending across it.",
-    "accent_color": "blue"
+    "narration": "You just got a raise, and your gut says wait — will this push me into a higher tax bracket and leave me with less? That fear is real, and it's costing workers thousands.",
+    "visual": "Worried person silhouette under falling dollar signs. 'TAX BRACKET MYTH' springs in large on dark background. Question mark hovers over the person's head. Amber accents throughout.",
+    "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "Here's the thing — banks invented the twenty percent rule to protect themselves, not you. It's been quietly outdated for decades, but nobody told renters.",
-    "visual": "Bank building with dollar sign on pediment on light background. Three info pills appear sequentially: 'CREATED IN 1934', 'TO PROTECT BANKS' (blue), 'NOT YOU' (red).",
-    "accent_color": "blue"
+    "narration": "Most people believe once you cross a bracket line, all your income gets taxed at that higher rate. That's completely wrong — and it's one of the most expensive myths in personal finance.",
+    "visual": "Gray thought bubble containing '22% ON ALL INCOME?' A large red X sweeps diagonally across it. 'WRONG' springs in huge and red below the bubble. Light background.",
+    "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "FHA loans need just three and a half percent down. VA and USDA programs let qualifying buyers in with literally zero dollars.",
-    "visual": "Three loan program cards spring in one by one: FHA LOAN 3.5% (blue border), VA LOAN 0% (green, for veterans), USDA LOAN 0% (amber, rural areas).",
-    "accent_color": "blue"
+    "narration": "Tax brackets are marginal. Your income gets taxed in separate layers. Only the dollars above each threshold pay the higher rate — everything below stays at the lower rate.",
+    "visual": "Three horizontal bars grow left to right: green 10% bar, amber 12% bar, red 22% bar. A dashed arrow points to the 22% bar labeled 'your raise lands here — only this slice.' Dark background.",
+    "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "The math is brutal. Renting fourteen extra years at fifteen hundred a month means handing your landlord over two hundred fifty thousand dollars.",
-    "visual": "14-year calendar grid with red boxes filling in year by year. Rent counter climbs to $252,000. Bold warning box: 'YOUR EQUITY BUILT: $0'.",
-    "accent_color": "blue"
+    "narration": "Say your $5,000 raise falls entirely in the 22% bracket — worst case. That's $1,100 in taxes. You still pocket $3,900 more. You literally cannot take home less by earning more.",
+    "visual": "A $5,000 bar splits into $3,900 green section labeled 'YOU KEEP' and $1,100 amber section labeled 'TAXES'. Both numbers count up. Key insight box springs in: 'you NEVER earn less by earning more.' Light background.",
+    "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "Sure, there's PMI with a smaller down payment — around one-fifty a month. But PMI cancels at twenty percent equity, and your rent doesn't.",
-    "visual": "Red PMI badge '$150/mo' fades as equity progress bar grows. At 20%, green 'PMI CANCELLED' badge appears. Side-by-side: PMI per year $1,800 vs. rent per year $18,000.",
-    "accent_color": "blue"
+    "narration": "Workers who avoid raises or bonuses because of this myth lose around $8,000 a year on average. That's $80,000 a decade — gone because of bad advice someone who was also wrong passed along.",
+    "visual": "Giant '$8K' springs in red. A person silhouette refuses a money bag with an X mark. A counter ticks: 'Year 1 = $8,000... Year 10 = $80,000 lost'. Draining red bar. Dark background.",
+    "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "A five-eighty credit score and three and a half percent down is all it takes for FHA approval. The door might already be open.",
-    "visual": "House SVG with green checkmark badge and animated sliding key. Three requirement boxes: CREDIT SCORE 580+, DOWN PAYMENT 3.5%, INCOME PROOF checkmark. Blue CTA button: 'THE DOOR IS OPEN.'",
-    "accent_color": "blue"
+    "narration": "You can never take home less by earning more. Take the raise, the bonus, the extra shift. Share this before someone you know says no to free money today.",
+    "visual": "Happy person silhouette accepting a money bag. 'TAKE THE RAISE' in huge text springs in. Amber, green, and red confetti dots bounce in around the scene. Share CTA box at the bottom. Light background.",
+    "accent_color": "amber"
   }
 ]
