@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You just got a raise, and your gut says wait — will this push me into a higher tax bracket and leave me with less? That fear is real, and it's costing workers thousands.",
-    "visual": "Worried person silhouette under falling dollar signs. 'TAX BRACKET MYTH' springs in large on dark background. Question mark hovers over the person's head. Amber accents throughout.",
-    "accent_color": "amber"
+    "narration": "That streaming service is 'just $3 a day.' Your gym is 'only $2 a day.' Sounds harmless — until you realize you don't have just one.",
+    "visual": "Dark background. Giant '$3/DAY' text bounces in. Below it, a small '$1,095/year' counter ticks up to reveal the annual cost. Calendar icon in corner.",
+    "accent_color": "orange"
   },
   {
     "scene": 2,
-    "narration": "Most people believe once you cross a bracket line, all your income gets taxed at that higher rate. That's completely wrong — and it's one of the most expensive myths in personal finance.",
-    "visual": "Gray thought bubble containing '22% ON ALL INCOME?' A large red X sweeps diagonally across it. 'WRONG' springs in huge and red below the bubble. Light background.",
-    "accent_color": "amber"
+    "narration": "Marketers cracked this decades ago — daily prices feel trivial to your brain. But $3 a day is exactly $1,095 a year. The math doesn't care how small it felt.",
+    "visual": "Light background. Brain outline SVG. '$3/day' floats in as tiny text. Arrow points through brain. '$1,095/year' emerges large on the other side. Red highlight on the big number.",
+    "accent_color": "orange"
   },
   {
     "scene": 3,
-    "narration": "Tax brackets are marginal. Your income gets taxed in separate layers. Only the dollars above each threshold pay the higher rate — everything below stays at the lower rate.",
-    "visual": "Three horizontal bars grow left to right: green 10% bar, amber 12% bar, red 22% bar. A dashed arrow points to the 22% bar labeled 'your raise lands here — only this slice.' Dark background.",
-    "accent_color": "amber"
+    "narration": "Stack six of these together — streaming, gym, music, cloud storage, delivery pass, news app — and you're quietly at $14 a day. The individual feels tiny. The stack doesn't.",
+    "visual": "Dark background. Six icons appear one at a time: TV screen, dumbbell, music note, cloud, delivery bag, newspaper. Each shows a daily cost. Running total grows at the bottom to $14/day.",
+    "accent_color": "orange"
   },
   {
     "scene": 4,
-    "narration": "Say your $5,000 raise falls entirely in the 22% bracket — worst case. That's $1,100 in taxes. You still pocket $3,900 more. You literally cannot take home less by earning more.",
-    "visual": "A $5,000 bar splits into $3,900 green section labeled 'YOU KEEP' and $1,100 amber section labeled 'TAXES'. Both numbers count up. Key insight box springs in: 'you NEVER earn less by earning more.' Light background.",
-    "accent_color": "amber"
+    "narration": "$14 a day is $5,110 a year. Invested at a 7% return instead, over ten years that becomes $51,000. Gone — because each charge felt like pocket change.",
+    "visual": "Light background. Piggy bank receives coins. Arrow points to a bar chart that grows from $5K to $51K over 10 years. '$51,000' number springs in large at the end.",
+    "accent_color": "orange"
   },
   {
     "scene": 5,
-    "narration": "Workers who avoid raises or bonuses because of this myth lose around $8,000 a year on average. That's $80,000 a decade — gone because of bad advice someone who was also wrong passed along.",
-    "visual": "Giant '$8K' springs in red. A person silhouette refuses a money bag with an X mark. A counter ticks: 'Year 1 = $8,000... Year 10 = $80,000 lost'. Draining red bar. Dark background.",
-    "accent_color": "amber"
+    "narration": "Here's what's wild — 68% of people can't estimate their annual subscription costs within $500. The daily framing is working exactly as it was designed to.",
+    "visual": "Dark background. Row of person silhouettes, 68% shaded in. A question mark bubble, then the real annual number '$5,110' revealed with a jolt. One shocked person silhouette.",
+    "accent_color": "orange"
   },
   {
     "scene": 6,
-    "narration": "You can never take home less by earning more. Take the raise, the bonus, the extra shift. Share this before someone you know says no to free money today.",
-    "visual": "Happy person silhouette accepting a money bag. 'TAKE THE RAISE' in huge text springs in. Amber, green, and red confetti dots bounce in around the scene. Share CTA box at the bottom. Light background.",
-    "accent_color": "amber"
+    "narration": "Pull up your bank statement right now. Add every recurring charge. Convert it to annual. That number is going to wake you up — share this so someone else wakes up too.",
+    "visual": "Light background. Phone screen with recurring charges highlighted line by line. Total flips to annual cost. Bold CTA box at bottom. Upward arrow animation.",
+    "accent_color": "orange"
   }
 ]
