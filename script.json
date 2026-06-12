@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "That streaming service is 'just $3 a day.' Your gym is 'only $2 a day.' Sounds harmless — until you realize you don't have just one.",
-    "visual": "Dark background. Giant '$3/DAY' text bounces in. Below it, a small '$1,095/year' counter ticks up to reveal the annual cost. Calendar icon in corner.",
-    "accent_color": "orange"
+    "narration": "Every year, you hand over $270 just to file your taxes. But here's what nobody tells you — you never had to pay a single dollar.",
+    "visual": "Large red '$270' springs up center; person silhouette on left, suited tax preparer on right, dashed arrow with dollar signs crossing between them",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Marketers cracked this decades ago — daily prices feel trivial to your brain. But $3 a day is exactly $1,095 a year. The math doesn't care how small it felt.",
-    "visual": "Light background. Brain outline SVG. '$3/day' floats in as tiny text. Arrow points through brain. '$1,095/year' emerges large on the other side. Red highlight on the big number.",
-    "accent_color": "orange"
+    "narration": "Sixty million Americans paid for tax prep last year. That's a sixteen-billion-dollar industry built on one thing — you not knowing your options.",
+    "visual": "Grid of 60 small person icons filling screen one by one; animated counter counting up to 60,000,000; '$16 BILLION DOLLAR INDUSTRY' badge fades in",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Stack six of these together — streaming, gym, music, cloud storage, delivery pass, news app — and you're quietly at $14 a day. The individual feels tiny. The stack doesn't.",
-    "visual": "Dark background. Six icons appear one at a time: TV screen, dumbbell, music note, cloud, delivery bag, newspaper. Each shows a daily cost. Running total grows at the bottom to $14/day.",
-    "accent_color": "orange"
+    "narration": "The IRS has offered completely free filing for over twenty years. It's called Free File — and the industry spent $6.6 million lobbying to make sure you never heard of it.",
+    "visual": "Laptop SVG with glowing green 'IRS FREE FILE' on screen; money bag labeled '$6.6M' slides toward Capitol building silhouette; 'FREE FOR 20+ YEARS' text fades in",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "$14 a day is $5,110 a year. Invested at a 7% return instead, over ten years that becomes $51,000. Gone — because each charge felt like pocket change.",
-    "visual": "Light background. Piggy bank receives coins. Arrow points to a bar chart that grows from $5K to $51K over 10 years. '$51,000' number springs in large at the end.",
-    "accent_color": "orange"
+    "narration": "If you earned under seventy-nine thousand dollars last year, you qualify. That covers seventy percent of all American taxpayers leaving free money on the table.",
+    "visual": "Income progress bar; '$79K' threshold marker; green checkmark springs in; '70% OF ALL TAXPAYERS QUALIFY' badge bounces in",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Here's what's wild — 68% of people can't estimate their annual subscription costs within $500. The daily framing is working exactly as it was designed to.",
-    "visual": "Dark background. Row of person silhouettes, 68% shaded in. A question mark bubble, then the real annual number '$5,110' revealed with a jolt. One shocked person silhouette.",
-    "accent_color": "orange"
+    "narration": "Here's the real kicker — that $270 invested every year for thirty years at seven percent? That's over twenty-one thousand dollars your tax preparer quietly stole from your future.",
+    "visual": "Two bars: small red '$270/yr wasted' bar vs tall growing green '$21,600 invested' bar; '$21,600' number springs in at top of green bar",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Pull up your bank statement right now. Add every recurring charge. Convert it to annual. That number is going to wake you up — share this so someone else wakes up too.",
-    "visual": "Light background. Phone screen with recurring charges highlighted line by line. Total flips to annual cost. Bold CTA box at bottom. Upward arrow animation.",
-    "accent_color": "orange"
+    "narration": "Right now, search IRS Free File on your phone. Save your $270 this year and start investing it instead. Your future self will seriously thank you.",
+    "visual": "Phone SVG showing search bar with 'IRS Free File'; piggy bank springs in; '$270 SAVED' green badge bounces in; CTA text fades up",
+    "accent_color": "red"
   }
 ]
