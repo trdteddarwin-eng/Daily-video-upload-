@@ -1,16 +1,16 @@
 {
   "tiktok": {
-    "caption": "You're paying $270 to file taxes every year — and the IRS literally offers it free. Here's the scam nobody talks about.",
-    "hashtags": ["#taxes", "#moneytips", "#personalfinance", "#taxseason", "#savemoney", "#financetok", "#irs", "#moneyhacks", "#frugalliving", "#taxadvice"]
+    "caption": "You're 1.7x more likely to sell your winning stocks than your losing ones — and that habit alone costs you $47,000. Here's why your brain does it.",
+    "hashtags": ["#investing", "#stockmarket", "#moneytips", "#personalfinance", "#behavioralfinance", "#stockstobuy", "#financetok", "#wealthbuilding", "#moneyhacks", "#investingtips"]
   },
   "youtube_short": {
-    "title": "You're Paying $270 to File Taxes (When It's Free)",
+    "title": "The Investor Habit That Costs You $47,000",
     "title_alternatives": [
-      "The Tax Filing Scam 60 Million Americans Fall For",
-      "IRS Free File: The Secret They Don't Want You to Know"
+      "Why You Always Sell the Wrong Stock (It's Your Brain)",
+      "The Disposition Effect: The Most Expensive Investing Mistake"
     ],
-    "description": "Every year, 60 million Americans hand over $270 to file their taxes — even though the IRS has offered completely free filing for over 20 years. The tax prep industry spent $6.6 million lobbying to keep you in the dark. If you earned under $79,000 last year, you qualify for IRS Free File — that's 70% of all taxpayers. That $270 invested every year for 30 years at 7% is $21,600 your preparer quietly stole from your future. Search 'IRS Free File' right now and stop paying for something that's literally free. #taxes #personalfinance #moneytips #savemoney #irs #taxseason",
-    "tags": ["taxes", "tax tips", "IRS Free File", "save money", "personal finance", "money hacks", "tax season", "financial literacy", "money psychology", "free tax filing", "TurboTax alternative", "H&R Block", "tax prep"]
+    "description": "Studies show investors are 1.7 times more likely to sell their winning stocks than their losing ones — and that one behavioral quirk costs the average retail investor 1.5% per year in returns. It's called the Disposition Effect, and behavioral economists have measured the exact price tag: $47,000 in missing wealth over 30 years. Your brain's loss aversion kicks in and makes a -$1,000 loss feel twice as painful as a +$1,000 gain feels good — so you freeze and hold the loser, hoping it bounces back. The fix is simple: set your stop-loss rule at -15% BEFORE you buy, and stick to it no matter what. #investing #stockmarket #personalfinance #behavioralfinance #wealthbuilding",
+    "tags": ["investing", "stock market", "behavioral finance", "disposition effect", "loss aversion", "personal finance", "money psychology", "wealth building", "investing mistakes", "stock tips", "retail investor", "portfolio management", "financial literacy", "money habits"]
   },
-  "hook_line": "You're paying $270 for something the IRS gives you FREE"
+  "hook_line": "Your brain sells winners and holds losers — costing you $47,000"
 }

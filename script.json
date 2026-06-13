@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Every year, you hand over $270 just to file your taxes. But here's what nobody tells you — you never had to pay a single dollar.",
-    "visual": "Large red '$270' springs up center; person silhouette on left, suited tax preparer on right, dashed arrow with dollar signs crossing between them",
+    "narration": "You've got two stocks — one up forty percent, one down forty percent. Which one do you sell first? I'll tell you what your brain picks, and it's not the right answer.",
+    "visual": "Two SVG stock chart lines side by side — rising green line labeled '+40%' on left, falling red line labeled '-40%' on right. Person silhouette stands between them looking toward the losing chart.",
     "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Sixty million Americans paid for tax prep last year. That's a sixteen-billion-dollar industry built on one thing — you not knowing your options.",
-    "visual": "Grid of 60 small person icons filling screen one by one; animated counter counting up to 60,000,000; '$16 BILLION DOLLAR INDUSTRY' badge fades in",
+    "narration": "Almost every investor sells the winner and holds the loser. Behavioral economists call this the Disposition Effect, and it's one of the most expensive mistakes in all of investing.",
+    "visual": "Simplified brain SVG. Two arrows spring in — triangle pointing up labeled 'SELL WINNERS' in green, triangle pointing down labeled 'HOLD LOSERS' in red. Red badge: 'THE EXPENSIVE MISTAKE'.",
     "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "The IRS has offered completely free filing for over twenty years. It's called Free File — and the industry spent $6.6 million lobbying to make sure you never heard of it.",
-    "visual": "Laptop SVG with glowing green 'IRS FREE FILE' on screen; money bag labeled '$6.6M' slides toward Capitol building silhouette; 'FREE FOR 20+ YEARS' text fades in",
+    "narration": "Studies show you're one-point-seven times more likely to sell a winning stock than a losing one. That single habit costs the average retail investor one-point-five percent per year in returns.",
+    "visual": "Two growing bar charts side by side — shorter red bar labeled 'YOUR RETURNS +8.5%' vs taller green bar labeled 'S&P 500 +10%'. Large '1.7x' stat springs in at the bottom.",
     "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "If you earned under seventy-nine thousand dollars last year, you qualify. That covers seventy percent of all American taxpayers leaving free money on the table.",
-    "visual": "Income progress bar; '$79K' threshold marker; green checkmark springs in; '70% OF ALL TAXPAYERS QUALIFY' badge bounces in",
+    "narration": "Your brain literally refuses to lock in a loss. It's called loss aversion — losses feel two times more painful than gains feel good, so you freeze and hope it bounces back.",
+    "visual": "Two weighted boxes side by side — smaller green box labeled '+$1,000 GAIN', larger red box twice the height labeled '-$1,000 LOSS'. '2x HEAVIER' label between them. Red 'LOSS AVERSION' badge below.",
     "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Here's the real kicker — that $270 invested every year for thirty years at seven percent? That's over twenty-one thousand dollars your tax preparer quietly stole from your future.",
-    "visual": "Two bars: small red '$270/yr wasted' bar vs tall growing green '$21,600 invested' bar; '$21,600' number springs in at top of green bar",
+    "narration": "Here's the brutal truth: over thirty years, that one-point-five percent annual drag compounds into forty-seven thousand dollars in missing wealth. That's the real price of holding your losers.",
+    "visual": "Two animated lines drawing across a time axis from Year 1 to Year 30 — solid green 'MARKET' line rising steeply, dashed red 'YOU' line rising more slowly. '$47,000' callout springs in showing the gap.",
     "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Right now, search IRS Free File on your phone. Save your $270 this year and start investing it instead. Your future self will seriously thank you.",
-    "visual": "Phone SVG showing search bar with 'IRS Free File'; piggy bank springs in; '$270 SAVED' green badge bounces in; CTA text fades up",
+    "narration": "The fix is dead simple: set your stop-loss rule before you buy, never after. Fifteen percent max loss, then move on. The money you don't lose is the money you keep.",
+    "visual": "Notepad SVG with handwritten-style rules: 'STOP LOSS: -15% — set BEFORE buying'. Checkmark springs in. CTA text fades up: 'Pre-set exit rules keep $47,000 in your pocket.'",
     "accent_color": "red"
   }
 ]
