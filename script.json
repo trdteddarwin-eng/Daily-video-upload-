@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You've got two stocks — one up forty percent, one down forty percent. Which one do you sell first? I'll tell you what your brain picks, and it's not the right answer.",
-    "visual": "Two SVG stock chart lines side by side — rising green line labeled '+40%' on left, falling red line labeled '-40%' on right. Person silhouette stands between them looking toward the losing chart.",
+    "narration": "Half of Americans claim Social Security the moment they turn 62. That decision alone could cost them $182,000 — and most never see it coming.",
+    "visual": "Person silhouette with a dollar sign on the chest, a bold AGE 62 badge below them, and the hook text animating in from above on dark background",
     "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Almost every investor sells the winner and holds the loser. Behavioral economists call this the Disposition Effect, and it's one of the most expensive mistakes in all of investing.",
-    "visual": "Simplified brain SVG. Two arrows spring in — triangle pointing up labeled 'SELL WINNERS' in green, triangle pointing down labeled 'HOLD LOSERS' in red. Red badge: 'THE EXPENSIVE MISTAKE'.",
+    "narration": "Claim at 62 and you get around $1,400 a month. Wait until 70 and that becomes $2,480 — a 77% permanent pay raise just for waiting eight years.",
+    "visual": "Two animated bar charts growing side by side on light background: shorter red bar CLAIM AT 62 with $1,400/mo counter, taller green bar WAIT TO 70 with $2,480/mo. '+77% PAY RAISE FOR LIFE' badge pops in.",
     "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Studies show you're one-point-seven times more likely to sell a winning stock than a losing one. That single habit costs the average retail investor one-point-five percent per year in returns.",
-    "visual": "Two growing bar charts side by side — shorter red bar labeled 'YOUR RETURNS +8.5%' vs taller green bar labeled 'S&P 500 +10%'. Large '1.7x' stat springs in at the bottom.",
+    "narration": "The break-even point — where waiting actually wins — hits around age 79. And the average 62-year-old is expected to live to 84.",
+    "visual": "Timeline ruler from age 62 to 85 on dark background. Red fill line grows across it; green circle appears at age 79 labeled BREAK-EVEN. Stat box: Average life expectancy: 84.",
     "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Your brain literally refuses to lock in a loss. It's called loss aversion — losses feel two times more painful than gains feel good, so you freeze and hope it bounces back.",
-    "visual": "Two weighted boxes side by side — smaller green box labeled '+$1,000 GAIN', larger red box twice the height labeled '-$1,000 LOSS'. '2x HEAVIER' label between them. Red 'LOSS AVERSION' badge below.",
+    "narration": "From 79 to 85 that's five extra years of $2,480 instead of $1,400. Every year, the gap compounds — and most people have no idea how fast it adds up.",
+    "visual": "Year-by-year horizontal bar chart ages 79–85 on light background. Each row: short red bar $16,800/yr vs long green bar $29,760/yr, sliding in one at a time.",
     "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Here's the brutal truth: over thirty years, that one-point-five percent annual drag compounds into forty-seven thousand dollars in missing wealth. That's the real price of holding your losers.",
-    "visual": "Two animated lines drawing across a time axis from Year 1 to Year 30 — solid green 'MARKET' line rising steeply, dashed red 'YOU' line rising more slowly. '$47,000' callout springs in showing the gap.",
+    "narration": "Run the math all the way to 85 and early claimers leave $182,000 on the table. One impatient decision — six figures gone.",
+    "visual": "Piggy bank SVG filling up in red as a counter ticks toward $182,000 on dark background. Big number zooms in below: 'left on the table by claiming eight years too early'.",
     "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "The fix is dead simple: set your stop-loss rule before you buy, never after. Fifteen percent max loss, then move on. The money you don't lose is the money you keep.",
-    "visual": "Notepad SVG with handwritten-style rules: 'STOP LOSS: -15% — set BEFORE buying'. Checkmark springs in. CTA text fades up: 'Pre-set exit rules keep $47,000 in your pocket.'",
+    "narration": "If your health is decent, delay to 70 — it's the closest thing to free money your retirement will ever see. Follow for more wealth math.",
+    "visual": "White card on light background with three numbered steps sliding in: 1) Delay to age 70, 2) Grow savings 8 extra years, 3) Lock in $182K more lifetime income. CTA text fades in below.",
     "accent_color": "red"
   }
 ]
