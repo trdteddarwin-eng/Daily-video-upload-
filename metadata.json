@@ -1,16 +1,13 @@
 {
   "tiktok": {
-    "caption": "Half of Americans claim Social Security at 62 — and that one decision costs them $182,000. Here's the math nobody runs before they claim.",
-    "hashtags": ["#socialsecurity", "#retirement", "#personalfinance", "#retirementplanning", "#moneytips", "#financetok", "#wealthbuilding", "#retirementsavings", "#moneyhacks", "#financialfreedom"]
+    "caption": "92% of professional fund managers get beaten by a simple computer program. The math will make you angry.",
+    "hashtags": ["#investing", "#personalfinance", "#money", "#indexfunds", "#401k", "#wealthbuilding", "#stockmarket", "#financetips"]
   },
   "youtube_short": {
-    "title": "Claiming Social Security at 62 Is a $182K Mistake",
-    "title_alternatives": [
-      "The Social Security Timing Math Nobody Does Before Claiming",
-      "Wait to Claim Social Security — Here's What $182,000 Looks Like"
-    ],
-    "description": "Half of Americans claim Social Security the moment they turn 62 — but the math proves it's one of the most expensive retirement decisions you can make. Claim at 62 and you get around $1,400 a month. Wait until 70 and that jumps to $2,480 — a permanent 77% pay raise for life. The break-even point hits around age 79, and the average 62-year-old today is expected to live to 84. Run the numbers all the way to 85 and early claimers leave $182,000 on the table. If your health is decent, delay as long as you can — ideally to 70. It's the closest thing to free money your retirement will ever see. Follow for more wealth math. #socialsecurity #retirement #personalfinance #retirementplanning #wealthbuilding",
-    "tags": ["social security", "retirement planning", "when to claim social security", "retirement income", "personal finance", "money tips", "retirement math", "wealth building", "financial literacy", "retirement strategy", "social security benefits", "retirement age", "money habits", "financial independence"]
+    "title": "92% of Fund Managers Lose to This",
+    "title_alternatives": ["Why Pros Can't Beat Index Funds", "The 1.2% Fee Stealing $180K From You"],
+    "description": "SPIVA data shows 92% of active fund managers underperform a basic index fund over 15 years — consistently, not just occasionally. The average fee gap between active and index funds costs investors $180,000 over 30 years on a $100K investment. That's not market risk. That's just fees. Here's what to do instead. #investing #personalfinance #indexfunds #401k #wealthbuilding\n\nFollow for more wealth math every day.",
+    "tags": ["investing", "index funds", "personal finance", "401k", "money", "wealth", "stocks", "finance tips", "fund managers", "passive investing", "SPIVA", "Vanguard"]
   },
-  "hook_line": "Claiming Social Security at 62 costs you $182,000"
+  "hook_line": "92% of 'expert' fund managers LOSE to this"
 }

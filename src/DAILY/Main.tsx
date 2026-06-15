@@ -3,8 +3,8 @@ import { AbsoluteFill, Series, useCurrentFrame, useVideoConfig, interpolate, spr
 
 const BG_DARK = '#121212';
 const BG_LIGHT = '#F5F5F5';
-const ACCENT = '#EF4444';
-const GREEN = '#10B981';
+const ACCENT = '#10B981';
+const RED = '#EF4444';
 const WHITE = '#F5F5F5';
 const BLACK = '#121212';
 const FONT = '"Arial Black", "Helvetica Neue", Arial, sans-serif';
@@ -28,15 +28,15 @@ const FadeScene: React.FC<{ children: React.ReactNode; bg: string; dur: number }
   return <AbsoluteFill style={{ background: bg, opacity }}>{children}</AbsoluteFill>;
 };
 
-// ─── Scene 1: Hook — half of Americans claim at 62 ────────────────────────────
+// ─── Scene 1: Hook — 92% of pros can't beat this ──────────────────────────────
 const Scene1: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
   const titleIn = spring({ frame, fps, config: { damping: 28, stiffness: 70 } });
   const personIn = spring({ frame: Math.max(0, frame - 20), fps, config: { damping: 25, stiffness: 60 } });
-  const badgeIn = spring({ frame: Math.max(0, frame - 58), fps, config: { damping: 30, stiffness: 80 } });
-  const statIn = spring({ frame: Math.max(0, frame - 105), fps, config: { damping: 28, stiffness: 70 } });
+  const badgeIn = spring({ frame: Math.max(0, frame - 65), fps, config: { damping: 30, stiffness: 80 } });
+  const captionIn = spring({ frame: Math.max(0, frame - 110), fps, config: { damping: 28, stiffness: 70 } });
 
   const titleY = interpolate(titleIn, [0, 1], [30, 0]);
 
@@ -46,410 +46,409 @@ const Scene1: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
         position: 'absolute', top: 115, left: 40, right: 40, textAlign: 'center',
         opacity: titleIn, transform: `translateY(${titleY}px)`,
       }}>
-        <p style={headline(54, WHITE)}>HALF OF</p>
-        <p style={{ ...headline(54, ACCENT), marginTop: 8 }}>AMERICANS</p>
-        <p style={{ ...headline(40, WHITE), marginTop: 8 }}>CLAIM AT 62</p>
+        <p style={headline(52, WHITE)}>92% OF PROS</p>
+        <p style={{ ...headline(52, RED), marginTop: 8 }}>CAN'T BEAT</p>
+        <p style={{ ...headline(52, ACCENT), marginTop: 8 }}>THIS MOVE</p>
       </div>
 
-      {/* Person silhouette */}
+      {/* Fund manager: suit, tie, briefcase */}
       <div style={{
-        position: 'absolute', top: 390, left: 0, right: 0, display: 'flex', justifyContent: 'center',
+        position: 'absolute', top: 380, left: 0, right: 0, display: 'flex', justifyContent: 'center',
         opacity: personIn, transform: `scale(${personIn})`, transformOrigin: 'center bottom',
       }}>
-        <svg width="155" height="235" viewBox="0 0 155 235">
-          <circle cx="77" cy="36" r="31" fill={WHITE} />
-          <rect x="43" y="71" width="69" height="85" rx="17" fill={WHITE} />
-          <rect x="8" y="76" width="37" height="17" rx="8" fill={WHITE} />
-          <rect x="110" y="76" width="37" height="17" rx="8" fill={WHITE} />
-          <rect x="44" y="153" width="25" height="68" rx="12" fill={WHITE} />
-          <rect x="86" y="153" width="25" height="68" rx="12" fill={WHITE} />
-          <text x="77" y="124" textAnchor="middle" fill={ACCENT} fontSize="36" fontFamily="Arial Black">$</text>
+        <svg width="160" height="255" viewBox="0 0 160 255">
+          <circle cx="80" cy="38" r="32" fill={WHITE} />
+          <rect x="70" y="64" width="20" height="14" fill={WHITE} />
+          <path d="M28 82 Q28 74 80 74 Q132 74 132 82 L140 202 Q140 212 130 212 L30 212 Q20 212 20 202 Z" fill="#888" />
+          <polygon points="80,80 72,104 80,164 88,104" fill={RED} />
+          <polygon points="80,82 48,98 54,84" fill="#aaa" />
+          <polygon points="80,82 112,98 106,84" fill="#aaa" />
+          <rect x="8" y="84" width="22" height="78" rx="10" fill="#888" />
+          <rect x="130" y="84" width="22" height="78" rx="10" fill="#888" />
+          <rect x="120" y="158" width="52" height="36" rx="6" fill="#c8a04a" />
+          <rect x="134" y="146" width="24" height="16" rx="5" fill="none" stroke="#c8a04a" strokeWidth="4" />
+          <rect x="120" y="174" width="52" height="4" rx="2" fill="#a07030" />
+          <circle cx="146" cy="176" r="5" fill="#a07030" />
+          <rect x="44" y="210" width="26" height="40" rx="10" fill="#666" />
+          <rect x="90" y="210" width="26" height="40" rx="10" fill="#666" />
         </svg>
       </div>
 
-      {/* Age 62 badge */}
+      {/* 92% fail badge */}
       <div style={{
-        position: 'absolute', top: 615, left: 0, right: 0, display: 'flex', justifyContent: 'center',
+        position: 'absolute', top: 650, left: 0, right: 0, display: 'flex', justifyContent: 'center',
         opacity: badgeIn, transform: `scale(${badgeIn})`,
       }}>
         <div style={{
-          background: ACCENT, borderRadius: 55, width: 115, height: 115,
-          display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
+          background: RED, borderRadius: 18, paddingTop: 16, paddingBottom: 16,
+          paddingLeft: 34, paddingRight: 34,
+          display: 'flex', flexDirection: 'column', alignItems: 'center',
         }}>
-          <p style={{ fontFamily: FONT, fontSize: 50, color: WHITE, margin: 0, lineHeight: 1 }}>62</p>
-          <p style={{ fontFamily: FONT, fontSize: 18, color: WHITE, margin: 0 }}>AGE</p>
+          <p style={{ fontFamily: FONT, fontSize: 72, color: WHITE, margin: 0, lineHeight: 1 }}>92%</p>
+          <p style={{ fontFamily: FONT, fontSize: 22, color: WHITE, margin: 0 }}>UNDERPERFORM</p>
         </div>
       </div>
 
       <div style={{
-        position: 'absolute', bottom: 120, left: 50, right: 50, textAlign: 'center',
-        opacity: statIn,
+        position: 'absolute', bottom: 118, left: 50, right: 50, textAlign: 'center',
+        opacity: captionIn,
       }}>
-        <p style={{ fontFamily: FONT, fontSize: 30, color: WHITE, lineHeight: 1.45, margin: 0 }}>
-          That decision alone could cost them $182,000 — and most never see it coming.
+        <p style={{ fontFamily: FONT, fontSize: 28, color: WHITE, lineHeight: 1.45, margin: 0 }}>
+          And the fees they charge? That's the real crime. Let's run the math.
         </p>
       </div>
     </FadeScene>
   );
 };
 
-// ─── Scene 2: Monthly amounts — two growing bars ──────────────────────────────
+// ─── Scene 2: SPIVA 15-year report — two bars ─────────────────────────────────
 const Scene2: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
   const titleIn = spring({ frame, fps, config: { damping: 30, stiffness: 80 } });
-  const barProg = interpolate(frame, [20, 140], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const badgeIn = spring({ frame: Math.max(0, frame - 118), fps, config: { damping: 28, stiffness: 70 } });
+  const barProg = interpolate(frame, [25, 155], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const badgeIn = spring({ frame: Math.max(0, frame - 142), fps, config: { damping: 28, stiffness: 70 } });
 
-  const maxH = 320;
-  const h1 = Math.max(8, Math.floor(barProg * 0.565 * maxH));
-  const h2 = Math.max(8, Math.floor(barProg * maxH));
-  const amt1 = Math.round(barProg * 1400);
-  const amt2 = Math.round(barProg * 2480);
+  const MAX_H = 390;
+  const failH = Math.max(8, Math.floor(barProg * MAX_H));
+  const winH = Math.max(8, Math.floor(barProg * MAX_H * 0.087));
+  const failPct = Math.round(barProg * 92);
+  const winPct = Math.round(barProg * 8);
 
   return (
     <FadeScene bg={BG_LIGHT} dur={dur}>
       <div style={{ position: 'absolute', top: 95, left: 40, right: 40, textAlign: 'center', opacity: titleIn }}>
-        <p style={headline(42, BLACK)}>THE MONTHLY</p>
-        <p style={{ ...headline(42, ACCENT), marginTop: 10 }}>DIFFERENCE</p>
+        <p style={headline(40, BLACK)}>S&P SPIVA</p>
+        <p style={{ ...headline(40, RED), marginTop: 10 }}>15-YEAR REPORT</p>
       </div>
 
       <div style={{
-        position: 'absolute', top: 295, left: 0, right: 0,
+        position: 'absolute', top: 285, left: 0, right: 0,
         display: 'flex', justifyContent: 'space-around', alignItems: 'flex-end',
-        paddingLeft: 50, paddingRight: 50,
+        paddingLeft: 65, paddingRight: 65,
       }}>
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12 }}>
-          <p style={{ fontFamily: FONT, fontSize: 30, color: ACCENT, margin: 0 }}>${amt1.toLocaleString()}/mo</p>
-          <div style={{ width: 170, height: h1, background: ACCENT, borderRadius: '14px 14px 0 0' }} />
-          <div style={{ textAlign: 'center' }}>
-            <p style={{ fontFamily: FONT, fontSize: 22, color: BLACK, margin: 0 }}>CLAIM AT</p>
-            <p style={{ fontFamily: FONT, fontSize: 44, color: ACCENT, margin: 0 }}>62</p>
-          </div>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10 }}>
+          <p style={{ fontFamily: FONT, fontSize: 52, color: RED, margin: 0 }}>{failPct}%</p>
+          <div style={{ width: 188, height: failH, background: RED, borderRadius: '14px 14px 0 0' }} />
+          <p style={{ fontFamily: FONT, fontSize: 20, color: BLACK, margin: 0, textAlign: 'center', lineHeight: 1.3 }}>
+            ACTIVE FUNDS{'\n'}UNDERPERFORM
+          </p>
         </div>
-
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12 }}>
-          <p style={{ fontFamily: FONT, fontSize: 30, color: GREEN, margin: 0 }}>${amt2.toLocaleString()}/mo</p>
-          <div style={{ width: 170, height: h2, background: GREEN, borderRadius: '14px 14px 0 0' }} />
-          <div style={{ textAlign: 'center' }}>
-            <p style={{ fontFamily: FONT, fontSize: 22, color: BLACK, margin: 0 }}>WAIT UNTIL</p>
-            <p style={{ fontFamily: FONT, fontSize: 44, color: GREEN, margin: 0 }}>70</p>
-          </div>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10 }}>
+          <p style={{ fontFamily: FONT, fontSize: 52, color: ACCENT, margin: 0 }}>{winPct}%</p>
+          <div style={{ width: 188, height: winH, background: ACCENT, borderRadius: '14px 14px 0 0' }} />
+          <p style={{ fontFamily: FONT, fontSize: 20, color: BLACK, margin: 0, textAlign: 'center', lineHeight: 1.3 }}>
+            BEAT THE{'\n'}INDEX
+          </p>
         </div>
       </div>
 
       <div style={{
-        position: 'absolute', bottom: 105, left: 40, right: 40, textAlign: 'center',
+        position: 'absolute', bottom: 105, left: 50, right: 50, textAlign: 'center',
         opacity: badgeIn, transform: `scale(${badgeIn})`,
       }}>
-        <div style={{ padding: '16px 24px', background: GREEN, borderRadius: 16 }}>
-          <p style={{ ...headline(32, WHITE) }}>+77% PAY RAISE FOR LIFE</p>
+        <div style={{ padding: '16px 24px', background: RED, borderRadius: 16, marginBottom: 14 }}>
+          <p style={{ ...headline(28, WHITE) }}>OVER 15 YEARS</p>
         </div>
-        <p style={{ fontFamily: FONT, fontSize: 24, color: BLACK, marginTop: 14, lineHeight: 1.45 }}>
-          just for waiting eight years.
+        <p style={{ fontFamily: FONT, fontSize: 26, color: BLACK, lineHeight: 1.45, margin: 0 }}>
+          That's not a bad year — that's the industry. Here's the hidden reason why.
         </p>
       </div>
     </FadeScene>
   );
 };
 
-// ─── Scene 3: Break-even timeline age 62→85 ───────────────────────────────────
+// ─── Scene 3: Fee comparison — 1.2% vs 0.03% ──────────────────────────────────
 const Scene3: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
   const titleIn = spring({ frame, fps, config: { damping: 30, stiffness: 80 } });
-  const lineGrow = interpolate(frame, [18, 140], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const boxIn = spring({ frame: Math.max(0, frame - 118), fps, config: { damping: 26, stiffness: 68 } });
-  const textIn = spring({ frame: Math.max(0, frame - 155), fps, config: { damping: 28, stiffness: 72 } });
+  const barProg = interpolate(frame, [22, 148], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const gapIn = spring({ frame: Math.max(0, frame - 132), fps, config: { damping: 26, stiffness: 65 } });
 
-  const TRACK_W = 820;
-  const TRACK_X = 40;
-  const BREAK_X = Math.floor(0.739 * TRACK_W) + TRACK_X;
-  const lineW = Math.max(0, Math.floor(lineGrow * TRACK_W));
-  const showBreak = lineGrow > 0.72;
+  const MAX_H = 295;
+  const h1 = Math.max(8, Math.floor(barProg * MAX_H));
+  const h2 = Math.max(8, Math.floor(barProg * MAX_H * 0.025));
 
   return (
     <FadeScene bg={BG_DARK} dur={dur}>
       <div style={{ position: 'absolute', top: 95, left: 40, right: 40, textAlign: 'center', opacity: titleIn }}>
-        <p style={headline(40, WHITE)}>WHEN DOES</p>
-        <p style={{ ...headline(40, GREEN), marginTop: 8 }}>WAITING WIN?</p>
-      </div>
-
-      <div style={{ position: 'absolute', top: 390, left: 30, right: 30 }}>
-        <svg width="100%" height="165" viewBox="0 0 900 165">
-          <rect x={TRACK_X} y="72" width={TRACK_W} height="16" rx="8" fill="#333" />
-          <rect x={TRACK_X} y="72" width={lineW} height="16" rx="4" fill={ACCENT} />
-          <circle cx={TRACK_X} cy="80" r="18" fill={ACCENT} />
-          <text x={TRACK_X} y="138" textAnchor="middle" fill={WHITE} fontSize="24" fontFamily="Arial Black">62</text>
-          <circle cx="860" cy="80" r="18" fill="#555" />
-          <text x="860" y="138" textAnchor="middle" fill={WHITE} fontSize="24" fontFamily="Arial Black">85</text>
-          {showBreak && (
-            <>
-              <circle cx={BREAK_X} cy="80" r="22" fill={GREEN} />
-              <text x={BREAK_X} y="50" textAnchor="middle" fill={GREEN} fontSize="20" fontFamily="Arial Black">BREAK-EVEN</text>
-              <text x={BREAK_X} y="138" textAnchor="middle" fill={GREEN} fontSize="24" fontFamily="Arial Black">79</text>
-            </>
-          )}
-        </svg>
+        <p style={headline(40, WHITE)}>THE FEE</p>
+        <p style={{ ...headline(40, RED), marginTop: 8 }}>EATING YOUR</p>
+        <p style={{ ...headline(40, WHITE), marginTop: 8 }}>WEALTH</p>
       </div>
 
       <div style={{
-        position: 'absolute', top: 630, left: 50, right: 50, textAlign: 'center',
-        opacity: boxIn, transform: `scale(${boxIn})`,
+        position: 'absolute', top: 320, left: 0, right: 0,
+        display: 'flex', justifyContent: 'space-around', alignItems: 'flex-end',
+        paddingLeft: 55, paddingRight: 55,
       }}>
-        <div style={{ padding: '22px 30px', border: `3px solid ${GREEN}`, borderRadius: 18 }}>
-          <p style={{ fontFamily: FONT, fontSize: 26, color: WHITE, margin: 0 }}>
-            Average life expectancy of a 62-year-old today:
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12 }}>
+          <p style={{ fontFamily: FONT, fontSize: 40, color: RED, margin: 0 }}>1.2%</p>
+          <div style={{ width: 178, height: h1, background: RED, borderRadius: '12px 12px 0 0' }} />
+          <p style={{ fontFamily: FONT, fontSize: 22, color: WHITE, margin: 0, textAlign: 'center' }}>
+            ACTIVE FUND
           </p>
-          <p style={{ fontFamily: FONT, fontSize: 76, color: GREEN, margin: '6px 0 0' }}>84</p>
         </div>
-      </div>
-
-      <div style={{
-        position: 'absolute', bottom: 110, left: 50, right: 50, textAlign: 'center',
-        opacity: textIn,
-      }}>
-        <p style={{ fontFamily: FONT, fontSize: 28, color: WHITE, lineHeight: 1.45, margin: 0 }}>
-          That's five extra years of $2,480 instead of $1,400. The gap adds up fast.
-        </p>
-      </div>
-    </FadeScene>
-  );
-};
-
-// ─── Scene 4: Year-by-year bar chart ages 79–85 ───────────────────────────────
-const Scene4: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
-  const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
-
-  const titleIn = spring({ frame, fps, config: { damping: 30, stiffness: 80 } });
-  const row0 = spring({ frame: Math.max(0, frame - 20), fps, config: { damping: 28, stiffness: 75 } });
-  const row1 = spring({ frame: Math.max(0, frame - 40), fps, config: { damping: 28, stiffness: 75 } });
-  const row2 = spring({ frame: Math.max(0, frame - 60), fps, config: { damping: 28, stiffness: 75 } });
-  const row3 = spring({ frame: Math.max(0, frame - 80), fps, config: { damping: 28, stiffness: 75 } });
-  const row4 = spring({ frame: Math.max(0, frame - 100), fps, config: { damping: 28, stiffness: 75 } });
-  const row5 = spring({ frame: Math.max(0, frame - 120), fps, config: { damping: 28, stiffness: 75 } });
-  const row6 = spring({ frame: Math.max(0, frame - 140), fps, config: { damping: 28, stiffness: 75 } });
-  const legendIn = spring({ frame: Math.max(0, frame - 162), fps, config: { damping: 28, stiffness: 70 } });
-
-  const rows = [
-    { age: 79, sp: row0 },
-    { age: 80, sp: row1 },
-    { age: 81, sp: row2 },
-    { age: 82, sp: row3 },
-    { age: 83, sp: row4 },
-    { age: 84, sp: row5 },
-    { age: 85, sp: row6 },
-  ];
-
-  return (
-    <FadeScene bg={BG_LIGHT} dur={dur}>
-      <div style={{ position: 'absolute', top: 95, left: 40, right: 40, textAlign: 'center', opacity: titleIn }}>
-        <p style={headline(40, BLACK)}>AGES 79 TO 85</p>
-        <p style={{ ...headline(40, GREEN), marginTop: 8 }}>EVERY YEAR</p>
-      </div>
-
-      <div style={{ position: 'absolute', top: 270, left: 40, right: 40 }}>
-        {rows.map(({ age, sp }) => {
-          const rowX = interpolate(sp, [0, 1], [-30, 0]);
-          const earlyW = Math.max(4, Math.floor(sp * 185));
-          const lateW = Math.max(4, Math.floor(sp * 328));
-          return (
-            <div key={age} style={{
-              display: 'flex', alignItems: 'center', marginBottom: 18,
-              opacity: sp, transform: `translateX(${rowX}px)`,
-            }}>
-              <p style={{ fontFamily: FONT, fontSize: 22, color: BLACK, width: 48, margin: 0 }}>{age}</p>
-              <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 5 }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                  <div style={{ width: earlyW, height: 26, background: ACCENT, borderRadius: 6 }} />
-                  <p style={{ fontFamily: FONT, fontSize: 17, color: ACCENT, margin: 0 }}>$16,800</p>
-                </div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                  <div style={{ width: lateW, height: 26, background: GREEN, borderRadius: 6 }} />
-                  <p style={{ fontFamily: FONT, fontSize: 17, color: GREEN, margin: 0 }}>$29,760</p>
-                </div>
-              </div>
-            </div>
-          );
-        })}
-      </div>
-
-      <div style={{
-        position: 'absolute', bottom: 100, left: 40, right: 40,
-        opacity: legendIn,
-      }}>
-        <div style={{ display: 'flex', gap: 24, justifyContent: 'center', marginBottom: 14 }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-            <div style={{ width: 26, height: 14, background: ACCENT, borderRadius: 4 }} />
-            <p style={{ fontFamily: FONT, fontSize: 18, color: BLACK, margin: 0 }}>CLAIMED AT 62</p>
-          </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-            <div style={{ width: 26, height: 14, background: GREEN, borderRadius: 4 }} />
-            <p style={{ fontFamily: FONT, fontSize: 18, color: BLACK, margin: 0 }}>WAITED TO 70</p>
-          </div>
-        </div>
-        <p style={{ fontFamily: FONT, fontSize: 24, color: BLACK, textAlign: 'center', lineHeight: 1.45, margin: 0 }}>
-          That extra $12,960/year piles up — and this is just one side of the math.
-        </p>
-      </div>
-    </FadeScene>
-  );
-};
-
-// ─── Scene 5: $182K lifetime loss — piggy bank ────────────────────────────────
-const Scene5: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
-  const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
-
-  const titleIn = spring({ frame, fps, config: { damping: 30, stiffness: 80 } });
-  const pigIn = spring({ frame: Math.max(0, frame - 18), fps, config: { damping: 22, stiffness: 55 } });
-  const fillProg = interpolate(frame, [38, 175], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const numIn = spring({ frame: Math.max(0, frame - 158), fps, config: { damping: 25, stiffness: 65 } });
-
-  const amt = Math.round(fillProg * 182000);
-  const fillH = Math.max(0, Math.floor(fillProg * 155));
-  const fillY = 295 - fillH;
-
-  return (
-    <FadeScene bg={BG_DARK} dur={dur}>
-      <div style={{ position: 'absolute', top: 95, left: 40, right: 40, textAlign: 'center', opacity: titleIn }}>
-        <p style={headline(40, WHITE)}>THE LIFETIME</p>
-        <p style={{ ...headline(40, ACCENT), marginTop: 8 }}>PRICE TAG</p>
-      </div>
-
-      <div style={{
-        position: 'absolute', top: 270, left: 0, right: 0, display: 'flex', justifyContent: 'center',
-        opacity: pigIn, transform: `scale(${pigIn})`, transformOrigin: 'center center',
-      }}>
-        <svg width="340" height="325" viewBox="0 0 340 325">
-          <ellipse cx="160" cy="200" rx="125" ry="108" fill="#e0e0e0" />
-          <clipPath id="pigBodyClip">
-            <ellipse cx="160" cy="200" rx="125" ry="108" />
-          </clipPath>
-          <rect x="35" y={fillY} width="250" height={fillH} fill={ACCENT} opacity="0.75" clipPath="url(#pigBodyClip)" />
-          <ellipse cx="160" cy="200" rx="125" ry="108" fill="none" stroke={WHITE} strokeWidth="4" />
-          <circle cx="268" cy="158" r="50" fill="#d0d0d0" stroke={WHITE} strokeWidth="4" />
-          <ellipse cx="302" cy="172" rx="20" ry="14" fill="#bbb" />
-          <circle cx="297" cy="170" r="4" fill="#888" />
-          <circle cx="307" cy="170" r="4" fill="#888" />
-          <circle cx="265" cy="146" r="6" fill={BLACK} />
-          <ellipse cx="254" cy="112" rx="12" ry="18" fill="#c8c8c8" stroke={WHITE} strokeWidth="3" />
-          <rect x="143" y="96" width="30" height="8" rx="4" fill="#999" />
-          <rect x="75" y="286" width="28" height="30" rx="9" fill="#d0d0d0" />
-          <rect x="116" y="286" width="28" height="30" rx="9" fill="#d0d0d0" />
-          <rect x="157" y="286" width="28" height="30" rx="9" fill="#d0d0d0" />
-          <rect x="198" y="286" width="28" height="30" rx="9" fill="#d0d0d0" />
-          <path d="M 36 172 Q 14 152 22 132 Q 30 112 42 126" fill="none" stroke="#d0d0d0" strokeWidth="9" strokeLinecap="round" />
-          {fillH > 50 && (
-            <text x="160" y="228" textAnchor="middle" fill={WHITE} fontSize="44" fontFamily="Arial Black">$</text>
-          )}
-        </svg>
-      </div>
-
-      <div style={{
-        position: 'absolute', bottom: 130, left: 40, right: 40, textAlign: 'center',
-        opacity: numIn, transform: `scale(${numIn})`,
-      }}>
-        <p style={{ fontFamily: FONT, fontSize: 68, color: ACCENT, margin: 0, letterSpacing: '0.04em' }}>
-          ${amt.toLocaleString()}
-        </p>
-        <p style={{ fontFamily: FONT, fontSize: 26, color: WHITE, lineHeight: 1.4, margin: '10px 0 0' }}>
-          left on the table by claiming eight years too early.
-        </p>
-      </div>
-    </FadeScene>
-  );
-};
-
-// ─── Scene 6: The smart play — 3 steps + CTA ─────────────────────────────────
-const Scene6: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
-  const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
-
-  const titleIn = spring({ frame, fps, config: { damping: 30, stiffness: 80 } });
-  const cardIn = spring({ frame: Math.max(0, frame - 18), fps, config: { damping: 25, stiffness: 60 } });
-  const step1In = spring({ frame: Math.max(0, frame - 55), fps, config: { damping: 30, stiffness: 90 } });
-  const step2In = spring({ frame: Math.max(0, frame - 88), fps, config: { damping: 30, stiffness: 90 } });
-  const step3In = spring({ frame: Math.max(0, frame - 122), fps, config: { damping: 30, stiffness: 90 } });
-  const ctaIn = spring({ frame: Math.max(0, frame - 165), fps, config: { damping: 28, stiffness: 70 } });
-
-  const s1X = interpolate(step1In, [0, 1], [-28, 0]);
-  const s2X = interpolate(step2In, [0, 1], [-28, 0]);
-  const s3X = interpolate(step3In, [0, 1], [-28, 0]);
-
-  return (
-    <FadeScene bg={BG_LIGHT} dur={dur}>
-      <div style={{ position: 'absolute', top: 95, left: 40, right: 40, textAlign: 'center', opacity: titleIn }}>
-        <p style={headline(46, BLACK)}>THE SMART</p>
-        <p style={{ ...headline(46, GREEN), marginTop: 10 }}>PLAY</p>
-      </div>
-
-      <div style={{
-        position: 'absolute', top: 255, left: 50, right: 50,
-        background: WHITE, borderRadius: 22, padding: 40,
-        border: '3px solid #d0d0d0',
-        boxShadow: '0 12px 44px rgba(0,0,0,0.10)',
-        opacity: cardIn, transform: `scale(${cardIn})`, transformOrigin: 'center top',
-      }}>
-        <p style={{
-          fontFamily: FONT, fontSize: 22, color: BLACK, margin: '0 0 24px 0',
-          borderBottom: '2px solid #ddd', paddingBottom: 18,
-        }}>
-          IF YOUR HEALTH IS DECENT:
-        </p>
-
-        <div style={{ opacity: step1In, transform: `translateX(${s1X}px)`, marginBottom: 24 }}>
-          <div style={{ display: 'flex', alignItems: 'flex-start', gap: 16 }}>
-            <div style={{
-              background: ACCENT, borderRadius: 50, width: 38, height: 38, flexShrink: 0,
-              display: 'flex', alignItems: 'center', justifyContent: 'center',
-            }}>
-              <p style={{ fontFamily: FONT, fontSize: 20, color: WHITE, margin: 0 }}>1</p>
-            </div>
-            <p style={{ fontFamily: FONT, fontSize: 23, color: BLACK, margin: 0, lineHeight: 1.5 }}>
-              Delay to <span style={{ color: GREEN }}>age 70</span> — max benefit
-            </p>
-          </div>
-        </div>
-
-        <div style={{ opacity: step2In, transform: `translateX(${s2X}px)`, marginBottom: 24 }}>
-          <div style={{ display: 'flex', alignItems: 'flex-start', gap: 16 }}>
-            <div style={{
-              background: ACCENT, borderRadius: 50, width: 38, height: 38, flexShrink: 0,
-              display: 'flex', alignItems: 'center', justifyContent: 'center',
-            }}>
-              <p style={{ fontFamily: FONT, fontSize: 20, color: WHITE, margin: 0 }}>2</p>
-            </div>
-            <p style={{ fontFamily: FONT, fontSize: 23, color: BLACK, margin: 0, lineHeight: 1.5 }}>
-              Keep savings growing those 8 extra years
-            </p>
-          </div>
-        </div>
-
-        <div style={{ opacity: step3In, transform: `translateX(${s3X}px)` }}>
-          <div style={{ display: 'flex', alignItems: 'flex-start', gap: 16 }}>
-            <div style={{
-              background: GREEN, borderRadius: 50, width: 38, height: 38, flexShrink: 0,
-              display: 'flex', alignItems: 'center', justifyContent: 'center',
-            }}>
-              <p style={{ fontFamily: FONT, fontSize: 20, color: WHITE, margin: 0 }}>3</p>
-            </div>
-            <p style={{ fontFamily: FONT, fontSize: 23, color: BLACK, margin: 0, lineHeight: 1.5 }}>
-              Lock in <span style={{ color: GREEN }}>$182K more</span> in lifetime income
-            </p>
-          </div>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12 }}>
+          <p style={{ fontFamily: FONT, fontSize: 40, color: ACCENT, margin: 0 }}>0.03%</p>
+          <div style={{ width: 178, height: h2, background: ACCENT, borderRadius: '12px 12px 0 0' }} />
+          <p style={{ fontFamily: FONT, fontSize: 22, color: WHITE, margin: 0, textAlign: 'center' }}>
+            INDEX FUND
+          </p>
         </div>
       </div>
 
       <div style={{
         position: 'absolute', bottom: 100, left: 40, right: 40, textAlign: 'center',
+        opacity: gapIn, transform: `scale(${gapIn})`,
+      }}>
+        <div style={{ padding: '18px 28px', border: `3px solid ${ACCENT}`, borderRadius: 18, marginBottom: 16 }}>
+          <p style={{ fontFamily: FONT, fontSize: 32, color: ACCENT, margin: 0 }}>$180,000 difference</p>
+          <p style={{ fontFamily: FONT, fontSize: 20, color: WHITE, margin: '8px 0 0' }}>
+            on $100,000 over 30 years — just from fees.
+          </p>
+        </div>
+        <p style={{ fontFamily: FONT, fontSize: 26, color: WHITE, lineHeight: 1.4, margin: 0 }}>
+          But does that show up in your actual returns?
+        </p>
+      </div>
+    </FadeScene>
+  );
+};
+
+// ─── Scene 4: Only 1-in-4 top funds repeat — piggy banks ─────────────────────
+const Scene4: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+
+  const titleIn = spring({ frame, fps, config: { damping: 30, stiffness: 80 } });
+  const pig0 = spring({ frame: Math.max(0, frame - 18), fps, config: { damping: 28, stiffness: 75 } });
+  const pig1 = spring({ frame: Math.max(0, frame - 34), fps, config: { damping: 28, stiffness: 75 } });
+  const pig2 = spring({ frame: Math.max(0, frame - 50), fps, config: { damping: 28, stiffness: 75 } });
+  const pig3 = spring({ frame: Math.max(0, frame - 66), fps, config: { damping: 28, stiffness: 75 } });
+  const fadeOut = interpolate(frame, [108, 138], [1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const revealIn = interpolate(frame, [138, 168], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const captionIn = spring({ frame: Math.max(0, frame - 172), fps, config: { damping: 28, stiffness: 70 } });
+
+  const pigs = [pig0, pig1, pig2, pig3];
+
+  const PigSVG: React.FC<{ fill: string; accent: string }> = ({ fill, accent }) => (
+    <svg width="118" height="108" viewBox="0 0 118 108">
+      <ellipse cx="54" cy="66" rx="40" ry="34" fill={fill} />
+      <circle cx="88" cy="52" r="18" fill={fill} />
+      <ellipse cx="100" cy="58" rx="8" ry="6" fill={accent} />
+      <circle cx="97" cy="57" r="2.5" fill={BLACK} />
+      <circle cx="103" cy="57" r="2.5" fill={BLACK} />
+      <circle cx="87" cy="47" r="3.5" fill={BLACK} />
+      <ellipse cx="83" cy="36" rx="6" ry="9" fill={fill} />
+      <rect x="46" y="20" width="14" height="5" rx="2.5" fill={accent} />
+      <rect x="24" y="96" width="12" height="10" rx="4" fill={accent} />
+      <rect x="40" y="96" width="12" height="10" rx="4" fill={accent} />
+      <rect x="56" y="96" width="12" height="10" rx="4" fill={accent} />
+      <rect x="72" y="96" width="12" height="10" rx="4" fill={accent} />
+      <path d="M16 60 Q4 50 8 38 Q12 26 22 36" fill="none" stroke={fill} strokeWidth="9" strokeLinecap="round" />
+    </svg>
+  );
+
+  const cols = [ACCENT, '#bbb', '#bbb', '#bbb'];
+  const accents = ['#7dd3c0', '#ddd', '#ddd', '#ddd'];
+  const labels = ['STAYS TOP', 'DROPS OUT', 'DROPS OUT', 'DROPS OUT'];
+  const labelCols = [ACCENT, RED, RED, RED];
+
+  return (
+    <FadeScene bg={BG_LIGHT} dur={dur}>
+      <div style={{ position: 'absolute', top: 95, left: 40, right: 40, textAlign: 'center', opacity: titleIn }}>
+        <p style={headline(42, BLACK)}>TOP FUND</p>
+        <p style={{ ...headline(42, RED), marginTop: 8 }}>NEXT YEAR?</p>
+      </div>
+
+      {/* Phase 1: all 4 pigs green */}
+      <div style={{
+        position: 'absolute', top: 310, left: 0, right: 0,
+        display: 'flex', justifyContent: 'space-around', paddingLeft: 18, paddingRight: 18,
+        opacity: fadeOut,
+      }}>
+        {pigs.map((sp, i) => (
+          <div key={i} style={{
+            display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10,
+            opacity: sp, transform: `scale(${sp})`,
+          }}>
+            <PigSVG fill={ACCENT} accent="#7dd3c0" />
+            <p style={{ fontFamily: FONT, fontSize: 18, color: ACCENT, margin: 0 }}>TOP</p>
+          </div>
+        ))}
+      </div>
+
+      {/* Phase 2: only 1 stays green */}
+      <div style={{
+        position: 'absolute', top: 310, left: 0, right: 0,
+        display: 'flex', justifyContent: 'space-around', paddingLeft: 18, paddingRight: 18,
+        opacity: revealIn,
+      }}>
+        {[0, 1, 2, 3].map((i) => (
+          <div key={i} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10 }}>
+            <PigSVG fill={cols[i]} accent={accents[i]} />
+            <p style={{ fontFamily: FONT, fontSize: 16, color: labelCols[i], margin: 0, textAlign: 'center' }}>
+              {labels[i]}
+            </p>
+          </div>
+        ))}
+      </div>
+
+      <div style={{
+        position: 'absolute', bottom: 105, left: 50, right: 50, textAlign: 'center',
+        opacity: captionIn,
+      }}>
+        <p style={{ fontFamily: FONT, fontSize: 28, color: BLACK, lineHeight: 1.45, margin: 0 }}>
+          Only 1 in 4 top funds repeat. That's a coin flip. Now see what this costs your actual portfolio.
+        </p>
+      </div>
+    </FadeScene>
+  );
+};
+
+// ─── Scene 5: $10K → $57K active vs $76K index ────────────────────────────────
+const Scene5: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+
+  const titleIn = spring({ frame, fps, config: { damping: 30, stiffness: 80 } });
+  const barProg = interpolate(frame, [22, 162], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const gapIn = spring({ frame: Math.max(0, frame - 152), fps, config: { damping: 26, stiffness: 65 } });
+
+  const MAX_H = 375;
+  const h1 = Math.max(8, Math.floor(barProg * MAX_H * 0.75));
+  const h2 = Math.max(8, Math.floor(barProg * MAX_H));
+  const amt1 = Math.round(barProg * 57000);
+  const amt2 = Math.round(barProg * 76000);
+
+  return (
+    <FadeScene bg={BG_DARK} dur={dur}>
+      <div style={{ position: 'absolute', top: 95, left: 40, right: 40, textAlign: 'center', opacity: titleIn }}>
+        <p style={headline(40, WHITE)}>$10,000</p>
+        <p style={{ ...headline(40, WHITE), marginTop: 8 }}>OVER 30 YEARS</p>
+      </div>
+
+      <div style={{
+        position: 'absolute', top: 275, left: 0, right: 0,
+        display: 'flex', justifyContent: 'space-around', alignItems: 'flex-end',
+        paddingLeft: 55, paddingRight: 55,
+      }}>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10 }}>
+          <p style={{ fontFamily: FONT, fontSize: 34, color: RED, margin: 0 }}>${amt1.toLocaleString()}</p>
+          <div style={{
+            width: 178, height: h1, background: RED, borderRadius: '12px 12px 0 0',
+            display: 'flex', alignItems: 'flex-start', justifyContent: 'center',
+          }}>
+            {h1 > 45 && (
+              <p style={{ fontFamily: FONT, fontSize: 16, color: WHITE, margin: '12px 0 0' }}>1.2% FEE</p>
+            )}
+          </div>
+          <p style={{ fontFamily: FONT, fontSize: 22, color: WHITE, margin: 0, textAlign: 'center' }}>
+            ACTIVE FUND
+          </p>
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10 }}>
+          <p style={{ fontFamily: FONT, fontSize: 34, color: ACCENT, margin: 0 }}>${amt2.toLocaleString()}</p>
+          <div style={{
+            width: 178, height: h2, background: ACCENT, borderRadius: '12px 12px 0 0',
+            display: 'flex', alignItems: 'flex-start', justifyContent: 'center',
+          }}>
+            {h2 > 45 && (
+              <p style={{ fontFamily: FONT, fontSize: 16, color: WHITE, margin: '12px 0 0' }}>0.03% FEE</p>
+            )}
+          </div>
+          <p style={{ fontFamily: FONT, fontSize: 22, color: WHITE, margin: 0, textAlign: 'center' }}>
+            INDEX FUND
+          </p>
+        </div>
+      </div>
+
+      <div style={{
+        position: 'absolute', bottom: 98, left: 40, right: 40, textAlign: 'center',
+        opacity: gapIn, transform: `scale(${gapIn})`,
+      }}>
+        <div style={{ padding: '16px 24px', background: ACCENT, borderRadius: 16, marginBottom: 14 }}>
+          <p style={{ ...headline(30, WHITE) }}>+$19,000 EXTRA</p>
+        </div>
+        <p style={{ fontFamily: FONT, fontSize: 26, color: WHITE, lineHeight: 1.45, margin: 0 }}>
+          That's the fee gap made visible. Here's what to actually do about it.
+        </p>
+      </div>
+    </FadeScene>
+  );
+};
+
+// ─── Scene 6: Three-fund portfolio CTA ────────────────────────────────────────
+const Scene6: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+
+  const titleIn = spring({ frame, fps, config: { damping: 30, stiffness: 80 } });
+  const jar0 = spring({ frame: Math.max(0, frame - 22), fps, config: { damping: 26, stiffness: 65 } });
+  const jar1 = spring({ frame: Math.max(0, frame - 55), fps, config: { damping: 26, stiffness: 65 } });
+  const jar2 = spring({ frame: Math.max(0, frame - 88), fps, config: { damping: 26, stiffness: 65 } });
+  const badgeIn = spring({ frame: Math.max(0, frame - 136), fps, config: { damping: 28, stiffness: 72 } });
+  const ctaIn = spring({ frame: Math.max(0, frame - 170), fps, config: { damping: 28, stiffness: 70 } });
+
+  const jarSprings = [jar0, jar1, jar2];
+  const jarLabels = ['US\nSTOCKS', "INT'L\nSTOCKS", 'BONDS'];
+  const jarPcts = ['60%', '30%', '10%'];
+
+  return (
+    <FadeScene bg={BG_LIGHT} dur={dur}>
+      <div style={{ position: 'absolute', top: 95, left: 40, right: 40, textAlign: 'center', opacity: titleIn }}>
+        <p style={headline(44, BLACK)}>THE SIMPLE</p>
+        <p style={{ ...headline(44, ACCENT), marginTop: 10 }}>PLAY</p>
+      </div>
+
+      <div style={{
+        position: 'absolute', top: 280, left: 0, right: 0,
+        display: 'flex', justifyContent: 'space-around', paddingLeft: 16, paddingRight: 16,
+      }}>
+        {jarSprings.map((sp, i) => (
+          <div key={i} style={{
+            display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 14,
+            opacity: sp, transform: `scale(${sp})`,
+          }}>
+            <svg width="148" height="172" viewBox="0 0 148 172">
+              <rect x="16" y="32" width="116" height="126" rx="18" fill={ACCENT} opacity="0.15" stroke={ACCENT} strokeWidth="4" />
+              <rect x="10" y="14" width="128" height="26" rx="10" fill={ACCENT} />
+              <rect x="20" y="80" width="108" height="74" rx="14" fill={ACCENT} opacity="0.35" />
+              <text x="74" y="132" textAnchor="middle" fill={ACCENT} fontSize="44" fontFamily="Arial Black">$</text>
+              <rect x="28" y="38" width="92" height="32" rx="9" fill={ACCENT} />
+              <text x="74" y="62" textAnchor="middle" fill={WHITE} fontSize="22" fontFamily="Arial Black">
+                {jarPcts[i]}
+              </text>
+            </svg>
+            <p style={{
+              fontFamily: FONT, fontSize: 20, color: BLACK, margin: 0,
+              textAlign: 'center', lineHeight: 1.3, whiteSpace: 'pre-line',
+            }}>
+              {jarLabels[i]}
+            </p>
+          </div>
+        ))}
+      </div>
+
+      <div style={{
+        position: 'absolute', top: 672, left: 52, right: 52,
+        opacity: badgeIn, transform: `scale(${badgeIn})`,
+      }}>
+        <div style={{ padding: '18px 28px', background: ACCENT, borderRadius: 18 }}>
+          <p style={{ ...headline(26, WHITE) }}>LOW FEE. SET IT &amp; FORGET IT.</p>
+        </div>
+      </div>
+
+      <div style={{
+        position: 'absolute', bottom: 92, left: 50, right: 50, textAlign: 'center',
         opacity: ctaIn,
       }}>
-        <p style={{ ...headline(26, BLACK), lineHeight: 1.5 }}>
-          It's the closest thing to free money your retirement will ever see.
+        <p style={{ ...headline(28, BLACK), lineHeight: 1.5, margin: 0 }}>
+          You don't need an expert — you need a low-cost index.
         </p>
         <p style={{ fontFamily: FONT, fontSize: 24, color: '#555', margin: '16px 0 0' }}>
           Follow for more wealth math.

@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Half of Americans claim Social Security the moment they turn 62. That decision alone could cost them $182,000 — and most never see it coming.",
-    "visual": "Person silhouette with a dollar sign on the chest, a bold AGE 62 badge below them, and the hook text animating in from above on dark background",
-    "accent_color": "red"
+    "narration": "You're paying a professional to beat the market for you. Here's the thing — 92% of them can't. And the ones that did? They probably just got lucky.",
+    "visual": "Dark background. Fund manager silhouette (person in suit with briefcase, red tie). Giant '92%' badge in red drops in below. Caption: 'Let's run the math.'",
+    "accent_color": "green"
   },
   {
     "scene": 2,
-    "narration": "Claim at 62 and you get around $1,400 a month. Wait until 70 and that becomes $2,480 — a 77% permanent pay raise just for waiting eight years.",
-    "visual": "Two animated bar charts growing side by side on light background: shorter red bar CLAIM AT 62 with $1,400/mo counter, taller green bar WAIT TO 70 with $2,480/mo. '+77% PAY RAISE FOR LIFE' badge pops in.",
-    "accent_color": "red"
+    "narration": "Every year S&P publishes the SPIVA report tracking every active fund. After 15 years, 92% underperform a basic index fund. That's not a bad year — that's the industry.",
+    "visual": "Light background. Two vertical bars: giant red bar labeled '92% ACTIVE FUNDS UNDERPERFORM', tiny green bar labeled '8% BEAT THE INDEX'. Red badge: 'OVER 15 YEARS'.",
+    "accent_color": "green"
   },
   {
     "scene": 3,
-    "narration": "The break-even point — where waiting actually wins — hits around age 79. And the average 62-year-old is expected to live to 84.",
-    "visual": "Timeline ruler from age 62 to 85 on dark background. Red fill line grows across it; green circle appears at age 79 labeled BREAK-EVEN. Stat box: Average life expectancy: 84.",
-    "accent_color": "red"
+    "narration": "Here's why. Active funds charge 1.2% a year in fees. Index funds charge 0.03%. That tiny gap costs you $180,000 on $100,000 over 30 years — just in fees.",
+    "visual": "Dark background. Two growing bars: tall red bar '1.2% ACTIVE FUND', tiny green bar '0.03% INDEX FUND'. Green bordered box: '$180,000 difference'.",
+    "accent_color": "green"
   },
   {
     "scene": 4,
-    "narration": "From 79 to 85 that's five extra years of $2,480 instead of $1,400. Every year, the gap compounds — and most people have no idea how fast it adds up.",
-    "visual": "Year-by-year horizontal bar chart ages 79–85 on light background. Each row: short red bar $16,800/yr vs long green bar $29,760/yr, sliding in one at a time.",
-    "accent_color": "red"
+    "narration": "And the managers who do beat the market? Vanguard studied it — only 1 in 4 top funds stay in the top the following year. That's not skill, it's a streak.",
+    "visual": "Light background. Four piggy banks all green (top performers). Then three fade to grey, only one stays green. Labels: 'STAYS TOP' and 'DROPS OUT'.",
+    "accent_color": "green"
   },
   {
     "scene": 5,
-    "narration": "Run the math all the way to 85 and early claimers leave $182,000 on the table. One impatient decision — six figures gone.",
-    "visual": "Piggy bank SVG filling up in red as a counter ticks toward $182,000 on dark background. Big number zooms in below: 'left on the table by claiming eight years too early'.",
-    "accent_color": "red"
+    "narration": "Run the real math. $10,000 in an average active fund over 30 years becomes $57,000. The same money in an S&P 500 index fund: $76,000. That $19,000 gap is pure fees.",
+    "visual": "Dark background. Two growing bars side by side: red '$57,000 ACTIVE FUND', taller green '$76,000 INDEX FUND'. Green badge: '+$19,000 EXTRA'.",
+    "accent_color": "green"
   },
   {
     "scene": 6,
-    "narration": "If your health is decent, delay to 70 — it's the closest thing to free money your retirement will ever see. Follow for more wealth math.",
-    "visual": "White card on light background with three numbered steps sliding in: 1) Delay to age 70, 2) Grow savings 8 extra years, 3) Lock in $182K more lifetime income. CTA text fades in below.",
-    "accent_color": "red"
+    "narration": "The move most millionaires actually make isn't finding the right fund manager — it's not needing one. Total market index, low fee, set it and actually forget it.",
+    "visual": "Light background. Three jars labeled 'US STOCKS 60%', 'INTL STOCKS 30%', 'BONDS 10%'. Green badge: 'LOW FEE. SET IT & FORGET IT.' CTA: 'Follow for more wealth math.'",
+    "accent_color": "green"
   }
 ]
