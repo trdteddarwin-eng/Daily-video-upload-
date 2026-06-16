@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You're paying a professional to beat the market for you. Here's the thing — 92% of them can't. And the ones that did? They probably just got lucky.",
-    "visual": "Dark background. Fund manager silhouette (person in suit with briefcase, red tie). Giant '92%' badge in red drops in below. Caption: 'Let's run the math.'",
-    "accent_color": "green"
+    "narration": "Millions of Americans set up a special account where their own money literally vanishes every December. It's called an FSA, and it's draining your wallet right now.",
+    "visual": "Dark background. Piggy bank SVG with dollar bills floating upward and fading out. Text overlay: 'YOUR MONEY IS DISAPPEARING'. Amber accent.",
+    "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "Every year S&P publishes the SPIVA report tracking every active fund. After 15 years, 92% underperform a basic index fund. That's not a bad year — that's the industry.",
-    "visual": "Light background. Two vertical bars: giant red bar labeled '92% ACTIVE FUNDS UNDERPERFORM', tiny green bar labeled '8% BEAT THE INDEX'. Red badge: 'OVER 15 YEARS'.",
-    "accent_color": "green"
+    "narration": "A Flexible Spending Account lets you pay for medical expenses with pre-tax dollars — that's an instant thirty percent discount on healthcare. But there's a brutal catch hiding in the fine print.",
+    "visual": "Light background. Medical cross SVG beside a dollar sign. Progress bar fills to show '30% SAVINGS'. Red text fades in: 'BUT THERE IS A CATCH'.",
+    "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Here's why. Active funds charge 1.2% a year in fees. Index funds charge 0.03%. That tiny gap costs you $180,000 on $100,000 over 30 years — just in fees.",
-    "visual": "Dark background. Two growing bars: tall red bar '1.2% ACTIVE FUND', tiny green bar '0.03% INDEX FUND'. Green bordered box: '$180,000 difference'.",
-    "accent_color": "green"
+    "narration": "The catch is use-it-or-lose-it. December 31st is the deadline — whatever balance sits in your account that day, your employer legally gets to keep it.",
+    "visual": "Dark background. Calendar showing DECEMBER 31 drops in from top. Dollar bill falls and disappears into trash can at bottom. Text: 'USE IT OR LOSE IT'.",
+    "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "And the managers who do beat the market? Vanguard studied it — only 1 in 4 top funds stay in the top the following year. That's not skill, it's a streak.",
-    "visual": "Light background. Four piggy banks all green (top performers). Then three fade to grey, only one stays green. Labels: 'STAYS TOP' and 'DROPS OUT'.",
-    "accent_color": "green"
+    "narration": "The average FSA holder forfeits four hundred and eight dollars of their own money every single year. Across all thirty-five million accounts, that is one-point-six billion dollars gone.",
+    "visual": "Light background. Large animated counter counting up to $408. Red bar labeled '$1.6 BILLION LOST' fills across screen. Text: 'AVERAGE ANNUAL FORFEIT'.",
+    "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "Run the real math. $10,000 in an average active fund over 30 years becomes $57,000. The same money in an S&P 500 index fund: $76,000. That $19,000 gap is pure fees.",
-    "visual": "Dark background. Two growing bars side by side: red '$57,000 ACTIVE FUND', taller green '$76,000 INDEX FUND'. Green badge: '+$19,000 EXTRA'.",
-    "accent_color": "green"
+    "narration": "Here is what most people miss — FSAs cover way more than just doctor visits. Glasses, sunscreen, bandages, and even some baby gear all qualify. You can spend it today.",
+    "visual": "Dark background. Four items spring in one by one: eyeglasses, sunscreen bottle, bandage with cross, baby bottle. Each labeled. Text: 'FSA COVERS MORE THAN YOU THINK'.",
+    "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "The move most millionaires actually make isn't finding the right fund manager — it's not needing one. Total market index, low fee, set it and actually forget it.",
-    "visual": "Light background. Three jars labeled 'US STOCKS 60%', 'INTL STOCKS 30%', 'BONDS 10%'. Green badge: 'LOW FEE. SET IT & FORGET IT.' CTA: 'Follow for more wealth math.'",
-    "accent_color": "green"
+    "narration": "Pull up your FSA balance right now. If you have got money sitting there, spend it before December ends — do not hand your employer a free four hundred and eight dollars.",
+    "visual": "Light background. Phone screen showing FSA balance counting up to $408. Calendar showing DEC 31. Pulsing amber CTA button. Text: 'CHECK YOUR BALANCE TODAY'.",
+    "accent_color": "amber"
   }
 ]
