@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Millions of Americans set up a special account where their own money literally vanishes every December. It's called an FSA, and it's draining your wallet right now.",
-    "visual": "Dark background. Piggy bank SVG with dollar bills floating upward and fading out. Text overlay: 'YOUR MONEY IS DISAPPEARING'. Amber accent.",
-    "accent_color": "amber"
+    "narration": "You started a side hustle to make extra cash — but the IRS has a hidden tax most freelancers never see coming. It hits you before income tax even touches your money.",
+    "visual": "Dark background. Person silhouette at laptop with dollar signs floating up. Large red warning label fades in: 'HIDDEN TAX'. Red accent color throughout.",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "A Flexible Spending Account lets you pay for medical expenses with pre-tax dollars — that's an instant thirty percent discount on healthcare. But there's a brutal catch hiding in the fine print.",
-    "visual": "Light background. Medical cross SVG beside a dollar sign. Progress bar fills to show '30% SAVINGS'. Red text fades in: 'BUT THERE IS A CATCH'.",
-    "accent_color": "amber"
+    "narration": "At a regular job, your employer pays half your Social Security and Medicare. The moment you work for yourself, you pay both halves — that's a 15.3% self-employment tax on every dollar you earn.",
+    "visual": "Light background. Two columns: left shows 'W2 JOB' with employer icon and employee icon each paying 7.65%. Right column shows 'SIDE HUSTLE' with one person paying the full 15.3%. Arrow pointing to total.",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "The catch is use-it-or-lose-it. December 31st is the deadline — whatever balance sits in your account that day, your employer legally gets to keep it.",
-    "visual": "Dark background. Calendar showing DECEMBER 31 drops in from top. Dollar bill falls and disappears into trash can at bottom. Text: 'USE IT OR LOSE IT'.",
-    "accent_color": "amber"
+    "narration": "On eight thousand dollars of side hustle income — the national average — that's twelve hundred and twenty-four dollars in self-employment tax alone. Add income tax and your effective rate can hit thirty-seven percent.",
+    "visual": "Dark background. Large $8,000 income bar, then two stacked bars: SE tax in red ($1,224) and income tax in orange. Counter animates up to 37%. Text: 'YOUR EFFECTIVE RATE'.",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "The average FSA holder forfeits four hundred and eight dollars of their own money every single year. Across all thirty-five million accounts, that is one-point-six billion dollars gone.",
-    "visual": "Light background. Large animated counter counting up to $408. Red bar labeled '$1.6 BILLION LOST' fills across screen. Text: 'AVERAGE ANNUAL FORFEIT'.",
-    "accent_color": "amber"
+    "narration": "Here's where it gets worse — the IRS wants quarterly payments, not a lump sum in April. Forty-five percent of gig workers miss these deadlines and get hit with penalties on top of the bill.",
+    "visual": "Light background. Calendar showing four quarters — Q1, Q2, Q3, Q4 — each with a due date stamp. Red 'PENALTY' stamp falls on missed quarters. Clock icon ticking.",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Here is what most people miss — FSAs cover way more than just doctor visits. Glasses, sunscreen, bandages, and even some baby gear all qualify. You can spend it today.",
-    "visual": "Dark background. Four items spring in one by one: eyeglasses, sunscreen bottle, bandage with cross, baby bottle. Each labeled. Text: 'FSA COVERS MORE THAN YOU THINK'.",
-    "accent_color": "amber"
+    "narration": "Here's the fix most side hustlers miss: you can deduct half that SE tax right on your return. Open a SEP-IRA too — contributions slash your taxable income by up to twenty-five percent of net earnings.",
+    "visual": "Dark background. Receipt icon for 'SE TAX DEDUCTION' with checkmark. Piggy bank with 'SEP-IRA' label. Green savings bar grows showing tax reduction. Text: 'TWO MOVES THAT SAVE THOUSANDS'.",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Pull up your FSA balance right now. If you have got money sitting there, spend it before December ends — do not hand your employer a free four hundred and eight dollars.",
-    "visual": "Light background. Phone screen showing FSA balance counting up to $408. Calendar showing DEC 31. Pulsing amber CTA button. Text: 'CHECK YOUR BALANCE TODAY'.",
-    "accent_color": "amber"
+    "narration": "The one rule that protects every side hustler: set aside thirty percent of every payment the moment it lands. That one habit means the IRS never ambushes you again.",
+    "visual": "Light background. Money jar being filled — each dollar coin drops in until the jar shows '30%'. Bold text: 'SET ASIDE 30% EVERY TIME'. Pulsing CTA button: FOLLOW FOR MORE.",
+    "accent_color": "red"
   }
 ]
