@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You started a side hustle to make extra cash — but the IRS has a hidden tax most freelancers never see coming. It hits you before income tax even touches your money.",
-    "visual": "Dark background. Person silhouette at laptop with dollar signs floating up. Large red warning label fades in: 'HIDDEN TAX'. Red accent color throughout.",
-    "accent_color": "red"
+    "narration": "You check your portfolio every morning thinking you're being responsible. That one daily habit is quietly costing you forty-seven thousand dollars.",
+    "visual": "Dark background, phone with animated stock chart line drawing across the screen, portfolio value '$142,830' displayed, then amber badge pops in reading 'THIS HABIT COSTS YOU $47K' with counter",
+    "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "At a regular job, your employer pays half your Social Security and Medicare. The moment you work for yourself, you pay both halves — that's a 15.3% self-employment tax on every dollar you earn.",
-    "visual": "Light background. Two columns: left shows 'W2 JOB' with employer icon and employee icon each paying 7.65%. Right column shows 'SIDE HUSTLE' with one person paying the full 15.3%. Arrow pointing to total.",
-    "accent_color": "red"
+    "narration": "DALBAR tracked thirty years of real investor returns. Average investors earn just two point nine percent per year. The S&P 500 earns seven point five. Your behavior explains the whole difference.",
+    "visual": "Light background, two horizontal bars growing — short red bar 'AVERAGE INVESTOR 2.9%/YR' and long green bar 'S&P 500 INDEX 7.5%/YR', DALBAR source label, '4.6% BEHAVIOR GAP' text springs in",
+    "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "On eight thousand dollars of side hustle income — the national average — that's twelve hundred and twenty-four dollars in self-employment tax alone. Add income tax and your effective rate can hit thirty-seven percent.",
-    "visual": "Dark background. Large $8,000 income bar, then two stacked bars: SE tax in red ($1,224) and income tax in orange. Counter animates up to 37%. Text: 'YOUR EFFECTIVE RATE'.",
-    "accent_color": "red"
+    "narration": "Here's what that gap does to a hundred thousand dollars over thirty years. Checking daily? Two hundred thirty-eight thousand. Hands-off? Eight hundred forty thousand. Over six hundred grand gone.",
+    "visual": "Dark background, two horizontal bars growing — red bar reaching '$238K' and green bar reaching '$840K' — large amber '$602K' difference counter animates in at bottom",
+    "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "Here's where it gets worse — the IRS wants quarterly payments, not a lump sum in April. Forty-five percent of gig workers miss these deadlines and get hit with penalties on top of the bill.",
-    "visual": "Light background. Calendar showing four quarters — Q1, Q2, Q3, Q4 — each with a due date stamp. Red 'PENALTY' stamp falls on missed quarters. Clock icon ticking.",
-    "accent_color": "red"
+    "narration": "See red in your portfolio and loss aversion kicks in — your brain feels losses twice as hard as gains. So you panic-sell at the worst possible moment, every single time.",
+    "visual": "Light background, illustrated brain character with worried face, two side-by-side boxes: red '2X WORSE' for losses vs green '1X NORMAL' for gains, overlay text 'you panic-sell on red days'",
+    "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "Here's the fix most side hustlers miss: you can deduct half that SE tax right on your return. Open a SEP-IRA too — contributions slash your taxable income by up to twenty-five percent of net earnings.",
-    "visual": "Dark background. Receipt icon for 'SE TAX DEDUCTION' with checkmark. Piggy bank with 'SEP-IRA' label. Green savings bar grows showing tax reduction. Text: 'TWO MOVES THAT SAVE THOUSANDS'.",
-    "accent_color": "red"
+    "narration": "Monthly checkers outperform daily checkers by two percent every year. That's not discipline — it's just not being around to wreck your own returns. Let compounding do the work.",
+    "visual": "Dark background, calendar icon with 'CHECK ONCE A MONTH' label and large checkmark, '+2%/YR' stat badge springs in, amber compound growth bar fills right showing '$602K MORE'",
+    "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "The one rule that protects every side hustler: set aside thirty percent of every payment the moment it lands. That one habit means the IRS never ambushes you again.",
-    "visual": "Light background. Money jar being filled — each dollar coin drops in until the jar shows '30%'. Bold text: 'SET ASIDE 30% EVERY TIME'. Pulsing CTA button: FOLLOW FOR MORE.",
-    "accent_color": "red"
+    "narration": "Three moves to fix it: delete the investment app, check only quarterly, and automate your contributions. That shift puts six hundred thousand dollars back in your future pocket.",
+    "visual": "Light background, three step cards slide in sequentially — phone with X '1. DELETE THE APP', calendar '2. CHECK QUARTERLY', gear icon '3. AUTOMATE BUYS' — pulsing amber FOLLOW FOR MORE button",
+    "accent_color": "amber"
   }
 ]
