@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You check your portfolio every morning thinking you're being responsible. That one daily habit is quietly costing you forty-seven thousand dollars.",
-    "visual": "Dark background, phone with animated stock chart line drawing across the screen, portfolio value '$142,830' displayed, then amber badge pops in reading 'THIS HABIT COSTS YOU $47K' with counter",
-    "accent_color": "amber"
+    "narration": "You set up autopay to simplify life. But that green checkmark just switched off your brain's spending alarm — and it's costing you $1,700 a year.",
+    "visual": "Smartphone showing autopay list with green checkmarks animating in one by one (Netflix, gym, cloud storage), then a bold red '$1,700' cost badge springs in at the bottom",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "DALBAR tracked thirty years of real investor returns. Average investors earn just two point nine percent per year. The S&P 500 earns seven point five. Your behavior explains the whole difference.",
-    "visual": "Light background, two horizontal bars growing — short red bar 'AVERAGE INVESTOR 2.9%/YR' and long green bar 'S&P 500 INDEX 7.5%/YR', DALBAR source label, '4.6% BEHAVIOR GAP' text springs in",
-    "accent_color": "amber"
+    "narration": "Scientists call it the pain of payment. Every manual payment fires a loss signal in your brain. Autopay shuts that signal off completely.",
+    "visual": "Brain SVG with a lightning bolt pain signal on light background, flanked by two meter bars: Manual Pay (full pain) vs Autopay (meter dropping to zero as animation plays)",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Here's what that gap does to a hundred thousand dollars over thirty years. Checking daily? Two hundred thirty-eight thousand. Hands-off? Eight hundred forty thousand. Over six hundred grand gone.",
-    "visual": "Dark background, two horizontal bars growing — red bar reaching '$238K' and green bar reaching '$840K' — large amber '$602K' difference counter animates in at bottom",
-    "accent_color": "amber"
+    "narration": "The average household has 7 forgotten autopay charges — gyms you never visit, apps you never open, billing you every single month.",
+    "visual": "7 subscription cards animating in on dark background in a grid: gym, streaming, cloud, music, news app, VPN, fitness app — each with a price label",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "See red in your portfolio and loss aversion kicks in — your brain feels losses twice as hard as gains. So you panic-sell at the worst possible moment, every single time.",
-    "visual": "Light background, illustrated brain character with worried face, two side-by-side boxes: red '2X WORSE' for losses vs green '1X NORMAL' for gains, overlay text 'you panic-sell on red days'",
-    "accent_color": "amber"
+    "narration": "Companies love autopay customers. They raise prices knowing you won't notice. Netflix, Spotify, and Amazon Prime all hiked rates while autopay users stayed quiet.",
+    "visual": "Bar chart on light background: 3 company bars (Netflix, Spotify, Amazon) with gray base and red extension showing price increase, plus percentage badges",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Monthly checkers outperform daily checkers by two percent every year. That's not discipline — it's just not being around to wreck your own returns. Let compounding do the work.",
-    "visual": "Dark background, calendar icon with 'CHECK ONCE A MONTH' label and large checkmark, '+2%/YR' stat badge springs in, amber compound growth bar fills right showing '$602K MORE'",
-    "accent_color": "amber"
+    "narration": "Do the math: seven charges at $20 average is $140 every month. Multiply by twelve — that's $1,680, almost $1,700 silently gone from your account.",
+    "visual": "Animated math equation on dark background: 7 × $20 = counter reaching $140/mo, then × 12 = counter reaching $1,680, total badge at bottom",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Three moves to fix it: delete the investment app, check only quarterly, and automate your contributions. That shift puts six hundred thousand dollars back in your future pocket.",
-    "visual": "Light background, three step cards slide in sequentially — phone with X '1. DELETE THE APP', calendar '2. CHECK QUARTERLY', gear icon '3. AUTOMATE BUYS' — pulsing amber FOLLOW FOR MORE button",
-    "accent_color": "amber"
+    "narration": "Open your bank app right now, find every autopay charge, and cancel just two of them today. That one move puts $1,700 back in your pocket.",
+    "visual": "Three-step action checklist on light background: 1. Open bank app (phone icon), 2. Find autopay charges (magnifying glass), 3. Cancel two today (X button). Pulsing red CTA.",
+    "accent_color": "red"
   }
 ]
