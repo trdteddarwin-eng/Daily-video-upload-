@@ -1,13 +1,16 @@
 {
   "tiktok": {
-    "caption": "You turned on autopay and it quietly switched off your brain's spending alarm. Here's the $1,700 trap 👇",
-    "hashtags": ["#personalfinance", "#money", "#autopay", "#subscriptions", "#moneytips", "#financetips", "#moneymindset", "#savemoney", "#budgeting", "#moneypsychology"]
+    "caption": "51% of workers pick the wrong health plan every year — and it costs them $2,100 they'll never get back",
+    "hashtags": ["#healthinsurance", "#openenrollment", "#HSA", "#personalfinance", "#moneytips", "#financetok", "#savemoney", "#adulting", "#moneypsychology", "#benefits"]
   },
   "youtube_short": {
-    "title": "Autopay Is Silently Draining $1,700 From You",
-    "title_alternatives": ["The Autopay Trap Nobody Warns You About ($1,700/yr)", "Why Autopay Is Making You Poorer Every Month"],
-    "description": "You set up autopay to simplify your finances — but neuroscientists call it the 'pain of payment' trap. Every time you manually pay a bill, your brain fires a loss signal that keeps you alert. Autopay kills that signal completely. The result: 7 forgotten charges per household averaging $20/month each, plus price hikes you never notice. That adds up to $1,700 disappearing from your account every year. The fix takes five minutes — open your bank app and cancel two autopay charges today. #personalfinance #money #autopay #savemoney #financetips\n\nFollow for a new money trap exposed every day.",
-    "tags": ["personal finance", "money", "autopay", "subscriptions", "budgeting", "save money", "finance tips", "money psychology", "subscription trap", "money habits", "wealth", "financial literacy"]
+    "title": "Wrong Health Plan Costs You $2,100/Year",
+    "title_alternatives": [
+      "The Open Enrollment Mistake 51% of Workers Make",
+      "Why Your Health Insurance Is Probably Wrong (And Expensive)"
+    ],
+    "description": "Every open enrollment, 51% of workers just click re-enroll without doing the math — and it quietly costs them over $2,100 a year. The culprit is one word: deductible. It scares people away from high-deductible plans even when the numbers clearly win. Pair an HDHP with an HSA — the only triple tax-free account in existence — and invest the premium difference. Over 10 years, a healthy worker builds $34,000 instead of burning it on premiums. Run the real math this year: total premiums plus average out-of-pocket, not just the monthly cost. #healthinsurance #openenrollment #HSA #personalfinance #moneytips\n\nFollow for a new money trap exposed every day.",
+    "tags": ["health insurance", "open enrollment", "HSA", "HDHP", "personal finance", "money tips", "save money", "finance tips", "money psychology", "benefits", "financial literacy", "adulting", "wealth building"]
   },
-  "hook_line": "Autopay switched off your brain's spending alarm — $1,700/year gone"
+  "hook_line": "51% of workers pick the wrong health plan every year"
 }
