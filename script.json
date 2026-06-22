@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Every fall, your employer drops open enrollment in your lap. And 51% of workers quietly pick the wrong plan — costing themselves over $2,100 every single year.",
-    "visual": "Medical cross SVG centered on dark background. Counter animates up to 51%. Text: OPEN ENROLLMENT at top. $2,100/YEAR MISTAKE pulses in red at bottom.",
-    "accent_color": "blue"
+    "narration": "Every time that tip screen spins around, you're being played. Americans tip $1,040 a year now — that's up 53% since 2019. And most of it isn't even your decision.",
+    "visual": "Animated tablet tip screen springs in from center, dollar counter climbs from $0 to $1,040, dark background with orange accent",
+    "accent_color": "orange"
   },
   {
     "scene": 2,
-    "narration": "Most people just re-enroll in last year's plan without looking. That's called status quo bias — and your HR department is counting on it.",
-    "visual": "Clipboard SVG with two checkbox rows both showing 'Same Plan' checked. STATUS QUO BIAS label slides in. Circular arrow showing the repeating loop.",
-    "accent_color": "blue"
+    "narration": "Number one: the default button trap. They show you 25%, 30%, 35% — never 15%. Studies prove that defaults alone boost tips by 23%, before you even think about it.",
+    "visual": "Tip screen showing three buttons: 25%, 30% pre-selected in orange, 35%, with a No Tip option tucked away at bottom. Light background.",
+    "accent_color": "orange"
   },
   {
     "scene": 3,
-    "narration": "The word 'deductible' scares almost everyone off the better plan. But if you're healthy, the high-deductible option almost always wins the actual math.",
-    "visual": "Two plan cards: PPO at $320/mo with a red cost badge, HDHP at $160/mo with a fear X that animates into a green checkmark as narration progresses.",
-    "accent_color": "blue"
+    "narration": "Number two: the pause of shame. The barista's watching, the line's behind you — that 8-second window is pure engineered pressure. It costs you $360 a year in tips you'd never choose alone.",
+    "visual": "Person silhouette at counter, three people silhouettes in line behind, countdown timer arc in orange, $360/year stat fades in at bottom. Dark background.",
+    "accent_color": "orange"
   },
   {
     "scene": 4,
-    "narration": "Here's the secret weapon hiding in high-deductible plans: an HSA. It's the only account that's triple tax-free — contributions, growth, and withdrawals, all untaxed.",
-    "visual": "Piggy bank SVG with a coin dropping in. Three blue label badges spring in one at a time: TAX-FREE IN, TAX-FREE GROWTH, TAX-FREE OUT.",
-    "accent_color": "blue"
+    "narration": "Number three: tip creep. iPad screens started at coffee shops. Now they're at hotel kiosks, airports, even self-checkout machines — places with zero human service asking for 20%.",
+    "visual": "Four icons spring in with staggered animation: coffee cup, self-checkout kiosk, hotel building, airplane. Light background.",
+    "accent_color": "orange"
   },
   {
     "scene": 5,
-    "narration": "A typical worker on a standard plan pays $4,800 in premiums yearly. Switch to the HDHP at $2,400, invest that $2,400 gap in your HSA — over ten years, that's $34,000 built.",
-    "visual": "Side-by-side animated bar chart: PPO bar grows to $4,800 in red, HDHP+HSA stacked bar shows $2,400 premium plus green HSA growth reaching $34,000 over 10 years.",
-    "accent_color": "blue"
+    "narration": "Here's the actual math. Lunch, coffee, delivery, and dinner tips add up fast. Run the numbers across a year and you hit $1,040 — more than most people spend on a vacation.",
+    "visual": "Itemized breakdown building line by line: lunch +$300, coffee +$260, delivery +$280, bars and dinner +$200, totaling $1,040. Dark background.",
+    "accent_color": "orange"
   },
   {
     "scene": 6,
-    "narration": "This open enrollment, run the real math — total premiums plus average out-of-pocket, not just the monthly number. Share this with someone picking a plan by feel.",
-    "visual": "Calculator SVG with a three-item checklist appearing one by one: Total Premiums, Avg Out-of-Pocket, HSA Option. Blue checkmarks appear. Bottom CTA: SHARE BEFORE ENROLLMENT.",
-    "accent_color": "blue"
+    "narration": "The fix is dead simple. Decide your rules before the screen spins: 15% for counter service, 20% for sit-down, zero for self-checkout. That one decision saves you over a thousand dollars. Nobody's actually watching.",
+    "visual": "Phone SVG showing three rule buttons, self-checkout $0 highlighted in green, SAVE $1,040/YEAR callout springs in. Light background.",
+    "accent_color": "orange"
   }
 ]

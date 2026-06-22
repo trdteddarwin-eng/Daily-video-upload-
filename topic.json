@@ -1,7 +1,7 @@
 {
-  "title": "Wrong Health Plan Costs You $2,100 Every Year",
-  "hook": "Fifty-one percent of workers pick the wrong health insurance plan every open enrollment — and the average mistake costs them over $2,100 a year without them ever realizing it.",
-  "angle": "Status quo bias plus fear of the word 'deductible' keeps people in expensive plans, when a high-deductible plan paired with an HSA almost always wins the math for healthy workers.",
-  "audience": "Anyone with employer health insurance who clicks re-enroll every year without running the actual numbers",
-  "key_numbers": ["51% pick the wrong plan (Carnegie Mellon study)", "$2,100 average annual overpayment", "HSA is triple tax-free — the only account with that benefit", "$1,920/yr HDHP vs $3,840/yr PPO for the same coverage", "$34,000 built in 10 years by investing the premium difference"]
+  "title": "The Tip Screen Is Engineered to Drain $1,040 From You",
+  "hook": "That little screen spinning around at the coffee counter isn't asking for your generosity — it's a psychological weapon designed to extract money you never planned to give.",
+  "angle": "Tip screens use default anchoring, social pressure timers, and option architecture to maximize extraction — and tip spending is up 53% since 2019",
+  "audience": "Anyone who pays for food or services and has felt pressured by a tip screen",
+  "key_numbers": ["$1,040/year average American tips now (up 53% since 2019)", "+23% more tips triggered by pre-selected default buttons", "$360/year lost to the 8-second 'pause of shame' social pressure window"]
 }
