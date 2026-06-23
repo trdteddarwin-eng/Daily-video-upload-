@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Every time that tip screen spins around, you're being played. Americans tip $1,040 a year now — that's up 53% since 2019. And most of it isn't even your decision.",
-    "visual": "Animated tablet tip screen springs in from center, dollar counter climbs from $0 to $1,040, dark background with orange accent",
-    "accent_color": "orange"
+    "narration": "Every finance guru tells you to spend 30% of your income on rent. But that rule is from 1969 — designed for people earning $8,400 a year. It was never meant for you.",
+    "visual": "Dark background, large '30%' text springs in, person silhouette holding rent bill showing $2,057/month, year '1969' fades in below",
+    "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "Number one: the default button trap. They show you 25%, 30%, 35% — never 15%. Studies prove that defaults alone boost tips by 23%, before you even think about it.",
-    "visual": "Tip screen showing three buttons: 25%, 30% pre-selected in orange, 35%, with a No Tip option tucked away at bottom. Light background.",
-    "accent_color": "orange"
+    "narration": "HUD created the 30% threshold to decide who qualified for housing assistance. Median rent was $200 a month back then. Your landlord didn't get that memo.",
+    "visual": "Light background, house SVG with $200/month price tag, government HUD policy document stamp, year 1969 prominently displayed",
+    "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Number two: the pause of shame. The barista's watching, the line's behind you — that 8-second window is pure engineered pressure. It costs you $360 a year in tips you'd never choose alone.",
-    "visual": "Person silhouette at counter, three people silhouettes in line behind, countdown timer arc in orange, $360/year stat fades in at bottom. Dark background.",
-    "accent_color": "orange"
+    "narration": "To actually follow the rule today, you'd need to earn $82,000 a year. The median US income is $56,000. That's a $26,000 gap — the rule is impossible for most renters.",
+    "visual": "Dark background, two comparison rows: 'YOU EARN $56K' in white vs 'RULE NEEDS $82K' in amber, '$26K SHORT' text reveals in red",
+    "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "Number three: tip creep. iPad screens started at coffee shops. Now they're at hotel kiosks, airports, even self-checkout machines — places with zero human service asking for 20%.",
-    "visual": "Four icons spring in with staggered animation: coffee cup, self-checkout kiosk, hotel building, airplane. Light background.",
-    "accent_color": "orange"
+    "narration": "52% of American renters are already cost-burdened. But here's the thing — spending 35% on rent while saving 20% beats spending 28% on rent and saving nothing.",
+    "visual": "Light background, '52%' stat springs in, two comparison boxes: 28% rent + 0% saved (red) vs 35% rent + 20% saved (green), SAVINGS WINS label",
+    "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "Here's the actual math. Lunch, coffee, delivery, and dinner tips add up fast. Run the numbers across a year and you hit $1,040 — more than most people spend on a vacation.",
-    "visual": "Itemized breakdown building line by line: lunch +$300, coffee +$260, delivery +$280, bars and dinner +$200, totaling $1,040. Dark background.",
-    "accent_color": "orange"
+    "narration": "The metric that actually matters is your savings rate, not your rent ratio. If you're saving 15 to 20% every month, your rent percentage is basically just noise.",
+    "visual": "Dark background, piggy bank SVG growing with coins, savings rate progress bar filling to 20%, 'RENT% = NOISE / SAVINGS RATE = THE SIGNAL' text",
+    "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "The fix is dead simple. Decide your rules before the screen spins: 15% for counter service, 20% for sit-down, zero for self-checkout. That one decision saves you over a thousand dollars. Nobody's actually watching.",
-    "visual": "Phone SVG showing three rule buttons, self-checkout $0 highlighted in green, SAVE $1,040/YEAR callout springs in. Light background.",
-    "accent_color": "orange"
+    "narration": "Next time someone quotes the 30% rule, ask them what year they think it is. Track your savings rate instead — and follow for more finance myths that need to die.",
+    "visual": "Light background, phone SVG with savings calculator showing 20%, three rules appear: ignore 30% rule, track savings rate, aim for 15-20%",
+    "accent_color": "amber"
   }
 ]
