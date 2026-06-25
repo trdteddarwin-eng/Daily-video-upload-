@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "The dealer shows you $611 a month to lease versus $738 to buy. That lower number just triggered something in your brain — and the dealer knows exactly what comes next.",
-    "visual": "Dark background, SVG car, two price tags: $611/mo in orange vs $738/mo in grey, animated arrow pointing to lower number, 'YOUR BRAIN PICKS THE LOWER ONE' text reveal",
-    "accent_color": "orange"
+    "narration": "Most people swipe their HSA card at the doctor and call it a day. That's the mistake — and the number it's costing you is nearly $400,000.",
+    "visual": "HSA card being swiped at checkout, then big red X over it, then $395,000 figure appearing on dark background",
+    "accent_color": "green"
   },
   {
     "scene": 2,
-    "narration": "36 months later, you hand back the keys. You've paid $21,996 into that lease — and you walk away with exactly zero dollars in equity. You financed someone else's depreciation.",
-    "visual": "Light background, running counter filling to $21,996, empty wallet SVG revealing, large red $0 equity springs in",
-    "accent_color": "orange"
+    "narration": "Here's what nobody tells you — your HSA is the only account in America with a triple tax advantage. Money goes in tax-free, grows tax-free, and comes out tax-free.",
+    "visual": "Three green shields labeled CONTRIBUTE, GROW, WITHDRAW spring in one at a time on light background",
+    "accent_color": "green"
   },
   {
     "scene": 3,
-    "narration": "Meanwhile, the buyer paid $738 a month for those same 36 months. That's $4,572 more — but they now own a car worth $20,000. That's what equity looks like.",
-    "visual": "Dark background, two columns: LEASE shows $21,996 paid, $0 owned in red; BUY shows $26,568 paid, $20K car value in green; THAT'S CALLED EQUITY label",
-    "accent_color": "orange"
+    "narration": "Here's the secret — you can invest every dollar in your HSA in index funds, just like a 401k. But 68% of HSA holders leave their money sitting in cash earning almost nothing.",
+    "visual": "Bar chart comparison on dark background: flat red CASH bar versus towering green INVESTED bar growing dramatically",
+    "accent_color": "green"
   },
   {
     "scene": 4,
-    "narration": "Here's where the trap locks in. You get another new car every three years, paying $611 forever. Three leases, nine years: you've paid $66,000 and owned nothing, ever.",
-    "visual": "Light background, three lease cycle boxes spring in one by one summing $21,996 each, total $65,988 reveals in red, 'AND YOU OWN NOTHING' below",
-    "accent_color": "orange"
+    "narration": "Put in $4,150 a year and invest it at 7% for 30 years? You're looking at $395,000 — completely tax-free. That's the number 68% of people are leaving on the table.",
+    "visual": "Animated counter climbing from $0 to $395,000 with green piggy bank on light background",
+    "accent_color": "green"
   },
   {
     "scene": 5,
-    "narration": "And that's before the fine print kicks in. Go over 12,000 miles and you owe 30 cents per mile. The average American drives 15,000 — that's $900 in hidden fees every single year.",
-    "visual": "Dark background, odometer gauge needle sweeping past 12K limit into red zone, $0.30/mile overage fee appears, $900 hidden fee per year reveal",
-    "accent_color": "orange"
+    "narration": "Here's the bonus nobody mentions. After 65, your HSA becomes a second IRA — groceries, travel, anything at all. Just pay normal income tax, no penalty.",
+    "visual": "Person silhouette with age 65 badge on dark background, three items revealed: Groceries, Travel, Anything at all",
+    "accent_color": "green"
   },
   {
     "scene": 6,
-    "narration": "The play? Buy a reliable used car, drive it to 150,000 miles, and invest the difference. Over a decade, that's $22,000 back in your pocket — follow for the math they hope you never see.",
-    "visual": "Light background, used car SVG with 150K miles badge, three tips reveal in sequence, $22,000 savings callout springs in, follow CTA text",
-    "accent_color": "orange"
+    "narration": "This open enrollment, check if your employer offers an HSA-eligible plan. Max it out and invest it — don't spend it. Follow for more money moves they never teach you.",
+    "visual": "Open enrollment form SVG with HSA-eligible plan checked on light background, three-step action list appearing",
+    "accent_color": "green"
   }
 ]
