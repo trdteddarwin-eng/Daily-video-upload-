@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Most people swipe their HSA card at the doctor and call it a day. That's the mistake — and the number it's costing you is nearly $400,000.",
-    "visual": "HSA card being swiped at checkout, then big red X over it, then $395,000 figure appearing on dark background",
-    "accent_color": "green"
+    "narration": "One in four people with a 401k has taken a loan from it. You think you're just borrowing from yourself — but here's what banks never tell you.",
+    "visual": "Dark background. 401k statement SVG showing $80,000 balance with a $20,000 loan taken out. Red LOAN stamp animates in diagonally over the document.",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Here's what nobody tells you — your HSA is the only account in America with a triple tax advantage. Money goes in tax-free, grows tax-free, and comes out tax-free.",
-    "visual": "Three green shields labeled CONTRIBUTE, GROW, WITHDRAW spring in one at a time on light background",
-    "accent_color": "green"
+    "narration": "Your 401k contributions went in pre-tax. But when you repay the loan, you're using after-tax dollars — money the IRS already took a cut from.",
+    "visual": "Light background. Vault SVG in center. Three flow steps appear: green dot for PRE-TAX IN, amber dot for LOAN OUT, red dot for AFTER-TAX REPAYMENT.",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Here's the secret — you can invest every dollar in your HSA in index funds, just like a 401k. But 68% of HSA holders leave their money sitting in cash earning almost nothing.",
-    "visual": "Bar chart comparison on dark background: flat red CASH bar versus towering green INVESTED bar growing dramatically",
-    "accent_color": "green"
+    "narration": "Then at retirement, you pay income tax again on that same repaid money. That twenty-thousand loan gets taxed twice. Most people never see it coming.",
+    "visual": "Dark background. Dollar bill SVG with two red TAX PAID stamps animating over it at different angles — one for repayment, one for retirement withdrawal.",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Put in $4,150 a year and invest it at 7% for 30 years? You're looking at $395,000 — completely tax-free. That's the number 68% of people are leaving on the table.",
-    "visual": "Animated counter climbing from $0 to $395,000 with green piggy bank on light background",
-    "accent_color": "green"
+    "narration": "But the double tax isn't even the worst part. Twenty thousand dollars out of your portfolio misses growing into one hundred and fifty-two thousand dollars over thirty years.",
+    "visual": "Light background. Bar chart with two bars: red '$20K BORROWED' and amber 'LOST VALUE' growing tall. Counter animates up to $152,000.",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Here's the bonus nobody mentions. After 65, your HSA becomes a second IRA — groceries, travel, anything at all. Just pay normal income tax, no penalty.",
-    "visual": "Person silhouette with age 65 badge on dark background, three items revealed: Groceries, Travel, Anything at all",
-    "accent_color": "green"
+    "narration": "Lose your job while the loan's still open? The full balance is due immediately — or it's counted as income and hit with a ten percent early withdrawal penalty.",
+    "visual": "Dark background. Warning triangle SVG in red. Three bullet lines appear: balance due immediately, taxable income, 10% penalty. Bold punch line at bottom.",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "This open enrollment, check if your employer offers an HSA-eligible plan. Max it out and invest it — don't spend it. Follow for more money moves they never teach you.",
-    "visual": "Open enrollment form SVG with HSA-eligible plan checked on light background, three-step action list appearing",
-    "accent_color": "green"
+    "narration": "Before you touch your retirement, try a personal loan, a zero-percent APR card, or a high-yield emergency fund first. Follow for more money moves they never taught you.",
+    "visual": "Light background. Piggy bank SVG. Three checklist items appear: high-yield emergency fund, 0% APR card, personal loan. FOLLOW CTA badge springs in.",
+    "accent_color": "red"
   }
 ]

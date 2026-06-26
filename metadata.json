@@ -1,16 +1,16 @@
 {
   "tiktok": {
-    "caption": "Your HSA could be worth $395,000 — but only if you stop using it like a debit card",
-    "hashtags": ["#HSA", "#PersonalFinance", "#MoneyTips", "#HealthSavingsAccount", "#RetirementHacks", "#WealthBuilding", "#FinanceTok", "#MoneyMoves", "#TaxFree", "#Investing"]
+    "caption": "Your 401k loan gets taxed TWICE — and that $20K costs you $152,000 in retirement. The math is brutal.",
+    "hashtags": ["#401k", "#personalfinance", "#moneytips", "#retirement", "#financetok", "#investing", "#wealthbuilding", "#moneymoves", "#taxes", "#finance"]
   },
   "youtube_short": {
-    "title": "The HSA Trick Worth $395,000 Nobody Tells You",
+    "title": "Your 401k Loan Gets Taxed Twice ($152K Gone)",
     "title_alternatives": [
-      "Stop Using Your HSA Like a Debit Card ($395K Mistake)",
-      "68% of People Are Wasting Their HSA — Don't Be One of Them"
+      "The $152K Mistake Hiding in Your 401k Loan",
+      "Why 401k Loans Cost 7x More Than You Think"
     ],
-    "description": "Most people swipe their HSA card at the pharmacy and never think about it again. But your HSA has a triple tax advantage — contributions are pre-tax, growth is tax-free, and withdrawals are tax-free for medical. Invest $4,150 a year at 7% for 30 years and you're looking at $395,000 completely tax-free. After 65 it becomes a second IRA you can use for literally anything. 68% of HSA holders never invest their balance. Don't be one of them. #HSA #PersonalFinance #RetirementTips #WealthBuilding #MoneyMoves",
-    "tags": ["HSA", "health savings account", "personal finance", "retirement tips", "money hacks", "tax free investing", "wealth building", "finance tips", "money moves", "investing for beginners", "triple tax advantage", "open enrollment"]
+    "description": "One in four people with a 401k has taken a loan from it — and almost nobody knows the IRS double-taxes that money. You repay the loan with after-tax dollars, then pay income tax again at withdrawal. That same $20,000 gets taxed twice. And the compounding math is even worse — that $20K out of your portfolio for 30 years misses growing into $152,000. Lose your job while the loan's open? The whole balance is due immediately or it's income plus a 10% penalty. Watch before you ever touch your retirement. #401k #retirement #personalfinance #moneytips #investing",
+    "tags": ["401k loan", "retirement savings", "personal finance", "double taxation", "money psychology", "investing", "tax strategy", "wealth building", "financial education", "money tips", "retirement planning", "compounding"]
   },
-  "hook_line": "Your HSA could be worth $395,000"
+  "hook_line": "Your 401k loan gets taxed TWICE"
 }
