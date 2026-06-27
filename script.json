@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "One in four people with a 401k has taken a loan from it. You think you're just borrowing from yourself — but here's what banks never tell you.",
-    "visual": "Dark background. 401k statement SVG showing $80,000 balance with a $20,000 loan taken out. Red LOAN stamp animates in diagonally over the document.",
-    "accent_color": "red"
+    "narration": "You upgrade your phone every 22 months. Most people do it while the old one still works fine. But nobody's shown you the real price tag.",
+    "visual": "Smartphone SVG centered on dark background with '$1,000' price tag on screen, dollar signs animated floating upward away from the phone, '22 MONTHS' in large amber text at bottom",
+    "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "Your 401k contributions went in pre-tax. But when you repay the loan, you're using after-tax dollars — money the IRS already took a cut from.",
-    "visual": "Light background. Vault SVG in center. Three flow steps appear: green dot for PRE-TAX IN, amber dot for LOAN OUT, red dot for AFTER-TAX REPAYMENT.",
-    "accent_color": "red"
+    "narration": "Seventy-five percent of people replace phones that aren't even broken. You're spending a thousand dollars for features you'll stop noticing in a week. Here's where it gets brutal.",
+    "visual": "Light background with large '75%' in amber, progress bar filling to 75%, phone icon showing battery indicator still healthy with a crossed-out trash icon overlay",
+    "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Then at retirement, you pay income tax again on that same repaid money. That twenty-thousand loan gets taxed twice. Most people never see it coming.",
-    "visual": "Dark background. Dollar bill SVG with two red TAX PAID stamps animating over it at different angles — one for repayment, one for retirement withdrawal.",
-    "accent_color": "red"
+    "narration": "Upgrading every two years is five hundred dollars a year leaving your pocket. That's every single year, forever. Now let's run the actual math.",
+    "visual": "Dark background, '$500/YR' in large white text, animated bar chart growing across years labeled YR5, YR10, YR20, YR30, YR40 in amber bars",
+    "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "But the double tax isn't even the worst part. Twenty thousand dollars out of your portfolio misses growing into one hundred and fifty-two thousand dollars over thirty years.",
-    "visual": "Light background. Bar chart with two bars: red '$20K BORROWED' and amber 'LOST VALUE' growing tall. Counter animates up to $152,000.",
-    "accent_color": "red"
+    "narration": "Invest that five hundred a year at the market's average 10% return for 40 years. The number animating on screen right now is not a typo.",
+    "visual": "Light background, large dollar counter animating from $0 up to $221,000 in amber, '10% MARKET RETURN • 40 YEARS' label below in dark text",
+    "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "Lose your job while the loan's still open? The full balance is due immediately — or it's counted as income and hit with a ten percent early withdrawal penalty.",
-    "visual": "Dark background. Warning triangle SVG in red. Three bullet lines appear: balance due immediately, taxable income, 10% penalty. Bold punch line at bottom.",
-    "accent_color": "red"
+    "narration": "You don't have to swear off phones. Just stretch each upgrade from two years to four. That one move gets you more than a hundred thousand dollars back.",
+    "visual": "Dark background, two comparison cards: top card '2 YEARS' with red border showing '$221K LOST', bottom card '4 YEARS' with amber border showing 'SAVE $110K'",
+    "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "Before you touch your retirement, try a personal loan, a zero-percent APR card, or a high-yield emergency fund first. Follow for more money moves they never taught you.",
-    "visual": "Light background. Piggy bank SVG. Three checklist items appear: high-yield emergency fund, 0% APR card, personal loan. FOLLOW CTA badge springs in.",
-    "accent_color": "red"
+    "narration": "Your next upgrade decision is worth $221,000. Share this with someone who's about to buy a new phone right now — they need to see this math.",
+    "visual": "Light background, golden piggy bank SVG, '$221,000' in bold amber above it, 'SHARE THIS' call to action with upward arrow, follow prompt at bottom",
+    "accent_color": "amber"
   }
 ]

@@ -1,7 +1,11 @@
 {
-  "title": "Your 401k Loan Gets Taxed Twice — $152K Gone",
-  "hook": "One in four people with a 401k has taken a loan from it — and almost none of them know the IRS double-taxes that money.",
-  "angle": "The combination of double taxation plus lost compounding makes 401k loans far more expensive than anyone warns you at signing",
-  "audience": "Workers in their 30s-40s who have retirement savings and have considered or taken a 401k loan",
-  "key_numbers": ["1 in 4 401k holders has taken a loan", "$20,000 loan loses $152,000 in compounding over 30 years at 7%", "Loan repayments are taxed twice — once to repay, once at withdrawal", "Lose your job? Entire balance due immediately or 10% penalty plus income tax"]
+  "title": "The $221K Phone Upgrade Trap Nobody Talks About",
+  "hook": "You upgrade your phone every 22 months — and nobody's done the math on what that's actually costing you at retirement.",
+  "angle": "The opportunity cost of habitual phone upgrades vs. investing the difference, resulting in a quarter-million-dollar retirement gap most people never see coming.",
+  "audience": "Smartphone users ages 20-45 who upgrade phones on a regular cycle without questioning it",
+  "key_numbers": [
+    "22 months — average time between US phone upgrades",
+    "75% of people upgrade before their phone stops working",
+    "$221,000 — what $500/year invested at 10% for 40 years becomes"
+  ]
 }
