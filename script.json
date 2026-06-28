@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You upgrade your phone every 22 months. Most people do it while the old one still works fine. But nobody's shown you the real price tag.",
-    "visual": "Smartphone SVG centered on dark background with '$1,000' price tag on screen, dollar signs animated floating upward away from the phone, '22 MONTHS' in large amber text at bottom",
-    "accent_color": "amber"
+    "narration": "Your brain literally cannot estimate compound interest correctly — scientists tested it. Most people are off by sixty-five percent. That blind spot is quietly stealing your wealth.",
+    "visual": "Dark background, animated graph showing exponential green curve vs dashed gray straight line diverging over 30 years, 'YOUR BRAIN VS REALITY' title springs in from bottom",
+    "accent_color": "green"
   },
   {
     "scene": 2,
-    "narration": "Seventy-five percent of people replace phones that aren't even broken. You're spending a thousand dollars for features you'll stop noticing in a week. Here's where it gets brutal.",
-    "visual": "Light background with large '75%' in amber, progress bar filling to 75%, phone icon showing battery indicator still healthy with a crossed-out trash icon overlay",
-    "accent_color": "amber"
+    "narration": "Researchers asked what $100 grows to at ten percent for thirty years. Average guess was six hundred. The real answer is $1,744 — your brain undershoots by almost two-thirds.",
+    "visual": "Light background, $100 bill SVG scales in from center, then two bars animate up side by side: gray bar '$600 YOUR GUESS' and tall green bar '$1,744 REALITY', '65% OFF' label appears",
+    "accent_color": "green"
   },
   {
     "scene": 3,
-    "narration": "Upgrading every two years is five hundred dollars a year leaving your pocket. That's every single year, forever. Now let's run the actual math.",
-    "visual": "Dark background, '$500/YR' in large white text, animated bar chart growing across years labeled YR5, YR10, YR20, YR30, YR40 in amber bars",
-    "accent_color": "amber"
+    "narration": "That brain glitch has a real price. Five thousand dollars at twenty-five becomes $74,000 at retirement. The same money at thirty-five? Only $37,000. Ten years costs you half your wealth.",
+    "visual": "Dark background, two piggy banks: large green piggy labeled 'START AT 25 → $74,000' slides in from left, small gray piggy labeled 'START AT 35 → $37,000' slides in from right",
+    "accent_color": "green"
   },
   {
     "scene": 4,
-    "narration": "Invest that five hundred a year at the market's average 10% return for 40 years. The number animating on screen right now is not a typo.",
-    "visual": "Light background, large dollar counter animating from $0 up to $221,000 in amber, '10% MARKET RETURN • 40 YEARS' label below in dark text",
-    "accent_color": "amber"
+    "narration": "Here's why. You're hardwired for linear thinking — your brain draws a straight line where money curves. Stores exploit this every day, showing monthly costs and hiding the thirty-year total.",
+    "visual": "Light background, brain SVG scales in, red X over it, side-by-side comparison boxes: 'YOUR BRAIN: straight line graph' vs 'MONEY: exponential curve', '$14.99/month = $5,400 by 2056' highlight",
+    "accent_color": "green"
   },
   {
     "scene": 5,
-    "narration": "You don't have to swear off phones. Just stretch each upgrade from two years to four. That one move gets you more than a hundred thousand dollars back.",
-    "visual": "Dark background, two comparison cards: top card '2 YEARS' with red border showing '$221K LOST', bottom card '4 YEARS' with amber border showing 'SAVE $110K'",
-    "accent_color": "amber"
+    "narration": "There's a fix. Stop thinking about monthly contributions and picture the final number instead. Studies show just visualizing your future balance boosts savings rates by nineteen percent.",
+    "visual": "Dark background, calculator phone SVG slides up, counter animates from $0 to $1,100,000 on screen, '$300/MONTH × 1,000 ≈ 30-YEAR BALANCE AT 7%' formula below, green glow around the number",
+    "accent_color": "green"
   },
   {
     "scene": 6,
-    "narration": "Your next upgrade decision is worth $221,000. Share this with someone who's about to buy a new phone right now — they need to see this math.",
-    "visual": "Light background, golden piggy bank SVG, '$221,000' in bold amber above it, 'SHARE THIS' call to action with upward arrow, follow prompt at bottom",
-    "accent_color": "amber"
+    "narration": "Override your brain right now. Grab your calculator, multiply your monthly savings by one thousand. That rough number is your future. Start building it today — your future self is counting on it.",
+    "visual": "Light background, calendar SVG with today circled in green, three steps animate in with numbered circles: 1 Open calculator 2 Monthly savings × 1,000 3 Start today, green CTA badge pulses at bottom",
+    "accent_color": "green"
   }
 ]

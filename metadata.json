@@ -1,16 +1,16 @@
 {
   "tiktok": {
-    "caption": "You upgrade your phone every 22 months. Here's what that's actually costing you at retirement. The math is wild.",
-    "hashtags": ["#personalfinance", "#moneytips", "#financetok", "#iphone", "#moneymoves", "#investing", "#wealthbuilding", "#compoundinterest", "#finance", "#moneypsychology"]
+    "caption": "Scientists tested this and the average person is off by 65% on compound interest. Here's what that's actually costing you.",
+    "hashtags": ["#personalfinance", "#compoundinterest", "#moneypsychology", "#investing", "#wealthbuilding", "#financialliteracy", "#moneytips", "#retirementplanning", "#finance", "#financetok"]
   },
   "youtube_short": {
-    "title": "Your Phone Upgrade Habit Costs $221,000",
+    "title": "Your Brain Can't Do Compound Interest",
     "title_alternatives": [
-      "The $221K Mistake You Make Every 2 Years",
-      "Stop Upgrading Your Phone (Here's the Math)"
+      "Why Your Brain Fails at Compound Interest (Scientists Proved It)",
+      "The Compound Interest Blind Spot Stealing Your Retirement"
     ],
-    "description": "The average American upgrades their phone every 22 months — and 75% do it before the old one even breaks. That habit costs $500 a year in phone spending. But here's what nobody tells you: invest that $500 a year at a 10% market return for 40 years and you get $221,000. Not a typo. Your phone upgrade cycle has a six-figure price tag. The fix is dead simple — stretch upgrades from 2 years to 4 and recover over $110,000. Watch before you buy your next phone. #personalfinance #investing #moneytips #compoundinterest #finance",
-    "tags": ["phone upgrade", "personal finance", "compound interest", "money psychology", "investing", "wealth building", "opportunity cost", "financial education", "money tips", "iphone upgrade", "money moves", "retirement savings"]
+    "description": "Most people guess that $100 at 10% for 30 years grows to about $600. The real answer is $1,744. Researchers confirmed humans are hardwired to underestimate exponential growth — and that one brain glitch explains why 60% of 35-year-olds have under $25K saved. The fix? Stop thinking in monthly contributions and picture the final number instead. Studies show it actually boosts savings rates by 19%. Watch the whole thing — the math will change how you think about every dollar you're not investing right now. #personalfinance #compoundinterest #investing #money #wealthbuilding",
+    "tags": ["compound interest", "personal finance", "money psychology", "investing", "wealth building", "financial literacy", "retirement planning", "money tips", "exponential growth", "behavioral finance", "money mindset", "financial education"]
   },
-  "hook_line": "Your phone upgrade habit costs $221,000"
+  "hook_line": "Your brain is off by 65% on compound interest"
 }
