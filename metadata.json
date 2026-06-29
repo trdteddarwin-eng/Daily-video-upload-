@@ -1,16 +1,16 @@
 {
   "tiktok": {
-    "caption": "Scientists tested this and the average person is off by 65% on compound interest. Here's what that's actually costing you.",
-    "hashtags": ["#personalfinance", "#compoundinterest", "#moneypsychology", "#investing", "#wealthbuilding", "#financialliteracy", "#moneytips", "#retirementplanning", "#finance", "#financetok"]
+    "caption": "Your insurance agent earned $5,700 the day you signed. Here's the math they never show you.",
+    "hashtags": ["#personalfinance", "#insurance", "#moneytips", "#wholelifeinsurance", "#termlife", "#financetok", "#moneypsychology", "#investing", "#financialfreedom"]
   },
   "youtube_short": {
-    "title": "Your Brain Can't Do Compound Interest",
+    "title": "Whole Life Insurance Is a $695K Trap",
     "title_alternatives": [
-      "Why Your Brain Fails at Compound Interest (Scientists Proved It)",
-      "The Compound Interest Blind Spot Stealing Your Retirement"
+      "Why Your Insurance Agent Loves Whole Life",
+      "The $695K Mistake Hidden in Your Life Insurance"
     ],
-    "description": "Most people guess that $100 at 10% for 30 years grows to about $600. The real answer is $1,744. Researchers confirmed humans are hardwired to underestimate exponential growth — and that one brain glitch explains why 60% of 35-year-olds have under $25K saved. The fix? Stop thinking in monthly contributions and picture the final number instead. Studies show it actually boosts savings rates by 19%. Watch the whole thing — the math will change how you think about every dollar you're not investing right now. #personalfinance #compoundinterest #investing #money #wealthbuilding",
-    "tags": ["compound interest", "personal finance", "money psychology", "investing", "wealth building", "financial literacy", "retirement planning", "money tips", "exponential growth", "behavioral finance", "money mindset", "financial education"]
+    "description": "Whole life insurance is sold as a smart two-in-one deal — protection plus savings. But the math they skip: the same $500K coverage costs $25/month with term life versus $500/month with whole life. Invest that $475 difference at 8% for 30 years and you'd have $695,000. Oh, and your agent pockets up to $5,700 in commission on day one. 7 in 10 whole life policies are surrendered before they ever pay out. Buy term. Invest the rest. #insurance #personalfinance #moneytips — Follow for more money psychology that actually matters.",
+    "tags": ["whole life insurance", "term life insurance", "personal finance", "money psychology", "insurance trap", "financial advice", "invest the difference", "money tips", "life insurance explained", "financial literacy"]
   },
-  "hook_line": "Your brain is off by 65% on compound interest"
+  "hook_line": "Your agent earned $5,700 the day you signed"
 }

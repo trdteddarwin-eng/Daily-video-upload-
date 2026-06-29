@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Your brain literally cannot estimate compound interest correctly — scientists tested it. Most people are off by sixty-five percent. That blind spot is quietly stealing your wealth.",
-    "visual": "Dark background, animated graph showing exponential green curve vs dashed gray straight line diverging over 30 years, 'YOUR BRAIN VS REALITY' title springs in from bottom",
-    "accent_color": "green"
+    "narration": "The day you signed a whole life insurance policy, your agent pocketed a commission worth your entire first year of premiums. That money came straight out of your financial future.",
+    "visual": "Dark background. Large bold text 'WHOLE LIFE INSURANCE IS A TRAP' slides up from bottom. Commission check SVG springs in showing '$5,700' payable to 'Your Insurance Agent.' Red accent throughout.",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Researchers asked what $100 grows to at ten percent for thirty years. Average guess was six hundred. The real answer is $1,744 — your brain undershoots by almost two-thirds.",
-    "visual": "Light background, $100 bill SVG scales in from center, then two bars animate up side by side: gray bar '$600 YOUR GUESS' and tall green bar '$1,744 REALITY', '65% OFF' label appears",
-    "accent_color": "green"
+    "narration": "They pitch it as two-in-one: life insurance plus a savings account that builds cash value over time. Sounds smart, right? Here's what they conveniently leave out.",
+    "visual": "Light background. Two boxes slide in from opposite sides — a red shield (protection) and a gold coin with dollar sign (savings). Text 'THE PITCH' above. Reveal box: 'SOUNDS SMART. DO THE MATH FIRST.'",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "That brain glitch has a real price. Five thousand dollars at twenty-five becomes $74,000 at retirement. The same money at thirty-five? Only $37,000. Ten years costs you half your wealth.",
-    "visual": "Dark background, two piggy banks: large green piggy labeled 'START AT 25 → $74,000' slides in from left, small gray piggy labeled 'START AT 35 → $37,000' slides in from right",
-    "accent_color": "green"
+    "narration": "Whole life costs around $500 a month for $500,000 in coverage. The same coverage with term life? Twenty-five dollars a month. That's a $475 monthly gap you're throwing away.",
+    "visual": "Dark background. Two bars animate upward — tall red bar labeled 'WHOLE LIFE $500/mo' vs tiny grey bar labeled 'TERM $25/mo'. Box below highlights '$475 / MONTH — YOU'RE OVERPAYING.'",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Here's why. You're hardwired for linear thinking — your brain draws a straight line where money curves. Stores exploit this every day, showing monthly costs and hiding the thirty-year total.",
-    "visual": "Light background, brain SVG scales in, red X over it, side-by-side comparison boxes: 'YOUR BRAIN: straight line graph' vs 'MONEY: exponential curve', '$14.99/month = $5,400 by 2056' highlight",
-    "accent_color": "green"
+    "narration": "Insurance agents earn 50 to 110 percent of your first year's premium in commission. On a $500-a-month policy, that's $5,700 straight to them before your savings earns a single cent.",
+    "visual": "Light background. Client and agent figures with red money arrows flowing between them. Badge shows '50–110% COMMISSION'. Amount '$5,700 DAY ONE' appears in red below.",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "There's a fix. Stop thinking about monthly contributions and picture the final number instead. Studies show just visualizing your future balance boosts savings rates by nineteen percent.",
-    "visual": "Dark background, calculator phone SVG slides up, counter animates from $0 to $1,100,000 on screen, '$300/MONTH × 1,000 ≈ 30-YEAR BALANCE AT 7%' formula below, green glow around the number",
-    "accent_color": "green"
+    "narration": "Buy term instead and invest that $475 difference at eight percent. In 30 years you'd have $695,000. That's nearly $700K your agent never offered to show you.",
+    "visual": "Dark background. Two side-by-side growing bars — grey 'WHOLE LIFE CASH VALUE ~$80K' vs tall green 'TERM + INVEST $695,000'. 30-year label below. Subtitle: 'YOUR AGENT NEVER SHOWED YOU THIS.'",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Override your brain right now. Grab your calculator, multiply your monthly savings by one thousand. That rough number is your future. Start building it today — your future self is counting on it.",
-    "visual": "Light background, calendar SVG with today circled in green, three steps animate in with numbered circles: 1 Open calculator 2 Monthly savings × 1,000 3 Start today, green CTA badge pulses at bottom",
-    "accent_color": "green"
+    "narration": "Seven in ten whole life policies are surrendered before they ever pay out. Buy term, invest the rest, and keep what's yours. That's the move they don't want you to make.",
+    "visual": "Light background. Person silhouette walking confidently. Green piggy bank growing with dollar sign. Stat box: '7 IN 10 POLICIES SURRENDERED BEFORE PAYOUT.' Red CTA button: 'BUY TERM. INVEST THE REST.'",
+    "accent_color": "red"
   }
 ]

@@ -1,11 +1,13 @@
 {
-  "title": "Your Brain Can't Do Compound Interest — $400K Gone",
-  "hook": "Scientists asked people to estimate compound interest and the average guess was off by 65% — that one cognitive glitch is why most people will work until they die.",
-  "angle": "The 'exponential growth bias' is a documented cognitive flaw that makes humans systematically underestimate compound growth — it's the root cause of why 60% of 35-year-olds have under $25,000 saved.",
-  "audience": "Anyone between 22-45 who keeps telling themselves they'll start saving more 'soon'",
+  "title": "Whole Life Insurance Is a $695K Trap",
+  "hook": "Your insurance agent earned $5,700 the day you signed your whole life policy — and that money came from your future, not theirs.",
+  "angle": "Whole life is sold as 'insurance plus savings' but the math shows buying term and investing the $475/month difference leaves you $695K richer — a fact agents earning 50-110% commission are incentivized to hide.",
+  "audience": "Anyone in their 20s-40s who was sold whole life insurance, or who is being approached by an insurance agent right now",
   "key_numbers": [
-    "65% — how far off the average person is when estimating compound returns",
-    "$1,744 — what $100 becomes at 10% for 30 years (most people guess $600)",
-    "$74,000 vs $37,000 — the gap between starting at 25 vs 35 with just $5,000"
+    "$500/month — typical whole life premium for $500K coverage",
+    "$25/month — same $500K coverage with a 20-year term policy",
+    "$695,000 — what the $475/month difference grows to in 30 years at 8%",
+    "50-110% — first-year commission agents earn on whole life policies",
+    "7 in 10 whole life policies are surrendered before ever paying out"
   ]
 }
