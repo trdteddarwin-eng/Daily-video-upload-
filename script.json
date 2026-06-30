@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "The day you signed a whole life insurance policy, your agent pocketed a commission worth your entire first year of premiums. That money came straight out of your financial future.",
-    "visual": "Dark background. Large bold text 'WHOLE LIFE INSURANCE IS A TRAP' slides up from bottom. Commission check SVG springs in showing '$5,700' payable to 'Your Insurance Agent.' Red accent throughout.",
+    "narration": "Most Americans think carrying a credit card balance helps their score. That is completely false — and believing it could cost you $92,000.",
+    "visual": "Credit card SVG with $6,194 balance slides up from below. 'CARRYING THIS BUILDS CREDIT?' text fades in, then a bold red MYTH badge springs onto screen.",
     "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "They pitch it as two-in-one: life insurance plus a savings account that builds cash value over time. Sounds smart, right? Here's what they conveniently leave out.",
-    "visual": "Light background. Two boxes slide in from opposite sides — a red shield (protection) and a gold coin with dollar sign (savings). Text 'THE PITCH' above. Reveal box: 'SOUNDS SMART. DO THE MATH FIRST.'",
+    "narration": "Fifty-six percent of Americans believe a balance boosts their credit. Banks know this myth exists — and they're definitely not rushing to correct you.",
+    "visual": "Large '56%' number counts up from zero on a light background. A red progress bar fills to 56%. Below: 'OF AMERICANS BELIEVE A BALANCE BUILDS CREDIT FASTER' and 'THAT IS 100% FALSE' reveals.",
     "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Whole life costs around $500 a month for $500,000 in coverage. The same coverage with term life? Twenty-five dollars a month. That's a $475 monthly gap you're throwing away.",
-    "visual": "Dark background. Two bars animate upward — tall red bar labeled 'WHOLE LIFE $500/mo' vs tiny grey bar labeled 'TERM $25/mo'. Box below highlights '$475 / MONTH — YOU'RE OVERPAYING.'",
+    "narration": "Here's how FICO actually works. It tracks your utilization — how much of your limit you're using. Carrying a balance raises that number, which hurts your score.",
+    "visual": "Five FICO score factor bars animate in: Payment History 35%, Amounts Owed 30%, etc. The 'AMOUNTS OWED' bar pulses red to show how a balance makes this factor worse.",
     "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Insurance agents earn 50 to 110 percent of your first year's premium in commission. On a $500-a-month policy, that's $5,700 straight to them before your savings earns a single cent.",
-    "visual": "Light background. Client and agent figures with red money arrows flowing between them. Badge shows '50–110% COMMISSION'. Amount '$5,700 DAY ONE' appears in red below.",
+    "narration": "The average American carries $6,194 on their card at 22% interest. That's $1,362 in pure interest every single year — paid for a belief that is provably wrong.",
+    "visual": "Balance counter animates from $0 to $6,194. Then '× 22% APR' appears, then '= $1,362 / YEAR IN WASTED INTEREST' springs in red. A green dollar bill SVG sits below.",
     "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Buy term instead and invest that $475 difference at eight percent. In 30 years you'd have $695,000. That's nearly $700K your agent never offered to show you.",
-    "visual": "Dark background. Two side-by-side growing bars — grey 'WHOLE LIFE CASH VALUE ~$80K' vs tall green 'TERM + INVEST $695,000'. 30-year label below. Subtitle: 'YOUR AGENT NEVER SHOWED YOU THIS.'",
+    "narration": "Invest that $1,362 a year instead at 5% for 30 years. You'd be sitting on $92,000. You've been trading a small fortune for a myth — and that's wild.",
+    "visual": "Two bar columns grow side by side: 'INTEREST PAID' reaches $40,860 while 'INVESTED INSTEAD' towers at $92,000. Labels appear when bars finish growing.",
     "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Seven in ten whole life policies are surrendered before they ever pay out. Buy term, invest the rest, and keep what's yours. That's the move they don't want you to make.",
-    "visual": "Light background. Person silhouette walking confidently. Green piggy bank growing with dollar sign. Stat box: '7 IN 10 POLICIES SURRENDERED BEFORE PAYOUT.' Red CTA button: 'BUY TERM. INVEST THE REST.'",
+    "narration": "Pay your card in full every single month. Your score improves, interest disappears, and you keep the $92,000. Drop 'MYTH' in the comments if this changed how you see your card.",
+    "visual": "Green-themed credit card SVG labeled 'PAID IN FULL' springs in with a large green checkmark. 'PAY IN FULL EVERY MONTH' and 'KEEP YOUR $92,000' text fades in. Red CTA badge appears at bottom.",
     "accent_color": "red"
   }
 ]
