@@ -1,12 +1,7 @@
 {
-  "title": "The Credit Balance Myth Draining $92K From You",
-  "hook": "Most Americans think carrying a credit card balance builds their credit score faster — that's 100% false, and believing it could cost you $92,000.",
-  "angle": "Debunking the most persistent credit card myth using actual FICO scoring logic plus the real compound-loss math banks never show you",
-  "audience": "Anyone with a credit card who has ever kept a balance to 'build credit' — tens of millions of Americans",
-  "key_numbers": [
-    "56% of Americans believe carrying a balance boosts their credit score",
-    "$6,194 — average U.S. credit card balance",
-    "22% APR → $1,362/year in pure wasted interest",
-    "$92,000 — what that $1,362/year becomes if invested at 5% for 30 years"
-  ]
+  "title": "Why Saving Feels Like Pain — The $312K Brain Glitch",
+  "hook": "Your brain literally cannot feel your future self's pain — that one glitch is why 56% of Americans have under $1,000 saved.",
+  "angle": "Present bias / hyperbolic discounting — behavioral economists proved your brain demands a 157% annual return before it'll choose tomorrow over today",
+  "audience": "Anyone who knows they should save but can't make themselves actually do it",
+  "key_numbers": ["56% of Americans have under $1,000 saved", "Your brain requires a 157% return to wait just one year", "$312,000 average lifetime cost of present bias"]
 }

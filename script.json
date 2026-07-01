@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Most Americans think carrying a credit card balance helps their score. That is completely false — and believing it could cost you $92,000.",
-    "visual": "Credit card SVG with $6,194 balance slides up from below. 'CARRYING THIS BUILDS CREDIT?' text fades in, then a bold red MYTH badge springs onto screen.",
-    "accent_color": "red"
+    "narration": "Here's why you know you should save but still don't. Scientists call it present bias — your brain literally can't feel your future self's pain. And it costs you three hundred thousand dollars.",
+    "visual": "Human brain SVG with two sides labeled 'TODAY' (bright, lit up) and 'FUTURE' (dark, faded). 'PRESENT BIAS' text springs in large over the brain. Tagline 'YOUR BRAIN'S MOST EXPENSIVE BUG' fades in below.",
+    "accent_color": "blue"
   },
   {
     "scene": 2,
-    "narration": "Fifty-six percent of Americans believe a balance boosts their credit. Banks know this myth exists — and they're definitely not rushing to correct you.",
-    "visual": "Large '56%' number counts up from zero on a light background. A red progress bar fills to 56%. Below: 'OF AMERICANS BELIEVE A BALANCE BUILDS CREDIT FASTER' and 'THAT IS 100% FALSE' reveals.",
-    "accent_color": "red"
+    "narration": "Fifty-six percent of Americans have under a thousand dollars saved. Not because they're lazy. Researchers found your brain treats your future self like a total stranger — you literally don't feel their suffering.",
+    "visual": "Row of 10 person silhouettes. Six of them dim out, leaving only 4 fully lit. Counter shows '56% HAVE UNDER $1,000 SAVED'. Piggy bank SVG slides in nearly empty with just coins rattling at the bottom.",
+    "accent_color": "blue"
   },
   {
     "scene": 3,
-    "narration": "Here's how FICO actually works. It tracks your utilization — how much of your limit you're using. Carrying a balance raises that number, which hurts your score.",
-    "visual": "Five FICO score factor bars animate in: Payment History 35%, Amounts Owed 30%, etc. The 'AMOUNTS OWED' bar pulses red to show how a balance makes this factor worse.",
-    "accent_color": "red"
+    "narration": "Here's the proof. Researchers asked people to choose between a hundred dollars today or more money in a year. To wait, your brain demanded two hundred and fifty-seven dollars. That's a hundred and fifty-seven percent return — no investment pays that.",
+    "visual": "Two option boxes appear side by side: '$100 TODAY' with a glowing border vs '$257 IN 1 YEAR' with a dull border. A scale/balance SVG tips heavily toward the left. '157% RETURN REQUIRED' label pulses in blue.",
+    "accent_color": "blue"
   },
   {
     "scene": 4,
-    "narration": "The average American carries $6,194 on their card at 22% interest. That's $1,362 in pure interest every single year — paid for a belief that is provably wrong.",
-    "visual": "Balance counter animates from $0 to $6,194. Then '× 22% APR' appears, then '= $1,362 / YEAR IN WASTED INTEREST' springs in red. A green dollar bill SVG sits below.",
-    "accent_color": "red"
+    "narration": "This is called hyperbolic discounting. The further away something is, the more your brain ignores it. Retirement thirty years out? Your brain treats it like it basically doesn't exist.",
+    "visual": "Horizontal timeline from 'TODAY' to '30 YEARS'. A person silhouette stands at TODAY. The future portion gets progressively more faded and transparent. 'RETIREMENT' label at the far end is nearly invisible. 'YOUR BRAIN IGNORES THIS' arrow points to it.",
+    "accent_color": "blue"
   },
   {
     "scene": 5,
-    "narration": "Invest that $1,362 a year instead at 5% for 30 years. You'd be sitting on $92,000. You've been trading a small fortune for a myth — and that's wild.",
-    "visual": "Two bar columns grow side by side: 'INTEREST PAID' reaches $40,860 while 'INVESTED INSTEAD' towers at $92,000. Labels appear when bars finish growing.",
-    "accent_color": "red"
+    "narration": "The math is brutal. Delay investing by just five years in your twenties and you forfeit around three hundred and twelve thousand dollars in compound growth. That's more than most people's homes are worth.",
+    "visual": "Two investment growth curves animate upward side by side: 'START AT 25' curve towering to $312K higher than 'START AT 30' curve. The gap between them fills in blue. '$312,000 FORFEITED' label appears in the gap.",
+    "accent_color": "blue"
   },
   {
     "scene": 6,
-    "narration": "Pay your card in full every single month. Your score improves, interest disappears, and you keep the $92,000. Drop 'MYTH' in the comments if this changed how you see your card.",
-    "visual": "Green-themed credit card SVG labeled 'PAID IN FULL' springs in with a large green checkmark. 'PAY IN FULL EVERY MONTH' and 'KEEP YOUR $92,000' text fades in. Red CTA badge appears at bottom.",
-    "accent_color": "red"
+    "narration": "The fix isn't willpower — it's automation. Set up an automatic transfer so future-you gets paid before present-you can spend it. That one decision is worth more than any budget you'll ever write.",
+    "visual": "Phone SVG showing an automated transfer setup screen. Green arrows flow automatically from a wallet icon to a piggy bank icon labeled 'FUTURE YOU'. Calendar shows 'AUTO' badges on recurring dates. '$312,000 PROTECTED' badge springs in at the bottom.",
+    "accent_color": "blue"
   }
 ]
