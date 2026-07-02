@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Here's why you know you should save but still don't. Scientists call it present bias — your brain literally can't feel your future self's pain. And it costs you three hundred thousand dollars.",
-    "visual": "Human brain SVG with two sides labeled 'TODAY' (bright, lit up) and 'FUTURE' (dark, faded). 'PRESENT BIAS' text springs in large over the brain. Tagline 'YOUR BRAIN'S MOST EXPENSIVE BUG' fades in below.",
-    "accent_color": "blue"
+    "narration": "There's probably a gift card buried in your home right now — and retailers deliberately designed every part of it to stay unspent.",
+    "visual": "Dark background. A drawer SVG springs up from below containing three colorful gift cards ($50 purple, $25 red, $100 teal) tilted at various angles inside. '$175 IN DEAD MONEY' text springs in large below the drawer. Subtitle 'AND RETAILERS PLANNED IT THAT WAY' fades in underneath.",
+    "accent_color": "green"
   },
   {
     "scene": 2,
-    "narration": "Fifty-six percent of Americans have under a thousand dollars saved. Not because they're lazy. Researchers found your brain treats your future self like a total stranger — you literally don't feel their suffering.",
-    "visual": "Row of 10 person silhouettes. Six of them dim out, leaving only 4 fully lit. Counter shows '56% HAVE UNDER $1,000 SAVED'. Piggy bank SVG slides in nearly empty with just coins rattling at the bottom.",
-    "accent_color": "blue"
+    "narration": "Gift cards have expiration fees, narrow merchant restrictions, and awkward checkout fields — every single one of those obstacles was deliberately built into the design.",
+    "visual": "Light background. Header 'EVERY OBSTACLE WAS DESIGNED ON PURPOSE' fades in. Three colored panels spring up one by one: red panel with clock-X icon (EXPIRATION FEES), amber panel with padlock icon (LIMITED MERCHANTS), purple panel with error-form icon (CHECKOUT FRICTION). Each has a short description below the icon.",
+    "accent_color": "green"
   },
   {
     "scene": 3,
-    "narration": "Here's the proof. Researchers asked people to choose between a hundred dollars today or more money in a year. To wait, your brain demanded two hundred and fifty-seven dollars. That's a hundred and fifty-seven percent return — no investment pays that.",
-    "visual": "Two option boxes appear side by side: '$100 TODAY' with a glowing border vs '$257 IN 1 YEAR' with a dull border. A scale/balance SVG tips heavily toward the left. '157% RETURN REQUIRED' label pulses in blue.",
-    "accent_color": "blue"
+    "narration": "Retailers have an actual accounting term for the money you forget. It's called 'breakage' — and it generates over a billion dollars in annual profit.",
+    "visual": "Dark background. Large 'BREAKAGE' text scales in dramatically in green. Subtitle 'their word for your forgotten money' fades in. Person silhouette on left, store building on right, three dollar signs animate from the person across to the store building. '$1 BILLION / YEAR IN PURE PROFIT' appears below.",
+    "accent_color": "green"
   },
   {
     "scene": 4,
-    "narration": "This is called hyperbolic discounting. The further away something is, the more your brain ignores it. Retirement thirty years out? Your brain treats it like it basically doesn't exist.",
-    "visual": "Horizontal timeline from 'TODAY' to '30 YEARS'. A person silhouette stands at TODAY. The future portion gets progressively more faded and transparent. 'RETIREMENT' label at the far end is nearly invisible. 'YOUR BRAIN IGNORES THIS' arrow points to it.",
-    "accent_color": "blue"
+    "narration": "Here's the trap: your brain values a gift card more than cash of the same amount — but you'll actually spend it 40% less.",
+    "visual": "Light background. 'THE BRAIN GLITCH' header. Two panels slide in from opposite sides: left green panel shows happy face emoji holding a gift card labeled 'FEELS BETTER'; right red panel shows confused face with forgotten gray card labeled 'SPENT 40% LESS'. 'VS' appears between them.",
+    "accent_color": "green"
   },
   {
     "scene": 5,
-    "narration": "The math is brutal. Delay investing by just five years in your twenties and you forfeit around three hundred and twelve thousand dollars in compound growth. That's more than most people's homes are worth.",
-    "visual": "Two investment growth curves animate upward side by side: 'START AT 25' curve towering to $312K higher than 'START AT 30' curve. The gap between them fills in blue. '$312,000 FORFEITED' label appears in the gap.",
-    "accent_color": "blue"
+    "narration": "Americans are holding twenty-one billion dollars in unspent gift card value right now. The average household has $175 just sitting there, doing nothing.",
+    "visual": "Dark background. 'UNSPENT GIFT CARDS IN AMERICA' label. Animated counter ticks from $0 to $21 with 'BILLION' label beside it in white. Green progress bar fills across the screen beneath. Two stat boxes fade in below: '$175 per household sitting idle' and '$3B expires unused every year' in red.",
+    "accent_color": "green"
   },
   {
     "scene": 6,
-    "narration": "The fix isn't willpower — it's automation. Set up an automatic transfer so future-you gets paid before present-you can spend it. That one decision is worth more than any budget you'll ever write.",
-    "visual": "Phone SVG showing an automated transfer setup screen. Green arrows flow automatically from a wallet icon to a piggy bank icon labeled 'FUTURE YOU'. Calendar shows 'AUTO' badges on recurring dates. '$312,000 PROTECTED' badge springs in at the bottom.",
-    "accent_color": "blue"
+    "narration": "Check your drawer, your wallet, your old emails — you've probably got real money sitting there. Spend it or sell it this week.",
+    "visual": "Light background. 'DON'T LET THEM WIN' header. Phone SVG showing gift card balance of $175.00 springs in on the left. Three numbered action steps fade in on the right: 1) Search your drawer, wallet, and old emails 2) Use them at checkout before buying with cash 3) Sell unwanted cards — get up to 92 cents on the dollar. Green 'FOLLOW FOR MORE MONEY PSYCHOLOGY' CTA fades in at bottom.",
+    "accent_color": "green"
   }
 ]
