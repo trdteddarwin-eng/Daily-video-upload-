@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "There's probably a gift card buried in your home right now — and retailers deliberately designed every part of it to stay unspent.",
-    "visual": "Dark background. A drawer SVG springs up from below containing three colorful gift cards ($50 purple, $25 red, $100 teal) tilted at various angles inside. '$175 IN DEAD MONEY' text springs in large below the drawer. Subtitle 'AND RETAILERS PLANNED IT THAT WAY' fades in underneath.",
-    "accent_color": "green"
+    "narration": "You just saved $34 at checkout — nice. But that store card they handed you is designed to take back way more than that.",
+    "visual": "Dark background. A checkout counter SVG with a smiling cashier figure, a credit card being handed over, and a large '20% OFF TODAY' sign. '$34 SAVINGS' bubble in green appears, then fades as a red debt arrow grows beneath it. Scene title 'THE CHECKOUT TRAP' springs in.",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Gift cards have expiration fees, narrow merchant restrictions, and awkward checkout fields — every single one of those obstacles was deliberately built into the design.",
-    "visual": "Light background. Header 'EVERY OBSTACLE WAS DESIGNED ON PURPOSE' fades in. Three colored panels spring up one by one: red panel with clock-X icon (EXPIRATION FEES), amber panel with padlock icon (LIMITED MERCHANTS), purple panel with error-form icon (CHECKOUT FRICTION). Each has a short description below the icon.",
-    "accent_color": "green"
+    "narration": "Store credit cards charge 28.9% interest on average — nearly ten points higher than a regular card. Most people never notice until the bill hits.",
+    "visual": "Light background. Two large credit cards side by side: left card labeled 'STORE CARD' with 28.9% APR in red, right card labeled 'REGULAR CARD' with 20.7% APR in gray. A gap arrow between them shows '+8.2%' in red. Bar chart comparing rates fills in below each card.",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Retailers have an actual accounting term for the money you forget. It's called 'breakage' — and it generates over a billion dollars in annual profit.",
-    "visual": "Dark background. Large 'BREAKAGE' text scales in dramatically in green. Subtitle 'their word for your forgotten money' fades in. Person silhouette on left, store building on right, three dollar signs animate from the person across to the store building. '$1 BILLION / YEAR IN PURE PROFIT' appears below.",
-    "accent_color": "green"
+    "narration": "Forty-two percent of people who open store cards carry a balance. That $34 savings is already gone — and now the interest clock is ticking.",
+    "visual": "Dark background. Large '42%' counter animates in. A person silhouette holds a gift/receipt on one side showing '$34 SAVED' with a strikethrough, while on the other side a ticking clock with dollar signs accumulates interest. Text 'CARRY A BALANCE' underneath the percentage.",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Here's the trap: your brain values a gift card more than cash of the same amount — but you'll actually spend it 40% less.",
-    "visual": "Light background. 'THE BRAIN GLITCH' header. Two panels slide in from opposite sides: left green panel shows happy face emoji holding a gift card labeled 'FEELS BETTER'; right red panel shows confused face with forgotten gray card labeled 'SPENT 40% LESS'. 'VS' appears between them.",
-    "accent_color": "green"
+    "narration": "Carry $1,200 on a store card at 28.9% and it takes two years to pay off. Total cost: $2,800. You spent $1,200.",
+    "visual": "Light background. A large calculator SVG displays '$1,200'. A progress bar fills showing '2 YEARS OF PAYMENTS'. Below, two boxes: 'WHAT YOU BOUGHT: $1,200' and 'WHAT YOU PAID: $2,800' — the gap between them highlighted in red labeled 'INTEREST: $1,600'.",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Americans are holding twenty-one billion dollars in unspent gift card value right now. The average household has $175 just sitting there, doing nothing.",
-    "visual": "Dark background. 'UNSPENT GIFT CARDS IN AMERICA' label. Animated counter ticks from $0 to $21 with 'BILLION' label beside it in white. Green progress bar fills across the screen beneath. Two stat boxes fade in below: '$175 per household sitting idle' and '$3B expires unused every year' in red.",
-    "accent_color": "green"
+    "narration": "Every store card signup triggers a hard inquiry — up to ten points off your score. Three checkouts, three signups? That's up to thirty points gone.",
+    "visual": "Dark background. A credit score gauge animates from 720 down toward 690, needle dropping. Three red 'HARD INQUIRY' labels appear stacked, each dropping the needle further. Final score shown: '690' in red with '-30 pts' badge. Text: 'THREE CHECKOUTS = THIRTY POINTS GONE'.",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Check your drawer, your wallet, your old emails — you've probably got real money sitting there. Spend it or sell it this week.",
-    "visual": "Light background. 'DON'T LET THEM WIN' header. Phone SVG showing gift card balance of $175.00 springs in on the left. Three numbered action steps fade in on the right: 1) Search your drawer, wallet, and old emails 2) Use them at checkout before buying with cash 3) Sell unwanted cards — get up to 92 cents on the dollar. Green 'FOLLOW FOR MORE MONEY PSYCHOLOGY' CTA fades in at bottom.",
-    "accent_color": "green"
+    "narration": "The fix is simple: say no at checkout. Use a flat 2% cashback card instead, and follow for more money traps hiding in plain sight.",
+    "visual": "Light background. Two credit cards: store card on left with a large red X, flat cashback card on right with a green checkmark labeled '2% CASHBACK'. Arrow from bad to good card. Three-step action list: 1) Say no at the register 2) Use a 2% flat card instead 3) Never open cards for one-time discounts. Red 'FOLLOW FOR MORE MONEY TRAPS' CTA at bottom.",
+    "accent_color": "red"
   }
 ]
