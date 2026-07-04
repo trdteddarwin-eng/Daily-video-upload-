@@ -1,7 +1,7 @@
 {
-  "title": "Your Store Card Discount Is a $2,800 Debt Trap",
-  "hook": "You saved $34 at checkout when you signed up for that store credit card — and that yes cost you $2,800.",
-  "angle": "Store cards charge 28.9% APR (nearly 10 points above average), 42% of holders carry balances, and the signup hits your credit score — all while the cashier pitches it as a reward",
-  "audience": "Shoppers who've been talked into store cards at checkout for a one-time discount",
-  "key_numbers": ["28.9% average APR on store cards", "42% of store card holders carry a balance", "5-10 point hard inquiry credit score drop", "$2,800 total paid on a $1,200 balance over 2 years"]
+  "title": "Retire in the Wrong Year and Lose $1M",
+  "hook": "Two people retire the same month with identical savings — one runs out in sixteen years, the other never does. The only difference is when the market crashed.",
+  "angle": "Sequence of returns risk — the fatal flaw most retirement calculators hide. The order market returns happen matters as much as the average return itself, and most people have never heard of it.",
+  "audience": "Anyone planning retirement or thinking about early retirement who relies on the 4% rule or standard calculators",
+  "key_numbers": ["2000 retiree with $1M at 4% ran out by 2016 — only 16 years", "2010 retiree with same $1M had $2.1M by 2025", "The 4% rule is 95% reliable over 30 years — but only 56% over 40+", "A 1-year delay at the wrong time can cost $400K+"]
 }

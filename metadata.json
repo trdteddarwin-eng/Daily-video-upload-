@@ -1,16 +1,16 @@
 {
   "tiktok": {
-    "caption": "You saved $34 at checkout with a store card signup. That yes is going to cost you $2,800. Here's why the math never works in your favor 🚨",
-    "hashtags": ["#storecreditcard", "#personalfinance", "#moneytips", "#creditcard", "#debtfree", "#finance", "#moneytrap", "#consumerpsychology"]
+    "caption": "Two people retire with the same $1M. One runs out in 16 years. It's not bad luck — it's math.",
+    "hashtags": ["#retirement", "#retirementplanning", "#personalfinance", "#investing", "#money", "#4percentrule", "#financialfreedom", "#wealthtips"]
   },
   "youtube_short": {
-    "title": "That Store Card Discount Is a $2,800 Debt Trap",
+    "title": "Retire in the Wrong Year and Lose $1M",
     "title_alternatives": [
-      "Why You Should Never Say Yes to a Store Credit Card",
-      "Store Cards Charge 28.9% — Here's What That Actually Costs You"
+      "The 4% Rule's Fatal Flaw Nobody Tells You",
+      "Why When You Retire Matters More Than How Much You Save"
     ],
-    "description": "Store credit cards charge an average of 28.9% APR — nearly 10 points higher than a regular card. Forty-two percent of people who open them end up carrying a balance. A $1,200 balance at that rate takes two years to pay off, and by the time you're done, you've paid $2,800 for $1,200 worth of stuff. And every time you say yes at a checkout register, you take a hard inquiry that can drop your credit score 5 to 10 points. Three store cards in a year? That's potentially 30 points gone. The fix is simple: say no, use a flat 2% cashback card instead. #personalfinance #creditcards #moneytips #debtfree #storecards",
-    "tags": ["store credit card", "personal finance", "credit card trap", "money tips", "debt", "credit score", "consumer psychology", "cashback card", "finance hacks", "money traps"]
+    "description": "Two people retired the same month with the exact same million dollars saved. Both followed the 4% rule. One ran out of money in just 16 years. The other had $2.1 million by 2025. The only difference was when the market crashed — and most retirement calculators will never warn you about this. It's called sequence of returns risk, and it's one of the most dangerous blind spots in retirement planning. Follow for the money math nobody's teaching you. #retirement #retirementplanning #personalfinance #investing #4percentrule #sequenceofreturns",
+    "tags": ["retirement", "retirement planning", "personal finance", "4 percent rule", "sequence of returns", "investing", "financial independence", "money", "wealth building", "retirement tips"]
   },
-  "hook_line": "THAT $34 DISCOUNT IS A $2,800 TRAP"
+  "hook_line": "Same $1M saved. One ran out in 16 years."
 }

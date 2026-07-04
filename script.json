@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You just saved $34 at checkout — nice. But that store card they handed you is designed to take back way more than that.",
-    "visual": "Dark background. A checkout counter SVG with a smiling cashier figure, a credit card being handed over, and a large '20% OFF TODAY' sign. '$34 SAVINGS' bubble in green appears, then fades as a red debt arrow grows beneath it. Scene title 'THE CHECKOUT TRAP' springs in.",
-    "accent_color": "red"
+    "narration": "Two people retire the same month with identical savings. One runs out in sixteen years, the other never does. Here's why.",
+    "visual": "Dark background. Two matching person silhouettes side by side — left in red labeled 'RETIRED 2000', right in green labeled 'RETIRED 2010'. Both hold a briefcase tagged '$1M'. Over the animation the red person's money stack bar collapses to near-zero while the green person's bar grows to '$2.1M'. Title 'SAME MONEY. DIFFERENT FATES.' springs in at top in amber.",
+    "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "Store credit cards charge 28.9% interest on average — nearly ten points higher than a regular card. Most people never notice until the bill hits.",
-    "visual": "Light background. Two large credit cards side by side: left card labeled 'STORE CARD' with 28.9% APR in red, right card labeled 'REGULAR CARD' with 20.7% APR in gray. A gap arrow between them shows '+8.2%' in red. Bar chart comparing rates fills in below each card.",
-    "accent_color": "red"
+    "narration": "The 4% rule says withdraw four percent a year, your money lasts thirty years. It only works if the market cooperates early.",
+    "visual": "Light background. A large pink piggy bank SVG center-stage with a coin slot at top. An amber arrow pulls '4% = $40K/YEAR' out from the side. Below: large green 'WORKS 95% OF TIME' counter, then a red asterisk and 'IF MARKET COOPERATES EARLY' warning box flashes in.",
+    "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Forty-two percent of people who open store cards carry a balance. That $34 savings is already gone — and now the interest clock is ticking.",
-    "visual": "Dark background. Large '42%' counter animates in. A person silhouette holds a gift/receipt on one side showing '$34 SAVED' with a strikethrough, while on the other side a ticking clock with dollar signs accumulates interest. Text 'CARRY A BALANCE' underneath the percentage.",
-    "accent_color": "red"
+    "narration": "If the market crashes right when you retire, you're forced to sell at rock-bottom prices just to pay bills. That hole never fills back up.",
+    "visual": "Dark background. Two side-by-side line charts animate from left to right. Left chart 'RETIRED 2000': line drops sharply then crawls to $0 — labeled 'BROKE 2016'. Right chart 'RETIRED 2010': line trends steadily upward to $2.1M. Both start at the same $1M baseline. Charts draw in simultaneously frame-by-frame.",
+    "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "Carry $1,200 on a store card at 28.9% and it takes two years to pay off. Total cost: $2,800. You spent $1,200.",
-    "visual": "Light background. A large calculator SVG displays '$1,200'. A progress bar fills showing '2 YEARS OF PAYMENTS'. Below, two boxes: 'WHAT YOU BOUGHT: $1,200' and 'WHAT YOU PAID: $2,800' — the gap between them highlighted in red labeled 'INTEREST: $1,600'.",
-    "accent_color": "red"
+    "narration": "The 2000 retiree's million dollars was gone by 2016 — just sixteen years. The 2010 retiree still had two point one million by 2025.",
+    "visual": "Light background. Two animated bar charts fill from left and right. Left bar labeled '2000 RETIREE' in red depletes from $1M down to $0 with a 'BROKE BY 2016' stamp. Right bar '2010 RETIREE' in green grows from $1M up to $2.1M with 'STILL GROWING' label. 'SAME 4% RULE' text in center between bars.",
+    "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "Every store card signup triggers a hard inquiry — up to ten points off your score. Three checkouts, three signups? That's up to thirty points gone.",
-    "visual": "Dark background. A credit score gauge animates from 720 down toward 690, needle dropping. Three red 'HARD INQUIRY' labels appear stacked, each dropping the needle further. Final score shown: '690' in red with '-30 pts' badge. Text: 'THREE CHECKOUTS = THIRTY POINTS GONE'.",
-    "accent_color": "red"
+    "narration": "Three moves protect you: keep a two-year cash buffer, flex your withdrawals in down years, and delay one year if the market just crashed.",
+    "visual": "Dark background. Three amber shields spring in one at a time. Shield 1: piggy bank icon, '1 — CASH BUFFER / 1-2 YRS EXPENSES'. Shield 2: graph icon, '2 — FLEX WITHDRAWALS / CUT 10% IN DOWN YEARS'. Shield 3: calendar icon, '3 — GUARD YEAR / DELAY IF MARKET CRASHES'. Dotted connecting lines between shields.",
+    "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "The fix is simple: say no at checkout. Use a flat 2% cashback card instead, and follow for more money traps hiding in plain sight.",
-    "visual": "Light background. Two credit cards: store card on left with a large red X, flat cashback card on right with a green checkmark labeled '2% CASHBACK'. Arrow from bad to good card. Three-step action list: 1) Say no at the register 2) Use a 2% flat card instead 3) Never open cards for one-time discounts. Red 'FOLLOW FOR MORE MONEY TRAPS' CTA at bottom.",
-    "accent_color": "red"
+    "narration": "Timing matters as much as saving — most calculators never tell you that. Follow for the real numbers behind retirement nobody talks about.",
+    "visual": "Light background. A large dartboard SVG with a dart landing in the outer ring labeled 'WRONG YEAR'. Bold amber text: 'TIMING MATTERS AS MUCH AS SAVING'. Below it: 'MOST CALCULATORS LIE TO YOU ABOUT THIS'. Large amber CTA button: 'FOLLOW FOR RETIREMENT TRUTH' springs in at bottom.",
+    "accent_color": "amber"
   }
 ]
