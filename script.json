@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Two people retire the same month with identical savings. One runs out in sixteen years, the other never does. Here's why.",
-    "visual": "Dark background. Two matching person silhouettes side by side — left in red labeled 'RETIRED 2000', right in green labeled 'RETIRED 2010'. Both hold a briefcase tagged '$1M'. Over the animation the red person's money stack bar collapses to near-zero while the green person's bar grows to '$2.1M'. Title 'SAME MONEY. DIFFERENT FATES.' springs in at top in amber.",
+    "narration": "You crushed your workout, ate clean all week, and nailed that big deadline. So you bought something nice — you deserved it, right? That phrase is quietly draining thousands from you.",
+    "visual": "Person silhouette holding a shopping bag, 'I DESERVE THIS' text springs into frame in bold amber. Sub-text: 'THAT PHRASE IS COSTING YOU THOUSANDS'.",
     "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "The 4% rule says withdraw four percent a year, your money lasts thirty years. It only works if the market cooperates early.",
-    "visual": "Light background. A large pink piggy bank SVG center-stage with a coin slot at top. An amber arrow pulls '4% = $40K/YEAR' out from the side. Below: large green 'WORKS 95% OF TIME' counter, then a red asterisk and 'IF MARKET COOPERATES EARLY' warning box flashes in.",
+    "narration": "Scientists call it moral licensing. When you do something virtuous, your brain hands itself a permission slip to splurge — and studies show that makes you 40% more likely to blow money right after.",
+    "visual": "Brain icon in center on light background, checkmark on left labeled 'GOOD DEED DONE', shopping cart on right labeled 'REWARD UNLOCKED'. Amber arrow pulses from brain to cart.",
     "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "If the market crashes right when you retire, you're forced to sell at rock-bottom prices just to pay bills. That hole never fills back up.",
-    "visual": "Dark background. Two side-by-side line charts animate from left to right. Left chart 'RETIRED 2000': line drops sharply then crawls to $0 — labeled 'BROKE 2016'. Right chart 'RETIRED 2010': line trends steadily upward to $2.1M. Both start at the same $1M baseline. Charts draw in simultaneously frame-by-frame.",
+    "narration": "Number one trigger: the gym visit. Number two: sticking to your diet. Number three: finishing a tough work deadline. Each one flips the exact same switch in your brain.",
+    "visual": "Three icons spring in staggered: dumbbell, salad bowl, laptop with checkmark. Dashed amber arrows converge from all three down to a central shopping cart. Numbered 1, 2, 3.",
     "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "The 2000 retiree's million dollars was gone by 2016 — just sixteen years. The 2010 retiree still had two point one million by 2025.",
-    "visual": "Light background. Two animated bar charts fill from left and right. Left bar labeled '2000 RETIREE' in red depletes from $1M down to $0 with a 'BROKE BY 2016' stamp. Right bar '2010 RETIREE' in green grows from $1M up to $2.1M with 'STILL GROWING' label. 'SAME 4% RULE' text in center between bars.",
+    "narration": "Here's the math. Seventy-three percent of Americans self-reward regularly, spending around $400 a month doing it. That's $4,800 a year — every year — on purchases that felt earned.",
+    "visual": "Large amber dollar counter animates from $0 to $4,800. Below it, 12 amber monthly bars fill in one by one across a bar chart, each labeled $400.",
     "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "Three moves protect you: keep a two-year cash buffer, flex your withdrawals in down years, and delay one year if the market just crashed.",
-    "visual": "Dark background. Three amber shields spring in one at a time. Shield 1: piggy bank icon, '1 — CASH BUFFER / 1-2 YRS EXPENSES'. Shield 2: graph icon, '2 — FLEX WITHDRAWALS / CUT 10% IN DOWN YEARS'. Shield 3: calendar icon, '3 — GUARD YEAR / DELAY IF MARKET CRASHES'. Dotted connecting lines between shields.",
+    "narration": "But here's what it actually costs you. Four thousand eight hundred dollars a year, invested instead, grows to $576,000 over thirty years. Your little treats are eating your entire retirement.",
+    "visual": "Two growing bars side by side — left (red) climbs to $4,800 labeled 'SPENT ON TREATS/YR', right (green) shoots up to $576K labeled 'INVESTED OVER 30 YRS'. Amber caption: 'YOUR TREATS ARE EATING YOUR RETIREMENT'.",
     "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "Timing matters as much as saving — most calculators never tell you that. Follow for the real numbers behind retirement nobody talks about.",
-    "visual": "Light background. A large dartboard SVG with a dart landing in the outer ring labeled 'WRONG YEAR'. Bold amber text: 'TIMING MATTERS AS MUCH AS SAVING'. Below it: 'MOST CALCULATORS LIE TO YOU ABOUT THIS'. Large amber CTA button: 'FOLLOW FOR RETIREMENT TRUTH' springs in at bottom.",
+    "narration": "The fix isn't to stop rewarding yourself — just pause for 24 hours before you buy. That one gap kills 67% of these impulse splurges. Follow for more money truths like this.",
+    "visual": "Hourglass with amber sand draining, '24 HRS' displayed in center. Below: stat '67% of splurges disappear after 24 hours'. Amber CTA button: 'FOLLOW FOR MORE MONEY TRUTHS'.",
     "accent_color": "amber"
   }
 ]
