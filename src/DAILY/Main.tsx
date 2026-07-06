@@ -32,19 +32,22 @@ const FadeScene: React.FC<{ children: React.ReactNode; bg: string; dur: number }
   return <AbsoluteFill style={{ background: bg, opacity }}>{children}</AbsoluteFill>;
 };
 
-// ─── Scene 1: Person holding bag — "I DESERVE THIS" ───────────────────────────
+// Scene 1: Shopping cart with price going up / package size going down
 const Scene1: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
 
   const titleSp = spring({ frame, fps: 30, config: { damping: 14, stiffness: 80 } });
-  const titleY = interpolate(titleSp, [0, 1], [90, 0]);
+  const titleY = interpolate(titleSp, [0, 1], [80, 0]);
 
-  const personOp = interpolate(frame, [18, 52], [0, 1], {
+  const cartSp = spring({ frame: Math.max(0, frame - 22), fps: 30, config: { damping: 14, stiffness: 70 } });
+  const cartScale = interpolate(cartSp, [0, 1], [0.4, 1]);
+
+  const priceProg = interpolate(frame, [55, 185], [0, 1], {
     extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
+    easing: Easing.out(Easing.cubic),
   });
-
-  const bagSp = spring({ frame: Math.max(0, frame - 38), fps: 30, config: { damping: 12, stiffness: 88 } });
-  const bagScale = interpolate(bagSp, [0, 1], [0, 1]);
+  const priceVal = (7.99 + priceProg * 3.5).toFixed(2);
+  const sizeVal = Math.round(64 - priceProg * 12);
 
   const subOp = interpolate(frame, [162, 200], [0, 1], {
     extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
@@ -52,407 +55,387 @@ const Scene1: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
 
   return (
     <FadeScene bg={BG_DARK} dur={dur}>
-      <AbsoluteFill style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: 96 }}>
-        <div style={{ ...headline(74, ACCENT), transform: `translateY(${titleY}px)`, marginBottom: 30, padding: '0 40px' }}>
-          "I DESERVE THIS"
+      <AbsoluteFill style={{
+        display: 'flex', flexDirection: 'column', alignItems: 'center',
+        justifyContent: 'center', gap: 36, padding: '0 60px',
+      }}>
+        <div style={{ transform: `translateY(${titleY}px)`, textAlign: 'center' }}>
+          <p style={headline(60, ACCENT)}>SHRINKFLATION</p>
+          <p style={headline(36, WHITE)}>IS STEALING FROM YOU</p>
         </div>
 
-        <svg width={960} height={680} viewBox="0 0 960 680" style={{ opacity: personOp }}>
-          {/* Person silhouette — centered at x=400 */}
-          <circle cx={400} cy={82} r={64} fill={WHITE} />
-          <rect x={350} y={150} width={100} height={132} rx={14} fill={WHITE} />
-          {/* Right arm extended toward bag */}
-          <rect x={448} y={164} width={110} height={20} rx={10} fill={WHITE} transform="rotate(-18 448 174)" />
-          {/* Left arm */}
-          <rect x={244} y={164} width={106} height={20} rx={10} fill={WHITE} transform="rotate(14 244 174)" />
-          {/* Legs */}
-          <rect x={358} y={278} width={38} height={96} rx={10} fill={WHITE} />
-          <rect x={404} y={278} width={38} height={96} rx={10} fill={WHITE} />
-
-          {/* Shopping bag at right hand */}
-          <g transform={`translate(600, 148) scale(${bagScale})`}>
-            <rect x={-72} y={32} width={144} height={155} rx={14} fill={ACCENT} />
-            <path d="M-40 32 Q-40,-12 0,-12 Q40,-12 40,32" stroke={ACCENT} strokeWidth={13} fill="none" strokeLinecap="round" />
-            <rect x={-58} y={52} width={19} height={72} rx={8} fill="rgba(255,255,255,0.22)" />
-            <rect x={-30} y={82} width={60} height={36} rx={8} fill={BLACK} opacity={0.35} />
-            <text x={0} y={106} textAnchor="middle" fill={WHITE} fontFamily={FONT} fontSize={19} fontWeight="bold">$147</text>
-          </g>
-
-          {/* Sparkle effect around bag */}
-          <g opacity={bagScale}>
-            <circle cx={720} cy={108} r={8} fill={ACCENT} opacity={0.7} />
-            <circle cx={745} cy={145} r={5} fill={ACCENT} opacity={0.5} />
-            <circle cx={706} cy={168} r={6} fill={ACCENT} opacity={0.6} />
-            <line x1={730} y1={90} x2={730} y2={106} stroke={ACCENT} strokeWidth={3} opacity={0.6} />
-            <line x1={722} y1={98} x2={738} y2={98} stroke={ACCENT} strokeWidth={3} opacity={0.6} />
-          </g>
-        </svg>
-
-        <div style={{ ...headline(40, WHITE), opacity: subOp, marginTop: 0 }}>
-          THAT PHRASE IS COSTING YOU THOUSANDS
+        <div style={{ transform: `scale(${cartScale})` }}>
+          <svg width="240" height="190" viewBox="0 0 240 190">
+            <line x1="12" y1="32" x2="48" y2="32" stroke={ACCENT} strokeWidth={9} strokeLinecap="round"/>
+            <polyline points="48,32 66,32 90,128 170,128 190,60 66,60"
+              stroke={ACCENT} strokeWidth={9} fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+            <circle cx="102" cy="150" r="14" fill="none" stroke={ACCENT} strokeWidth={8}/>
+            <circle cx="160" cy="150" r="14" fill="none" stroke={ACCENT} strokeWidth={8}/>
+            <rect x="80" y="70" width="40" height="50" rx="5" fill={WHITE} opacity={0.85}/>
+            <rect x="124" y="74" width="34" height="46" rx="5" fill={WHITE} opacity={0.55}/>
+          </svg>
         </div>
+
+        <div style={{ display: 'flex', gap: 70, alignItems: 'center' }}>
+          <div style={{ textAlign: 'center' }}>
+            <p style={headline(30, GRAY)}>PRICE</p>
+            <p style={{ fontFamily: FONT, fontSize: 72, color: ACCENT, margin: 0, lineHeight: 1.1 }}>${priceVal}</p>
+            <p style={headline(30, RED)}>↑ UP</p>
+          </div>
+          <div style={{ textAlign: 'center' }}>
+            <p style={headline(30, GRAY)}>PACKAGE</p>
+            <p style={{ fontFamily: FONT, fontSize: 72, color: GREEN, margin: 0, lineHeight: 1.1 }}>{sizeVal}oz</p>
+            <p style={headline(30, RED)}>↓ DOWN</p>
+          </div>
+        </div>
+
+        <p style={{ ...headline(30, WHITE), opacity: subOp }}>
+          $2,900 DRAINED FROM YOUR WALLET EVERY YEAR
+        </p>
       </AbsoluteFill>
     </FadeScene>
   );
 };
 
-// ─── Scene 2: Brain + moral licensing ────────────────────────────────────────
+// Scene 2: Two OJ cartons side by side — 2020 big vs 2024 smaller, same price
 const Scene2: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
 
-  const titleOp = interpolate(frame, [0, 25], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const titleY = interpolate(frame, [0, 25], [40, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic) });
+  const titleSp = spring({ frame, fps: 30, config: { damping: 14, stiffness: 80 } });
+  const titleY = interpolate(titleSp, [0, 1], [60, 0]);
 
-  const brainSp = spring({ frame: Math.max(0, frame - 18), fps: 30, config: { damping: 13, stiffness: 82 } });
-  const brainScale = interpolate(brainSp, [0, 1], [0.2, 1]);
+  const leftSp = spring({ frame: Math.max(0, frame - 15), fps: 30, config: { damping: 12, stiffness: 70 } });
+  const leftScale = interpolate(leftSp, [0, 1], [0, 1]);
 
-  const checkOp = interpolate(frame, [62, 92], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const cartOp = interpolate(frame, [98, 128], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const arrowPulse = interpolate(frame % 30, [0, 15, 30], [0.45, 1, 0.45]);
-  const statOp = interpolate(frame, [162, 200], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const rightSp = spring({ frame: Math.max(0, frame - 52), fps: 30, config: { damping: 12, stiffness: 70 } });
+  const rightScale = interpolate(rightSp, [0, 1], [0, 1]);
+
+  const arrowOp = interpolate(frame, [55, 88], [0, 1], {
+    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
+  });
+
+  const subOp = interpolate(frame, [132, 168], [0, 1], {
+    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
+  });
 
   return (
     <FadeScene bg={BG_LIGHT} dur={dur}>
-      <AbsoluteFill style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: 108 }}>
-        <div style={{ ...headline(64, BLACK), opacity: titleOp, transform: `translateY(${titleY}px)`, marginBottom: 46 }}>
-          MORAL LICENSING
+      <AbsoluteFill style={{
+        display: 'flex', flexDirection: 'column', alignItems: 'center',
+        justifyContent: 'center', gap: 52, padding: '0 60px',
+      }}>
+        <div style={{ transform: `translateY(${titleY}px)`, textAlign: 'center' }}>
+          <p style={headline(46, BLACK)}>SAME PRICE.</p>
+          <p style={headline(46, RED)}>LESS PRODUCT.</p>
         </div>
 
-        <svg width={960} height={620} viewBox="0 0 960 620">
-          {/* Checkmark box — left */}
-          <g opacity={checkOp}>
-            <rect x={48} y={110} width={200} height={200} rx={20} fill={GREEN} opacity={0.12} stroke={GREEN} strokeWidth={3} />
-            <polyline points="88,212 134,258 224,162" stroke={GREEN} strokeWidth={18} fill="none" strokeLinecap="round" strokeLinejoin="round" />
-            <text x={148} y={346} textAnchor="middle" fill={GREEN} fontFamily={FONT} fontSize={22} fontWeight="bold">GOOD DEED</text>
-            <text x={148} y={374} textAnchor="middle" fill={GREEN} fontFamily={FONT} fontSize={22} fontWeight="bold">DONE</text>
-          </g>
+        <div style={{ display: 'flex', gap: 56, alignItems: 'flex-end', justifyContent: 'center' }}>
+          {/* 2020 — bigger carton */}
+          <div style={{ textAlign: 'center', transform: `scale(${leftScale})`, transformOrigin: 'bottom center' }}>
+            <svg width="160" height="220" viewBox="0 0 160 220">
+              <rect x="20" y="20" width="120" height="180" rx="10" fill="#FDE68A" stroke={BLACK} strokeWidth={5}/>
+              <path d="M20 20 L80 48 L140 20" stroke={BLACK} strokeWidth={3} fill="none"/>
+              <circle cx="80" cy="10" r="8" fill={BLACK}/>
+              <rect x="22" y="80" width="116" height="118" rx="8" fill="#F97316" opacity={0.45}/>
+              <rect x="30" y="90" width="100" height="60" rx="6" fill={WHITE} opacity={0.92}/>
+              <text x="80" y="114" textAnchor="middle" fontFamily="Arial Black" fontSize="15" fontWeight="bold" fill={BLACK}>ORANGE</text>
+              <text x="80" y="132" textAnchor="middle" fontFamily="Arial Black" fontSize="15" fontWeight="bold" fill={BLACK}>JUICE</text>
+              <text x="80" y="150" textAnchor="middle" fontFamily="Arial Black" fontSize="13" fill={GRAY}>64 OZ</text>
+            </svg>
+            <p style={{ ...headline(24, BLACK), marginTop: 10 }}>2020</p>
+            <p style={{ ...headline(36, GREEN), marginTop: 4 }}>$4.99</p>
+          </div>
 
-          {/* Brain — center, springs in */}
-          <g transform={`translate(480, 210) scale(${brainScale})`}>
-            <path d="M0,-100 Q38,-126 68,-100 Q96,-76 86,-42 Q104,-18 90,16 Q76,50 52,58 Q28,68 0,62 Q-28,68 -52,58 Q-76,50 -90,16 Q-104,-18 -86,-42 Q-96,-76 -68,-100 Q-38,-126 0,-100 Z" fill={BLACK} opacity={0.1} stroke={BLACK} strokeWidth={4} />
-            <path d="M0,-76 Q22,-90 42,-74 Q56,-56 48,-34 M-26,-62 Q-8,-84 8,-74" stroke={BLACK} strokeWidth={3} fill="none" opacity={0.35} strokeLinecap="round" />
-            <rect x={-40} y={-28} width={80} height={56} rx={8} fill={ACCENT} opacity={0.92} />
-            <text y={-10} textAnchor="middle" fill={BLACK} fontFamily={FONT} fontSize={15} fontWeight="bold">PERMISSION</text>
-            <text y={12} textAnchor="middle" fill={BLACK} fontFamily={FONT} fontSize={15} fontWeight="bold">SLIP</text>
-          </g>
+          {/* Arrow */}
+          <div style={{ opacity: arrowOp, paddingBottom: 90 }}>
+            <p style={{ fontFamily: FONT, fontSize: 56, color: GRAY, margin: 0 }}>→</p>
+          </div>
 
-          {/* Shopping cart — right */}
-          <g opacity={cartOp}>
-            <path d="M696,118 L696,218 L836,218 L852,132 L712,132 Z" fill={ACCENT} opacity={0.2} stroke={ACCENT} strokeWidth={3} />
-            <path d="M666,98 L696,118" stroke={ACCENT} strokeWidth={9} strokeLinecap="round" />
-            <circle cx={716} cy={240} r={20} fill={ACCENT} />
-            <circle cx={816} cy={240} r={20} fill={ACCENT} />
-            <text x={764} y={182} textAnchor="middle" fill={ACCENT} fontFamily={FONT} fontSize={50} fontWeight="bold">$</text>
-            <text x={764} y={318} textAnchor="middle" fill={ACCENT} fontFamily={FONT} fontSize={22} fontWeight="bold">REWARD</text>
-            <text x={764} y={346} textAnchor="middle" fill={ACCENT} fontFamily={FONT} fontSize={22} fontWeight="bold">UNLOCKED</text>
-          </g>
-
-          {/* Arrows */}
-          <line x1={250} y1={210} x2={360} y2={210} stroke={GREEN} strokeWidth={5} strokeLinecap="round" opacity={checkOp} />
-          <polygon points="362,200 382,210 362,220" fill={GREEN} opacity={checkOp} />
-          <line x1={598} y1={210} x2={664} y2={210} stroke={ACCENT} strokeWidth={5} strokeLinecap="round" opacity={cartOp * arrowPulse} />
-          <polygon points="666,200 686,210 666,220" fill={ACCENT} opacity={cartOp * arrowPulse} />
-        </svg>
-
-        <div style={{ ...headline(34, BLACK), opacity: statOp, padding: '18px 42px', background: 'rgba(245,158,11,0.12)', borderRadius: 16, border: `3px solid ${ACCENT}` }}>
-          40% MORE LIKELY TO SPLURGE AFTER BEING "GOOD"
+          {/* 2024 — smaller carton */}
+          <div style={{ textAlign: 'center', transform: `scale(${rightScale})`, transformOrigin: 'bottom center' }}>
+            <svg width="120" height="168" viewBox="0 0 120 168">
+              <rect x="15" y="15" width="90" height="143" rx="8" fill="#FDE68A" stroke={BLACK} strokeWidth={5}/>
+              <path d="M15 15 L60 38 L105 15" stroke={BLACK} strokeWidth={3} fill="none"/>
+              <circle cx="60" cy="7" r="7" fill={BLACK}/>
+              <rect x="17" y="62" width="86" height="94" rx="6" fill="#F97316" opacity={0.45}/>
+              <rect x="24" y="70" width="72" height="52" rx="5" fill={WHITE} opacity={0.92}/>
+              <text x="60" y="91" textAnchor="middle" fontFamily="Arial Black" fontSize="12" fontWeight="bold" fill={BLACK}>ORANGE</text>
+              <text x="60" y="106" textAnchor="middle" fontFamily="Arial Black" fontSize="12" fontWeight="bold" fill={BLACK}>JUICE</text>
+              <text x="60" y="121" textAnchor="middle" fontFamily="Arial Black" fontSize="11" fill={RED}>52 OZ</text>
+            </svg>
+            <p style={{ ...headline(24, BLACK), marginTop: 10 }}>2024</p>
+            <p style={{ ...headline(36, RED), marginTop: 4 }}>$4.99</p>
+          </div>
         </div>
+
+        <p style={{ ...headline(36, BLACK), opacity: subOp }}>
+          YOU NEVER EVEN NOTICED
+        </p>
       </AbsoluteFill>
     </FadeScene>
   );
 };
 
-// ─── Scene 3: Three triggers — dumbbell, salad, laptop ───────────────────────
+// Scene 3: Bar chart — -15% package size / +26% price / 49% effective hike
 const Scene3: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
 
-  const titleOp = interpolate(frame, [0, 25], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const titleSp = spring({ frame, fps: 30, config: { damping: 14, stiffness: 80 } });
+  const titleY = interpolate(titleSp, [0, 1], [60, 0]);
 
-  const s1Sp = spring({ frame: Math.max(0, frame - 18), fps: 30, config: { damping: 13, stiffness: 95 } });
-  const s2Sp = spring({ frame: Math.max(0, frame - 62), fps: 30, config: { damping: 13, stiffness: 95 } });
-  const s3Sp = spring({ frame: Math.max(0, frame - 106), fps: 30, config: { damping: 13, stiffness: 95 } });
-  const s1Scale = interpolate(s1Sp, [0, 1], [0, 1]);
-  const s2Scale = interpolate(s2Sp, [0, 1], [0, 1]);
-  const s3Scale = interpolate(s3Sp, [0, 1], [0, 1]);
+  const bar1H = interpolate(frame, [25, 100], [0, 118], {
+    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
+  });
+  const bar2H = interpolate(frame, [75, 155], [0, 182], {
+    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
+  });
+  const bar3H = interpolate(frame, [130, 205], [0, 295], {
+    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
+  });
 
-  const cartSp = spring({ frame: Math.max(0, frame - 146), fps: 30, config: { damping: 12, stiffness: 85 } });
-  const cartScale = interpolate(cartSp, [0, 1], [0, 1]);
-  const arrowOp = interpolate(frame, [146, 172], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const lbl1Op = interpolate(frame, [25, 55], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const lbl2Op = interpolate(frame, [75, 105], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const lbl3Op = interpolate(frame, [130, 160], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+
+  const BASELINE = 435;
 
   return (
     <FadeScene bg={BG_DARK} dur={dur}>
-      <AbsoluteFill style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: 96 }}>
-        <div style={{ ...headline(60, ACCENT), opacity: titleOp, marginBottom: 48 }}>
-          THE 3 TRIGGERS
+      <AbsoluteFill style={{
+        display: 'flex', flexDirection: 'column', alignItems: 'center',
+        justifyContent: 'center', gap: 30, padding: '0 60px',
+      }}>
+        <div style={{ transform: `translateY(${titleY}px)`, textAlign: 'center' }}>
+          <p style={headline(40, WHITE)}>THE MATH THEY</p>
+          <p style={headline(40, ACCENT)}>DON'T SHOW YOU</p>
         </div>
 
-        <svg width={980} height={860} viewBox="0 0 980 860">
-          {/* Trigger 1: Dumbbell */}
-          <g transform={`translate(155, 295) scale(${s1Scale})`}>
-            <circle cx={0} cy={-128} r={44} fill={ACCENT} />
-            <text x={0} y={-112} textAnchor="middle" fill={BLACK} fontFamily={FONT} fontSize={38} fontWeight="bold">1</text>
-            <rect x={-72} y={-18} width={144} height={36} rx={10} fill={WHITE} />
-            <rect x={-104} y={-52} width={36} height={104} rx={12} fill={WHITE} />
-            <rect x={-118} y={-62} width={28} height={124} rx={12} fill={WHITE} opacity={0.65} />
-            <rect x={68} y={-52} width={36} height={104} rx={12} fill={WHITE} />
-            <rect x={90} y={-62} width={28} height={124} rx={12} fill={WHITE} opacity={0.65} />
-            <text x={0} y={90} textAnchor="middle" fill={WHITE} fontFamily={FONT} fontSize={22} fontWeight="bold">GYM VISIT</text>
-          </g>
+        <svg width="860" height="520" viewBox="0 0 860 520">
+          <line x1="40" y1={BASELINE} x2="820" y2={BASELINE} stroke={GRAY} strokeWidth={2} opacity={0.3}/>
 
-          {/* Trigger 2: Salad bowl */}
-          <g transform={`translate(490, 295) scale(${s2Scale})`}>
-            <circle cx={0} cy={-128} r={44} fill={ACCENT} />
-            <text x={0} y={-112} textAnchor="middle" fill={BLACK} fontFamily={FONT} fontSize={38} fontWeight="bold">2</text>
-            <path d="M-78,0 Q-78,88 0,98 Q78,88 78,0 Z" fill="#92400E" opacity={0.85} />
-            <ellipse cx={0} cy={0} rx={78} ry={24} fill="#78350F" />
-            <ellipse cx={0} cy={-8} rx={64} ry={20} fill="#16A34A" />
-            <ellipse cx={-20} cy={-14} rx={19} ry={9} fill="#4ADE80" />
-            <ellipse cx={18} cy={-16} rx={15} ry={7} fill="#86EFAC" />
-            <circle cx={-8} cy={-18} r={7} fill="#DC2626" />
-            <circle cx={14} cy={-12} r={5} fill="#FCD34D" />
-            <text x={0} y={90} textAnchor="middle" fill={WHITE} fontFamily={FONT} fontSize={22} fontWeight="bold">EATING CLEAN</text>
-          </g>
+          {/* Bar 1: Size down 15% */}
+          <rect x="80" y={BASELINE - bar1H} width="160" height={bar1H} rx="8" fill={RED} opacity={0.9}/>
+          <text x="160" y={Math.max(BASELINE - bar1H - 14, 22)} textAnchor="middle"
+            fill={RED} fontFamily="Arial Black" fontSize="34" fontWeight="bold" opacity={lbl1Op}>-15%</text>
+          <text x="160" y={BASELINE + 36} textAnchor="middle" fill={WHITE} fontFamily="Arial Black" fontSize="20">PACKAGE</text>
+          <text x="160" y={BASELINE + 60} textAnchor="middle" fill={WHITE} fontFamily="Arial Black" fontSize="20">SIZE</text>
 
-          {/* Trigger 3: Laptop */}
-          <g transform={`translate(825, 295) scale(${s3Scale})`}>
-            <circle cx={0} cy={-128} r={44} fill={ACCENT} />
-            <text x={0} y={-112} textAnchor="middle" fill={BLACK} fontFamily={FONT} fontSize={38} fontWeight="bold">3</text>
-            <rect x={-86} y={28} width={172} height={15} rx={8} fill={WHITE} opacity={0.72} />
-            <rect x={-76} y={-80} width={152} height={110} rx={10} fill={WHITE} opacity={0.9} />
-            <rect x={-66} y={-70} width={132} height={92} rx={6} fill="#1D4ED8" opacity={0.85} />
-            <polyline points="-28,-24 -4,12 46,-36" stroke={WHITE} strokeWidth={9} fill="none" strokeLinecap="round" strokeLinejoin="round" />
-            <text x={0} y={90} textAnchor="middle" fill={WHITE} fontFamily={FONT} fontSize={20} fontWeight="bold">WORK DEADLINE</text>
-          </g>
+          {/* Bar 2: Price up 26% */}
+          <rect x="340" y={BASELINE - bar2H} width="160" height={bar2H} rx="8" fill={ACCENT} opacity={0.9}/>
+          <text x="420" y={Math.max(BASELINE - bar2H - 14, 22)} textAnchor="middle"
+            fill={ACCENT} fontFamily="Arial Black" fontSize="34" fontWeight="bold" opacity={lbl2Op}>+26%</text>
+          <text x="420" y={BASELINE + 36} textAnchor="middle" fill={WHITE} fontFamily="Arial Black" fontSize="20">PRICE</text>
+          <text x="420" y={BASELINE + 60} textAnchor="middle" fill={WHITE} fontFamily="Arial Black" fontSize="20">PAID</text>
 
-          {/* Converging dashed arrows → central cart */}
-          <g opacity={arrowOp}>
-            <line x1={155} y1={390} x2={432} y2={565} stroke={ACCENT} strokeWidth={5} strokeLinecap="round" strokeDasharray="11,7" />
-            <line x1={490} y1={390} x2={490} y2={568} stroke={ACCENT} strokeWidth={5} strokeLinecap="round" strokeDasharray="11,7" />
-            <line x1={825} y1={390} x2={548} y2={565} stroke={ACCENT} strokeWidth={5} strokeLinecap="round" strokeDasharray="11,7" />
-          </g>
-
-          {/* Central shopping cart */}
-          <g transform={`translate(490, 618) scale(${cartScale})`}>
-            <path d="M-96,-20 L-96,92 L96,92 L110,-20 Z" fill={ACCENT} opacity={0.22} stroke={ACCENT} strokeWidth={4} />
-            <path d="M-130,-44 L-96,-20" stroke={ACCENT} strokeWidth={10} strokeLinecap="round" />
-            <circle cx={-56} cy={118} r={22} fill={ACCENT} />
-            <circle cx={56} cy={118} r={22} fill={ACCENT} />
-            <text x={0} y={58} textAnchor="middle" fill={ACCENT} fontFamily={FONT} fontSize={66} fontWeight="bold">$</text>
-          </g>
-
-          <text x={490} y={786} textAnchor="middle" fill={WHITE} fontFamily={FONT} fontSize={26} fontWeight="bold" opacity={arrowOp}>
-            ALL 3 FLIP THE SAME BRAIN SWITCH
-          </text>
+          {/* Bar 3: Effective hike 49% */}
+          <rect x="600" y={BASELINE - bar3H} width="160" height={bar3H} rx="8" fill={GREEN} opacity={0.9}/>
+          <text x="680" y={Math.max(BASELINE - bar3H - 14, 22)} textAnchor="middle"
+            fill={GREEN} fontFamily="Arial Black" fontSize="34" fontWeight="bold" opacity={lbl3Op}>49%</text>
+          <text x="680" y={BASELINE + 36} textAnchor="middle" fill={WHITE} fontFamily="Arial Black" fontSize="20">REAL</text>
+          <text x="680" y={BASELINE + 60} textAnchor="middle" fill={WHITE} fontFamily="Arial Black" fontSize="20">HIKE</text>
         </svg>
+
+        <p style={headline(34, ACCENT)}>EFFECTIVE PRICE HIKE = 49%</p>
       </AbsoluteFill>
     </FadeScene>
   );
 };
 
-// ─── Scene 4: $4,800 counter + monthly bar chart ─────────────────────────────
+// Scene 4: Three product examples sliding in — OJ, chips, ice cream
 const Scene4: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
 
-  const titleOp = interpolate(frame, [0, 25], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const titleSp = spring({ frame, fps: 30, config: { damping: 14, stiffness: 80 } });
+  const titleY = interpolate(titleSp, [0, 1], [60, 0]);
 
-  const counterProg = interpolate(frame, [38, 162], [0, 1], {
-    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
-    easing: Easing.out(Easing.cubic),
-  });
-  const dollarVal = Math.round(counterProg * 4800);
+  const delays = [20, 80, 140];
 
-  const barReveal = interpolate(frame, [52, 185], [0, 12], {
-    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
-  });
-  const visibleBars = Math.max(0, Math.floor(barReveal));
+  const item0Sp = spring({ frame: Math.max(0, frame - delays[0]), fps: 30, config: { damping: 14, stiffness: 70 } });
+  const item1Sp = spring({ frame: Math.max(0, frame - delays[1]), fps: 30, config: { damping: 14, stiffness: 70 } });
+  const item2Sp = spring({ frame: Math.max(0, frame - delays[2]), fps: 30, config: { damping: 14, stiffness: 70 } });
 
-  const statOp = interpolate(frame, [168, 205], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const item0X = interpolate(item0Sp, [0, 1], [-300, 0]);
+  const item1X = interpolate(item1Sp, [0, 1], [-300, 0]);
+  const item2X = interpolate(item2Sp, [0, 1], [-300, 0]);
 
-  const barHeights = [0.85, 0.90, 1.00, 0.95, 0.88, 0.92, 0.97, 0.83, 0.91, 0.87, 0.94, 0.96];
-  const months = ['J','F','M','A','M','J','J','A','S','O','N','D'];
+  const item0Op = interpolate(item0Sp, [0, 0.4], [0, 1]);
+  const item1Op = interpolate(item1Sp, [0, 0.4], [0, 1]);
+  const item2Op = interpolate(item2Sp, [0, 0.4], [0, 1]);
+
+  const itemXVals = [item0X, item1X, item2X];
+  const itemOpVals = [item0Op, item1Op, item2Op];
+
+  const products = [
+    { label: 'ORANGE JUICE', before: '64 OZ', after: '52 OZ' },
+    { label: 'POTATO CHIPS', before: '16 OZ', after: '13 OZ' },
+    { label: 'ICE CREAM', before: '56 OZ', after: '48 OZ' },
+  ];
 
   return (
     <FadeScene bg={BG_LIGHT} dur={dur}>
-      <AbsoluteFill style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: 102 }}>
-        <div style={{ ...headline(60, BLACK), opacity: titleOp, marginBottom: 28 }}>
-          THE MATH
+      <AbsoluteFill style={{
+        display: 'flex', flexDirection: 'column', alignItems: 'center',
+        justifyContent: 'center', gap: 44, padding: '0 60px',
+      }}>
+        <div style={{ transform: `translateY(${titleY}px)`, textAlign: 'center' }}>
+          <p style={headline(38, BLACK)}>REAL EXAMPLES</p>
+          <p style={headline(38, RED)}>SAME PRICE, LESS INSIDE</p>
         </div>
 
-        <div style={{
-          fontFamily: FONT,
-          fontSize: 112,
-          color: ACCENT,
-          letterSpacing: '0.04em',
-          fontWeight: 900,
-          lineHeight: 1,
-          marginBottom: 14,
-        }}>
-          ${dollarVal.toLocaleString()}
-        </div>
-        <div style={{ ...headline(28, GRAY), marginBottom: 38 }}>PER YEAR ON "SELF-REWARDS"</div>
-
-        <svg width={960} height={360} viewBox="0 0 960 360">
-          <line x1={36} y1={310} x2={924} y2={310} stroke={BLACK} strokeWidth={2} opacity={0.28} />
-          {months.map((month, i) => {
-            const bx = 48 + i * 73;
-            const bh = barHeights[i] * 210;
-            const visible = i < visibleBars;
-            return (
-              <g key={i} opacity={visible ? 1 : 0}>
-                <rect x={bx} y={310 - bh} width={54} height={bh} rx={6} fill={ACCENT} opacity={0.82} />
-                <text x={bx + 27} y={334} textAnchor="middle" fill={BLACK} fontFamily={FONT} fontSize={18}>{month}</text>
-                <text x={bx + 27} y={310 - bh - 8} textAnchor="middle" fill={ACCENT} fontFamily={FONT} fontSize={14} fontWeight="bold">$400</text>
-              </g>
-            );
-          })}
-        </svg>
-
-        <div style={{ ...headline(32, BLACK), opacity: statOp, marginTop: 14 }}>
-          73% OF AMERICANS DO THIS EVERY MONTH
-        </div>
+        {products.map((product, i) => (
+          <div
+            key={i}
+            style={{
+              transform: `translateX(${itemXVals[i]}px)`,
+              opacity: itemOpVals[i],
+              display: 'flex',
+              alignItems: 'center',
+              gap: 24,
+              background: WHITE,
+              borderRadius: 18,
+              padding: '20px 36px',
+              width: '100%',
+              maxWidth: 860,
+              boxShadow: '0 4px 20px rgba(0,0,0,0.08)',
+            }}
+          >
+            <p style={{ ...headline(46, ACCENT), minWidth: 60 }}>{String(i + 1)}</p>
+            <p style={{ fontFamily: FONT, fontSize: 30, color: BLACK, flex: 1, margin: 0, letterSpacing: '0.06em' }}>
+              {product.label}
+            </p>
+            <div style={{ textAlign: 'center' }}>
+              <p style={{ fontFamily: FONT, fontSize: 28, color: GREEN, margin: 0 }}>{product.before}</p>
+              <p style={{ fontFamily: FONT, fontSize: 22, color: GRAY, margin: '4px 0' }}>→</p>
+              <p style={{ fontFamily: FONT, fontSize: 28, color: RED, margin: 0 }}>{product.after}</p>
+            </div>
+          </div>
+        ))}
       </AbsoluteFill>
     </FadeScene>
   );
 };
 
-// ─── Scene 5: Two bars — spent vs invested ────────────────────────────────────
+// Scene 5: Annual cost — $9,500 × 49% = $2,900 counter
 const Scene5: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
 
-  const titleOp = interpolate(frame, [0, 25], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const titleSp = spring({ frame, fps: 30, config: { damping: 14, stiffness: 80 } });
+  const titleY = interpolate(titleSp, [0, 1], [80, 0]);
 
-  const prog = interpolate(frame, [36, 180], [0, 1], {
+  const line1Op = interpolate(frame, [28, 65], [0, 1], {
+    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
+  });
+  const line2Op = interpolate(frame, [80, 118], [0, 1], {
+    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
+  });
+
+  const totalProg = interpolate(frame, [126, 200], [0, 1], {
     extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
     easing: Easing.out(Easing.cubic),
   });
+  const totalVal = Math.round(totalProg * 2900);
 
-  const spentBarH = interpolate(prog, [0, 1], [0, 148]);
-  const investBarH = interpolate(prog, [0, 1], [0, 580]);
-
-  const labelOp = interpolate(frame, [168, 205], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-
-  const spentVal = Math.round(prog * 4800);
-  const investVal = Math.round(prog * 576000);
-
-  const fmtInvest = (n: number): string => {
-    if (n >= 1000) return `$${Math.round(n / 1000)}K`;
-    return `$${n}`;
-  };
+  const subOp = interpolate(frame, [200, 220], [0, 1], {
+    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
+  });
 
   return (
     <FadeScene bg={BG_DARK} dur={dur}>
-      <AbsoluteFill style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: 100 }}>
-        <div style={{ ...headline(58, WHITE), opacity: titleOp, marginBottom: 36 }}>
-          WHAT IT REALLY COSTS
+      <AbsoluteFill style={{
+        display: 'flex', flexDirection: 'column', alignItems: 'center',
+        justifyContent: 'center', gap: 38, padding: '0 70px',
+      }}>
+        <div style={{ transform: `translateY(${titleY}px)`, textAlign: 'center' }}>
+          <p style={headline(42, WHITE)}>WHAT IT COSTS</p>
+          <p style={headline(42, ACCENT)}>YOUR HOUSEHOLD</p>
         </div>
 
-        <svg width={920} height={820} viewBox="0 0 920 820">
-          <line x1={48} y1={756} x2={872} y2={756} stroke={WHITE} strokeWidth={2} opacity={0.18} />
+        <div style={{ opacity: line1Op, textAlign: 'center' }}>
+          <p style={headline(30, GRAY)}>AVERAGE GROCERY SPEND</p>
+          <p style={{ ...headline(60, WHITE), marginTop: 10 }}>$9,500 / YEAR</p>
+        </div>
 
-          {/* Left: spent bar */}
-          <rect x={96} y={756 - spentBarH} width={224} height={spentBarH} rx={10} fill={RED} opacity={0.86} />
-          <text x={208} y={Math.max(756 - spentBarH - 16, 28)} textAnchor="middle" fill={RED} fontFamily={FONT} fontSize={28} fontWeight="bold">
-            {spentVal < 50 ? '$0' : `$${spentVal.toLocaleString()}`}
-          </text>
-          <text x={208} y={784} textAnchor="middle" fill={WHITE} fontFamily={FONT} fontSize={21} fontWeight="bold">SPENT ON</text>
-          <text x={208} y={810} textAnchor="middle" fill={WHITE} fontFamily={FONT} fontSize={21} fontWeight="bold">TREATS / YR</text>
+        <div style={{ opacity: line2Op, textAlign: 'center' }}>
+          <p style={headline(30, GRAY)}>× 49% EFFECTIVE HIKE</p>
+          <p style={{ ...headline(30, WHITE), marginTop: 12 }}>= EXTRA YOU'RE PAYING:</p>
+        </div>
 
-          {/* VS */}
-          <text x={460} y={420} textAnchor="middle" fill={WHITE} fontFamily={FONT} fontSize={52} fontWeight="bold">VS</text>
-          <text x={460} y={470} textAnchor="middle" fill={GRAY} fontFamily={FONT} fontSize={20}>SAME MONEY, INVESTED</text>
+        <div style={{ textAlign: 'center' }}>
+          <p style={{ fontFamily: FONT, fontSize: 110, color: RED, margin: 0, lineHeight: 1 }}>
+            ${totalVal.toLocaleString()}
+          </p>
+          <p style={{ ...headline(34, WHITE), marginTop: 10 }}>PER YEAR</p>
+        </div>
 
-          {/* Right: invested bar */}
-          <rect x={600} y={756 - Math.min(investBarH, 720)} width={224} height={Math.min(investBarH, 720)} rx={10} fill={GREEN} opacity={0.86} />
-          <text x={712} y={Math.max(756 - Math.min(investBarH, 720) - 16, 28)} textAnchor="middle" fill={GREEN} fontFamily={FONT} fontSize={28} fontWeight="bold">
-            {investVal < 50 ? '$0' : fmtInvest(investVal)}
-          </text>
-          <text x={712} y={784} textAnchor="middle" fill={WHITE} fontFamily={FONT} fontSize={21} fontWeight="bold">INVESTED</text>
-          <text x={712} y={810} textAnchor="middle" fill={WHITE} fontFamily={FONT} fontSize={21} fontWeight="bold">OVER 30 YRS</text>
-
-          <text x={460} y={648} textAnchor="middle" fill={ACCENT} fontFamily={FONT} fontSize={24} fontWeight="bold" opacity={labelOp}>
-            YOUR TREATS ARE EATING YOUR RETIREMENT
-          </text>
-        </svg>
+        <p style={{ ...headline(26, GRAY), opacity: subOp }}>
+          FOR LESS FOOD THAN YOU GOT IN 2020
+        </p>
       </AbsoluteFill>
     </FadeScene>
   );
 };
 
-// ─── Scene 6: 24-hour rule + CTA ─────────────────────────────────────────────
+// Scene 6: CTA — check price per ounce, not per package
 const Scene6: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
 
   const titleSp = spring({ frame, fps: 30, config: { damping: 14, stiffness: 80 } });
-  const titleY = interpolate(titleSp, [0, 1], [70, 0]);
+  const titleY = interpolate(titleSp, [0, 1], [80, 0]);
 
-  const glassSp = spring({ frame: Math.max(0, frame - 22), fps: 30, config: { damping: 12, stiffness: 88 } });
-  const glassScale = interpolate(glassSp, [0, 1], [0.4, 1]);
-  const glassOp = interpolate(frame, [22, 55], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const tagSp = spring({ frame: Math.max(0, frame - 28), fps: 30, config: { damping: 12, stiffness: 70 } });
+  const tagScale = interpolate(tagSp, [0, 1], [0.3, 1]);
 
-  const sandProg = interpolate(frame, [38, 185], [0, 1], {
+  const checkSp = spring({ frame: Math.max(0, frame - 90), fps: 30, config: { damping: 14, stiffness: 90 } });
+  const checkScale = interpolate(checkSp, [0, 1], [0, 1]);
+
+  const ctaOp = interpolate(frame, [144, 182], [0, 1], {
     extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
-    easing: Easing.in(Easing.cubic),
   });
-  const topSandH = interpolate(sandProg, [0, 1], [104, 0]);
-  const botSandH = interpolate(sandProg, [0, 1], [0, 104]);
-
-  const statOp = interpolate(frame, [98, 130], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const ctaSp = spring({ frame: Math.max(0, frame - 148), fps: 30, config: { damping: 10, stiffness: 100 } });
-  const ctaScale = interpolate(ctaSp, [0, 1], [0.75, 1]);
-  const ctaOp = interpolate(frame, [148, 178], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const followOp = interpolate(frame, [188, 215], [0, 1], {
+    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
+  });
 
   return (
     <FadeScene bg={BG_LIGHT} dur={dur}>
-      <AbsoluteFill style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: 102 }}>
-        <div style={{ ...headline(64, BLACK), transform: `translateY(${titleY}px)`, marginBottom: 36 }}>
-          THE 24-HOUR RULE
+      <AbsoluteFill style={{
+        display: 'flex', flexDirection: 'column', alignItems: 'center',
+        justifyContent: 'center', gap: 42, padding: '0 60px',
+      }}>
+        <div style={{ transform: `translateY(${titleY}px)`, textAlign: 'center' }}>
+          <p style={headline(46, BLACK)}>THE FIX IS</p>
+          <p style={headline(46, GREEN)}>ONE NUMBER</p>
         </div>
 
-        <svg
-          width={420}
-          height={490}
-          viewBox="0 0 420 490"
-          style={{ opacity: glassOp, transform: `scale(${glassScale})`, transformOrigin: 'center center' }}
-        >
-          {/* Hourglass frame */}
-          <path d="M56,18 L364,18 L226,238 L364,458 L56,458 L194,238 Z" fill="rgba(0,0,0,0.06)" stroke={BLACK} strokeWidth={6} strokeLinejoin="round" />
-          <rect x={44} y={8} width={332} height={22} rx={9} fill={BLACK} opacity={0.8} />
-          <rect x={44} y={460} width={332} height={22} rx={9} fill={BLACK} opacity={0.8} />
-
-          {/* Top sand (draining) */}
-          <clipPath id="sandTop">
-            <path d="M58,20 L362,20 L224,238 L196,238 Z" />
-          </clipPath>
-          <rect x={58} y={20} width={304} height={topSandH} fill={ACCENT} clipPath="url(#sandTop)" opacity={0.88} />
-
-          {/* Bottom sand (filling) */}
-          <clipPath id="sandBot">
-            <path d="M196,238 L224,238 L362,458 L58,458 Z" />
-          </clipPath>
-          <rect x={58} y={458 - botSandH} width={304} height={botSandH} fill={ACCENT} clipPath="url(#sandBot)" opacity={0.88} />
-
-          <text x={210} y={270} textAnchor="middle" fill={BLACK} fontFamily={FONT} fontSize={52} fontWeight="bold">24</text>
-          <text x={210} y={320} textAnchor="middle" fill={BLACK} fontFamily={FONT} fontSize={30} fontWeight="bold">HRS</text>
-        </svg>
-
-        <div style={{ opacity: statOp, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10, marginTop: 24 }}>
-          <div style={{ ...headline(36, BLACK) }}>WAIT BEFORE YOU BUY</div>
-          <div style={{ fontFamily: FONT, fontSize: 28, color: GRAY, textAlign: 'center' as const, letterSpacing: '0.04em' }}>
-            Kills 67% of impulse splurges cold
-          </div>
+        {/* Price tag showing $/oz */}
+        <div style={{ transform: `scale(${tagScale})` }}>
+          <svg width="380" height="210" viewBox="0 0 380 210">
+            <rect x="10" y="10" width="360" height="190" rx="22" fill={WHITE} stroke={BLACK} strokeWidth={6}/>
+            <rect x="10" y="10" width="86" height="190" rx="22" fill={ACCENT}/>
+            <rect x="55" y="10" width="41" height="190" fill={ACCENT}/>
+            <circle cx="55" cy="36" r="15" fill={BG_LIGHT} stroke={BLACK} strokeWidth={4}/>
+            <text x="116" y="82" fontFamily="Arial Black" fontWeight="900" fontSize="24" fill={BLACK}>PRICE PER OZ</text>
+            <rect x="108" y="96" width="262" height="3" fill={GRAY} opacity={0.3}/>
+            <text x="116" y="152" fontFamily="Arial Black" fontWeight="900" fontSize="52" fill={GREEN}>$0.078</text>
+            <text x="116" y="187" fontFamily="Arial" fontSize="21" fill={GRAY}>/oz — not /package</text>
+          </svg>
         </div>
 
+        {/* Checkmark + label */}
         <div style={{
-          ...headline(42, BLACK),
-          opacity: ctaOp,
-          transform: `scale(${ctaScale})`,
-          marginTop: 40,
-          background: ACCENT,
-          padding: '24px 52px',
-          borderRadius: 20,
+          display: 'flex', alignItems: 'center', gap: 20,
+          transform: `scale(${checkScale})`, transformOrigin: 'center',
         }}>
-          FOLLOW FOR MORE MONEY TRUTHS
+          <svg width="64" height="64" viewBox="0 0 64 64">
+            <circle cx="32" cy="32" r="30" fill={GREEN}/>
+            <polyline points="15,32 27,44 49,20" stroke={WHITE} strokeWidth={7} fill="none"
+              strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+          <p style={headline(36, BLACK)}>CHECK $/OZ NOT $/PACK</p>
         </div>
+
+        <p style={{ ...headline(32, RED), opacity: ctaOp }}>SAVES YOU $2,900 A YEAR</p>
+
+        <p style={{ ...headline(28, BLACK), opacity: followOp }}>FOLLOW FOR MORE MONEY TRAPS</p>
       </AbsoluteFill>
     </FadeScene>
   );
@@ -472,6 +455,3 @@ export default function DAILY() {
     </AbsoluteFill>
   );
 }
-
-
-

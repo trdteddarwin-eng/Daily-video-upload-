@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You crushed your workout, ate clean all week, and nailed that big deadline. So you bought something nice — you deserved it, right? That phrase is quietly draining thousands from you.",
-    "visual": "Person silhouette holding a shopping bag, 'I DESERVE THIS' text springs into frame in bold amber. Sub-text: 'THAT PHRASE IS COSTING YOU THOUSANDS'.",
+    "narration": "Here's something nobody's telling you — your groceries are shrinking. Companies call it shrinkflation, and it's quietly draining $2,900 a year from your wallet.",
+    "visual": "Shopping cart SVG with two stats animating simultaneously: price ticking UP ($7.99 to $11.49) and package size ticking DOWN (64oz to 52oz). Bold 'SHRINKFLATION' headline drops in from above.",
     "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "Scientists call it moral licensing. When you do something virtuous, your brain hands itself a permission slip to splurge — and studies show that makes you 40% more likely to blow money right after.",
-    "visual": "Brain icon in center on light background, checkmark on left labeled 'GOOD DEED DONE', shopping cart on right labeled 'REWARD UNLOCKED'. Amber arrow pulses from brain to cart.",
+    "narration": "Companies keep the price the same but quietly shrink the package. Your orange juice went from 64 ounces to 52 — same price, way less juice.",
+    "visual": "Two orange juice cartons side by side — 2020 version taller labeled 64 OZ at $4.99 in green, vs 2024 version shorter labeled 52 OZ at $4.99 in red. Arrow between them. Light background.",
     "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Number one trigger: the gym visit. Number two: sticking to your diet. Number three: finishing a tough work deadline. Each one flips the exact same switch in your brain.",
-    "visual": "Three icons spring in staggered: dumbbell, salad bowl, laptop with checkmark. Dashed amber arrows converge from all three down to a central shopping cart. Numbered 1, 2, 3.",
+    "narration": "Since 2020, products shrank 15% while prices jumped 26%. That combo hits you with a 49% effective price hike — and most people never even noticed.",
+    "visual": "Three SVG bars growing from baseline: red bar for -15% package size, amber bar for +26% price, green bar for 49% effective hike (tallest). Each label springs in as bar grows. Dark background.",
     "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "Here's the math. Seventy-three percent of Americans self-reward regularly, spending around $400 a month doing it. That's $4,800 a year — every year — on purchases that felt earned.",
-    "visual": "Large amber dollar counter animates from $0 to $4,800. Below it, 12 amber monthly bars fill in one by one across a bar chart, each labeled $400.",
+    "narration": "Number one, orange juice: 64 ounces down to 52. Number two, chips: 16 ounces down to 13. Number three, ice cream: 56 ounces to 48. Same. Exact. Price.",
+    "visual": "Three product cards sliding in from the left one by one — each showing product name, before oz in green, arrow, after oz in red. Numbered 1, 2, 3 in amber. Light background.",
     "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "But here's what it actually costs you. Four thousand eight hundred dollars a year, invested instead, grows to $576,000 over thirty years. Your little treats are eating your entire retirement.",
-    "visual": "Two growing bars side by side — left (red) climbs to $4,800 labeled 'SPENT ON TREATS/YR', right (green) shoots up to $576K labeled 'INVESTED OVER 30 YRS'. Amber caption: 'YOUR TREATS ARE EATING YOUR RETIREMENT'.",
+    "narration": "Average household drops $9,500 on groceries every year. With a 49% effective hike, that's $2,900 in extra spending — for smaller packages than you bought five years ago.",
+    "visual": "Dark background with the equation animating in: $9,500/year label, then x49% effective hike, then counter spinning up to $2,900 in red. 'PER YEAR' label underneath.",
     "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "The fix isn't to stop rewarding yourself — just pause for 24 hours before you buy. That one gap kills 67% of these impulse splurges. Follow for more money truths like this.",
-    "visual": "Hourglass with amber sand draining, '24 HRS' displayed in center. Below: stat '67% of splurges disappear after 24 hours'. Amber CTA button: 'FOLLOW FOR MORE MONEY TRUTHS'.",
+    "narration": "Just check price per ounce — not per package. That one habit puts $2,900 back in your pocket every year. Follow for more hidden money traps.",
+    "visual": "Price tag SVG showing $0.078/oz in green on light background, animated green checkmark, '$2,900 SAVED A YEAR' in red fades in. CTA 'FOLLOW FOR MORE MONEY TRAPS' appears last.",
     "accent_color": "amber"
   }
 ]
