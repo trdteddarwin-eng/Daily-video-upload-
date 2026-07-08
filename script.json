@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Here's something nobody's telling you — your groceries are shrinking. Companies call it shrinkflation, and it's quietly draining $2,900 a year from your wallet.",
-    "visual": "Shopping cart SVG with two stats animating simultaneously: price ticking UP ($7.99 to $11.49) and package size ticking DOWN (64oz to 52oz). Bold 'SHRINKFLATION' headline drops in from above.",
-    "accent_color": "amber"
+    "narration": "Your friends are quietly one of your biggest hidden expenses. The average American spends $3,200 a year on social obligations — and they never see it coming.",
+    "visual": "Two person silhouettes facing each other on dark background. Dollar bill rectangles fly from left person's wallet toward right (labeled SOCIAL LIFE). Counter animates $0 to $3,200. Title: FRIENDSHIP HAS A PRICE TAG.",
+    "accent_color": "orange"
   },
   {
     "scene": 2,
-    "narration": "Companies keep the price the same but quietly shrink the package. Your orange juice went from 64 ounces to 52 — same price, way less juice.",
-    "visual": "Two orange juice cartons side by side — 2020 version taller labeled 64 OZ at $4.99 in green, vs 2024 version shorter labeled 52 OZ at $4.99 in red. Arrow between them. Light background.",
-    "accent_color": "amber"
+    "narration": "Start with weddings. Gift, hotel, travel, and a new outfit run over $800 per wedding — and you're probably heading to three or four of them this year.",
+    "visual": "Two interlocked wedding rings spring in on light background. A suitcase icon below with TRAVEL + HOTEL label. Orange badge: $800+ PER WEDDING. Subtitle: JUST ONE WEDDING, $800+ GONE.",
+    "accent_color": "orange"
   },
   {
     "scene": 3,
-    "narration": "Since 2020, products shrank 15% while prices jumped 26%. That combo hits you with a 49% effective price hike — and most people never even noticed.",
-    "visual": "Three SVG bars growing from baseline: red bar for -15% package size, amber bar for +26% price, green bar for 49% effective hike (tallest). Each label springs in as bar grows. Dark background.",
-    "accent_color": "amber"
+    "narration": "Then the group trip. Your brain literally cannot say no — a single weekend getaway runs $1,500, and FOMO is your most expensive personality trait.",
+    "visual": "Airplane silhouette slides in from left on dark background. Price tag badge drops in: GROUP TRIP $1,500. Text overlay: YOUR BRAIN: I CAN'T MISS OUT.",
+    "accent_color": "orange"
   },
   {
     "scene": 4,
-    "narration": "Number one, orange juice: 64 ounces down to 52. Number two, chips: 16 ounces down to 13. Number three, ice cream: 56 ounces to 48. Same. Exact. Price.",
-    "visual": "Three product cards sliding in from the left one by one — each showing product name, before oz in green, arrow, after oz in red. Numbered 1, 2, 3 in amber. Light background.",
-    "accent_color": "amber"
+    "narration": "Then the small stuff. Birthday dinners, baby showers, going-away parties — about ten of these a year at $100 each quietly drains another thousand dollars.",
+    "visual": "Birthday cake SVG springs in on light background. Three event cards slide in: Birthday Dinners ~$80, Baby Showers ~$120, Going-Away Parties ~$100. Total label: 10 SMALL EVENTS = $1,000/YEAR.",
+    "accent_color": "orange"
   },
   {
     "scene": 5,
-    "narration": "Average household drops $9,500 on groceries every year. With a 49% effective hike, that's $2,900 in extra spending — for smaller packages than you bought five years ago.",
-    "visual": "Dark background with the equation animating in: $9,500/year label, then x49% effective hike, then counter spinning up to $2,900 in red. 'PER YEAR' label underneath.",
-    "accent_color": "amber"
+    "narration": "Two weddings, one trip, ten small events — you just spent $3,200 with a smile on your face. That's more than most Americans have in savings.",
+    "visual": "Dark breakdown card reveals line by line: 2 WEDDINGS $1,300 / 1 GROUP TRIP $900 / SMALL EVENTS $1,000. Total counter animates in red to $3,200.",
+    "accent_color": "orange"
   },
   {
     "scene": 6,
-    "narration": "Just check price per ounce — not per package. That one habit puts $2,900 back in your pocket every year. Follow for more hidden money traps.",
-    "visual": "Price tag SVG showing $0.078/oz in green on light background, animated green checkmark, '$2,900 SAVED A YEAR' in red fades in. CTA 'FOLLOW FOR MORE MONEY TRAPS' appears last.",
-    "accent_color": "amber"
+    "narration": "The fix is easy — set a flat $250 social budget every month, and when it's gone, it's gone. The friends who matter won't care.",
+    "visual": "Piggy bank SVG springs in on light background. Orange badge: SET YOUR SOCIAL BUDGET / $250 / PER MONTH. Red text: WHEN IT'S GONE IT'S GONE. FOLLOW FOR MORE MONEY TRAPS fades in.",
+    "accent_color": "orange"
   }
 ]
