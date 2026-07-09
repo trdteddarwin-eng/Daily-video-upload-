@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Here's something nobody's telling you — your groceries are shrinking. Companies call it shrinkflation, and it's quietly draining $2,900 a year from your wallet.",
-    "visual": "Shopping cart SVG with two stats animating simultaneously: price ticking UP ($7.99 to $11.49) and package size ticking DOWN (64oz to 52oz). Bold 'SHRINKFLATION' headline drops in from above.",
-    "accent_color": "amber"
+    "narration": "You built an emergency fund — that's a big deal. But almost nobody tells you the most expensive mistake people make: where they're keeping it.",
+    "visual": "Person silhouette next to a piggy bank. Red dollar coins drain downward out of the coin slot while the person watches. Headline: YOUR EMERGENCY FUND IS WRONG.",
+    "accent_color": "green"
   },
   {
     "scene": 2,
-    "narration": "Companies keep the price the same but quietly shrink the package. Your orange juice went from 64 ounces to 52 — same price, way less juice.",
-    "visual": "Two orange juice cartons side by side — 2020 version taller labeled 64 OZ at $4.99 in green, vs 2024 version shorter labeled 52 OZ at $4.99 in red. Arrow between them. Light background.",
-    "accent_color": "amber"
+    "narration": "Your regular savings account pays just 0.46% interest right now. High-yield savings accounts pay around 4.5% — that's nearly ten times more, same insurance.",
+    "visual": "Two side-by-side bar charts growing — a short red bar labeled 0.46% (Regular Savings) and a tall green bar labeled 4.5% (High-Yield). '10X MORE INTEREST' headline.",
+    "accent_color": "green"
   },
   {
     "scene": 3,
-    "narration": "Since 2020, products shrank 15% while prices jumped 26%. That combo hits you with a 49% effective price hike — and most people never even noticed.",
-    "visual": "Three SVG bars growing from baseline: red bar for -15% package size, amber bar for +26% price, green bar for 49% effective hike (tallest). Each label springs in as bar grows. Dark background.",
-    "accent_color": "amber"
+    "narration": "On a $20,000 emergency fund over five years, that gap adds up to $3,400 your bank keeps instead of you. That's money you earned and then just gave away.",
+    "visual": "Two value boxes side by side: $20,460 in red (Regular Savings) vs $23,860 in green (HYSA). A counter counts up to $3,400 in a big highlight box labeled YOU'RE MISSING.",
+    "accent_color": "green"
   },
   {
     "scene": 4,
-    "narration": "Number one, orange juice: 64 ounces down to 52. Number two, chips: 16 ounces down to 13. Number three, ice cream: 56 ounces to 48. Same. Exact. Price.",
-    "visual": "Three product cards sliding in from the left one by one — each showing product name, before oz in green, arrow, after oz in red. Numbered 1, 2, 3 in amber. Light background.",
-    "accent_color": "amber"
+    "narration": "Here's what's wild — high-yield savings accounts are completely free to open, take about ten minutes, and your money stays FDIC insured the whole time.",
+    "visual": "Three cards pop in one by one: FREE (no fees), FDIC (federally insured shield icon), 10 MIN (clock icon to set up). Light background with green accents.",
+    "accent_color": "green"
   },
   {
     "scene": 5,
-    "narration": "Average household drops $9,500 on groceries every year. With a 49% effective hike, that's $2,900 in extra spending — for smaller packages than you bought five years ago.",
-    "visual": "Dark background with the equation animating in: $9,500/year label, then x49% effective hike, then counter spinning up to $2,900 in red. 'PER YEAR' label underneath.",
-    "accent_color": "amber"
+    "narration": "Every month you leave your emergency fund in a regular account, your bank pockets that difference. They're making billions off people's idle savings every year.",
+    "visual": "Dollar signs float from a small piggy bank on the left into a growing bank building on the right. The bank building expands as more dollars flow in. Dark background.",
+    "accent_color": "green"
   },
   {
     "scene": 6,
-    "narration": "Just check price per ounce — not per package. That one habit puts $2,900 back in your pocket every year. Follow for more hidden money traps.",
-    "visual": "Price tag SVG showing $0.078/oz in green on light background, animated green checkmark, '$2,900 SAVED A YEAR' in red fades in. CTA 'FOLLOW FOR MORE MONEY TRAPS' appears last.",
-    "accent_color": "amber"
+    "narration": "Search 'high-yield savings account' right now. Ten minutes, zero fees, same protection — and over five years, it puts $3,400 back in your pocket, not theirs.",
+    "visual": "A search bar showing 'high-yield savings account'. Rising green bar chart below it. Green CTA box: '10 MINUTES COULD EARN YOU $3,400'. Light background.",
+    "accent_color": "green"
   }
 ]
