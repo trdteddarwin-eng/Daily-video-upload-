@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You built an emergency fund — that's a big deal. But almost nobody tells you the most expensive mistake people make: where they're keeping it.",
-    "visual": "Person silhouette next to a piggy bank. Red dollar coins drain downward out of the coin slot while the person watches. Headline: YOUR EMERGENCY FUND IS WRONG.",
-    "accent_color": "green"
+    "narration": "What if missing just ten days in the stock market cut your money in half? It sounds impossible — but the numbers are absolutely brutal.",
+    "visual": "Animated stock chart line drawing across screen with dramatic dips and recoveries. Green dots mark the 10 best recovery days. Title: 'JUST 10 DAYS' in blue.",
+    "accent_color": "blue"
   },
   {
     "scene": 2,
-    "narration": "Your regular savings account pays just 0.46% interest right now. High-yield savings accounts pay around 4.5% — that's nearly ten times more, same insurance.",
-    "visual": "Two side-by-side bar charts growing — a short red bar labeled 0.46% (Regular Savings) and a tall green bar labeled 4.5% (High-Yield). '10X MORE INTEREST' headline.",
-    "accent_color": "green"
+    "narration": "Ten thousand dollars in the S&P 500 in 2004, left completely alone for twenty years, became $71,750. That's boring, patient money doing its thing.",
+    "visual": "Large gold coin with dollar sign springs in. Counter animates from $10,000 to $71,750. Label: 'STAYED IN THE MARKET'. Light background.",
+    "accent_color": "blue"
   },
   {
     "scene": 3,
-    "narration": "On a $20,000 emergency fund over five years, that gap adds up to $3,400 your bank keeps instead of you. That's money you earned and then just gave away.",
-    "visual": "Two value boxes side by side: $20,460 in red (Regular Savings) vs $23,860 in green (HYSA). A counter counts up to $3,400 in a big highlight box labeled YOU'RE MISSING.",
-    "accent_color": "green"
+    "narration": "Same $10,000 — but this investor panicked during the scary parts and missed just the ten best trading days. Their ending balance? Only $32,871.",
+    "visual": "Two vertical bars side by side: tall green bar ($71,750) vs short red bar ($32,871). Both animate up from zero. '$38,879 DIFFERENCE' label below.",
+    "accent_color": "blue"
   },
   {
     "scene": 4,
-    "narration": "Here's what's wild — high-yield savings accounts are completely free to open, take about ten minutes, and your money stays FDIC insured the whole time.",
-    "visual": "Three cards pop in one by one: FREE (no fees), FDIC (federally insured shield icon), 10 MIN (clock icon to set up). Light background with green accents.",
-    "accent_color": "green"
+    "narration": "Here's the part that'll mess with your head — six of those ten best days happened within two weeks of the ten worst days. The biggest gains hide inside the biggest crashes.",
+    "visual": "Timeline with red X marks for worst days and green circles for best days, shown clustered together. Text: '6 OF 10 BEST DAYS HIDE IN CRASHES'. Light background.",
+    "accent_color": "blue"
   },
   {
     "scene": 5,
-    "narration": "Every month you leave your emergency fund in a regular account, your bank pockets that difference. They're making billions off people's idle savings every year.",
-    "visual": "Dollar signs float from a small piggy bank on the left into a growing bank building on the right. The bank building expands as more dollars flow in. Dark background.",
-    "accent_color": "green"
+    "narration": "Your brain sees a crash and screams get out. But by the time you run, you've missed the recovery. Fear doesn't protect your money — it steals it.",
+    "visual": "Person silhouette running left away from a red downward crash arrow on the right. '$38,879 LOST TO PANIC' text in red springs in below.",
+    "accent_color": "blue"
   },
   {
     "scene": 6,
-    "narration": "Search 'high-yield savings account' right now. Ten minutes, zero fees, same protection — and over five years, it puts $3,400 back in your pocket, not theirs.",
-    "visual": "A search bar showing 'high-yield savings account'. Rising green bar chart below it. Green CTA box: '10 MINUTES COULD EARN YOU $3,400'. Light background.",
-    "accent_color": "green"
+    "narration": "The move that beats almost every trader alive is boring: automate it, stop watching it, never panic-sell. Follow for more money moves they don't teach you.",
+    "visual": "Three numbered steps animate in: 1 AUTOMATE IT, 2 STOP WATCHING, 3 NEVER PANIC-SELL. Rising green line chart below. Blue 'FOLLOW FOR MORE' button. Light background.",
+    "accent_color": "blue"
   }
 ]

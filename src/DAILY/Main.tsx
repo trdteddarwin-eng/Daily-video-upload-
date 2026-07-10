@@ -3,23 +3,13 @@ import { AbsoluteFill, Series, useCurrentFrame, interpolate, spring, Easing } fr
 
 const BG_DARK = '#0D1117';
 const BG_LIGHT = '#F5F5F5';
-const ACCENT = '#10B981';
+const ACCENT = '#3B82F6';
 const WHITE = '#F5F5F5';
 const BLACK = '#121212';
+const GREEN = '#10B981';
 const RED = '#EF4444';
 const GRAY = '#6B7280';
 const FONT = '"Arial Black", "Helvetica Neue", Arial, sans-serif';
-
-const headline = (size: number, color: string): React.CSSProperties => ({
-  fontFamily: FONT,
-  fontSize: size,
-  color,
-  letterSpacing: '0.12em',
-  textTransform: 'uppercase' as const,
-  textAlign: 'center' as const,
-  margin: 0,
-  lineHeight: 1.1,
-});
 
 const FadeScene: React.FC<{ children: React.ReactNode; bg: string; dur: number }> = ({
   children, bg, dur,
@@ -31,444 +21,451 @@ const FadeScene: React.FC<{ children: React.ReactNode; bg: string; dur: number }
   return <AbsoluteFill style={{ background: bg, opacity }}>{children}</AbsoluteFill>;
 };
 
-// ─── SCENES ──────────────────────────────────────────────────────────────────
-// Scene 1: Person + piggy bank with red coins draining out
+// ─── SCENE 1 — Dark — Animated stock chart + hook headline ───────────────────
 const Scene1: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
 
   const titleSp = spring({ frame, fps: 30, config: { damping: 14, stiffness: 80 } });
-  const titleY = interpolate(titleSp, [0, 1], [80, 0]);
+  const titleY = interpolate(titleSp, [0, 1], [70, 0]);
 
-  const pigSp = spring({ frame: Math.max(0, frame - 18), fps: 30, config: { damping: 14, stiffness: 70 } });
-  const pigScale = interpolate(pigSp, [0, 1], [0.3, 1]);
+  const subSp = spring({ frame: Math.max(0, frame - 20), fps: 30, config: { damping: 12, stiffness: 60 } });
+  const subY = interpolate(subSp, [0, 1], [50, 0]);
+  const subOp = interpolate(frame, [20, 40], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
 
-  const drain = interpolate(frame, [45, 185], [0, 1], {
+  const lineProgress = interpolate(frame, [15, 185], [0, 1], {
     extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
     easing: Easing.inOut(Easing.cubic),
   });
 
-  const subSp = spring({ frame: Math.max(0, frame - 50), fps: 30, config: { damping: 12, stiffness: 60 } });
-  const subO = interpolate(subSp, [0, 1], [0, 1]);
+  const pts: [number, number][] = [
+    [0.00, 0.50], [0.05, 0.46], [0.10, 0.40], [0.15, 0.36],
+    [0.20, 0.42], [0.25, 0.56], [0.30, 0.64],
+    [0.34, 0.52], [0.38, 0.36],
+    [0.43, 0.30], [0.50, 0.26],
+    [0.55, 0.38], [0.60, 0.58], [0.64, 0.68],
+    [0.68, 0.48], [0.72, 0.28],
+    [0.76, 0.22], [0.82, 0.16], [0.88, 0.12], [0.94, 0.08], [1.00, 0.06],
+  ];
 
-  const coinOffsets = [0, 1, 2].map(i => ({
-    y: interpolate(drain, [i * 0.15, Math.min(1, i * 0.15 + 0.6)], [115, 115 + 70 + i * 20], {
-      extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
-    }),
-    o: interpolate(drain, [i * 0.12, Math.min(1, i * 0.12 + 0.4), Math.min(1, i * 0.12 + 0.6)], [0, 1, 0.2], {
-      extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
-    }),
-  }));
+  const CX = 80; const CY = 850;
+  const CW = 920; const CH = 490;
+
+  const visCount = Math.max(2, Math.floor(lineProgress * pts.length));
+  const visPts = pts.slice(0, visCount);
+  const ptStr = visPts.map(([x, y]) => `${CX + x * CW},${CY + y * CH}`).join(' ');
+  const bestIdxs = [7, 8, 14, 15];
 
   return (
     <FadeScene bg={BG_DARK} dur={dur}>
-      <AbsoluteFill style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '0 60px' }}>
-        <div style={{ transform: `translateY(${titleY}px)`, marginBottom: 50 }}>
-          <p style={headline(62, WHITE)}>YOUR EMERGENCY</p>
-          <p style={headline(62, ACCENT)}>FUND IS WRONG</p>
-        </div>
+      <AbsoluteFill>
+        <svg width="1080" height="1920" viewBox="0 0 1080 1920">
+          <text x="540" y={260 + titleY} textAnchor="middle"
+            fontFamily={FONT} fontSize="100" fontWeight="900" fill={ACCENT}
+            letterSpacing="6">JUST 10 DAYS</text>
+          <text x="540" y={380 + titleY} textAnchor="middle"
+            fontFamily={FONT} fontSize="46" fill={WHITE} letterSpacing="2">
+            could cost you
+          </text>
+          <text x="540" y={490 + titleY} textAnchor="middle"
+            fontFamily={FONT} fontSize="80" fontWeight="900" fill={WHITE} letterSpacing="3">
+            HALF YOUR MONEY
+          </text>
+          <text x="540" y={680 + subY} textAnchor="middle"
+            fontFamily={FONT} fontSize="34" fill={GRAY} letterSpacing="3"
+            opacity={subOp}>
+            S&amp;P 500 — 2004 to 2024
+          </text>
 
-        <div style={{ transform: `scale(${pigScale})`, transformOrigin: 'center center', marginBottom: 50 }}>
-          <svg width="380" height="310" viewBox="0 0 380 310">
-            {/* Person silhouette */}
-            <circle cx="80" cy="58" r="36" fill={WHITE} />
-            <rect x="44" y="96" width="72" height="95" rx="12" fill={WHITE} />
-            <rect x="32" y="186" width="28" height="76" rx="8" fill={WHITE} />
-            <rect x="92" y="186" width="28" height="76" rx="8" fill={WHITE} />
-            {/* Arrow */}
-            <path d="M168 155 L200 155 L196 144 L218 162 L196 180 L200 169 L168 169 Z" fill={ACCENT} />
-            {/* Piggy bank body */}
-            <ellipse cx="295" cy="168" rx="60" ry="54" fill="#F59E0B" />
-            {/* Snout */}
-            <ellipse cx="347" cy="177" rx="17" ry="13" fill="#D97706" />
-            <circle cx="341" cy="175" r="3.5" fill={BLACK} />
-            <circle cx="353" cy="175" r="3.5" fill={BLACK} />
-            {/* Eye */}
-            <circle cx="320" cy="152" r="5" fill={BLACK} />
-            {/* Ear */}
-            <ellipse cx="278" cy="124" rx="13" ry="17" fill="#D97706" />
-            {/* Legs */}
-            <rect x="258" y="215" width="17" height="27" rx="6" fill="#D97706" />
-            <rect x="283" y="217" width="17" height="27" rx="6" fill="#D97706" />
-            <rect x="308" y="217" width="17" height="27" rx="6" fill="#D97706" />
-            {/* Coin slot */}
-            <rect x="283" y="116" width="22" height="6" rx="3" fill={BLACK} />
-            {/* Draining coins */}
-            {coinOffsets.map((c, i) => (
-              <circle key={i} cx={291 + i * 5} cy={c.y} r="9" fill={RED} opacity={c.o} />
-            ))}
-          </svg>
-        </div>
+          <line x1={CX} y1={CY} x2={CX} y2={CY + CH} stroke={GRAY} strokeWidth="2" opacity="0.4" />
+          <line x1={CX} y1={CY + CH} x2={CX + CW} y2={CY + CH} stroke={GRAY} strokeWidth="2" opacity="0.4" />
 
-        <div style={{ opacity: subO }}>
-          <p style={{ ...headline(36, GRAY), marginBottom: 8 }}>THREE MONTHS SAVED.</p>
-          <p style={headline(36, RED)}>WRONG ACCOUNT.</p>
-        </div>
+          {visPts.length >= 2 && (
+            <polyline points={ptStr} fill="none" stroke={ACCENT} strokeWidth="5"
+              strokeLinecap="round" strokeLinejoin="round" />
+          )}
+
+          {bestIdxs.map((idx) => {
+            if (idx >= visCount || idx >= pts.length) return null;
+            const [px, py] = pts[idx];
+            return (
+              <circle key={idx} cx={CX + px * CW} cy={CY + py * CH} r="16" fill={GREEN} />
+            );
+          })}
+
+          <circle cx={CX + 20} cy={CY + CH + 80} r="12" fill={GREEN} />
+          <text x={CX + 44} y={CY + CH + 87} fontFamily={FONT} fontSize="30" fill={WHITE}>
+            10 BEST RECOVERY DAYS
+          </text>
+        </svg>
       </AbsoluteFill>
     </FadeScene>
   );
 };
 
-// Scene 2: Two bars — tiny red (0.46%) vs tall green (4.5%)
+// ─── SCENE 2 — Light — Gold coin + animated counter ─────────────────────────
 const Scene2: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
 
   const titleSp = spring({ frame, fps: 30, config: { damping: 14, stiffness: 80 } });
-  const titleY = interpolate(titleSp, [0, 1], [80, 0]);
+  const titleY = interpolate(titleSp, [0, 1], [60, 0]);
 
-  const leftH = interpolate(frame, [25, 90], [0, 34], {
+  const coinSp = spring({ frame: Math.max(0, frame - 15), fps: 30, config: { damping: 12, stiffness: 70 } });
+  const coinScale = interpolate(coinSp, [0, 1], [0.2, 1]);
+
+  const counter = Math.round(interpolate(frame, [40, 200], [10000, 71750], {
     extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
     easing: Easing.out(Easing.cubic),
-  });
-  const rightH = interpolate(frame, [45, 160], [0, 340], {
-    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
-    easing: Easing.out(Easing.cubic),
-  });
+  }));
 
-  const labelSp = spring({ frame: Math.max(0, frame - 80), fps: 30, config: { damping: 12, stiffness: 60 } });
-  const labelO = interpolate(labelSp, [0, 1], [0, 1]);
+  const numOp = interpolate(frame, [38, 55], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
 
   return (
     <FadeScene bg={BG_LIGHT} dur={dur}>
-      <AbsoluteFill style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '0 80px' }}>
-        <div style={{ transform: `translateY(${titleY}px)`, marginBottom: 70 }}>
-          <p style={headline(50, BLACK)}>INTEREST RATE</p>
-          <p style={headline(50, ACCENT)}>COMPARISON</p>
-        </div>
+      <AbsoluteFill>
+        <svg width="1080" height="1920" viewBox="0 0 1080 1920">
+          <text x="540" y={180 + titleY} textAnchor="middle"
+            fontFamily={FONT} fontSize="54" fontWeight="900" fill={BLACK}
+            letterSpacing="3">YOU INVEST $10,000</text>
+          <text x="540" y={272 + titleY} textAnchor="middle"
+            fontFamily={FONT} fontSize="40" fill={GRAY} letterSpacing="2">
+            AND LEAVE IT ALONE FOR 20 YEARS
+          </text>
 
-        <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'center', gap: 90, height: 380, marginBottom: 50 }}>
-          {/* Regular savings bar */}
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 14 }}>
-            <p style={{ fontFamily: FONT, fontSize: 38, color: RED, margin: 0 }}>0.46%</p>
-            <div style={{ width: 130, height: leftH, background: RED, borderRadius: '8px 8px 0 0' }} />
-            <p style={{ fontFamily: FONT, fontSize: 24, color: BLACK, margin: 0, textAlign: 'center', lineHeight: 1.3 }}>REGULAR{'\n'}SAVINGS</p>
-          </div>
-          {/* HYSA bar */}
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 14 }}>
-            <p style={{ fontFamily: FONT, fontSize: 38, color: ACCENT, margin: 0 }}>4.5%</p>
-            <div style={{ width: 130, height: rightH, background: ACCENT, borderRadius: '8px 8px 0 0' }} />
-            <p style={{ fontFamily: FONT, fontSize: 24, color: BLACK, margin: 0, textAlign: 'center', lineHeight: 1.3 }}>HIGH-YIELD{'\n'}SAVINGS</p>
-          </div>
-        </div>
+          <g transform={`translate(540, 800) scale(${coinScale})`}>
+            <circle cx="0" cy="0" r="290" fill="#F59E0B" />
+            <circle cx="0" cy="0" r="255" fill="#D97706" />
+            <text x="0" y="95" textAnchor="middle"
+              fontFamily={FONT} fontSize="290" fontWeight="900" fill={WHITE}>
+              $
+            </text>
+          </g>
 
-        <div style={{ opacity: labelO, textAlign: 'center' }}>
-          <p style={headline(44, BLACK)}>10X MORE INTEREST</p>
-          <p style={{ fontFamily: FONT, fontSize: 28, color: GRAY, margin: '12px 0 0' }}>Same money. Same insurance. Same access.</p>
-        </div>
+          <text x="540" y={1195} textAnchor="middle"
+            fontFamily={FONT} fontSize="104" fontWeight="900" fill={GREEN}
+            opacity={numOp} letterSpacing="2">
+            {`$${counter.toLocaleString()}`}
+          </text>
+          <text x="540" y={1320} textAnchor="middle"
+            fontFamily={FONT} fontSize="40" fill={GRAY}
+            opacity={numOp} letterSpacing="4">
+            STAYED IN THE MARKET
+          </text>
+          <text x="540" y={1530} textAnchor="middle"
+            fontFamily={FONT} fontSize="36" fill={BLACK} letterSpacing="2">
+            but what if you panicked during crashes?
+          </text>
+        </svg>
       </AbsoluteFill>
     </FadeScene>
   );
 };
 
-// Scene 3: Two value boxes + counter counting to $3,400
+// ─── SCENE 3 — Dark — Two bars comparison ────────────────────────────────────
 const Scene3: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
 
   const titleSp = spring({ frame, fps: 30, config: { damping: 14, stiffness: 80 } });
-  const titleY = interpolate(titleSp, [0, 1], [80, 0]);
+  const titleY = interpolate(titleSp, [0, 1], [60, 0]);
 
-  const box1Sp = spring({ frame: Math.max(0, frame - 22), fps: 30, config: { damping: 14, stiffness: 80 } });
-  const box2Sp = spring({ frame: Math.max(0, frame - 50), fps: 30, config: { damping: 14, stiffness: 80 } });
-  const box1Scale = interpolate(box1Sp, [0, 1], [0, 1]);
-  const box2Scale = interpolate(box2Sp, [0, 1], [0, 1]);
+  const barSp = spring({ frame: Math.max(0, frame - 25), fps: 30, config: { damping: 16, stiffness: 90 } });
+  const barPct = interpolate(barSp, [0, 1], [0, 1]);
 
-  const counter = interpolate(frame, [80, 200], [0, 3400], {
-    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
-    easing: Easing.out(Easing.cubic),
-  });
-
-  const ctaSp = spring({ frame: Math.max(0, frame - 90), fps: 30, config: { damping: 12, stiffness: 60 } });
-  const ctaO = interpolate(ctaSp, [0, 1], [0, 1]);
+  const maxH = 560;
+  const leftH = maxH * barPct;
+  const rightH = maxH * (32871 / 71750) * barPct;
+  const barW = 200;
+  const baseY = 1480;
+  const barLblOp = interpolate(barPct, [0.3, 0.55], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
 
   return (
     <FadeScene bg={BG_DARK} dur={dur}>
-      <AbsoluteFill style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '0 60px' }}>
-        <div style={{ transform: `translateY(${titleY}px)`, marginBottom: 60 }}>
-          <p style={headline(46, WHITE)}>$20,000 EMERGENCY FUND</p>
-          <p style={headline(40, GRAY)}>OVER 5 YEARS</p>
-        </div>
+      <AbsoluteFill>
+        <svg width="1080" height="1920" viewBox="0 0 1080 1920">
+          <text x="540" y={200 + titleY} textAnchor="middle"
+            fontFamily={FONT} fontSize="56" fontWeight="900" fill={WHITE}
+            letterSpacing="4">SAME $10,000</text>
+          <text x="540" y={292 + titleY} textAnchor="middle"
+            fontFamily={FONT} fontSize="44" fill={GRAY} letterSpacing="2">
+            COMPLETELY DIFFERENT RESULT
+          </text>
 
-        <div style={{ display: 'flex', gap: 40, marginBottom: 50, width: '100%' }}>
-          {/* Regular savings box */}
-          <div style={{ flex: 1, transform: `scale(${box1Scale})`, transformOrigin: 'center center', background: '#1E1E2E', border: `3px solid ${RED}`, borderRadius: 20, padding: '28px 20px', textAlign: 'center' }}>
-            <p style={{ fontFamily: FONT, fontSize: 22, color: GRAY, margin: '0 0 12px' }}>REGULAR SAVINGS</p>
-            <p style={{ fontFamily: FONT, fontSize: 52, color: RED, margin: 0, lineHeight: 1 }}>$20,460</p>
-            <p style={{ fontFamily: FONT, fontSize: 20, color: GRAY, margin: '10px 0 0' }}>0.46% / yr</p>
-          </div>
-          {/* HYSA box */}
-          <div style={{ flex: 1, transform: `scale(${box2Scale})`, transformOrigin: 'center center', background: '#0D2818', border: `3px solid ${ACCENT}`, borderRadius: 20, padding: '28px 20px', textAlign: 'center' }}>
-            <p style={{ fontFamily: FONT, fontSize: 22, color: GRAY, margin: '0 0 12px' }}>HIGH-YIELD SAVINGS</p>
-            <p style={{ fontFamily: FONT, fontSize: 52, color: ACCENT, margin: 0, lineHeight: 1 }}>$23,860</p>
-            <p style={{ fontFamily: FONT, fontSize: 20, color: GRAY, margin: '10px 0 0' }}>4.5% / yr</p>
-          </div>
-        </div>
+          <rect x={140} y={baseY - leftH} width={barW} height={leftH} fill={GREEN} rx="14" />
+          <text x={140 + barW / 2} y={baseY - leftH - 24} textAnchor="middle"
+            fontFamily={FONT} fontSize="44" fontWeight="900" fill={GREEN}
+            opacity={barLblOp}>
+            $71,750
+          </text>
+          <text x={140 + barW / 2} y={baseY + 56} textAnchor="middle"
+            fontFamily={FONT} fontSize="28" fill={WHITE} letterSpacing="2">
+            STAYED IN
+          </text>
 
-        <div style={{ opacity: ctaO, background: ACCENT, borderRadius: 20, padding: '28px 48px', width: '100%', boxSizing: 'border-box' as const, textAlign: 'center' }}>
-          <p style={{ fontFamily: FONT, fontSize: 32, color: BLACK, margin: '0 0 8px' }}>YOU'RE MISSING</p>
-          <p style={{ fontFamily: FONT, fontSize: 86, color: BLACK, margin: 0, letterSpacing: '-0.02em', lineHeight: 1 }}>
-            ${Math.round(counter).toLocaleString()}
-          </p>
-        </div>
+          <rect x={740} y={baseY - rightH} width={barW} height={rightH} fill={RED} rx="14" />
+          <text x={740 + barW / 2} y={baseY - rightH - 24} textAnchor="middle"
+            fontFamily={FONT} fontSize="44" fontWeight="900" fill={RED}
+            opacity={barLblOp}>
+            $32,871
+          </text>
+          <text x={740 + barW / 2} y={baseY + 56} textAnchor="middle"
+            fontFamily={FONT} fontSize="28" fill={WHITE} letterSpacing="2">
+            MISSED
+          </text>
+          <text x={740 + barW / 2} y={baseY + 92} textAnchor="middle"
+            fontFamily={FONT} fontSize="28" fill={WHITE} letterSpacing="2">
+            10 DAYS
+          </text>
+
+          <text x="540" y={baseY - 220} textAnchor="middle"
+            fontFamily={FONT} fontSize="72" fontWeight="900" fill={ACCENT}
+            letterSpacing="4">VS</text>
+
+          <text x="540" y={baseY + 172} textAnchor="middle"
+            fontFamily={FONT} fontSize="38" fill={RED} letterSpacing="2">
+            $38,879 DIFFERENCE
+          </text>
+        </svg>
       </AbsoluteFill>
     </FadeScene>
   );
 };
 
-// Scene 4: Three feature cards popping in — FREE, FDIC, 10 MIN
+// ─── SCENE 4 — Light — Timeline showing crash/recovery clustering ─────────────
 const Scene4: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
 
   const titleSp = spring({ frame, fps: 30, config: { damping: 14, stiffness: 80 } });
-  const titleY = interpolate(titleSp, [0, 1], [80, 0]);
+  const titleY = interpolate(titleSp, [0, 1], [60, 0]);
 
-  const card1Sp = spring({ frame: Math.max(0, frame - 28), fps: 30, config: { damping: 14, stiffness: 80 } });
-  const card2Sp = spring({ frame: Math.max(0, frame - 68), fps: 30, config: { damping: 14, stiffness: 80 } });
-  const card3Sp = spring({ frame: Math.max(0, frame - 108), fps: 30, config: { damping: 14, stiffness: 80 } });
+  const redOp = interpolate(frame, [20, 50], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const greenOp = interpolate(frame, [70, 110], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const labelOp = interpolate(frame, [100, 140], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
 
-  const cards = [
-    { sp: card1Sp, badge: 'FREE', label: 'No fees to open', icon: 'dollar' },
-    { sp: card2Sp, badge: 'FDIC', label: 'Federally insured', icon: 'shield' },
-    { sp: card3Sp, badge: '10 MIN', label: 'Quick to set up', icon: 'clock' },
-  ];
+  const TLX = 100; const TLY = 980;
+  const TLW = 880;
+
+  const worstFracs = [0.22, 0.26, 0.30, 0.33, 0.52, 0.54, 0.73, 0.76, 0.79, 0.82];
+  const bestFracs  = [0.24, 0.28, 0.32, 0.35, 0.51, 0.56, 0.72, 0.75, 0.80, 0.84];
 
   return (
     <FadeScene bg={BG_LIGHT} dur={dur}>
-      <AbsoluteFill style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '0 60px' }}>
-        <div style={{ transform: `translateY(${titleY}px)`, marginBottom: 70 }}>
-          <p style={headline(52, BLACK)}>HERE'S THE</p>
-          <p style={headline(52, ACCENT)}>WILD PART</p>
-        </div>
+      <AbsoluteFill>
+        <svg width="1080" height="1920" viewBox="0 0 1080 1920">
+          <text x="540" y={200 + titleY} textAnchor="middle"
+            fontFamily={FONT} fontSize="80" fontWeight="900" fill={BLACK}
+            letterSpacing="4">6 OF 10</text>
+          <text x="540" y={308 + titleY} textAnchor="middle"
+            fontFamily={FONT} fontSize="50" fill={BLACK} letterSpacing="2">
+            BEST DAYS HAPPEN
+          </text>
+          <text x="540" y={418 + titleY} textAnchor="middle"
+            fontFamily={FONT} fontSize="56" fontWeight="900" fill={RED}
+            letterSpacing="2">DURING CRASHES</text>
 
-        {cards.map(({ sp, badge, label, icon }, i) => {
-          const sc = interpolate(sp, [0, 1], [0, 1]);
-          return (
-            <div key={i} style={{
-              transform: `scale(${sc})`,
-              transformOrigin: 'center center',
-              display: 'flex',
-              alignItems: 'center',
-              gap: 36,
-              marginBottom: 32,
-              background: WHITE,
-              borderRadius: 20,
-              padding: '24px 40px',
-              width: '100%',
-              boxSizing: 'border-box' as const,
-              boxShadow: '0 4px 20px rgba(0,0,0,0.10)',
-              border: `2px solid ${ACCENT}`,
-            }}>
-              {/* Badge circle */}
-              <div style={{ width: 88, height: 88, borderRadius: 44, background: ACCENT, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                {icon === 'dollar' && (
-                  <svg width="44" height="44" viewBox="0 0 44 44">
-                    <text x="22" y="34" fontSize="36" fill={BLACK} textAnchor="middle" fontFamily="Arial Black">$</text>
-                  </svg>
-                )}
-                {icon === 'shield' && (
-                  <svg width="44" height="44" viewBox="0 0 44 44">
-                    <path d="M22 4 L36 10 L36 22 Q36 34 22 40 Q8 34 8 22 L8 10 Z" fill={BLACK} />
-                    <path d="M16 22 L20 26 L28 18" stroke={ACCENT} strokeWidth="3" fill="none" strokeLinecap="round" />
-                  </svg>
-                )}
-                {icon === 'clock' && (
-                  <svg width="44" height="44" viewBox="0 0 44 44">
-                    <circle cx="22" cy="22" r="16" fill="none" stroke={BLACK} strokeWidth="3" />
-                    <line x1="22" y1="22" x2="22" y2="12" stroke={BLACK} strokeWidth="3" strokeLinecap="round" />
-                    <line x1="22" y1="22" x2="30" y2="27" stroke={BLACK} strokeWidth="3" strokeLinecap="round" />
-                  </svg>
-                )}
-              </div>
-              <div>
-                <p style={{ fontFamily: FONT, fontSize: 28, color: ACCENT, margin: '0 0 4px', letterSpacing: '0.08em' }}>{badge}</p>
-                <p style={{ fontFamily: FONT, fontSize: 32, color: BLACK, margin: 0 }}>{label}</p>
-              </div>
-            </div>
-          );
-        })}
+          <text x={TLX} y={TLY + 52} fontFamily={FONT} fontSize="26" fill={GRAY}>2004</text>
+          <text x={TLX + TLW / 2 - 22} y={TLY + 52} fontFamily={FONT} fontSize="26" fill={GRAY}>2014</text>
+          <text x={TLX + TLW - 44} y={TLY + 52} fontFamily={FONT} fontSize="26" fill={GRAY}>2024</text>
 
-        <p style={{ fontFamily: FONT, fontSize: 28, color: GRAY, textAlign: 'center', marginTop: 16 }}>
-          Same money. Same protection. Zero risk.
-        </p>
+          <line x1={TLX} y1={TLY} x2={TLX + TLW} y2={TLY}
+            stroke={BLACK} strokeWidth="4" opacity="0.25" />
+
+          {worstFracs.map((f, i) => {
+            const cx = TLX + f * TLW;
+            return (
+              <g key={i} opacity={redOp}>
+                <line x1={cx - 18} y1={TLY - 18} x2={cx + 18} y2={TLY + 18}
+                  stroke={RED} strokeWidth="5" strokeLinecap="round" />
+                <line x1={cx + 18} y1={TLY - 18} x2={cx - 18} y2={TLY + 18}
+                  stroke={RED} strokeWidth="5" strokeLinecap="round" />
+              </g>
+            );
+          })}
+
+          {bestFracs.map((f, i) => {
+            const cx = TLX + f * TLW;
+            return (
+              <circle key={i} cx={cx} cy={TLY - 60} r="20" fill={GREEN} opacity={greenOp} />
+            );
+          })}
+
+          <g opacity={labelOp}>
+            <line x1={290} y1={TLY + 148} x2={312} y2={TLY + 170}
+              stroke={RED} strokeWidth="4" strokeLinecap="round" />
+            <line x1={312} y1={TLY + 148} x2={290} y2={TLY + 170}
+              stroke={RED} strokeWidth="4" strokeLinecap="round" />
+            <text x={330} y={TLY + 167} fontFamily={FONT} fontSize="30" fill={BLACK}>
+              WORST DAY
+            </text>
+            <circle cx={296} cy={TLY + 228} r="16" fill={GREEN} />
+            <text x={330} y={TLY + 235} fontFamily={FONT} fontSize="30" fill={BLACK}>
+              BEST DAY
+            </text>
+          </g>
+
+          <text x="540" y={1600} textAnchor="middle"
+            fontFamily={FONT} fontSize="36" fill={GRAY} letterSpacing="2"
+            opacity={labelOp}>
+            the market punishes people who run
+          </text>
+        </svg>
       </AbsoluteFill>
     </FadeScene>
   );
 };
 
-// Scene 5: Dollar signs flow from piggy bank to growing bank building
+// ─── SCENE 5 — Dark — Person running + crash arrow + cost callout ─────────────
 const Scene5: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
 
   const titleSp = spring({ frame, fps: 30, config: { damping: 14, stiffness: 80 } });
-  const titleY = interpolate(titleSp, [0, 1], [80, 0]);
+  const titleY = interpolate(titleSp, [0, 1], [60, 0]);
 
-  const flowP = interpolate(frame, [20, 190], [0, 1], {
-    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
-    easing: Easing.inOut(Easing.cubic),
-  });
+  const personSp = spring({ frame: Math.max(0, frame - 10), fps: 30, config: { damping: 12, stiffness: 70 } });
+  const personX = interpolate(personSp, [0, 1], [-200, 0]);
 
-  const bankH = interpolate(flowP, [0, 1], [90, 160]);
-  const bankW = interpolate(flowP, [0, 1], [90, 140]);
-  const bankY = interpolate(flowP, [0, 1], [220, 150]);
+  const numSp = spring({ frame: Math.max(0, frame - 40), fps: 30, config: { damping: 14, stiffness: 80 } });
+  const numY = interpolate(numSp, [0, 1], [60, 0]);
+  const numOp = interpolate(frame, [40, 62], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
 
-  const labelSp = spring({ frame: Math.max(0, frame - 110), fps: 30, config: { damping: 12, stiffness: 60 } });
-  const labelO = interpolate(labelSp, [0, 1], [0, 1]);
-
-  const dollarItems = [0, 1, 2].map(i => {
-    const t0 = i * 0.22;
-    const t1 = Math.min(1, t0 + 0.5);
-    return {
-      x: interpolate(flowP, [t0, t1], [140, 280], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }),
-      y: 190 + i * 22,
-      o: interpolate(flowP, [t0, Math.min(1, t0 + 0.2), t1], [0, 1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }),
-    };
-  });
+  const crashPts: [number, number][] = [
+    [0.0, 0.08], [0.1, 0.14], [0.2, 0.22], [0.3, 0.36],
+    [0.4, 0.50], [0.5, 0.64], [0.6, 0.74], [0.7, 0.84],
+    [0.85, 0.92], [1.0, 0.97],
+  ];
+  const cX = 590; const cY = 620;
+  const cW = 400; const cH = 400;
+  const crashStr = crashPts.map(([x, y]) => `${cX + x * cW},${cY + y * cH}`).join(' ');
 
   return (
     <FadeScene bg={BG_DARK} dur={dur}>
-      <AbsoluteFill style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '0 60px' }}>
-        <div style={{ transform: `translateY(${titleY}px)`, marginBottom: 50 }}>
-          <p style={headline(52, WHITE)}>EVERY MONTH</p>
-          <p style={headline(52, RED)}>YOU WAIT</p>
-        </div>
+      <AbsoluteFill>
+        <svg width="1080" height="1920" viewBox="0 0 1080 1920">
+          <text x="540" y={200 + titleY} textAnchor="middle"
+            fontFamily={FONT} fontSize="70" fontWeight="900" fill={WHITE}
+            letterSpacing="4">YOUR BRAIN</text>
+          <text x="540" y={300 + titleY} textAnchor="middle"
+            fontFamily={FONT} fontSize="50" fill={WHITE} letterSpacing="2">
+            sees a crash and screams
+          </text>
+          <text x="540" y={408 + titleY} textAnchor="middle"
+            fontFamily={FONT} fontSize="80" fontWeight="900" fill={RED}
+            letterSpacing="4">GET OUT!</text>
 
-        <svg width="420" height="320" viewBox="0 0 420 320">
-          {/* Piggy bank (left side) */}
-          <ellipse cx="95" cy="195" rx="55" ry="50" fill="#F59E0B" opacity={0.85} />
-          <ellipse cx="143" cy="204" rx="15" ry="11" fill="#D97706" />
-          <circle cx="137" cy="202" r="3" fill={BLACK} />
-          <circle cx="148" cy="202" r="3" fill={BLACK} />
-          <circle cx="118" cy="180" r="4.5" fill={BLACK} />
-          <ellipse cx="79" cy="153" rx="11" ry="15" fill="#D97706" />
-          <rect x="58" y="238" width="15" height="24" rx="5" fill="#D97706" />
-          <rect x="80" y="240" width="15" height="24" rx="5" fill="#D97706" />
-          <rect x="102" y="240" width="15" height="24" rx="5" fill="#D97706" />
-          <rect x="79" y="149" width="18" height="5" rx="2" fill={BLACK} />
-          {/* Coin slot leaking */}
-          <circle cx="90" cy="147" r="7" fill={RED} opacity={interpolate(flowP, [0, 0.5], [0, 0.9], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })} />
+          <g transform={`translate(${personX}, 0)`}>
+            <circle cx="240" cy="780" r="68" fill={WHITE} />
+            <rect x="202" y="848" width="76" height="176" fill={WHITE} rx="20" />
+            <line x1="235" y1="1024" x2="168" y2="1156"
+              stroke={WHITE} strokeWidth="22" strokeLinecap="round" />
+            <line x1="255" y1="1024" x2="318" y2="1140"
+              stroke={WHITE} strokeWidth="22" strokeLinecap="round" />
+            <line x1="220" y1="876" x2="142" y2="988"
+              stroke={WHITE} strokeWidth="18" strokeLinecap="round" />
+            <line x1="270" y1="868" x2="348" y2="948"
+              stroke={WHITE} strokeWidth="18" strokeLinecap="round" />
+          </g>
 
-          {/* Arrow */}
-          <text x="193" y="204" fontSize="38" fill={GRAY} textAnchor="middle">→</text>
+          <polyline points={crashStr} fill="none" stroke={RED} strokeWidth="6"
+            strokeLinecap="round" strokeLinejoin="round" />
+          <polygon
+            points={`${cX + cW},${cY + cH * 0.97} ${cX + cW - 28},${cY + cH * 0.87} ${cX + cW + 28},${cY + cH * 0.87}`}
+            fill={RED}
+          />
 
-          {/* Bank building (right side, grows) */}
-          <rect x={310} y={bankY} width={bankW} height={bankH} fill={WHITE} rx="4" />
-          <rect x={307} y={bankY - 16} width={bankW + 6} height={18} fill={GRAY} rx="3" />
-          {[0, 1, 2, 3].map(i => (
-            <rect key={i} x={315 + i * (bankW - 20) / 3} y={bankY + 4} width={7} height={bankH - 20} rx="2" fill={GRAY} opacity={0.35} />
-          ))}
-          <rect x={310} y={bankY + bankH - 12} width={bankW} height={12} fill={GRAY} opacity={0.3} rx="2" />
-          <text x={310 + bankW / 2} y={bankY + bankH + 22} fontSize="20" fill={WHITE} textAnchor="middle" fontFamily={FONT}>BANK</text>
+          <text x="540" y={1250 + numY} textAnchor="middle"
+            fontFamily={FONT} fontSize="96" fontWeight="900" fill={RED}
+            opacity={numOp} letterSpacing="4">$38,879</text>
+          <text x="540" y={1368 + numY} textAnchor="middle"
+            fontFamily={FONT} fontSize="44" fill={WHITE}
+            opacity={numOp} letterSpacing="3">LOST TO PANIC</text>
 
-          {/* Floating dollar signs */}
-          {dollarItems.map((d, i) => (
-            <text key={i} x={d.x} y={d.y} fontSize="32" fill={RED} opacity={d.o} textAnchor="middle">$</text>
-          ))}
+          <text x="540" y={1580} textAnchor="middle"
+            fontFamily={FONT} fontSize="34" fill={GRAY} letterSpacing="2">
+            by the time you run, recovery has started
+          </text>
         </svg>
-
-        <div style={{ opacity: labelO, marginTop: 20 }}>
-          <p style={headline(42, RED)}>YOUR BANK PROFITS</p>
-          <p style={{ fontFamily: FONT, fontSize: 28, color: GRAY, textAlign: 'center', marginTop: 10 }}>
-            billions from idle savings every year
-          </p>
-        </div>
       </AbsoluteFill>
     </FadeScene>
   );
 };
 
-// Scene 6: Search bar + rising bar chart + CTA
+// ─── SCENE 6 — Light — 3-step CTA + rising chart ─────────────────────────────
 const Scene6: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
 
   const titleSp = spring({ frame, fps: 30, config: { damping: 14, stiffness: 80 } });
-  const titleY = interpolate(titleSp, [0, 1], [80, 0]);
+  const titleY = interpolate(titleSp, [0, 1], [60, 0]);
 
-  const searchSp = spring({ frame: Math.max(0, frame - 22), fps: 30, config: { damping: 14, stiffness: 70 } });
-  const searchScale = interpolate(searchSp, [0, 1], [0.8, 1]);
-  const searchO = interpolate(searchSp, [0, 1], [0, 1]);
+  const s1Op = interpolate(frame, [22, 48], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const s2Op = interpolate(frame, [52, 78], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const s3Op = interpolate(frame, [82, 108], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const ctaOp = interpolate(frame, [128, 158], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const ctaSp = spring({ frame: Math.max(0, frame - 128), fps: 30, config: { damping: 12, stiffness: 70 } });
+  const ctaScale = interpolate(ctaSp, [0, 1], [0.8, 1]);
 
-  const barGrow = interpolate(frame, [50, 185], [0, 1], {
-    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
-    easing: Easing.out(Easing.cubic),
-  });
-
-  const ctaSp = spring({ frame: Math.max(0, frame - 130), fps: 30, config: { damping: 12, stiffness: 60 } });
-  const ctaScale = interpolate(ctaSp, [0, 1], [0.85, 1]);
-  const ctaO = interpolate(ctaSp, [0, 1], [0, 1]);
-
-  const barHeights = [0.28, 0.42, 0.36, 0.54, 0.48, 0.65, 0.58, 0.78, 0.72, 1.0];
+  const linePts: [number, number][] = [
+    [0.0, 0.92], [0.1, 0.84], [0.2, 0.76], [0.3, 0.68],
+    [0.4, 0.60], [0.5, 0.50], [0.6, 0.40], [0.7, 0.30],
+    [0.8, 0.20], [0.9, 0.11], [1.0, 0.05],
+  ];
+  const LX = 80; const LY = 1310;
+  const LW = 920; const LH = 340;
+  const lineStr = linePts.map(([x, y]) => `${LX + x * LW},${LY + y * LH}`).join(' ');
 
   return (
     <FadeScene bg={BG_LIGHT} dur={dur}>
-      <AbsoluteFill style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '0 60px' }}>
-        <div style={{ transform: `translateY(${titleY}px)`, marginBottom: 50 }}>
-          <p style={headline(56, BLACK)}>DO THIS</p>
-          <p style={headline(56, ACCENT)}>RIGHT NOW</p>
-        </div>
+      <AbsoluteFill>
+        <svg width="1080" height="1920" viewBox="0 0 1080 1920">
+          <text x="540" y={175 + titleY} textAnchor="middle"
+            fontFamily={FONT} fontSize="64" fontWeight="900" fill={BLACK}
+            letterSpacing="4">THE WINNING MOVE</text>
+          <text x="540" y={268 + titleY} textAnchor="middle"
+            fontFamily={FONT} fontSize="40" fill={GRAY} letterSpacing="2">
+            is boring on purpose
+          </text>
 
-        {/* Search bar */}
-        <div style={{
-          opacity: searchO,
-          transform: `scale(${searchScale})`,
-          transformOrigin: 'center center',
-          background: WHITE,
-          borderRadius: 16,
-          padding: '20px 32px',
-          width: '100%',
-          boxSizing: 'border-box' as const,
-          boxShadow: '0 4px 24px rgba(0,0,0,0.12)',
-          marginBottom: 44,
-          display: 'flex',
-          alignItems: 'center',
-          gap: 18,
-          border: `2px solid ${ACCENT}`,
-        }}>
-          <svg width="36" height="36" viewBox="0 0 36 36">
-            <circle cx="15" cy="15" r="10" fill="none" stroke={GRAY} strokeWidth="3" />
-            <line x1="22" y1="22" x2="32" y2="32" stroke={GRAY} strokeWidth="3" strokeLinecap="round" />
-          </svg>
-          <p style={{ fontFamily: FONT, fontSize: 26, color: BLACK, margin: 0, letterSpacing: '0.02em' }}>
-            high-yield savings account
-          </p>
-        </div>
+          <g opacity={s1Op}>
+            <circle cx="104" cy="520" r="38" fill={ACCENT} />
+            <text x="104" y="533" textAnchor="middle"
+              fontFamily={FONT} fontSize="34" fontWeight="900" fill={WHITE}>1</text>
+            <text x="164" y="534" fontFamily={FONT} fontSize="50" fontWeight="900"
+              fill={BLACK} letterSpacing="2">AUTOMATE IT</text>
+          </g>
 
-        {/* Rising bar chart */}
-        <div style={{ display: 'flex', alignItems: 'flex-end', gap: 12, height: 190, marginBottom: 44, width: '100%', justifyContent: 'center' }}>
-          {barHeights.map((h, i) => {
-            const barH = interpolate(barGrow, [i * 0.06, Math.min(1, i * 0.06 + 0.45)], [0, h * 175], {
-              extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
-            });
-            const isLast = i === barHeights.length - 1;
-            return (
-              <div key={i} style={{
-                width: 42,
-                height: barH,
-                background: isLast ? ACCENT : `rgba(16,185,129,${0.35 + i * 0.065})`,
-                borderRadius: '6px 6px 0 0',
-              }} />
-            );
-          })}
-        </div>
+          <g opacity={s2Op}>
+            <circle cx="104" cy="660" r="38" fill={ACCENT} />
+            <text x="104" y="673" textAnchor="middle"
+              fontFamily={FONT} fontSize="34" fontWeight="900" fill={WHITE}>2</text>
+            <text x="164" y="674" fontFamily={FONT} fontSize="50" fontWeight="900"
+              fill={BLACK} letterSpacing="2">STOP WATCHING</text>
+          </g>
 
-        {/* CTA box */}
-        <div style={{
-          opacity: ctaO,
-          transform: `scale(${ctaScale})`,
-          transformOrigin: 'center center',
-          background: ACCENT,
-          borderRadius: 20,
-          padding: '30px 44px',
-          width: '100%',
-          boxSizing: 'border-box' as const,
-          textAlign: 'center',
-        }}>
-          <p style={{ fontFamily: FONT, fontSize: 34, color: BLACK, margin: 0, lineHeight: 1.3 }}>
-            10 MINUTES COULD EARN<br />YOU $3,400
-          </p>
-        </div>
+          <g opacity={s3Op}>
+            <circle cx="104" cy="800" r="38" fill={ACCENT} />
+            <text x="104" y="813" textAnchor="middle"
+              fontFamily={FONT} fontSize="34" fontWeight="900" fill={WHITE}>3</text>
+            <text x="164" y="814" fontFamily={FONT} fontSize="50" fontWeight="900"
+              fill={BLACK} letterSpacing="2">NEVER PANIC-SELL</text>
+          </g>
+
+          <line x1={LX} y1={LY} x2={LX} y2={LY + LH}
+            stroke={GRAY} strokeWidth="2" opacity="0.3" />
+          <line x1={LX} y1={LY + LH} x2={LX + LW} y2={LY + LH}
+            stroke={GRAY} strokeWidth="2" opacity="0.3" />
+          <polyline points={lineStr} fill="none" stroke={GREEN} strokeWidth="6"
+            strokeLinecap="round" strokeLinejoin="round" />
+
+          <g opacity={ctaOp} transform={`translate(540, 1762) scale(${ctaScale})`}>
+            <rect x="-278" y="-54" width="556" height="88" rx="44" fill={ACCENT} />
+            <text x="0" y="14" textAnchor="middle"
+              fontFamily={FONT} fontSize="40" fontWeight="900" fill={WHITE}
+              letterSpacing="4">FOLLOW FOR MORE</text>
+          </g>
+        </svg>
       </AbsoluteFill>
     </FadeScene>
   );
 };
 
+// ─── COMPOSITION ──────────────────────────────────────────────────────────────
 export default function DAILY() {
   return (
     <AbsoluteFill style={{ background: BG_DARK }}>
