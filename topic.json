@@ -1,7 +1,11 @@
 {
-  "title": "Missing 10 Market Days Costs You $38,000",
-  "hook": "Investors who panic and pull out during crashes miss the 10 best days — and that one mistake turns $71,750 into $32,871.",
-  "angle": "Most people think exiting a dropping market is smart, but the market's biggest recovery days happen inside its worst crashes — making timing catastrophically expensive",
-  "audience": "Anyone with a 401k, IRA, or investment account who checks their balance during downturns and feels the urge to sell",
-  "key_numbers": ["$10,000 invested in S&P 500 2004-2024 = $71,750 if you stayed in", "Miss the 10 best days = only $32,871", "6 of the 10 best days occur within 2 weeks of the 10 worst days"]
+  "title": "The Ultra-Rich Pay 8.2% Tax While You Pay 22%",
+  "hook": "Billionaires found a legal strategy to live on millions tax-free while you hand over 22% — and it's been hiding in plain sight.",
+  "angle": "Most finance content tells you to save more. This reveals the structural tax advantage the ultra-wealthy use that ordinary income earners simply can't access — called Buy, Borrow, Die.",
+  "audience": "Middle-class earners frustrated by their tax burden who want to understand wealth-building strategies used by the ultra-wealthy",
+  "key_numbers": [
+    "Top 400 Americans paid an average effective tax rate of just 8.2% (ProPublica/IRS data)",
+    "Borrowing $50M against a portfolio at 4% costs $2M in interest vs $37M in income tax on $100M",
+    "Step-up in basis at death eliminates all unrealized capital gains — heirs inherit tax-free"
+  ]
 }

@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "What if missing just ten days in the stock market cut your money in half? It sounds impossible — but the numbers are absolutely brutal.",
-    "visual": "Animated stock chart line drawing across screen with dramatic dips and recoveries. Green dots mark the 10 best recovery days. Title: 'JUST 10 DAYS' in blue.",
+    "narration": "You pay 22% income tax on everything you earn. America's 400 wealthiest paid an average of 8.2%. Here's the exact legal strategy making that possible.",
+    "visual": "Dark background. Split screen: casual worker silhouette on left with '22%' in red animating up from zero, suited wealthy figure on right with '8.2%' in green animating up. Text at bottom: 'SAME COUNTRY. DIFFERENT RULES.'",
     "accent_color": "blue"
   },
   {
     "scene": 2,
-    "narration": "Ten thousand dollars in the S&P 500 in 2004, left completely alone for twenty years, became $71,750. That's boring, patient money doing its thing.",
-    "visual": "Large gold coin with dollar sign springs in. Counter animates from $10,000 to $71,750. Label: 'STAYED IN THE MARKET'. Light background.",
+    "narration": "It's called buy, borrow, die. They buy appreciating assets, never sell them, then borrow cash against the portfolio instead. No sale means zero taxable income.",
+    "visual": "Light background. Three large circles spring into view in sequence: stock chart icon labeled 'BUY', bank building labeled 'BORROW', gravestone labeled 'DIE'. Connecting arrows animate between them. Bottom text: 'NO SALE = NO TAX'",
     "accent_color": "blue"
   },
   {
     "scene": 3,
-    "narration": "Same $10,000 — but this investor panicked during the scary parts and missed just the ten best trading days. Their ending balance? Only $32,871.",
-    "visual": "Two vertical bars side by side: tall green bar ($71,750) vs short red bar ($32,871). Both animate up from zero. '$38,879 DIFFERENCE' label below.",
+    "narration": "The math is staggering. On $100 million, a salary means $37 million in taxes. But borrow $50 million against your portfolio and the interest is only $2 million. That's $35 million saved.",
+    "visual": "Dark background. Left column: money bag with '$37M TAX' in red. Right column: bank building with '$2M INTEREST' in blue. Large 'VS' between them. Bottom: 'SAVES $35,000,000' in green animating in.",
     "accent_color": "blue"
   },
   {
     "scene": 4,
-    "narration": "Here's the part that'll mess with your head — six of those ten best days happened within two weeks of the ten worst days. The biggest gains hide inside the biggest crashes.",
-    "visual": "Timeline with red X marks for worst days and green circles for best days, shown clustered together. Text: '6 OF 10 BEST DAYS HIDE IN CRASHES'. Light background.",
+    "narration": "ProPublica proved it with leaked IRS data. The 400 richest Americans paid an effective rate of 8.2% — less than a nurse, less than a teacher, less than you.",
+    "visual": "Light background. Two vertical bars growing upward: left bar labeled 'YOU' reaches 22% in red, right bar labeled 'TOP 400' stops at 8.2% in blue. Percentage numbers animate up as bars grow.",
     "accent_color": "blue"
   },
   {
     "scene": 5,
-    "narration": "Your brain sees a crash and screams get out. But by the time you run, you've missed the recovery. Fear doesn't protect your money — it steals it.",
-    "visual": "Person silhouette running left away from a red downward crash arrow on the right. '$38,879 LOST TO PANIC' text in red springs in below.",
+    "narration": "And here's the final trap door. When they die, all unrealized gains get a step-up in basis — every lifetime of gains wiped clean. Their heirs inherit millions completely tax-free.",
+    "visual": "Dark background. Left-to-right timeline: person holding stock at $1M, chart growing to $100M, gravestone icon, reset arrow labeled 'STEP-UP', heir figure receiving '$100M'. Text: 'ZERO TAX OWED. FOREVER.'",
     "accent_color": "blue"
   },
   {
     "scene": 6,
-    "narration": "The move that beats almost every trader alive is boring: automate it, stop watching it, never panic-sell. Follow for more money moves they don't teach you.",
-    "visual": "Three numbered steps animate in: 1 AUTOMATE IT, 2 STOP WATCHING, 3 NEVER PANIC-SELL. Rising green line chart below. Blue 'FOLLOW FOR MORE' button. Light background.",
+    "narration": "You can't fully copy this, but you can think like them. Max your Roth IRA, harvest tax losses, and hold appreciating assets long-term. Realize gains on your schedule, not the IRS's.",
+    "visual": "Light background. Three tips spring in sequentially: Roth IRA jar labeled 'MAX ROTH IRA', downward chart labeled 'HARVEST LOSSES', house icon labeled 'HOLD ASSETS'. Bottom: 'FOLLOW FOR MORE' in blue.",
     "accent_color": "blue"
   }
 ]
