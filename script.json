@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You pay 22% income tax on everything you earn. America's 400 wealthiest paid an average of 8.2%. Here's the exact legal strategy making that possible.",
-    "visual": "Dark background. Split screen: casual worker silhouette on left with '22%' in red animating up from zero, suited wealthy figure on right with '8.2%' in green animating up. Text at bottom: 'SAME COUNTRY. DIFFERENT RULES.'",
+    "narration": "Money is the number one cause of divorce in America — and it's not just about not having enough. If you and your partner fight about spending, you're losing way more than the argument.",
+    "visual": "Dark background. Two person silhouettes face each other with a red dollar sign between them. Text: 'MONEY IS THE #1 CAUSE OF DIVORCE'. Both figures slide in from opposite sides.",
     "accent_color": "blue"
   },
   {
     "scene": 2,
-    "narration": "It's called buy, borrow, die. They buy appreciating assets, never sell them, then borrow cash against the portfolio instead. No sale means zero taxable income.",
-    "visual": "Light background. Three large circles spring into view in sequence: stock chart icon labeled 'BUY', bank building labeled 'BORROW', gravestone labeled 'DIE'. Connecting arrows animate between them. Bottom text: 'NO SALE = NO TAX'",
+    "narration": "Seventy percent of couples argue about money regularly. And here's what nobody tells you — those fights don't just cost your relationship. They cost you thousands of dollars every single year.",
+    "visual": "Light background. Two speech bubbles from opposite sides — one says SPEND, one says SAVE. A large '70%' counter animates upward. Subtitle: 'OF COUPLES FIGHT ABOUT MONEY'.",
     "accent_color": "blue"
   },
   {
     "scene": 3,
-    "narration": "The math is staggering. On $100 million, a salary means $37 million in taxes. But borrow $50 million against your portfolio and the interest is only $2 million. That's $35 million saved.",
-    "visual": "Dark background. Left column: money bag with '$37M TAX' in red. Right column: bank building with '$2M INTEREST' in blue. Large 'VS' between them. Bottom: 'SAVES $35,000,000' in green animating in.",
+    "narration": "When you're financially misaligned, you make competing purchases, miss investment windows, and avoid hard money conversations. That scattered approach leaks thousands every year — and it compounds.",
+    "visual": "Dark background. Left side: person with shopping bag (SPEND). Right side: person with piggy bank (SAVE). Dollar bills fly off in opposite directions. Text: 'THOUSANDS LOST EVERY YEAR'.",
     "accent_color": "blue"
   },
   {
     "scene": 4,
-    "narration": "ProPublica proved it with leaked IRS data. The 400 richest Americans paid an effective rate of 8.2% — less than a nurse, less than a teacher, less than you.",
-    "visual": "Light background. Two vertical bars growing upward: left bar labeled 'YOU' reaches 22% in red, right bar labeled 'TOP 400' stops at 8.2% in blue. Percentage numbers animate up as bars grow.",
+    "narration": "Kansas State University found couples who fight about money are 37% more likely to divorce. And divorce doesn't just hurt emotionally — the average split costs between fifteen and thirty thousand dollars in legal fees alone.",
+    "visual": "Light background. Gavel SVG with a swing animation. '37% MORE LIKELY TO DIVORCE' appears. Below, a cost counter climbs from $0 to $30,000 inside a dark box labeled 'AVERAGE DIVORCE COST'.",
     "accent_color": "blue"
   },
   {
     "scene": 5,
-    "narration": "And here's the final trap door. When they die, all unrealized gains get a step-up in basis — every lifetime of gains wiped clean. Their heirs inherit millions completely tax-free.",
-    "visual": "Dark background. Left-to-right timeline: person holding stock at $1M, chart growing to $100M, gravestone icon, reset arrow labeled 'STEP-UP', heir figure receiving '$100M'. Text: 'ZERO TAX OWED. FOREVER.'",
+    "narration": "Even if you stay together, misaligned couples retire with seven hundred sixty thousand dollars less than financially compatible ones. That gap comes from wasted spending, missed compound growth, and years of financial conflict.",
+    "visual": "Dark background. Two bar charts side by side grow upward — green bar (ALIGNED, $1.2M) towers over red bar (MISALIGNED, $440K). '$760,000 GAP' badge springs in at the end.",
     "accent_color": "blue"
   },
   {
     "scene": 6,
-    "narration": "You can't fully copy this, but you can think like them. Max your Roth IRA, harvest tax losses, and hold appreciating assets long-term. Realize gains on your schedule, not the IRS's.",
-    "visual": "Light background. Three tips spring in sequentially: Roth IRA jar labeled 'MAX ROTH IRA', downward chart labeled 'HARVEST LOSSES', house icon labeled 'HOLD ASSETS'. Bottom: 'FOLLOW FOR MORE' in blue.",
+    "narration": "The fix isn't finding someone who spends exactly like you. It's scheduling a monthly money date — just thirty minutes to align on goals. That one habit closes the gap. Start tonight.",
+    "visual": "Light background. Calendar SVG with a heart marked on a date. Two person silhouettes sit together. CTA button: 'SCHEDULE YOUR MONEY DATE'. Pulsing 'START TONIGHT →' arrow.",
     "accent_color": "blue"
   }
 ]
