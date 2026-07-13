@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Money is the number one cause of divorce in America — and it's not just about not having enough. If you and your partner fight about spending, you're losing way more than the argument.",
-    "visual": "Dark background. Two person silhouettes face each other with a red dollar sign between them. Text: 'MONEY IS THE #1 CAUSE OF DIVORCE'. Both figures slide in from opposite sides.",
-    "accent_color": "blue"
+    "narration": "Your bank charges nine hundred dollars to enroll you in their biweekly mortgage program. That same trick costs you nothing to pull off yourself, and here's exactly how.",
+    "visual": "Dark background. Large '$900' text springs in red. House SVG slides up from bottom. Bank label with price tag badge. Sub-text 'for a trick that's completely FREE' fades in.",
+    "accent_color": "green"
   },
   {
     "scene": 2,
-    "narration": "Seventy percent of couples argue about money regularly. And here's what nobody tells you — those fights don't just cost your relationship. They cost you thousands of dollars every single year.",
-    "visual": "Light background. Two speech bubbles from opposite sides — one says SPEND, one says SAVE. A large '70%' counter animates upward. Subtitle: 'OF COUPLES FIGHT ABOUT MONEY'.",
-    "accent_color": "blue"
+    "narration": "Pay half your mortgage every two weeks instead of monthly. That gives you twenty-six half-payments a year — which sneaks in one extra full payment. No budget change needed.",
+    "visual": "Light background. Two columns: 'MONTHLY' showing 12 circles, 'BIWEEKLY' showing 26 circles. '= ONE EXTRA PAYMENT/YEAR' highlighted box springs in below.",
+    "accent_color": "green"
   },
   {
     "scene": 3,
-    "narration": "When you're financially misaligned, you make competing purchases, miss investment windows, and avoid hard money conversations. That scattered approach leaks thousands every year — and it compounds.",
-    "visual": "Dark background. Left side: person with shopping bag (SPEND). Right side: person with piggy bank (SAVE). Dollar bills fly off in opposite directions. Text: 'THOUSANDS LOST EVERY YEAR'.",
-    "accent_color": "blue"
+    "narration": "That one extra payment a year cuts thirty-four thousand dollars of interest off a typical mortgage. You'll pay off a thirty-year loan four to five years ahead of schedule.",
+    "visual": "Dark background. Animated counter climbs from $0 to $34,000. Two bars: red '30 YEARS' full width, green 'BIWEEKLY' shorter. '4-5 YEARS EARLIER' fades in.",
+    "accent_color": "green"
   },
   {
     "scene": 4,
-    "narration": "Kansas State University found couples who fight about money are 37% more likely to divorce. And divorce doesn't just hurt emotionally — the average split costs between fifteen and thirty thousand dollars in legal fees alone.",
-    "visual": "Light background. Gavel SVG with a swing animation. '37% MORE LIKELY TO DIVORCE' appears. Below, a cost counter climbs from $0 to $30,000 inside a dark box labeled 'AVERAGE DIVORCE COST'.",
-    "accent_color": "blue"
+    "narration": "Banks know this trick works, so they sell it back to you for nine hundred dollars. They're literally charging you for something you already have the power to do right now.",
+    "visual": "Light background. Bank building SVG springs in. Red '$900 FEE' badge hangs off the building. Large red X overlays the bank. 'THEY SELL YOU YOUR OWN TRICK' text appears.",
+    "accent_color": "green"
   },
   {
     "scene": 5,
-    "narration": "Even if you stay together, misaligned couples retire with seven hundred sixty thousand dollars less than financially compatible ones. That gap comes from wasted spending, missed compound growth, and years of financial conflict.",
-    "visual": "Dark background. Two bar charts side by side grow upward — green bar (ALIGNED, $1.2M) towers over red bar (MISALIGNED, $440K). '$760,000 GAP' badge springs in at the end.",
-    "accent_color": "blue"
+    "narration": "Here's the free version. Take your monthly payment and divide by twelve. Add that amount as extra principal every month. On a fifteen-hundred-dollar payment, that's just one-twenty-five extra.",
+    "visual": "Dark background. Three step cards slide in sequentially: Step 1 'FIND YOUR MONTHLY PAYMENT', Step 2 'DIVIDE BY 12', Step 3 'ADD AS EXTRA PRINCIPAL'. Green banner: '$1,500 ÷ 12 = $125/MONTH EXTRA'.",
+    "accent_color": "green"
   },
   {
     "scene": 6,
-    "narration": "The fix isn't finding someone who spends exactly like you. It's scheduling a monthly money date — just thirty minutes to align on goals. That one habit closes the gap. Start tonight.",
-    "visual": "Light background. Calendar SVG with a heart marked on a date. Two person silhouettes sit together. CTA button: 'SCHEDULE YOUR MONEY DATE'. Pulsing 'START TONIGHT →' arrow.",
-    "accent_color": "blue"
+    "narration": "No enrollment fee. No bank program. No permission required. Just one small math move that saves you years and thirty-four thousand dollars. Follow for more tricks they profit from hiding.",
+    "visual": "Light background. House SVG springs in with green checkmark circle. 'PAID OFF EARLY' banner. '$34,000 SAVED' and '5 YEARS FASTER' stats appear. Dark CTA box: 'FOLLOW FOR MORE TRICKS THEY HIDE'.",
+    "accent_color": "green"
   }
 ]
