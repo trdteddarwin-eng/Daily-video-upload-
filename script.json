@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Your bank charges nine hundred dollars to enroll you in their biweekly mortgage program. That same trick costs you nothing to pull off yourself, and here's exactly how.",
-    "visual": "Dark background. Large '$900' text springs in red. House SVG slides up from bottom. Bank label with price tag badge. Sub-text 'for a trick that's completely FREE' fades in.",
-    "accent_color": "green"
+    "narration": "Right now, 42% of Americans have an unread financial statement sitting in their inbox. That's not laziness — it's a documented psychological pattern. And it has a price tag you're not going to like.",
+    "visual": "Dark background. Large envelope SVG with NEW badge animating in. Counter ticking up from 0% to 42% in bold red. Three notification badges slide in stacked below — 'Credit Card Statement', 'Bank Alert: Low Balance', 'Overdue Payment Notice'.",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Pay half your mortgage every two weeks instead of monthly. That gives you twenty-six half-payments a year — which sneaks in one extra full payment. No budget change needed.",
-    "visual": "Light background. Two columns: 'MONTHLY' showing 12 circles, 'BIWEEKLY' showing 26 circles. '= ONE EXTRA PAYMENT/YEAR' highlighted box springs in below.",
-    "accent_color": "green"
+    "narration": "First hit: late fees. Avoiders miss two or three payments a year — that's $40 a pop and a credit score hit that follows you for seven years. And this is just the entry cost of the habit.",
+    "visual": "Light background. Monthly calendar grid with red X marks appearing on three dates. Pink piggy bank SVG with a crack. '$40 LATE FEE x 3' badge pops in. Running dollar total animates up to $120.",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "That one extra payment a year cuts thirty-four thousand dollars of interest off a typical mortgage. You'll pay off a thirty-year loan four to five years ahead of schedule.",
-    "visual": "Dark background. Animated counter climbs from $0 to $34,000. Two bars: red '30 YEARS' full width, green 'BIWEEKLY' shorter. '4-5 YEARS EARLIER' fades in.",
-    "accent_color": "green"
+    "narration": "Then there's missed fraud. Banks only cover unauthorized charges if you report them within 60 days. Avoiders blow right past that window — and the average missed charge is $247, completely gone.",
+    "visual": "Dark background. Credit card SVG slides in with red X over it. 60-day countdown bar drains to empty. '$247 GONE FOREVER' badge springs in. Warning message flashes twice.",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Banks know this trick works, so they sell it back to you for nine hundred dollars. They're literally charging you for something you already have the power to do right now.",
-    "visual": "Light background. Bank building SVG springs in. Red '$900 FEE' badge hangs off the building. Large red X overlays the bank. 'THEY SELL YOU YOUR OWN TRICK' text appears.",
-    "accent_color": "green"
+    "narration": "Here's a wild one — 80% of medical bills contain errors. That's not a typo. If you're an avoider, you're literally paying for things you never received, and you'll never even know it.",
+    "visual": "Light background. Medical bill document slides up with line items. Three error items highlighted with red alert dots appearing in sequence — 'Lab Work x3 billed', 'Duplicate Procedure', 'Insurance Error'. '80%' counter animates in large.",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Here's the free version. Take your monthly payment and divide by twelve. Add that amount as extra principal every month. On a fifteen-hundred-dollar payment, that's just one-twenty-five extra.",
-    "visual": "Dark background. Three step cards slide in sequentially: Step 1 'FIND YOUR MONTHLY PAYMENT', Step 2 'DIVIDE BY 12', Step 3 'ADD AS EXTRA PRINCIPAL'. Green banner: '$1,500 ÷ 12 = $125/MONTH EXTRA'.",
-    "accent_color": "green"
+    "narration": "And the IRS has zero sympathy for avoidance anxiety. Miss a filing deadline and you're paying 5% per month in penalties — up to 25% of your total bill. That turns $2,000 into $2,500 in just six months.",
+    "visual": "Dark background. IRS-style letter with eagle emblem. Red penalty meter bar grows from 0% to 25%. Dollar amount animates from $2,000 crossed out to $2,500 in red.",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "No enrollment fee. No bank program. No permission required. Just one small math move that saves you years and thirty-four thousand dollars. Follow for more tricks they profit from hiding.",
-    "visual": "Light background. House SVG springs in with green checkmark circle. 'PAID OFF EARLY' banner. '$34,000 SAVED' and '5 YEARS FASTER' stats appear. Dark CTA box: 'FOLLOW FOR MORE TRICKS THEY HIDE'.",
-    "accent_color": "green"
+    "narration": "Add it all up over ten years — late fees, missed fraud, billing errors, IRS penalties — and financial avoidance costs you $24,000. The fix? Ten minutes, once a month. Open it. Review it. Protect yourself.",
+    "visual": "Light background. Cost breakdown list itemizes each cost fading in one by one. Large red '$24,000' counter animates up. Red clock SVG. Bold CTA: '10 MINUTES ONCE A MONTH' with 'OPEN · REVIEW · PROTECT'.",
+    "accent_color": "red"
   }
 ]

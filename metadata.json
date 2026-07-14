@@ -1,16 +1,13 @@
 {
   "tiktok": {
-    "caption": "Your bank charges $900 for a mortgage trick you can do yourself for FREE — here's how 🏠💸",
-    "hashtags": ["#mortgage", "#personalfinance", "#moneyhacks", "#homeowner", "#financetok", "#moneytips", "#realestate", "#savemoney"]
+    "caption": "42% of people never open their bills. Here's what that habit is actually costing you 👀",
+    "hashtags": ["#personalfinance", "#moneytips", "#financialfreedom", "#finance", "#moneymindset", "#savemoney", "#financialliteracy", "#moneyhabits", "#creditcard", "#debtfree"]
   },
   "youtube_short": {
-    "title": "Banks Charge $900 For This Free Mortgage Trick",
-    "title_alternatives": [
-      "The $900 Mortgage Trick You Can Do Yourself for Free",
-      "Stop Paying Banks $900 — Do This Instead"
-    ],
-    "description": "Your bank offers a 'biweekly mortgage program' that saves you $34,000 in interest — and then charges you $900 to join it. Here's the thing: you can do the exact same thing yourself, for free, starting today. Just divide your monthly payment by 12 and add that amount as extra principal each month. That sneaks in one extra full payment per year, and over a 30-year mortgage that trims 4-5 years off your loan and saves you thirty-four thousand dollars. No bank enrollment. No fee. No permission required. #mortgage #personalfinance #moneytips #homeowner #savemoney",
-    "tags": ["mortgage", "personal finance", "money tips", "homeowner", "biweekly mortgage", "mortgage hack", "save money", "finance tips", "money psychology", "wealth building", "real estate", "home buying"]
+    "title": "Not Opening Your Bills Costs $24,000",
+    "title_alternatives": ["The $24K Habit Nobody Talks About", "Financial Avoidance Has a Shocking Price Tag"],
+    "description": "42% of Americans avoid their financial statements — and it's not just a bad habit, it's costing them $24,000 over a decade. Between late fees, missed fraud, uncaught billing errors (80% of medical bills have mistakes), and IRS penalties up to 25%, the price tag adds up fast. The fix is just 10 minutes once a month. #personalfinance #moneytips #financialfreedom #savemoney #financialliteracy",
+    "tags": ["personal finance", "money tips", "financial literacy", "bills", "save money", "credit card", "fraud protection", "IRS penalties", "late fees", "money habits", "financial avoidance", "debt free", "budgeting"]
   },
-  "hook_line": "Banks charge $900 for a trick that's completely FREE"
+  "hook_line": "42% of people never open their bills — here's the $24K price tag"
 }
