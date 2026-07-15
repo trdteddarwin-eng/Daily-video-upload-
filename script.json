@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Right now, 42% of Americans have an unread financial statement sitting in their inbox. That's not laziness — it's a documented psychological pattern. And it has a price tag you're not going to like.",
-    "visual": "Dark background. Large envelope SVG with NEW badge animating in. Counter ticking up from 0% to 42% in bold red. Three notification badges slide in stacked below — 'Credit Card Statement', 'Bank Alert: Low Balance', 'Overdue Payment Notice'.",
+    "narration": "Your brain makes 35,000 decisions every single day. By 4 PM it's running on fumes — and that's quietly costing you money.",
+    "visual": "Person silhouette with a glowing brain above them. A battery gauge labeled DECISION FUEL drains from 100% to nearly empty. A counter ticks up to 35,000.",
     "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "First hit: late fees. Avoiders miss two or three payments a year — that's $40 a pop and a credit score hit that follows you for seven years. And this is just the entry cost of the habit.",
-    "visual": "Light background. Monthly calendar grid with red X marks appearing on three dates. Pink piggy bank SVG with a crack. '$40 LATE FEE x 3' badge pops in. Running dollar total animates up to $120.",
+    "narration": "Scientists call it decision fatigue. Every choice you make burns through your mental fuel — and once it's gone, your brain starts cutting corners on everything.",
+    "visual": "Clock hands sweep from 9 AM to 4 PM. An energy bar drains alongside the clock. Text: EACH CHOICE BURNS MENTAL FUEL.",
     "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Then there's missed fraud. Banks only cover unauthorized charges if you report them within 60 days. Avoiders blow right past that window — and the average missed charge is $247, completely gone.",
-    "visual": "Dark background. Credit card SVG slides in with red X over it. 60-day countdown bar drains to empty. '$247 GONE FOREVER' badge springs in. Warning message flashes twice.",
+    "narration": "An Israeli study tracked judges — in the morning they approved parole 65% of the time. Just before lunch? Twenty percent. Same judge, same crime, different hour.",
+    "visual": "Gavel icon springs in. Two side-by-side bars animate upward: 65% tall green bar labeled MORNING and 20% short red bar labeled PRE-LUNCH.",
     "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Here's a wild one — 80% of medical bills contain errors. That's not a typo. If you're an avoider, you're literally paying for things you never received, and you'll never even know it.",
-    "visual": "Light background. Medical bill document slides up with line items. Three error items highlighted with red alert dots appearing in sequence — 'Lab Work x3 billed', 'Duplicate Procedure', 'Insurance Error'. '80%' counter animates in large.",
+    "narration": "Retailers figured this out decades ago. Sale emails hit at 4 and 5 PM on purpose. Flash deals, one-click checkout — all engineered for your exhausted brain.",
+    "visual": "Phone screen showing 4:00 PM. Five notification banners appear one by one: SALE ENDS TONIGHT, 50% OFF, YOUR CART IS WAITING, FLASH DEAL, JUST FOR YOU 40% OFF.",
     "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "And the IRS has zero sympathy for avoidance anxiety. Miss a filing deadline and you're paying 5% per month in penalties — up to 25% of your total bill. That turns $2,000 into $2,500 in just six months.",
-    "visual": "Dark background. IRS-style letter with eagle emblem. Red penalty meter bar grows from 0% to 25%. Dollar amount animates from $2,000 crossed out to $2,500 in red.",
+    "narration": "The average American spends 22% more on purchases made after 4 PM. Run that math — it's $1,400 drained from your wallet every single year.",
+    "visual": "Stack of dollar bills fades away one by one. A large counter animates from $0 up to $1,400. Text underneath: DRAINED EVERY YEAR.",
     "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Add it all up over ten years — late fees, missed fraud, billing errors, IRS penalties — and financial avoidance costs you $24,000. The fix? Ten minutes, once a month. Open it. Review it. Protect yourself.",
-    "visual": "Light background. Cost breakdown list itemizes each cost fading in one by one. Large red '$24,000' counter animates up. Red clock SVG. Bold CTA: '10 MINUTES ONCE A MONTH' with 'OPEN · REVIEW · PROTECT'.",
+    "narration": "The fix is dead simple. Make your big money decisions before 10 AM when your brain is fresh. Your morning self is genuinely your richest self.",
+    "visual": "Sunrise SVG with golden rays rotating slowly. Coffee cup beside it. Three checklist items check off: CHECK BALANCES BEFORE 9 AM, BIG BUYS MORNING ONLY, NO SHOPPING APPS AFTER 4 PM.",
     "accent_color": "red"
   }
 ]

@@ -1,13 +1,16 @@
 {
   "tiktok": {
-    "caption": "42% of people never open their bills. Here's what that habit is actually costing you 👀",
-    "hashtags": ["#personalfinance", "#moneytips", "#financialfreedom", "#finance", "#moneymindset", "#savemoney", "#financialliteracy", "#moneyhabits", "#creditcard", "#debtfree"]
+    "caption": "Your brain is basically drunk by 4 PM — and every retailer knows it. Here's the $1,400 science behind decision fatigue.",
+    "hashtags": ["#decisionfatigue", "#moneytips", "#personalfinance", "#financetok", "#moneypsychology", "#savemoney", "#financialfreedom", "#behavioralfinance"]
   },
   "youtube_short": {
-    "title": "Not Opening Your Bills Costs $24,000",
-    "title_alternatives": ["The $24K Habit Nobody Talks About", "Financial Avoidance Has a Shocking Price Tag"],
-    "description": "42% of Americans avoid their financial statements — and it's not just a bad habit, it's costing them $24,000 over a decade. Between late fees, missed fraud, uncaught billing errors (80% of medical bills have mistakes), and IRS penalties up to 25%, the price tag adds up fast. The fix is just 10 minutes once a month. #personalfinance #moneytips #financialfreedom #savemoney #financialliteracy",
-    "tags": ["personal finance", "money tips", "financial literacy", "bills", "save money", "credit card", "fraud protection", "IRS penalties", "late fees", "money habits", "financial avoidance", "debt free", "budgeting"]
+    "title": "Decision Fatigue Is Draining $1,400/Year",
+    "title_alternatives": [
+      "Your Brain Gets Drunk by 4PM (Costs $1,400)",
+      "Why You Spend 22% More After 4PM"
+    ],
+    "description": "Your brain makes 35,000 decisions a day — and by 4 PM it's running on empty. An Israeli judge study found the same judge approved parole 65% of the time in the morning but just 20% before lunch. Retailers have known this for decades — that's why sale emails hit your inbox at 4 and 5 PM. The result? Americans spend 22% more on late-day purchases, draining $1,400 a year from the average wallet. The fix: make every big money decision before 10 AM. #personalfinance #decisionfatigue #moneytips Follow for daily money psychology breakdowns.",
+    "tags": ["decision fatigue", "money psychology", "personal finance", "impulse buying", "save money", "behavioral finance", "financial tips", "money habits", "consumer psychology", "wealth building"]
   },
-  "hook_line": "42% of people never open their bills — here's the $24K price tag"
+  "hook_line": "YOUR BRAIN IS DRUNK BY 4PM"
 }
