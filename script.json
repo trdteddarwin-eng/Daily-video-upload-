@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Your brain makes 35,000 decisions every single day. By 4 PM it's running on fumes — and that's quietly costing you money.",
-    "visual": "Person silhouette with a glowing brain above them. A battery gauge labeled DECISION FUEL drains from 100% to nearly empty. A counter ticks up to 35,000.",
+    "narration": "Eight point eight million Americans are waiting for their student loans to be forgiven under income-driven repayment. Here's what nobody in that program tells you.",
+    "visual": "Dark background. Person silhouette with arms raised in celebration. Colorful confetti squares at fixed positions around the frame. A green 'FORGIVEN' stamp springs onto screen. Then red text fades in: 'BUT THE IRS DISAGREES.'",
     "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Scientists call it decision fatigue. Every choice you make burns through your mental fuel — and once it's gone, your brain starts cutting corners on everything.",
-    "visual": "Clock hands sweep from 9 AM to 4 PM. An energy bar drains alongside the clock. Text: EACH CHOICE BURNS MENTAL FUEL.",
+    "narration": "Income-driven repayment caps your payments to a percent of income for twenty-five years, then forgives whatever balance is left. Sounds amazing, right?",
+    "visual": "Light background. A 5-by-5 grid of 25 year-cells fills in one by one — year one through year twenty-four in red, the final cell turns green with a checkmark. '8.8M BORROWERS' counter animates up. Bridge text: 'THEN THE BALANCE IS WIPED — OR SO YOU THINK.'",
     "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "An Israeli study tracked judges — in the morning they approved parole 65% of the time. Just before lunch? Twenty percent. Same judge, same crime, different hour.",
-    "visual": "Gavel icon springs in. Two side-by-side bars animate upward: 65% tall green bar labeled MORNING and 20% short red bar labeled PRE-LUNCH.",
+    "narration": "The moment your loans are forgiven, the IRS mails you a Form 1099-C. Every single dollar forgiven gets counted as ordinary income in that tax year.",
+    "visual": "Dark background. An IRS letter paper springs in with a bold '1099-C' header and '$95,000 AMOUNT FORGIVEN.' A red 'TAXED' stamp springs onto the letter at a slight angle. White subtitle: 'THIS IS ORDINARY INCOME.'",
     "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Retailers figured this out decades ago. Sale emails hit at 4 and 5 PM on purpose. Flash deals, one-click checkout — all engineered for your exhausted brain.",
-    "visual": "Phone screen showing 4:00 PM. Five notification banners appear one by one: SALE ENDS TONIGHT, 50% OFF, YOUR CART IS WAITING, FLASH DEAL, JUST FOR YOU 40% OFF.",
+    "narration": "Say ninety-five thousand gets forgiven. At twenty-two percent, that's nearly twenty-one thousand dollars in federal taxes — due in cash this year, on money you never actually received.",
+    "visual": "Light background. Math breakdown animates in three rows: '$95,000 FORGIVEN' bar fills full width, then 'x 22% FEDERAL TAX' smaller bar beneath it, then '= $20,900' grows large in red. Counter grows to '$21,000 DUE NOW.'",
     "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "The average American spends 22% more on purchases made after 4 PM. Run that math — it's $1,400 drained from your wallet every single year.",
-    "visual": "Stack of dollar bills fades away one by one. A large counter animates from $0 up to $1,400. Text underneath: DRAINED EVERY YEAR.",
+    "narration": "You got zero dollars. The bank just stopped collecting. But the IRS treats cancelled debt as income — that's called phantom income, and it's completely legal.",
+    "visual": "Dark background. An open empty wallet SVG with nothing inside on the left, labeled '$0 RECEIVED.' A red IRS envelope slides in from the right showing '$20,900 DUE.' Bridge text at bottom: 'PHANTOM INCOME — REAL TAX BILL.'",
     "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "The fix is dead simple. Make your big money decisions before 10 AM when your brain is fresh. Your morning self is genuinely your richest self.",
-    "visual": "Sunrise SVG with golden rays rotating slowly. Coffee cup beside it. Three checklist items check off: CHECK BALANCES BEFORE 9 AM, BIG BUYS MORNING ONLY, NO SHOPPING APPS AFTER 4 PM.",
+    "narration": "Public Service Loan Forgiveness is the one exception — that forgiveness is completely tax-free. For everyone else on IDR, start saving now. The bomb goes off at the finish line.",
+    "visual": "Light background. Split comparison: left shows PSLF shield with green checkmark and 'TAX FREE.' Right shows IDR with red warning triangle and 'TAXED.' Below, a piggy bank with a growing coin stack. CTA: 'SAVE FOR THE BOMB NOW.'",
     "accent_color": "red"
   }
 ]
