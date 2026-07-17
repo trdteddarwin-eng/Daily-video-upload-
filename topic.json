@@ -1,7 +1,12 @@
 {
-  "title": "Student Loan Forgiveness Hides a $21,000 Tax Bomb",
-  "hook": "After 25 years of income-based payments, millions of borrowers get their loans 'forgiven' — then the IRS sends a bill for $21,000.",
-  "angle": "The phantom income tax bomb hidden inside income-driven repayment forgiveness that 8.8 million borrowers never see coming",
-  "audience": "Student loan borrowers on income-driven repayment, millennials and Gen Z with grad school debt aged 25-50",
-  "key_numbers": ["8.8 million borrowers on income-driven repayment", "average grad borrower has $95,000+ forgiven after 25 years", "$21,000 federal tax bill at 22% bracket on $95,000 forgiven", "forgiven balance taxed as ordinary income via Form 1099-C", "PSLF forgiveness is the only tax-free alternative"]
+  "title": "Your Financial Advisor Can Legally Rip You Off",
+  "hook": "Most financial advisors in America have zero legal obligation to act in your best interest — and that loophole costs Americans $17 billion every single year.",
+  "angle": "The fiduciary vs. suitability distinction is almost never explained to clients, yet it determines whether your advisor is legally your ally or legally your adversary — earning fat commissions on products that hurt you.",
+  "audience": "Anyone with a financial advisor, 401k, annuity, or life insurance policy — especially people who assumed their advisor was on their side",
+  "key_numbers": [
+    "$17 billion lost per year from conflicted advisor advice (DOL study)",
+    "Only 15% of advisors are legally required fiduciaries",
+    "7% upfront commission advisors can legally pocket on annuities",
+    "$187,000 lost on $100K over 30 years from just 1% in hidden fees"
+  ]
 }

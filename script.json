@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Eight point eight million Americans are waiting for their student loans to be forgiven under income-driven repayment. Here's what nobody in that program tells you.",
-    "visual": "Dark background. Person silhouette with arms raised in celebration. Colorful confetti squares at fixed positions around the frame. A green 'FORGIVEN' stamp springs onto screen. Then red text fades in: 'BUT THE IRS DISAGREES.'",
+    "narration": "You trust your financial advisor with your savings — but most have zero legal obligation to put your interests first. Wild, right?",
+    "visual": "Person silhouette on left, suited advisor on right. Dollar bill animates flying from person toward advisor's pocket. 'ZERO LEGAL DUTY' appears in red below.",
     "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Income-driven repayment caps your payments to a percent of income for twenty-five years, then forgives whatever balance is left. Sounds amazing, right?",
-    "visual": "Light background. A 5-by-5 grid of 25 year-cells fills in one by one — year one through year twenty-four in red, the final cell turns green with a checkmark. '8.8M BORROWERS' counter animates up. Bridge text: 'THEN THE BALANCE IS WIPED — OR SO YOU THINK.'",
+    "narration": "Two standards exist. A fiduciary must legally put you first. A suitability advisor just needs the product to not be 'obviously wrong for you.' Big difference.",
+    "visual": "Light background. Two columns: green FIDUCIARY side with checkmark (labeled 15% of advisors) vs red SUITABILITY side with X mark (labeled 85% of advisors).",
     "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "The moment your loans are forgiven, the IRS mails you a Form 1099-C. Every single dollar forgiven gets counted as ordinary income in that tax year.",
-    "visual": "Dark background. An IRS letter paper springs in with a bold '1099-C' header and '$95,000 AMOUNT FORGIVEN.' A red 'TAXED' stamp springs onto the letter at a slight angle. White subtitle: 'THIS IS ORDINARY INCOME.'",
+    "narration": "Here's where it gets expensive. Advisors can legally pocket seven percent upfront on annuities — that's seven grand on a hundred-thousand-dollar sale, before you earn a cent.",
+    "visual": "Dark background. Animated annuity contract document with 7% commission highlighted. Dollar counter animates from $0 to $7,000 flowing into advisor's pocket.",
     "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Say ninety-five thousand gets forgiven. At twenty-two percent, that's nearly twenty-one thousand dollars in federal taxes — due in cash this year, on money you never actually received.",
-    "visual": "Light background. Math breakdown animates in three rows: '$95,000 FORGIVEN' bar fills full width, then 'x 22% FEDERAL TAX' smaller bar beneath it, then '= $20,900' grows large in red. Counter grows to '$21,000 DUE NOW.'",
+    "narration": "The Department of Labor studied this and found conflicted advice costs Americans seventeen billion dollars every year. That's not a loophole — that's the whole business model.",
+    "visual": "Light background. $17 BILLION in massive red text springs in, surrounded by stacked coin piles. 'U.S. Dept. of Labor' source badge fades in below.",
     "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "You got zero dollars. The bank just stopped collecting. But the IRS treats cancelled debt as income — that's called phantom income, and it's completely legal.",
-    "visual": "Dark background. An open empty wallet SVG with nothing inside on the left, labeled '$0 RECEIVED.' A red IRS envelope slides in from the right showing '$20,900 DUE.' Bridge text at bottom: 'PHANTOM INCOME — REAL TAX BILL.'",
+    "narration": "The fix is one word: fiduciary. Seek a fee-only CFP or RIA — zero commissions, legally required to put you first. Only fifteen percent of advisors qualify.",
+    "visual": "Dark background. Magnifying glass with CFP and RIA inside lens. Three checklist items animate in: Fee-Only, CFP or RIA Title, Ask Are You a Fiduciary. Red badge: ONLY 15% QUALIFY.",
     "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Public Service Loan Forgiveness is the one exception — that forgiveness is completely tax-free. For everyone else on IDR, start saving now. The bomb goes off at the finish line.",
-    "visual": "Light background. Split comparison: left shows PSLF shield with green checkmark and 'TAX FREE.' Right shows IDR with red warning triangle and 'TAXED.' Below, a piggy bank with a growing coin stack. CTA: 'SAVE FOR THE BOMB NOW.'",
+    "narration": "Just one percent in hidden fees destroys $187,000 in growth on a hundred-thousand-dollar investment over thirty years. Ask your advisor right now — are you a fiduciary?",
+    "visual": "Light background. Two animated bars: green ($761K with fiduciary) vs red ($574K with 1% fee drag). $187,000 DIFFERENCE callout. Bold CTA: ARE YOU A FIDUCIARY?",
     "accent_color": "red"
   }
 ]
