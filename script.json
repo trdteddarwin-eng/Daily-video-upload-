@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You trust your financial advisor with your savings — but most have zero legal obligation to put your interests first. Wild, right?",
-    "visual": "Person silhouette on left, suited advisor on right. Dollar bill animates flying from person toward advisor's pocket. 'ZERO LEGAL DUTY' appears in red below.",
-    "accent_color": "red"
+    "narration": "Almost everyone pays their credit card on the due date. That is the worst possible day to pay if you want a high credit score. Here's why.",
+    "visual": "Dark background. Large credit card SVG slides up. A big red X animates over the DUE DATE label. 'WRONG DAY' springs in bold red below.",
+    "accent_color": "blue"
   },
   {
     "scene": 2,
-    "narration": "Two standards exist. A fiduciary must legally put you first. A suitability advisor just needs the product to not be 'obviously wrong for you.' Big difference.",
-    "visual": "Light background. Two columns: green FIDUCIARY side with checkmark (labeled 15% of advisors) vs red SUITABILITY side with X mark (labeled 85% of advisors).",
-    "accent_color": "red"
+    "narration": "Your credit score tracks something called utilization — how much of your limit you're using. Bureaus snapshot that exact number on one specific day.",
+    "visual": "Light background. Credit card with LIMIT and BALANCE. Animated red bar fills to 75%. 'BUREAUS SNAPSHOT THIS' label pulses in blue.",
+    "accent_color": "blue"
   },
   {
     "scene": 3,
-    "narration": "Here's where it gets expensive. Advisors can legally pocket seven percent upfront on annuities — that's seven grand on a hundred-thousand-dollar sale, before you earn a cent.",
-    "visual": "Dark background. Animated annuity contract document with 7% commission highlighted. Dollar counter animates from $0 to $7,000 flowing into advisor's pocket.",
-    "accent_color": "red"
+    "narration": "That day is your statement close date — not your due date. It's typically ten to fifteen days earlier, and most people have never heard of it.",
+    "visual": "Dark background. Timeline arrow animates left to right. Statement close date dot appears in blue with 'BUREAUS LOOK HERE' arrow. Due date dot appears in red with X. Gap labeled '10–15 days later'.",
+    "accent_color": "blue"
   },
   {
     "scene": 4,
-    "narration": "The Department of Labor studied this and found conflicted advice costs Americans seventeen billion dollars every year. That's not a loophole — that's the whole business model.",
-    "visual": "Light background. $17 BILLION in massive red text springs in, surrounded by stacked coin piles. 'U.S. Dept. of Labor' source badge fades in below.",
-    "accent_color": "red"
+    "narration": "Being above thirty percent utilization can cut fifty points off your score. The sweet spot is actually under ten percent — that's where scores jump the most.",
+    "visual": "Light background. Three zone bars reveal sequentially: 0–10% green OPTIMAL (+30 to +50 pts), 10–30% amber ACCEPTABLE, 30%+ red DANGER ZONE (–30 to –60 pts). '50-POINT SWING' springs in red.",
+    "accent_color": "blue"
   },
   {
     "scene": 5,
-    "narration": "The fix is one word: fiduciary. Seek a fee-only CFP or RIA — zero commissions, legally required to put you first. Only fifteen percent of advisors qualify.",
-    "visual": "Dark background. Magnifying glass with CFP and RIA inside lens. Three checklist items animate in: Fee-Only, CFP or RIA Title, Ask Are You a Fiduciary. Red badge: ONLY 15% QUALIFY.",
-    "accent_color": "red"
+    "narration": "That fifty-point swing on a thirty-year mortgage adds twenty-one thousand dollars in extra interest. One timing mistake, six figures of damage.",
+    "visual": "Dark background. House SVG floats in. Two boxes: green (Score 760+, 6.5% rate, $412K interest) vs red (Score 700, 7.2% rate, $433K interest). '$21,000 DIFFERENCE' explodes in gold.",
+    "accent_color": "blue"
   },
   {
     "scene": 6,
-    "narration": "Just one percent in hidden fees destroys $187,000 in growth on a hundred-thousand-dollar investment over thirty years. Ask your advisor right now — are you a fiduciary?",
-    "visual": "Light background. Two animated bars: green ($761K with fiduciary) vs red ($574K with 1% fee drag). $187,000 DIFFERENCE callout. Bold CTA: ARE YOU A FIDUCIARY?",
-    "accent_color": "red"
+    "narration": "The fix takes two minutes. Find your statement close date in your card app, pay the balance down before that date, and watch your score update in thirty days.",
+    "visual": "Light background. Phone SVG with animated rising credit score bar. Three-step checklist reveals: 1 Find statement close date, 2 Pay before that date, 3 Score updates in 30 days. 'FOLLOW FOR DAILY MONEY HACKS' CTA.",
+    "accent_color": "blue"
   }
 ]

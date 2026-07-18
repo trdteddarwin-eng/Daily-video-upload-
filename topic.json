@@ -1,12 +1,13 @@
 {
-  "title": "Your Financial Advisor Can Legally Rip You Off",
-  "hook": "Most financial advisors in America have zero legal obligation to act in your best interest — and that loophole costs Americans $17 billion every single year.",
-  "angle": "The fiduciary vs. suitability distinction is almost never explained to clients, yet it determines whether your advisor is legally your ally or legally your adversary — earning fat commissions on products that hurt you.",
-  "audience": "Anyone with a financial advisor, 401k, annuity, or life insurance policy — especially people who assumed their advisor was on their side",
+  "title": "Pay Your Credit Card on the Wrong Day, Lose $21K",
+  "hook": "Almost everyone pays their credit card on the due date — but that's the worst possible day to pay if you want a high credit score.",
+  "angle": "The statement close date vs. due date distinction is virtually unknown but can swing your credit score 50 points and cost $21K on a 30-year mortgage.",
+  "audience": "Anyone with a credit card planning a mortgage, car loan, or who wants better interest rates",
   "key_numbers": [
-    "$17 billion lost per year from conflicted advisor advice (DOL study)",
-    "Only 15% of advisors are legally required fiduciaries",
-    "7% upfront commission advisors can legally pocket on annuities",
-    "$187,000 lost on $100K over 30 years from just 1% in hidden fees"
+    "30% utilization threshold crushes your score",
+    "50-point swing between optimal and danger zones",
+    "$21,000 extra mortgage interest from a low score",
+    "10% is the optimal utilization zone",
+    "Bureaus snapshot your balance on statement close date — not the due date"
   ]
 }

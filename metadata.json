@@ -1,16 +1,16 @@
 {
   "tiktok": {
-    "caption": "Your financial advisor can legally pocket your money and it's 100% allowed. Here's the one word that changes everything 🚨",
-    "hashtags": ["#finance", "#personalfinance", "#financialadvisor", "#investing", "#money", "#moneytips", "#retirement", "#wealthbuilding", "#financetok", "#moneypsychology"]
+    "caption": "You've been paying your credit card on the wrong day your whole life — and it just cost you $21,000 on your mortgage",
+    "hashtags": ["#personalfinance", "#creditscore", "#creditcard", "#moneytips", "#finance", "#financetok", "#creditrepair", "#moneypsychology", "#mortgage", "#debtfree"]
   },
   "youtube_short": {
-    "title": "Your Financial Advisor Isn't Legally On Your Side",
+    "title": "Pay Your Credit Card Wrong Day = Lose $21K",
     "title_alternatives": [
-      "The $17 Billion Advisor Loophole Nobody Tells You About",
-      "Only 15% of Financial Advisors Are Required to Help You"
+      "The Credit Card Payment Timing Mistake That Costs $21,000",
+      "Most People Pay Their Credit Card on the Wrong Day"
     ],
-    "description": "Most Americans don't realize their financial advisor has zero legal obligation to act in their best interest. There are two standards: fiduciary (legally required to put you first) and suitability (just can't be obviously wrong for you). Only 15% of advisors are fiduciaries — the rest can legally pocket 7% commissions on products that cost you thousands. The Department of Labor found this costs Americans $17 billion every single year. Just 1% in hidden fees destroys $187,000 in growth on $100K over 30 years. Ask your advisor today: 'Are you a fiduciary?' #personalfinance #investing #financialadvisor Follow for daily money psychology breakdowns.",
-    "tags": ["financial advisor", "fiduciary", "suitability", "personal finance", "investing", "retirement", "money tips", "finance", "wealth building", "annuity", "fee only advisor", "money psychology", "CFP", "RIA"]
+    "description": "Almost everyone pays their credit card on the due date — but your credit score is calculated days earlier, on your statement close date. If you pay after that date, bureaus already saw your high balance. Being above 30% utilization can cost you 50 credit score points. On a 30-year mortgage, that 50-point swing adds $21,000 in interest. The fix: find your statement close date in your card app and pay down your balance BEFORE that date — not the due date. Your score updates in 30 days. #creditcard #creditscore #personalfinance Follow for daily money psychology breakdowns.",
+    "tags": ["credit score", "credit card", "utilization", "personal finance", "money tips", "mortgage", "credit repair", "finance", "money psychology", "credit utilization", "statement date", "due date", "debt", "credit hack"]
   },
-  "hook_line": "Your advisor can legally work against you"
+  "hook_line": "You've been paying on the wrong day"
 }
