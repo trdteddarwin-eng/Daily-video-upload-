@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Almost everyone pays their credit card on the due date. That is the worst possible day to pay if you want a high credit score. Here's why.",
-    "visual": "Dark background. Large credit card SVG slides up. A big red X animates over the DUE DATE label. 'WRONG DAY' springs in bold red below.",
-    "accent_color": "blue"
+    "narration": "You spend thirty percent more money on weekends than weekdays — and most budgets completely ignore it. Here's the trap nobody warned you about.",
+    "visual": "Split calendar: Mon-Fri with low spending bars vs Sat-Sun with tall glowing bars spiking 30% higher. Dark background, orange accent bars.",
+    "accent_color": "orange"
   },
   {
     "scene": 2,
-    "narration": "Your credit score tracks something called utilization — how much of your limit you're using. Bureaus snapshot that exact number on one specific day.",
-    "visual": "Light background. Credit card with LIMIT and BALANCE. Animated red bar fills to 75%. 'BUREAUS SNAPSHOT THIS' label pulses in blue.",
-    "accent_color": "blue"
+    "narration": "The average American overspends about eighty-three dollars every single weekend. Multiply that by fifty-two weekends and you're looking at four thousand three hundred dollars a year.",
+    "visual": "Animated dollar counter spinning up to $4,316. Coins raining down around a piggy bank SVG. Light background.",
+    "accent_color": "orange"
   },
   {
     "scene": 3,
-    "narration": "That day is your statement close date — not your due date. It's typically ten to fifteen days earlier, and most people have never heard of it.",
-    "visual": "Dark background. Timeline arrow animates left to right. Statement close date dot appears in blue with 'BUREAUS LOOK HERE' arrow. Due date dot appears in red with X. Gap labeled '10–15 days later'.",
-    "accent_color": "blue"
+    "narration": "Your brain literally switches into freedom mode on Friday night. Social pressure, boredom, and the treat-yourself mindset hijack your wallet for forty-eight hours straight.",
+    "visual": "Person silhouette with speech bubbles floating up: TREAT YOURSELF, EVERYONE IS GOING, I DESERVE IT. Dark background.",
+    "accent_color": "orange"
   },
   {
     "scene": 4,
-    "narration": "Being above thirty percent utilization can cut fifty points off your score. The sweet spot is actually under ten percent — that's where scores jump the most.",
-    "visual": "Light background. Three zone bars reveal sequentially: 0–10% green OPTIMAL (+30 to +50 pts), 10–30% amber ACCEPTABLE, 30%+ red DANGER ZONE (–30 to –60 pts). '50-POINT SWING' springs in red.",
-    "accent_color": "blue"
+    "narration": "Number one: restaurants and bars. Number two: impulse shopping. Number three: entertainment. These three categories spike hardest every single weekend — all year long.",
+    "visual": "Three icons revealing sequentially: fork-and-knife for restaurants, shopping bag, ticket stub for entertainment. Each labeled and stacking up. Light background.",
+    "accent_color": "orange"
   },
   {
     "scene": 5,
-    "narration": "That fifty-point swing on a thirty-year mortgage adds twenty-one thousand dollars in extra interest. One timing mistake, six figures of damage.",
-    "visual": "Dark background. House SVG floats in. Two boxes: green (Score 760+, 6.5% rate, $412K interest) vs red (Score 700, 7.2% rate, $433K interest). '$21,000 DIFFERENCE' explodes in gold.",
-    "accent_color": "blue"
+    "narration": "Here's what's wild — invest that four thousand dollars a year instead. In thirty years at seven percent, that's four hundred and twenty-five thousand dollars. Your weekends are stealing your retirement.",
+    "visual": "Bar chart: short bar labeled $4,316/yr vs tall bar growing to $425,000. Retirement house icon at top. Dark background.",
+    "accent_color": "orange"
   },
   {
     "scene": 6,
-    "narration": "The fix takes two minutes. Find your statement close date in your card app, pay the balance down before that date, and watch your score update in thirty days.",
-    "visual": "Light background. Phone SVG with animated rising credit score bar. Three-step checklist reveals: 1 Find statement close date, 2 Pay before that date, 3 Score updates in 30 days. 'FOLLOW FOR DAILY MONEY HACKS' CTA.",
-    "accent_color": "blue"
+    "narration": "Set a weekend cash envelope — pull out only what you're okay spending. When it's gone, it's gone. That one rule stops the bleeding immediately. Follow for more money hacks like this.",
+    "visual": "Cash envelope SVG with bills visible. Two-item checklist with orange checkmarks. FOLLOW FOR DAILY MONEY HACKS CTA banner. Light background.",
+    "accent_color": "orange"
   }
 ]

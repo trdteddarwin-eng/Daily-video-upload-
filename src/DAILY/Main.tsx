@@ -3,7 +3,7 @@ import { AbsoluteFill, Series, useCurrentFrame, interpolate, spring } from 'remo
 
 const BG_DARK = '#0F172A';
 const BG_LIGHT = '#F1F5F9';
-const ACCENT = '#3B82F6';
+const ACCENT = '#F97316';
 const WHITE = '#F8FAFC';
 const BLACK = '#0F172A';
 const FONT = '"Arial Black", "Helvetica Neue", Arial, sans-serif';
@@ -27,331 +27,391 @@ const FadeScene: React.FC<{ children: React.ReactNode; bg: string; dur: number }
   return <AbsoluteFill style={{ background: bg, opacity }}>{children}</AbsoluteFill>;
 };
 
-// ─── SCENE 1 ─ Hook: Wrong Day ─────────────────────────────────────────────
+// ─── SCENE 1 ─ Hook: Weekend Spending Spike ───────────────────────────────
 
 const Scene1: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
   const fps = 30;
 
   const titleOp = interpolate(frame, [0, 18], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const cardY = interpolate(frame, [8, 36], [220, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const xOp = interpolate(frame, [50, 70], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const wrongScale = spring({ frame: frame - 74, fps, config: { stiffness: 90, damping: 12 } });
-  const subOp = interpolate(frame, [102, 124], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+
+  // Bar heights animate in
+  const weekdayH = interpolate(frame, [20, 52], [0, 180], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const weekendH = interpolate(frame, [52, 88], [0, 240], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const pctScale = spring({ frame: frame - 96, fps, config: { stiffness: 80, damping: 12 } });
+  const subOp = interpolate(frame, [130, 150], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+
+  const days = ['MON', 'TUE', 'WED', 'THU', 'FRI'];
+  const weekendDays = ['SAT', 'SUN'];
 
   return (
     <FadeScene bg={BG_DARK} dur={dur}>
-      <AbsoluteFill style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '0 60px' }}>
-        <div style={{ opacity: titleOp, marginBottom: 44, textAlign: 'center' as const }}>
-          <p style={headline(64, WHITE)}>YOU'RE PAYING YOUR</p>
-          <p style={headline(64, WHITE)}>CREDIT CARD</p>
-          <p style={{ ...headline(68, ACCENT), marginTop: 8 }}>ON THE WRONG DAY</p>
+      <AbsoluteFill style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '0 56px' }}>
+        <div style={{ opacity: titleOp, marginBottom: 36, textAlign: 'center' as const }}>
+          <p style={headline(58, WHITE)}>YOUR BUDGET</p>
+          <p style={headline(58, WHITE)}>IGNORES</p>
+          <p style={{ ...headline(64, ACCENT), marginTop: 8 }}>THE WORST 2 DAYS</p>
         </div>
 
-        {/* Credit card SVG */}
-        <svg width={500} height={310} viewBox="0 0 500 310"
-          style={{ transform: `translateY(${cardY}px)`, marginBottom: 36 }}>
-          <rect x={0} y={0} width={500} height={310} rx={24} fill="#1E40AF" />
-          <rect x={0} y={72} width={500} height={54} fill="#1e1b4b" />
-          <rect x={36} y={36} width={72} height={54} rx={6} fill="#FCD34D" />
-          <line x1={36} y1={54} x2={108} y2={54} stroke="#D97706" strokeWidth={2} />
-          <line x1={36} y1={72} x2={108} y2={72} stroke="#D97706" strokeWidth={2} />
-          <line x1={72} y1={36} x2={72} y2={90} stroke="#D97706" strokeWidth={2} />
-          {Array.from({ length: Math.max(0, Math.floor(12)) }).map((_, i) => (
-            <circle
-              key={i}
-              cx={44 + Math.floor(i / 4) * 120 + (i % 4) * 26}
-              cy={200}
-              r={9}
-              fill={WHITE}
-              opacity={0.7}
-            />
+        {/* Calendar bar chart */}
+        <svg width={960} height={320} viewBox="0 0 960 320" style={{ marginBottom: 28 }}>
+          {/* Weekday bars */}
+          {days.map((d, i) => (
+            <g key={d}>
+              <rect
+                x={60 + i * 112}
+                y={280 - weekdayH}
+                width={80}
+                height={weekdayH}
+                rx={8}
+                fill="#334155"
+              />
+              <text x={100 + i * 112} y={310} fontFamily={FONT} fontSize={20} fill="#94A3B8" textAnchor="middle">{d}</text>
+            </g>
           ))}
-          <text x={36} y={276} fontFamily={FONT} fontSize={24} fill={WHITE} opacity={0.8}>VALID THRU  12/27</text>
-          <text x={326} y={276} fontFamily={FONT} fontSize={22} fill="#FCD34D">DUE: 15th</text>
-          {/* Big red X */}
-          <line x1={12} y1={12} x2={488} y2={298} stroke="#EF4444" strokeWidth={12} strokeLinecap="round" opacity={xOp} />
-          <line x1={488} y1={12} x2={12} y2={298} stroke="#EF4444" strokeWidth={12} strokeLinecap="round" opacity={xOp} />
+          {/* Weekend bars — taller and orange */}
+          {weekendDays.map((d, i) => (
+            <g key={d}>
+              <rect
+                x={620 + i * 152}
+                y={280 - weekendH}
+                width={110}
+                height={weekendH}
+                rx={8}
+                fill={ACCENT}
+              />
+              <text x={675 + i * 152} y={310} fontFamily={FONT} fontSize={22} fill={ACCENT} textAnchor="middle">{d}</text>
+            </g>
+          ))}
+          {/* Baseline */}
+          <rect x={40} y={281} width={880} height={4} rx={2} fill="#475569" />
         </svg>
 
-        <p style={{ ...headline(86, '#EF4444'), transform: `scale(${wrongScale})`, transformOrigin: 'center', marginBottom: 32 }}>
-          WRONG DAY
+        <p style={{ ...headline(72, ACCENT), transform: `scale(${pctScale})`, transformOrigin: 'center', marginBottom: 28 }}>
+          +30% HIGHER
         </p>
 
-        <p style={{ fontFamily: FONT, fontSize: 38, color: WHITE, opacity: subOp, textAlign: 'center' as const, lineHeight: 1.5, margin: 0 }}>
-          and it's costing you thousands
+        <p style={{ fontFamily: FONT, fontSize: 36, color: WHITE, opacity: subOp, textAlign: 'center' as const, lineHeight: 1.5, margin: 0 }}>
+          and most budgets never even track it
         </p>
       </AbsoluteFill>
     </FadeScene>
   );
 };
-// ─── SCENE 2 ─ Utilization Bar ─────────────────────────────────────────────
+
+// ─── SCENE 2 ─ The Math: $83/weekend × 52 = $4,316/yr ────────────────────
 
 const Scene2: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
   const fps = 30;
 
   const titleOp = interpolate(frame, [0, 18], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const barFill = interpolate(frame, [22, 88], [0, 75], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const pctOp = interpolate(frame, [88, 108], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const labelScale = spring({ frame: frame - 112, fps, config: { stiffness: 80, damping: 12 } });
-  const subOp = interpolate(frame, [142, 162], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const piggyY = interpolate(frame, [10, 38], [200, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const countVal = interpolate(frame, [40, 110], [0, 4316], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const perScale = spring({ frame: frame - 116, fps, config: { stiffness: 80, damping: 12 } });
+  const subOp = interpolate(frame, [148, 168], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
 
   return (
     <FadeScene bg={BG_LIGHT} dur={dur}>
       <AbsoluteFill style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '0 60px' }}>
-        <div style={{ opacity: titleOp, marginBottom: 40 }}>
-          <p style={headline(60, BLACK)}>CREDIT UTILIZATION</p>
-          <p style={{ ...headline(34, '#64748B'), marginTop: 14 }}>THE NUMBER THAT MOVES YOUR SCORE</p>
+        <div style={{ opacity: titleOp, marginBottom: 32, textAlign: 'center' as const }}>
+          <p style={headline(56, BLACK)}>$83 EXTRA</p>
+          <p style={{ ...headline(34, '#64748B'), marginTop: 12 }}>EVERY SINGLE WEEKEND</p>
         </div>
 
-        {/* Card showing balance vs limit */}
-        <svg width={520} height={178} viewBox="0 0 520 178" style={{ marginBottom: 32 }}>
-          <rect x={0} y={0} width={520} height={178} rx={18} fill="#1E40AF" />
-          <rect x={0} y={48} width={520} height={42} fill="#1e1b4b" />
-          <rect x={24} y={14} width={62} height={46} rx={5} fill="#FCD34D" />
-          <text x={24} y={154} fontFamily={FONT} fontSize={26} fill={WHITE} opacity={0.85}>LIMIT: $10,000</text>
-          <text x={310} y={154} fontFamily={FONT} fontSize={26} fill="#FCD34D">BAL: $7,500</text>
+        {/* Piggy bank SVG */}
+        <svg width={260} height={210} viewBox="0 0 260 210"
+          style={{ transform: `translateY(${piggyY}px)`, marginBottom: 28 }}>
+          {/* Body */}
+          <ellipse cx={120} cy={130} rx={100} ry={76} fill={ACCENT} />
+          {/* Head */}
+          <circle cx={210} cy={108} r={48} fill={ACCENT} />
+          {/* Snout */}
+          <ellipse cx={246} cy={118} rx={20} ry={14} fill="#FB923C" />
+          <circle cx={241} cy={115} r={4} fill={BLACK} opacity={0.5} />
+          <circle cx={251} cy={115} r={4} fill={BLACK} opacity={0.5} />
+          {/* Eye */}
+          <circle cx={222} cy={96} r={6} fill={WHITE} />
+          <circle cx={224} cy={97} r={3} fill={BLACK} />
+          {/* Ear */}
+          <ellipse cx={196} cy={66} rx={14} ry={18} fill="#FB923C" />
+          {/* Coin slot */}
+          <rect x={98} y={54} width={44} height={8} rx={4} fill="#EA580C" />
+          {/* Legs */}
+          <rect x={46} y={192} width={28} height={16} rx={8} fill="#EA580C" />
+          <rect x={84} y={192} width={28} height={16} rx={8} fill="#EA580C" />
+          <rect x={128} y={192} width={28} height={16} rx={8} fill="#EA580C" />
+          <rect x={166} y={192} width={28} height={16} rx={8} fill="#EA580C" />
+          {/* Tail */}
+          <path d="M22 120 Q4 100 18 80 Q32 60 18 44" stroke="#EA580C" strokeWidth={8} fill="none" strokeLinecap="round" />
         </svg>
 
-        {/* Utilization bar */}
-        <div style={{ width: '100%', marginBottom: 14 }}>
-          <div style={{ width: '100%', height: 44, background: '#CBD5E1', borderRadius: 22, overflow: 'hidden' }}>
-            <div style={{ width: `${barFill}%`, height: '100%', background: '#EF4444', borderRadius: 22 }} />
-          </div>
-          <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 12 }}>
-            <p style={{ fontFamily: FONT, fontSize: 28, color: BLACK, margin: 0 }}>0%</p>
-            <p style={{ fontFamily: FONT, fontSize: 48, color: '#EF4444', margin: 0, opacity: pctOp }}>75% UTILIZED</p>
-            <p style={{ fontFamily: FONT, fontSize: 28, color: BLACK, margin: 0 }}>100%</p>
-          </div>
+        {/* Animated counter */}
+        <div style={{ marginBottom: 24, textAlign: 'center' as const }}>
+          <p style={{ fontFamily: FONT, fontSize: 96, color: BLACK, margin: 0, letterSpacing: '0.05em' }}>
+            ${Math.floor(countVal).toLocaleString()}
+          </p>
+          <p style={{ fontFamily: FONT, fontSize: 32, color: '#64748B', margin: '6px 0 0', textAlign: 'center' as const }}>per year</p>
         </div>
 
-        <p style={{ ...headline(46, ACCENT), transform: `scale(${labelScale})`, transformOrigin: 'center', marginBottom: 30 }}>
-          BUREAUS SNAPSHOT THIS
+        <p style={{ ...headline(50, ACCENT), transform: `scale(${perScale})`, transformOrigin: 'center', marginBottom: 28 }}>
+          52 WEEKENDS × $83
         </p>
 
-        <p style={{ fontFamily: FONT, fontSize: 36, color: BLACK, opacity: subOp, textAlign: 'center' as const, lineHeight: 1.5, margin: 0 }}>
-          but only on one specific day — and most people get it wrong
+        <p style={{ fontFamily: FONT, fontSize: 34, color: BLACK, opacity: subOp, textAlign: 'center' as const, lineHeight: 1.5, margin: 0 }}>
+          draining silently while you're just "having fun"
         </p>
       </AbsoluteFill>
     </FadeScene>
   );
 };
 
-// ─── SCENE 3 ─ Statement Close Date Timeline ─────────────────────────────────
+// ─── SCENE 3 ─ The Psychology: Freedom Mode ───────────────────────────────
 
 const Scene3: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
   const fps = 30;
 
   const titleOp = interpolate(frame, [0, 18], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const lineP = interpolate(frame, [18, 62], [0, 920], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const closeOp = interpolate(frame, [54, 74], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const arrowOp = interpolate(frame, [74, 94], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const dueOp = interpolate(frame, [90, 110], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const warnScale = spring({ frame: frame - 142, fps, config: { stiffness: 72, damping: 11 } });
-  const subOp = interpolate(frame, [162, 182], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const personY = interpolate(frame, [10, 36], [140, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const b1Op = interpolate(frame, [44, 64], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const b2Op = interpolate(frame, [72, 92], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const b3Op = interpolate(frame, [100, 120], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const warnScale = spring({ frame: frame - 140, fps, config: { stiffness: 78, damping: 12 } });
+  const subOp = interpolate(frame, [168, 188], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+
+  const bubbles: Array<{ text: string; op: number; x: number; y: number }> = [
+    { text: 'TREAT YOURSELF', op: b1Op, x: 480, y: 280 },
+    { text: "EVERYONE'S GOING", op: b2Op, x: 700, y: 430 },
+    { text: 'I DESERVE IT', op: b3Op, x: 360, y: 550 },
+  ];
 
   return (
     <FadeScene bg={BG_DARK} dur={dur}>
       <AbsoluteFill style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '0 60px' }}>
-        <p style={{ ...headline(52, WHITE), opacity: titleOp, lineHeight: 1.3, marginBottom: 48 }}>
-          BUREAUS DON'T WAIT<br />FOR YOUR DUE DATE
+        <p style={{ ...headline(54, WHITE), opacity: titleOp, lineHeight: 1.3, marginBottom: 20 }}>
+          YOUR BRAIN SWITCHES<br />INTO FREEDOM MODE
         </p>
 
-        {/* Timeline */}
-        <svg width={960} height={258} viewBox="0 0 960 258" style={{ marginBottom: 40 }}>
-          {/* Base line */}
-          <rect x={20} y={126} width={lineP} height={6} rx={3} fill="#475569" />
-          {/* Statement Close dot */}
-          <circle cx={210} cy={128} r={24} fill={ACCENT} opacity={closeOp} />
-          <circle cx={210} cy={128} r={14} fill={WHITE} opacity={closeOp} />
-          {/* Arrow up */}
-          <line x1={210} y1={104} x2={210} y2={50} stroke={ACCENT} strokeWidth={4} opacity={arrowOp} />
-          <polygon points="210,26 197,52 223,52" fill={ACCENT} opacity={arrowOp} />
-          <text x={210} y={20} fontFamily={FONT} fontSize={19} fill={ACCENT} textAnchor="middle" opacity={arrowOp}>BUREAUS LOOK HERE</text>
-          {/* Close date labels */}
-          <text x={210} y={178} fontFamily={FONT} fontSize={22} fill={WHITE} textAnchor="middle" opacity={closeOp}>STATEMENT CLOSE</text>
-          <text x={210} y={208} fontFamily={FONT} fontSize={26} fill={ACCENT} textAnchor="middle" opacity={closeOp}>e.g. the 5th</text>
-          {/* Gap label */}
-          <text x={488} y={106} fontFamily={FONT} fontSize={19} fill="#64748B" textAnchor="middle" opacity={dueOp}>10–15 DAYS LATER</text>
-          {/* Due date dot */}
-          <circle cx={766} cy={128} r={24} fill="#EF4444" opacity={dueOp} />
-          <circle cx={766} cy={128} r={14} fill={WHITE} opacity={dueOp} />
-          {/* X over due date */}
-          <line x1={748} y1={110} x2={784} y2={146} stroke="#EF4444" strokeWidth={6} strokeLinecap="round" opacity={dueOp} />
-          <line x1={784} y1={110} x2={748} y2={146} stroke="#EF4444" strokeWidth={6} strokeLinecap="round" opacity={dueOp} />
-          {/* Due date labels */}
-          <text x={766} y={178} fontFamily={FONT} fontSize={22} fill={WHITE} textAnchor="middle" opacity={dueOp}>DUE DATE</text>
-          <text x={766} y={208} fontFamily={FONT} fontSize={26} fill="#EF4444" textAnchor="middle" opacity={dueOp}>e.g. the 20th</text>
+        <svg width={960} height={660} viewBox="0 0 960 660"
+          style={{ transform: `translateY(${personY}px)` }}>
+          {/* Person silhouette */}
+          <circle cx={160} cy={120} r={64} fill="#334155" />
+          <rect x={96} y={190} width={128} height={180} rx={16} fill="#334155" />
+          <rect x={72} y={196} width={40} height={130} rx={16} fill="#334155" />
+          <rect x={208} y={196} width={40} height={130} rx={16} fill="#334155" />
+          <rect x={98} y={364} width={44} height={110} rx={16} fill="#334155" />
+          <rect x={178} y={364} width={44} height={110} rx={16} fill="#334155" />
+
+          {/* Speech bubbles */}
+          {bubbles.map((b, i) => (
+            <g key={i} opacity={b.op}>
+              <rect x={b.x - 10} y={b.y - 40} width={b.text.length * 16 + 20} height={66} rx={16} fill={ACCENT} />
+              <polygon points={`${b.x + 20},${b.y + 26} ${b.x},${b.y + 56} ${b.x + 40},${b.y + 26}`} fill={ACCENT} />
+              <text x={b.x + (b.text.length * 8)} y={b.y - 2} fontFamily={FONT} fontSize={28} fill={WHITE} textAnchor="middle">{b.text}</text>
+            </g>
+          ))}
         </svg>
 
-        <p style={{ ...headline(50, ACCENT), transform: `scale(${warnScale})`, transformOrigin: 'center', marginBottom: 26 }}>
-          MOST PEOPLE NEVER KNEW
+        <p style={{ ...headline(60, ACCENT), transform: `scale(${warnScale})`, transformOrigin: 'center', marginBottom: 24 }}>
+          48-HOUR WALLET HIJACK
         </p>
 
         <p style={{ fontFamily: FONT, fontSize: 34, color: WHITE, opacity: subOp, textAlign: 'center' as const, lineHeight: 1.5, margin: 0 }}>
-          pay before the close date — not the due date
+          social pressure and boredom do the rest — every week
         </p>
       </AbsoluteFill>
     </FadeScene>
   );
 };
-// ─── SCENE 4 ─ Utilization Zones ─────────────────────────────────────────────
+
+// ─── SCENE 4 ─ The Three Culprits ────────────────────────────────────────
 
 const Scene4: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
-  const fps = 30;
 
   const titleOp = interpolate(frame, [0, 18], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const z1Op = interpolate(frame, [20, 42], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const z2Op = interpolate(frame, [56, 78], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const z3Op = interpolate(frame, [92, 114], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const swingScale = spring({ frame: frame - 130, fps, config: { stiffness: 80, damping: 12 } });
-  const subOp = interpolate(frame, [162, 182], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const c1Op = interpolate(frame, [24, 46], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const c2Op = interpolate(frame, [62, 84], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const c3Op = interpolate(frame, [100, 122], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const subOp = interpolate(frame, [158, 178], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
 
-  const zones = [
-    { label: '0 – 10%', tag: 'OPTIMAL', color: '#10B981', sub: '+30 to +50 pts possible', op: z1Op },
-    { label: '10 – 30%', tag: 'ACCEPTABLE', color: '#F59E0B', sub: 'minimal impact', op: z2Op },
-    { label: '30%+', tag: 'DANGER ZONE', color: '#EF4444', sub: '–30 to –60 pts', op: z3Op },
+  const culprits = [
+    {
+      num: '1',
+      label: 'RESTAURANTS & BARS',
+      icon: (
+        <svg width={72} height={72} viewBox="0 0 72 72">
+          {/* Fork */}
+          <rect x={18} y={8} width={8} height={40} rx={4} fill={WHITE} />
+          <rect x={12} y={8} width={6} height={20} rx={3} fill={WHITE} />
+          <rect x={26} y={8} width={6} height={20} rx={3} fill={WHITE} />
+          <rect x={12} y={8} width={20} height={6} rx={3} fill={WHITE} />
+          {/* Knife */}
+          <rect x={46} y={8} width={8} height={56} rx={4} fill={WHITE} />
+          <path d="M54 8 Q72 24 54 40" fill={WHITE} />
+        </svg>
+      ),
+      op: c1Op,
+    },
+    {
+      num: '2',
+      label: 'IMPULSE SHOPPING',
+      icon: (
+        <svg width={72} height={72} viewBox="0 0 72 72">
+          {/* Shopping bag */}
+          <rect x={10} y={28} width={52} height={38} rx={8} fill={WHITE} />
+          <path d="M22 28 Q22 10 36 10 Q50 10 50 28" stroke={WHITE} strokeWidth={7} fill="none" strokeLinecap="round" />
+          <rect x={26} y={42} width={20} height={6} rx={3} fill={ACCENT} />
+        </svg>
+      ),
+      op: c2Op,
+    },
+    {
+      num: '3',
+      label: 'ENTERTAINMENT',
+      icon: (
+        <svg width={72} height={72} viewBox="0 0 72 72">
+          {/* Ticket stub */}
+          <rect x={6} y={18} width={60} height={36} rx={10} fill={WHITE} />
+          <circle cx={6} cy={36} r={8} fill="#F1F5F9" />
+          <circle cx={66} cy={36} r={8} fill="#F1F5F9" />
+          <line x1={28} y1={18} x2={28} y2={54} stroke="#F1F5F9" strokeWidth={3} strokeDasharray="6,5" />
+          <text x={47} y={42} fontFamily={FONT} fontSize={16} fill={ACCENT} textAnchor="middle">★</text>
+        </svg>
+      ),
+      op: c3Op,
+    },
   ];
 
   return (
     <FadeScene bg={BG_LIGHT} dur={dur}>
       <AbsoluteFill style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '0 60px' }}>
-        <p style={{ ...headline(62, BLACK), opacity: titleOp, marginBottom: 48 }}>THE UTILIZATION ZONES</p>
+        <p style={{ ...headline(58, BLACK), opacity: titleOp, marginBottom: 44 }}>WHERE IT ALL GOES</p>
 
-        <div style={{ width: '100%', marginBottom: 44 }}>
-          {zones.map((z, i) => (
-            <div key={i} style={{ display: 'flex', alignItems: 'center', marginBottom: 24, opacity: z.op }}>
-              <div style={{ width: 196, height: 76, background: z.color, borderRadius: 14, display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: 28, flexShrink: 0 }}>
-                <span style={{ fontFamily: FONT, fontSize: 30, color: WHITE }}>{z.label}</span>
+        <div style={{ width: '100%', marginBottom: 48 }}>
+          {culprits.map((c, i) => (
+            <div key={i} style={{ display: 'flex', alignItems: 'center', marginBottom: 28, opacity: c.op }}>
+              <div style={{ width: 80, height: 80, background: ACCENT, borderRadius: 40, display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: 24, flexShrink: 0 }}>
+                <span style={{ fontFamily: FONT, fontSize: 38, color: WHITE }}>{c.num}</span>
               </div>
-              <div>
-                <p style={{ fontFamily: FONT, fontSize: 38, color: BLACK, margin: 0 }}>{z.tag}</p>
-                <p style={{ fontFamily: FONT, fontSize: 28, color: '#64748B', margin: '4px 0 0' }}>{z.sub}</p>
+              <div style={{ width: 88, height: 88, background: '#0F172A', borderRadius: 16, display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: 28, flexShrink: 0 }}>
+                {c.icon}
               </div>
+              <p style={{ fontFamily: FONT, fontSize: 40, color: BLACK, margin: 0 }}>{c.label}</p>
             </div>
           ))}
         </div>
 
-        <p style={{ ...headline(70, '#EF4444'), transform: `scale(${swingScale})`, transformOrigin: 'center', marginBottom: 28 }}>
-          50-POINT SWING
-        </p>
-
-        <p style={{ fontFamily: FONT, fontSize: 34, color: BLACK, opacity: subOp, textAlign: 'center' as const, lineHeight: 1.5, margin: 0 }}>
-          between optimal and danger zones — that gap has a price tag
+        <p style={{ fontFamily: FONT, fontSize: 36, color: '#64748B', opacity: subOp, textAlign: 'center' as const, lineHeight: 1.5, margin: 0 }}>
+          all three spike hardest Saturday and Sunday — every single week
         </p>
       </AbsoluteFill>
     </FadeScene>
   );
 };
 
-// ─── SCENE 5 ─ The $21K Mortgage Math ────────────────────────────────────────
+// ─── SCENE 5 ─ The $425K Retirement Cost ────────────────────────────────
 
 const Scene5: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
   const fps = 30;
 
   const titleOp = interpolate(frame, [0, 18], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const houseY = interpolate(frame, [10, 40], [180, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const leftOp = interpolate(frame, [48, 72], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const rightOp = interpolate(frame, [78, 102], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const diffScale = spring({ frame: frame - 118, fps, config: { stiffness: 80, damping: 13 } });
-  const subOp = interpolate(frame, [158, 178], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const smallH = interpolate(frame, [22, 60], [0, 100], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const bigH = interpolate(frame, [66, 140], [0, 480], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const houseScale = spring({ frame: frame - 144, fps, config: { stiffness: 70, damping: 11 } });
+  const numOp = interpolate(frame, [148, 168], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const subOp = interpolate(frame, [174, 194], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
 
   return (
     <FadeScene bg={BG_DARK} dur={dur}>
       <AbsoluteFill style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '0 60px' }}>
-        <p style={{ ...headline(56, WHITE), opacity: titleOp, lineHeight: 1.3, marginBottom: 30 }}>
-          THE MORTGAGE<br />MATH IS BRUTAL
+        <p style={{ ...headline(52, WHITE), opacity: titleOp, lineHeight: 1.3, marginBottom: 36 }}>
+          WHAT THAT $4,316/YR<br />ACTUALLY COSTS YOU
         </p>
 
-        {/* House SVG */}
-        <svg width={220} height={196} viewBox="0 0 220 196"
-          style={{ transform: `translateY(${houseY}px)`, marginBottom: 34 }}>
-          <polygon points="110,10 10,100 210,100" fill={ACCENT} />
-          <rect x={30} y={98} width={160} height={98} fill="#1E40AF" />
-          <rect x={80} y={140} width={60} height={56} rx={6} fill={BG_DARK} />
-          <rect x={42} y={116} width={42} height={36} rx={4} fill={ACCENT} opacity={0.45} />
-          <rect x={136} y={116} width={42} height={36} rx={4} fill={ACCENT} opacity={0.45} />
+        {/* Bar chart comparison */}
+        <svg width={700} height={560} viewBox="0 0 700 560" style={{ marginBottom: 16 }}>
+          {/* Baseline */}
+          <rect x={30} y={521} width={640} height={4} rx={2} fill="#475569" />
+
+          {/* Small bar: spending */}
+          <rect x={80} y={520 - smallH} width={160} height={smallH} rx={8} fill="#EF4444" />
+          <text x={160} y={540} fontFamily={FONT} fontSize={20} fill="#94A3B8" textAnchor="middle">SPENT</text>
+          <text x={160} y={520 - smallH - 12} fontFamily={FONT} fontSize={26} fill="#EF4444" textAnchor="middle">$4,316/yr</text>
+
+          {/* Big bar: invested */}
+          <rect x={380} y={520 - bigH} width={240} height={bigH} rx={8} fill={ACCENT} />
+          <text x={500} y={540} fontFamily={FONT} fontSize={20} fill="#94A3B8" textAnchor="middle">INVESTED 30 YRS</text>
+
+          {/* House on top of big bar */}
+          <g transform={`translate(500, ${520 - bigH - 74}) scale(${houseScale})`} style={{ transformOrigin: '0px 0px' }}>
+            <polygon points="0,-56 -68,0 68,0" fill={ACCENT} />
+            <rect x={-54} y={0} width={108} height={56} fill="#1E40AF" />
+            <rect x={-20} y={18} width={40} height={38} rx={4} fill={BG_DARK} />
+          </g>
         </svg>
 
-        {/* Two score paths */}
-        <div style={{ display: 'flex', width: '100%', marginBottom: 36 }}>
-          <div style={{ flex: 1, background: '#14532D', borderRadius: 16, padding: 28, opacity: leftOp, marginRight: 18 }}>
-            <p style={{ fontFamily: FONT, fontSize: 28, color: '#4ADE80', margin: '0 0 10px' }}>SCORE: 760+</p>
-            <p style={{ fontFamily: FONT, fontSize: 24, color: WHITE, margin: '0 0 8px' }}>Rate: 6.5%</p>
-            <p style={{ fontFamily: FONT, fontSize: 22, color: WHITE, margin: 0 }}>Interest: $412K</p>
-          </div>
-          <div style={{ flex: 1, background: '#7F1D1D', borderRadius: 16, padding: 28, opacity: rightOp }}>
-            <p style={{ fontFamily: FONT, fontSize: 28, color: '#FCA5A5', margin: '0 0 10px' }}>SCORE: 700</p>
-            <p style={{ fontFamily: FONT, fontSize: 24, color: WHITE, margin: '0 0 8px' }}>Rate: 7.2%</p>
-            <p style={{ fontFamily: FONT, fontSize: 22, color: WHITE, margin: 0 }}>Interest: $433K</p>
-          </div>
-        </div>
-
-        <p style={{ ...headline(76, '#FCD34D'), transform: `scale(${diffScale})`, transformOrigin: 'center', marginBottom: 24 }}>
-          $21,000 DIFFERENCE
+        <p style={{ fontFamily: FONT, fontSize: 88, color: ACCENT, opacity: numOp, margin: 0, letterSpacing: '0.04em', textAlign: 'center' as const }}>
+          $425,000
         </p>
 
-        <p style={{ fontFamily: FONT, fontSize: 34, color: WHITE, opacity: subOp, textAlign: 'center' as const, lineHeight: 1.5, margin: 0 }}>
-          one wrong payment date, six figures of damage
+        <p style={{ fontFamily: FONT, fontSize: 33, color: WHITE, opacity: subOp, textAlign: 'center' as const, lineHeight: 1.5, margin: '16px 0 0' }}>
+          your weekends are quietly stealing your retirement
         </p>
       </AbsoluteFill>
     </FadeScene>
   );
 };
-// ─── SCENE 6 ─ The Two-Minute Fix / CTA ─────────────────────────────────────
+
+// ─── SCENE 6 ─ CTA: The Cash Envelope Fix ────────────────────────────────
 
 const Scene6: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
   const fps = 30;
 
   const titleOp = interpolate(frame, [0, 18], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const phoneY = interpolate(frame, [10, 38], [220, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const s1Op = interpolate(frame, [48, 68], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const s2Op = interpolate(frame, [80, 100], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const s3Op = interpolate(frame, [112, 132], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const ctaScale = spring({ frame: frame - 158, fps, config: { stiffness: 80, damping: 11 } });
-  const scoreBarH = interpolate(frame, [40, 132], [130, 44], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-
-  const steps = [
-    { num: '1', text: 'Find your statement close date in your card app', op: s1Op },
-    { num: '2', text: 'Pay balance DOWN before that date — not the due date', op: s2Op },
-    { num: '3', text: 'Score updates within 30 days', op: s3Op },
-  ];
+  const envelopeY = interpolate(frame, [10, 38], [200, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const c1Op = interpolate(frame, [50, 70], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const c2Op = interpolate(frame, [80, 100], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const ctaScale = spring({ frame: frame - 154, fps, config: { stiffness: 80, damping: 11 } });
 
   return (
     <FadeScene bg={BG_LIGHT} dur={dur}>
       <AbsoluteFill style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '0 60px' }}>
-        <p style={{ ...headline(62, BLACK), opacity: titleOp, marginBottom: 36 }}>THE TWO-MINUTE FIX</p>
+        <p style={{ ...headline(60, BLACK), opacity: titleOp, marginBottom: 36 }}>THE ONE-RULE FIX</p>
 
-        {/* Phone SVG with rising score */}
-        <svg width={188} height={308} viewBox="0 0 188 308"
-          style={{ transform: `translateY(${phoneY}px)`, marginBottom: 44 }}>
-          <rect x={4} y={4} width={180} height={300} rx={26} fill="#1E293B" />
-          <rect x={14} y={26} width={160} height={256} rx={8} fill="#0F172A" />
-          <rect x={22} y={34} width={144} height={240} rx={4} fill="#0F172A" />
-          <rect x={22} y={scoreBarH} width={144} height={274 - scoreBarH} rx={4} fill={ACCENT} opacity={0.85} />
-          <text x={94} y={192} fontFamily={FONT} fontSize={46} fill={WHITE} textAnchor="middle">760</text>
-          <text x={94} y={228} fontFamily={FONT} fontSize={18} fill="#94A3B8" textAnchor="middle">CREDIT SCORE</text>
-          <circle cx={94} cy={294} r={11} fill="#334155" />
+        {/* Cash envelope SVG */}
+        <svg width={380} height={260} viewBox="0 0 380 260"
+          style={{ transform: `translateY(${envelopeY}px)`, marginBottom: 44 }}>
+          {/* Envelope body */}
+          <rect x={4} y={60} width={372} height={196} rx={16} fill={ACCENT} />
+          {/* Envelope flap */}
+          <polygon points="4,60 190,160 376,60" fill="#EA580C" />
+          {/* Bills inside */}
+          <rect x={54} y={100} width={272} height={60} rx={6} fill="#4ADE80" />
+          <rect x={62} y={108} width={256} height={44} rx={4} fill="#16A34A" />
+          <text x={190} y={138} fontFamily={FONT} fontSize={28} fill={WHITE} textAnchor="middle">WEEKEND CASH</text>
+          <rect x={54} y={170} width={272} height={50} rx={6} fill="#86EFAC" opacity={0.7} />
         </svg>
 
-        {/* Three-step checklist */}
-        <div style={{ width: '100%', marginBottom: 42 }}>
-          {steps.map((s, i) => (
-            <div key={i} style={{ display: 'flex', alignItems: 'center', marginBottom: 22, opacity: s.op }}>
-              <div style={{ width: 58, height: 58, background: ACCENT, borderRadius: 29, display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: 24, flexShrink: 0 }}>
-                <span style={{ fontFamily: FONT, fontSize: 30, color: WHITE }}>{s.num}</span>
+        {/* Two-step checklist */}
+        <div style={{ width: '100%', marginBottom: 44 }}>
+          {[
+            { num: '1', text: 'Pull out your weekend budget in cash — only that', op: c1Op },
+            { num: '2', text: "When it's gone, you're done. No card, no app", op: c2Op },
+          ].map((s, i) => (
+            <div key={i} style={{ display: 'flex', alignItems: 'center', marginBottom: 24, opacity: s.op }}>
+              <div style={{ width: 64, height: 64, background: ACCENT, borderRadius: 32, display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: 24, flexShrink: 0 }}>
+                <span style={{ fontFamily: FONT, fontSize: 34, color: WHITE }}>{s.num}</span>
               </div>
-              <p style={{ fontFamily: FONT, fontSize: 31, color: BLACK, margin: 0, lineHeight: 1.4 }}>{s.text}</p>
+              <p style={{ fontFamily: FONT, fontSize: 34, color: BLACK, margin: 0, lineHeight: 1.4 }}>{s.text}</p>
             </div>
           ))}
         </div>
 
-        <p style={{ ...headline(50, ACCENT), transform: `scale(${ctaScale})`, transformOrigin: 'center' }}>
+        <p style={{ ...headline(48, ACCENT), transform: `scale(${ctaScale})`, transformOrigin: 'center' }}>
           FOLLOW FOR DAILY MONEY HACKS
         </p>
       </AbsoluteFill>
@@ -375,4 +435,3 @@ export default function DAILY() {
     </AbsoluteFill>
   );
 }
-
