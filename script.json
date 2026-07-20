@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You spend thirty percent more money on weekends than weekdays — and most budgets completely ignore it. Here's the trap nobody warned you about.",
-    "visual": "Split calendar: Mon-Fri with low spending bars vs Sat-Sun with tall glowing bars spiking 30% higher. Dark background, orange accent bars.",
+    "narration": "Free shipping isn't actually free. The average online shopper spends nine hundred and seventy-eight dollars extra a year just to qualify for it. Here's the trap.",
+    "visual": "A shipping box with a hidden price tag reading $978. Dollar signs float away from the box. Dark background, orange accent. Big stat reveals center screen.",
     "accent_color": "orange"
   },
   {
     "scene": 2,
-    "narration": "The average American overspends about eighty-three dollars every single weekend. Multiply that by fifty-two weekends and you're looking at four thousand three hundred dollars a year.",
-    "visual": "Animated dollar counter spinning up to $4,316. Coins raining down around a piggy bank SVG. Light background.",
+    "narration": "Every retailer sets a free shipping threshold — usually around thirty-five dollars. Your cart hits twenty-nine, and you start hunting for something to add. That's the trap.",
+    "visual": "Shopping cart SVG with three items. A progress bar fills toward $35 threshold. A banner pops: 'Just $6 more for free shipping!' Then bar fills to 100%.",
     "accent_color": "orange"
   },
   {
     "scene": 3,
-    "narration": "Your brain literally switches into freedom mode on Friday night. Social pressure, boredom, and the treat-yourself mindset hijack your wallet for forty-eight hours straight.",
-    "visual": "Person silhouette with speech bubbles floating up: TREAT YOURSELF, EVERYONE IS GOING, I DESERVE IT. Dark background.",
+    "narration": "Seventy percent of online shoppers add items just to hit that threshold. The average extra spend is fourteen dollars per order. Multiply that across every order all year.",
+    "visual": "Two animated bar charts: 70% tall orange bar vs 30% gray bar. Below, a $14 stat card springs in from the left with a highlight border.",
     "accent_color": "orange"
   },
   {
     "scene": 4,
-    "narration": "Number one: restaurants and bars. Number two: impulse shopping. Number three: entertainment. These three categories spike hardest every single weekend — all year long.",
-    "visual": "Three icons revealing sequentially: fork-and-knife for restaurants, shopping bag, ticket stub for entertainment. Each labeled and stacking up. Light background.",
+    "narration": "Here's what makes it worse: forty-six percent of those filler items rarely ever get used. You paid fourteen extra dollars for something you basically threw away.",
+    "visual": "Three product boxes drop into frame. Red X marks appear over two of them. A piggy bank sits below. A '46%' stat card reveals at the bottom.",
     "accent_color": "orange"
   },
   {
     "scene": 5,
-    "narration": "Here's what's wild — invest that four thousand dollars a year instead. In thirty years at seven percent, that's four hundred and twenty-five thousand dollars. Your weekends are stealing your retirement.",
-    "visual": "Bar chart: short bar labeled $4,316/yr vs tall bar growing to $425,000. Retirement house icon at top. Dark background.",
+    "narration": "Retailers don't offer free shipping to be generous. It raises their average order value by thirty percent. You think you're winning the deal — they know you never were.",
+    "visual": "Person silhouette on left, store building on right. Dollar sign icons fly from the person to the store. A '+30% higher order value' badge appears for the store.",
     "accent_color": "orange"
   },
   {
     "scene": 6,
-    "narration": "Set a weekend cash envelope — pull out only what you're okay spending. When it's gone, it's gone. That one rule stops the bleeding immediately. Follow for more money hacks like this.",
-    "visual": "Cash envelope SVG with bills visible. Two-item checklist with orange checkmarks. FOLLOW FOR DAILY MONEY HACKS CTA banner. Light background.",
+    "narration": "The fix is simple: next time you hit that threshold, ask yourself if you'd drive to a store for that item. If not, just pay the five-dollar fee. Follow for more money traps.",
+    "visual": "Phone screen showing checkout with $4.99 standard shipping highlighted in green and the 'add $6 more' option crossed out in red. Savings bar fills to $978. CTA text springs in.",
     "accent_color": "orange"
   }
 ]
