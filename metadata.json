@@ -1,16 +1,13 @@
 {
   "tiktok": {
-    "caption": "You're not getting free shipping. You're spending $978 a year extra to avoid a $5 fee. Here's the math.",
-    "hashtags": ["#moneytips", "#personalfinance", "#shoppinghacks", "#financetok", "#moneypsychology", "#savemoney", "#onlineshopping", "#moneyhacks", "#financialfreedom", "#consumerpsychology"]
+    "caption": "Everyone's chasing $1M to retire. That number runs out in 17 years. Here's what you actually need.",
+    "hashtags": ["#personalfinance", "#retirement", "#retirementplanning", "#moneytips", "#financetok", "#moneypsychology", "#wealthbuilding", "#financialfreedom", "#retirementgoals", "#moneymath"]
   },
   "youtube_short": {
-    "title": "Free Shipping Is Costing You $978 a Year",
-    "title_alternatives": [
-      "The Free Shipping Trick Retailers Use to Empty Your Wallet",
-      "Why 'Free' Shipping Costs You Almost $1,000 a Year"
-    ],
-    "description": "That free shipping button isn't saving you money — it's one of the most profitable psychological tricks in retail. Studies show 70% of online shoppers add items to their cart just to hit the free shipping threshold, spending an average of $14 extra per order. Do that across a year of online shopping and you've blown $978 to avoid a five-dollar fee. And 46% of those filler items barely get used. The fix is one question: would you drive to a store for that item? If not, just pay the shipping. #personalfinance #moneytips #onlineshopping #savemoney #shoppinghacks #financialfreedom",
-    "tags": ["personal finance", "money tips", "free shipping", "online shopping", "save money", "shopping psychology", "money hacks", "consumer psychology", "budgeting", "retail tricks", "financial tips", "spending habits"]
+    "title": "The $1M Retirement Goal Is $1.5M Short",
+    "title_alternatives": ["Why $1 Million Won't Actually Let You Retire", "The Retirement Number Nobody Tells You About"],
+    "description": "Everyone's told to save $1 million to retire — but at 4% withdrawal, that's only $40,000 a year. The average retiree spends $57,818. Add $315,000 in healthcare costs and 20 years of inflation erasing 40% of your buying power, and the real number is closer to $2.5 million. Start at 30 and it costs $1,600 a month. Wait until 40 and it jumps to $2,900. #retirement #personalfinance #retirementplanning #moneypsychology — Follow for the money math they never taught you.",
+    "tags": ["retirement planning", "personal finance", "retirement savings", "money tips", "financial independence", "wealth building", "money psychology", "finance education", "retirement math", "financial literacy", "1 million retirement", "retirement goal"]
   },
-  "hook_line": "Free shipping is costing you $978 a year"
+  "hook_line": "Everyone says save $1M. They're $1.5M short."
 }
