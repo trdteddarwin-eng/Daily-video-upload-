@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Everyone's chasing a million bucks to retire. But at the standard four percent withdrawal rate, that's just forty thousand dollars a year — barely above poverty level.",
-    "visual": "Large gold coin SVG springs into frame at top. '$1,000,000 THE RETIREMENT GOAL' slides in below. Then '4% WITHDRAWAL = $40,000/YEAR' fades in with scale animation. Red warning pill: 'BARELY ABOVE POVERTY LEVEL' appears at bottom.",
-    "accent_color": "amber"
+    "narration": "You're doing everything right — maxing out your 401k as fast as possible. But here's a trap even diligent savers walk right into.",
+    "visual": "Dark background. Person silhouette at a laptop. A green progress bar fills up rapidly labeled '401k MAX $23,500'. A red warning badge springs in: 'BUT THERE'S A TRAP'. Paycheck icons line the bottom.",
+    "accent_color": "green"
   },
   {
     "scene": 2,
-    "narration": "Here's the problem: the average retiree actually spends fifty-seven thousand, eight hundred dollars every single year. At that rate, your million is completely gone in just seventeen years.",
-    "visual": "Light background. '$57,818/YEAR AVERAGE RETIREE SPENDING' heading. An amber savings bar slowly depletes from full to empty across the scene. Year markers below: YR 0, YR 5, YR 10, YR 17. An empty piggy bank SVG appears at the right end. Red text: 'GONE IN 17 YEARS'.",
-    "accent_color": "amber"
+    "narration": "Most employers match per paycheck — say three percent of whatever you contribute that pay period. Stop contributing and they stop matching. Simple as that.",
+    "visual": "Light background. Calendar grid showing 26 pay periods. Each paycheck icon has a green match arrow beneath it. Animation shows arrows disappearing once contributions stop in October.",
+    "accent_color": "green"
   },
   {
     "scene": 3,
-    "narration": "Then there's the healthcare bomb. Fidelity says a retired couple needs three hundred fifteen thousand dollars just for medical costs — not counting long-term care at a hundred and eight thousand a year.",
-    "visual": "Dark background. Red medical cross SVG springs in at top. Three animated bar chart bars grow upward: 'HOUSING $215K' in blue, 'FOOD & TRAVEL $230K' in purple, 'HEALTHCARE $315K' in red and tallest. Label: 'FIDELITY ESTIMATE — PER COUPLE' appears after bars peak.",
-    "accent_color": "amber"
+    "narration": "Here's the thing: forty-three percent of 401k plans don't have a true-up. That means your employer owes you zero catch-up for missed matches.",
+    "visual": "Dark background. Two large pie slices: green 57% labeled 'TRUE-UP EXISTS — you're safe' and red 43% labeled 'NO TRUE-UP — you're losing money'. Red slice pulses.",
+    "accent_color": "green"
   },
   {
     "scene": 4,
-    "narration": "Now stack inflation on top. At just two and a half percent per year, your forty thousand dollar income loses forty percent of its buying power in twenty years. You're quietly going backward.",
-    "visual": "Light background. Two money bag SVGs side by side. Left bag full gold: '$40,000 TODAY'. Arrow in center: '20 YEARS 2.5% INFLATION'. Right bag smaller grey: '$24,000 REAL VALUE'. Red banner slides in: 'YOU LOSE 40% WITHOUT SPENDING A DOLLAR MORE'.",
-    "accent_color": "amber"
+    "narration": "You max out by October — that leaves twelve pay periods with zero contributions. At three hundred fifty-eight dollars of match per check, you just handed back four thousand three hundred dollars.",
+    "visual": "Light background. Month calendar: Jan through Oct in green with check marks, Nov and Dec in red with X marks. Dollar coins fly away from the calendar. Bold counter ticks up to '$4,300 LOST'.",
+    "accent_color": "green"
   },
   {
     "scene": 5,
-    "narration": "Run the real math and you need closer to two and a half million. Start saving at thirty — sixteen hundred a month. Wait until forty — twenty-nine hundred. One decade costs you thirteen hundred dollars every month.",
-    "visual": "Dark background. Title: 'TO REACH $2.5 MILLION BY AGE 65'. Two person silhouettes with age labels. Two animated bars grow upward: amber 'START AT 30 $1,600/MO' and red 'START AT 40 $2,900/MO' taller. Bottom reveal: 'WAITING A DECADE = $1,300 MORE/MONTH'.",
-    "accent_color": "amber"
+    "narration": "The fix is stupidly simple. Just divide twenty-three thousand five hundred by your number of pay periods. Spread it evenly — same max, zero missed match.",
+    "visual": "Dark background. '$23,500 ÷ 26 = $904/paycheck' equation animates in. Below, an evenly-spaced bar chart shows 26 equal green bars, all with match arrows beneath them. Label: 'FULL MATCH. EVERY PAYCHECK.'",
+    "accent_color": "green"
   },
   {
     "scene": 6,
-    "narration": "The million-dollar retirement goal is a math problem with the wrong answer. The real number is two point five million — and every year you wait, the gap gets bigger. Follow for the numbers they never taught you.",
-    "visual": "Light background. Piggy bank SVG fills with amber color from bottom to top via clip-path animation. '$2.5M NOT $1M' springs onto screen in amber. CTA text fades in: 'EVERY YEAR YOU WAIT COSTS MORE' and 'FOLLOW FOR REAL MONEY MATH'.",
-    "accent_color": "amber"
+    "narration": "Pull up your 401k plan document tonight and search for 'true-up.' If it's not there, call HR first thing tomorrow. This one question could put four grand back in your pocket.",
+    "visual": "Light background. Document SVG springs in with a search highlight on the words 'TRUE-UP'. Phone SVG beside it. Green checkmark animates in. Bottom CTA: 'ONE CALL = $4,300 BACK IN YOUR POCKET'.",
+    "accent_color": "green"
   }
 ]

@@ -1,13 +1,13 @@
 {
   "tiktok": {
-    "caption": "Everyone's chasing $1M to retire. That number runs out in 17 years. Here's what you actually need.",
-    "hashtags": ["#personalfinance", "#retirement", "#retirementplanning", "#moneytips", "#financetok", "#moneypsychology", "#wealthbuilding", "#financialfreedom", "#retirementgoals", "#moneymath"]
+    "caption": "You maxed your 401k early — and your employer stopped matching. 43% of plans have no true-up. Here's the $4,300 trap.",
+    "hashtags": ["#personalfinance", "#401k", "#retirementplanning", "#moneytips", "#financetok", "#moneypsychology", "#wealthbuilding", "#financialfreedom", "#investingtips", "#moneymath"]
   },
   "youtube_short": {
-    "title": "The $1M Retirement Goal Is $1.5M Short",
-    "title_alternatives": ["Why $1 Million Won't Actually Let You Retire", "The Retirement Number Nobody Tells You About"],
-    "description": "Everyone's told to save $1 million to retire — but at 4% withdrawal, that's only $40,000 a year. The average retiree spends $57,818. Add $315,000 in healthcare costs and 20 years of inflation erasing 40% of your buying power, and the real number is closer to $2.5 million. Start at 30 and it costs $1,600 a month. Wait until 40 and it jumps to $2,900. #retirement #personalfinance #retirementplanning #moneypsychology — Follow for the money math they never taught you.",
-    "tags": ["retirement planning", "personal finance", "retirement savings", "money tips", "financial independence", "wealth building", "money psychology", "finance education", "retirement math", "financial literacy", "1 million retirement", "retirement goal"]
+    "title": "Maxing Your 401k Too Fast Costs You $4,300",
+    "title_alternatives": ["The 401k Trap Every Diligent Saver Falls Into", "Your Employer Stopped Matching — Here's Why"],
+    "description": "Maxing your 401k as fast as possible sounds smart — but if your employer matches per paycheck and your plan doesn't have a true-up provision, you lose the match for every pay period after you hit the limit. 43% of plans have no true-up. Max out by October and you forfeit 12 paychecks of free money — that's $4,300 gone. The fix is simple: divide $23,500 by your pay periods and contribute evenly all year. Same max, full match, every time. #401k #personalfinance #retirementplanning — Follow for the money traps nobody warns you about.",
+    "tags": ["401k", "retirement planning", "personal finance", "employer match", "money tips", "financial independence", "wealth building", "money psychology", "finance education", "retirement savings", "true-up provision", "financial literacy"]
   },
-  "hook_line": "Everyone says save $1M. They're $1.5M short."
+  "hook_line": "You maxed your 401k early. Your employer stopped matching."
 }
