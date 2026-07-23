@@ -1,13 +1,13 @@
 {
   "tiktok": {
-    "caption": "You maxed your 401k early — and your employer stopped matching. 43% of plans have no true-up. Here's the $4,300 trap.",
-    "hashtags": ["#personalfinance", "#401k", "#retirementplanning", "#moneytips", "#financetok", "#moneypsychology", "#wealthbuilding", "#financialfreedom", "#investingtips", "#moneymath"]
+    "caption": "You got raises. You spent them. 75% of people upgrade their lifestyle within 90 days — and that habit costs $1.4M at retirement.",
+    "hashtags": ["#personalfinance", "#moneytips", "#lifestylecreep", "#wealthbuilding", "#financetok", "#moneypsychology", "#investingtips", "#financialfreedom", "#retirementplanning", "#moneymath"]
   },
   "youtube_short": {
-    "title": "Maxing Your 401k Too Fast Costs You $4,300",
-    "title_alternatives": ["The 401k Trap Every Diligent Saver Falls Into", "Your Employer Stopped Matching — Here's Why"],
-    "description": "Maxing your 401k as fast as possible sounds smart — but if your employer matches per paycheck and your plan doesn't have a true-up provision, you lose the match for every pay period after you hit the limit. 43% of plans have no true-up. Max out by October and you forfeit 12 paychecks of free money — that's $4,300 gone. The fix is simple: divide $23,500 by your pay periods and contribute evenly all year. Same max, full match, every time. #401k #personalfinance #retirementplanning — Follow for the money traps nobody warns you about.",
-    "tags": ["401k", "retirement planning", "personal finance", "employer match", "money tips", "financial independence", "wealth building", "money psychology", "finance education", "retirement savings", "true-up provision", "financial literacy"]
+    "title": "Lifestyle Creep Is Stealing $1.4M From You",
+    "title_alternatives": ["Why Getting Raises Makes You Broke", "The $1.4M Habit Nobody Warns You About"],
+    "description": "Every raise you've ever gotten — you spent it. That's lifestyle creep, and 75% of people upgrade their spending within 90 days of every pay increase. The sneaky part? It hits $200K earners just as hard as $60K earners. If you'd invested just the raise delta from age 30 to 65 instead, you'd retire with $1.4 million extra. The fix is simple: every time you get a raise, redirect one upgrade — just one — to an index fund automatically. That single habit, repeated with every raise, is how you actually build wealth. #personalfinance #moneytips #investing — Follow for the money traps nobody warns you about.",
+    "tags": ["lifestyle creep", "personal finance", "money tips", "wealth building", "investing", "financial independence", "money psychology", "financial literacy", "retirement planning", "index fund", "salary raise", "money habits"]
   },
-  "hook_line": "You maxed your 401k early. Your employer stopped matching."
+  "hook_line": "You got the raises. Where did the money go?"
 }

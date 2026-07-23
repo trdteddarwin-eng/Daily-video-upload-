@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You're doing everything right — maxing out your 401k as fast as possible. But here's a trap even diligent savers walk right into.",
-    "visual": "Dark background. Person silhouette at a laptop. A green progress bar fills up rapidly labeled '401k MAX $23,500'. A red warning badge springs in: 'BUT THERE'S A TRAP'. Paycheck icons line the bottom.",
+    "narration": "You've gotten raises. Maybe a few of them. So why does it still feel like you're barely keeping up? There's a name for what's happening to you.",
+    "visual": "Dark background. Person silhouette at center. Salary badge animates through $45K → $60K → $80K → $100K in green. Empty wallet SVG below stays unchanged. 'WHERE DOES IT GO?' text springs in.",
     "accent_color": "green"
   },
   {
     "scene": 2,
-    "narration": "Most employers match per paycheck — say three percent of whatever you contribute that pay period. Stop contributing and they stop matching. Simple as that.",
-    "visual": "Light background. Calendar grid showing 26 pay periods. Each paycheck icon has a green match arrow beneath it. Animation shows arrows disappearing once contributions stop in October.",
+    "narration": "It's called lifestyle creep. Number one: a raise arrives. Number two: spending inflates to match — bigger place, newer car, nicer restaurants. You feel richer for a month, then normal again.",
+    "visual": "Light background. Vertical timeline: green money bag icon labeled 'RAISE ARRIVES', then red house icon 'BIGGER PLACE', red car icon 'NEWER CAR', red fork/knife icon 'NICER RESTAURANTS'. Each item springs in with numbered badge.",
     "accent_color": "green"
   },
   {
     "scene": 3,
-    "narration": "Here's the thing: forty-three percent of 401k plans don't have a true-up. That means your employer owes you zero catch-up for missed matches.",
-    "visual": "Dark background. Two large pie slices: green 57% labeled 'TRUE-UP EXISTS — you're safe' and red 43% labeled 'NO TRUE-UP — you're losing money'. Red slice pulses.",
+    "narration": "Here's the stat that stings: 75 percent of people upgrade their lifestyle within 90 days of a raise. That extra $500 a month just vanishes — and the investment account stays at zero.",
+    "visual": "Dark background. Large '75%' number animates counting up. Below: dollar bill SVG splitting — left half flows into spending icons (house, car, coffee cup), right half arrow points to empty piggy bank. 'INVESTMENT ACCOUNT: $0' in red.",
     "accent_color": "green"
   },
   {
     "scene": 4,
-    "narration": "You max out by October — that leaves twelve pay periods with zero contributions. At three hundred fifty-eight dollars of match per check, you just handed back four thousand three hundred dollars.",
-    "visual": "Light background. Month calendar: Jan through Oct in green with check marks, Nov and Dec in red with X marks. Dollar coins fly away from the calendar. Bold counter ticks up to '$4,300 LOST'.",
+    "narration": "Here's the math that'll change how you think about raises forever. Invest that raise delta from age 30 to 65 and you'd retire with $1.4 million extra. That's the actual price of lifestyle creep.",
+    "visual": "Light background. Two-column comparison: left column 'SPENT ON UPGRADES' shows red downward arrow and flat line. Right column 'INVESTED INSTEAD' shows green exponential curve climbing to '$1,400,000' bold label at top. '35 YEARS' badge between columns.",
     "accent_color": "green"
   },
   {
     "scene": 5,
-    "narration": "The fix is stupidly simple. Just divide twenty-three thousand five hundred by your number of pay periods. Spread it evenly — same max, zero missed match.",
-    "visual": "Dark background. '$23,500 ÷ 26 = $904/paycheck' equation animates in. Below, an evenly-spaced bar chart shows 26 equal green bars, all with match arrows beneath them. Label: 'FULL MATCH. EVERY PAYCHECK.'",
+    "narration": "And here's the wild part — this isn't just a middle-income trap. Americans making $200,000 a year live paycheck to paycheck at nearly the same rate as those making $60,000. More money, same trap.",
+    "visual": "Dark background. Four salary bars growing taller: $60K, $80K, $100K, $200K. Lifestyle line perfectly tracks each bar, matching it exactly. Savings flatline stays near zero for all four. Label: 'SAVINGS RATE: NEARLY IDENTICAL ACROSS ALL INCOMES'.",
     "accent_color": "green"
   },
   {
     "scene": 6,
-    "narration": "Pull up your 401k plan document tonight and search for 'true-up.' If it's not there, call HR first thing tomorrow. This one question could put four grand back in your pocket.",
-    "visual": "Light background. Document SVG springs in with a search highlight on the words 'TRUE-UP'. Phone SVG beside it. Green checkmark animates in. Bottom CTA: 'ONE CALL = $4,300 BACK IN YOUR POCKET'.",
+    "narration": "Pick one upgrade from your last raise. One. Redirect that exact dollar amount to an index fund automatically. That single habit — repeated with every raise — is how the cycle actually breaks.",
+    "visual": "Light background. Circle highlights one upgrade item (streaming/coffee). Arrow points from it to a green piggy bank SVG. Piggy bank fills with coins. Bottom CTA badge: 'ONE REDIRECT = $1.4M AT RETIREMENT'. Green checkmark springs in.",
     "accent_color": "green"
   }
 ]
