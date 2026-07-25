@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "That $80 prescription you just picked up? There's a four-dollar version with the exact same drug inside. Your pharmacist never told you — because nobody asked.",
-    "visual": "Dark background. Two pill bottles side by side: orange brand-name bottle with $79.99 red price tag vs grey generic bottle with $3.99 green price tag. Triple-bar equals sign animates in between them. 'FDA CONFIRMED' green badge springs in below.",
-    "accent_color": "green"
+    "narration": "You're checking your 401k — $300,000. Feels amazing, right? Here's what nobody told you: the IRS is the silent co-owner of every dollar in that account, and it gets worse.",
+    "visual": "Dark background. Large animated counter climbs from $0 to $300,000 in white. Below: full white bar, then red section grows from right to cover 22%. Red badge: '22% = $66,000 — BELONGS TO THE IRS' springs in.",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Here's the thing — the FDA legally requires generics to have the same active ingredient, same dosage, and same absorption rate. They call it 'bioequivalent.' Same drug, different label.",
-    "visual": "Light background. FDA seal SVG (green circle with FDA text). Below: orange round pill equals grey oblong pill. Three checkmark items spring in left-to-right: SAME ACTIVE INGREDIENT, SAME DOSAGE, SAME ABSORPTION RATE. 'BIOEQUIVALENT' dark badge at bottom.",
-    "accent_color": "green"
+    "narration": "Every contribution you made went in before taxes — so the government never got its cut. Every single withdrawal in retirement gets taxed as regular income. Let me show you the math.",
+    "visual": "Light background. Dollar coin SVG labeled 'YOUR PAYCHECK' with arrow pointing right into a vault/safe icon labeled '401K — PRE-TAX.' Second arrow from vault to a future person silhouette labeled 'TAXED AS INCOME AT WITHDRAWAL.' Timeline: NOW to RETIREMENT.",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Generics look different on purpose — different colors, different shapes. But that's just dye and coating. Big Pharma spends six billion dollars a year making you distrust that difference.",
-    "visual": "Dark background. Round orange pill vs oval white pill with a brain SVG showing question mark between them. Label: 'different dyes · different shapes · same drug.' Red dollar counter animates $0 to $6B in ad spending. 'PURE MARKETING PSYCHOLOGY' in green.",
-    "accent_color": "green"
+    "narration": "Run the math on $300,000. At a 22% tax rate, $66,000 of that balance belongs to the IRS — not you. Your real number is $234,000. And here's where it actually gets worse.",
+    "visual": "Dark background. Tall rectangle bar animates in from bottom, then splits: 78% white section labeled '$234,000 — YOURS' and 22% red section labeled '$66,000 — IRS.' Total '$300,000' label at top. Both sections animate in sequentially.",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "This one belief costs the average American six hundred dollars every single year on drugs they didn't need to pay full price for. Nationally, that's fifty billion dollars a year.",
-    "visual": "Light background. Person silhouette icon above animated red counter climbing from $0 to $600. 'PER YEAR on brand drugs' label. Divider line. '$50B' large black number reveals below with 'in unnecessary brand-name spending' and red badge.",
-    "accent_color": "green"
+    "narration": "At 73, the IRS forces mandatory withdrawals called RMDs — whether you need the money or not. Those forced payouts can push you into a higher tax bracket. But there is a fix.",
+    "visual": "Light background. Horizontal age timeline: 60, 65, 70, 72, then at 73 a red warning triangle appears with 'RMD KICKS IN.' Arrow pointing down to a piggy bank cracking open. Text: 'FORCED WITHDRAWAL' with bracket showing higher tax rate impact.",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "The fix is four words at the pharmacy: 'Is there a generic?' Or look it up on Cost Plus Drugs — what costs eighty dollars is often four dollars there. Same molecule.",
-    "visual": "Dark background. Person silhouette at pharmacy counter with pharmacist and pill bottles on shelf. White speech bubble: 'IS THERE A GENERIC?' in green. Phone SVG showing Cost Plus Drugs screen with $80.00 struck through and $3.80 in green. 'SAME PILL · 95% CHEAPER' label.",
-    "accent_color": "green"
+    "narration": "The Roth IRA flips this completely — you pay tax on the seed, not the harvest. Every dollar of growth comes out tax-free, with no forced withdrawals at 73. Here's the window.",
+    "visual": "Dark background. Two columns side by side. LEFT 'TRADITIONAL': full dollar coin goes in, smaller coin comes out with red IRS slice removed. RIGHT 'ROTH': slightly smaller coin goes in with tax paid, full large coin comes out in green. Arrows and labels animate in.",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Pull out one prescription right now and check it. One thirty-second question could save you six hundred dollars a year — and the drug is literally the same molecule.",
-    "visual": "Light background. Green pharmacy bag with Rx symbol. Step card: 'PULL OUT ONE PRESCRIPTION.' Arrow pointing down to green badge: 'SAVE $600/YEAR — with one 30-second question.' CTA text: 'search it at costplusdrugs.com.'",
-    "accent_color": "green"
+    "narration": "Your Roth conversion window is 60 to 72 — before the IRS forces your hand. If your bracket is lower now than it'll be at 73, converting today is how you take your money back.",
+    "visual": "Light background. Age bar 55-75 with green highlight over 60-72 labeled 'YOUR WINDOW' and red zone at 73+ labeled 'RMDs TAKE OVER.' Large CTA text: 'CONVERT BEFORE 73.' Green checkmark springs in. 'Talk to a tax advisor' at bottom.",
+    "accent_color": "red"
   }
 ]

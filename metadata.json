@@ -1,13 +1,13 @@
 {
   "tiktok": {
-    "caption": "Your pharmacist has a $4 version of that $80 pill. Same drug. FDA says so. You just have to ask.",
-    "hashtags": ["#moneytips", "#personalfinance", "#pharmacyhack", "#savemoney", "#genericdrugs", "#healthcarecosts", "#moneyhacks", "#finance", "#prescriptions", "#lifehack"]
+    "caption": "You think you have $300K saved. The IRS disagrees — they own 22% of every dollar in your traditional 401k.",
+    "hashtags": ["#personalfinance", "#401k", "#retirement", "#moneytips", "#taxes", "#rothira", "#finance", "#retirementplanning", "#moneyhacks", "#investingtips"]
   },
   "youtube_short": {
-    "title": "Your $80 Pill Has a $4 Identical Twin",
-    "title_alternatives": ["FDA Says This $4 Pill = Your $80 Prescription", "Big Pharma's $600/Year Tax Nobody Talks About"],
-    "description": "Your pharmacist has a $4 version of that $80 pill and they never told you. The FDA requires generics to be bioequivalent — same active ingredient, same dose, same absorption rate. Big Pharma spends $6 billion a year on advertising to make sure you distrust the generic version. Americans overpay $600 per year and $50 billion nationally because of this one belief. Just ask your pharmacist four words: 'Is there a generic?' Or search your medication at costplusdrugs.com — drugs that cost $80 at retail are often $3-4 there. Follow for the money traps nobody warns you about. #personalfinance #moneytips #genericdrugs #pharmacyhack #savemoney",
-    "tags": ["personal finance", "money tips", "generic drugs", "pharmacy hack", "save money", "healthcare costs", "prescription drugs", "money hacks", "finance tips", "cost plus drugs", "drug prices", "medical bills"]
+    "title": "The IRS Secretly Owns 22% of Your 401k",
+    "title_alternatives": ["Your 401k Balance Is a Lie — The IRS Owns Part of It", "Nobody Tells You This About Your 401k Savings"],
+    "description": "You've been watching your 401k grow for years — but every dollar in a traditional 401k went in before taxes, which means the IRS has never gotten its cut. At a 22% effective rate, $66,000 of a $300,000 balance already belongs to the government. And at age 73, required minimum distributions force you to start withdrawing whether you need the money or not — which can push you into an even higher tax bracket. The Roth IRA flips this: you pay tax now on the seed, and every dollar of growth comes out completely tax-free, with no forced withdrawals. Your conversion window is ages 60 to 72, before RMDs take control. Talk to a tax advisor about whether converting now — while you're in a lower bracket — makes sense for you. Follow for the money traps nobody warns you about. #personalfinance #401k #rothira #retirement #taxes #moneytips",
+    "tags": ["401k", "retirement", "roth ira", "taxes", "personal finance", "money tips", "investing", "rmd", "tax planning", "retirement savings", "finance", "wealth building"]
   },
-  "hook_line": "Your $80 pill costs $4 at the same factory"
+  "hook_line": "The IRS owns 22% of your 401k balance"
 }
