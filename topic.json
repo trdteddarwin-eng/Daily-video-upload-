@@ -1,7 +1,13 @@
 {
-  "title": "The IRS Secretly Owns 22% of Your 401k",
-  "hook": "You've been watching that 401k balance grow for years — but the IRS is the silent co-owner of every dollar in it, and nobody told you to plan for that.",
-  "angle": "Pre-tax retirement savers count their gross balance as net worth, not realizing a massive deferred tax liability is hidden inside — and required minimum distributions at 73 can force withdrawals that push them into higher brackets",
-  "audience": "Workers 35-60 with significant traditional 401k balances who have never thought about the tax bill waiting at withdrawal",
-  "key_numbers": ["22% = average effective tax rate at retirement for median earner", "$66,000 of a $300K 401k already belongs to the IRS", "Age 73: RMDs force mandatory withdrawals whether you need the money or not", "Roth conversion window: ages 60-72, before RMDs take control", "401k millionaires can owe $220K-$370K in deferred taxes"]
+  "title": "No Will Costs Your Family $47,000 and 18 Months",
+  "hook": "Sixty percent of Americans have no will — and when they die, the government decides who gets everything, then sends your family a $47,000 bill for the privilege.",
+  "angle": "Estate planning is the most-avoided financial topic — but the cost of avoidance isn't abstract, it's a concrete 5-figure probate fee and 18 months of legal limbo that hits families when they're already grieving",
+  "audience": "Adults 30-65 with any assets — house, savings account, retirement accounts — who have never made a will",
+  "key_numbers": [
+    "60% of Americans have no will",
+    "$47,000 average probate cost on a $600K estate (roughly 8% of estate value)",
+    "18+ months: average probate timeline",
+    "$100-500: cost of a basic online will",
+    "3-8% of estate value consumed by probate fees"
+  ]
 }

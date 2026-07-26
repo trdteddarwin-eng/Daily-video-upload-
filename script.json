@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You're checking your 401k — $300,000. Feels amazing, right? Here's what nobody told you: the IRS is the silent co-owner of every dollar in that account, and it gets worse.",
-    "visual": "Dark background. Large animated counter climbs from $0 to $300,000 in white. Below: full white bar, then red section grows from right to cover 22%. Red badge: '22% = $66,000 — BELONGS TO THE IRS' springs in.",
-    "accent_color": "red"
+    "narration": "Sixty percent of Americans will die without a will — and the government's plan for your stuff is a lot more expensive than you think.",
+    "visual": "Dark background, person silhouette with large red X over a document/will icon, '60%' stat in blue text springs in, subtitle fades below",
+    "accent_color": "blue"
   },
   {
     "scene": 2,
-    "narration": "Every contribution you made went in before taxes — so the government never got its cut. Every single withdrawal in retirement gets taxed as regular income. Let me show you the math.",
-    "visual": "Light background. Dollar coin SVG labeled 'YOUR PAYCHECK' with arrow pointing right into a vault/safe icon labeled '401K — PRE-TAX.' Second arrow from vault to a future person silhouette labeled 'TAXED AS INCOME AT WITHDRAWAL.' Timeline: NOW to RETIREMENT.",
-    "accent_color": "red"
+    "narration": "Without a will, everything you own gets frozen inside a court process called probate. Your family can't touch your house or your accounts while the lawyers get paid.",
+    "visual": "Light background, courthouse SVG with columns and pediment, 'PROBATE' text appears in red, padlock icon over a house, 'your family can't touch anything' label",
+    "accent_color": "blue"
   },
   {
     "scene": 3,
-    "narration": "Run the math on $300,000. At a 22% tax rate, $66,000 of that balance belongs to the IRS — not you. Your real number is $234,000. And here's where it actually gets worse.",
-    "visual": "Dark background. Tall rectangle bar animates in from bottom, then splits: 78% white section labeled '$234,000 — YOURS' and 22% red section labeled '$66,000 — IRS.' Total '$300,000' label at top. Both sections animate in sequentially.",
-    "accent_color": "red"
+    "narration": "The average probate case drags on for eighteen months. That's a year and a half your family spends in legal limbo, grieving and paying attorney fees at the same time.",
+    "visual": "Dark background, 3x6 calendar grid — 18 cells light up one by one in blue, '18 MONTHS' counter appears at bottom, 'of legal limbo' subtitle",
+    "accent_color": "blue"
   },
   {
     "scene": 4,
-    "narration": "At 73, the IRS forces mandatory withdrawals called RMDs — whether you need the money or not. Those forced payouts can push you into a higher tax bracket. But there is a fix.",
-    "visual": "Light background. Horizontal age timeline: 60, 65, 70, 72, then at 73 a red warning triangle appears with 'RMD KICKS IN.' Arrow pointing down to a piggy bank cracking open. Text: 'FORCED WITHDRAWAL' with bracket showing higher tax rate impact.",
-    "accent_color": "red"
+    "narration": "On a six-hundred-thousand dollar estate — one house and some savings — probate fees can hit forty-seven thousand dollars. That's the government taking their cut just for doing paperwork.",
+    "visual": "Light background, house SVG labeled $600,000, arrow pointing down to red counter animating up to $47,000, money-flying-away effect",
+    "accent_color": "blue"
   },
   {
     "scene": 5,
-    "narration": "The Roth IRA flips this completely — you pay tax on the seed, not the harvest. Every dollar of growth comes out tax-free, with no forced withdrawals at 73. Here's the window.",
-    "visual": "Dark background. Two columns side by side. LEFT 'TRADITIONAL': full dollar coin goes in, smaller coin comes out with red IRS slice removed. RIGHT 'ROTH': slightly smaller coin goes in with tax paid, full large coin comes out in green. Arrows and labels animate in.",
-    "accent_color": "red"
+    "narration": "Here's the wild part: a basic will takes thirty minutes online and costs around a hundred bucks. That hundred-dollar document just saved your family forty-seven thousand dollars and a year and a half of heartache.",
+    "visual": "Dark background, two comparison boxes side by side — green box: '$100 / A Basic Will / 30 min online' vs red box: '$47K / Probate Fees / 18 months of hell'",
+    "accent_color": "blue"
   },
   {
     "scene": 6,
-    "narration": "Your Roth conversion window is 60 to 72 — before the IRS forces your hand. If your bracket is lower now than it'll be at 73, converting today is how you take your money back.",
-    "visual": "Light background. Age bar 55-75 with green highlight over 60-72 labeled 'YOUR WINDOW' and red zone at 73+ labeled 'RMDs TAKE OVER.' Large CTA text: 'CONVERT BEFORE 73.' Green checkmark springs in. 'Talk to a tax advisor' at bottom.",
-    "accent_color": "red"
+    "narration": "Don't let the government write your final chapter. Make a will this week — your family is counting on you more than they even know.",
+    "visual": "Light background, three-person family silhouette with blue accent child, animated blue checkmark drawing in, 'Make Your Will This Week' CTA text",
+    "accent_color": "blue"
   }
 ]
