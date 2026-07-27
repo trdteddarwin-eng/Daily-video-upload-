@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Sixty percent of Americans will die without a will — and the government's plan for your stuff is a lot more expensive than you think.",
-    "visual": "Dark background, person silhouette with large red X over a document/will icon, '60%' stat in blue text springs in, subtitle fades below",
-    "accent_color": "blue"
+    "narration": "Financial gurus have told you for 30 years — skip your daily latte and retire rich. Here's why that advice is mathematically absurd.",
+    "visual": "Coffee cup SVG with steam rising, large red X overlaid on cup, text 'THE LATTE LIE' at bottom, dark background with amber accent",
+    "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "Without a will, everything you own gets frozen inside a court process called probate. Your family can't touch your house or your accounts while the lawyers get paid.",
-    "visual": "Light background, courthouse SVG with columns and pediment, 'PROBATE' text appears in red, padlock icon over a house, 'your family can't touch anything' label",
-    "accent_color": "blue"
+    "narration": "Do the real math. Your six-dollar coffee costs $2,190 a year. But the average American overspends on housing by $4,800 — more than double.",
+    "visual": "Two horizontal bar charts on light background — amber bar growing to show coffee ($2,190/yr), then red bar growing larger showing housing overspend ($4,800/yr) with animated counters",
+    "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "The average probate case drags on for eighteen months. That's a year and a half your family spends in legal limbo, grieving and paying attorney fees at the same time.",
-    "visual": "Dark background, 3x6 calendar grid — 18 cells light up one by one in blue, '18 MONTHS' counter appears at bottom, 'of legal limbo' subtitle",
-    "accent_color": "blue"
+    "narration": "The 'big three' expenses are housing, car, and food. Most people obsess over coffee while their rent alone breaks the recommended 28% rule.",
+    "visual": "House SVG center stage, two colored percentage bars below — green bar for 28% recommended, red bar for 32% actual — gap highlighted with $4,800 overspend badge, dark background",
+    "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "On a six-hundred-thousand dollar estate — one house and some savings — probate fees can hit forty-seven thousand dollars. That's the government taking their cut just for doing paperwork.",
-    "visual": "Light background, house SVG labeled $600,000, arrow pointing down to red counter animating up to $47,000, money-flying-away effect",
-    "accent_color": "blue"
+    "narration": "Cars are the sneakiest drain. The average American spends $11,400 a year on transportation — five times the cost of their daily coffee.",
+    "visual": "Blue car SVG animates in from left, then itemized cost breakdown appears: car payment $6,000 + gas/insurance $3,600 + maintenance $1,800 = $11,400 total counter, light background",
+    "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "Here's the wild part: a basic will takes thirty minutes online and costs around a hundred bucks. That hundred-dollar document just saved your family forty-seven thousand dollars and a year and a half of heartache.",
-    "visual": "Dark background, two comparison boxes side by side — green box: '$100 / A Basic Will / 30 min online' vs red box: '$47K / Probate Fees / 18 months of hell'",
-    "accent_color": "blue"
+    "narration": "One smart housing decision saves more than five years of skipped coffees. You can't latte-boycott your way out of a structural spending problem.",
+    "visual": "Coffee cup icon on left vs house icon on right, VS badge in center, callout box at bottom: '5 coffee-free years = 1 smart housing move', dark background",
+    "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "Don't let the government write your final chapter. Make a will this week — your family is counting on you more than they even know.",
-    "visual": "Light background, three-person family silhouette with blue accent child, animated blue checkmark drawing in, 'Make Your Will This Week' CTA text",
-    "accent_color": "blue"
+    "narration": "Forget the latte guilt. Fix your housing, car, and grocery bill, and over 40 years that's over a million dollars more in your pocket.",
+    "visual": "Three icons — house, car, grocery bag — each with green checkmark popping in sequence on light background, amber badge at bottom: '$1M+ SAVED over 40 years'",
+    "accent_color": "amber"
   }
 ]
