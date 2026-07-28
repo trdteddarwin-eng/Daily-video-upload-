@@ -1,12 +1,13 @@
 {
-  "title": "Your Daily Coffee Isn't Why You're Broke — This Is",
-  "hook": "Experts say skip the latte and retire rich. Nobel economists say that's mathematically absurd — and the real money drain is way bigger.",
-  "angle": "Debunks the famous 'latte factor' myth using BLS data — housing, transport, and food overspending are worth 6x more than coffee over a lifetime",
-  "audience": "Young adults who feel guilty about small purchases while massively overpaying on housing, cars, and food subscriptions",
+  "title": "97% of Day Traders Are Gone in 2 Years",
+  "hook": "That trading app on your phone looks exactly like a game — and 97% of day traders lose money within two years.",
+  "angle": "Day trading apps are casinos disguised as investing tools — they earn on every trade regardless of whether the user wins or loses, creating an inherent conflict of interest.",
+  "audience": "Young investors tempted by Robinhood-style trading apps, anyone who has downloaded a stock trading app",
   "key_numbers": [
-    "$2,190/yr: daily $6 coffee habit",
-    "$4,800/yr: average housing overspend (32% actual vs 28% recommended)",
-    "$11,400/yr: average US transportation spend",
-    "$1M+: 40-year difference from fixing big three vs skipping coffee"
+    "97% of persistent day traders lose money within 2 years (5-year Brazilian study)",
+    "Active traders underperform the market by 6.5% annually",
+    "$3,400 average day trader loss in year one on a $10,000 account",
+    "92% of professional fund managers underperform a simple index fund over 20 years",
+    "$0.10 per trade: what trading apps earn through payment for order flow"
   ]
 }
