@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Your trading app looks exactly like a game — streaks, charts, coins flying up. What the UI doesn't show you? Ninety-seven percent of day traders lose money within two years.",
-    "visual": "Phone SVG showing trading app with green chart, streak badge, floating gold coins; large red '97%' stat appears below phone, dark background",
-    "accent_color": "red"
+    "narration": "States are sitting on fifty-eight billion dollars of forgotten cash right now. You might be one of ten Americans who's owed an average of eight hundred and ninety-two dollars. Here's how to find out.",
+    "visual": "Person silhouette with surprised expression; gold coins float upward away from them; '$58B' stat reveals at bottom. Dark background.",
+    "accent_color": "green"
   },
   {
     "scene": 2,
-    "narration": "Researchers tracked sixteen hundred traders for five years — only three percent made a sustainable profit. And active traders underperform the market by six-and-a-half percent every single year.",
-    "visual": "Tall red bar labeled '97% Lose Money' vs tiny green bar labeled '3% Profit' on a bar chart, light background; '6.5% below market' badge fades in below",
-    "accent_color": "red"
+    "narration": "It comes from things you've already forgotten — old bank accounts, uncashed paychecks, insurance refunds, security deposits. Your landlord moved on. Your old employer moved on. Your money just sat there.",
+    "visual": "Four animated icon cards spring in one by one on light background: bank building, paycheck document, insurance shield, house deposit icon. Each labeled.",
+    "accent_color": "green"
   },
   {
     "scene": 3,
-    "narration": "Here's what they don't advertise — your app earns on every trade, win or lose. The more you trade, the richer they get. That's just their business model.",
-    "visual": "Person silhouette with phone on left, animated gold coins moving right along dashed arrow track toward office building labeled 'APP', dark background",
-    "accent_color": "red"
+    "narration": "There are forty million separate unclaimed accounts in the US right now. One in ten Americans is owed money, and the average amount is almost nine hundred dollars. And it never expires.",
+    "visual": "Three dark stat cards animate in: counter counting up to '40M+ accounts waiting', '1 in 10 Americans', dollar counter animating to '$892 average'. Dark background.",
+    "accent_color": "green"
   },
   {
     "scene": 4,
-    "narration": "Early wins feel like proof you're skilled. That's the hot hand fallacy — your brain literally can't tell luck from skill. Traders who win early bet bigger and crash harder.",
-    "visual": "Gold dice showing six on left; person silhouette with thought bubble 'I'm good at this!' on right; red downward arrow pops in; light background",
-    "accent_color": "red"
+    "narration": "Claiming it costs nothing and takes under five minutes. Step one: search your full name. Step two: see what's listed. Step three: file a free claim. That's the entire process — completely legit.",
+    "visual": "Three step rows spring in one by one on light background: magnifying glass 'Search your name', dollar circle 'See what you're owed', checkmark 'Claim it free'.",
+    "accent_color": "green"
   },
   {
     "scene": 5,
-    "narration": "Day trader with ten thousand dollars loses thirty-four hundred in year one. Index fund investor: gains twelve hundred. That's a four-thousand-six-hundred-dollar gap — compounded for decades.",
-    "visual": "Side-by-side bar chart — red day trader bar ending at $6,600 vs green index fund bar at $11,200, dashed baseline at $10,000 starting point; '$4,600 gap' badge pops in, dark background",
-    "accent_color": "red"
+    "narration": "Here's what most people miss — check every state you've ever lived in, not just where you are now. California holds twelve billion in unclaimed cash. New York holds nine billion. Most people find something in multiple states.",
+    "visual": "Grid of colorful state cards animate in on dark background: CA $12B, NY $9B, TX $8B, FL $6B, IL $3B, OH $2.8B, PA $2.4B, WA $1.9B, GA $1.6B.",
+    "accent_color": "green"
   },
   {
     "scene": 6,
-    "narration": "The boring truth? A simple index fund you barely touch beats ninety-two percent of professionals over twenty years. Stop playing the game and start winning the war. Follow for more.",
-    "visual": "Pink piggy bank SVG with green checkmark overlay, green 'SET IT & FORGET IT' badge pops in, follow CTA text fades in at bottom, light background",
-    "accent_color": "red"
+    "narration": "Go to missingmoney.com — the official multi-state database — or search your state name plus 'unclaimed property.' Save this video right now. A thirty-second search might be worth almost a thousand dollars. Follow for more.",
+    "visual": "Pink piggy bank SVG with gold coin dropping into it; green badge with 'missingmoney.com'; follow CTA fades in at bottom. Light background.",
+    "accent_color": "green"
   }
 ]
