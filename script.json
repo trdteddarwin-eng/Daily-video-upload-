@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "States are sitting on fifty-eight billion dollars of forgotten cash right now. You might be one of ten Americans who's owed an average of eight hundred and ninety-two dollars. Here's how to find out.",
-    "visual": "Person silhouette with surprised expression; gold coins float upward away from them; '$58B' stat reveals at bottom. Dark background.",
+    "narration": "Your boss just gave you a 3% raise and expected gratitude. Here's the thing — that barely keeps up with inflation. The stranger they just hired? Started at 18% more than you for the same job.",
+    "visual": "Person at a desk with a monitor showing '+3%', red badge labeled 'LOYAL EMPLOYEE', green badge 'NEW HIRE +18%' sliding in from right",
     "accent_color": "green"
   },
   {
     "scene": 2,
-    "narration": "It comes from things you've already forgotten — old bank accounts, uncashed paychecks, insurance refunds, security deposits. Your landlord moved on. Your old employer moved on. Your money just sat there.",
-    "visual": "Four animated icon cards spring in one by one on light background: bank building, paycheck document, insurance shield, house deposit icon. Each labeled.",
+    "narration": "Companies literally run two salary budgets — one small one to keep you, and a bigger one to recruit outsiders. The loyalty budget is capped. The external budget isn't.",
+    "visual": "Two growing bar charts side by side — short red bar labeled 'KEEP YOU 3%' vs tall green bar labeled 'HIRE OUTSIDER 18-20%'",
     "accent_color": "green"
   },
   {
     "scene": 3,
-    "narration": "There are forty million separate unclaimed accounts in the US right now. One in ten Americans is owed money, and the average amount is almost nine hundred dollars. And it never expires.",
-    "visual": "Three dark stat cards animate in: counter counting up to '40M+ accounts waiting', '1 in 10 Americans', dollar counter animating to '$892 average'. Dark background.",
+    "narration": "People who switch jobs every two to three years earn 10 to 20 percent more each move. Run that math over a decade and the total earnings gap hits a hundred and forty-seven thousand dollars.",
+    "visual": "Two horizontal salary bars racing — red bar for loyal employee growing slowly to $80K, green bar for job-hopper surging to $227K, gap counter badge showing $147,000",
     "accent_color": "green"
   },
   {
     "scene": 4,
-    "narration": "Claiming it costs nothing and takes under five minutes. Step one: search your full name. Step two: see what's listed. Step three: file a free claim. That's the entire process — completely legit.",
-    "visual": "Three step rows spring in one by one on light background: magnifying glass 'Search your name', dollar circle 'See what you're owed', checkmark 'Claim it free'.",
+    "narration": "Your brain treats familiarity as safety — that's called status quo bias. Companies count on that instinct to keep your salary frozen while their profits grow without you.",
+    "visual": "Brain SVG with a chain and anchor labeled 'STATUS QUO BIAS' pulling it down, green dollar signs floating upward above the brain out of reach",
     "accent_color": "green"
   },
   {
     "scene": 5,
-    "narration": "Here's what most people miss — check every state you've ever lived in, not just where you are now. California holds twelve billion in unclaimed cash. New York holds nine billion. Most people find something in multiple states.",
-    "visual": "Grid of colorful state cards animate in on dark background: CA $12B, NY $9B, TX $8B, FL $6B, IL $3B, OH $2.8B, PA $2.4B, WA $1.9B, GA $1.6B.",
+    "narration": "The person being hired right now to do your job is starting higher than your current salary. Next year they'll get the same 3% you always get — and the gap never closes.",
+    "visual": "Two person figures side by side — left person sitting at desk labeled 'YOU $65K', right person walking in labeled 'NEW HIRE $79K', green gap arrow between them",
     "accent_color": "green"
   },
   {
     "scene": 6,
-    "narration": "Go to missingmoney.com — the official multi-state database — or search your state name plus 'unclaimed property.' Save this video right now. A thirty-second search might be worth almost a thousand dollars. Follow for more.",
-    "visual": "Pink piggy bank SVG with gold coin dropping into it; green badge with 'missingmoney.com'; follow CTA fades in at bottom. Light background.",
+    "narration": "That next job offer isn't a betrayal — it's math. Your career is a business. Businesses negotiate. Follow for more money truths nobody in the office will tell you.",
+    "visual": "Person silhouette walking through an open door into bright green light, 'YOUR CAREER IS A BUSINESS' text overlay, 'NEGOTIATE ACCORDINGLY' badge",
     "accent_color": "green"
   }
 ]
