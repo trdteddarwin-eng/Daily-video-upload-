@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Your boss just gave you a 3% raise and expected gratitude. Here's the thing — that barely keeps up with inflation. The stranger they just hired? Started at 18% more than you for the same job.",
-    "visual": "Person at a desk with a monitor showing '+3%', red badge labeled 'LOYAL EMPLOYEE', green badge 'NEW HIRE +18%' sliding in from right",
-    "accent_color": "green"
+    "narration": "Nobody warned you about this retirement trap. Max your 401k for decades, and the IRS forces mandatory withdrawals that could cost you four hundred thousand in surprise taxes.",
+    "visual": "Dark background. Bold title 'THE RMD TAX BOMB' in white and red. Three bar chart bars grow representing 401k savings across 40s, 50s, 60s. Red warning stamp springs in reading '$400K HIDDEN TAX'.",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Companies literally run two salary budgets — one small one to keep you, and a bigger one to recruit outsiders. The loyalty budget is capped. The external budget isn't.",
-    "visual": "Two growing bar charts side by side — short red bar labeled 'KEEP YOU 3%' vs tall green bar labeled 'HIRE OUTSIDER 18-20%'",
-    "accent_color": "green"
+    "narration": "At age seventy-three, the government forces you to withdraw from your 401k — needed or not. It's called an RMD, and it doesn't care about your tax bracket.",
+    "visual": "Light background. Large red circle with '73' springs in. Person silhouette slides in from left toward the milestone. Red 'MANDATORY WITHDRAWAL' banner drops in below.",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "People who switch jobs every two to three years earn 10 to 20 percent more each move. Run that math over a decade and the total earnings gap hits a hundred and forty-seven thousand dollars.",
-    "visual": "Two horizontal salary bars racing — red bar for loyal employee growing slowly to $80K, green bar for job-hopper surging to $227K, gap counter badge showing $147,000",
-    "accent_color": "green"
+    "narration": "Saved two million dollars? Your first forced withdrawal is over seventy-seven thousand. Add Social Security, and you're suddenly in the thirty-two percent tax bracket.",
+    "visual": "Dark background. '$2,000,000' counts up in green with vault SVG icon. Red arrow points down to '$77,000+ FORCED WITHDRAWAL' box. Tax bracket meter animates from 22% to 32% in red.",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Your brain treats familiarity as safety — that's called status quo bias. Companies count on that instinct to keep your salary frozen while their profits grow without you.",
-    "visual": "Brain SVG with a chain and anchor labeled 'STATUS QUO BIAS' pulling it down, green dollar signs floating upward above the brain out of reach",
-    "accent_color": "green"
+    "narration": "That higher income triggers Medicare surcharges called IRMAA — quietly adding up to seven thousand dollars a year to your healthcare bills. Your frugality just got expensive.",
+    "visual": "Light background. Red medical cross springs in. 'IRMAA MEDICARE SURCHARGE' text fades in. Bill graphic appears with dollar amount counting up to $7,128 per year.",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "The person being hired right now to do your job is starting higher than your current salary. Next year they'll get the same 3% you always get — and the gap never closes.",
-    "visual": "Two person figures side by side — left person sitting at desk labeled 'YOU $65K', right person walking in labeled 'NEW HIRE $79K', green gap arrow between them",
-    "accent_color": "green"
+    "narration": "And eighty-five percent of your Social Security becomes taxable on top of that. Three simultaneous hits from one account you were told to max every single year. Wild, right?",
+    "visual": "Dark background. Social Security card outline appears. Red fill sweeps across 85% of the card. Three red hit labels spring in — RMD, IRMAA, SS TAX. Footer stamp fades in.",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "That next job offer isn't a betrayal — it's math. Your career is a business. Businesses negotiate. Follow for more money truths nobody in the office will tell you.",
-    "visual": "Person silhouette walking through an open door into bright green light, 'YOUR CAREER IS A BUSINESS' text overlay, 'NEGOTIATE ACCORDINGLY' badge",
-    "accent_color": "green"
+    "narration": "The fix is a Roth conversion between ages sixty and seventy-two, before RMDs kick in. That window could save you four hundred thousand dollars. Search Roth conversion ladder.",
+    "visual": "Light background. Traditional 401k box in red springs in. Arrow animates across to Roth IRA box in green. '$400K SAVED' counter grows. CTA text 'SEARCH: ROTH CONVERSION LADDER' fades in.",
+    "accent_color": "red"
   }
 ]

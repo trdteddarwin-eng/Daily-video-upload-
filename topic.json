@@ -1,13 +1,7 @@
 {
-  "title": "Job Loyalty Is Costing You $147,000",
-  "hook": "Your loyalty to your employer is costing you six figures — and HR departments are literally banking on it.",
-  "angle": "Most workers assume staying loyal earns rewards — but companies budget more for strangers than loyal employees, and the math proves it's a losing strategy",
-  "audience": "Full-time employees who haven't changed jobs in 2+ years and assume loyalty pays off",
-  "key_numbers": [
-    "Average raise for staying: 3% (often below inflation)",
-    "Average salary jump when switching jobs: 10-20%",
-    "Over 10 years, job-hoppers earn ~$147,000 more in cumulative income",
-    "Companies pay external hires 18-20% more than internal candidates for the same role",
-    "72% of employees stay 5+ years, losing compounding salary gains"
-  ]
+  "title": "Saving Too Much in Your 401k Creates a $400K Tax Bomb",
+  "hook": "You maxed your 401k for decades thinking you were winning — but the IRS built a mandatory withdrawal rule that could cost you $400,000 in taxes you never planned for.",
+  "angle": "Contrarian: the very thing you were told to do (max your 401k) creates a hidden tax trap in retirement through Required Minimum Distributions, Medicare surcharges, and SS taxation",
+  "audience": "Diligent savers in their 40s-60s who've been maxing traditional 401k contributions and don't know about RMD tax traps",
+  "key_numbers": ["$77,000+ forced first-year RMD on $2M balance", "Up to 85% of Social Security becomes taxable", "IRMAA surcharges up to $7,128/year", "Roth conversion window ages 60-72", "$400,000 in avoidable retirement taxes"]
 }
