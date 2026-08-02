@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You've got fifty thousand dollars in a savings account. Feels responsible, right? But here's what that 'safety' is secretly costing you.",
-    "visual": "Animated piggy bank SVG springs into frame center. Dollar counter counts up from $0 to $50,000. Label 'YOUR SAVINGS ACCOUNT' above. 'feels responsible, right?' fades in below counter. Dark background.",
-    "accent_color": "green"
+    "narration": "You got a raise and celebrated. But in 2022, inflation hit seven-point-nine percent. If your raise was five percent or less, you actually lost purchasing power.",
+    "visual": "Worker silhouette with fists raised in celebration, paycheck card showing +4% raise in green, red inflation meter slides in from below revealing 7.9%",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Experts agree — keep three to six months of expenses liquid. That's your emergency fund. Everything above that number is dead weight draining your future.",
-    "visual": "Two panels slide in from opposite sides. Left green panel: stacked coins labeled '3-6 MONTHS / EMERGENCY FUND' with checkmark. Right red panel: money bag draining with X mark labeled 'ABOVE THAT / DEAD WEIGHT'. Light background.",
-    "accent_color": "green"
+    "narration": "In 2022, average raises were five percent. Inflation hit seven-point-nine. That gap drained twenty-seven hundred dollars from a seventy-grand salary — and most people never knew.",
+    "visual": "Two bars growing side by side — green WAGES bar at 5%, taller red INFLATION bar at 7.9%, '$2,700 LOST' badge springs onto screen",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Fifty grand in savings at four percent — thirty years, a hundred sixty-two thousand dollars. Same money in an index fund? Eight hundred seventy-two thousand. Wild, right?",
-    "visual": "Two vertical bar charts grow upward from baseline. Left dim bar labeled 'SAVINGS 4%' reaches $162K. Right bright green bar labeled 'INDEX FUND 10%' towers to $872K — 5x taller. Dark background.",
-    "accent_color": "green"
+    "narration": "Every year this keeps happening, the real cost compounds. Your paycheck looks bigger, but your grocery cart, your rent, your gas — they all know the truth.",
+    "visual": "Paycheck SVG showing $70,000 salary with a red drain overlay washing over it, counter ticking from $0 to -$2,730 labeled 'purchasing power drained'",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "That's a seven hundred ten thousand dollar difference. Not from gambling on risky stocks. Just from moving money you were never going to touch anyway.",
-    "visual": "Giant '$710,000' springs into center of screen in bold green text. Below it: 'Same $50,000 start. 30 years. No extra risk.' Arrow visual showing gap from low to high. Light background.",
-    "accent_color": "green"
+    "narration": "HR departments set raise budgets using the same CPI data your landlord does. They know the gap. They're counting on you not doing the math.",
+    "visual": "HR person at desk pointing at monitor showing spreadsheet with 'CPI forecast 7.9%, Raise budget 5.0%, Real cost to worker -2.9%' and 'Won't raise eyebrows'",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Sixty-six percent of Americans hold too much cash. Your brain fears a market crash more than it wants wealth. Meanwhile inflation's slowly eating your savings alive.",
-    "visual": "Person silhouette clutching money bag tightly with downward market chart arrow in background. Large '66%' stat springs in red. Below: 'Fear of crashes beats the math — every time.' Dark background.",
-    "accent_color": "green"
+    "narration": "Run it over ten years and the gap between your nominal wage and real purchasing power reaches eighteen thousand dollars. That's a car. That's a house down payment.",
+    "visual": "Animated dual-line chart — green nominal salary line rises steeply, red dashed real buying power line barely moves, $18,000 gap badge springs in at end",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Calculate your three-month expense number, keep only that liquid. Invest everything above it. Your future self is literally begging you to make this move today.",
-    "visual": "Three checklist steps slide in one by one: '1 - Calculate 3 months expenses', '2 - Keep only that liquid', '3 - Invest the rest'. Person silhouette with upward arrow above steps. 'FOLLOW FOR MORE' CTA at bottom. Light background.",
-    "accent_color": "green"
+    "narration": "Next raise negotiation, don't just ask for a raise — ask for inflation plus your productivity gains. That's how you stop losing ground. Follow for more money truth.",
+    "visual": "Two people at negotiation table, employee has speech bubble 'CPI + 2% minimum', two action cards slide in with steps 1 and 2, FOLLOW FOR MORE CTA",
+    "accent_color": "red"
   }
 ]
