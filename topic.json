@@ -1,7 +1,13 @@
 {
-  "title": "Your 4% Raise Is Actually a Pay Cut",
-  "hook": "You celebrated your raise — but if inflation ran above that, your boss just handed you a pay cut wrapped in good news.",
-  "angle": "The inflation illusion makes workers feel rewarded while real purchasing power silently shrinks — and HR departments plan it that way",
-  "audience": "Salaried workers who got a raise but still feel like money is tight",
-  "key_numbers": ["7.9% inflation in 2022 vs 5% average raise", "$2,700 lost in purchasing power on a $70K salary", "$18,000 gap over 10 years of raises that barely beat inflation"]
+  "title": "Your Brain Is Wired to Stay Broke — $122K Proof",
+  "hook": "Scientists proved your brain values $50 today the same as $100 next year — and that hardwired flaw has a six-figure price tag.",
+  "angle": "Hyperbolic discounting — the specific psychological mechanism behind all impulsive spending — explained with a concrete lifetime cost calculation that makes the abstract feel personal.",
+  "audience": "25-45 year olds who know they should save more but can't seem to prioritize the future over the present.",
+  "key_numbers": [
+    "7x: how much more the brain values immediate vs. future rewards",
+    "391%: APR of a payday loan — the purest expression of the 'now premium'",
+    "29%: Americans who have a 3-month emergency fund",
+    "$122,000: 30-year cost of spending $100/month instead of investing it at 7%",
+    "64%: people who'd take $100 now vs $154 in a year in behavioral economics studies"
+  ]
 }

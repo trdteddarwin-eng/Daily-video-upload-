@@ -1,16 +1,16 @@
 {
   "tiktok": {
-    "caption": "You celebrated your raise. But if inflation was running hotter, you just took a pay cut and didn't even know it 👀",
-    "hashtags": ["#finance", "#money", "#salary", "#personalfinance", "#moneypsychology", "#raise", "#inflation", "#paycheck", "#fyp", "#wealthmindset"]
+    "caption": "Your brain values $50 today the same as $100 next year. Scientists measured it. That one glitch has a $122,000 price tag.",
+    "hashtags": ["#finance", "#money", "#moneypsychology", "#personalfinance", "#brainscience", "#investing", "#savingmoney", "#fyp", "#wealthmindset", "#behavioraleconomics"]
   },
   "youtube_short": {
-    "title": "Your Raise Is Secretly a Pay Cut",
+    "title": "Your Brain Is Hardwired to Stay Broke",
     "title_alternatives": [
-      "The Raise Lie Your Boss Never Tells You",
-      "How Inflation Quietly Eats Your Raise Alive"
+      "The $122K Reason You Can't Save Money",
+      "Why $50 Now Feels Better Than $100 Later"
     ],
-    "description": "You got a raise and celebrated — but here's the math nobody runs for you. In 2022, average raises were 5%. Inflation hit 7.9%. That gap quietly drained $2,700 from a $70K salary in a single year. Run it over 10 years and the difference between your nominal wage and your real buying power reaches $18,000. And here's the wild part: HR departments set raise budgets using the exact same inflation data. They know the gap. They're counting on you not doing the math. Next time you negotiate, don't just ask for a raise — ask for CPI plus your actual productivity gains. Follow for daily money psychology. #finance #salary #inflation #personalfinance #money",
-    "tags": ["finance", "money", "salary", "raise", "inflation", "personal finance", "money psychology", "paycheck", "negotiate", "CPI", "purchasing power", "wealth"]
+    "description": "There's a real scientific name for why you pick the smaller reward right now: hyperbolic discounting. Studies show your brain can devalue future money by up to 7x compared to money in your hand today. That's why payday loans charging 391% APR still have lines out the door — people literally pay hundreds extra just to have cash today instead of Friday. And every time you skip a savings deposit to spend on something right now, the same wiring kicks in. Only 29% of Americans have a 3-month emergency fund. Spending an extra $100/month instead of investing it costs you $122,000 at retirement. The fix isn't willpower — it's automation. Set up auto-transfer before the money hits your account and your brain never gets a vote. Follow for daily money psychology drops. #finance #money #personalfinance #investing #moneypsychology",
+    "tags": ["finance", "money", "personal finance", "hyperbolic discounting", "money psychology", "saving money", "investing", "behavioral economics", "brain science", "retirement", "wealth building", "money habits"]
   },
-  "hook_line": "Your raise is secretly a pay cut"
+  "hook_line": "Your brain values $50 now over $100 next year"
 }

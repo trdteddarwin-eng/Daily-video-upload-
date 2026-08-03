@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You got a raise and celebrated. But in 2022, inflation hit seven-point-nine percent. If your raise was five percent or less, you actually lost purchasing power.",
-    "visual": "Worker silhouette with fists raised in celebration, paycheck card showing +4% raise in green, red inflation meter slides in from below revealing 7.9%",
+    "narration": "Here's a quick test — fifty bucks right now, or a hundred next month? Most people take the fifty. That right there is your brain voting to stay broke.",
+    "visual": "Two glowing option cards side by side — '$50 TODAY' in bright green with glow effect vs '$100 NEXT MONTH' dim and faded — red arrow points to the $50 card with label 'MOST PICK THIS'",
     "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "In 2022, average raises were five percent. Inflation hit seven-point-nine. That gap drained twenty-seven hundred dollars from a seventy-grand salary — and most people never knew.",
-    "visual": "Two bars growing side by side — green WAGES bar at 5%, taller red INFLATION bar at 7.9%, '$2,700 LOST' badge springs onto screen",
+    "narration": "It's called hyperbolic discounting — your brain values today's dollar up to seven times more than next year's. It literally can't feel your future self's needs right now.",
+    "visual": "Brain SVG with convolution folds — giant glowing 'NOW' in red on left, tiny faded 'FUTURE' on right — '7X DEVALUED IN YOUR BRAIN' badge springs in",
     "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Every year this keeps happening, the real cost compounds. Your paycheck looks bigger, but your grocery cart, your rent, your gas — they all know the truth.",
-    "visual": "Paycheck SVG showing $70,000 salary with a red drain overlay washing over it, counter ticking from $0 to -$2,730 labeled 'purchasing power drained'",
+    "narration": "That's why payday loans charging 391% annual interest still pack their lobbies. People pay fifteen bucks to borrow a hundred — just to get cash today, not Friday.",
+    "visual": "Payday loan storefront building SVG with sign, windows and door — money flow diagram: $100 borrowed arrow leads to $115 pay-back box — '391% APR' badge in red",
     "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "HR departments set raise budgets using the same CPI data your landlord does. They know the gap. They're counting on you not doing the math.",
-    "visual": "HR person at desk pointing at monitor showing spreadsheet with 'CPI forecast 7.9%, Raise budget 5.0%, Real cost to worker -2.9%' and 'Won't raise eyebrows'",
+    "narration": "You do this every time you skip saving to spend right now. Only 29% of Americans have a three-month emergency fund — your future self keeps losing the vote.",
+    "visual": "Empty piggy bank SVG beside a calendar with months cycling — progress bar filling to just 29% labeled 'Americans with 3-month emergency fund'",
     "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Run it over ten years and the gap between your nominal wage and real purchasing power reaches eighteen thousand dollars. That's a car. That's a house down payment.",
-    "visual": "Animated dual-line chart — green nominal salary line rises steeply, red dashed real buying power line barely moves, $18,000 gap badge springs in at end",
+    "narration": "Here's the price tag. Spending an extra $100 a month instead of investing it costs you $122,000 by retirement at seven percent returns. That's what choosing 'now' really costs.",
+    "visual": "Dual bar chart — left bar 'SPENT' reaches $36K in gray — right bar 'INVESTED AT 7%' grows animated to $122K in green — '$122,000 — THE COST OF NOW' badge in red",
     "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Next raise negotiation, don't just ask for a raise — ask for inflation plus your productivity gains. That's how you stop losing ground. Follow for more money truth.",
-    "visual": "Two people at negotiation table, employee has speech bubble 'CPI + 2% minimum', two action cards slide in with steps 1 and 2, FOLLOW FOR MORE CTA",
+    "narration": "Your brain always votes for today, so stop trying to out-think it. Automate savings before the money hits your account and make the future the path of least resistance.",
+    "visual": "Phone SVG showing auto-transfer app UI — animated money dot flowing from bank to savings automatically — green checkmark — 'AUTOMATE TODAY' CTA button",
     "accent_color": "red"
   }
 ]
