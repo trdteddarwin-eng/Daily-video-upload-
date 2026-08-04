@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Here's a quick test — fifty bucks right now, or a hundred next month? Most people take the fifty. That right there is your brain voting to stay broke.",
-    "visual": "Two glowing option cards side by side — '$50 TODAY' in bright green with glow effect vs '$100 NEXT MONTH' dim and faded — red arrow points to the $50 card with label 'MOST PICK THIS'",
+    "narration": "Your bank says refi and save two hundred bucks a month. Sounds like a win, right? But here's what they conveniently left out of that pitch.",
+    "visual": "A house SVG springs onto screen. A green 'SAVE $200/MO' badge bounces in below it. A red warning triangle springs up. Text: 'THE REFINANCE TRAP'.",
     "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "It's called hyperbolic discounting — your brain values today's dollar up to seven times more than next year's. It literally can't feel your future self's needs right now.",
-    "visual": "Brain SVG with convolution folds — giant glowing 'NOW' in red on left, tiny faded 'FUTURE' on right — '7X DEVALUED IN YOUR BRAIN' badge springs in",
+    "narration": "Every refinance hits you with closing costs — usually five to six thousand dollars in fees. That money's gone on day one, before you save a single cent.",
+    "visual": "A white receipt card slides in on dark background. Line items animate in one by one: Loan Origination $2,100, Appraisal $600, Title Insurance $1,800, Other Fees $1,500. Total: $6,000 in red.",
     "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "That's why payday loans charging 391% annual interest still pack their lobbies. People pay fifteen bucks to borrow a hundred — just to get cash today, not Friday.",
-    "visual": "Payday loan storefront building SVG with sign, windows and door — money flow diagram: $100 borrowed arrow leads to $115 pay-back box — '391% APR' badge in red",
+    "narration": "Here's the math nobody runs for you. Closing costs divided by monthly savings equals your break-even date. Six thousand divided by two hundred is thirty months — two and a half years.",
+    "visual": "An equation box shows '$6,000 ÷ $200' on warm background. A large '30 MONTHS' springs in below it. A red progress bar fills left to right representing the timeline.",
     "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "You do this every time you skip saving to spend right now. Only 29% of Americans have a three-month emergency fund — your future self keeps losing the vote.",
-    "visual": "Empty piggy bank SVG beside a calendar with months cycling — progress bar filling to just 29% labeled 'Americans with 3-month emergency fund'",
+    "narration": "Here's the wild part. Fifty-two percent of homeowners move within five years of refinancing. That's more than half who never even reach their break-even date.",
+    "visual": "A house with a red SOLD sign and a moving truck SVG appear side by side on dark background. A large '52%' stat springs into view below them.",
     "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Here's the price tag. Spending an extra $100 a month instead of investing it costs you $122,000 by retirement at seven percent returns. That's what choosing 'now' really costs.",
-    "visual": "Dual bar chart — left bar 'SPENT' reaches $36K in gray — right bar 'INVESTED AT 7%' grows animated to $122K in green — '$122,000 — THE COST OF NOW' badge in red",
+    "narration": "Sell before month thirty and your six thousand in closing costs just vanished — with nothing to show. Refinanced twice in five years? You could be down eighteen thousand dollars.",
+    "visual": "A piggy bank SVG tilts and tips on light background. A '-$18,000' counter counts down in red. A small bar chart drops below zero. Badge: '$18K GONE — NOTHING BACK'.",
     "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Your brain always votes for today, so stop trying to out-think it. Automate savings before the money hits your account and make the future the path of least resistance.",
-    "visual": "Phone SVG showing auto-transfer app UI — animated money dot flowing from bank to savings automatically — green checkmark — 'AUTOMATE TODAY' CTA button",
+    "narration": "Run the break-even math first. If there's any chance you'll move before you hit that number, don't touch your rate. The lower payment only wins if you're there to collect it.",
+    "visual": "Three numbered checklist items spring in on dark background: 1. Calculate break-even date, 2. Compare to move timeline, 3. Only refi if you'll stay past it. A red formula box. CTA text.",
     "accent_color": "red"
   }
 ]
