@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Your bank says refi and save two hundred bucks a month. Sounds like a win, right? But here's what they conveniently left out of that pitch.",
-    "visual": "A house SVG springs onto screen. A green 'SAVE $200/MO' badge bounces in below it. A red warning triangle springs up. Text: 'THE REFINANCE TRAP'.",
-    "accent_color": "red"
+    "narration": "Your morning commute feels harmless — but most Americans have no idea it's quietly draining over twelve thousand dollars a year. There's a financial monster hiding in plain sight.",
+    "visual": "Amber car SVG slides in from the right against dark background. Dollar counter animates from $0 to $12,800 as the title 'YOUR COMMUTE'S HIDDEN PRICE TAG' springs onto screen.",
+    "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "Every refinance hits you with closing costs — usually five to six thousand dollars in fees. That money's gone on day one, before you save a single cent.",
-    "visual": "A white receipt card slides in on dark background. Line items animate in one by one: Loan Origination $2,100, Appraisal $600, Title Insurance $1,800, Other Fees $1,500. Total: $6,000 in red.",
-    "accent_color": "red"
+    "narration": "Start with your time. The average commuter burns two hundred twenty-five hours a year in traffic — that's twenty-eight full work days you'll never get paid for.",
+    "visual": "Light background with '225 HOURS' headline springing in. Calendar grid of 28 amber cells animates X-marks appearing one by one until all 28 are crossed out.",
+    "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Here's the math nobody runs for you. Closing costs divided by monthly savings equals your break-even date. Six thousand divided by two hundred is thirty months — two and a half years.",
-    "visual": "An equation box shows '$6,000 ÷ $200' on warm background. A large '30 MONTHS' springs in below it. A red progress bar fills left to right representing the timeline.",
-    "accent_color": "red"
+    "narration": "Then there's your car. At sixty-seven cents per mile, a typical thirty-two mile daily commute costs over fifty-three hundred dollars a year — and that's before the coffee.",
+    "visual": "Gas pump SVG springs up on dark background. Dollar counter climbs from $0 to $5,360 with a filling amber progress bar. Math shown: '32 miles/day × $0.67/mile × 250 days'.",
+    "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "Here's the wild part. Fifty-two percent of homeowners move within five years of refinancing. That's more than half who never even reach their break-even date.",
-    "visual": "A house with a red SOLD sign and a moving truck SVG appear side by side on dark background. A large '52%' stat springs into view below them.",
-    "accent_color": "red"
+    "narration": "Add the extras — commute coffees, office lunches, work clothes. Those silent add-ons quietly stack another twenty-two hundred dollars onto your annual tab.",
+    "visual": "Light background. Coffee cup, lunch bag, and briefcase SVGs spring in one by one with yearly cost labels ($730, $1,100, $370). Total '$2,200/YEAR' fades in below.",
+    "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "Sell before month thirty and your six thousand in closing costs just vanished — with nothing to show. Refinanced twice in five years? You could be down eighteen thousand dollars.",
-    "visual": "A piggy bank SVG tilts and tips on light background. A '-$18,000' counter counts down in red. A small bar chart drops below zero. Badge: '$18K GONE — NOTHING BACK'.",
-    "accent_color": "red"
+    "narration": "Add it all up: twelve thousand eight hundred dollars a year. Invest that for thirty years at ten percent returns — your commute just cost you two point two million dollars.",
+    "visual": "Dark background bar chart with two bars growing upward. Small gray bar labels $12,800. Towering amber bar labels $2.2M. Title: 'IF YOU INVESTED IT INSTEAD — 30 YEARS AT 10%'.",
+    "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "Run the break-even math first. If there's any chance you'll move before you hit that number, don't touch your rate. The lower payment only wins if you're there to collect it.",
-    "visual": "Three numbered checklist items spring in on dark background: 1. Calculate break-even date, 2. Compare to move timeline, 3. Only refi if you'll stay past it. A red formula box. CTA text.",
-    "accent_color": "red"
+    "narration": "Now you know. Your commute isn't just lost time — it's two million dollars in lifetime wealth. Make the move. Follow for more money math.",
+    "visual": "Light background showing smiling person at home laptop desk with house icon. Text: 'YOUR COMMUTE ISN'T JUST LOST TIME'. Amber pill CTA: 'FOLLOW FOR MORE MONEY MATH'.",
+    "accent_color": "amber"
   }
 ]

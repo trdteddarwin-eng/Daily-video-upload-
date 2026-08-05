@@ -1,13 +1,13 @@
 {
-  "title": "Your Mortgage Refi Might Lose You $18,000",
-  "hook": "You refinanced to cut your payment — but if you move before the break-even point, you've just handed the bank $18,000 for nothing.",
-  "angle": "The break-even trap in mortgage refinancing — most homeowners never calculate it, and 52% move before they ever recoup closing costs.",
-  "audience": "Homeowners aged 30-55 who have refinanced or are considering it, and anyone who bought the 'lower your payment' pitch without doing the full math.",
+  "title": "Your Morning Commute Is Stealing $12,800 a Year",
+  "hook": "Your morning commute feels harmless — but most Americans have no idea it's quietly draining over twelve thousand dollars a year.",
+  "angle": "Most people only think about time wasted — not the $5,360 in car costs, $730 in commute coffees, $1,100 in office lunches, and $370 in work clothes that silently stack up to a $2.2 million retirement hole over 30 years.",
+  "audience": "Commuters aged 25-50 who have never done the full math on what their daily drive actually costs in dollars, not just time",
   "key_numbers": [
-    "$6,000: average closing costs on a standard refinance",
-    "30 months: break-even timeline when saving $200/mo",
-    "52%: homeowners who move within 5 years of refinancing",
-    "$18,000: total loss when you refi twice and sell before break-even",
-    "0.5%: minimum rate drop most experts say justifies refi costs"
+    "$12,800: total annual commute cost (car costs + hidden extras)",
+    "225: hours per year wasted in traffic, equal to 28 full work days",
+    "$5,360: annual car cost alone at IRS rate of $0.67/mile for 32 miles/day",
+    "$2.2M: what that $12,800/year becomes invested over 30 years at 10%",
+    "73%: percentage of US workers who commute by car alone daily"
   ]
 }
