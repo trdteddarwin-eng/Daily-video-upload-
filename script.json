@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Your morning commute feels harmless — but most Americans have no idea it's quietly draining over twelve thousand dollars a year. There's a financial monster hiding in plain sight.",
-    "visual": "Amber car SVG slides in from the right against dark background. Dollar counter animates from $0 to $12,800 as the title 'YOUR COMMUTE'S HIDDEN PRICE TAG' springs onto screen.",
-    "accent_color": "amber"
+    "narration": "You just found the top-rated fund. Five stars, number one last year, up 143%. How could this possibly go wrong?",
+    "visual": "Dark background. Five glowing gold stars on a dark fund card labeled 'TOP GROWTH FUND 2024' with '5-YEAR RETURN: +143%'. Card springs up from bottom. Red upward arrow below with 'HOW COULD YOU GO WRONG?'",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Start with your time. The average commuter burns two hundred twenty-five hours a year in traffic — that's twenty-eight full work days you'll never get paid for.",
-    "visual": "Light background with '225 HOURS' headline springing in. Calendar grid of 28 amber cells animates X-marks appearing one by one until all 28 are crossed out.",
-    "accent_color": "amber"
+    "narration": "Here's the thing — 86% of top funds drop out of the top tier within three years. Those five stars are already dead.",
+    "visual": "Light background. Five stars displayed — first stays gold, stars two through five fade to grey one by one. Giant red '86%' counter counts up from zero. Text: 'OF TOP-RATED FUNDS DROP OUT WITHIN 3 YEARS'.",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Then there's your car. At sixty-seven cents per mile, a typical thirty-two mile daily commute costs over fifty-three hundred dollars a year — and that's before the coffee.",
-    "visual": "Gas pump SVG springs up on dark background. Dollar counter climbs from $0 to $5,360 with a filling amber progress bar. Math shown: '32 miles/day × $0.67/mile × 250 days'.",
-    "accent_color": "amber"
+    "narration": "When you buy last year's winner, the smart money is already cashing out. You're literally buying their exit.",
+    "visual": "Dark background. Left panel: 'SMART MONEY' — three stick figures with left-pointing exit arrow. Right panel: 'YOU' — one stick figure with right-pointing entry arrow. Bold red text: 'YOU'RE BUYING THEIR EXIT'.",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Add the extras — commute coffees, office lunches, work clothes. Those silent add-ons quietly stack another twenty-two hundred dollars onto your annual tab.",
-    "visual": "Light background. Coffee cup, lunch bag, and briefcase SVGs spring in one by one with yearly cost labels ($730, $1,100, $370). Total '$2,200/YEAR' fades in below.",
-    "accent_color": "amber"
+    "narration": "That 1.7% drag doesn't sound like much. On a hundred thousand dollars over thirty years, it quietly steals $285,000.",
+    "visual": "Light background. Two bar charts grow side by side: grey 'CHASER' bar ($476K) and taller red 'INDEX' bar ($761K). Gap callout shows '$285K' difference with double-headed red arrow.",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Add it all up: twelve thousand eight hundred dollars a year. Invest that for thirty years at ten percent returns — your commute just cost you two point two million dollars.",
-    "visual": "Dark background bar chart with two bars growing upward. Small gray bar labels $12,800. Towering amber bar labels $2.2M. Title: 'IF YOU INVESTED IT INSTEAD — 30 YEARS AT 10%'.",
-    "accent_color": "amber"
+    "narration": "Your brain isn't broken — it's doing what brains do. Past performance looks like a pattern. It's just noise.",
+    "visual": "Dark background. Brain outline in red with gold stars floating around it. Large red 'PAST ≠ FUTURE' text appears. Subtitle: 'YOUR BRAIN SEES PATTERNS. MARKETS DON'T CARE.'",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Now you know. Your commute isn't just lost time — it's two million dollars in lifetime wealth. Make the move. Follow for more money math.",
-    "visual": "Light background showing smiling person at home laptop desk with house icon. Text: 'YOUR COMMUTE ISN'T JUST LOST TIME'. Amber pill CTA: 'FOLLOW FOR MORE MONEY MATH'.",
-    "accent_color": "amber"
+    "narration": "The boring fund in the middle is your pick. No stars, no headlines. Don't buy last year's trophy — buy a strategy.",
+    "visual": "Light background. Smooth upward-trending red line chart to $761K. Piggy bank SVG beside 'BORING = RICH' text. Red CTA button: 'FOLLOW FOR MORE MONEY TRUTHS'.",
+    "accent_color": "red"
   }
 ]
