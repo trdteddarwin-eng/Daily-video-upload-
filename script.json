@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You just found the top-rated fund. Five stars, number one last year, up 143%. How could this possibly go wrong?",
-    "visual": "Dark background. Five glowing gold stars on a dark fund card labeled 'TOP GROWTH FUND 2024' with '5-YEAR RETURN: +143%'. Card springs up from bottom. Red upward arrow below with 'HOW COULD YOU GO WRONG?'",
+    "narration": "Everyone says get on a budget. But researchers just found traditional budgets make most people spend more, not less. Here's what they're not telling you.",
+    "visual": "A budget paper with neat category rows (FOOD $400, GAS $200, FUN $150, CLOTHES $100) slides up while a shocked person silhouette with wide eyes appears beside it on a dark background",
     "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Here's the thing — 86% of top funds drop out of the top tier within three years. Those five stars are already dead.",
-    "visual": "Light background. Five stars displayed — first stays gold, stars two through five fade to grey one by one. Giant red '86%' counter counts up from zero. Text: 'OF TOP-RATED FUNDS DROP OUT WITHIN 3 YEARS'.",
+    "narration": "Write '$400 for food' and your brain hears permission to spend $400. Studies show budgeted categories get spent 20% over limit — every single time.",
+    "visual": "Fork-and-knife restaurant icon on light background, a progress bar fills from $0 to $400 (green) then overshoots to $480 (turns red), PERMISSION GRANTED stamp appears",
     "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "When you buy last year's winner, the smart money is already cashing out. You're literally buying their exit.",
-    "visual": "Dark background. Left panel: 'SMART MONEY' — three stick figures with left-pointing exit arrow. Right panel: 'YOU' — one stick figure with right-pointing entry arrow. Bold red text: 'YOU'RE BUYING THEIR EXIT'.",
+    "narration": "And 80% of people quit tracking entirely within three months. Not because they're bad with money — just because counting every dollar is exhausting.",
+    "visual": "Three calendar month boxes appear one by one: Month 1 in green (ON TRACK), Month 2 in yellow (SLIPPING), Month 3 with a red X (ABANDONED)",
     "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "That 1.7% drag doesn't sound like much. On a hundred thousand dollars over thirty years, it quietly steals $285,000.",
-    "visual": "Light background. Two bar charts grow side by side: grey 'CHASER' bar ($476K) and taller red 'INDEX' bar ($761K). Gap callout shows '$285K' difference with double-headed red arrow.",
+    "narration": "Even after you quit, you're still spending $3,360 more per year than if you'd never budgeted. The guilt cycle is real — and it costs.",
+    "visual": "Three animated bar chart columns — BEFORE ($2,800/mo, green), DURING BUDGET ($3,360/mo, yellow), AFTER QUITTING ($3,080/mo, red) — growing in height with annotation showing $3,360 per year extra",
     "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Your brain isn't broken — it's doing what brains do. Past performance looks like a pattern. It's just noise.",
-    "visual": "Dark background. Brain outline in red with gold stars floating around it. Large red 'PAST ≠ FUTURE' text appears. Subtitle: 'YOUR BRAIN SEES PATTERNS. MARKETS DON'T CARE.'",
+    "narration": "Here's what actually works — reverse budgeting. Move savings automatically on payday, then spend the rest guilt-free. No categories, no tracking needed.",
+    "visual": "Flow diagram on dark background: PAYCHECK circle with dollar sign, red arrow labeled FIRST pointing to piggy bank (coin falling into slot), green arrow labeled REST pointing to smiling stick person",
     "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "The boring fund in the middle is your pick. No stars, no headlines. Don't buy last year's trophy — buy a strategy.",
-    "visual": "Light background. Smooth upward-trending red line chart to $761K. Piggy bank SVG beside 'BORING = RICH' text. Red CTA button: 'FOLLOW FOR MORE MONEY TRUTHS'.",
+    "narration": "People who switch to reverse budgeting save 34% more without tracking a single dollar. Follow for the money strategies that actually work.",
+    "visual": "Five growing bar chart columns (Year 1 through Year 5) in red showing compounding extra savings growth to $16,800, ending with a CTA button FOLLOW FOR MONEY TRUTHS THAT WORK",
     "accent_color": "red"
   }
 ]
