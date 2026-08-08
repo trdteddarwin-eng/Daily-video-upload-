@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Everyone says get on a budget. But researchers just found traditional budgets make most people spend more, not less. Here's what they're not telling you.",
-    "visual": "A budget paper with neat category rows (FOOD $400, GAS $200, FUN $150, CLOTHES $100) slides up while a shocked person silhouette with wide eyes appears beside it on a dark background",
+    "narration": "Here's what nobody tells you: every rent check you send is quietly building your landlord's wealth, not yours. And the numbers are wild.",
+    "visual": "Person silhouette on left handing dollar bills to a house with a bank icon above it. Dollar signs float from person to house. Dark background. Text overlay: 'WHOSE WEALTH ARE YOU BUILDING?'",
     "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Write '$400 for food' and your brain hears permission to spend $400. Studies show budgeted categories get spent 20% over limit — every single time.",
-    "visual": "Fork-and-knife restaurant icon on light background, a progress bar fills from $0 to $400 (green) then overshoots to $480 (turns red), PERMISSION GRANTED stamp appears",
+    "narration": "The average American pays $1,702 a month in rent. Over ten years that's $204,240 straight out of your pocket — and you keep exactly zero of it.",
+    "visual": "Large animated number counter rising to $204,240. Stack of cash bills shrinking as counter climbs. Light background. Text: '$204,240 PAID. $0 KEPT.'",
     "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "And 80% of people quit tracking entirely within three months. Not because they're bad with money — just because counting every dollar is exhausting.",
-    "visual": "Three calendar month boxes appear one by one: Month 1 in green (ON TRACK), Month 2 in yellow (SLIPPING), Month 3 with a red X (ABANDONED)",
+    "narration": "Meanwhile your landlord quietly built $95,900 in equity from those same payments. Mortgage principal dropped. Property appreciated. Your housing net worth? Still zero.",
+    "visual": "Split screen: left bar chart labeled LANDLORD grows to $95,900 in green. Right bar labeled YOU stays flat at $0. Dark background. Red highlight on the $0 bar.",
     "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Even after you quit, you're still spending $3,360 more per year than if you'd never budgeted. The guilt cycle is real — and it costs.",
-    "visual": "Three animated bar chart columns — BEFORE ($2,800/mo, green), DURING BUDGET ($3,360/mo, yellow), AFTER QUITTING ($3,080/mo, red) — growing in height with annotation showing $3,360 per year extra",
+    "narration": "Renters tell themselves it's about flexibility — but 63% say they plan to buy someday, and most never do. That's not a plan, that's procrastination with a price tag.",
+    "visual": "Person silhouette with thought bubble containing a small house and the word SOMEDAY. Calendar with pages flipping. Light background. Text: '63% PLAN TO BUY. FEW EVER DO.'",
     "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Here's what actually works — reverse budgeting. Move savings automatically on payday, then spend the rest guilt-free. No categories, no tracking needed.",
-    "visual": "Flow diagram on dark background: PAYCHECK circle with dollar sign, red arrow labeled FIRST pointing to piggy bank (coin falling into slot), green arrow labeled REST pointing to smiling stick person",
+    "narration": "A mortgage payment is often similar to rent — but part of it comes back to you as equity. After ten years that's nearly $100K in net worth instead of nothing.",
+    "visual": "Two side-by-side payment bars: MORTGAGE bar split with green equity slice and dark interest slice. RENT bar entirely dark with '$0 BACK' label. Dark background.",
     "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "People who switch to reverse budgeting save 34% more without tracking a single dollar. Follow for the money strategies that actually work.",
-    "visual": "Five growing bar chart columns (Year 1 through Year 5) in red showing compounding extra savings growth to $16,800, ending with a CTA button FOLLOW FOR MONEY TRUTHS THAT WORK",
+    "narration": "Run the numbers for your city. Because staying a renter is a choice — and most people don't realize it's the most expensive housing decision they'll ever make.",
+    "visual": "Calculator icon with house SVG. Piggy bank gradually filling on one side. Arrow pointing upward. Light background. Large text: 'RUN YOUR NUMBERS' with red accent underline.",
     "accent_color": "red"
   }
 ]

@@ -1,16 +1,16 @@
 {
   "tiktok": {
-    "caption": "Your budget might actually be making you spend MORE money. Here's the one-switch fix that works without tracking a thing.",
-    "hashtags": ["#budgeting", "#personalfinance", "#moneyhacks", "#savemoney", "#moneypsychology", "#financetips", "#financialfreedom", "#moneymindset"]
+    "caption": "You've paid $204K in rent over 10 years. Your landlord pocketed $95K in equity. You got $0. Here's the math nobody shows you.",
+    "hashtags": ["#rentvsown", "#personalfinance", "#realestate", "#moneytips", "#renters", "#homebuying", "#wealthbuilding", "#moneypsychology"]
   },
   "youtube_short": {
-    "title": "The Budget That Makes You Spend MORE",
+    "title": "Your Rent Made Your Landlord $95K Richer",
     "title_alternatives": [
-      "Why Budgeting Makes 80% of People Spend More",
-      "Stop Budgeting — Do THIS Instead"
+      "10 Years of Rent = $0 Equity for You, $95K for Landlord",
+      "Where Does Your Rent Money Actually Go?"
     ],
-    "description": "Here's something no finance guru wants to admit: traditional category budgets make most people spend more, not less. When you write '$400 for food,' your brain reads that as permission — not a ceiling. Studies show spending in budgeted categories jumps up to 20% above what people were spending before. Then 80% quit within three months, and even after quitting they're spending $3,360 more per year than if they'd never started. The fix is reverse budgeting — move savings automatically on payday, then spend whatever's left guilt-free. No categories, no tracking, 34% more saved. Follow for money truths that actually change things. #budgeting #personalfinance #moneypsychology #savemoney #financetips",
-    "tags": ["budgeting", "personal finance", "reverse budgeting", "money psychology", "save money", "budget tips", "money habits", "financial freedom", "money mindset", "finance"]
+    "description": "Nobody sits you down and explains what actually happens to your rent money. Over 10 years, the average American renter pays $204,240 — and keeps exactly zero of it. Meanwhile that same stream of payments quietly built $95,900 in equity for your landlord. Their mortgage principal dropped. Their property appreciated. Your net housing worth stayed at zero. And 63% of renters tell themselves they'll buy someday — most never do. The math on renting vs owning is more uncomfortable than most people realize. Run it for your city. Follow for money truths that actually change things. #rentvsown #personalfinance #realestate #homebuying #wealthbuilding",
+    "tags": ["rent vs buy", "real estate", "personal finance", "renting", "homebuying", "equity", "wealth building", "money tips", "renters", "mortgage vs rent"]
   },
-  "hook_line": "Your budget is making you spend MORE"
+  "hook_line": "Your rent is making your landlord $95K richer"
 }
