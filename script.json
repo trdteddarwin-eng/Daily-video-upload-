@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Here's what nobody tells you: every rent check you send is quietly building your landlord's wealth, not yours. And the numbers are wild.",
-    "visual": "Person silhouette on left handing dollar bills to a house with a bank icon above it. Dollar signs float from person to house. Dark background. Text overlay: 'WHOSE WEALTH ARE YOU BUILDING?'",
+    "narration": "You use your debit card for groceries, gas, Amazon — thinking it's safe because it's real money. Here's what your bank isn't telling you.",
+    "visual": "Debit card SVG springs up from the bottom of a dark screen. Text fades in: 'YOU USE YOUR DEBIT CARD FOR EVERYTHING.' Red warning badge slams onto screen: 'YOUR BANK HAS A SECRET.'",
     "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "The average American pays $1,702 a month in rent. Over ten years that's $204,240 straight out of your pocket — and you keep exactly zero of it.",
-    "visual": "Large animated number counter rising to $204,240. Stack of cash bills shrinking as counter climbs. Light background. Text: '$204,240 PAID. $0 KEPT.'",
+    "narration": "Federal law caps your credit card fraud loss at zero dollars — literally zero. Your debit card? That's a completely different law with a much higher price.",
+    "visual": "Light background. Credit card slides in from left with a green badge: '$0 MAX LIABILITY.' Debit card slides in from right with a red badge: '$500+ YOU COULD LOSE.' Black card at bottom: 'THESE AREN'T THE SAME LAW.'",
     "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Meanwhile your landlord quietly built $95,900 in equity from those same payments. Mortgage principal dropped. Property appreciated. Your housing net worth? Still zero.",
-    "visual": "Split screen: left bar chart labeled LANDLORD grows to $95,900 in green. Right bar labeled YOU stays flat at $0. Dark background. Red highlight on the $0 bar.",
+    "narration": "Report debit fraud within two days — you're on the hook for fifty dollars max. Wait three to sixty days and that jumps to five hundred. Miss sixty days entirely? Your bank can legally keep every penny.",
+    "visual": "Dark background. Animated timeline fills from left to right: Day 0 (fraud hits), Day 2 in green ($50 max loss), Day 60 in yellow ($500 max loss), Day 60+ in red (ALL GONE - unlimited loss). Text below: 'MISS 60 DAYS — YOUR BANK KEEPS EVERY PENNY.'",
     "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Renters tell themselves it's about flexibility — but 63% say they plan to buy someday, and most never do. That's not a plan, that's procrastination with a price tag.",
-    "visual": "Person silhouette with thought bubble containing a small house and the word SOMEDAY. Calendar with pages flipping. Light background. Text: '63% PLAN TO BUY. FEW EVER DO.'",
+    "narration": "And while credit card fraud gets reversed overnight, debit fraud investigations take up to ten business days — with your actual money frozen the entire time. Rent, food, and utilities won't wait.",
+    "visual": "Light background. Bank building SVG rises up with a blue FROZEN badge slamming across it. Calendar counting from Day 1 to Day 10. Three red-bordered bill cards appear: RENT, FOOD, UTILITIES — each labeled 'due now.'",
     "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "A mortgage payment is often similar to rent — but part of it comes back to you as equity. After ten years that's nearly $100K in net worth instead of nothing.",
-    "visual": "Two side-by-side payment bars: MORTGAGE bar split with green equity slice and dark interest slice. RENT bar entirely dark with '$0 BACK' label. Dark background.",
+    "narration": "Sixteen billion dollars in debit card fraud hits Americans every year. And sixty-eight percent of us primarily use debit — the card with the least protection — thinking we're being responsible.",
+    "visual": "Dark background. '$16B' counts up in large red text. Below it, a red progress bar fills to 68% labeled 'AMERICANS WHO USE DEBIT.' Bottom card: 'MOST OF US CHOSE VULNERABILITY — WITHOUT KNOWING IT.'",
     "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Run the numbers for your city. Because staying a renter is a choice — and most people don't realize it's the most expensive housing decision they'll ever make.",
-    "visual": "Calculator icon with house SVG. Piggy bank gradually filling on one side. Arrow pointing upward. Light background. Large text: 'RUN YOUR NUMBERS' with red accent underline.",
+    "narration": "The fix is simple: use a credit card for all purchases, pay it in full every month, and use your debit card only at the ATM. Same money. Zero fraud liability. Follow for more.",
+    "visual": "Light background. Three rules spring in with check badges: 1) Credit card SVG + 'CREDIT CARD FOR PURCHASES — $0 LIABILITY.' 2) ATM machine SVG + 'DEBIT FOR ATM CASH ONLY.' 3) Calendar + 'PAY IN FULL EACH MONTH.' Black CTA card: 'FOLLOW FOR MONEY TRAPS YOUR BANK DOESN'T WANT YOU TO KNOW.'",
     "accent_color": "red"
   }
 ]

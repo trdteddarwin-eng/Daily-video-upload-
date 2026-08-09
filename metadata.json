@@ -1,16 +1,16 @@
 {
   "tiktok": {
-    "caption": "You've paid $204K in rent over 10 years. Your landlord pocketed $95K in equity. You got $0. Here's the math nobody shows you.",
-    "hashtags": ["#rentvsown", "#personalfinance", "#realestate", "#moneytips", "#renters", "#homebuying", "#wealthbuilding", "#moneypsychology"]
+    "caption": "You used your debit card today. If someone steals your info, your bank can legally keep that money forever. Here's what they don't tell you.",
+    "hashtags": ["#personalfinance", "#debitcard", "#creditcard", "#moneytips", "#bankingtips", "#financialliteracy", "#moneypsychology", "#moneyhacks"]
   },
   "youtube_short": {
-    "title": "Your Rent Made Your Landlord $95K Richer",
+    "title": "Your Debit Card Has Zero Fraud Protection",
     "title_alternatives": [
-      "10 Years of Rent = $0 Equity for You, $95K for Landlord",
-      "Where Does Your Rent Money Actually Go?"
+      "The Hidden Truth About Your Debit Card",
+      "Why You Should Never Use a Debit Card"
     ],
-    "description": "Nobody sits you down and explains what actually happens to your rent money. Over 10 years, the average American renter pays $204,240 — and keeps exactly zero of it. Meanwhile that same stream of payments quietly built $95,900 in equity for your landlord. Their mortgage principal dropped. Their property appreciated. Your net housing worth stayed at zero. And 63% of renters tell themselves they'll buy someday — most never do. The math on renting vs owning is more uncomfortable than most people realize. Run it for your city. Follow for money truths that actually change things. #rentvsown #personalfinance #realestate #homebuying #wealthbuilding",
-    "tags": ["rent vs buy", "real estate", "personal finance", "renting", "homebuying", "equity", "wealth building", "money tips", "renters", "mortgage vs rent"]
+    "description": "Nobody tells you this when you sign up for a debit card: credit cards and debit cards are covered by completely different fraud protection laws. Federal law caps your credit card fraud liability at exactly zero dollars. With debit, if you report fraud within 2 days you owe $50 max — but wait past 60 days and your bank can legally keep every penny that was stolen. Meanwhile your account gets frozen for up to 10 business days during their investigation, while your rent, food, and utilities are still due. The fix is simple: use a credit card for all purchases, pay it in full every month, and only touch your debit card at the ATM. Follow for more money traps your bank doesn't want you to know. #personalfinance #debitcard #creditcard #moneytips #bankingtips #financialliteracy",
+    "tags": ["personal finance", "debit card", "credit card", "fraud protection", "money tips", "banking", "financial literacy", "money psychology", "consumer rights", "bank fees"]
   },
-  "hook_line": "Your rent is making your landlord $95K richer"
+  "hook_line": "Your debit card has zero fraud protection"
 }

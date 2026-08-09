@@ -1,12 +1,13 @@
 {
-  "title": "Your Rent Is Building Your Landlord's $95K Nest Egg",
-  "hook": "You've sent over $200,000 in rent checks and kept exactly zero of it — your landlord's bank account tells a very different story.",
-  "angle": "Renters emotionally justify the choice as flexibility, but the concrete math shows a decade of renting transfers $95K+ in equity to the landlord while the renter's housing net worth stays at zero",
-  "audience": "Long-term renters aged 25-40 who have never run the numbers, people stuck in the 'I'll buy someday' mindset",
+  "title": "Your Debit Card Has Zero Fraud Protection",
+  "hook": "You use your debit card thinking it's the safe choice — but if someone steals your info, your bank can legally keep your money forever.",
+  "angle": "Most people think debit is 'safer' because it's real money — but federal law gives debit cards dramatically weaker fraud protection than credit cards, and the reporting-deadline rules are almost unknown.",
+  "audience": "Anyone who primarily uses a debit card for everyday spending (68% of Americans)",
   "key_numbers": [
-    "US median rent $1,702/month = $204,240 over 10 years",
-    "Average homeowner builds $95,900 in equity over same 10 years",
-    "Renter's net housing equity after 10 years: $0",
-    "63% of renters say they plan to buy someday — most never do"
+    "$0 — your max fraud liability on a credit card under federal law",
+    "$500+ — what you can legally lose on debit fraud if you report after 3 days",
+    "10 business days — how long your bank can investigate while your money stays frozen",
+    "$16 billion — annual debit card fraud in the US",
+    "68% — Americans who primarily use debit cards"
   ]
 }
