@@ -1,12 +1,13 @@
 {
-  "title": "Your Rent Is Building Your Landlord's $95K Nest Egg",
-  "hook": "You've sent over $200,000 in rent checks and kept exactly zero of it — your landlord's bank account tells a very different story.",
-  "angle": "Renters emotionally justify the choice as flexibility, but the concrete math shows a decade of renting transfers $95K+ in equity to the landlord while the renter's housing net worth stays at zero",
-  "audience": "Long-term renters aged 25-40 who have never run the numbers, people stuck in the 'I'll buy someday' mindset",
+  "title": "Paying Off Debt 'Wrong' Beats Perfect Math",
+  "hook": "The mathematically optimal way to pay off debt has one fatal flaw — humans. And Harvard researchers found the 'wrong' method pays off 14% more debt.",
+  "angle": "The debt avalanche (highest APR first) is mathematically superior but causes most people to quit due to slow visible progress. The debt snowball (smallest balance first) wins in real-world testing because emotional momentum outweighs interest savings.",
+  "audience": "Anyone juggling multiple credit cards or loans who wants to pay off debt faster",
   "key_numbers": [
-    "US median rent $1,702/month = $204,240 over 10 years",
-    "Average homeowner builds $95,900 in equity over same 10 years",
-    "Renter's net housing equity after 10 years: $0",
-    "63% of renters say they plan to buy someday — most never do"
+    "14% — more debt eliminated by snowball users vs avalanche users in research",
+    "24.99% — typical high-end credit card APR that avalanche targets first",
+    "$6,360 — average American credit card debt per person",
+    "$800–$1,200 — interest savings avalanche has over snowball on a typical balance",
+    "90 days — timeframe to find a 'quick win' balance to start your snowball"
   ]
 }

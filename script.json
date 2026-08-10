@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Here's what nobody tells you: every rent check you send is quietly building your landlord's wealth, not yours. And the numbers are wild.",
-    "visual": "Person silhouette on left handing dollar bills to a house with a bank icon above it. Dollar signs float from person to house. Dark background. Text overlay: 'WHOSE WEALTH ARE YOU BUILDING?'",
-    "accent_color": "red"
+    "narration": "You've got multiple debts and you're doing the smart thing — paying off the highest interest rate first. But researchers just found a fatal flaw in that plan.",
+    "visual": "Dark background. Three credit cards float down from the top, labeled 24.99%, 19.99%, 14.99% APR in red, amber, and blue. Text: 'The smart move?' then amber callout box: 'Researchers found a fatal flaw.'",
+    "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "The average American pays $1,702 a month in rent. Over ten years that's $204,240 straight out of your pocket — and you keep exactly zero of it.",
-    "visual": "Large animated number counter rising to $204,240. Stack of cash bills shrinking as counter climbs. Light background. Text: '$204,240 PAID. $0 KEPT.'",
-    "accent_color": "red"
+    "narration": "The debt avalanche says attack 24.99% APR first. On paper, it saves the most interest. But 'on paper' isn't where you actually live.",
+    "visual": "Light background. Three debt cards stacked vertically by APR — 24.99% card highlighted in red with 'ATTACK FIRST' badge, the other two faded. Green badge pops in: 'Mathematically Optimal'. Dark callout: 'On paper isn't where you live.'",
+    "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Meanwhile your landlord quietly built $95,900 in equity from those same payments. Mortgage principal dropped. Property appreciated. Your housing net worth? Still zero.",
-    "visual": "Split screen: left bar chart labeled LANDLORD grows to $95,900 in green. Right bar labeled YOU stays flat at $0. Dark background. Red highlight on the $0 bar.",
-    "accent_color": "red"
+    "narration": "Here's the thing. When that big card barely moves month after month, motivation dies. Most people quit and slide right back into debt.",
+    "visual": "Dark background. Single red credit card with $4,200 balance and a progress bar that barely creeps forward over 8 animated months. Sad person silhouette slumps below. Red warning box: 'Most people give up.'",
+    "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "Renters tell themselves it's about flexibility — but 63% say they plan to buy someday, and most never do. That's not a plan, that's procrastination with a price tag.",
-    "visual": "Person silhouette with thought bubble containing a small house and the word SOMEDAY. Calendar with pages flipping. Light background. Text: '63% PLAN TO BUY. FEW EVER DO.'",
-    "accent_color": "red"
+    "narration": "Number one — snowball says kill the smallest balance first, whatever the rate. That fast win reloads your motivation for the next one.",
+    "visual": "Light background. Three cards ordered smallest to largest ($800, $2,400, $4,200). Green 'PAID!' stamp appears on the $800 card. Amber arrow rolls the freed payment into the next card. Box: 'The payment snowballs.'",
+    "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "A mortgage payment is often similar to rent — but part of it comes back to you as equity. After ten years that's nearly $100K in net worth instead of nothing.",
-    "visual": "Two side-by-side payment bars: MORTGAGE bar split with green equity slice and dark interest slice. RENT bar entirely dark with '$0 BACK' label. Dark background.",
-    "accent_color": "red"
+    "narration": "Harvard researchers tracked real debt payoffs. Snowball users eliminated fourteen percent more debt than avalanche users. Emotional momentum outweighed every dollar of interest math.",
+    "visual": "Dark background. Animated bar chart — gray Avalanche bar grows to 86%, amber Snowball bar grows taller to 100%. '+14%' amber badge stamps the snowball bar. Callout: 'Snowball users paid off 14% more total debt.'",
+    "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "Run the numbers for your city. Because staying a renter is a choice — and most people don't realize it's the most expensive housing decision they'll ever make.",
-    "visual": "Calculator icon with house SVG. Piggy bank gradually filling on one side. Arrow pointing upward. Light background. Large text: 'RUN YOUR NUMBERS' with red accent underline.",
-    "accent_color": "red"
+    "narration": "Find the balance you can kill in ninety days and start today. The best plan isn't perfect math — it's the one you'll actually finish. Follow for more money traps nobody explains.",
+    "visual": "Light background. Three debt cards flip from red to green one by one, each stamped 'PAID!'. Person silhouette appears with arms raised in celebration. Black CTA box: 'Follow for more money traps nobody explains.'",
+    "accent_color": "amber"
   }
 ]
