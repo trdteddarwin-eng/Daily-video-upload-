@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You've got multiple debts and you're doing the smart thing — paying off the highest interest rate first. But researchers just found a fatal flaw in that plan.",
-    "visual": "Dark background. Three credit cards float down from the top, labeled 24.99%, 19.99%, 14.99% APR in red, amber, and blue. Text: 'The smart move?' then amber callout box: 'Researchers found a fatal flaw.'",
+    "narration": "Did you actually take your 401k when you switched jobs? Most people don't — and right now there's $1.65 trillion sitting in abandoned accounts. Some of it might be yours.",
+    "visual": "Dark background. SVG briefcase springs in from center with amber glow. Animated counter climbs from $0 to $1.65T in large white text. Subtext: 'In Abandoned 401ks'. Question fades in: 'Is some of it yours?'",
     "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "The debt avalanche says attack 24.99% APR first. On paper, it saves the most interest. But 'on paper' isn't where you actually live.",
-    "visual": "Light background. Three debt cards stacked vertically by APR — 24.99% card highlighted in red with 'ATTACK FIRST' badge, the other two faded. Green badge pops in: 'Mathematically Optimal'. Dark callout: 'On paper isn't where you live.'",
+    "narration": "Once you leave a company, your 401k becomes an orphan account. You're stuck in whatever expensive funds the plan offered — zero power to switch, zero power to negotiate. You just pay.",
+    "visual": "Light background. Amber piggy bank SVG springs in. Red padlock SVG slams on top of the piggy bank. Red label: 'ORPHAN ACCOUNT'. Red text: 'Stuck in High-Fee Funds'.",
     "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Here's the thing. When that big card barely moves month after month, motivation dies. Most people quit and slide right back into debt.",
-    "visual": "Dark background. Single red credit card with $4,200 balance and a progress bar that barely creeps forward over 8 animated months. Sad person silhouette slumps below. Red warning box: 'Most people give up.'",
+    "narration": "Here's the math. Old 401k plans charge former employees up to 0.8% more per year in fees. On $150,000 over twenty years, that quietly compounds into $116,000 gone — just in extra fees.",
+    "visual": "Dark background. Two bars grow side by side: red 'FORGOTTEN' bar stops at $150K, green 'ROLLED OVER' bar reaches $266K. Amber '+$116K' badge pops above the gap. Source callout: '$116,000 stolen in excess fees.'",
     "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "Number one — snowball says kill the smallest balance first, whatever the rate. That fast win reloads your motivation for the next one.",
-    "visual": "Light background. Three cards ordered smallest to largest ($800, $2,400, $4,200). Green 'PAID!' stamp appears on the $800 card. Amber arrow rolls the freed payment into the next card. Box: 'The payment snowballs.'",
+    "narration": "Here's the trap — the account keeps growing and statements keep arriving, so nothing feels broken. That's exactly how 24 million orphan accounts stay forgotten for decades, leaking thousands every year.",
+    "visual": "Light background. Gray person silhouette stands relaxed. Calendar beside them flips through months — Jan, Apr, Jul, Oct, Dec, Year 2. Red callout box: 'Looks fine to me.' Sub-text: 'That's how 24 million accounts stay lost.'",
     "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "Harvard researchers tracked real debt payoffs. Snowball users eliminated fourteen percent more debt than avalanche users. Emotional momentum outweighed every dollar of interest math.",
-    "visual": "Dark background. Animated bar chart — gray Avalanche bar grows to 86%, amber Snowball bar grows taller to 100%. '+14%' amber badge stamps the snowball bar. Callout: 'Snowball users paid off 14% more total debt.'",
+    "narration": "The fix takes fifteen minutes. Call your new employer's plan or open an IRA, request a direct rollover — zero taxes, zero penalties. It's the simplest six-figure move you'll ever make.",
+    "visual": "Dark background. Red 'OLD 401K' box on left. Amber animated arrow slides across. Green 'YOUR IRA' box appears on right. Large amber '15 MIN' text. Green callout: 'Zero taxes. Zero penalties. Zero fees.'",
     "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "Find the balance you can kill in ninety days and start today. The best plan isn't perfect math — it's the one you'll actually finish. Follow for more money traps nobody explains.",
-    "visual": "Light background. Three debt cards flip from red to green one by one, each stamped 'PAID!'. Person silhouette appears with arms raised in celebration. Black CTA box: 'Follow for more money traps nobody explains.'",
+    "narration": "Go right now — find your old 401k or call that old HR department. Three steps, fifteen minutes, and you could recover $116,000 you've been leaving on the table. Follow for more money traps nobody explains.",
+    "visual": "Light background. Three amber checkmark items appear one by one: '1. LIST YOUR OLD JOBS', '2. CALL OLD HR / PLAN', '3. REQUEST ROLLOVER'. Large amber '$116,000' springs in. Black CTA box: 'Follow for more money traps nobody explains.'",
     "accent_color": "amber"
   }
 ]
