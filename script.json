@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Did you actually take your 401k when you switched jobs? Most people don't — and right now there's $1.65 trillion sitting in abandoned accounts. Some of it might be yours.",
-    "visual": "Dark background. SVG briefcase springs in from center with amber glow. Animated counter climbs from $0 to $1.65T in large white text. Subtext: 'In Abandoned 401ks'. Question fades in: 'Is some of it yours?'",
-    "accent_color": "amber"
+    "narration": "Think your mortgage is your biggest home expense? It's not even close. The real price tag on a house surprises almost every first-time buyer — and here's what nobody tells you.",
+    "visual": "Dark background. House SVG slides up from bottom — triangle roof, rectangle walls, door, two windows. Text reveals: 'WHAT YOUR HOUSE REALLY COSTS?' with a blue accent question mark spring-bouncing in.",
+    "accent_color": "blue"
   },
   {
     "scene": 2,
-    "narration": "Once you leave a company, your 401k becomes an orphan account. You're stuck in whatever expensive funds the plan offered — zero power to switch, zero power to negotiate. You just pay.",
-    "visual": "Light background. Amber piggy bank SVG springs in. Red padlock SVG slams on top of the piggy bank. Red label: 'ORPHAN ACCOUNT'. Red text: 'Stuck in High-Fee Funds'.",
-    "accent_color": "amber"
+    "narration": "Your agent never mentioned the one-percent rule. Every year, maintenance eats one to three percent of your home's value — up to $12,000 on a $400K house. And that's before anything breaks.",
+    "visual": "Light background. House outline with a wrench overlaid. Progress bar fills from left with dollar counter ticking up to $12,000. Text: '1–3% OF HOME VALUE EVERY YEAR'.",
+    "accent_color": "blue"
   },
   {
     "scene": 3,
-    "narration": "Here's the math. Old 401k plans charge former employees up to 0.8% more per year in fees. On $150,000 over twenty years, that quietly compounds into $116,000 gone — just in extra fees.",
-    "visual": "Dark background. Two bars grow side by side: red 'FORGOTTEN' bar stops at $150K, green 'ROLLED OVER' bar reaches $266K. Amber '+$116K' badge pops above the gap. Source callout: '$116,000 stolen in excess fees.'",
-    "accent_color": "amber"
+    "narration": "Property taxes and home insurance add another $5,500 a year before you pay a single repair. Most first-time buyers don't see these coming until the first bills land.",
+    "visual": "Dark background. Two cards slide in from opposite sides — government building icon for property taxes ($3,700) and shield icon for insurance ($1,800). Both counters tick up. Total appears below.",
+    "accent_color": "blue"
   },
   {
     "scene": 4,
-    "narration": "Here's the trap — the account keeps growing and statements keep arriving, so nothing feels broken. That's exactly how 24 million orphan accounts stay forgotten for decades, leaking thousands every year.",
-    "visual": "Light background. Gray person silhouette stands relaxed. Calendar beside them flips through months — Jan, Apr, Jul, Oct, Dec, Year 2. Red callout box: 'Looks fine to me.' Sub-text: 'That's how 24 million accounts stay lost.'",
-    "accent_color": "amber"
+    "narration": "Seventy-seven percent of first-year homeowners face an unexpected repair. The average first-year bill is $5,400 — for something the home inspection missed.",
+    "visual": "Light background. House SVG with a red crack/leak running down the wall. Alert badge pulses red. $5,400 counter animates up with '77%' stat spring-bouncing into view.",
+    "accent_color": "blue"
   },
   {
     "scene": 5,
-    "narration": "The fix takes fifteen minutes. Call your new employer's plan or open an IRA, request a direct rollover — zero taxes, zero penalties. It's the simplest six-figure move you'll ever make.",
-    "visual": "Dark background. Red 'OLD 401K' box on left. Amber animated arrow slides across. Green 'YOUR IRA' box appears on right. Large amber '15 MIN' text. Green callout: 'Zero taxes. Zero penalties. Zero fees.'",
-    "accent_color": "amber"
+    "narration": "Add it all up and a $400K home costs $3,500 a month — not the $2,100 mortgage you budgeted. That 66% gap is where first-time buyers go financially sideways.",
+    "visual": "Dark background. Two horizontal bars animate outward — shorter grey bar labeled 'MORTGAGE $2,100/mo', longer blue bar labeled 'REAL COST $3,500/mo'. '66% MORE' badge spring-pops in.",
+    "accent_color": "blue"
   },
   {
     "scene": 6,
-    "narration": "Go right now — find your old 401k or call that old HR department. Three steps, fifteen minutes, and you could recover $116,000 you've been leaving on the table. Follow for more money traps nobody explains.",
-    "visual": "Light background. Three amber checkmark items appear one by one: '1. LIST YOUR OLD JOBS', '2. CALL OLD HR / PLAN', '3. REQUEST ROLLOVER'. Large amber '$116,000' springs in. Black CTA box: 'Follow for more money traps nobody explains.'",
-    "accent_color": "amber"
+    "narration": "Before you buy, save $15,000 on top of your down payment for year-one hidden costs. Follow for more money truths your bank and your agent aren't mentioning.",
+    "visual": "Light background. Piggy bank SVG bounces in. Three lines of advice stagger in one by one: 'BEFORE YOU BUY', '$15,000 CUSHION', 'BEYOND YOUR DOWN PAYMENT'. Blue follow CTA button pulses at the end.",
+    "accent_color": "blue"
   }
 ]
