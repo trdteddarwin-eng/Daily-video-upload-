@@ -1,666 +1,502 @@
 import React from 'react';
-import {
-  AbsoluteFill,
-  Series,
-  useCurrentFrame,
-  useVideoConfig,
-  interpolate,
-  spring,
-  Easing,
-} from 'remotion';
+import { AbsoluteFill, Series, useCurrentFrame, useVideoConfig, interpolate, spring } from 'remotion';
 
-const BG_DARK = '#0A0F1E';
-const BG_LIGHT = '#F5F5F5';
-const ACCENT = '#3B82F6';
-const WHITE = '#F5F5F5';
-const BLACK = '#0A0F1E';
+const BG_DARK = '#0A1628';
+const BG_LIGHT = '#F0F4F8';
+const ACCENT = '#10B981';
+const WHITE = '#F0F4F8';
+const BLACK = '#0A1628';
+const GOLD = '#F59E0B';
 const FONT = '"Arial Black", "Helvetica Neue", Arial, sans-serif';
 
 const headline = (size: number, color: string): React.CSSProperties => ({
   fontFamily: FONT,
   fontSize: size,
   color,
-  letterSpacing: '0.1em',
+  letterSpacing: '0.12em',
   textTransform: 'uppercase' as const,
   textAlign: 'center' as const,
   margin: 0,
-  lineHeight: 1.15,
+  lineHeight: 1.1,
 });
 
-const FadeScene: React.FC<{ children: React.ReactNode; bg: string; dur: number }> = ({
-  children,
-  bg,
-  dur,
-}) => {
+const FadeScene: React.FC<{ children: React.ReactNode; bg: string; dur: number }> = ({ children, bg, dur }) => {
   const frame = useCurrentFrame();
   const opacity = interpolate(frame, [0, 12, dur - 12, dur], [0, 1, 1, 0], {
     extrapolateLeft: 'clamp',
     extrapolateRight: 'clamp',
   });
-  return <AbsoluteFill style={{ background: bg, opacity }}>{children}</AbsoluteFill>;
+  return (
+    <AbsoluteFill style={{ background: bg, opacity }}>
+      {children}
+    </AbsoluteFill>
+  );
 };
-
-// ─── Scene 1: Hook ───────────────────────────────────────────────────────────
 
 const Scene1: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  const houseY = interpolate(frame, [0, 35], [220, 0], {
-    extrapolateLeft: 'clamp',
-    extrapolateRight: 'clamp',
-    easing: Easing.out(Easing.cubic),
-  });
+  const titleReveal = spring({ frame, fps, config: { damping: 18, stiffness: 90 } });
+  const amountReveal = spring({ frame: Math.max(0, frame - 18), fps, config: { damping: 14, stiffness: 80 } });
+  const bag1 = spring({ frame: Math.max(0, frame - 8), fps, config: { damping: 12, stiffness: 70 } });
+  const bag2 = spring({ frame: Math.max(0, frame - 22), fps, config: { damping: 12, stiffness: 70 } });
+  const bag3 = spring({ frame: Math.max(0, frame - 38), fps, config: { damping: 12, stiffness: 70 } });
+  const subReveal = spring({ frame: Math.max(0, frame - 55), fps, config: { damping: 16, stiffness: 85 } });
 
-  const titleOpacity = interpolate(frame, [30, 55], [0, 1], {
-    extrapolateLeft: 'clamp',
-    extrapolateRight: 'clamp',
-  });
+  const floatY1 = interpolate(frame, [0, 112], [0, -14], { extrapolateRight: 'clamp' });
+  const floatY2 = interpolate(frame, [0, 112], [0, 12], { extrapolateRight: 'clamp' });
+  const floatY3 = interpolate(frame, [0, 112], [0, -9], { extrapolateRight: 'clamp' });
 
-  const tagScale = spring({ frame: frame - 75, fps, config: { stiffness: 100, damping: 14 } });
-  const tagOpacity = interpolate(frame, [75, 100], [0, 1], {
-    extrapolateLeft: 'clamp',
-    extrapolateRight: 'clamp',
-  });
+  const amountScale = interpolate(amountReveal, [0, 1], [0.4, 1]);
+  const amountY = interpolate(amountReveal, [0, 1], [50, 0]);
 
   return (
     <FadeScene bg={BG_DARK} dur={dur}>
-      <AbsoluteFill
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center',
-          padding: '80px 60px',
-        }}
-      >
-        {/* House SVG */}
-        <div style={{ transform: `translateY(${houseY}px)` }}>
-          <svg width="290" height="255" viewBox="0 0 290 255">
-            {/* Roof */}
-            <polygon points="145,18 278,128 12,128" fill={ACCENT} />
-            {/* Body */}
-            <rect x="28" y="126" width="234" height="110" fill={WHITE} rx="4" />
-            {/* Door */}
-            <rect x="110" y="168" width="70" height="68" fill={ACCENT} rx="6" />
-            {/* Door knob */}
-            <circle cx="173" cy="205" r="5" fill={BG_DARK} />
-            {/* Left window */}
-            <rect x="44" y="146" width="55" height="42" fill={ACCENT} opacity={0.45} rx="4" />
-            {/* Right window */}
-            <rect x="191" y="146" width="55" height="42" fill={ACCENT} opacity={0.45} rx="4" />
-            {/* Chimney */}
-            <rect x="196" y="32" width="26" height="68" fill="#1E3A5F" />
-            {/* Ground shadow */}
-            <rect x="4" y="235" width="282" height="14" fill={ACCENT} opacity={0.18} rx="7" />
-          </svg>
+      <AbsoluteFill style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '80px 60px' }}>
+
+        <div style={{ ...headline(38, ACCENT), marginBottom: 20, opacity: titleReveal, transform: `translateY(${interpolate(titleReveal, [0, 1], [-24, 0])}px)` }}>
+          YOUR JOB IS HIDING
         </div>
 
-        {/* Title */}
-        <div style={{ opacity: titleOpacity, textAlign: 'center', marginTop: 28 }}>
-          <div style={headline(34, WHITE)}>Think you know</div>
-          <div style={{ ...headline(60, ACCENT), marginTop: 8 }}>what your</div>
-          <div style={{ ...headline(60, WHITE), marginTop: 4 }}>house costs?</div>
+        <div style={{
+          ...headline(156, WHITE),
+          transform: `scale(${amountScale}) translateY(${amountY}px)`,
+          textShadow: `0 0 60px ${ACCENT}88`,
+          marginBottom: 6,
+        }}>
+          $3,840
         </div>
 
-        {/* Tag line */}
-        <div
-          style={{
-            opacity: tagOpacity,
-            transform: `scale(${tagScale})`,
-            marginTop: 38,
-            background: ACCENT,
-            borderRadius: 50,
-            padding: '16px 34px',
-          }}
-        >
-          <span style={headline(22, WHITE)}>the mortgage is just the start</span>
+        <div style={{ ...headline(34, WHITE), marginBottom: 52, opacity: amountReveal }}>
+          FROM YOU EVERY YEAR
+        </div>
+
+        {/* Person at desk + floating money bags */}
+        <svg width={560} height={340} viewBox="0 0 560 340" style={{ opacity: amountReveal }}>
+          {/* Desk surface */}
+          <rect x={80} y={240} width={400} height={16} rx={6} fill={ACCENT} />
+          <rect x={104} y={256} width={14} height={70} rx={4} fill={ACCENT} opacity={0.55} />
+          <rect x={442} y={256} width={14} height={70} rx={4} fill={ACCENT} opacity={0.55} />
+
+          {/* Laptop on desk */}
+          <rect x={196} y={170} width={168} height={100} rx={8} fill={`${ACCENT}33`} stroke={ACCENT} strokeWidth={2.5} />
+          <rect x={176} y={268} width={208} height={12} rx={5} fill={`${ACCENT}55`} />
+          <rect x={218} y={192} width={124} height={58} rx={4} fill={`${ACCENT}22`} />
+
+          {/* Person head */}
+          <circle cx={280} cy={118} r={44} fill={WHITE} opacity={0.88} />
+          {/* Person body / shirt */}
+          <path d="M230 162 Q280 145 330 162 L340 240 L220 240 Z" fill={WHITE} opacity={0.7} />
+
+          {/* Money bag 1 — left */}
+          <g style={{ transform: `translate(0, ${floatY1}px)`, opacity: bag1 }}>
+            <ellipse cx={68} cy={168} rx={38} ry={40} fill={GOLD} />
+            <text x={68} y={176} textAnchor="middle" fontSize={30} fontWeight="bold" fill={BLACK}>$</text>
+            <rect x={54} y={124} width={28} height={22} rx={7} fill="#D97706" />
+            <rect x={60} y={110} width={16} height={16} rx={4} fill="#B45309" />
+          </g>
+
+          {/* Money bag 2 — right */}
+          <g style={{ transform: `translate(0, ${floatY2}px)`, opacity: bag2 }}>
+            <ellipse cx={492} cy={155} rx={38} ry={40} fill={GOLD} />
+            <text x={492} y={163} textAnchor="middle" fontSize={30} fontWeight="bold" fill={BLACK}>$</text>
+            <rect x={478} y={111} width={28} height={22} rx={7} fill="#D97706" />
+            <rect x={484} y={97} width={16} height={16} rx={4} fill="#B45309" />
+          </g>
+
+          {/* Money bag 3 — top */}
+          <g style={{ transform: `translate(0, ${floatY3}px)`, opacity: bag3 }}>
+            <ellipse cx={280} cy={34} rx={30} ry={32} fill={GOLD} />
+            <text x={280} y={41} textAnchor="middle" fontSize={24} fontWeight="bold" fill={BLACK}>$</text>
+            <rect x={266} y={0} width={28} height={18} rx={6} fill="#D97706" />
+          </g>
+        </svg>
+
+        <div style={{ ...headline(28, `${WHITE}CC`), marginTop: 16, opacity: subReveal }}>
+          MOST WORKERS NEVER CLAIM IT
         </div>
       </AbsoluteFill>
     </FadeScene>
   );
 };
 
-// ─── Scene 2: The 1% Rule ─────────────────────────────────────────────────────
+const BENEFIT_LABELS = [
+  'Dependent Care FSA',
+  'Tuition Reimbursement',
+  'HSA Employer Match',
+  'Wellness Stipend',
+  'Commuter Benefits',
+];
+
 const Scene2: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  const iconScale = spring({ frame: frame - 10, fps, config: { stiffness: 80, damping: 15 } });
+  const titleReveal = spring({ frame, fps, config: { damping: 18, stiffness: 100 } });
+  const checkReveal = spring({ frame: Math.max(0, frame - 65), fps, config: { damping: 14, stiffness: 80 } });
 
-  const barW = interpolate(frame, [30, 110], [0, 1], {
-    extrapolateLeft: 'clamp',
-    extrapolateRight: 'clamp',
-    easing: Easing.out(Easing.cubic),
-  });
-
-  const dollarAmt = interpolate(frame, [70, 170], [0, 12000], {
-    extrapolateLeft: 'clamp',
-    extrapolateRight: 'clamp',
-  });
-
-  const titleY = interpolate(frame, [0, 25], [-60, 0], {
-    extrapolateLeft: 'clamp',
-    extrapolateRight: 'clamp',
-    easing: Easing.out(Easing.cubic),
-  });
+  const titleY = interpolate(titleReveal, [0, 1], [-30, 0]);
 
   return (
     <FadeScene bg={BG_LIGHT} dur={dur}>
-      <AbsoluteFill
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center',
-          padding: '80px 60px',
-        }}
-      >
-        {/* Header */}
-        <div style={{ transform: `translateY(${titleY}px)`, textAlign: 'center' }}>
-          <div style={headline(30, BLACK)}>THE 1% RULE</div>
-          <div style={{ ...headline(20, ACCENT), marginTop: 8 }}>your agent never mentioned</div>
+      <AbsoluteFill style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '80px 55px' }}>
+
+        <div style={{ ...headline(44, ACCENT), marginBottom: 10, transform: `translateY(${titleY}px)`, opacity: titleReveal }}>
+          42% OF WORKERS
+        </div>
+        <div style={{ ...headline(30, BLACK), marginBottom: 44, transform: `translateY(${titleY}px)`, opacity: titleReveal }}>
+          DON'T UNDERSTAND THEIR BENEFITS
         </div>
 
-        {/* House + wrench icon */}
-        <div style={{ transform: `scale(${iconScale})`, marginTop: 44 }}>
-          <svg width="160" height="155" viewBox="0 0 160 155">
-            {/* House outline */}
-            <polygon points="80,10 148,64 12,64" fill="none" stroke={BLACK} strokeWidth="5" />
-            <rect x="22" y="62" width="116" height="78" fill="none" stroke={BLACK} strokeWidth="5" rx="3" />
-            <rect x="56" y="94" width="48" height="46" fill="none" stroke={BLACK} strokeWidth="4" rx="3" />
-            {/* Wrench */}
-            <g transform="translate(94, 70) rotate(-40)">
-              <rect x="-7" y="-24" width="14" height="48" rx="5" fill={ACCENT} />
-              <ellipse cx="0" cy="-24" rx="13" ry="9" fill={ACCENT} />
-              <ellipse cx="0" cy="24" rx="11" ry="7" fill={ACCENT} />
-            </g>
-          </svg>
+        {/* Checklist card */}
+        <div style={{ background: WHITE, borderRadius: 24, padding: '32px 44px', width: '92%', boxShadow: '0 10px 50px rgba(0,0,0,0.13)' }}>
+          {BENEFIT_LABELS.map((label, i) => {
+            const itemReveal = spring({ frame: Math.max(0, frame - i * 14), fps, config: { damping: 18, stiffness: 100 } });
+            const isChecked = i === 0 && checkReveal > 0.5;
+            const itemX = interpolate(itemReveal, [0, 1], [-22, 0]);
+            return (
+              <div
+                key={i}
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  marginBottom: i < 4 ? 22 : 0,
+                  opacity: itemReveal,
+                  transform: `translateX(${itemX}px)`,
+                }}
+              >
+                <div style={{
+                  width: 34,
+                  height: 34,
+                  borderRadius: 8,
+                  border: `3px solid ${isChecked ? ACCENT : '#CBD5E0'}`,
+                  background: isChecked ? `${ACCENT}22` : 'transparent',
+                  marginRight: 22,
+                  flexShrink: 0,
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }}>
+                  {isChecked && (
+                    <div style={{
+                      width: 14,
+                      height: 9,
+                      borderBottom: `3px solid ${ACCENT}`,
+                      borderLeft: `3px solid ${ACCENT}`,
+                      transform: 'rotate(-45deg) translateY(-2px)',
+                    }} />
+                  )}
+                </div>
+                <span style={{ fontFamily: FONT, fontSize: 30, color: BLACK, letterSpacing: '0.04em' }}>
+                  {label}
+                </span>
+              </div>
+            );
+          })}
         </div>
 
-        {/* Rule text */}
-        <div style={{ textAlign: 'center', marginTop: 28 }}>
-          <div style={headline(20, BLACK)}>spend</div>
-          <div style={{ ...headline(76, ACCENT), marginTop: 6 }}>1–3%</div>
-          <div style={{ ...headline(20, BLACK), marginTop: 6 }}>of home value per year</div>
-        </div>
-
-        {/* Progress bar */}
-        <div style={{ marginTop: 38, width: '88%' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 10 }}>
-            <div style={headline(18, BLACK)}>$400K home</div>
-            <div style={headline(20, ACCENT)}>
-              ${Math.round(dollarAmt).toLocaleString()}
-            </div>
-          </div>
-          <div
-            style={{
-              width: '100%',
-              height: 26,
-              background: '#D1D5DB',
-              borderRadius: 13,
-              overflow: 'hidden',
-            }}
-          >
-            <div
-              style={{
-                width: `${barW * 100}%`,
-                height: '100%',
-                background: ACCENT,
-                borderRadius: 13,
-              }}
-            />
-          </div>
-          <div style={{ ...headline(16, '#6B7280'), marginTop: 10 }}>= up to $12,000 every year</div>
+        <div style={{ ...headline(26, BLACK), marginTop: 36, opacity: checkReveal }}>
+          THEY'RE LEAVING REAL CASH BEHIND
         </div>
       </AbsoluteFill>
     </FadeScene>
   );
 };
 
-// ─── Scene 3: Property Tax + Insurance ───────────────────────────────────────
 const Scene3: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
 
-  const taxAmt = interpolate(frame, [30, 120], [0, 3700], {
-    extrapolateLeft: 'clamp',
-    extrapolateRight: 'clamp',
-  });
+  const headerReveal = spring({ frame, fps, config: { damping: 18, stiffness: 90 } });
+  const buildingReveal = spring({ frame: Math.max(0, frame - 15), fps, config: { damping: 14, stiffness: 75 } });
+  const amountReveal = spring({ frame: Math.max(0, frame - 50), fps, config: { damping: 16, stiffness: 85 } });
 
-  const insAmt = interpolate(frame, [50, 140], [0, 1800], {
-    extrapolateLeft: 'clamp',
-    extrapolateRight: 'clamp',
-  });
-
-  const leftX = interpolate(frame, [0, 30], [-140, 0], {
-    extrapolateLeft: 'clamp',
-    extrapolateRight: 'clamp',
-    easing: Easing.out(Easing.cubic),
-  });
-
-  const rightX = interpolate(frame, [15, 45], [140, 0], {
-    extrapolateLeft: 'clamp',
-    extrapolateRight: 'clamp',
-    easing: Easing.out(Easing.cubic),
-  });
-
-  const totalOpacity = interpolate(frame, [148, 178], [0, 1], {
-    extrapolateLeft: 'clamp',
-    extrapolateRight: 'clamp',
-  });
+  const counterVal = Math.round(interpolate(frame, [50, 130], [0, 2000], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }));
+  const buildingScale = interpolate(buildingReveal, [0, 1], [0.5, 1]);
 
   return (
     <FadeScene bg={BG_DARK} dur={dur}>
-      <AbsoluteFill
-        style={{
+      <AbsoluteFill style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '80px 60px' }}>
+
+        <div style={{ ...headline(36, ACCENT), marginBottom: 6, opacity: headerReveal }}>
+          NUMBER ONE
+        </div>
+        <div style={{ ...headline(48, WHITE), marginBottom: 44, opacity: headerReveal }}>
+          DEPENDENT CARE FSA
+        </div>
+
+        {/* Daycare building SVG */}
+        <svg width={420} height={280} viewBox="0 0 420 280" style={{ transform: `scale(${buildingScale})`, opacity: buildingReveal, marginBottom: 28 }}>
+          {/* Building body */}
+          <rect x={80} y={100} width={260} height={160} rx={6} fill={`${ACCENT}33`} stroke={ACCENT} strokeWidth={3} />
+          {/* Roof */}
+          <polygon points="60,100 210,20 360,100" fill={ACCENT} opacity={0.85} />
+          {/* Door */}
+          <rect x={174} y={188} width={72} height={72} rx={6} fill={ACCENT} opacity={0.7} />
+          <circle cx={232} cy={224} r={5} fill={BLACK} />
+          {/* Windows */}
+          <rect x={102} y={124} width={56} height={44} rx={5} fill={`${WHITE}33`} stroke={ACCENT} strokeWidth={2} />
+          <rect x={262} y={124} width={56} height={44} rx={5} fill={`${WHITE}33`} stroke={ACCENT} strokeWidth={2} />
+          {/* Flag pole */}
+          <line x1={210} y1={20} x2={210} y2={0} stroke={WHITE} strokeWidth={3} />
+          <polygon points="210,0 240,10 210,20" fill={GOLD} />
+          {/* Child figure 1 */}
+          <circle cx={340} cy={215} r={20} fill={WHITE} opacity={0.75} />
+          <rect x={328} y={235} width={24} height={36} rx={8} fill={WHITE} opacity={0.55} />
+          {/* Child figure 2 */}
+          <circle cx={78} cy={218} r={18} fill={WHITE} opacity={0.75} />
+          <rect x={67} y={236} width={22} height={32} rx={7} fill={WHITE} opacity={0.55} />
+        </svg>
+
+        <div style={{
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
-          justifyContent: 'center',
-          padding: '80px 50px',
-        }}
-      >
-        <div style={headline(28, WHITE)}>TWO MORE HIDDEN COSTS</div>
-        <div style={{ ...headline(18, ACCENT), marginTop: 10 }}>before you pay for groceries</div>
-
-        {/* Cards row */}
-        <div style={{ display: 'flex', gap: 24, marginTop: 52, width: '100%' }}>
-          {/* Property Tax card */}
-          <div
-            style={{
-              transform: `translateX(${leftX}px)`,
-              flex: 1,
-              background: '#1E293B',
-              borderRadius: 18,
-              padding: '28px 18px',
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              border: `2.5px solid ${ACCENT}`,
-            }}
-          >
-            {/* Government building */}
-            <svg width="78" height="78" viewBox="0 0 78 78">
-              <rect x="9" y="30" width="60" height="40" fill={ACCENT} rx="3" />
-              <polygon points="39,5 71,30 7,30" fill={ACCENT} opacity={0.65} />
-              <rect x="20" y="40" width="12" height="16" fill={WHITE} rx="2" />
-              <rect x="46" y="40" width="12" height="16" fill={WHITE} rx="2" />
-              <rect x="31" y="50" width="16" height="20" fill={BG_DARK} rx="2" />
-              <rect x="12" y="69" width="54" height="6" fill={ACCENT} />
-            </svg>
-            <div style={{ ...headline(15, WHITE), marginTop: 14 }}>Property Tax</div>
-            <div style={{ ...headline(38, ACCENT), marginTop: 10 }}>
-              ${Math.round(taxAmt).toLocaleString()}
-            </div>
-            <div style={{ ...headline(13, '#94A3B8'), marginTop: 6 }}>per year</div>
+          opacity: amountReveal,
+          transform: `scale(${interpolate(amountReveal, [0, 1], [0.7, 1])})`,
+        }}>
+          <div style={{ ...headline(100, GOLD), textShadow: `0 0 40px ${GOLD}88` }}>
+            ${counterVal.toLocaleString()}
           </div>
-
-          {/* Insurance card */}
-          <div
-            style={{
-              transform: `translateX(${rightX}px)`,
-              flex: 1,
-              background: '#1E293B',
-              borderRadius: 18,
-              padding: '28px 18px',
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              border: `2.5px solid ${ACCENT}`,
-            }}
-          >
-            {/* Shield */}
-            <svg width="78" height="78" viewBox="0 0 78 78">
-              <path d="M39 6 L67 19 L67 42 Q67 60 39 72 Q11 60 11 42 L11 19 Z" fill={ACCENT} />
-              <path d="M39 17 L57 27 L57 42 Q57 54 39 63 Q21 54 21 42 L21 27 Z" fill="#1E293B" />
-              <polyline
-                points="29,41 36,49 51,30"
-                stroke={ACCENT}
-                strokeWidth="5"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-            <div style={{ ...headline(15, WHITE), marginTop: 14 }}>Insurance</div>
-            <div style={{ ...headline(38, ACCENT), marginTop: 10 }}>
-              ${Math.round(insAmt).toLocaleString()}
-            </div>
-            <div style={{ ...headline(13, '#94A3B8'), marginTop: 6 }}>per year</div>
+          <div style={{ ...headline(32, WHITE), marginTop: 4 }}>
+            SAVED ON TAXES / YEAR
           </div>
         </div>
 
-        {/* Combined total */}
-        <div style={{ opacity: totalOpacity, textAlign: 'center', marginTop: 40 }}>
-          <div style={headline(18, '#94A3B8')}>combined, that's another</div>
-          <div style={{ ...headline(58, WHITE), marginTop: 8 }}>$5,500+</div>
-          <div style={{ ...headline(18, ACCENT), marginTop: 8 }}>every single year</div>
+        <div style={{ ...headline(24, `${ACCENT}CC`), marginTop: 24, opacity: amountReveal }}>
+          MOST PARENTS SKIP THIS ENTIRELY
         </div>
       </AbsoluteFill>
     </FadeScene>
   );
 };
 
-// ─── Scene 4: Year-One Surprise Repair ───────────────────────────────────────
 const Scene4: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  const titleY = interpolate(frame, [0, 25], [-55, 0], {
-    extrapolateLeft: 'clamp',
-    extrapolateRight: 'clamp',
-    easing: Easing.out(Easing.cubic),
-  });
+  const headerReveal = spring({ frame, fps, config: { damping: 18, stiffness: 90 } });
+  const capReveal = spring({ frame: Math.max(0, frame - 12), fps, config: { damping: 13, stiffness: 72 } });
+  const amountReveal = spring({ frame: Math.max(0, frame - 45), fps, config: { damping: 16, stiffness: 85 } });
+  const barReveal = spring({ frame: Math.max(0, frame - 80), fps, config: { damping: 18, stiffness: 80 } });
 
-  const alertShake = interpolate(
-    frame,
-    [28, 31, 34, 37, 40, 43, 46],
-    [0, -10, 10, -7, 7, -3, 0],
-    { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }
-  );
-
-  const repairAmt = interpolate(frame, [50, 175], [0, 5400], {
-    extrapolateLeft: 'clamp',
-    extrapolateRight: 'clamp',
-  });
-
-  const statScale = spring({ frame: frame - 55, fps, config: { stiffness: 90, damping: 13 } });
+  const capBounce = interpolate(capReveal, [0, 0.6, 1], [0, -18, 0]);
+  const barWidth = interpolate(barReveal, [0, 1], [0, 94]);
 
   return (
     <FadeScene bg={BG_LIGHT} dur={dur}>
-      <AbsoluteFill
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center',
-          padding: '80px 60px',
-        }}
-      >
-        <div style={{ transform: `translateY(${titleY}px)`, textAlign: 'center' }}>
-          <div style={headline(28, BLACK)}>YEAR ONE</div>
-          <div style={{ ...headline(46, '#EF4444'), marginTop: 6 }}>SURPRISE REPAIR</div>
+      <AbsoluteFill style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '80px 60px' }}>
+
+        <div style={{ ...headline(36, ACCENT), marginBottom: 6, opacity: headerReveal }}>
+          NUMBER TWO
+        </div>
+        <div style={{ ...headline(44, BLACK), marginBottom: 40, opacity: headerReveal }}>
+          TUITION REIMBURSEMENT
         </div>
 
-        {/* House with crack */}
-        <div style={{ transform: `translateX(${alertShake}px)`, marginTop: 36 }}>
-          <svg width="240" height="204" viewBox="0 0 240 204">
-            {/* Roof */}
-            <polygon points="120,14 222,90 18,90" fill={ACCENT} opacity={0.85} />
-            {/* Body */}
-            <rect x="28" y="88" width="184" height="100" fill={BLACK} rx="4" />
-            {/* Door */}
-            <rect x="88" y="130" width="64" height="58" fill={ACCENT} opacity={0.5} rx="4" />
-            {/* Left window */}
-            <rect x="40" y="102" width="44" height="34" fill={ACCENT} opacity={0.4} rx="3" />
-            {/* Right window */}
-            <rect x="156" y="102" width="44" height="34" fill={ACCENT} opacity={0.4} rx="3" />
-            {/* Crack running down left wall */}
-            <polyline
-              points="72,90 60,112 76,126 58,148 68,166 60,184"
-              stroke="#EF4444"
-              strokeWidth="5"
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            {/* Water drops */}
-            <ellipse cx="64" cy="190" rx="5" ry="7" fill="#3B82F6" opacity={0.85} />
-            <ellipse cx="55" cy="197" rx="4" ry="5" fill="#3B82F6" opacity={0.65} />
-            <ellipse cx="73" cy="195" rx="3.5" ry="5" fill="#3B82F6" opacity={0.7} />
-            {/* Alert circle */}
-            <circle cx="196" cy="28" r="26" fill="#EF4444" />
-            {/* Exclamation mark - bar */}
-            <rect x="191" y="15" width="10" height="16" rx="4" fill={WHITE} />
-            {/* Exclamation mark - dot */}
-            <circle cx="196" cy="38" r="4.5" fill={WHITE} />
-          </svg>
+        {/* Graduation cap SVG */}
+        <svg width={400} height={240} viewBox="0 0 400 240" style={{ transform: `translateY(${capBounce}px)`, opacity: capReveal, marginBottom: 24 }}>
+          {/* Cap board */}
+          <polygon points="200,50 360,110 200,170 40,110" fill={BLACK} />
+          <polygon points="200,50 360,110 200,170 40,110" fill={ACCENT} opacity={0.15} />
+          {/* Cap top */}
+          <polygon points="200,20 360,110 200,110 40,110" fill={BLACK} stroke={ACCENT} strokeWidth={2} />
+          {/* Button on top */}
+          <circle cx={200} cy={22} r={10} fill={ACCENT} />
+          {/* Tassel string */}
+          <line x1={200} y1={22} x2={200} y2={70} stroke={GOLD} strokeWidth={3} />
+          <line x1={200} y1={70} x2={226} y2={130} stroke={GOLD} strokeWidth={3} />
+          {/* Tassel end */}
+          {Array.from({ length: Math.max(0, Math.floor(5)) }).map((_, i) => (
+            <line key={i} x1={226} y1={130} x2={220 + i * 3} y2={165} stroke={GOLD} strokeWidth={2} />
+          ))}
+          {/* Diploma scroll */}
+          <rect x={100} y={175} width={200} height={52} rx={10} fill={WHITE} stroke={ACCENT} strokeWidth={2.5} />
+          <line x1={130} y1={195} x2={270} y2={195} stroke={`${ACCENT}88`} strokeWidth={2} />
+          <line x1={130} y1={208} x2={240} y2={208} stroke={`${ACCENT}55`} strokeWidth={2} />
+          <line x1={130} y1={219} x2={210} y2={219} stroke={`${ACCENT}44`} strokeWidth={2} />
+        </svg>
+
+        <div style={{ ...headline(96, ACCENT), opacity: amountReveal, transform: `scale(${interpolate(amountReveal, [0, 1], [0.6, 1])})`, textShadow: `0 0 30px ${ACCENT}55` }}>
+          $5,250
+        </div>
+        <div style={{ ...headline(30, BLACK), marginBottom: 32, opacity: amountReveal }}>
+          PAID BY YOUR EMPLOYER / YEAR
         </div>
 
-        {/* Stats */}
-        <div style={{ textAlign: 'center', transform: `scale(${statScale})`, marginTop: 24 }}>
-          <div style={headline(20, BLACK)}>77% of first-year homeowners</div>
-          <div style={{ ...headline(18, '#6B7280'), marginTop: 6 }}>face an unexpected repair</div>
-          <div style={{ ...headline(72, '#EF4444'), marginTop: 14 }}>
-            ${Math.round(repairAmt).toLocaleString()}
+        {/* Bar showing only 2% claim it */}
+        <div style={{ width: '88%', opacity: barReveal }}>
+          <div style={{ ...headline(22, BLACK), marginBottom: 10 }}>
+            ELIGIBLE WORKERS WHO CLAIM IT
           </div>
-          <div style={{ ...headline(18, BLACK), marginTop: 4 }}>average first-year bill</div>
+          <div style={{ width: '100%', height: 28, background: '#E2E8F0', borderRadius: 14, overflow: 'hidden' }}>
+            <div style={{
+              width: `${barWidth}%`,
+              height: '100%',
+              background: ACCENT,
+              borderRadius: 14,
+              display: 'flex',
+              alignItems: 'center',
+              paddingLeft: 10,
+            }}>
+              <span style={{ fontFamily: FONT, fontSize: 18, color: WHITE, letterSpacing: '0.08em' }}>2%</span>
+            </div>
+          </div>
         </div>
       </AbsoluteFill>
     </FadeScene>
   );
 };
 
-// ─── Scene 5: Real Monthly Cost ───────────────────────────────────────────────
 const Scene5: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  const bar1W = interpolate(frame, [20, 90], [0, 1], {
-    extrapolateLeft: 'clamp',
-    extrapolateRight: 'clamp',
-    easing: Easing.out(Easing.cubic),
-  });
+  const headerReveal = spring({ frame, fps, config: { damping: 18, stiffness: 90 } });
+  const shieldReveal = spring({ frame: Math.max(0, frame - 14), fps, config: { damping: 13, stiffness: 75 } });
+  const amountReveal = spring({ frame: Math.max(0, frame - 48), fps, config: { damping: 16, stiffness: 85 } });
+  const barFill = interpolate(frame, [48, 140], [0, 88], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
 
-  const bar2W = interpolate(frame, [50, 155], [0, 1], {
-    extrapolateLeft: 'clamp',
-    extrapolateRight: 'clamp',
-    easing: Easing.out(Easing.cubic),
-  });
-
-  const labelOpacity = interpolate(frame, [90, 120], [0, 1], {
-    extrapolateLeft: 'clamp',
-    extrapolateRight: 'clamp',
-  });
-
-  const badgeScale = spring({ frame: frame - 155, fps, config: { stiffness: 120, damping: 11 } });
-  const badgeOpacity = interpolate(frame, [155, 185], [0, 1], {
-    extrapolateLeft: 'clamp',
-    extrapolateRight: 'clamp',
-  });
+  const shieldScale = interpolate(shieldReveal, [0, 1], [0.4, 1]);
 
   return (
     <FadeScene bg={BG_DARK} dur={dur}>
-      <AbsoluteFill
-        style={{
+      <AbsoluteFill style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '80px 60px' }}>
+
+        <div style={{ ...headline(36, ACCENT), marginBottom: 6, opacity: headerReveal }}>
+          NUMBER THREE
+        </div>
+        <div style={{ ...headline(40, WHITE), marginBottom: 38, opacity: headerReveal }}>
+          EMPLOYER HSA CONTRIBUTION
+        </div>
+
+        {/* HSA Shield SVG */}
+        <svg width={340} height={260} viewBox="0 0 340 260" style={{ transform: `scale(${shieldScale})`, opacity: shieldReveal, marginBottom: 22 }}>
+          {/* Shield shape */}
+          <path d="M170,16 L304,64 L304,158 Q304,220 170,252 Q36,220 36,158 L36,64 Z" fill={`${ACCENT}25`} stroke={ACCENT} strokeWidth={4} />
+          {/* Inner shield */}
+          <path d="M170,46 L276,84 L276,155 Q276,204 170,230 Q64,204 64,155 L64,84 Z" fill={`${ACCENT}15`} />
+          {/* HSA card */}
+          <rect x={100} y={95} width={140} height={88} rx={10} fill={ACCENT} opacity={0.85} />
+          <rect x={100} y={95} width={140} height={26} rx={10} fill={ACCENT} />
+          <rect x={108} y={138} width={56} height={8} rx={3} fill={`${WHITE}88`} />
+          <rect x={108} y={154} width={40} height={8} rx={3} fill={`${WHITE}55`} />
+          <text x={170} y={116} textAnchor="middle" fontSize={18} fontWeight="bold" fontFamily={FONT} fill={WHITE} letterSpacing="2">HSA</text>
+          {/* Plus sign */}
+          <rect x={154} y={157} width={32} height={8} rx={3} fill={WHITE} opacity={0.9} />
+          <rect x={166} y={145} width={8} height={32} rx={3} fill={WHITE} opacity={0.9} />
+        </svg>
+
+        <div style={{
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
-          justifyContent: 'center',
-          padding: '80px 50px',
-        }}
-      >
-        <div style={headline(28, WHITE)}>$400K HOUSE</div>
-        <div style={{ ...headline(20, ACCENT), marginTop: 8 }}>MONTHLY REALITY CHECK</div>
-
-        {/* Horizontal bars */}
-        <div style={{ width: '100%', marginTop: 54, display: 'flex', flexDirection: 'column', gap: 30 }}>
-          {/* Mortgage bar */}
-          <div>
-            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 10 }}>
-              <div style={headline(17, '#94A3B8')}>MORTGAGE PAYMENT</div>
-              <div style={{ ...headline(18, WHITE), opacity: labelOpacity }}>$2,100/mo</div>
-            </div>
-            <div
-              style={{
-                width: '100%',
-                height: 54,
-                background: '#1E293B',
-                borderRadius: 10,
-                overflow: 'hidden',
-              }}
-            >
-              <div
-                style={{
-                  width: `${bar1W * 60}%`,
-                  height: '100%',
-                  background: '#475569',
-                  borderRadius: 10,
-                }}
-              />
-            </div>
+          opacity: amountReveal,
+        }}>
+          <div style={{ ...headline(104, GOLD), textShadow: `0 0 40px ${GOLD}77` }}>
+            $878
           </div>
-
-          {/* Real cost bar */}
-          <div>
-            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 10 }}>
-              <div style={headline(17, ACCENT)}>REAL MONTHLY COST</div>
-              <div style={{ ...headline(18, ACCENT), opacity: labelOpacity }}>$3,500/mo</div>
-            </div>
-            <div
-              style={{
-                width: '100%',
-                height: 54,
-                background: '#1E293B',
-                borderRadius: 10,
-                overflow: 'hidden',
-              }}
-            >
-              <div
-                style={{
-                  width: `${bar2W * 100}%`,
-                  height: '100%',
-                  background: ACCENT,
-                  borderRadius: 10,
-                }}
-              />
-            </div>
+          <div style={{ ...headline(30, WHITE) }}>
+            FREE FROM YOUR EMPLOYER
           </div>
         </div>
 
-        {/* Badge */}
-        <div
-          style={{
-            opacity: badgeOpacity,
-            transform: `scale(${badgeScale})`,
-            marginTop: 44,
-            textAlign: 'center',
-            background: '#1E293B',
-            borderRadius: 16,
-            padding: '20px 36px',
-          }}
-        >
-          <div style={headline(18, '#94A3B8')}>that's</div>
-          <div style={{ ...headline(58, WHITE), marginTop: 6 }}>66% MORE</div>
-          <div style={{ ...headline(18, ACCENT), marginTop: 6 }}>than the sticker payment</div>
+        {/* Fill bar */}
+        <div style={{ width: '88%', marginTop: 28, opacity: amountReveal }}>
+          <div style={{ ...headline(22, `${WHITE}BB`), marginBottom: 10 }}>
+            WORKERS WHO INVEST IT
+          </div>
+          <div style={{ width: '100%', height: 28, background: `${WHITE}22`, borderRadius: 14, overflow: 'hidden' }}>
+            <div style={{
+              width: `${barFill}%`,
+              height: '100%',
+              background: ACCENT,
+              borderRadius: 14,
+            }} />
+          </div>
+          <div style={{ ...headline(20, `${WHITE}77`), marginTop: 8 }}>
+            MOST LEAVE IT SITTING AS CASH
+          </div>
         </div>
       </AbsoluteFill>
     </FadeScene>
   );
 };
 
-// ─── Scene 6: CTA ─────────────────────────────────────────────────────────────
 const Scene6: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  const piggyScale = spring({ frame: frame - 8, fps, config: { stiffness: 70, damping: 13 } });
+  const headerReveal = spring({ frame, fps, config: { damping: 18, stiffness: 90 } });
+  const laptopReveal = spring({ frame: Math.max(0, frame - 12), fps, config: { damping: 14, stiffness: 78 } });
+  const arrowReveal = spring({ frame: Math.max(0, frame - 55), fps, config: { damping: 16, stiffness: 85 } });
+  const ctaReveal = spring({ frame: Math.max(0, frame - 80), fps, config: { damping: 18, stiffness: 90 } });
 
-  const line1Opacity = interpolate(frame, [35, 60], [0, 1], {
-    extrapolateLeft: 'clamp',
-    extrapolateRight: 'clamp',
-  });
-  const line2Opacity = interpolate(frame, [60, 85], [0, 1], {
-    extrapolateLeft: 'clamp',
-    extrapolateRight: 'clamp',
-  });
-  const line3Opacity = interpolate(frame, [85, 110], [0, 1], {
-    extrapolateLeft: 'clamp',
-    extrapolateRight: 'clamp',
-  });
-
-  const ctaScale = spring({ frame: frame - 148, fps, config: { stiffness: 100, damping: 12 } });
-  const ctaOpacity = interpolate(frame, [148, 178], [0, 1], {
-    extrapolateLeft: 'clamp',
-    extrapolateRight: 'clamp',
-  });
+  const laptopY = interpolate(laptopReveal, [0, 1], [40, 0]);
+  const arrowX = interpolate(arrowReveal, [0, 1], [-16, 0]);
 
   return (
     <FadeScene bg={BG_LIGHT} dur={dur}>
-      <AbsoluteFill
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center',
-          padding: '80px 60px',
-        }}
-      >
-        {/* Piggy bank SVG */}
-        <div style={{ transform: `scale(${piggyScale})` }}>
-          <svg width="210" height="185" viewBox="0 0 210 185">
-            {/* Body */}
-            <ellipse cx="105" cy="112" rx="80" ry="58" fill={ACCENT} />
-            {/* Head */}
-            <ellipse cx="176" cy="82" rx="36" ry="32" fill={ACCENT} />
-            {/* Snout */}
-            <ellipse cx="204" cy="90" rx="15" ry="11" fill="#2563EB" />
-            {/* Nostril left */}
-            <ellipse cx="199" cy="89" rx="4" ry="3.5" fill={BG_DARK} />
-            {/* Nostril right */}
-            <ellipse cx="209" cy="89" rx="4" ry="3.5" fill={BG_DARK} />
-            {/* Eye */}
-            <circle cx="182" cy="71" r="6" fill={WHITE} />
-            <circle cx="183" cy="71" r="3" fill={BG_DARK} />
-            {/* Ear */}
-            <ellipse cx="166" cy="54" rx="11" ry="8" fill="#2563EB" />
-            {/* Coin slot */}
-            <rect x="95" y="56" width="20" height="6" rx="3" fill="#2563EB" />
-            {/* Legs */}
-            <rect x="44" y="158" width="24" height="22" rx="7" fill="#2563EB" />
-            <rect x="78" y="162" width="24" height="18" rx="7" fill="#2563EB" />
-            <rect x="114" y="162" width="24" height="18" rx="7" fill="#2563EB" />
-            <rect x="148" y="158" width="24" height="22" rx="7" fill="#2563EB" />
-            {/* Tail curl */}
-            <path
-              d="M25,105 Q13,84 25,73 Q37,62 25,51"
-              stroke="#2563EB"
-              strokeWidth="7"
-              fill="none"
-              strokeLinecap="round"
-            />
-            {/* Coin above slot */}
-            <circle cx="96" cy="44" r="16" fill="#F59E0B" />
-            <rect x="91" y="36" width="10" height="3" rx="1.5" fill={WHITE} />
-            <rect x="91" y="45" width="10" height="3" rx="1.5" fill={WHITE} />
-            <rect x="91" y="39" width="4" height="9" rx="1.5" fill={WHITE} />
-            <rect x="97" y="39" width="4" height="9" rx="1.5" fill={WHITE} />
-          </svg>
+      <AbsoluteFill style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '80px 60px' }}>
+
+        <div style={{ ...headline(48, BLACK), marginBottom: 8, opacity: headerReveal }}>
+          CLAIM WHAT'S YOURS
+        </div>
+        <div style={{ ...headline(28, ACCENT), marginBottom: 40, opacity: headerReveal }}>
+          OPEN YOUR BENEFITS PORTAL
         </div>
 
-        {/* Advice lines */}
-        <div style={{ marginTop: 30, textAlign: 'center' }}>
-          <div style={{ opacity: line1Opacity }}>
-            <div style={headline(24, BLACK)}>before you buy,</div>
-          </div>
-          <div style={{ opacity: line2Opacity, marginTop: 8 }}>
-            <div style={{ ...headline(52, ACCENT) }}>save $15,000</div>
-          </div>
-          <div style={{ opacity: line3Opacity, marginTop: 6 }}>
-            <div style={headline(22, BLACK)}>beyond your down payment</div>
-            <div style={{ ...headline(17, '#6B7280'), marginTop: 8 }}>for year-one hidden costs</div>
-          </div>
+        {/* Laptop SVG */}
+        <svg width={460} height={300} viewBox="0 0 460 300" style={{ transform: `translateY(${laptopY}px)`, opacity: laptopReveal, marginBottom: 30 }}>
+          {/* Laptop base */}
+          <rect x={50} y={240} width={360} height={18} rx={6} fill="#94A3B8" />
+          <rect x={80} y={232} width={300} height={16} rx={4} fill="#64748B" />
+          {/* Laptop screen */}
+          <rect x={70} y={40} width={320} height={200} rx={12} fill="#1E293B" stroke="#475569" strokeWidth={3} />
+          {/* Screen content — benefits portal */}
+          <rect x={82} y={52} width={296} height={176} rx={8} fill="#F8FAFC" />
+          {/* Portal header bar */}
+          <rect x={82} y={52} width={296} height={36} rx={8} fill={ACCENT} />
+          <text x={230} y={74} textAnchor="middle" fontSize={16} fontWeight="bold" fontFamily={FONT} fill={WHITE} letterSpacing="1">MY BENEFITS PORTAL</text>
+          {/* Portal rows */}
+          {[0, 1, 2].map((i) => (
+            <g key={i}>
+              <rect x={100} y={104 + i * 38} width={180} height={10} rx={4} fill="#CBD5E0" />
+              <rect x={100} y={120 + i * 38} width={120} height={8} rx={3} fill="#E2E8F0" />
+              <rect x={302} y={104 + i * 38} width={58} height={24} rx={6} fill={i === 0 ? ACCENT : '#E2E8F0'} />
+              {i === 0 && (
+                <text x={331} y={120} textAnchor="middle" fontSize={12} fontWeight="bold" fontFamily={FONT} fill={WHITE}>ENROLL</text>
+              )}
+            </g>
+          ))}
+          {/* Login button highlight */}
+          <rect x={138} y={196} width={184} height={28} rx={8} fill={ACCENT} />
+          <text x={230} y={214} textAnchor="middle" fontSize={14} fontWeight="bold" fontFamily={FONT} fill={WHITE} letterSpacing="2">LOG IN NOW</text>
+        </svg>
+
+        {/* Arrow + CTA */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 14, opacity: arrowReveal, transform: `translateX(${arrowX}px)`, marginBottom: 24 }}>
+          <div style={{ fontFamily: FONT, fontSize: 44, color: ACCENT }}>→</div>
+          <div style={{ ...headline(32, BLACK) }}>YOU'VE ALREADY EARNED IT</div>
         </div>
 
-        {/* CTA */}
-        <div
-          style={{
-            opacity: ctaOpacity,
-            transform: `scale(${ctaScale})`,
-            marginTop: 42,
-            background: ACCENT,
-            borderRadius: 50,
-            padding: '20px 48px',
-          }}
-        >
-          <div style={headline(24, WHITE)}>follow for more $$$ truth</div>
+        <div style={{
+          background: ACCENT,
+          borderRadius: 20,
+          padding: '20px 40px',
+          opacity: ctaReveal,
+          transform: `scale(${interpolate(ctaReveal, [0, 1], [0.8, 1])})`,
+        }}>
+          <div style={{ ...headline(30, WHITE) }}>
+            FOLLOW FOR A MONEY TRAP EVERY DAY
+          </div>
         </div>
       </AbsoluteFill>
     </FadeScene>
   );
 };
 
-// ─── Root composition ─────────────────────────────────────────────────────────
 export default function DAILY() {
   return (
     <AbsoluteFill style={{ background: BG_DARK }}>

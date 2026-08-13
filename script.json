@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Think your mortgage is your biggest home expense? It's not even close. The real price tag on a house surprises almost every first-time buyer — and here's what nobody tells you.",
-    "visual": "Dark background. House SVG slides up from bottom — triangle roof, rectangle walls, door, two windows. Text reveals: 'WHAT YOUR HOUSE REALLY COSTS?' with a blue accent question mark spring-bouncing in.",
-    "accent_color": "blue"
+    "narration": "Your job has nearly four thousand dollars sitting there with your name on it. Most workers never claim a single dollar. Here's what you're missing.",
+    "visual": "Dark background. Person silhouette seated at desk. Three glowing money bags floating around them, each labeled with a benefit name. '$3,840' springs onto screen in large text.",
+    "accent_color": "green"
   },
   {
     "scene": 2,
-    "narration": "Your agent never mentioned the one-percent rule. Every year, maintenance eats one to three percent of your home's value — up to $12,000 on a $400K house. And that's before anything breaks.",
-    "visual": "Light background. House outline with a wrench overlaid. Progress bar fills from left with dollar counter ticking up to $12,000. Text: '1–3% OF HOME VALUE EVERY YEAR'.",
-    "accent_color": "blue"
+    "narration": "Forty-two percent of workers don't fully understand their benefits package — and that ignorance is quietly handing back thousands in real cash every year.",
+    "visual": "Light background. Benefits enrollment checklist with five items, most unchecked. A checkmark animates into the first box to reveal the opportunity. '42% DON'T KNOW' bold headline.",
+    "accent_color": "green"
   },
   {
     "scene": 3,
-    "narration": "Property taxes and home insurance add another $5,500 a year before you pay a single repair. Most first-time buyers don't see these coming until the first bills land.",
-    "visual": "Dark background. Two cards slide in from opposite sides — government building icon for property taxes ($3,700) and shield icon for insurance ($1,800). Both counters tick up. Total appears below.",
-    "accent_color": "blue"
+    "narration": "Number one: the Dependent Care FSA. If you pay for childcare, this account cuts your tax bill by up to two thousand dollars a year — and most parents completely skip it.",
+    "visual": "Dark background. School/daycare building SVG with small child figures. '$2,000 SAVED' counter animates up. 'DEPENDENT CARE FSA' label with green accent glow.",
+    "accent_color": "green"
   },
   {
     "scene": 4,
-    "narration": "Seventy-seven percent of first-year homeowners face an unexpected repair. The average first-year bill is $5,400 — for something the home inspection missed.",
-    "visual": "Light background. House SVG with a red crack/leak running down the wall. Alert badge pulses red. $5,400 counter animates up with '77%' stat spring-bouncing into view.",
-    "accent_color": "blue"
+    "narration": "Number two: tuition reimbursement. Your employer will pay up to fifty-two hundred a year for your education — but only two percent of workers eligible for this ever claim it.",
+    "visual": "Light background. Graduation cap SVG with diploma scroll. '$5,250/YEAR' springs in. '2% CLAIM IT' counter bar showing tiny slice of eligible workers.",
+    "accent_color": "green"
   },
   {
     "scene": 5,
-    "narration": "Add it all up and a $400K home costs $3,500 a month — not the $2,100 mortgage you budgeted. That 66% gap is where first-time buyers go financially sideways.",
-    "visual": "Dark background. Two horizontal bars animate outward — shorter grey bar labeled 'MORTGAGE $2,100/mo', longer blue bar labeled 'REAL COST $3,500/mo'. '66% MORE' badge spring-pops in.",
-    "accent_color": "blue"
+    "narration": "Number three: your employer's HSA contribution. The average company adds eight hundred and seventy-eight dollars to your health savings account — and most workers let it sit uninvested.",
+    "visual": "Dark background. HSA card shape and shield icon. '$878 FREE MONEY' label. Horizontal bar filling up to show employer contribution vs unused potential.",
+    "accent_color": "green"
   },
   {
     "scene": 6,
-    "narration": "Before you buy, save $15,000 on top of your down payment for year-one hidden costs. Follow for more money truths your bank and your agent aren't mentioning.",
-    "visual": "Light background. Piggy bank SVG bounces in. Three lines of advice stagger in one by one: 'BEFORE YOU BUY', '$15,000 CUSHION', 'BEYOND YOUR DOWN PAYMENT'. Blue follow CTA button pulses at the end.",
-    "accent_color": "blue"
+    "narration": "Log into your benefits portal today. You've already earned this money — you're just not collecting it. Follow for a new money trap every single day.",
+    "visual": "Light background. Laptop SVG showing a benefits portal screen. Arrow pointing at 'LOG IN'. Green checkmark animation. 'CLAIM WHAT'S YOURS' headline bold.",
+    "accent_color": "green"
   }
 ]
