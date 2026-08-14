@@ -1,16 +1,16 @@
 {
   "tiktok": {
-    "caption": "Your job is literally hiding $3,840 from you right now — and you've never claimed it 🤯",
-    "hashtags": ["#finance", "#money", "#personalfinance", "#workperks", "#benefits", "#moneytips", "#financetok", "#adulting"]
+    "caption": "68% of workers have zero long-term disability coverage — and you're 7x more likely to need it than life insurance 😳",
+    "hashtags": ["#finance", "#money", "#personalfinance", "#disability", "#employeebenefits", "#moneytips", "#financetok", "#adulting"]
   },
   "youtube_short": {
-    "title": "Your Job Is Hiding $3,840 From You",
+    "title": "68% of Workers Have Zero Disability Insurance",
     "title_alternatives": [
-      "The $3,840 Your Employer Never Tells You About",
-      "42% of Workers Leave This Free Money Behind"
+      "One Injury Could Leave You With $0 — Here's Why",
+      "The $165K Gap in Your Benefits Nobody Talks About"
     ],
-    "description": "Your employer set aside nearly $4,000 with your name on it — and most workers never touch a dollar of it. We're talking Dependent Care FSAs, tuition reimbursement, HSA employer contributions, wellness stipends, and more. 42% of workers don't even understand what's available to them. Log into your benefits portal today and see what you've been leaving on the table. Follow for a new money trap every single day. #finance #money #personalfinance #benefits #workperks #moneytips",
-    "tags": ["finance", "money", "personal finance", "workplace benefits", "HSA", "FSA", "tuition reimbursement", "employee benefits", "money tips", "financial literacy"]
+    "description": "You insure your car, your phone, and your Netflix account — but 68% of American workers have zero long-term disability coverage. Here's the brutal truth: you're 7 times more likely to become disabled than to die during your working years. The average disability lasts 34.6 months — nearly three years without a full paycheck. Your short-term plan runs out after 6 months, and then you're completely on your own. The fix costs as little as $50 a month. Log into your HR benefits portal today and check if you're enrolled. Follow for a new money trap every single day. #finance #money #personalfinance #disability #employeebenefits #moneytips",
+    "tags": ["finance", "money", "personal finance", "disability insurance", "employee benefits", "workplace benefits", "money tips", "financial literacy", "insurance", "long-term disability"]
   },
-  "hook_line": "Your job is hiding $3,840 from you"
+  "hook_line": "68% of workers have zero disability coverage"
 }

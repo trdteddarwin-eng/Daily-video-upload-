@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Your job has nearly four thousand dollars sitting there with your name on it. Most workers never claim a single dollar. Here's what you're missing.",
-    "visual": "Dark background. Person silhouette seated at desk. Three glowing money bags floating around them, each labeled with a benefit name. '$3,840' springs onto screen in large text.",
-    "accent_color": "green"
+    "narration": "68% of American workers have zero long-term disability coverage. That's not a gap — it's a financial cliff, and here's why it's so dangerous.",
+    "visual": "Dark background. Giant '68%' text in blue springs in. Person silhouette walks toward a cliff edge. 'NO COVERAGE' flashes red at the bottom. Subtitle: 'The financial cliff nobody warns you about.'",
+    "accent_color": "blue"
   },
   {
     "scene": 2,
-    "narration": "Forty-two percent of workers don't fully understand their benefits package — and that ignorance is quietly handing back thousands in real cash every year.",
-    "visual": "Light background. Benefits enrollment checklist with five items, most unchecked. A checkmark animates into the first box to reveal the opportunity. '42% DON'T KNOW' bold headline.",
-    "accent_color": "green"
+    "narration": "Wild, right? You're 7 times more likely to become disabled than to die during your career. One in four workers lives this before retirement — so let's talk real money.",
+    "visual": "Light background. Coffin icon on left labeled '1×'. Wheelchair icon on right labeled 'DISABILITY'. Large '7×' springs in between them. Bottom stat: '1 in 4 workers disabled before retirement.'",
+    "accent_color": "blue"
   },
   {
     "scene": 3,
-    "narration": "Number one: the Dependent Care FSA. If you pay for childcare, this account cuts your tax bill by up to two thousand dollars a year — and most parents completely skip it.",
-    "visual": "Dark background. School/daycare building SVG with small child figures. '$2,000 SAVED' counter animates up. 'DEPENDENT CARE FSA' label with green accent glow.",
-    "accent_color": "green"
+    "narration": "The average disability lasts 34.6 months — nearly three years without your full paycheck. For a $55K salary, that's $165,000 in lost wages. And your workplace plan won't cover it.",
+    "visual": "Dark background. Calendar grid fills in month by month (34.6 cells highlighted in blue). Red money bar drains to empty. '$165,000' springs in large at the bottom.",
+    "accent_color": "blue"
   },
   {
     "scene": 4,
-    "narration": "Number two: tuition reimbursement. Your employer will pay up to fifty-two hundred a year for your education — but only two percent of workers eligible for this ever claim it.",
-    "visual": "Light background. Graduation cap SVG with diploma scroll. '$5,250/YEAR' springs in. '2% CLAIM IT' counter bar showing tiny slice of eligible workers.",
-    "accent_color": "green"
+    "narration": "Your short-term disability pays 60% of your salary — but only for six months. After that, you get zero. Your bills don't pause for your recovery. But here's what most workers don't know.",
+    "visual": "Light background. Vertical income bar drops from 100% (blue) to 60% (blue) to empty (red). House icon on right labeled 'Bills don't pause.' Red text appears: 'Month 7 — you're completely exposed.'",
+    "accent_color": "blue"
   },
   {
     "scene": 5,
-    "narration": "Number three: your employer's HSA contribution. The average company adds eight hundred and seventy-eight dollars to your health savings account — and most workers let it sit uninvested.",
-    "visual": "Dark background. HSA card shape and shield icon. '$878 FREE MONEY' label. Horizontal bar filling up to show employer contribution vs unused potential.",
-    "accent_color": "green"
+    "narration": "Here's the thing — real long-term disability coverage costs just 1 to 3% of your salary. That's $50 to $150 a month to protect your entire income. And you might already have access to it.",
+    "visual": "Dark background. Blue shield with dollar sign springs in, green checkmark appears. Two comparison bars: small green 'COST' bar ($50-$150/mo) vs large blue 'INCOME PROTECTED' bar. '$50/MO' springs in large.",
+    "accent_color": "blue"
   },
   {
     "scene": 6,
-    "narration": "Log into your benefits portal today. You've already earned this money — you're just not collecting it. Follow for a new money trap every single day.",
-    "visual": "Light background. Laptop SVG showing a benefits portal screen. Arrow pointing at 'LOG IN'. Green checkmark animation. 'CLAIM WHAT'S YOURS' headline bold.",
-    "accent_color": "green"
+    "narration": "Log into your HR portal and search for long-term disability today. Most employers already offer it — you just never checked the box. Don't find out you had nothing when it's too late.",
+    "visual": "Light background. Laptop with benefits portal on screen showing LTD checkbox ticked. Three blue checklist steps appear one by one. CTA: 'Check your benefits today.'",
+    "accent_color": "blue"
   }
 ]
