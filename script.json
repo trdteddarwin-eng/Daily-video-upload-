@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "68% of American workers have zero long-term disability coverage. That's not a gap — it's a financial cliff, and here's why it's so dangerous.",
-    "visual": "Dark background. Giant '68%' text in blue springs in. Person silhouette walks toward a cliff edge. 'NO COVERAGE' flashes red at the bottom. Subtitle: 'The financial cliff nobody warns you about.'",
-    "accent_color": "blue"
+    "narration": "Seventy percent of all inherited wealth is completely gone within one generation. Not because of taxes — because of psychology. And the math is brutal.",
+    "visual": "Dark background. Giant '70%' springs onto screen. Below it: 'OF INHERITED WEALTH' in amber. A $1,000,000 counter beneath slowly counts down toward zero. Bottom text: 'GONE IN ONE GENERATION' in red.",
+    "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "Wild, right? You're 7 times more likely to become disabled than to die during your career. One in four workers lives this before retirement — so let's talk real money.",
-    "visual": "Light background. Coffin icon on left labeled '1×'. Wheelchair icon on right labeled 'DISABILITY'. Large '7×' springs in between them. Bottom stat: '1 in 4 workers disabled before retirement.'",
-    "accent_color": "blue"
+    "narration": "Here's the thing — people who build wealth develop habits over decades. Heirs don't inherit those habits. They just inherit the balance. And that gap is everything.",
+    "visual": "Light background. Two person silhouettes side by side. Left: 'WEALTH BUILDER' with a growing bar chart showing years of discipline. Right: 'HEIR' with a full bar that rapidly shrinks. Labels showing 30 years vs 3 years.",
+    "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "The average disability lasts 34.6 months — nearly three years without your full paycheck. For a $55K salary, that's $165,000 in lost wages. And your workplace plan won't cover it.",
-    "visual": "Dark background. Calendar grid fills in month by month (34.6 cells highlighted in blue). Red money bar drains to empty. '$165,000' springs in large at the bottom.",
-    "accent_color": "blue"
+    "narration": "Number one thing heirs do? Lifestyle inflation. Bigger house, nicer car, luxury vacations — all in year one before they understand what they actually have.",
+    "visual": "Dark background. Three icons animate in from left: a house growing larger, a car upgrading to a sports car, a suitcase with destination tags. Each has an amber price tag subtracting from an inheritance counter at the top.",
+    "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "Your short-term disability pays 60% of your salary — but only for six months. After that, you get zero. Your bills don't pause for your recovery. But here's what most workers don't know.",
-    "visual": "Light background. Vertical income bar drops from 100% (blue) to 60% (blue) to empty (red). House icon on right labeled 'Bills don't pause.' Red text appears: 'Month 7 — you're completely exposed.'",
-    "accent_color": "blue"
+    "narration": "Studies tracking five thousand wealthy families found ninety percent of fortunes are gone by the third generation. That's not bad luck — that's a pattern.",
+    "visual": "Light background. Three piggy banks in a row labeled 'Generation 1,' 'Generation 2,' 'Generation 3.' Gen 1 is full and golden. Gen 2 is half-full with a crack. Gen 3 is empty and broken. Percentage labels: 100%, 30%, 10%.",
+    "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "Here's the thing — real long-term disability coverage costs just 1 to 3% of your salary. That's $50 to $150 a month to protect your entire income. And you might already have access to it.",
-    "visual": "Dark background. Blue shield with dollar sign springs in, green checkmark appears. Two comparison bars: small green 'COST' bar ($50-$150/mo) vs large blue 'INCOME PROTECTED' bar. '$50/MO' springs in large.",
-    "accent_color": "blue"
+    "narration": "The $84 trillion Great Wealth Transfer is happening right now. And without the right habits, most of that money won't make it to your grandchildren.",
+    "visual": "Dark background. '$84 TRILLION' in massive amber text with a transfer arrow pointing from an older person silhouette to a younger one. A crack appears through the arrow. A progress bar showing 'Currently Transferring' fills across the screen.",
+    "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "Log into your HR portal and search for long-term disability today. Most employers already offer it — you just never checked the box. Don't find out you had nothing when it's too late.",
-    "visual": "Light background. Laptop with benefits portal on screen showing LTD checkbox ticked. Three blue checklist steps appear one by one. CTA: 'Check your benefits today.'",
-    "accent_color": "blue"
+    "narration": "Whether you're building wealth or expecting to inherit it, habits matter more than the balance. The money follows the mindset — follow for the mindset shift.",
+    "visual": "Light background. Two diverging path arrows: left path labeled 'HABITS' leads to a growing chart icon. Right path labeled 'WINDFALL ONLY' leads to a zero. A person silhouette stands at the fork choosing the left path. Follow prompt at bottom.",
+    "accent_color": "amber"
   }
 ]
