@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Seventy percent of all inherited wealth is completely gone within one generation. Not because of taxes — because of psychology. And the math is brutal.",
-    "visual": "Dark background. Giant '70%' springs onto screen. Below it: 'OF INHERITED WEALTH' in amber. A $1,000,000 counter beneath slowly counts down toward zero. Bottom text: 'GONE IN ONE GENERATION' in red.",
+    "narration": "Here's a number that'll ruin your morning. Waiting ten years to start investing doesn't cost you a decade of returns — it costs you $418,000.",
+    "visual": "Dark background. Giant '$418K' springs in from center in white. Two calendar icons labeled 'AGE 25' in green and 'AGE 35' in red appear below, each showing their final balance.",
     "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "Here's the thing — people who build wealth develop habits over decades. Heirs don't inherit those habits. They just inherit the balance. And that gap is everything.",
-    "visual": "Light background. Two person silhouettes side by side. Left: 'WEALTH BUILDER' with a growing bar chart showing years of discipline. Right: 'HEIR' with a full bar that rapidly shrinks. Labels showing 30 years vs 3 years.",
+    "narration": "Sarah starts at twenty-five — three hundred dollars a month. Forty years later, after investing $144,000 total, her account hits $798,000.",
+    "visual": "Light background. Green piggy bank SVG springs in. A bar chart rises showing $798K final balance. '$144K invested' counter ticks up below the pig.",
     "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Number one thing heirs do? Lifestyle inflation. Bigger house, nicer car, luxury vacations — all in year one before they understand what they actually have.",
-    "visual": "Dark background. Three icons animate in from left: a house growing larger, a car upgrading to a sports car, a suitcase with destination tags. Each has an amber price tag subtracting from an inheritance counter at the top.",
+    "narration": "Mike starts the exact same three hundred dollars a month — but at thirty-five. Same discipline, same returns. He only ends up with $380,000 at retirement.",
+    "visual": "Dark background. Red piggy bank SVG (same design). A shorter bar rises to $380K. The gap between his result and Sarah's is impossible to ignore.",
     "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "Studies tracking five thousand wealthy families found ninety percent of fortunes are gone by the third generation. That's not bad luck — that's a pattern.",
-    "visual": "Light background. Three piggy banks in a row labeled 'Generation 1,' 'Generation 2,' 'Generation 3.' Gen 1 is full and golden. Gen 2 is half-full with a crack. Gen 3 is empty and broken. Percentage labels: 100%, 30%, 10%.",
+    "narration": "Same money, same seven percent return, but ten years apart — the gap is $418,000. That's the real price of saying 'I'll start next year.'",
+    "visual": "Light background. Two bars side by side — green $798K tall, red $380K noticeably shorter. A red badge springs in reading '$418K DIFFERENCE'.",
     "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "The $84 trillion Great Wealth Transfer is happening right now. And without the right habits, most of that money won't make it to your grandchildren.",
-    "visual": "Dark background. '$84 TRILLION' in massive amber text with a transfer arrow pointing from an older person silhouette to a younger one. A crack appears through the arrow. A progress bar showing 'Currently Transferring' fills across the screen.",
+    "narration": "The wild part — that $418,000 gap isn't the missed contributions. It's compound interest on the compound interest. Ten extra years of compounding snowballs into everything.",
+    "visual": "Dark background. Exponential growth curve animates across a chart from age 25 to 65. A dashed red line marks 'Start at 35' showing the portion of the curve that's missed.",
     "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "Whether you're building wealth or expecting to inherit it, habits matter more than the balance. The money follows the mindset — follow for the mindset shift.",
-    "visual": "Light background. Two diverging path arrows: left path labeled 'HABITS' leads to a growing chart icon. Right path labeled 'WINDFALL ONLY' leads to a zero. A person silhouette stands at the fork choosing the left path. Follow prompt at bottom.",
+    "narration": "The best time to start was yesterday. The second-best time is right now. Even fifty dollars a month today beats waiting for the perfect moment.",
+    "visual": "Light background. Calendar SVG with today's date circled in amber. A 'START NOW' button springs in. '$50/month beats waiting' text fades in below.",
     "accent_color": "amber"
   }
 ]
