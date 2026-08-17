@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Here's a number that'll ruin your morning. Waiting ten years to start investing doesn't cost you a decade of returns — it costs you $418,000.",
-    "visual": "Dark background. Giant '$418K' springs in from center in white. Two calendar icons labeled 'AGE 25' in green and 'AGE 35' in red appear below, each showing their final balance.",
+    "narration": "You think buying in bulk saves money. Scientists ran the math — and bulk buyers actually spend $1,800 more per year, not less.",
+    "visual": "Dark background. Shopping cart SVG loaded with oversized boxes and bottles. '$1,800 MORE' badge springs in red. 'Feels Like Saving' text appears with strikethrough.",
     "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "Sarah starts at twenty-five — three hundred dollars a month. Forty years later, after investing $144,000 total, her account hits $798,000.",
-    "visual": "Light background. Green piggy bank SVG springs in. A bar chart rises showing $798K final balance. '$144K invested' counter ticks up below the pig.",
+    "narration": "Wharton researchers proved a full pantry switches off your brain's restraint. You start consuming 30% faster — because the stuff is just there.",
+    "visual": "Light background. Packed pantry shelf SVG springs in, overflowing with items. A percentage counter animates from 0% to 30% in red below the shelf.",
     "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Mike starts the exact same three hundred dollars a month — but at thirty-five. Same discipline, same returns. He only ends up with $380,000 at retirement.",
-    "visual": "Dark background. Red piggy bank SVG (same design). A shorter bar rises to $380K. The gap between his result and Sarah's is impossible to ignore.",
+    "narration": "What you don't consume faster, you throw out. Bulk households waste 40% more food than targeted shoppers — real dollars in your trash can.",
+    "visual": "Dark background. Trash can SVG pops in. Three food items — old bread, wilted veggie, expired can — fall in one by one. Dollar counter climbs to $2,080.",
     "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "Same money, same seven percent return, but ten years apart — the gap is $418,000. That's the real price of saying 'I'll start next year.'",
-    "visual": "Light background. Two bars side by side — green $798K tall, red $380K noticeably shorter. A red badge springs in reading '$418K DIFFERENCE'.",
+    "narration": "Add the membership fee, the impulse buys, and wasted food — the average bulk shopper ends up $1,800 in the hole every single year.",
+    "visual": "Light background. Receipt-style card reveals three line items: Club Membership $147, Impulse Buys $800, Food Wasted $853. 'TOTAL DAMAGE: $1,800' springs in at the bottom.",
     "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "The wild part — that $418,000 gap isn't the missed contributions. It's compound interest on the compound interest. Ten extra years of compounding snowballs into everything.",
-    "visual": "Dark background. Exponential growth curve animates across a chart from age 25 to 65. A dashed red line marks 'Start at 35' showing the portion of the curve that's missed.",
+    "narration": "The wild part? You feel smarter every time you do it. Your brain gives you a 'good saver' badge — while your wallet quietly empties.",
+    "visual": "Dark background. Brain SVG with gold star badge on left versus wallet SVG with dollars flying out on right. 'Brain VS Wallet' layout. 'The savings aren't real' fades in.",
     "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "The best time to start was yesterday. The second-best time is right now. Even fifty dollars a month today beats waiting for the perfect moment.",
-    "visual": "Light background. Calendar SVG with today's date circled in amber. A 'START NOW' button springs in. '$50/month beats waiting' text fades in below.",
+    "narration": "Only buy non-perishables in bulk, and always use a list. Treat bulk shopping like a tool, not a habit — and you'll keep that $1,800.",
+    "visual": "Light background. Two green checklist items spring in: 'NON-PERISHABLES ONLY' and 'ALWAYS USE A LIST'. Piggy bank SVG grows in. '$1,800 SAVED' badge pops in green.",
     "accent_color": "amber"
   }
 ]
