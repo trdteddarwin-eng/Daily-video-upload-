@@ -1,13 +1,16 @@
 {
   "tiktok": {
-    "caption": "You're hauling those Costco bags thinking you're winning. Scientists ran the math — bulk buyers spend $1,800 MORE every year, not less.",
-    "hashtags": ["#personalfinance", "#money", "#savingmoney", "#budgeting", "#costco", "#moneytips", "#financetok", "#frugalliving", "#moneymindset"]
+    "caption": "You're paying off debt in the wrong order and it's costing you $14,000. Here's the fix that actually works 👇",
+    "hashtags": ["#debtpayoff", "#personalfinance", "#debtfree", "#creditcarddebt", "#moneytips", "#financetok", "#debtavalanche", "#moneymindset"]
   },
   "youtube_short": {
-    "title": "Bulk Buying Is a $1,800 Trap",
-    "title_alternatives": ["Why Costco Members Spend MORE Money", "The Bulk Buying Trap Nobody Talks About"],
-    "description": "You haul those giant packs home thinking you're saving money — but Wharton researchers proved bulk buyers actually spend $1,800 more every year. Full pantry means you consume 30% faster. Bulk households waste 40% more food. Add the membership fee and in-store impulse buys, and the math doesn't add up. The fix isn't quitting bulk entirely — just buy non-perishables only and always use a list. #personalfinance #money #savingmoney #budgeting #costco",
-    "tags": ["personal finance", "saving money", "bulk buying", "costco", "money tips", "budget", "food waste", "money psychology", "frugal living", "wealth habits"]
+    "title": "Wrong Debt Payoff Order Costs You $14,000",
+    "title_alternatives": [
+      "The Debt Payoff Mistake Costing You $14K",
+      "Pay Off Debt in THIS Order — Save $14,000"
+    ],
+    "description": "If you have multiple debts and you're clearing the smallest balance first, you're paying thousands more than you have to. The debt avalanche — attacking your highest interest rate first — saves up to $14,000 in total interest compared to the popular snowball method. Same debts, different order, massive difference. Your brain loves quick wins. Banks love that even more. Switch the order tonight. #debtpayoff #debtavalanche #personalfinance #moneytips #debtfree #creditcarddebt",
+    "tags": ["debt payoff", "debt avalanche", "debt snowball", "personal finance", "credit card debt", "money tips", "pay off debt fast", "finance", "money psychology", "debt free journey"]
   },
-  "hook_line": "Bulk buying costs you $1,800 more every year"
+  "hook_line": "Wrong debt order = $14,000 lost"
 }
