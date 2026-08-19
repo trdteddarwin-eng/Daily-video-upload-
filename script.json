@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "If you've got multiple debts, the order you pay them off matters more than how fast. And most people get this completely backwards.",
-    "visual": "Three credit cards spring in one by one on dark background. Each shows balance and APR: $2,000 at 18%, $6,000 at 22%, $3,000 at 27%. The 27% card pulses red.",
+    "narration": "Your beneficiary form overrides your entire will. Forty-two percent of Americans have it wrong — and that one blank line is costing families hundreds of thousands.",
+    "visual": "Split screen: a WILL document with a large red X vs. a glowing BENEFICIARY FORM with a green checkmark. Bottom badge: '42% Have It Wrong' in red.",
     "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "The most popular strategy is the debt snowball — you wipe out the smallest balance first. It feels incredible when that card hits zero, but your wallet absolutely hates it.",
-    "visual": "A snowball grows and rolls across a light background, knocking out the small $2,000 card with a green checkmark. Dollar signs float upward and vanish — wasted interest on higher-rate debts still compounding.",
+    "narration": "You got divorced in 2011 and never updated it. Your ex legally inherits your entire 401k — even if your will says otherwise.",
+    "visual": "A crossed-out gold wedding ring SVG. Arrow from '401k: $487K' to a red person silhouette labeled 'EX-SPOUSE.' Red warning banner: 'Even If Your Will Says Otherwise.'",
     "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "The debt avalanche targets your highest interest rate first — not the smallest balance. A magnifying glass locks onto that 27% card. That's the one bleeding you dry.",
-    "visual": "Three debt cards on dark background ranked last, second, first by attack order. A magnifying glass slides to focus on the 27% card. It pulses and reads ATTACK FIRST.",
+    "narration": "No beneficiary means probate — 18 months in court and $47,000 in legal fees. Your family waits two years to see a dollar of your retirement.",
+    "visual": "Courthouse with columns and gavel animation. Two bold red stats spring in: '18 MONTHS IN COURT' and '$47K IN LEGAL FEES.'",
     "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Same three debts, different order. The snowball racks up over twenty-two thousand in total interest. The avalanche cuts it to eight thousand. That's fourteen grand back in your pocket.",
-    "visual": "Split comparison on light background: left column SNOWBALL showing $22,400 total interest in red, right column AVALANCHE showing $8,400 in green. An animated counter below counts up to $14,000 difference.",
+    "narration": "Here's the new trap: the SECURE Act forces heirs to drain the account in ten years. That forced income can hit the 37% tax bracket.",
+    "visual": "Calendar with 10 numbered squares lighting up red one by one. Bold red badge: '37% TAX BRACKET HIT.' Subtitle: 'On money you spent 40 years saving.'",
     "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Here's why nobody switches — your brain craves quick wins. Knocking out a small debt floods you with dopamine. Banks spend billions making sure you chase that feeling instead of the math.",
-    "visual": "Purple brain SVG glowing with dopamine sparkles on dark background. Dollar signs flow rightward into a bank building. Text overlay: BANKS PROFIT FROM THIS BIAS.",
+    "narration": "A $500,000 retirement account handled wrong leaves just $120,000 after taxes and probate. That's $380,000 vanished — from a form you never bothered to update.",
+    "visual": "A red progress bar drains from $500,000 down to $120,000 in real time. Bold stats: '$380K VANISHED' in red and '$120K WHAT HEIRS KEEP' in green.",
     "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Tonight: list every debt, sort by interest rate highest to lowest, and throw every extra dollar at number one. That one reorder is worth fourteen thousand dollars — try it right now.",
-    "visual": "Three debts slide onto a light background sorted 1-2-3 by rate: 27%, 22%, 18%. First item glows red with an ATTACK NOW badge. Final callout box: SAVE $14,000 — just by changing the order.",
+    "narration": "Log into your retirement account today and update your beneficiary. It takes five minutes. One form protects everything you spent a lifetime building. Don't wait.",
+    "visual": "Laptop SVG showing 'Update Beneficiary' screen with a green save button. Big green checkmark bounces in. Red CTA: 'UPDATE NOW.' Bottom text: 'Your family can't afford to wait.'",
     "accent_color": "red"
   }
 ]

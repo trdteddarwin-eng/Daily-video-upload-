@@ -1,16 +1,13 @@
 {
   "tiktok": {
-    "caption": "You're paying off debt in the wrong order and it's costing you $14,000. Here's the fix that actually works 👇",
-    "hashtags": ["#debtpayoff", "#personalfinance", "#debtfree", "#creditcarddebt", "#moneytips", "#financetok", "#debtavalanche", "#moneymindset"]
+    "caption": "Your ex might legally own your 401k right now and you don't even know it. One outdated form costs families $380,000 👇",
+    "hashtags": ["#personalfinance", "#moneytips", "#401k", "#retirement", "#financialfreedom", "#ira", "#moneymistakes", "#estateplanning"]
   },
   "youtube_short": {
-    "title": "Wrong Debt Payoff Order Costs You $14,000",
-    "title_alternatives": [
-      "The Debt Payoff Mistake Costing You $14K",
-      "Pay Off Debt in THIS Order — Save $14,000"
-    ],
-    "description": "If you have multiple debts and you're clearing the smallest balance first, you're paying thousands more than you have to. The debt avalanche — attacking your highest interest rate first — saves up to $14,000 in total interest compared to the popular snowball method. Same debts, different order, massive difference. Your brain loves quick wins. Banks love that even more. Switch the order tonight. #debtpayoff #debtavalanche #personalfinance #moneytips #debtfree #creditcarddebt",
-    "tags": ["debt payoff", "debt avalanche", "debt snowball", "personal finance", "credit card debt", "money tips", "pay off debt fast", "finance", "money psychology", "debt free journey"]
+    "title": "Wrong Beneficiary Wipes Out $380K",
+    "title_alternatives": ["42% of Americans Have This IRA Mistake", "One Form Destroys Your Retirement Legacy"],
+    "description": "Your beneficiary form legally overrides your will — and 42% of Americans have the wrong person listed. A single outdated form could hand your entire 401k to an ex-spouse, trigger $47,000 in probate fees, and force your heirs into the 37% tax bracket through the SECURE Act's 10-year forced withdrawal rule. That's up to $380,000 gone from a $500,000 account. Log into your retirement account today and update it. Takes five minutes. #personalfinance #retirement #401k #ira #estateplanning #moneymistakes",
+    "tags": ["personal finance", "retirement", "401k", "IRA", "beneficiary", "estate planning", "money mistakes", "wealth", "financial tips", "probate", "SECURE act", "tax planning", "inheritance", "retirement planning"]
   },
-  "hook_line": "Wrong debt order = $14,000 lost"
+  "hook_line": "Your ex might legally own your 401k right now."
 }
