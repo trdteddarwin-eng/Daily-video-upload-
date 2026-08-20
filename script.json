@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Your beneficiary form overrides your entire will. Forty-two percent of Americans have it wrong — and that one blank line is costing families hundreds of thousands.",
-    "visual": "Split screen: a WILL document with a large red X vs. a glowing BENEFICIARY FORM with a green checkmark. Bottom badge: '42% Have It Wrong' in red.",
-    "accent_color": "red"
+    "narration": "Walk into a rent-to-own store and grab a five-hundred-dollar TV. By the time you make your last payment, you'll have paid fifteen hundred and fifty-four dollars. That's not a typo.",
+    "visual": "SVG TV with $499 sticker price on screen, animated dollar counter ticking up from $499 to $1,554, 'THE REAL PRICE TAG' text appears below",
+    "accent_color": "orange"
   },
   {
     "scene": 2,
-    "narration": "You got divorced in 2011 and never updated it. Your ex legally inherits your entire 401k — even if your will says otherwise.",
-    "visual": "A crossed-out gold wedding ring SVG. Arrow from '401k: $487K' to a red person silhouette labeled 'EX-SPOUSE.' Red warning banner: 'Even If Your Will Says Otherwise.'",
-    "accent_color": "red"
+    "narration": "Here's their trick — instead of showing the total, they pitch weekly payments. Nineteen ninety-nine a week sounds harmless until you multiply it out and see what you're actually agreeing to.",
+    "visual": "Orange payment card showing '$19.99/week', then '× 78 weeks' appears, equals sign, '$1,554 TOTAL' box animates in with red background",
+    "accent_color": "orange"
   },
   {
     "scene": 3,
-    "narration": "No beneficiary means probate — 18 months in court and $47,000 in legal fees. Your family waits two years to see a dollar of your retirement.",
-    "visual": "Courthouse with columns and gavel animation. Two bold red stats spring in: '18 MONTHS IN COURT' and '$47K IN LEGAL FEES.'",
-    "accent_color": "red"
+    "narration": "Four point eight million Americans are inside rent-to-own contracts right now. Most signed up during a financial emergency, and the stores know exactly when to find them.",
+    "visual": "Grid of 40 orange person silhouettes filling in one by one, counter animating up to '4.8M', 'AMERICANS TRAPPED' label below",
+    "accent_color": "orange"
   },
   {
     "scene": 4,
-    "narration": "Here's the new trap: the SECURE Act forces heirs to drain the account in ten years. That forced income can hit the 37% tax bracket.",
-    "visual": "Calendar with 10 numbered squares lighting up red one by one. Bold red badge: '37% TAX BRACKET HIT.' Subtitle: 'On money you spent 40 years saving.'",
-    "accent_color": "red"
+    "narration": "Run the numbers and it gets uglier. The effective interest rate on most rent-to-own contracts tops one hundred and eighty-three percent — that beats most payday loans. Wild, right?",
+    "visual": "Animated bar chart: Credit Card 24% (green bar), Payday Loan 150% (amber bar), Rent-to-Own 183% (red bar) — bars grow from baseline",
+    "accent_color": "orange"
   },
   {
     "scene": 5,
-    "narration": "A $500,000 retirement account handled wrong leaves just $120,000 after taxes and probate. That's $380,000 vanished — from a form you never bothered to update.",
-    "visual": "A red progress bar drains from $500,000 down to $120,000 in real time. Bold stats: '$380K VANISHED' in red and '$120K WHAT HEIRS KEEP' in green.",
-    "accent_color": "red"
+    "narration": "Think the early buyout option saves you? It still costs eighty percent over retail. There's no good deal buried in these contracts — they're engineered to extract the maximum.",
+    "visual": "Three animated price tags stacking in: 'Retail $499' in green, 'Early Buyout $898' in orange, 'Full Term $1,554' in red with 311% label",
+    "accent_color": "orange"
   },
   {
     "scene": 6,
-    "narration": "Log into your retirement account today and update your beneficiary. It takes five minutes. One form protects everything you spent a lifetime building. Don't wait.",
-    "visual": "Laptop SVG showing 'Update Beneficiary' screen with a green save button. Big green checkmark bounces in. Red CTA: 'UPDATE NOW.' Bottom text: 'Your family can't afford to wait.'",
-    "accent_color": "red"
+    "narration": "Before you ever walk into one of those stores, check credit unions, secondhand apps, or layaway first. Now that you know the real number, you can't unsee it.",
+    "visual": "Three option boxes slide in: credit union building icon, secondhand price tag icon, layaway calendar icon — 'BETTER OPTIONS' header, 'FOLLOW FOR MONEY FACTS' CTA",
+    "accent_color": "orange"
   }
 ]

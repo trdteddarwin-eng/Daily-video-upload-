@@ -1,13 +1,16 @@
 {
   "tiktok": {
-    "caption": "Your ex might legally own your 401k right now and you don't even know it. One outdated form costs families $380,000 👇",
-    "hashtags": ["#personalfinance", "#moneytips", "#401k", "#retirement", "#financialfreedom", "#ira", "#moneymistakes", "#estateplanning"]
+    "caption": "You walked in for a $499 TV and agreed to pay $1,554. Rent-to-own is legal loan sharking — here's the math.",
+    "hashtags": ["#finance", "#money", "#moneytips", "#renttoown", "#financetok", "#personalfinance", "#moneyhacks", "#financialfreedom"]
   },
   "youtube_short": {
-    "title": "Wrong Beneficiary Wipes Out $380K",
-    "title_alternatives": ["42% of Americans Have This IRA Mistake", "One Form Destroys Your Retirement Legacy"],
-    "description": "Your beneficiary form legally overrides your will — and 42% of Americans have the wrong person listed. A single outdated form could hand your entire 401k to an ex-spouse, trigger $47,000 in probate fees, and force your heirs into the 37% tax bracket through the SECURE Act's 10-year forced withdrawal rule. That's up to $380,000 gone from a $500,000 account. Log into your retirement account today and update it. Takes five minutes. #personalfinance #retirement #401k #ira #estateplanning #moneymistakes",
-    "tags": ["personal finance", "retirement", "401k", "IRA", "beneficiary", "estate planning", "money mistakes", "wealth", "financial tips", "probate", "SECURE act", "tax planning", "inheritance", "retirement planning"]
+    "title": "Rent-to-Own Charges 311% — Here's the Math",
+    "title_alternatives": [
+      "The $499 TV That Costs $1,554 at Rent-to-Own",
+      "Rent-to-Own Is Legal Loan Sharking — Proof"
+    ],
+    "description": "That 'low weekly payment' at rent-to-own stores isn't cheap — it's a trap. A $499 TV costs $1,554 by the time you make your last payment. The effective interest rate? 183% — worse than most payday loans. And the early buyout option still runs 80% above retail. There's no good deal buried in these contracts. 4.8 million Americans are inside them right now. Always check credit unions, secondhand apps, or layaway first. #renttoown #personalfinance #moneytips\n\nFollow for daily money facts that save you thousands.",
+    "tags": ["rent to own", "personal finance", "money tips", "financial literacy", "money psychology", "finance", "savings", "debt trap", "money facts", "financial education", "rent a center"]
   },
-  "hook_line": "Your ex might legally own your 401k right now."
+  "hook_line": "A $499 TV... that costs $1,554."
 }
