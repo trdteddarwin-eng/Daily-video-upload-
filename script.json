@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Walk into a rent-to-own store and grab a five-hundred-dollar TV. By the time you make your last payment, you'll have paid fifteen hundred and fifty-four dollars. That's not a typo.",
-    "visual": "SVG TV with $499 sticker price on screen, animated dollar counter ticking up from $499 to $1,554, 'THE REAL PRICE TAG' text appears below",
-    "accent_color": "orange"
+    "narration": "You got a bonus. You told yourself you'd invest it 'when things calmed down.' Sixty percent of investors do this exact thing — and it has a name.",
+    "visual": "Dark background. Phone displaying a bank balance of $50,000. Below it, three stacked green dollar bills pulsing gently. A counter animates up to '60%' in white. Amber accent label reads 'THE WAITING GAME.'",
+    "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "Here's their trick — instead of showing the total, they pitch weekly payments. Nineteen ninety-nine a week sounds harmless until you multiply it out and see what you're actually agreeing to.",
-    "visual": "Orange payment card showing '$19.99/week', then '× 78 weeks' appears, equals sign, '$1,554 TOTAL' box animates in with red background",
-    "accent_color": "orange"
+    "narration": "It's called cash drag. Your money sits still while the market keeps moving. Researchers have measured exactly what that costs you — and it's brutal.",
+    "visual": "Light background. Left side: stack of dollar bills with dust particles drifting off them. Right side: rising amber bar chart. VS label in the center. Labels read 'WAITING' in red and 'INVESTED +7%/YR' in green.",
+    "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Four point eight million Americans are inside rent-to-own contracts right now. Most signed up during a financial emergency, and the stores know exactly when to find them.",
-    "visual": "Grid of 40 orange person silhouettes filling in one by one, counter animating up to '4.8M', 'AMERICANS TRAPPED' label below",
-    "accent_color": "orange"
+    "narration": "Studies show the average investor waits fourteen months before putting money in. On fifty thousand dollars, that's forty-one hundred dollars you simply didn't make.",
+    "visual": "Dark background. A 14-square calendar grid animates in. Below it, a red progress bar fills across, and a counter climbs from $0 to -$4,100 in red. Label reads 'MISSED GROWTH.'",
+    "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "Run the numbers and it gets uglier. The effective interest rate on most rent-to-own contracts tops one hundred and eighty-three percent — that beats most payday loans. Wild, right?",
-    "visual": "Animated bar chart: Credit Card 24% (green bar), Payday Loan 150% (amber bar), Rent-to-Own 183% (red bar) — bars grow from baseline",
-    "accent_color": "orange"
+    "narration": "Here's the psychology — your brain evolved to wait for danger to pass before acting. But markets reward the people who act first, not the people who wait for certainty.",
+    "visual": "Light background. Brain SVG with two hemispheres springs in from center. An arrow points from 'WAITING = SAFE?' box in red to 'COSTLY' box in amber. Simple, bold contrast.",
+    "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "Think the early buyout option saves you? It still costs eighty percent over retail. There's no good deal buried in these contracts — they're engineered to extract the maximum.",
-    "visual": "Three animated price tags stacking in: 'Retail $499' in green, 'Early Buyout $898' in orange, 'Full Term $1,554' in red with 311% label",
-    "accent_color": "orange"
+    "narration": "Over a thirty-year career, five delays like that compound into a hundred and sixty-three thousand dollars gone. That's a retirement vacation fund — erased by hesitation.",
+    "visual": "Dark background. Two piggy banks side by side. Left (smaller, red-pink): labeled 'WAITER $837K.' Right (larger, amber): labeled 'INVESTOR $1M.' Between them a counter climbs to '-$163,000' in red.",
+    "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "Before you ever walk into one of those stores, check credit unions, secondhand apps, or layaway first. Now that you know the real number, you can't unsee it.",
-    "visual": "Three option boxes slide in: credit union building icon, secondhand price tag icon, layaway calendar icon — 'BETTER OPTIONS' header, 'FOLLOW FOR MONEY FACTS' CTA",
-    "accent_color": "orange"
+    "narration": "Vanguard proved lump-sum investing beats waiting for a dip sixty-eight percent of the time. The best day to invest was yesterday — the second best is right now.",
+    "visual": "Light background. Spinning clock SVG with amber minute hand. Headline animates in: 'TIME IN THE MARKET BEATS TIMING IT.' Amber CTA box at bottom: 'FOLLOW FOR MORE MONEY TRUTHS.'",
+    "accent_color": "amber"
   }
 ]
