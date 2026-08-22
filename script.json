@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You got a bonus. You told yourself you'd invest it 'when things calmed down.' Sixty percent of investors do this exact thing — and it has a name.",
-    "visual": "Dark background. Phone displaying a bank balance of $50,000. Below it, three stacked green dollar bills pulsing gently. A counter animates up to '60%' in white. Amber accent label reads 'THE WAITING GAME.'",
+    "narration": "You've been swiping that rewards card thinking you're winning. But here's the thing — most of those points are quietly dying before you ever use them.",
+    "visual": "Dark background. Center: a loyalty rewards credit card (rectangle with chip and three gold stars) springs in. Gold stars rain down from above, then three of them get red X marks slashed through them.",
     "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "It's called cash drag. Your money sits still while the market keeps moving. Researchers have measured exactly what that costs you — and it's brutal.",
-    "visual": "Light background. Left side: stack of dollar bills with dust particles drifting off them. Right side: rising amber bar chart. VS label in the center. Labels read 'WAITING' in red and 'INVESTED +7%/YR' in green.",
+    "narration": "Americans are sitting on forty-eight billion dollars in unredeemed loyalty points right now. And the average household loses five hundred and twelve dollars to expiration every single year.",
+    "visual": "Light background. A pink piggy bank with coins leaking from a hole in its side. Large '$48B' counter animates up from zero. An amber highlight box reveals '$512 EXPIRES UNUSED EVERY YEAR'.",
     "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Studies show the average investor waits fourteen months before putting money in. On fifty thousand dollars, that's forty-one hundred dollars you simply didn't make.",
-    "visual": "Dark background. A 14-square calendar grid animates in. Below it, a red progress bar fills across, and a counter climbs from $0 to -$4,100 in red. Label reads 'MISSED GROWTH.'",
+    "narration": "You're enrolled in roughly fifteen loyalty programs but actively use fewer than seven. The other eight are quietly counting down to zero.",
+    "visual": "Dark background. A grid of 15 circles pops in one by one — 7 glowing amber labeled with program types (active), 8 dark gray with red X marks (inactive, expiring). Stats show '14.8 enrolled, only 6.7 used'.",
     "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "Here's the psychology — your brain evolved to wait for danger to pass before acting. But markets reward the people who act first, not the people who wait for certainty.",
-    "visual": "Light background. Brain SVG with two hemispheres springs in from center. An arrow points from 'WAITING = SAFE?' box in red to 'COSTLY' box in amber. Simple, bold contrast.",
+    "narration": "Airlines expire your miles after eighteen months of no activity. Hotels delete your points in twelve. Your credit card buries the expiration deadline in forty-seven pages of fine print.",
+    "visual": "Light background. Three icons appear in sequence from top: an airplane (blue) labeled '18 MONTHS INACTIVITY', a hotel bed (green) labeled '12 MONTHS INACTIVITY', and a red credit card labeled 'BURIED IN THE FINE PRINT'.",
     "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "Over a thirty-year career, five delays like that compound into a hundred and sixty-three thousand dollars gone. That's a retirement vacation fund — erased by hesitation.",
-    "visual": "Dark background. Two piggy banks side by side. Left (smaller, red-pink): labeled 'WAITER $837K.' Right (larger, amber): labeled 'INVESTOR $1M.' Between them a counter climbs to '-$163,000' in red.",
+    "narration": "And here's what makes it even worse — airlines have slashed the value of your miles by forty-three percent since 2015. Your points are losing purchasing power even as you wait to use them.",
+    "visual": "Dark background. A bar chart showing airline mile value declining: 2015 (1.5 cents, green), 2018 (1.2 cents, amber), 2021 (1.0 cents, orange), 2024 (0.85 cents, red). Bars animate up, then a dashed red trend line connects the tops with '-43% VALUE' label.",
     "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "Vanguard proved lump-sum investing beats waiting for a dip sixty-eight percent of the time. The best day to invest was yesterday — the second best is right now.",
-    "visual": "Light background. Spinning clock SVG with amber minute hand. Headline animates in: 'TIME IN THE MARKET BEATS TIMING IT.' Amber CTA box at bottom: 'FOLLOW FOR MORE MONEY TRUTHS.'",
+    "narration": "Check every loyalty account you have this week. Use the points, transfer them, or cash out before they vanish. Follow for more money traps nobody warned you about.",
+    "visual": "Light background. A phone showing a loyalty tracker app with a warning banner '3 EXPIRING SOON'. Three green checkmarks animate in one by one: USE YOUR POINTS NOW, TRANSFER OR CASH OUT, SET EXPIRY REMINDERS. Amber 'FOLLOW FOR MORE MONEY TRAPS' CTA at bottom.",
     "accent_color": "amber"
   }
 ]
