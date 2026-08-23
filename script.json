@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You've been swiping that rewards card thinking you're winning. But here's the thing — most of those points are quietly dying before you ever use them.",
-    "visual": "Dark background. Center: a loyalty rewards credit card (rectangle with chip and three gold stars) springs in. Gold stars rain down from above, then three of them get red X marks slashed through them.",
-    "accent_color": "amber"
+    "narration": "If you shopped online today on your iPhone, you might've paid 30% more than the person next to you — for the exact same item. It's called dynamic pricing, and it's 100% legal.",
+    "visual": "Two smartphones side by side — iPhone showing hotel room at $234, Android showing same room at $189. Both phones slide in from opposite sides. Alert badge pops in: 'SAME ROOM. SAME NIGHT.'",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Americans are sitting on forty-eight billion dollars in unredeemed loyalty points right now. And the average household loses five hundred and twelve dollars to expiration every single year.",
-    "visual": "Light background. A pink piggy bank with coins leaking from a hole in its side. Large '$48B' counter animates up from zero. An amber highlight box reveals '$512 EXPIRES UNUSED EVERY YEAR'.",
-    "accent_color": "amber"
+    "narration": "Amazon alone changes its prices two and a half million times every single day. Algorithms look at your device, your location, and your browsing history to decide what to charge you.",
+    "visual": "Animated counter rapidly counting up to 2,500,000 on dark display. Bar chart below shows volatile price history for one item — alternating red and green bars revealing left to right.",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "You're enrolled in roughly fifteen loyalty programs but actively use fewer than seven. The other eight are quietly counting down to zero.",
-    "visual": "Dark background. A grid of 15 circles pops in one by one — 7 glowing amber labeled with program types (active), 8 dark gray with red X marks (inactive, expiring). Stats show '14.8 enrolled, only 6.7 used'.",
-    "accent_color": "amber"
+    "narration": "Studies found Mac and iPhone users get shown prices up to 30% higher on the same hotels and flights. Orbitz was literally caught hiding cheaper rooms from Apple users back in 2012.",
+    "visual": "Large '30%' percentage counts up on dark background with 'MORE' beside it. Fact card slides up showing the Orbitz Wall Street Journal story as source.",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Airlines expire your miles after eighteen months of no activity. Hotels delete your points in twelve. Your credit card buries the expiration deadline in forty-seven pages of fine print.",
-    "visual": "Light background. Three icons appear in sequence from top: an airplane (blue) labeled '18 MONTHS INACTIVITY', a hotel bed (green) labeled '12 MONTHS INACTIVITY', and a red credit card labeled 'BURIED IN THE FINE PRINT'.",
-    "accent_color": "amber"
+    "narration": "Visit a product page three times and the algorithm flags you as interested — then bumps the price. Researchers documented markups as high as 15% just for repeat visits.",
+    "visual": "Three browser windows appear in sequence: Visit #1 shows $287, Visit #2 shows $304, Visit #3 shows $329. Arrow between each visit. Cookie icon with red X appears at bottom.",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "And here's what makes it even worse — airlines have slashed the value of your miles by forty-three percent since 2015. Your points are losing purchasing power even as you wait to use them.",
-    "visual": "Dark background. A bar chart showing airline mile value declining: 2015 (1.5 cents, green), 2018 (1.2 cents, amber), 2021 (1.0 cents, orange), 2024 (0.85 cents, red). Bars animate up, then a dashed red trend line connects the tops with '-43% VALUE' label.",
-    "accent_color": "amber"
+    "narration": "The fix is dead simple: open an incognito window, clear your cookies, or use a VPN before any big purchase. This tiny habit saves shoppers between $200 and $800 every single year.",
+    "visual": "Three green cards slide in stacked vertically: incognito glasses icon, cookie with X icon, VPN shield icon. Green savings badge springs in: '$200–$800/YEAR'.",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Check every loyalty account you have this week. Use the points, transfer them, or cash out before they vanish. Follow for more money traps nobody warned you about.",
-    "visual": "Light background. A phone showing a loyalty tracker app with a warning banner '3 EXPIRING SOON'. Three green checkmarks animate in one by one: USE YOUR POINTS NOW, TRANSFER OR CASH OUT, SET EXPIRY REMINDERS. Amber 'FOLLOW FOR MORE MONEY TRAPS' CTA at bottom.",
-    "accent_color": "amber"
+    "narration": "The algorithm knows your shopping habits better than you do — and it's pricing accordingly. Follow for more traps they don't want you to catch.",
+    "visual": "Three dark stat tiles appear showing key numbers: 2.5M, 30%, $200–$800. Large red FOLLOW button springs in at the bottom of the screen.",
+    "accent_color": "red"
   }
 ]

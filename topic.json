@@ -1,13 +1,13 @@
 {
-  "title": "Your Loyalty Points Are Expiring — $512 Gone",
-  "hook": "You've been collecting points for years thinking you're winning — and $512 of it is silently expiring before you ever use a dime.",
-  "angle": "While most content focuses on earning points, this exposes the business model: $48B in unredeemed points the companies deliberately designed to expire",
-  "audience": "Anyone with rewards credit cards, frequent flyer miles, or hotel points they haven't actively used recently",
+  "title": "Websites Charge iPhone Users 30% More — Legally",
+  "hook": "If you shopped online today on your iPhone, you might've paid 30% more than the person next to you — for the exact same item.",
+  "angle": "Dynamic pricing algorithms profile users by device type, browsing history, and location to charge different people different prices — and most consumers have no idea it's happening",
+  "audience": "Anyone who shops online, especially Apple device users and frequent online shoppers",
   "key_numbers": [
-    "$48 billion in unredeemed US loyalty points total",
-    "$512 average per household expires unused every year",
-    "14.8 programs enrolled, only 6.7 actively used",
-    "Airlines delete miles after 18 months of inactivity",
-    "Airline miles lost 43% of their value since 2015"
+    "Amazon changes prices 2.5 million times per day",
+    "Mac and iPhone users shown prices up to 30% higher on hotels and flights",
+    "Orbitz caught hiding cheaper hotel rooms from Apple users — 2012 WSJ investigation",
+    "Repeat visits to a product page can trigger a 15% markup",
+    "Incognito browsing saves shoppers $200 to $800 per year"
   ]
 }

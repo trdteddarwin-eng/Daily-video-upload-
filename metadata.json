@@ -1,16 +1,16 @@
 {
   "tiktok": {
-    "caption": "You have $512 in loyalty points expiring this year and you don't even know it. And airlines cut mile values 43% since 2015. Your points are dying twice.",
-    "hashtags": ["#loyaltypoints", "#moneytrap", "#personalfinance", "#creditcardrewards", "#financetok", "#moneyhacks", "#moneypsychology", "#savemoney"]
+    "caption": "Your iPhone is getting you charged 30% more for the same item — and it's completely legal",
+    "hashtags": ["#finance", "#money", "#savemoney", "#shoppinghacks", "#dynamicpricing", "#iphone", "#amazon", "#moneytips", "#personalfinance", "#lifehack"]
   },
   "youtube_short": {
-    "title": "Your Loyalty Points Are Secretly Dying",
+    "title": "Websites Charge iPhone Users 30% More",
     "title_alternatives": [
-      "$512 in Points Expiring While You Sleep",
-      "The Loyalty Program Trap Nobody Talks About"
+      "Your Phone Type Determines Your Price Online",
+      "Dynamic Pricing: Why Your iPhone Costs You More"
     ],
-    "description": "Americans are sitting on $48 billion in unredeemed loyalty points — and the average household loses $512 to expiration every single year without realizing it. You're enrolled in nearly 15 programs but only actively use 7. Airlines delete your miles after 18 months of inactivity. Hotels wipe points in 12. And if you think your points are sitting there safely? Airline mile values have dropped 43% since 2015 — so they're losing purchasing power even before they expire. Go check every loyalty account you have this week. #loyaltypoints #personalfinance #moneytips #creditcardrewards #financetips",
-    "tags": ["loyalty points", "credit card rewards", "personal finance", "money tips", "rewards programs", "frequent flyer miles", "hotel points", "money traps", "finance", "money psychology"]
+    "description": "Amazon changes its prices 2.5 million times a day — and your device type determines what price you see. Studies show Mac and iPhone users get shown prices up to 30% higher on hotels and flights. Orbitz was literally caught hiding cheaper rooms from Apple users in 2012. The fix is simple: open an incognito window, clear your cookies, or use a VPN before big purchases. That one habit saves shoppers $200 to $800 every year. Follow for more money traps they don't want you to find. #finance #money #dynamicpricing #shoppinghacks #personalfinance",
+    "tags": ["finance", "money", "dynamic pricing", "shopping hacks", "save money", "iphone", "amazon", "personal finance", "money tips", "incognito mode", "online shopping", "price discrimination"]
   },
-  "hook_line": "Your points are quietly dying"
+  "hook_line": "Your iPhone costs you 30% more online"
 }
