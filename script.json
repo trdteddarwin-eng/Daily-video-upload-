@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "If you shopped online today on your iPhone, you might've paid 30% more than the person next to you — for the exact same item. It's called dynamic pricing, and it's 100% legal.",
-    "visual": "Two smartphones side by side — iPhone showing hotel room at $234, Android showing same room at $189. Both phones slide in from opposite sides. Alert badge pops in: 'SAME ROOM. SAME NIGHT.'",
+    "narration": "One in ten Americans is renting a storage unit right now. It feels like a smart temporary fix — but most people keep paying for four years or more, and the math is brutal.",
+    "visual": "Storage unit door with padlock and horizontal metal slats. '$190/mo' badge springs in. '1 in 10 Americans' stat fades in below.",
     "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Amazon alone changes its prices two and a half million times every single day. Algorithms look at your device, your location, and your browsing history to decide what to charge you.",
-    "visual": "Animated counter rapidly counting up to 2,500,000 on dark display. Bar chart below shows volatile price history for one item — alternating red and green bars revealing left to right.",
+    "narration": "The average unit runs $190 a month — that's $2,280 a year. And most people signed up thinking 'just a few months.' Sound familiar?",
+    "visual": "Dollar counter animating up to $2,280 on a dark card. Below it, a 12-month calendar grid fills in square by square as months tick by.",
     "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Studies found Mac and iPhone users get shown prices up to 30% higher on the same hotels and flights. Orbitz was literally caught hiding cheaper rooms from Apple users back in 2012.",
-    "visual": "Large '30%' percentage counts up on dark background with 'MORE' beside it. Fact card slides up showing the Orbitz Wall Street Journal story as source.",
+    "narration": "Here's where it gets wild. The typical renter keeps their unit for four years. That's $9,120 total. And sixty-five percent say the stuff inside is worth less than what they've already paid.",
+    "visual": "Two side-by-side bar charts growing: 'Paid In' bar ($9,120 in red, tall) and 'Stuff Worth' bar (~$1,500 in green, short). Stat quote appears below.",
     "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Visit a product page three times and the algorithm flags you as interested — then bumps the price. Researchers documented markups as high as 15% just for repeat visits.",
-    "visual": "Three browser windows appear in sequence: Visit #1 shows $287, Visit #2 shows $304, Visit #3 shows $329. Arrow between each visit. Cookie icon with red X appears at bottom.",
+    "narration": "Americans spent thirty-nine point five billion dollars on self-storage last year — more than the entire US film industry. That's not a clutter problem, that's a psychology problem.",
+    "visual": "A film camera icon labeled 'Hollywood $33B' vs a storage unit icon labeled 'Self-Storage $39.5B'. 'Grew 700% Since 1984' stat appears below.",
     "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "The fix is dead simple: open an incognito window, clear your cookies, or use a VPN before any big purchase. This tiny habit saves shoppers between $200 and $800 every single year.",
-    "visual": "Three green cards slide in stacked vertically: incognito glasses icon, cookie with X icon, VPN shield icon. Green savings badge springs in: '$200–$800/YEAR'.",
+    "narration": "The real trap is the sunk cost. You've already paid three grand, so quitting feels like admitting you wasted it. But every month you keep paying is a fresh choice to waste even more.",
+    "visual": "Piggy bank draining with dollar bills flying out toward a storage unit. 'Sunk Cost Trap' badge springs in. Quote: 'I already paid $3,000 so I can't stop now'.",
     "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "The algorithm knows your shopping habits better than you do — and it's pricing accordingly. Follow for more traps they don't want you to catch.",
-    "visual": "Three dark stat tiles appear showing key numbers: 2.5M, 30%, $200–$800. Large red FOLLOW button springs in at the bottom of the screen.",
+    "narration": "The move that pays: sell or donate everything this weekend. What you truly can't part with probably fits in your home. Bank the rest — follow for more money moves that actually work.",
+    "visual": "Storage unit door animating open to reveal light inside. Two action buttons appear: 'Sell It' in green and 'Donate' in blue. CTA text springs in at bottom.",
     "accent_color": "red"
   }
 ]

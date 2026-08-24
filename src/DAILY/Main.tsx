@@ -7,6 +7,7 @@ const ACCENT = '#EF4444';
 const WHITE = '#F5F5F5';
 const BLACK = '#121212';
 const GREEN = '#10B981';
+const BLUE = '#3B82F6';
 const FONT = '"Arial Black", "Helvetica Neue", Arial, sans-serif';
 
 const headline = (size: number, color: string): React.CSSProperties => ({
@@ -29,77 +30,46 @@ const FadeScene: React.FC<{ children: React.ReactNode; bg: string; dur: number }
 
 const Scene1: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
-
-  const slideL = interpolate(frame, [10, 55], [-420, 0], {
-    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
-    easing: Easing.out(Easing.cubic),
+  const titleY = interpolate(frame, [5, 45], [-120, 0], {
+    extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic),
   });
-  const slideR = interpolate(frame, [10, 55], [420, 0], {
-    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
-    easing: Easing.out(Easing.cubic),
-  });
-  const titleOp = interpolate(frame, [0, 30], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const badgeOp = interpolate(frame, [85, 110], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const doorScale = spring({ frame: frame - 25, fps: 30, from: 0.4, to: 1, config: { damping: 14, stiffness: 90 } });
   const badgeScale = spring({ frame: frame - 85, fps: 30, from: 0, to: 1, config: { damping: 12, stiffness: 100 } });
+  const badgeOp = interpolate(frame, [85, 105], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const statOp = interpolate(frame, [135, 165], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
 
   return (
     <FadeScene bg={BG_DARK} dur={dur}>
-      <AbsoluteFill style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '0 40px' }}>
-        <div style={{ ...headline(54, WHITE), opacity: titleOp, marginBottom: 6, lineHeight: 1.1 }}>
-          YOU PAY MORE
-        </div>
-        <div style={{ ...headline(44, ACCENT), opacity: titleOp, marginBottom: 64, lineHeight: 1.1 }}>
-          FOR THE SAME ITEM
+      <AbsoluteFill style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '0 48px' }}>
+        <div style={{ ...headline(52, WHITE), transform: `translateY(${titleY}px)`, marginBottom: 36, lineHeight: 1.1 }}>
+          THE STORAGE<br />UNIT TRAP
         </div>
 
-        <div style={{ display: 'flex', gap: 52, alignItems: 'flex-start' }}>
-          {/* iPhone — expensive */}
-          <div style={{ transform: `translateX(${slideL}px)`, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 14 }}>
-            <svg width="148" height="284" viewBox="0 0 148 284">
-              <rect x="4" y="0" width="140" height="280" rx="22" fill="#252525" stroke="#555" strokeWidth="2" />
-              <rect x="13" y="18" width="122" height="234" rx="6" fill="#0D0D0D" />
-              <rect x="49" y="7" width="50" height="12" rx="6" fill="#1A1A1A" />
-              <rect x="17" y="76" width="114" height="92" rx="6" fill="#1C1C3A" />
-              <text x="74" y="101" textAnchor="middle" fill="#888" fontFamily="Arial, sans-serif" fontSize="10">HOTEL TONIGHT</text>
-              <text x="74" y="133" textAnchor="middle" fill={ACCENT} fontFamily="Arial Black, Arial" fontSize="30" fontWeight="bold">$234</text>
-              <text x="74" y="155" textAnchor="middle" fill="#555" fontFamily="Arial, sans-serif" fontSize="9">per night</text>
-              <rect x="53" y="262" width="42" height="4" rx="2" fill="#444" />
-            </svg>
-            <div style={{ color: '#777', fontFamily: FONT, fontSize: 26, letterSpacing: '0.1em' }}>iPHONE</div>
-            <div style={{ color: ACCENT, fontFamily: FONT, fontSize: 40, letterSpacing: '0.05em' }}>$234</div>
-          </div>
-
-          {/* Android — cheaper */}
-          <div style={{ transform: `translateX(${slideR}px)`, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 14 }}>
-            <svg width="148" height="284" viewBox="0 0 148 284">
-              <rect x="4" y="0" width="140" height="280" rx="12" fill="#252525" stroke="#555" strokeWidth="2" />
-              <rect x="13" y="8" width="122" height="254" rx="4" fill="#0D0D0D" />
-              <circle cx="74" cy="14" r="5" fill="#333" />
-              <rect x="17" y="66" width="114" height="92" rx="6" fill="#1C1C3A" />
-              <text x="74" y="91" textAnchor="middle" fill="#888" fontFamily="Arial, sans-serif" fontSize="10">HOTEL TONIGHT</text>
-              <text x="74" y="123" textAnchor="middle" fill={GREEN} fontFamily="Arial Black, Arial" fontSize="30" fontWeight="bold">$189</text>
-              <text x="74" y="145" textAnchor="middle" fill="#555" fontFamily="Arial, sans-serif" fontSize="9">per night</text>
-              <rect x="28" y="256" width="18" height="3" rx="1.5" fill="#444" />
-              <circle cx="74" cy="258" r="5" fill="none" stroke="#444" strokeWidth="2" />
-              <polygon points="108,255 120,258 108,261" fill="#444" />
-            </svg>
-            <div style={{ color: '#777', fontFamily: FONT, fontSize: 26, letterSpacing: '0.1em' }}>ANDROID</div>
-            <div style={{ color: GREEN, fontFamily: FONT, fontSize: 40, letterSpacing: '0.05em' }}>$189</div>
-          </div>
+        <div style={{ transform: `scale(${doorScale})`, marginBottom: 32 }}>
+          <svg width="280" height="220" viewBox="0 0 280 220">
+            <rect x="20" y="10" width="240" height="190" rx="4" fill="#2A2A2A" stroke={ACCENT} strokeWidth="3" />
+            <rect x="20" y="28" width="240" height="2" fill={ACCENT} opacity="0.3" />
+            <rect x="20" y="46" width="240" height="2" fill={ACCENT} opacity="0.3" />
+            <rect x="20" y="64" width="240" height="2" fill={ACCENT} opacity="0.3" />
+            <rect x="20" y="82" width="240" height="2" fill={ACCENT} opacity="0.3" />
+            <rect x="20" y="100" width="240" height="2" fill={ACCENT} opacity="0.3" />
+            <rect x="20" y="118" width="240" height="2" fill={ACCENT} opacity="0.3" />
+            <rect x="20" y="136" width="240" height="2" fill={ACCENT} opacity="0.3" />
+            <rect x="20" y="154" width="240" height="2" fill={ACCENT} opacity="0.3" />
+            <rect x="20" y="172" width="240" height="2" fill={ACCENT} opacity="0.3" />
+            <rect x="116" y="192" width="48" height="8" rx="4" fill={ACCENT} />
+            <rect x="122" y="96" width="36" height="30" rx="5" fill="#444" stroke={ACCENT} strokeWidth="2" />
+            <path d="M130 96 Q130 80 140 80 Q150 80 150 96" fill="none" stroke={ACCENT} strokeWidth="3.5" strokeLinecap="round" />
+            <circle cx="140" cy="110" r="5" fill={ACCENT} />
+          </svg>
         </div>
 
-        <div style={{
-          opacity: badgeOp,
-          transform: `scale(${badgeScale})`,
-          marginTop: 52,
-          background: ACCENT,
-          borderRadius: 14,
-          padding: '18px 36px',
-        }}>
-          <div style={{ ...headline(32, WHITE) }}>SAME ROOM. SAME NIGHT.</div>
+        <div style={{ transform: `scale(${badgeScale})`, opacity: badgeOp, background: ACCENT, borderRadius: 16, padding: '12px 36px', marginBottom: 28 }}>
+          <div style={{ ...headline(52, WHITE) }}>$190/mo</div>
         </div>
-        <div style={{ ...headline(24, '#555'), marginTop: 18, opacity: badgeOp }}>
-          100% LEGAL
+
+        <div style={{ opacity: statOp, ...headline(26, '#AAAAAA'), letterSpacing: '0.08em', lineHeight: 1.4 }}>
+          1 IN 10 AMERICANS HAS ONE
         </div>
       </AbsoluteFill>
     </FadeScene>
@@ -108,65 +78,40 @@ const Scene1: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
 
 const Scene2: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
-
-  const countVal = interpolate(frame, [10, 160], [0, 2500000], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const displayCount = Math.floor(countVal);
-
-  const bars = [82, 95, 71, 103, 89, 112, 65, 108, 78, 96];
-  const barReveal = interpolate(frame, [30, 130], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-
-  const titleOp = interpolate(frame, [0, 25], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const infoOp = interpolate(frame, [145, 175], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const titleOp = interpolate(frame, [5, 30], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const dollarVal = Math.round(interpolate(frame, [30, 145], [0, 2280], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }));
+  const monthsFilled = Math.min(12, Math.floor(interpolate(frame, [50, 165], [0, 12.99], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })));
+  const labelOp = interpolate(frame, [155, 185], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
 
   return (
     <FadeScene bg={BG_LIGHT} dur={dur}>
-      <AbsoluteFill style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '0 50px' }}>
-        <div style={{ ...headline(42, BLACK), opacity: titleOp, marginBottom: 4 }}>AMAZON CHANGES</div>
-        <div style={{ ...headline(42, BLACK), opacity: titleOp, marginBottom: 30 }}>ITS PRICES</div>
+      <AbsoluteFill style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '0 48px' }}>
+        <div style={{ opacity: titleOp, ...headline(38, BLACK), marginBottom: 36, lineHeight: 1.2 }}>
+          "JUST A FEW MONTHS..."
+        </div>
 
-        <div style={{ background: BLACK, borderRadius: 20, padding: '28px 50px', marginBottom: 10 }}>
-          <div style={{ ...headline(74, ACCENT) }}>
-            {displayCount.toLocaleString()}
+        <div style={{ background: BLACK, borderRadius: 20, padding: '20px 40px', marginBottom: 32, minWidth: 320, textAlign: 'center' }}>
+          <div style={{ fontFamily: FONT, fontSize: 72, color: ACCENT, letterSpacing: '0.05em', margin: 0 }}>
+            ${dollarVal.toLocaleString()}
           </div>
-        </div>
-        <div style={{ ...headline(32, BLACK), marginBottom: 44, opacity: titleOp }}>
-          TIMES TODAY
+          <div style={{ ...headline(22, WHITE), opacity: 0.7, marginTop: 6 }}>SPENT SO FAR</div>
         </div>
 
-        <svg width="660" height="140" viewBox="0 0 660 140">
-          {bars.map((h, i) => {
-            const idx = Math.max(0, Math.floor(i));
-            const barH = h * barReveal;
-            const x = idx * 66 + 3;
-            const isHigh = h > 95;
-            return (
-              <rect
-                key={idx}
-                x={x} y={130 - barH} width={52} height={barH}
-                fill={isHigh ? ACCENT : GREEN}
-                rx={6}
-              />
-            );
-          })}
-          <line x1="0" y1="130" x2="660" y2="130" stroke="#ccc" strokeWidth="2" />
-        </svg>
-        <div style={{ ...headline(20, '#888'), marginTop: 6, opacity: titleOp }}>
-          PRICE HISTORY — ONE SINGLE ITEM
+        <div style={{ display: 'flex', flexWrap: 'wrap' as const, gap: 8, justifyContent: 'center', maxWidth: 380, marginBottom: 24 }}>
+          {Array.from({ length: 12 }, (_, i) => (
+            <div key={i} style={{
+              width: 52, height: 52, borderRadius: 10,
+              background: i < monthsFilled ? ACCENT : '#DDDDDD',
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+            }}>
+              <span style={{ fontFamily: FONT, fontSize: 18, color: i < monthsFilled ? WHITE : '#999', letterSpacing: 0 }}>
+                {i + 1}
+              </span>
+            </div>
+          ))}
         </div>
 
-        <div style={{
-          opacity: infoOp,
-          marginTop: 36,
-          background: '#E5E7EB',
-          borderRadius: 12,
-          padding: '16px 28px',
-          maxWidth: 760,
-        }}>
-          <div style={{ fontFamily: FONT, fontSize: 26, color: BLACK, textAlign: 'center', lineHeight: 1.3 }}>
-            YOUR DEVICE + HISTORY<br />
-            <span style={{ color: ACCENT }}>DETERMINE YOUR PRICE</span>
-          </div>
-        </div>
+        <div style={{ ...headline(28, BLACK), opacity: labelOp }}>= $2,280 / YEAR</div>
       </AbsoluteFill>
     </FadeScene>
   );
@@ -174,53 +119,36 @@ const Scene2: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
 
 const Scene3: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
-
-  const titleOp = interpolate(frame, [0, 25], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const titleY = interpolate(frame, [0, 25], [50, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic) });
-
-  const pctSpring = spring({ frame: frame - 20, fps: 30, from: 0, to: 30, config: { damping: 16, stiffness: 60 } });
-
-  const factOp = interpolate(frame, [110, 145], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const factY = interpolate(frame, [110, 145], [40, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic) });
+  const titleOp = interpolate(frame, [5, 30], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const bar1H = interpolate(frame, [25, 130], [0, 300], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic) });
+  const bar2H = interpolate(frame, [55, 145], [0, 50], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic) });
+  const num1Op = interpolate(frame, [128, 155], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const num2Op = interpolate(frame, [143, 170], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const statOp = interpolate(frame, [168, 198], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
 
   return (
     <FadeScene bg={BG_DARK} dur={dur}>
-      <AbsoluteFill style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '0 50px' }}>
-        <div style={{ ...headline(44, WHITE), opacity: titleOp, transform: `translateY(${titleY}px)`, marginBottom: 10, lineHeight: 1.2 }}>
-          MAC + iPHONE USERS
-        </div>
-        <div style={{ ...headline(38, ACCENT), opacity: titleOp, transform: `translateY(${titleY}px)`, marginBottom: 20, lineHeight: 1.1 }}>
-          PAY UP TO
+      <AbsoluteFill style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '0 48px' }}>
+        <div style={{ ...headline(42, WHITE), opacity: titleOp, marginBottom: 36, lineHeight: 1.1 }}>
+          4 YEARS LATER
         </div>
 
-        <div style={{ display: 'flex', alignItems: 'baseline', gap: 12, marginBottom: 16 }}>
-          <div style={{ ...headline(170, ACCENT) }}>{Math.round(pctSpring)}</div>
-          <div style={{ ...headline(80, ACCENT) }}>%</div>
-        </div>
-        <div style={{ ...headline(46, WHITE), marginBottom: 52 }}>
-          MORE
-        </div>
-
-        <div style={{ ...headline(30, '#888'), marginBottom: 36, opacity: titleOp }}>
-          ON HOTELS AND FLIGHTS
-        </div>
-
-        <div style={{
-          opacity: factOp,
-          transform: `translateY(${factY}px)`,
-          background: '#1C1C1C',
-          borderRadius: 14,
-          padding: '22px 32px',
-          borderLeft: `6px solid ${ACCENT}`,
-          maxWidth: 820,
-        }}>
-          <div style={{ fontFamily: FONT, fontSize: 26, color: WHITE, textAlign: 'left', lineHeight: 1.45, letterSpacing: '0.05em' }}>
-            <span style={{ color: ACCENT }}>ORBITZ</span> WAS CAUGHT HIDING<br />
-            CHEAPER ROOMS FROM<br />
-            APPLE USERS — IN 2012
+        <div style={{ display: 'flex', alignItems: 'flex-end', gap: 56, marginBottom: 20, height: 340 }}>
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-end', height: '100%' }}>
+            <div style={{ opacity: num1Op, ...headline(30, ACCENT), marginBottom: 10 }}>$9,120</div>
+            <div style={{ width: 110, height: bar1H, background: ACCENT, borderRadius: '10px 10px 0 0' }} />
+            <div style={{ ...headline(20, WHITE), marginTop: 10, opacity: 0.8 }}>PAID IN</div>
           </div>
-          <div style={{ fontFamily: 'Arial, sans-serif', fontSize: 18, color: '#666', marginTop: 10 }}>
-            — Wall Street Journal investigation
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-end', height: '100%' }}>
+            <div style={{ opacity: num2Op, ...headline(30, GREEN), marginBottom: 10 }}>~$1,500</div>
+            <div style={{ width: 110, height: bar2H, background: GREEN, borderRadius: '10px 10px 0 0' }} />
+            <div style={{ ...headline(20, WHITE), marginTop: 10, opacity: 0.8 }}>STUFF WORTH</div>
+          </div>
+        </div>
+
+        <div style={{ opacity: statOp, background: ACCENT + '22', borderRadius: 14, padding: '14px 28px', borderLeft: `4px solid ${ACCENT}` }}>
+          <div style={{ ...headline(24, WHITE), letterSpacing: '0.05em' }}>
+            65% PAY MORE THAN IT'S WORTH
           </div>
         </div>
       </AbsoluteFill>
@@ -230,81 +158,50 @@ const Scene3: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
 
 const Scene4: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
-
-  const titleOp = interpolate(frame, [0, 25], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-
-  const v1Op = interpolate(frame, [20, 48], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const arr1Op = interpolate(frame, [48, 68], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const v2Op = interpolate(frame, [68, 96], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const arr2Op = interpolate(frame, [96, 116], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const v3Op = interpolate(frame, [116, 144], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-
-  const cookieOp = interpolate(frame, [155, 185], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const cookieScale = spring({ frame: frame - 155, fps: 30, from: 0, to: 1, config: { damping: 12, stiffness: 100 } });
-
-  const BrowserCard: React.FC<{ visitNum: number; price: string; label: string; op: number }> = ({ visitNum, price, label, op }) => (
-    <div style={{ opacity: op, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8 }}>
-      <svg width="168" height="128" viewBox="0 0 168 128">
-        <rect x="0" y="0" width="168" height="128" rx="10" fill="#E9ECEF" stroke="#CBD5E1" strokeWidth="2" />
-        <rect x="0" y="0" width="168" height="28" rx="10" fill="#D1D5DB" />
-        <rect x="0" y="20" width="168" height="8" fill="#D1D5DB" />
-        <circle cx="14" cy="14" r="5" fill="#EF4444" />
-        <circle cx="28" cy="14" r="5" fill="#F59E0B" />
-        <circle cx="42" cy="14" r="5" fill="#10B981" />
-        <rect x="52" y="7" width="102" height="14" rx="4" fill="#F9FAFB" />
-        <text x="84" y="72" textAnchor="middle" fill={BLACK} fontFamily="Arial Black, Arial" fontSize="13">VISIT #{visitNum}</text>
-        <text x="84" y="106" textAnchor="middle" fill={ACCENT} fontFamily="Arial Black, Arial" fontSize="28" fontWeight="bold">{price}</text>
-      </svg>
-      <div style={{ fontFamily: FONT, fontSize: 18, color: '#888', letterSpacing: '0.06em' }}>{label}</div>
-    </div>
-  );
-
-  const ArrowRight: React.FC<{ op: number }> = ({ op }) => (
-    <svg width="36" height="28" viewBox="0 0 36 28" style={{ opacity: op, marginTop: -30 }}>
-      <polygon points="0,8 26,8 26,0 36,14 26,28 26,20 0,20" fill={ACCENT} />
-    </svg>
-  );
+  const titleOp = interpolate(frame, [5, 30], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const cameraScale = spring({ frame: frame - 20, fps: 30, from: 0, to: 1, config: { damping: 13, stiffness: 90 } });
+  const storageScale = spring({ frame: frame - 55, fps: 30, from: 0, to: 1, config: { damping: 13, stiffness: 90 } });
+  const vsOp = interpolate(frame, [80, 110], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const statOp = interpolate(frame, [160, 192], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
 
   return (
     <FadeScene bg={BG_LIGHT} dur={dur}>
-      <AbsoluteFill style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '0 30px' }}>
-        <div style={{ ...headline(44, BLACK), opacity: titleOp, marginBottom: 6 }}>
-          VISIT 3 TIMES?
-        </div>
-        <div style={{ ...headline(44, ACCENT), opacity: titleOp, marginBottom: 52 }}>
-          YOU GET FLAGGED.
+      <AbsoluteFill style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '0 48px' }}>
+        <div style={{ ...headline(38, BLACK), opacity: titleOp, marginBottom: 44, lineHeight: 1.1 }}>
+          BIGGER THAN<br />HOLLYWOOD
         </div>
 
-        <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
-          <BrowserCard visitNum={1} price="$287" label="FIRST LOOK" op={v1Op} />
-          <ArrowRight op={arr1Op} />
-          <BrowserCard visitNum={2} price="$304" label="CAME BACK" op={v2Op} />
-          <ArrowRight op={arr2Op} />
-          <BrowserCard visitNum={3} price="$329" label="THEY KNOW" op={v3Op} />
-        </div>
-
-        <div style={{
-          opacity: cookieOp,
-          transform: `scale(${cookieScale})`,
-          marginTop: 52,
-          display: 'flex',
-          alignItems: 'center',
-          gap: 20,
-          background: '#F3F4F6',
-          borderRadius: 14,
-          padding: '18px 32px',
-          border: `2px solid ${ACCENT}`,
-        }}>
-          <svg width="48" height="48" viewBox="0 0 48 48">
-            <circle cx="24" cy="24" r="22" fill="#FCD34D" opacity="0.6" />
-            <circle cx="24" cy="24" r="22" fill="none" stroke={ACCENT} strokeWidth="2.5" />
-            <line x1="13" y1="13" x2="35" y2="35" stroke={ACCENT} strokeWidth="4" strokeLinecap="round" />
-            <line x1="35" y1="13" x2="13" y2="35" stroke={ACCENT} strokeWidth="4" strokeLinecap="round" />
-          </svg>
-          <div style={{ fontFamily: FONT, fontSize: 26, color: BLACK, lineHeight: 1.3 }}>
-            +15% MARKUP FROM<br />
-            <span style={{ color: ACCENT }}>YOUR COOKIES</span>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 28, marginBottom: 36 }}>
+          <div style={{ transform: `scale(${cameraScale})`, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <svg width="96" height="76" viewBox="0 0 96 76">
+              <rect x="4" y="18" width="56" height="42" rx="6" fill={BLACK} />
+              <polygon points="60,26 88,14 88,62 60,50" fill="#333" />
+              <circle cx="30" cy="39" r="13" fill="#555" />
+              <circle cx="30" cy="39" r="7" fill={BLACK} />
+            </svg>
+            <div style={{ ...headline(18, '#666'), marginTop: 4 }}>HOLLYWOOD</div>
+            <div style={{ ...headline(28, BLACK) }}>$33B</div>
           </div>
+
+          <div style={{ opacity: vsOp, ...headline(44, ACCENT) }}>VS</div>
+
+          <div style={{ transform: `scale(${storageScale})`, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <svg width="96" height="76" viewBox="0 0 96 76">
+              <rect x="4" y="12" width="88" height="56" rx="4" fill="#333" stroke={ACCENT} strokeWidth="2" />
+              <rect x="4" y="21" width="88" height="1.5" fill={ACCENT} opacity="0.45" />
+              <rect x="4" y="30" width="88" height="1.5" fill={ACCENT} opacity="0.45" />
+              <rect x="4" y="39" width="88" height="1.5" fill={ACCENT} opacity="0.45" />
+              <rect x="4" y="48" width="88" height="1.5" fill={ACCENT} opacity="0.45" />
+              <rect x="4" y="57" width="88" height="1.5" fill={ACCENT} opacity="0.45" />
+              <rect x="36" y="62" width="24" height="6" rx="3" fill={ACCENT} />
+            </svg>
+            <div style={{ ...headline(18, '#666'), marginTop: 4 }}>SELF-STORAGE</div>
+            <div style={{ ...headline(28, ACCENT) }}>$39.5B</div>
+          </div>
+        </div>
+
+        <div style={{ opacity: statOp, ...headline(26, BLACK), lineHeight: 1.3 }}>
+          GREW 700% SINCE 1984
         </div>
       </AbsoluteFill>
     </FadeScene>
@@ -313,87 +210,55 @@ const Scene4: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
 
 const Scene5: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
-
-  const titleOp = interpolate(frame, [0, 25], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-
-  const item1Scale = spring({ frame: frame - 20, fps: 30, from: 0, to: 1, config: { damping: 14 } });
-  const item2Scale = spring({ frame: frame - 60, fps: 30, from: 0, to: 1, config: { damping: 14 } });
-  const item3Scale = spring({ frame: frame - 100, fps: 30, from: 0, to: 1, config: { damping: 14 } });
-
-  const savingsOp = interpolate(frame, [148, 178], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const savingsScale = spring({ frame: frame - 148, fps: 30, from: 0.6, to: 1, config: { damping: 12, stiffness: 90 } });
+  const titleOp = interpolate(frame, [5, 30], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const piggyScale = spring({ frame: frame - 20, fps: 30, from: 0.5, to: 1, config: { damping: 14, stiffness: 80 } });
+  const drainProg = interpolate(frame, [50, 165], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.inOut(Easing.cubic) });
+  const tagOp = interpolate(frame, [130, 160], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const tagScale = spring({ frame: frame - 130, fps: 30, from: 0.5, to: 1, config: { damping: 10, stiffness: 120 } });
+  const subOp = interpolate(frame, [155, 185], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
 
   return (
     <FadeScene bg={BG_DARK} dur={dur}>
-      <AbsoluteFill style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '0 50px' }}>
-        <div style={{ ...headline(52, WHITE), opacity: titleOp, marginBottom: 6 }}>THE FIX IS</div>
-        <div style={{ ...headline(52, GREEN), opacity: titleOp, marginBottom: 56 }}>DEAD SIMPLE</div>
+      <AbsoluteFill style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '0 48px' }}>
+        <div style={{ ...headline(44, WHITE), opacity: titleOp, marginBottom: 32, lineHeight: 1.1 }}>
+          THE REAL<br />TRAP
+        </div>
 
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 26, width: '100%', maxWidth: 740 }}>
-          {/* Incognito */}
-          <div style={{
-            display: 'flex', alignItems: 'center', gap: 24,
-            transform: `scale(${item1Scale})`, opacity: item1Scale,
-            background: '#1A1A1A', borderRadius: 14, padding: '18px 24px',
-            borderLeft: `6px solid ${GREEN}`,
-          }}>
-            <svg width="52" height="52" viewBox="0 0 52 52">
-              <path d="M10 26 Q26 6 42 26" fill="#2A2A2A" stroke={GREEN} strokeWidth="2.5" />
-              <rect x="6" y="24" width="40" height="8" rx="4" fill="#333" stroke={GREEN} strokeWidth="2" />
-              <circle cx="17" cy="38" r="8" fill="none" stroke={GREEN} strokeWidth="2.5" />
-              <circle cx="35" cy="38" r="8" fill="none" stroke={GREEN} strokeWidth="2.5" />
-              <line x1="25" y1="38" x2="27" y2="38" stroke={GREEN} strokeWidth="2" />
+        <div style={{ transform: `scale(${piggyScale})`, marginBottom: 28, position: 'relative' as const }}>
+          <svg width="220" height="185" viewBox="0 0 220 185">
+            <ellipse cx="105" cy="115" rx="72" ry="60" fill="#E8A87C" />
+            <circle cx="162" cy="98" r="34" fill="#E8A87C" />
+            <ellipse cx="180" cy="106" rx="14" ry="10" fill="#D4956A" />
+            <circle cx="175" cy="103" r="3" fill="#B87040" />
+            <circle cx="183" cy="103" r="3" fill="#B87040" />
+            <circle cx="167" cy="88" r="4" fill="#333" />
+            <circle cx="168" cy="87" r="1.5" fill="white" />
+            <ellipse cx="158" cy="68" rx="9" ry="13" fill="#D4956A" />
+            <rect x="93" y="53" width="24" height="5" rx="2.5" fill="#B87040" />
+            <rect x="56" y="163" width="20" height="22" rx="8" fill="#D4956A" />
+            <rect x="80" y="166" width="20" height="19" rx="8" fill="#D4956A" />
+            <rect x="104" y="166" width="20" height="19" rx="8" fill="#D4956A" />
+            <rect x="128" y="163" width="20" height="22" rx="8" fill="#D4956A" />
+            <ellipse cx="105" cy="115" rx="72" ry="60" fill={ACCENT} opacity={drainProg * 0.3} />
+          </svg>
+          <div style={{ position: 'absolute' as const, top: 44, right: -68, opacity: drainProg }}>
+            <svg width="64" height="34" viewBox="0 0 64 34">
+              <rect x="2" y="9" width="44" height="16" rx="3" fill={ACCENT} />
+              <text x="24" y="21" textAnchor="middle" fill={WHITE} fontSize="11" fontFamily="Arial" fontWeight="bold">$$$</text>
+              <line x1="46" y1="17" x2="62" y2="17" stroke={ACCENT} strokeWidth="2.5" strokeLinecap="round" />
+              <line x1="56" y1="11" x2="62" y2="17" stroke={ACCENT} strokeWidth="2.5" strokeLinecap="round" />
+              <line x1="56" y1="23" x2="62" y2="17" stroke={ACCENT} strokeWidth="2.5" strokeLinecap="round" />
             </svg>
-            <div style={{ fontFamily: FONT, fontSize: 28, color: WHITE, letterSpacing: '0.05em' }}>
-              OPEN INCOGNITO MODE
-            </div>
-          </div>
-
-          {/* Clear cookies */}
-          <div style={{
-            display: 'flex', alignItems: 'center', gap: 24,
-            transform: `scale(${item2Scale})`, opacity: item2Scale,
-            background: '#1A1A1A', borderRadius: 14, padding: '18px 24px',
-            borderLeft: `6px solid ${GREEN}`,
-          }}>
-            <svg width="52" height="52" viewBox="0 0 52 52">
-              <circle cx="26" cy="26" r="22" fill="#92400E" opacity="0.35" />
-              <circle cx="26" cy="26" r="22" fill="none" stroke={GREEN} strokeWidth="2.5" />
-              <line x1="14" y1="14" x2="38" y2="38" stroke={GREEN} strokeWidth="4" strokeLinecap="round" />
-              <line x1="38" y1="14" x2="14" y2="38" stroke={GREEN} strokeWidth="4" strokeLinecap="round" />
-            </svg>
-            <div style={{ fontFamily: FONT, fontSize: 28, color: WHITE, letterSpacing: '0.05em' }}>
-              CLEAR YOUR COOKIES
-            </div>
-          </div>
-
-          {/* VPN */}
-          <div style={{
-            display: 'flex', alignItems: 'center', gap: 24,
-            transform: `scale(${item3Scale})`, opacity: item3Scale,
-            background: '#1A1A1A', borderRadius: 14, padding: '18px 24px',
-            borderLeft: `6px solid ${GREEN}`,
-          }}>
-            <svg width="52" height="52" viewBox="0 0 52 52">
-              <path d="M26 4 L46 14 L46 30 Q46 42 26 50 Q6 42 6 30 L6 14 Z" fill="none" stroke={GREEN} strokeWidth="2.5" />
-              <path d="M26 12 L40 20 L40 30 Q40 38 26 44 Q12 38 12 30 L12 20 Z" fill="#10B98120" />
-              <text x="26" y="32" textAnchor="middle" fill={GREEN} fontFamily="Arial Black, Arial" fontSize="13" fontWeight="bold">VPN</text>
-            </svg>
-            <div style={{ fontFamily: FONT, fontSize: 28, color: WHITE, letterSpacing: '0.05em' }}>
-              USE A VPN
-            </div>
           </div>
         </div>
 
-        <div style={{
-          opacity: savingsOp,
-          transform: `scale(${savingsScale})`,
-          marginTop: 46,
-          background: GREEN,
-          borderRadius: 14,
-          padding: '18px 40px',
-        }}>
-          <div style={{ ...headline(38, WHITE) }}>SAVES $200–$800 / YEAR</div>
+        <div style={{ opacity: tagOp, transform: `scale(${tagScale})`, background: ACCENT, borderRadius: 16, padding: '16px 36px', marginBottom: 22 }}>
+          <div style={{ ...headline(34, WHITE) }}>SUNK COST TRAP</div>
+        </div>
+
+        <div style={{ opacity: subOp, fontFamily: FONT, fontSize: 24, color: '#AAAAAA', lineHeight: 1.5, textAlign: 'center' as const, letterSpacing: '0.05em' }}>
+          "I ALREADY PAID $3,000<br />
+          <span style={{ color: ACCENT }}>SO I CAN'T STOP NOW"</span>
         </div>
       </AbsoluteFill>
     </FadeScene>
@@ -402,66 +267,58 @@ const Scene5: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
 
 const Scene6: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
-
-  const titleOp = interpolate(frame, [0, 25], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const titleY = interpolate(frame, [0, 25], [40, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic) });
-
-  const stat1Op = interpolate(frame, [35, 60], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const stat2Op = interpolate(frame, [68, 93], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const stat3Op = interpolate(frame, [101, 126], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-
-  const btnScale = spring({ frame: frame - 145, fps: 30, from: 0, to: 1, config: { damping: 10, stiffness: 90 } });
-  const btnOp = interpolate(frame, [145, 168], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const titleOp = interpolate(frame, [5, 30], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const doorOpen = interpolate(frame, [20, 85], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic) });
+  const sellOp = interpolate(frame, [82, 112], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const sellY = interpolate(frame, [82, 112], [32, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic) });
+  const donateOp = interpolate(frame, [105, 135], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const donateY = interpolate(frame, [105, 135], [32, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic) });
+  const ctaOp = interpolate(frame, [152, 188], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const ctaScale = spring({ frame: frame - 152, fps: 30, from: 0.7, to: 1, config: { damping: 12, stiffness: 90 } });
+  const openWidth = 260 * (1 - doorOpen);
 
   return (
     <FadeScene bg={BG_LIGHT} dur={dur}>
-      <AbsoluteFill style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '0 50px' }}>
-        <div style={{
-          ...headline(52, BLACK),
-          opacity: titleOp,
-          transform: `translateY(${titleY}px)`,
-          marginBottom: 6,
-          lineHeight: 1.1,
-        }}>
-          THE ALGORITHM
-        </div>
-        <div style={{
-          ...headline(52, ACCENT),
-          opacity: titleOp,
-          transform: `translateY(${titleY}px)`,
-          marginBottom: 52,
-          lineHeight: 1.1,
-        }}>
-          KNOWS YOUR HABITS
+      <AbsoluteFill style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '0 48px' }}>
+        <div style={{ ...headline(44, BLACK), opacity: titleOp, marginBottom: 30, lineHeight: 1.1 }}>
+          THE $9,120<br />FIX
         </div>
 
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 20, width: '100%', maxWidth: 760 }}>
-          <div style={{ opacity: stat1Op, background: BLACK, borderRadius: 12, padding: '18px 28px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <div style={{ fontFamily: FONT, fontSize: 22, color: '#888', letterSpacing: '0.05em' }}>DAILY PRICE CHANGES</div>
-            <div style={{ fontFamily: FONT, fontSize: 32, color: ACCENT }}>2.5M</div>
+        <div style={{ marginBottom: 28 }}>
+          <svg width="280" height="145" viewBox="0 0 280 145">
+            <rect x="10" y="8" width="260" height="130" rx="4" fill="#2A2A2A" />
+            <rect x="10" y="8" width={openWidth} height="130" rx="4" fill="#444" stroke={ACCENT} strokeWidth="2" />
+            <rect x="10" y="20" width={openWidth} height="1.5" fill={ACCENT} opacity="0.35" />
+            <rect x="10" y="33" width={openWidth} height="1.5" fill={ACCENT} opacity="0.35" />
+            <rect x="10" y="46" width={openWidth} height="1.5" fill={ACCENT} opacity="0.35" />
+            <rect x="10" y="59" width={openWidth} height="1.5" fill={ACCENT} opacity="0.35" />
+            <rect x="10" y="72" width={openWidth} height="1.5" fill={ACCENT} opacity="0.35" />
+            <rect x="10" y="85" width={openWidth} height="1.5" fill={ACCENT} opacity="0.35" />
+            <rect x="10" y="98" width={openWidth} height="1.5" fill={ACCENT} opacity="0.35" />
+            <rect x="10" y="111" width={openWidth} height="1.5" fill={ACCENT} opacity="0.35" />
+            <rect x="10" y="124" width={openWidth} height="1.5" fill={ACCENT} opacity="0.35" />
+            <rect x="10" y="8" width="260" height="130" rx="4" fill="#FFFDE7" opacity={doorOpen * 0.35} />
+          </svg>
+        </div>
+
+        <div style={{ display: 'flex', gap: 18, marginBottom: 28 }}>
+          <div style={{ opacity: sellOp, transform: `translateY(${sellY}px)`, background: GREEN, borderRadius: 14, padding: '14px 28px', display: 'flex', alignItems: 'center', gap: 12 }}>
+            <svg width="26" height="26" viewBox="0 0 26 26">
+              <circle cx="13" cy="13" r="12" fill="rgba(255,255,255,0.2)" />
+              <text x="13" y="18" textAnchor="middle" fill="white" fontSize="14" fontFamily="Arial" fontWeight="bold">$</text>
+            </svg>
+            <div style={{ ...headline(28, WHITE) }}>SELL IT</div>
           </div>
-          <div style={{ opacity: stat2Op, background: BLACK, borderRadius: 12, padding: '18px 28px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <div style={{ fontFamily: FONT, fontSize: 22, color: '#888', letterSpacing: '0.05em' }}>APPLE USER MARKUP</div>
-            <div style={{ fontFamily: FONT, fontSize: 32, color: ACCENT }}>UP TO 30%</div>
-          </div>
-          <div style={{ opacity: stat3Op, background: BLACK, borderRadius: 12, padding: '18px 28px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <div style={{ fontFamily: FONT, fontSize: 22, color: '#888', letterSpacing: '0.05em' }}>SAVED W/ INCOGNITO</div>
-            <div style={{ fontFamily: FONT, fontSize: 32, color: GREEN }}>$200–$800</div>
+          <div style={{ opacity: donateOp, transform: `translateY(${donateY}px)`, background: BLUE, borderRadius: 14, padding: '14px 28px', display: 'flex', alignItems: 'center', gap: 12 }}>
+            <svg width="26" height="26" viewBox="0 0 26 26">
+              <path d="M13 22 C13 22 3 15 3 9 C3 6 5 4 8 4 C10.5 4 12 6 13 7.5 C14 6 15.5 4 18 4 C21 4 23 6 23 9 C23 15 13 22 13 22Z" fill="rgba(255,255,255,0.25)" stroke="white" strokeWidth="1.5" />
+            </svg>
+            <div style={{ ...headline(28, WHITE) }}>DONATE</div>
           </div>
         </div>
 
-        <div style={{
-          transform: `scale(${btnScale})`,
-          opacity: btnOp,
-          marginTop: 56,
-          background: ACCENT,
-          borderRadius: 50,
-          padding: '22px 74px',
-        }}>
-          <div style={{ ...headline(46, WHITE) }}>FOLLOW</div>
-        </div>
-        <div style={{ ...headline(22, '#888'), marginTop: 18, opacity: btnOp }}>
-          MORE TRAPS THEY DON'T WANT YOU TO FIND
+        <div style={{ opacity: ctaOp, transform: `scale(${ctaScale})`, ...headline(28, BLACK), lineHeight: 1.4 }}>
+          FOLLOW FOR MORE MONEY<br />MOVES THAT ACTUALLY WORK
         </div>
       </AbsoluteFill>
     </FadeScene>
