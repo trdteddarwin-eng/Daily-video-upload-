@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "One in ten Americans is renting a storage unit right now. It feels like a smart temporary fix — but most people keep paying for four years or more, and the math is brutal.",
-    "visual": "Storage unit door with padlock and horizontal metal slats. '$190/mo' badge springs in. '1 in 10 Americans' stat fades in below.",
-    "accent_color": "red"
+    "narration": "You got the raise, bought the car, upgraded the apartment — and still feel like you're barely keeping up. Your brain was actually built this way.",
+    "visual": "Three icons spring in one by one: dollar sign (raise), SVG car (new car), SVG house (upgraded home) — each with a checkmark. Then a red 'AND STILL FEEL BROKE' text slams in.",
+    "accent_color": "blue"
   },
   {
     "scene": 2,
-    "narration": "The average unit runs $190 a month — that's $2,280 a year. And most people signed up thinking 'just a few months.' Sound familiar?",
-    "visual": "Dollar counter animating up to $2,280 on a dark card. Below it, a 12-month calendar grid fills in square by square as months tick by.",
-    "accent_color": "red"
+    "narration": "Scientists call it the hedonic treadmill. Every upgrade you make, your brain resets what 'normal' feels like within about one year. You end up right back at baseline.",
+    "visual": "Animated SVG treadmill — belt moves continuously but the running person stays in place. Label 'HEDONIC TREADMILL'. Then '1 YEAR LATER... BACK TO BASELINE' fades in red.",
+    "accent_color": "blue"
   },
   {
     "scene": 3,
-    "narration": "Here's where it gets wild. The typical renter keeps their unit for four years. That's $9,120 total. And sixty-five percent say the stuff inside is worth less than what they've already paid.",
-    "visual": "Two side-by-side bar charts growing: 'Paid In' bar ($9,120 in red, tall) and 'Stuff Worth' bar (~$1,500 in green, short). Stat quote appears below.",
-    "accent_color": "red"
+    "narration": "Here's what's wild — surveys show people always think they need 40% more than they earn to feel comfortable. Earn $50K, you want $70K. Earn $200K, you want $280K.",
+    "visual": "Animated bar chart: three income levels side by side — blue bar for 'HAVE', red bar 40% taller for 'WANT'. Labels $50K/$70K, $100K/$140K, $200K/$280K. Gap stays constant.",
+    "accent_color": "blue"
   },
   {
     "scene": 4,
-    "narration": "Americans spent thirty-nine point five billion dollars on self-storage last year — more than the entire US film industry. That's not a clutter problem, that's a psychology problem.",
-    "visual": "A film camera icon labeled 'Hollywood $33B' vs a storage unit icon labeled 'Self-Storage $39.5B'. 'Grew 700% Since 1984' stat appears below.",
-    "accent_color": "red"
+    "narration": "A Wharton study tracked 33,000 adults. Happiness does rise with income — but above $500,000, earning more barely moves the needle at all.",
+    "visual": "Axes graph with a logarithmic happiness curve drawn in real-time. Income on x-axis. Red dashed vertical line at $500K+ with label 'GAINS NEAR ZERO'.",
+    "accent_color": "blue"
   },
   {
     "scene": 5,
-    "narration": "The real trap is the sunk cost. You've already paid three grand, so quitting feels like admitting you wasted it. But every month you keep paying is a fresh choice to waste even more.",
-    "visual": "Piggy bank draining with dollar bills flying out toward a storage unit. 'Sunk Cost Trap' badge springs in. Quote: 'I already paid $3,000 so I can't stop now'.",
-    "accent_color": "red"
+    "narration": "Scientists call this arrival fallacy — the belief that happiness is waiting at the next income milestone. The finish line keeps moving no matter how fast you run.",
+    "visual": "Person runs right across screen but a checkered finish line retreats faster. Overhead labels cycle: 'EARN $50K' → 'EARN $100K' → 'EARN $200K'. Person never reaches it.",
+    "accent_color": "blue"
   },
   {
     "scene": 6,
-    "narration": "The move that pays: sell or donate everything this weekend. What you truly can't part with probably fits in your home. Bank the rest — follow for more money moves that actually work.",
-    "visual": "Storage unit door animating open to reveal light inside. Two action buttons appear: 'Sell It' in green and 'Donate' in blue. CTA text springs in at bottom.",
-    "accent_color": "red"
+    "narration": "The fix isn't earning less. Research shows spending on experiences — not upgrades — actually breaks the treadmill. Set a written 'enough' number. Follow for more money psychology.",
+    "visual": "Three checklist items slide in: 'Buy EXPERIENCES not things', 'Write down your enough number', 'Compare to past you — not neighbors'. Then blue CTA button: FOLLOW FOR MORE.",
+    "accent_color": "blue"
   }
 ]
