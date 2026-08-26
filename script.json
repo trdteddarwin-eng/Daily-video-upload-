@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You got the raise, bought the car, upgraded the apartment — and still feel like you're barely keeping up. Your brain was actually built this way.",
-    "visual": "Three icons spring in one by one: dollar sign (raise), SVG car (new car), SVG house (upgraded home) — each with a checkmark. Then a red 'AND STILL FEEL BROKE' text slams in.",
-    "accent_color": "blue"
+    "narration": "55% of workers give their vacation days back to their boss every year. That's $4,200 of your own earned pay — handed over completely for free. And almost nobody realizes they're doing it.",
+    "visual": "SVG person silhouette on the left handing a stack of bills labeled 'PTO' to a larger boss silhouette on the right. Arrow animation between them. Red badge drops in: '$4,200 / YEAR — HANDED BACK FREE'.",
+    "accent_color": "green"
   },
   {
     "scene": 2,
-    "narration": "Scientists call it the hedonic treadmill. Every upgrade you make, your brain resets what 'normal' feels like within about one year. You end up right back at baseline.",
-    "visual": "Animated SVG treadmill — belt moves continuously but the running person stays in place. Label 'HEDONIC TREADMILL'. Then '1 YEAR LATER... BACK TO BASELINE' fades in red.",
-    "accent_color": "blue"
+    "narration": "Across America, 768 million vacation days went unused last year alone. That's billions in earned pay workers just quietly gave away. So why does it keep happening?",
+    "visual": "Large counter animating up to '768M' on a light background. Three calendar icons below with red X marks crossing out vacation days. Sub-text fades in: 'A CULTURE THAT MADE YOU THINK REST = WEAKNESS'.",
+    "accent_color": "green"
   },
   {
     "scene": 3,
-    "narration": "Here's what's wild — surveys show people always think they need 40% more than they earn to feel comfortable. Earn $50K, you want $70K. Earn $200K, you want $280K.",
-    "visual": "Animated bar chart: three income levels side by side — blue bar for 'HAVE', red bar 40% taller for 'WANT'. Labels $50K/$70K, $100K/$140K, $200K/$280K. Gap stays constant.",
-    "accent_color": "blue"
+    "narration": "Research says the number-one reason workers skip vacation isn't workload — it's fear. You're scared you'll look replaceable if you step away. So you silently pay your boss $4,200 a year to feel safe.",
+    "visual": "SVG person frozen at a laptop desk, worried expression. Thought bubble floats up: 'LOOK REPLACEABLE?' Boss silhouette with crossed arms visible in the background. Stat fades in at bottom.",
+    "accent_color": "green"
   },
   {
     "scene": 4,
-    "narration": "A Wharton study tracked 33,000 adults. Happiness does rise with income — but above $500,000, earning more barely moves the needle at all.",
-    "visual": "Axes graph with a logarithmic happiness curve drawn in real-time. Income on x-axis. Red dashed vertical line at $500K+ with label 'GAINS NEAR ZERO'.",
-    "accent_color": "blue"
+    "narration": "Here's the twist — workers who take all their vacation are 40% more productive than those who don't. Skipping PTO doesn't make you more valuable. It makes you burnt out and slower.",
+    "visual": "Two animated bar charts on a light background: red 'NO PTO' bar shorter, green 'FULL PTO' bar 40% taller. A '+40%' annotation arrow appears. Sub-text: 'SKIPPING PTO MAKES YOU WORSE, NOT BETTER'.",
+    "accent_color": "green"
   },
   {
     "scene": 5,
-    "narration": "Scientists call this arrival fallacy — the belief that happiness is waiting at the next income milestone. The finish line keeps moving no matter how fast you run.",
-    "visual": "Person runs right across screen but a checkered finish line retreats faster. Overhead labels cycle: 'EARN $50K' → 'EARN $100K' → 'EARN $200K'. Person never reaches it.",
-    "accent_color": "blue"
+    "narration": "And the health cost is brutal. Men who regularly skip vacations face a 30% higher risk of heart disease. Your unused PTO isn't just money — it literally has a medical price tag.",
+    "visual": "SVG heart with heartbeat ECG line inside, pulsing animation. Horizontal risk meter fills to 70% as a year counter ticks from 0 to 30. Red badge drops in: '30% HIGHER HEART DISEASE RISK FOR MEN'.",
+    "accent_color": "green"
   },
   {
     "scene": 6,
-    "narration": "The fix isn't earning less. Research shows spending on experiences — not upgrades — actually breaks the treadmill. Set a written 'enough' number. Follow for more money psychology.",
-    "visual": "Three checklist items slide in: 'Buy EXPERIENCES not things', 'Write down your enough number', 'Compare to past you — not neighbors'. Then blue CTA button: FOLLOW FOR MORE.",
-    "accent_color": "blue"
+    "narration": "The move is simple: schedule one week off before September ends. You already earned that money. Stop letting your employer keep it — and follow for more money facts nobody tells you.",
+    "visual": "SVG calendar with a highlighted week in September. Beach bag with sun icon beside it. Two numbered steps slide in: '1. Block one week before Sept 30' and '2. You earned it — stop giving it back'. Green CTA button pulses at bottom.",
+    "accent_color": "green"
   }
 ]
