@@ -1,16 +1,16 @@
 {
   "tiktok": {
-    "caption": "55% of workers hand their boss $4,200 in free PTO every year. Are you one of them?",
-    "hashtags": ["#money", "#personalfinance", "#pto", "#vacation", "#worklife", "#financetok", "#moneytips", "#9to5"]
+    "caption": "80% of medical bills have an error — avg $1,300. Five words fix it: 'Send me an itemized bill' #medicalbills",
+    "hashtags": ["#medicalbills", "#personalfinance", "#moneytips", "#savemoney", "#healthcare", "#finance", "#fyp", "#moneyhacks"]
   },
   "youtube_short": {
-    "title": "Your Unused PTO Is a $4,200 Gift to Your Boss",
+    "title": "80% of Medical Bills Have a Hidden Error",
     "title_alternatives": [
-      "55% of Workers Donate $4,200 to Their Employer Every Year",
-      "Why Skipping Vacation Is Costing You Thousands"
+      "Your Hospital Bill Has a $1,300 Mistake In It",
+      "5 Words That Save You $1,300 on Medical Bills"
     ],
-    "description": "Most workers think skipping vacation makes them look dedicated — but 55% of Americans are handing over $4,200 of their own pay to their employer every single year. Across America, 768 million vacation days went unused last year alone. And research shows workers who take full vacation are actually 40% more productive. Use your PTO — you already earned it. Follow for more money facts nobody tells you. #personalfinance #money #pto #vacation #worklife",
-    "tags": ["personal finance", "money", "pto", "vacation days", "work life balance", "money psychology", "finance tips", "salary", "job tips", "workplace"]
+    "description": "Most people have no idea that 80% of medical bills contain at least one billing error — and the average mistake costs $1,300. Hospitals send you a one-line summary on purpose, which keeps errors completely hidden. But here's what almost nobody knows: you have a legal right to an itemized bill. Call the billing department, say 'Send me an itemized bill,' and compare it line by line to your Explanation of Benefits from your insurer. Any mismatch is disputable — and hospitals resolve most of them without a fight. #medicalbills #personalfinance #savemoney #moneytips #healthcare",
+    "tags": ["medical bills", "billing errors", "save money", "personal finance", "money tips", "healthcare costs", "itemized bill", "hospital bills", "money hacks", "finance tips"]
   },
-  "hook_line": "YOU EARNED IT. THEY KEPT IT."
+  "hook_line": "80% of Medical Bills Have a $1,300 Error"
 }

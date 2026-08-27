@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "55% of workers give their vacation days back to their boss every year. That's $4,200 of your own earned pay — handed over completely for free. And almost nobody realizes they're doing it.",
-    "visual": "SVG person silhouette on the left handing a stack of bills labeled 'PTO' to a larger boss silhouette on the right. Arrow animation between them. Red badge drops in: '$4,200 / YEAR — HANDED BACK FREE'.",
-    "accent_color": "green"
+    "narration": "Eighty percent of medical bills have at least one error inside. The average mistake? Thirteen hundred dollars. And almost nobody ever catches it.",
+    "visual": "Dark background. Hospital building SVG springs in. Animated counter climbs from 0 to 80%. Red '$1,300 AVG MISTAKE' badge fades in at bottom.",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Across America, 768 million vacation days went unused last year alone. That's billions in earned pay workers just quietly gave away. So why does it keep happening?",
-    "visual": "Large counter animating up to '768M' on a light background. Three calendar icons below with red X marks crossing out vacation days. Sub-text fades in: 'A CULTURE THAT MADE YOU THINK REST = WEAKNESS'.",
-    "accent_color": "green"
+    "narration": "Here's why — hospitals don't send itemized bills by default. They send a summary that says 'Medical Services: $7,030.' That's it. No breakdown. No detail. Just trust us.",
+    "visual": "Light background. A bill document slides in showing one single line: 'Medical Services Rendered... $7,030.' Labels appear calling out the missing itemization.",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Research says the number-one reason workers skip vacation isn't workload — it's fear. You're scared you'll look replaceable if you step away. So you silently pay your boss $4,200 a year to feel safe.",
-    "visual": "SVG person frozen at a laptop desk, worried expression. Thought bubble floats up: 'LOOK REPLACEABLE?' Boss silhouette with crossed arms visible in the background. Stat fades in at bottom.",
-    "accent_color": "green"
+    "narration": "The three most common errors: duplicate charges, where they bill twice for one test. Upcoding, where they charge for a more expensive procedure. And ghost charges — items that were never actually used on you.",
+    "visual": "Dark background. Three error cards spring in one by one: stacked-document icon for duplicate charge, upward-arrow icon for upcoding, crossed-out document icon for ghost charge.",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Here's the twist — workers who take all their vacation are 40% more productive than those who don't. Skipping PTO doesn't make you more valuable. It makes you burnt out and slower.",
-    "visual": "Two animated bar charts on a light background: red 'NO PTO' bar shorter, green 'FULL PTO' bar 40% taller. A '+40%' annotation arrow appears. Sub-text: 'SKIPPING PTO MAKES YOU WORSE, NOT BETTER'.",
-    "accent_color": "green"
+    "narration": "Here's the thing — you have a legal right to an itemized bill. Call the billing department and say five words: 'Send me an itemized bill.' They're required to send it. Federal law.",
+    "visual": "Light background. Phone SVG springs in. Speech bubble appears: 'SEND ME AN ITEMIZED BILL.' Legal instruction text fades in below.",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "And the health cost is brutal. Men who regularly skip vacations face a 30% higher risk of heart disease. Your unused PTO isn't just money — it literally has a medical price tag.",
-    "visual": "SVG heart with heartbeat ECG line inside, pulsing animation. Horizontal risk meter fills to 70% as a year counter ticks from 0 to 30. Red badge drops in: '30% HIGHER HEART DISEASE RISK FOR MEN'.",
-    "accent_color": "green"
+    "narration": "Then compare it line by line to your Explanation of Benefits from your insurer. Any mismatch you find — call and dispute it. Hospitals quietly resolve most of these without a fight.",
+    "visual": "Dark background. Two panel documents side by side: EOB showing 'Lab Test: $320' versus Hospital Bill showing 'Lab Test: $640' with a pulsing red highlight on the mismatch.",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "The move is simple: schedule one week off before September ends. You already earned that money. Stop letting your employer keep it — and follow for more money facts nobody tells you.",
-    "visual": "SVG calendar with a highlighted week in September. Beach bag with sun icon beside it. Two numbered steps slide in: '1. Block one week before Sept 30' and '2. You earned it — stop giving it back'. Green CTA button pulses at bottom.",
-    "accent_color": "green"
+    "narration": "There's an eighty percent chance your last medical bill had an error. One phone call, five words, fifteen minutes — and thirteen hundred dollars could be back in your pocket. Go check it.",
+    "visual": "Light background. Piggy bank SVG scales in with a coin falling into the slot. CTA text: 'CALL BILLING. SAY: SEND ME AN ITEMIZED BILL.' Red badge: '$1,300 BACK IN YOUR POCKET'.",
+    "accent_color": "red"
   }
 ]
