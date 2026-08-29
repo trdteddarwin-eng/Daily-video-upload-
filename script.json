@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You get a bonus or tax refund — and 90% of us blow it all within 30 days. Here's what that habit is actually costing you over a lifetime.",
-    "visual": "Money bag SVG springs in on dark background. Dollar counter animates from $4,200 down to $0. 'GONE. ALL OF IT.' fades in below in red.",
-    "accent_color": "amber"
+    "narration": "Everyone's been grinding toward 750, thinking that's the magic number. But banks don't care about 750 — they care about 760. And that gap costs you.",
+    "visual": "Large '750' text in red on dark background animates in, then transforms/swaps dramatically into '760' in blue. Animated underline. 'BANKS USE A DIFFERENT CUTOFF' fades in below.",
+    "accent_color": "blue"
   },
   {
     "scene": 2,
-    "narration": "There's a name for this — the house money effect. Your brain marks windfall cash as 'not real money,' so your spending filter just switches off.",
-    "visual": "Brain SVG on light background springs in. 'HOUSE MONEY EFFECT' badge fades in. Two labels: 'EARNED INCOME — FILTER ON' vs 'WINDFALL — FILTER OFF' animate in below.",
-    "accent_color": "amber"
+    "narration": "Banks have secret pricing tiers, and 760 is exactly where the best mortgage rates unlock. One point below that line — even 759 — and you're in a more expensive bracket.",
+    "visual": "SVG bank building on light background. Three animated tier rows slide in: '760+ → BEST RATE' in green, '720–759 → HIGHER RATE' in amber, '580–719 → HIGHEST RATE' in red. 760+ row highlighted with blue border.",
+    "accent_color": "blue"
   },
   {
     "scene": 3,
-    "narration": "Between tax refunds, work bonuses, and gifts, the average American gets about $4,200 a year in found money. That's real wealth disappearing into nothing every single year.",
-    "visual": "Three icons spring in on dark background: receipt (tax refund $1,450), envelope (bonus $2,150), gift box (gifts $600). Counter animates up to $4,200 total.",
-    "accent_color": "amber"
+    "narration": "On a $400,000 home loan, the gap between 759 and 760 adds up to $23,000 extra in interest over the life of the loan. That's your bank's bonus — not yours.",
+    "visual": "SVG house on dark background. Two growing side-by-side bars: '760+ — $265K interest' in green and '759 — $288K interest' in red. '$23,000 GAP' badge appears below in red.",
+    "accent_color": "blue"
   },
   {
     "scene": 4,
-    "narration": "Wealthy people use one rule — invest 50% of any windfall before spending a single dollar. The other 50% is yours to enjoy guilt-free. That's the found money rule.",
-    "visual": "Gold coin SVG on light background. Two boxes appear: '50% INVEST NOW' in amber and '50% ENJOY IT' in dark. 'THE FOUND MONEY RULE' label appears below.",
-    "accent_color": "amber"
+    "narration": "Here's the wild part — 31% of Americans have scores between 700 and 759. Most have no idea they're in the wrong pricing tier right now.",
+    "visual": "Animated circular progress arc on light background fills to 31% in blue. '31%' counts up inside the ring. Five person silhouettes appear below — one highlighted in blue to represent the one-in-three stuck below 760.",
+    "accent_color": "blue"
   },
   {
     "scene": 5,
-    "narration": "Run the math — $2,100 invested every year at the market's historic 10% return. Over 30 years that turns into $340,000 from money your brain would've spent on nothing.",
-    "visual": "Animated bar chart on dark background. Six bars grow sequentially: YR 5 ($12.8K), YR 10 ($33.5K), YR 15 ($66.7K), YR 20 ($120K), YR 25 ($207K), YR 30 ($345K). '$340K' fades in large below.",
-    "accent_color": "amber"
+    "narration": "Two fastest moves to cross that line. Number one, get your credit utilization below 6%. Number two, request a credit limit increase — no new accounts, just one phone call.",
+    "visual": "Credit card SVG on dark background with utilization bar animating down from 30% to 6% and turning green. Below it, a phone icon appears with 'REQUEST HIGHER LIMIT' text — 'NUMBER TWO' label fades in.",
+    "accent_color": "blue"
   },
   {
     "scene": 6,
-    "narration": "One rule, $2,100 a year, $340,000 waiting at retirement. Follow for daily money moves that build real wealth from cash you'd normally spend without thinking.",
-    "visual": "Piggy bank SVG on light background springs in. 'ONE RULE. $340K.' text animates in. Amber CTA button 'FOLLOW FOR MONEY MOVES' pulses in at the bottom.",
-    "accent_color": "amber"
+    "narration": "Pull your score right now. If you're anywhere between 700 and 759, there's $23,000 sitting between you and the next tier. Don't leave it there.",
+    "visual": "Animated score counter climbs from 750 to 760 on light background — color shifts from red to green as it crosses. '$23,000 SAVED' badge springs in. CTA text: 'Follow for daily money moves that actually move the needle.'",
+    "accent_color": "blue"
   }
 ]
