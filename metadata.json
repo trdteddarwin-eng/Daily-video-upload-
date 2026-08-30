@@ -1,16 +1,13 @@
 {
   "tiktok": {
-    "caption": "You've been chasing 750. Banks don't care about 750. They care about 760 — and that 10-point gap costs $23,000.",
-    "hashtags": ["#creditscore", "#moneytips", "#personalfinance", "#mortgage", "#creditbuilding", "#financetips", "#money", "#credit760"]
+    "caption": "Your realtor showed you the mortgage. They never showed you the $404K number hiding in your HOA fee.",
+    "hashtags": ["#realestate", "#homebuying", "#HOA", "#personalfinance", "#moneytips", "#firsttimehomebuyer", "#realestatetips", "#financetok"]
   },
   "youtube_short": {
-    "title": "The Credit Score Tier Banks Hide From You",
-    "title_alternatives": [
-      "Why 760 Is the Real Magic Number (Not 750)",
-      "Miss This Score By 1 Point = $23,000 Gone"
-    ],
-    "description": "Everyone's chasing 750, but banks use a completely different pricing tier — and it's at 760. On a $400K loan, the gap between 759 and 760 is $23,000 in extra interest over the life of the loan. Here's the wild part: 31% of Americans are stuck in the 700-759 range without even knowing they're in the wrong bracket. Two fastest moves to cross the line: drop your credit utilization below 6% and request a credit limit increase — no new accounts needed. Check your score today. #creditscore #mortgage #personalfinance #moneytips #creditbuilding",
-    "tags": ["credit score", "mortgage rates", "personal finance", "credit tips", "760 credit score", "money", "finance", "credit building", "financial literacy", "money psychology"]
+    "title": "Your HOA Fee Has a $404K Secret",
+    "title_alternatives": ["The $404K Number Your Realtor Never Shows You", "HOA Fees Are Hiding a $404,000 Price Tag"],
+    "description": "Your realtor shows you the mortgage, property taxes, even the insurance estimate — but they never show you what your HOA fee actually costs over 30 years. At $330/month average nationally, that's $118,800 in fees alone. Invested at 7% instead? That's $404,000. Before you buy in any HOA community, ask for 5 years of meeting minutes and the reserve fund balance. That one question could save you everything. #HOA #realestate #homebuying #personalfinance #moneytips",
+    "tags": ["HOA", "real estate", "home buying", "personal finance", "money tips", "HOA fees", "first time home buyer", "financial tips", "wealth building", "hidden costs", "opportunity cost"]
   },
-  "hook_line": "You've been chasing 750. Banks want 760."
+  "hook_line": "Your HOA fee has a $404,000 secret"
 }

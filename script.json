@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Everyone's been grinding toward 750, thinking that's the magic number. But banks don't care about 750 — they care about 760. And that gap costs you.",
-    "visual": "Large '750' text in red on dark background animates in, then transforms/swaps dramatically into '760' in blue. Animated underline. 'BANKS USE A DIFFERENT CUTOFF' fades in below.",
-    "accent_color": "blue"
+    "narration": "Your agent showed you the mortgage. They showed you property taxes. But they never once showed you this number.",
+    "visual": "Dark background. House SVG springs into frame — triangle roof, rectangle body, windows, door. Price tag badge fades in: $450,000 LISTING PRICE. HOA badge springs in below: +$330/MO — NOT IN THE LISTING.",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Banks have secret pricing tiers, and 760 is exactly where the best mortgage rates unlock. One point below that line — even 759 — and you're in a more expensive bracket.",
-    "visual": "SVG bank building on light background. Three animated tier rows slide in: '760+ → BEST RATE' in green, '720–759 → HIGHER RATE' in amber, '580–719 → HIGHEST RATE' in red. 760+ row highlighted with blue border.",
-    "accent_color": "blue"
+    "narration": "HOA fees average $330 a month nationwide. And they're not optional — miss payments and the HOA can literally foreclose on your home.",
+    "visual": "Light background. SVG invoice labeled HOA INVOICE. Dollar counter animates from $0 to $330. Red warning badge slides up: MISS PAYMENTS? THEY CAN FORECLOSE.",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "On a $400,000 home loan, the gap between 759 and 760 adds up to $23,000 extra in interest over the life of the loan. That's your bank's bonus — not yours.",
-    "visual": "SVG house on dark background. Two growing side-by-side bars: '760+ — $265K interest' in green and '759 — $288K interest' in red. '$23,000 GAP' badge appears below in red.",
-    "accent_color": "blue"
+    "narration": "Over a 30-year mortgage, that $330 a month adds up to $118,800 in fees. And that's before a single special assessment even hits.",
+    "visual": "Dark background. Red bar grows vertically as counter animates from $0 to $118,800. 30 YEARS label at base. BEFORE SPECIAL ASSESSMENTS note fades in below.",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Here's the wild part — 31% of Americans have scores between 700 and 759. Most have no idea they're in the wrong pricing tier right now.",
-    "visual": "Animated circular progress arc on light background fills to 31% in blue. '31%' counts up inside the ring. Five person silhouettes appear below — one highlighted in blue to represent the one-in-three stuck below 760.",
-    "accent_color": "blue"
+    "narration": "Special assessments — surprise bills for shared repairs — average $2,300 each. Most communities levy two or three of them every decade.",
+    "visual": "Light background. Envelope SVG flap opens, letter slides out: SPECIAL ASSESSMENT $2,300. Large $2,300 springs in below. Red badge: 2–3 TIMES EVERY DECADE.",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Two fastest moves to cross that line. Number one, get your credit utilization below 6%. Number two, request a credit limit increase — no new accounts, just one phone call.",
-    "visual": "Credit card SVG on dark background with utilization bar animating down from 30% to 6% and turning green. Below it, a phone icon appears with 'REQUEST HIGHER LIMIT' text — 'NUMBER TWO' label fades in.",
-    "accent_color": "blue"
+    "narration": "Here's the real gut punch. If you invested that $330 a month at seven percent instead, after thirty years you'd have $404,000.",
+    "visual": "Dark background. Two bars side by side. Left red bar: HOA FEES PAID $118,800. Right green bar grows taller with counter to $404,000. $404,000 DIFFERENCE badge in green.",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Pull your score right now. If you're anywhere between 700 and 759, there's $23,000 sitting between you and the next tier. Don't leave it there.",
-    "visual": "Animated score counter climbs from 750 to 760 on light background — color shifts from red to green as it crosses. '$23,000 SAVED' badge springs in. CTA text: 'Follow for daily money moves that actually move the needle.'",
-    "accent_color": "blue"
+    "narration": "Before you sign anything, demand five years of HOA meeting minutes and the reserve fund balance. That one question could save you everything.",
+    "visual": "Light background. Person silhouette with clipboard. Checklist of three items springs in: 5 YEARS HOA MINUTES, RESERVE FUND BALANCE, SPECIAL ASSESSMENT HISTORY. Red CTA badge: ONE QUESTION. SAVE EVERYTHING.",
+    "accent_color": "red"
   }
 ]
