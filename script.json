@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Your agent showed you the mortgage. They showed you property taxes. But they never once showed you this number.",
-    "visual": "Dark background. House SVG springs into frame — triangle roof, rectangle body, windows, door. Price tag badge fades in: $450,000 LISTING PRICE. HOA badge springs in below: +$330/MO — NOT IN THE LISTING.",
-    "accent_color": "red"
+    "narration": "The moment you sign in that finance office, your dealer's already celebrating. They just earned a kickback from your lender — and it came straight out of your pocket.",
+    "visual": "Dark background. Car silhouette slides in from left. 'FINANCE OFFICE' sign springs in below it. Amber dollar counter ticks up to $4,824 labeled 'DEALER BONUS'. Contrasting with white text subtitle: 'Paid from your loan the day you drove home.'",
+    "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "HOA fees average $330 a month nationwide. And they're not optional — miss payments and the HOA can literally foreclose on your home.",
-    "visual": "Light background. SVG invoice labeled HOA INVOICE. Dollar counter animates from $0 to $330. Red warning badge slides up: MISS PAYMENTS? THEY CAN FORECLOSE.",
-    "accent_color": "red"
+    "narration": "Banks offer dealers a wholesale rate — say five-point-five percent. The dealer bumps it to eight and pockets the spread. It's called dealer reserve, and it's completely legal.",
+    "visual": "Light background. Flow diagram: bank building → dealer person with tie → buyer silhouette. Animated arrows draw between them. Labels appear: 'LENDER RATE: 5.5%' and 'YOUR RATE: 8.0%'. Amber highlight box springs in: 'DEALER KEEPS 2.5% — LEGALLY'.",
+    "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Over a 30-year mortgage, that $330 a month adds up to $118,800 in fees. And that's before a single special assessment even hits.",
-    "visual": "Dark background. Red bar grows vertically as counter animates from $0 to $118,800. 30 YEARS label at base. BEFORE SPECIAL ASSESSMENTS note fades in below.",
-    "accent_color": "red"
+    "narration": "On a thirty-five thousand dollar loan over five years, that two-and-a-half percent markup costs you four thousand eight hundred and twenty-four dollars. That's the dealer's bonus, paid entirely by you.",
+    "visual": "Dark background. Two animated bar charts rise side by side: green bar for credit union ($40,419 total) and red bar for dealer ($45,243 total). The bottom portion of the red bar highlights in amber labeled '+$4,824 EXTRA'. Dollar counter below ticks up to $4,824.",
+    "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "Special assessments — surprise bills for shared repairs — average $2,300 each. Most communities levy two or three of them every decade.",
-    "visual": "Light background. Envelope SVG flap opens, letter slides out: SPECIAL ASSESSMENT $2,300. Large $2,300 springs in below. Red badge: 2–3 TIMES EVERY DECADE.",
-    "accent_color": "red"
+    "narration": "Eighty-five percent of new cars are financed through the dealership. Americans hand over an estimated fourteen billion dollars in dealer reserve every single year — and almost none of them know it.",
+    "visual": "Light background. Progress bar fills to 85% with label 'NEW CARS FINANCED AT DEALER'. Ten small car icons appear, eight tinted amber and two gray. Animated counter below counts up to '$14.0B / YEAR' inside a dark badge.",
+    "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "Here's the real gut punch. If you invested that $330 a month at seven percent instead, after thirty years you'd have $404,000.",
-    "visual": "Dark background. Two bars side by side. Left red bar: HOA FEES PAID $118,800. Right green bar grows taller with counter to $404,000. $404,000 DIFFERENCE badge in green.",
-    "accent_color": "red"
+    "narration": "Here's the fix. Walk in pre-approved from a credit union. Negotiate the car price, not the monthly payment. Then let the dealer beat your rate — most of the time, they can't.",
+    "visual": "Dark background. Three numbered steps spring in one-by-one: 1) 'Visit a credit union FIRST' with subtext about pre-approval, 2) 'Negotiate price not payment' with subtext, 3) 'Let the dealer beat your rate'. Green badge at bottom: 'CREDIT UNIONS AVG 1.9% LOWER THAN DEALERS'.",
+    "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "Before you sign anything, demand five years of HOA meeting minutes and the reserve fund balance. That one question could save you everything.",
-    "visual": "Light background. Person silhouette with clipboard. Checklist of three items springs in: 5 YEARS HOA MINUTES, RESERVE FUND BALANCE, SPECIAL ASSESSMENT HISTORY. Red CTA badge: ONE QUESTION. SAVE EVERYTHING.",
-    "accent_color": "red"
+    "narration": "Before your next car purchase, spend ten minutes getting a credit union pre-approval. That one step could save you five thousand dollars. That's your money — go get it.",
+    "visual": "Light background. Piggy bank with amber shield springs in. Below it, savings counter ticks up to $4,824. CTA button pulses: 'CHECK YOUR CREDIT UNION RATE' with subtext 'Before your next car purchase →'. Follow and save for more money traps.",
+    "accent_color": "amber"
   }
 ]

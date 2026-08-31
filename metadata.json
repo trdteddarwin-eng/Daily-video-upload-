@@ -1,13 +1,16 @@
 {
   "tiktok": {
-    "caption": "Your realtor showed you the mortgage. They never showed you the $404K number hiding in your HOA fee.",
-    "hashtags": ["#realestate", "#homebuying", "#HOA", "#personalfinance", "#moneytips", "#firsttimehomebuyer", "#realestatetips", "#financetok"]
+    "caption": "Your car dealer pocketed $4,824 from your lender the day you drove home — and it's completely legal. Here's how to stop it.",
+    "hashtags": ["#finance", "#money", "#carbuying", "#moneytips", "#personalfinance", "#carshopping", "#moneyhacks", "#financetips", "#carloan", "#savemoney"]
   },
   "youtube_short": {
-    "title": "Your HOA Fee Has a $404K Secret",
-    "title_alternatives": ["The $404K Number Your Realtor Never Shows You", "HOA Fees Are Hiding a $404,000 Price Tag"],
-    "description": "Your realtor shows you the mortgage, property taxes, even the insurance estimate — but they never show you what your HOA fee actually costs over 30 years. At $330/month average nationally, that's $118,800 in fees alone. Invested at 7% instead? That's $404,000. Before you buy in any HOA community, ask for 5 years of meeting minutes and the reserve fund balance. That one question could save you everything. #HOA #realestate #homebuying #personalfinance #moneytips",
-    "tags": ["HOA", "real estate", "home buying", "personal finance", "money tips", "HOA fees", "first time home buyer", "financial tips", "wealth building", "hidden costs", "opportunity cost"]
+    "title": "Your Car Dealer Got a $4,824 Kickback on Your Loan",
+    "title_alternatives": [
+      "The Hidden Car Loan Markup Dealers Never Mention",
+      "How Dealers Secretly Make $4,800 Off Your Car Loan"
+    ],
+    "description": "When you finance a car through the dealership, they mark up your interest rate and pocket the difference — it's called dealer reserve, and it's 100% legal. On a $35,000 car with a 2.5% markup over five years, that's $4,824 straight out of your pocket. 85% of new cars are dealer-financed, so Americans hand over an estimated $14 billion in hidden markups every single year. The fix is simple: get pre-approved at a credit union first — they average 1.9% lower than dealer rates — then walk in and let the dealer beat it. They usually can't. #carbuying #finance #moneytips #personalfinance #carloan",
+    "tags": ["car buying tips", "car loan", "dealer financing", "credit union", "personal finance", "money tips", "save money", "car purchase", "finance tips", "dealer reserve", "auto loan", "car dealership"]
   },
-  "hook_line": "Your HOA fee has a $404,000 secret"
+  "hook_line": "Your dealer got a $4,824 kickback on your loan"
 }
