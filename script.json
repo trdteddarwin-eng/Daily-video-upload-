@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "The moment you sign in that finance office, your dealer's already celebrating. They just earned a kickback from your lender — and it came straight out of your pocket.",
-    "visual": "Dark background. Car silhouette slides in from left. 'FINANCE OFFICE' sign springs in below it. Amber dollar counter ticks up to $4,824 labeled 'DEALER BONUS'. Contrasting with white text subtitle: 'Paid from your loan the day you drove home.'",
-    "accent_color": "amber"
+    "narration": "Nine out of ten purchases you make aren't logical — they're emotional. Your brain pulls the trigger before your logic even wakes up. Wild, right?",
+    "visual": "Split brain SVG: left half labeled LOGIC in blue, right half labeled EMOTION in glowing orange. Dollar signs float upward out of the emotion side. Dark background.",
+    "accent_color": "orange"
   },
   {
     "scene": 2,
-    "narration": "Banks offer dealers a wholesale rate — say five-point-five percent. The dealer bumps it to eight and pockets the spread. It's called dealer reserve, and it's completely legal.",
-    "visual": "Light background. Flow diagram: bank building → dealer person with tie → buyer silhouette. Animated arrows draw between them. Labels appear: 'LENDER RATE: 5.5%' and 'YOUR RATE: 8.0%'. Amber highlight box springs in: 'DEALER KEEPS 2.5% — LEGALLY'.",
-    "accent_color": "amber"
+    "narration": "Stress is trigger number one. When cortisol spikes, your brain reaches for instant relief — and that usually means spending. Retailers literally track these patterns.",
+    "visual": "Person silhouette with red stress ripple circles radiating outward. A credit card slides into their right hand. A shopping bag floats in from the right. Light background.",
+    "accent_color": "orange"
   },
   {
     "scene": 3,
-    "narration": "On a thirty-five thousand dollar loan over five years, that two-and-a-half percent markup costs you four thousand eight hundred and twenty-four dollars. That's the dealer's bonus, paid entirely by you.",
-    "visual": "Dark background. Two animated bar charts rise side by side: green bar for credit union ($40,419 total) and red bar for dealer ($45,243 total). The bottom portion of the red bar highlights in amber labeled '+$4,824 EXTRA'. Dollar counter below ticks up to $4,824.",
-    "accent_color": "amber"
+    "narration": "Celebration is just as sneaky. Hit a milestone and your brain says you deserve a reward — it's called self-gifting, and it averages $1,200 per event.",
+    "visual": "Happy person silhouette with arms raised, a golden trophy beside them, and a receipt growing taller. Dollar counter ticks up to $1,200. Dark background.",
+    "accent_color": "orange"
   },
   {
     "scene": 4,
-    "narration": "Eighty-five percent of new cars are financed through the dealership. Americans hand over an estimated fourteen billion dollars in dealer reserve every single year — and almost none of them know it.",
-    "visual": "Light background. Progress bar fills to 85% with label 'NEW CARS FINANCED AT DEALER'. Ten small car icons appear, eight tinted amber and two gray. Animated counter below counts up to '$14.0B / YEAR' inside a dark badge.",
-    "accent_color": "amber"
+    "narration": "Then there's boredom buying. Scientists found 23% of all online purchases happen when people just have nothing to do. And it gets worse.",
+    "visual": "Person lounging on a couch holding a phone with a shopping app. A cart badge fills up with items from 0 to 5. Zzz indicators float above. Light background.",
+    "accent_color": "orange"
   },
   {
     "scene": 5,
-    "narration": "Here's the fix. Walk in pre-approved from a credit union. Negotiate the car price, not the monthly payment. Then let the dealer beat your rate — most of the time, they can't.",
-    "visual": "Dark background. Three numbered steps spring in one-by-one: 1) 'Visit a credit union FIRST' with subtext about pre-approval, 2) 'Negotiate price not payment' with subtext, 3) 'Let the dealer beat your rate'. Green badge at bottom: 'CREDIT UNIONS AVG 1.9% LOWER THAN DEALERS'.",
-    "accent_color": "amber"
+    "narration": "Retailers spend $18 billion a year studying your emotional state. Those countdown timers and 'only 3 left' badges hit you in a 6-second window before logic kicks in.",
+    "visual": "Detailed phone screen mockup showing a sneaker product page with countdown timer ticking 6 to 1, a red 'ONLY 3 LEFT' badge, and a pulsing BUY NOW button. Dark background.",
+    "accent_color": "orange"
   },
   {
     "scene": 6,
-    "narration": "Before your next car purchase, spend ten minutes getting a credit union pre-approval. That one step could save you five thousand dollars. That's your money — go get it.",
-    "visual": "Light background. Piggy bank with amber shield springs in. Below it, savings counter ticks up to $4,824. CTA button pulses: 'CHECK YOUR CREDIT UNION RATE' with subtext 'Before your next car purchase →'. Follow and save for more money traps.",
-    "accent_color": "amber"
+    "narration": "Here's your fix: wait 24 hours before any unplanned purchase. That one pause saves the average emotional spender $14,000 a year. Follow for more tricks like this.",
+    "visual": "Clock face with rotating hour hand labeled 24 HRS, an arrow pointing right to a growing pink piggy bank with a coin dropping in. Savings counter ticks up to $14,000. Light background.",
+    "accent_color": "orange"
   }
 ]
