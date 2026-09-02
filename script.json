@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Nine out of ten purchases you make aren't logical — they're emotional. Your brain pulls the trigger before your logic even wakes up. Wild, right?",
-    "visual": "Split brain SVG: left half labeled LOGIC in blue, right half labeled EMOTION in glowing orange. Dollar signs float upward out of the emotion side. Dark background.",
-    "accent_color": "orange"
+    "narration": "You think you're reading a menu. You're not. Cornell researchers found restaurants engineer every inch of it to make you spend more — and it works every time.",
+    "visual": "Restaurant menu SVG with items listed (Salmon 28, Prime Rib 42, Halibut 38, Lobster 65). An eye appears on the menu at the end, staring back at the viewer.",
+    "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "Stress is trigger number one. When cortisol spikes, your brain reaches for instant relief — and that usually means spending. Retailers literally track these patterns.",
-    "visual": "Person silhouette with red stress ripple circles radiating outward. A credit card slides into their right hand. A shopping bag floats in from the right. Light background.",
-    "accent_color": "orange"
+    "narration": "Your eyes always go to the same spot first — top right. Restaurants call it the golden triangle, and they plant their highest-margin items right there. You didn't pick that steak. The menu placed it in front of your eyes.",
+    "visual": "Two-column menu. Right column glows amber and is labeled 'GOLDEN TRIANGLE.' An eye-tracking dot moves diagonally to land on top-right first.",
+    "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Celebration is just as sneaky. Hit a milestone and your brain says you deserve a reward — it's called self-gifting, and it averages $1,200 per event.",
-    "visual": "Happy person silhouette with arms raised, a golden trophy beside them, and a receipt growing taller. Dollar counter ticks up to $1,200. Dark background.",
-    "accent_color": "orange"
+    "narration": "Cornell proved something wild: just removing the dollar sign increases spending by 8%. 'Salmon 42' feels way cheaper than 'Salmon $42' — your brain literally stops calculating.",
+    "visual": "Two price cards side by side: one shows '$42' with a red strikethrough on the dollar sign, the other shows '42' glowing amber. Two comparison bars show spending level — the no-dollar bar is 8% longer.",
+    "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "Then there's boredom buying. Scientists found 23% of all online purchases happen when people just have nothing to do. And it gets worse.",
-    "visual": "Person lounging on a couch holding a phone with a shopping app. A cart badge fills up with items from 0 to 5. Zzz indicators float above. Light background.",
-    "accent_color": "orange"
+    "narration": "Here's the decoy play. That $72 lobster isn't there because anyone orders it — it's there to make the $38 steak look like a steal. This trick alone increases premium sales by 73%.",
+    "visual": "Three menu items: cheap chicken at 26, filet mignon at 38 (gets highlighted in amber), and Japanese Wagyu at 72 labeled 'DECOY — exists to make $38 look cheap.'",
+    "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "Retailers spend $18 billion a year studying your emotional state. Those countdown timers and 'only 3 left' badges hit you in a 6-second window before logic kicks in.",
-    "visual": "Detailed phone screen mockup showing a sneaker product page with countdown timer ticking 6 to 1, a red 'ONLY 3 LEFT' badge, and a pulsing BUY NOW button. Dark background.",
-    "accent_color": "orange"
+    "narration": "And the words. 'Chicken' costs 24. 'Slow-roasted, farm-fresh, hand-crafted chicken' costs 32. Same bird, better adjectives — and studies show descriptive language lifts perceived value by 27%.",
+    "visual": "A plain dish name card shows 'Chicken — 24.' Three amber word-bubbles float in: SLOW-ROASTED, FARM-FRESH, HAND-CRAFTED. The price card updates to show 32 with a growing amber bar underneath.",
+    "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "Here's your fix: wait 24 hours before any unplanned purchase. That one pause saves the average emotional spender $14,000 a year. Follow for more tricks like this.",
-    "visual": "Clock face with rotating hour hand labeled 24 HRS, an arrow pointing right to a growing pink piggy bank with a coin dropping in. Savings counter ticks up to $14,000. Light background.",
-    "accent_color": "orange"
+    "narration": "Americans eat out 5.9 times a week. Add up even $9.75 extra per engineered meal and you're handing restaurants over $3,000 a year in psychological tricks. Now you know — follow for more.",
+    "visual": "Calculation breakdown: '307 meals/yr × +$9.75 = $3,000.' A piggy bank SVG sits beneath the math. Counter animates up to $3,000. CTA text: 'NOW YOU KNOW THE TRICKS — FOLLOW FOR MORE.'",
+    "accent_color": "amber"
   }
 ]
