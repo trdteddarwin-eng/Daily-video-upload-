@@ -1,13 +1,16 @@
 {
   "tiktok": {
-    "caption": "Dollar stores FEEL cheap. Per ounce? One of the most expensive stores in America. 22¢/oz vs 6¢/oz at Costco. That's nearly 4x more per wash.",
-    "hashtags": ["#dollartree", "#dollarstorehacks", "#moneytips", "#personalfinance", "#savemoney", "#frugalliving", "#budgeting", "#moneyhacks", "#consumertraps", "#financecheck"]
+    "caption": "Your 529 plan might be costing your kid $23,000. Most parents never check this one number 👀",
+    "hashtags": ["#529plan", "#collegesavings", "#moneytrap", "#personalfinance", "#savingmoney", "#parentingmoney", "#financetips", "#investing"]
   },
   "youtube_short": {
-    "title": "Dollar Stores Are Scamming You",
-    "title_alternatives": ["Why Dollar Stores Are Actually the Priciest", "The Dollar Store Unit Price Trap Nobody Talks About"],
-    "description": "Dollar stores feel like a deal — but per ounce, per serving, per use, they're often the most expensive store in your zip code. Dollar store laundry detergent runs 22¢/oz vs 6¢/oz at bulk stores. That's nearly 4x the price for the exact same clean. If you spend $60/month on household basics there, you're overpaying $1,400/year — and $140,000 over a working life. The $1.25 sticker is hiding one of retail's highest per-unit markups, and 73% of these stores deliberately cluster in neighborhoods with the fewest alternatives. #moneytips #personalfinance #savemoney Follow for more money traps dressed up as savings.",
-    "tags": ["dollar store", "dollar tree", "money saving tips", "personal finance", "unit price", "frugal living", "budgeting", "cost of living", "money psychology", "consumer traps", "save money", "financial literacy"]
+    "title": "Wrong 529 Plan Costs You $23,000",
+    "title_alternatives": [
+      "The 529 Fee Trap Nobody Warns Parents About",
+      "You Can Use ANY State's 529 — Here's Why It Matters"
+    ],
+    "description": "Most parents open their home state's 529 and never think about it again. But 16 states run plans so expensive that the fee difference alone costs you $23,000 over 18 years. The wild part — you can open any state's 529 from anywhere in the country. Utah's my529 charges 0.05%. Some states charge 0.93%. That's 19 times higher for the exact same money. Google your state's 529 expense ratio and switch if it's above 0.3%. #529plan #collegesavings #personalfinance #moneyhacks #investingtips",
+    "tags": ["529 plan", "college savings", "529 fees", "personal finance", "money traps", "investing tips", "Utah 529", "education savings", "money psychology", "financial literacy"]
   },
-  "hook_line": "Dollar stores cost MORE per ounce"
+  "hook_line": "Your 529 has a secret fee eating $23,000"
 }

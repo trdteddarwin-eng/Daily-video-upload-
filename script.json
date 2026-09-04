@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Dollar stores are now more common than McDonald's and Starbucks combined. Fifty-four million Americans shop them every week to save money. But here's the wild part — they're secretly one of the most expensive stores in America.",
-    "visual": "Dollar store storefront SVG with red '$1.25' signs in every window. Row of person silhouettes walking through the door. Badge at top reads '36,000 LOCATIONS'. Text overlay below: '54 MILLION SHOPPERS/WEEK ALL THINKING THEY'RE SAVING'.",
-    "accent_color": "red"
+    "narration": "Most parents set up a 529 and feel great about it. But there's a fee hiding inside that could cost your kid twenty-three thousand dollars. Let me show you the math.",
+    "visual": "Parent and child silhouettes walking together, graduation cap floating above, piggy bank labeled '529' spring-in, stat badge reading '54 Million Families Have a 529'",
+    "accent_color": "blue"
   },
   {
     "scene": 2,
-    "narration": "That bottle of detergent costs $1.25 and feels like a steal. But dollar store detergent runs twenty-two cents per ounce. Costco runs six cents per ounce. You're paying nearly four times as much per wash.",
-    "visual": "Two laundry detergent bottles side by side. Left: small dollar store bottle labeled '$1.25 — 22¢ per oz'. Right: large bulk bottle labeled '$11.09 — 6¢ per oz'. Animated horizontal bar chart below shows the per-oz comparison. '4x MORE EXPENSIVE' label springs in.",
-    "accent_color": "red"
+    "narration": "Every 529 charges a fee called an expense ratio. The best plans charge just 0.05%. Some states charge 0.93% — that's nineteen times higher for the exact same investment.",
+    "visual": "Animated bar chart: a tiny green bar for 0.05% (best plans, Utah/Nevada) vs a massive red bar for 0.93% (worst state plans), '19x HIGHER' badge drops in",
+    "accent_color": "blue"
   },
   {
     "scene": 3,
-    "narration": "Dollar stores deliberately sell tiny packages — not to help you, but to hide the real price. Your brain sees $1.25 and stops doing math. Researchers call this unit-price blindness, and retailers engineer it on purpose.",
-    "visual": "Product package with huge '$1.25' price and tiny '5.7 oz' text almost invisible. Arrow pointing to simple SVG brain graphic. A red blindfold bar overlays the brain. Text box reveals: 'SMALL PACKAGES = HIDDEN COST — DELIBERATE. ENGINEERED.'",
-    "accent_color": "red"
+    "narration": "On a hundred thousand dollars over eighteen years, that fee gap doesn't sound like much. But compound it out and you've quietly handed twenty-three thousand dollars straight to your plan provider.",
+    "visual": "Two animated columns growing — green tall column for low-fee plan ending at $323K, red shorter column for high-fee plan at $300K, animated gap counter ticking up to $23,000",
+    "accent_color": "blue"
   },
   {
     "scene": 4,
-    "narration": "Here's the part that makes it worse. Seventy-three percent of dollar stores cluster in lower-income neighborhoods where residents have fewer grocery alternatives. The people with the least money pay the highest per-unit prices.",
-    "visual": "City grid map. Red dollar-sign dots appear progressively, clustering in a highlighted lower-income zone. A few scattered dots elsewhere. Legend and text: '73% IN LOW-INCOME AREAS — FEWEST ALTERNATIVES. HIGHEST PRICES.'",
-    "accent_color": "red"
+    "narration": "Here's the thing most people don't know — you're not locked into your home state's plan. You can open any state's 529 from anywhere in the country. Any state. Any family.",
+    "visual": "Person silhouette in 'Your State' box, arrows pointing out to three floating cards: Utah (green, 0.05%), Nevada (green, 0.07%), generic 'Your State' (grey, 0.3-0.9%+)",
+    "accent_color": "blue"
   },
   {
     "scene": 5,
-    "narration": "If you spend sixty dollars a month on household basics at a dollar store, you're overpaying by about $1,400 a year versus buying equivalent products in larger sizes. Over a working life, that's $140,000.",
-    "visual": "Receipt/math breakdown: '$60/mo dollar store spend' vs '$43/mo bulk equivalent'. Animated counter counts up to $1,400 annual overpayment, then $140,000 lifetime total. Red highlighted total box with '40-YEAR DRAIN' label.",
-    "accent_color": "red"
+    "narration": "Utah's my529 plan charges just 0.05% and beats almost every plan in America. If your current state plan charges more than 0.3%, you're overpaying — and it's time to switch.",
+    "visual": "Comparison table rows animating in: Utah 0.05% (best), Nevada 0.07%, New York 0.09%, then a warning row for '16 States 0.3%+' in red with alert border",
+    "accent_color": "blue"
   },
   {
     "scene": 6,
-    "narration": "Next time you pick up that $1.25 item, flip the package and check the ounces. Unit price is the number that actually matters. Follow for more money traps dressed up as savings.",
-    "visual": "Package front showing big '$1.25' fades out. Package flips to reveal unit price: '22¢/oz — YOU PAY 267% MORE'. Piggy bank SVG appears. CTA text: 'UNIT PRICE = REAL PRICE — FOLLOW FOR MORE MONEY TRAPS'.",
-    "accent_color": "red"
+    "narration": "Google your state's 529 expense ratio right now. If it's above 0.3%, switch to Utah or Nevada — it's free to open and takes fifteen minutes. That one move puts $23,000 back.",
+    "visual": "Phone screen showing '529 fee' search results with Utah 0.05% highlighted green and home state 0.72% in red, graduation cap and diploma, green badge '+ $23,000' springs in",
+    "accent_color": "blue"
   }
 ]

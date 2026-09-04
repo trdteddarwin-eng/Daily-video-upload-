@@ -1,7 +1,13 @@
 {
-  "title": "Dollar Stores Are the Most Expensive Store in America",
-  "hook": "Fifty-four million Americans shop dollar stores every week to save money — but per ounce, per use, per serving, it's one of the most expensive places you can shop.",
-  "angle": "Contrarian: dollar stores feel cheap but deliberately sell tiny packages to trigger unit-price blindness — the per-unit cost is 3-4x higher than bulk alternatives, and they cluster in low-income neighborhoods with fewest alternatives",
-  "audience": "Budget shoppers, low-to-middle income earners, and deal hunters who don't realize the $1.25 sticker hides one of retail's highest per-unit markups",
-  "key_numbers": ["22¢/oz dollar store detergent vs. 6¢/oz at Costco — nearly 4x more expensive", "36,000 dollar stores in the US — more than McDonald's and Starbucks combined", "73% of dollar stores located in lower-income neighborhoods", "$1,400/year overspend vs. buying equivalent bulk products", "$140,000 over a working life — invested at 7% it's even more"]
+  "title": "Wrong 529 Plan? You Just Lost $23,000 for College",
+  "hook": "Most parents pick their home state's 529 and never look back. But 16 states run plans so expensive that one decision quietly steals $23,000 from your kid's college fund.",
+  "angle": "You can open ANY state's 529 from anywhere — most families don't know this, so they stay locked in overpriced home-state plans charging 19x higher fees",
+  "audience": "Parents saving for college, anyone with a 529 plan already open",
+  "key_numbers": [
+    "0.05% — best 529 expense ratio (Utah my529)",
+    "0.93% — worst state 529 plans (19x higher)",
+    "$23,000 difference on $100K invested over 18 years",
+    "16 states with above-average 529 fees",
+    "73% of parents pick home state without comparing options"
+  ]
 }
