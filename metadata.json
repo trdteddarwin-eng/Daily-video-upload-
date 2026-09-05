@@ -1,16 +1,13 @@
 {
   "tiktok": {
-    "caption": "Your 529 plan might be costing your kid $23,000. Most parents never check this one number 👀",
-    "hashtags": ["#529plan", "#collegesavings", "#moneytrap", "#personalfinance", "#savingmoney", "#parentingmoney", "#financetips", "#investing"]
+    "caption": "Your retirement calculator is lying — it forgot $315K in healthcare, the IRS's 22% cut, sequence risk & real inflation. You're $847K short.",
+    "hashtags": ["#retirement", "#retirementplanning", "#personalfinance", "#money", "#financialtips", "#401k", "#investing", "#wealthbuilding"]
   },
   "youtube_short": {
-    "title": "Wrong 529 Plan Costs You $23,000",
-    "title_alternatives": [
-      "The 529 Fee Trap Nobody Warns Parents About",
-      "You Can Use ANY State's 529 — Here's Why It Matters"
-    ],
-    "description": "Most parents open their home state's 529 and never think about it again. But 16 states run plans so expensive that the fee difference alone costs you $23,000 over 18 years. The wild part — you can open any state's 529 from anywhere in the country. Utah's my529 charges 0.05%. Some states charge 0.93%. That's 19 times higher for the exact same money. Google your state's 529 expense ratio and switch if it's above 0.3%. #529plan #collegesavings #personalfinance #moneyhacks #investingtips",
-    "tags": ["529 plan", "college savings", "529 fees", "personal finance", "money traps", "investing tips", "Utah 529", "education savings", "money psychology", "financial literacy"]
+    "title": "Your Retirement Calculator Is Lying to You",
+    "title_alternatives": ["The 4 Things Your Retirement Calculator Forgot", "Why You're $847K Shorter Than You Think"],
+    "description": "That retirement calculator gave you a green checkmark — but it skipped 4 massive expenses. Healthcare costs alone average $315,000 out-of-pocket per couple. Then there's the IRS's 22% cut on every 401k dollar, sequence of returns risk, and real healthcare inflation cutting your purchasing power in half every 11 years. The gap adds up to $847,000 most people never see coming. Follow for more financial truths they don't teach. #retirementplanning #personalfinance #money #401k #investing",
+    "tags": ["retirement", "retirement planning", "personal finance", "401k", "investing", "money", "financial tips", "wealth", "retirement calculator", "healthcare costs retirement"]
   },
-  "hook_line": "Your 529 has a secret fee eating $23,000"
+  "hook_line": "YOUR CALCULATOR FORGOT $847,000"
 }

@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Most parents set up a 529 and feel great about it. But there's a fee hiding inside that could cost your kid twenty-three thousand dollars. Let me show you the math.",
-    "visual": "Parent and child silhouettes walking together, graduation cap floating above, piggy bank labeled '529' spring-in, stat badge reading '54 Million Families Have a 529'",
-    "accent_color": "blue"
+    "narration": "You ran your numbers through a retirement calculator and got a green checkmark. But that calculator is missing four things — and together they add up to $847,000.",
+    "visual": "Dark background. A laptop monitor displays a calculator UI with 'ON TRACK ✓' in green and a 75% progress bar. After a beat, a large red X slams across the screen. Below, '$847,000 GAP / 4 THINGS IT FORGOT' springs in with red accent text.",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Every 529 charges a fee called an expense ratio. The best plans charge just 0.05%. Some states charge 0.93% — that's nineteen times higher for the exact same investment.",
-    "visual": "Animated bar chart: a tiny green bar for 0.05% (best plans, Utah/Nevada) vs a massive red bar for 0.93% (worst state plans), '19x HIGHER' badge drops in",
-    "accent_color": "blue"
+    "narration": "Number one: healthcare. The average couple pays $315,000 out-of-pocket in retirement. And your calculator doesn't have a single line for medical costs.",
+    "visual": "Light background. A bold red medical cross SVG springs onto screen. A stethoscope appears left, a pill bottle right. Below the cross, a dollar counter animates from $0 up to $315,000. Footer text: 'YOUR CALCULATOR HAS $0 FOR THIS'.",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "On a hundred thousand dollars over eighteen years, that fee gap doesn't sound like much. But compound it out and you've quietly handed twenty-three thousand dollars straight to your plan provider.",
-    "visual": "Two animated columns growing — green tall column for low-fee plan ending at $323K, red shorter column for high-fee plan at $300K, animated gap counter ticking up to $23,000",
-    "accent_color": "blue"
+    "narration": "Number two: tax drag. Every dollar in your traditional 401k is pre-tax money — meaning the IRS silently owns 22 cents of every dollar you've ever saved.",
+    "visual": "Dark background. A pie chart fades in: 78% green slice labeled 'YOU', then a 22% red IRS slice snaps in. Below, '22¢ BELONGS TO THE IRS' springs in with red text. Footer: 'NOT IN THE CALCULATOR'.",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Here's the thing most people don't know — you're not locked into your home state's plan. You can open any state's 529 from anywhere in the country. Any state. Any family.",
-    "visual": "Person silhouette in 'Your State' box, arrows pointing out to three floating cards: Utah (green, 0.05%), Nevada (green, 0.07%), generic 'Your State' (grey, 0.3-0.9%+)",
-    "accent_color": "blue"
+    "narration": "Number three: sequence risk. Retire right before a market crash and you lock in losses forever. Identical savings — one person runs out fifteen years early.",
+    "visual": "Light background. A line chart with two animated paths: a green 'GOOD START' line trending upward, and a red 'BAD START' line crashing then bottoming out at zero. Labels appear: 'SAME SAVINGS. RETIRE 1 YEAR APART. ONE RUNS OUT 15 YEARS EARLY'.",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Utah's my529 plan charges just 0.05% and beats almost every plan in America. If your current state plan charges more than 0.3%, you're overpaying — and it's time to switch.",
-    "visual": "Comparison table rows animating in: Utah 0.05% (best), Nevada 0.07%, New York 0.09%, then a warning row for '16 States 0.3%+' in red with alert border",
-    "accent_color": "blue"
+    "narration": "Number four: real inflation. Healthcare costs inflated six to eight percent for decades. Your 'safe' withdrawal gets cut in half in just eleven years.",
+    "visual": "Light background. Three growing red bars appear sequentially: tall bar 'Today $1,000', medium bar 'Year 11 $512', short bar 'Year 22 $263'. A baseline and x-axis label show the shrinking buying power over time.",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Google your state's 529 expense ratio right now. If it's above 0.3%, switch to Utah or Nevada — it's free to open and takes fifteen minutes. That one move puts $23,000 back.",
-    "visual": "Phone screen showing '529 fee' search results with Utah 0.05% highlighted green and home state 0.72% in red, graduation cap and diploma, green badge '+ $23,000' springs in",
-    "accent_color": "blue"
+    "narration": "Your calculator shows what you want to see. The real number is $847,000 bigger. Follow for the financial truths they don't put on the green checkmark.",
+    "visual": "Light background. Two calculator SVGs spring in side by side. Left calculator shows 'ON TRACK ✓' with a red X crossed over it. Right shows '$847K SHORT' in red. CTA: 'FOLLOW FOR MORE / FINANCIAL TRUTHS THEY DON'T TEACH' pulses in.",
+    "accent_color": "red"
   }
 ]
