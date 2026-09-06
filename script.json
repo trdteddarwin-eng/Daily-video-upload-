@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You ran your numbers through a retirement calculator and got a green checkmark. But that calculator is missing four things — and together they add up to $847,000.",
-    "visual": "Dark background. A laptop monitor displays a calculator UI with 'ON TRACK ✓' in green and a 75% progress bar. After a beat, a large red X slams across the screen. Below, '$847,000 GAP / 4 THINGS IT FORGOT' springs in with red accent text.",
+    "narration": "You pay off your mortgage and think you finally own your home. What nobody tells you: there's a permanent government bill attached, and it keeps growing every single year.",
+    "visual": "House SVG with 'MORTGAGE PAID OFF' green banner; red property tax bill envelope drops in from top; 'IT NEVER STOPS' warning flashes red",
     "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Number one: healthcare. The average couple pays $315,000 out-of-pocket in retirement. And your calculator doesn't have a single line for medical costs.",
-    "visual": "Light background. A bold red medical cross SVG springs onto screen. A stethoscope appears left, a pill bottle right. Below the cross, a dollar counter animates from $0 up to $315,000. Footer text: 'YOUR CALCULATOR HAS $0 FOR THIS'.",
+    "narration": "Property taxes don't care if your mortgage is gone. The average homeowner pays 1.1% of their home's value every single year — mortgage or not, that bill shows up like clockwork.",
+    "visual": "House SVG with large red '1.1% PER YEAR' badge springing onto it; $4,620/year amount revealed below",
     "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Number two: tax drag. Every dollar in your traditional 401k is pre-tax money — meaning the IRS silently owns 22 cents of every dollar you've ever saved.",
-    "visual": "Dark background. A pie chart fades in: 78% green slice labeled 'YOU', then a 22% red IRS slice snaps in. Below, '22¢ BELONGS TO THE IRS' springs in with red text. Footer: 'NOT IN THE CALCULATOR'.",
+    "narration": "Start at $420,000 and your tax bill is $4,620 a year. Twenty years later your house hits $800,000 — now you're writing an $8,800 check every single year. The home gets more expensive even after it's paid off.",
+    "visual": "Two houses side by side — smaller 'TODAY' house vs larger 'YEAR 20' house; tax bill amounts shown below each growing from $4,620 to $8,800",
     "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Number three: sequence risk. Retire right before a market crash and you lock in losses forever. Identical savings — one person runs out fifteen years early.",
-    "visual": "Light background. A line chart with two animated paths: a green 'GOOD START' line trending upward, and a red 'BAD START' line crashing then bottoming out at zero. Labels appear: 'SAME SAVINGS. RETIRE 1 YEAR APART. ONE RUNS OUT 15 YEARS EARLY'.",
+    "narration": "Run it across 40 years of ownership and the average American hands over $289,000 in property taxes. That's almost enough to buy a second home — just to keep the first one.",
+    "visual": "Piggy bank with X drain marks; animated counter running up to $289,000; 'ENOUGH TO BUY A SECOND HOME' text appears",
     "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Number four: real inflation. Healthcare costs inflated six to eight percent for decades. Your 'safe' withdrawal gets cut in half in just eleven years.",
-    "visual": "Light background. Three growing red bars appear sequentially: tall bar 'Today $1,000', medium bar 'Year 11 $512', short bar 'Year 22 $263'. A baseline and x-axis label show the shrinking buying power over time.",
+    "narration": "In retirement, on a fixed income, that bill doesn't slow down — it rises with your home's value. Some retirees in hot markets end up paying more in taxes than they ever did in monthly mortgage payments.",
+    "visual": "Retired person silhouette in chair; flat green income bar vs red property tax bar growing above it with upward arrow",
     "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Your calculator shows what you want to see. The real number is $847,000 bigger. Follow for the financial truths they don't put on the green checkmark.",
-    "visual": "Light background. Two calculator SVGs spring in side by side. Left calculator shows 'ON TRACK ✓' with a red X crossed over it. Right shows '$847K SHORT' in red. CTA: 'FOLLOW FOR MORE / FINANCIAL TRUTHS THEY DON'T TEACH' pulses in.",
+    "narration": "Here's the move: look up your state's senior exemption, homestead exemption, or property tax freeze. Most states offer them — most people never apply. Follow for tomorrow's financial trap nobody warned you about.",
+    "visual": "Three checklist items spring in with red checkmarks: 'SENIOR EXEMPTION', 'HOMESTEAD EXEMPTION', 'PROPERTY TAX FREEZE'; savings badge and follow CTA",
     "accent_color": "red"
   }
 ]

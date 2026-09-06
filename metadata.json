@@ -1,13 +1,16 @@
 {
   "tiktok": {
-    "caption": "Your retirement calculator is lying — it forgot $315K in healthcare, the IRS's 22% cut, sequence risk & real inflation. You're $847K short.",
-    "hashtags": ["#retirement", "#retirementplanning", "#personalfinance", "#money", "#financialtips", "#401k", "#investing", "#wealthbuilding"]
+    "caption": "You pay off your mortgage and think you own your home. Property taxes never stop — most homeowners pay $289K over 40 years.",
+    "hashtags": ["#personalfinance", "#homeownership", "#propertytax", "#realestate", "#moneytips", "#financetok", "#wealthmindset"]
   },
   "youtube_short": {
-    "title": "Your Retirement Calculator Is Lying to You",
-    "title_alternatives": ["The 4 Things Your Retirement Calculator Forgot", "Why You're $847K Shorter Than You Think"],
-    "description": "That retirement calculator gave you a green checkmark — but it skipped 4 massive expenses. Healthcare costs alone average $315,000 out-of-pocket per couple. Then there's the IRS's 22% cut on every 401k dollar, sequence of returns risk, and real healthcare inflation cutting your purchasing power in half every 11 years. The gap adds up to $847,000 most people never see coming. Follow for more financial truths they don't teach. #retirementplanning #personalfinance #money #401k #investing",
-    "tags": ["retirement", "retirement planning", "personal finance", "401k", "investing", "money", "financial tips", "wealth", "retirement calculator", "healthcare costs retirement"]
+    "title": "Property Taxes Never Stop — $289K Gone",
+    "title_alternatives": [
+      "Paying Off Your Mortgage Won't Save You From This",
+      "The $289K Hidden Cost of 'Owning' Your Home"
+    ],
+    "description": "Think paying off your mortgage means you finally own your home? Property taxes don't care — they keep coming every single year, and they grow as your home gains value. Most homeowners pay over $289,000 in property taxes across 40 years of ownership. That's enough to buy a second home just to keep the first one. In retirement, on a fixed income, that rising bill can actually exceed your old mortgage payment. The fix: look up your state's senior exemption, homestead exemption, or property tax freeze — most people never apply. Follow for more hidden financial traps nobody warns you about. #propertytax #personalfinance #homeownership #realestate #moneytips",
+    "tags": ["property tax", "homeownership", "personal finance", "real estate", "money tips", "retirement trap", "housing costs", "financial literacy", "home buying", "property taxes explained"]
   },
-  "hook_line": "YOUR CALCULATOR FORGOT $847,000"
+  "hook_line": "You 'own' your home — but pay forever"
 }
