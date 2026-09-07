@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Nine out of ten purchases you make aren't logical — they're emotional. Your brain pulls the trigger before your logic even wakes up. Wild, right?",
-    "visual": "Split brain SVG: left half labeled LOGIC in blue, right half labeled EMOTION in glowing orange. Dollar signs float upward out of the emotion side. Dark background.",
-    "accent_color": "orange"
+    "narration": "You're walking out of the grocery store spending twenty-one hundred dollars more than you should every single year. Not because you're buying extra — because of what's printed on the box.",
+    "visual": "Shopping cart SVG spring-animating in from center, large $2,100 counter rolling up in green, 'WASTED ON BRAND NAMES' text appearing beneath, subtle tagline fading in",
+    "accent_color": "green"
   },
   {
     "scene": 2,
-    "narration": "Stress is trigger number one. When cortisol spikes, your brain reaches for instant relief — and that usually means spending. Retailers literally track these patterns.",
-    "visual": "Person silhouette with red stress ripple circles radiating outward. A credit card slides into their right hand. A shopping bag floats in from the right. Light background.",
-    "accent_color": "orange"
+    "narration": "Here's what brands don't want you knowing: roughly eighty percent of store-brand products come from the exact same factories as the name brands. Same recipe, same machinery, different label.",
+    "visual": "Factory building SVG with smoke chimneys, arrow revealing two product boxes — 'BRAND NAME $10' in gray and 'STORE BRAND $6.50' in green, '~80% SAME MANUFACTURER' text appearing",
+    "accent_color": "green"
   },
   {
     "scene": 3,
-    "narration": "Celebration is just as sneaky. Hit a milestone and your brain says you deserve a reward — it's called self-gifting, and it averages $1,200 per event.",
-    "visual": "Happy person silhouette with arms raised, a golden trophy beside them, and a receipt growing taller. Dollar counter ticks up to $1,200. Dark background.",
-    "accent_color": "orange"
+    "narration": "The average price gap is thirty to forty percent. That's three fifty on a ten dollar box of cereal — and you're making that choice dozens of times every single grocery run.",
+    "visual": "Two bars growing up from bottom: gray bar for $10 brand name, green bar for $6.50 store brand, '35% CHEAPER — SAME PRODUCT' callout text fading in below",
+    "accent_color": "green"
   },
   {
     "scene": 4,
-    "narration": "Then there's boredom buying. Scientists found 23% of all online purchases happen when people just have nothing to do. And it gets worse.",
-    "visual": "Person lounging on a couch holding a phone with a shopping app. A cart badge fills up with items from 0 to 5. Zzz indicators float above. Light background.",
-    "accent_color": "orange"
+    "narration": "So why do we still reach for the name brand? It's called the halo effect — and food companies spend thirteen billion dollars a year on advertising to wire that loyalty into your brain.",
+    "visual": "Brain outline SVG springing in, large '$13B' counter counting up, 'SPENT ON ADS PER YEAR' subtitle, 'BUYING YOUR LOYALTY' text in green fading in",
+    "accent_color": "green"
   },
   {
     "scene": 5,
-    "narration": "Retailers spend $18 billion a year studying your emotional state. Those countdown timers and 'only 3 left' badges hit you in a 6-second window before logic kicks in.",
-    "visual": "Detailed phone screen mockup showing a sneaker product page with countdown timer ticking 6 to 1, a red 'ONLY 3 LEFT' badge, and a pulsing BUY NOW button. Dark background.",
-    "accent_color": "orange"
+    "narration": "If you invested that twenty-one hundred dollars every year at eight percent market returns, after thirty years you'd have two hundred and thirty-seven thousand dollars. From one grocery store habit.",
+    "visual": "Four growing bars: Yr 1 $2,100, Yr 10 $31K, Yr 20 $104K, Yr 30 $237K highlighted in green, '$237,000 FROM ONE SWAP' text appearing at bottom",
+    "accent_color": "green"
   },
   {
     "scene": 6,
-    "narration": "Here's your fix: wait 24 hours before any unplanned purchase. That one pause saves the average emotional spender $14,000 a year. Follow for more tricks like this.",
-    "visual": "Clock face with rotating hour hand labeled 24 HRS, an arrow pointing right to a growing pink piggy bank with a coin dropping in. Savings counter ticks up to $14,000. Light background.",
-    "accent_color": "orange"
+    "narration": "Start with the easy swaps — canned goods, pasta, cleaning supplies, frozen veggies, cereal. You won't taste the difference, but your bank account will. Follow for more money tricks like this.",
+    "visual": "Checklist of five items appearing one by one with green checkmark boxes, piggy bank SVG appearing at bottom filling with coins, 'SAVE $2,100 THIS YEAR' and follow CTA",
+    "accent_color": "green"
   }
 ]
