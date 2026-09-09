@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You moved eight thousand dollars in credit card debt to a zero-percent deal. Smart move, right? What the bank didn't tell you cost the average person four thousand six hundred dollars.",
-    "visual": "SVG credit card with '0% APR' badge springs up from bottom. Bold red headline 'THE BALANCE TRANSFER TRAP' fades in. Red $4,600 pill badge pops in below.",
+    "narration": "Your complete financial identity — Social Security number, bank accounts, credit history — is for sale online right now. The going price? Twelve dollars.",
+    "visual": "Dark background with a red price tag SVG showing '$12' springing in from center. Above it: 'YOUR IDENTITY' header slides up. Below: three icons — SSN card, credit card, bank building — fade in.",
     "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Number one — before you saved a dollar in interest, you paid a three percent transfer fee. On eight thousand bucks that's two hundred forty dollars gone on day one, straight to the bank.",
-    "visual": "Stack of green money bills labeled '$8,000'. Red arrow animates right toward a bank building SVG. '$240 FEE' badge springs into view. Light background.",
+    "narration": "For twelve bucks, a stranger gets your name, address, SSN, and full credit history. Everything they need to open accounts in your name while you sleep.",
+    "visual": "Light background. Three document cards spring in: an ID card with a person silhouette, an SSN card showing 'XXX-XX-1234', and a credit report. Red 'WHILE YOU SLEEP' badge appears.",
     "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Number two — read the fine print. Every payment you make goes to the zero percent balance first, not the twenty-two percent purchases you keep charging. It's in the contract.",
-    "visual": "Two colored columns side by side: green '0% Transfer Balance' column with downward payment arrow, red '22% New Purchases' column with interest counter ticking up. Dark background.",
+    "narration": "The average victim loses over eight thousand dollars and spends two hundred hours fixing the mess. That's five weeks of full-time work, just cleaning up someone else's crime.",
+    "visual": "Dark background. A cracked piggy bank SVG with gold coins falling from the slot. Dollar counter animates up to $8,167. '200+ HOURS WASTED' slides in below.",
     "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Number three — seventy-three percent of people keep spending on the card anyway. A lower balance feels like breathing room. And just like that, your debt stops going down.",
-    "visual": "Person silhouette holding two shopping bags. Credit card icon below. Balance counter climbs upward. '73% KEEP SPENDING' stat badge fades in. Light background.",
+    "narration": "Here's the thing — there's a completely free move that blocks ninety percent of new-account fraud. Takes five minutes, and most people have literally never heard of it.",
+    "visual": "Light background. Phone SVG with a shield and padlock appearing on screen. 'FREE' and '5 MIN' labels spring in on either side. Green 'ACTIVE' indicator on phone.",
     "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Then month twelve hits and that seventeen percent rate kicks back in. The average person owes more than when they started. That free window cost them four thousand six hundred dollars.",
-    "visual": "Countdown clock SVG sweeping to zero. Rate display animates from '0%' to '17%' in red. Debt amount counter climbs. 'MONTH 12' badge pulses. Dark background.",
+    "narration": "It's called a credit freeze. You lock your file at all three bureaus — Equifax, Experian, and TransUnion. Lenders literally cannot see your credit to approve fake accounts.",
+    "visual": "Dark background. Three red shield SVGs spring in labeled EQUIFAX, EXPERIAN, TRANSUNION. Padlocks snap onto each one sequentially. A green checkmark circle appears below.",
     "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Here's the actual move: freeze the card — literally. Pay minimums on the transfer, throw everything extra at new purchases accruing interest right now. Know your exact payoff date before the promo ends.",
-    "visual": "SVG credit card locked inside an ice cube. Three checklist tips appear one by one: 'Freeze the card', 'Hammer new purchases first', 'Know your payoff date'. Light background.",
+    "narration": "Only one in four adults has done this. Search 'freeze credit Equifax' right now — it's free, it's instant, and it's the easiest eight thousand dollars you'll ever protect.",
+    "visual": "Light background. Phone centered showing a 'FREEZE YOUR CREDIT' button and '100% FREE' badge. '75%' stat badge in red. Three bureau shield icons appear below. Strong CTA layout.",
     "accent_color": "red"
   }
 ]
