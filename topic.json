@@ -1,7 +1,13 @@
 {
-  "title": "Your Identity Sells for $12 — Free Fix Takes 5 Minutes",
-  "hook": "Your complete financial identity is selling online right now for $12 — and there's a free five-minute move that blocks 90% of identity theft instantly.",
-  "angle": "Credit freezes are free, permanent protection that 75% of adults have never done — using the visceral $12 dark-web price to make the risk feel urgent and the fix feel stupid-simple",
-  "audience": "Anyone without a credit freeze — statistically 3 in 4 adults",
-  "key_numbers": ["$12 — dark-web price for a full identity profile", "$8,167 — average identity theft loss", "200+ hours to clean up identity theft", "1 in 4 adults have a credit freeze", "5 minutes to freeze all 3 bureaus for free"]
+  "title": "Your Apps Are Engineered to Steal $840/Year From You",
+  "hook": "Your most-used apps were deliberately built to confuse you into spending money — and the average smartphone user loses $840 a year to tricks that were illegal in Europe by 2023.",
+  "angle": "Dark patterns are real, documented, and EU-banned — naming three specific tricks with names (auto-upgrade, confirm shaming, impossible unsubscribe) makes it actionable; the $840 annual cost makes the stakes visceral",
+  "audience": "Any smartphone user with subscriptions — statistically everyone under 50",
+  "key_numbers": [
+    "$840 — average annual losses from dark patterns on mobile",
+    "95% — share of top apps using at least one dark pattern",
+    "$24 billion — what dark patterns extract from U.S. consumers annually",
+    "73% — free trial users who get auto-charged without meaning to",
+    "2023 — year the EU banned the worst dark patterns"
+  ]
 }
