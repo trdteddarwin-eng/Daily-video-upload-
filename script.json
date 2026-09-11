@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Your apps are running a psychological game against you. The average smartphone user loses $840 every year to tricks deliberately built into their favorite apps. And it's completely legal in America.",
-    "visual": "Smartphone center-screen with animated dollar signs draining out of the display, red pulsing glow around the device. Text overlay: 'YOUR APPS ARE STEALING FROM YOU'. Subtext: '$840/YEAR AVERAGE'.",
-    "accent_color": "red"
+    "narration": "Buy two get one free sounds like a win. But seventy-three percent of shoppers only wanted one item — and that 'free' product just cost you thirty-four bucks.",
+    "visual": "Large BOGO price tag springs down from top. Three product boxes slide in from sides. Third box gets a glowing FREE badge. Subtext: '73% only wanted 1 item'.",
+    "accent_color": "orange"
   },
   {
     "scene": 2,
-    "narration": "It's called dark patterns — deliberate design that tricks you into spending money you never planned to. Ninety-five percent of top apps use at least one. Let's meet the three worst.",
-    "visual": "Counter animating from 0% to 95% in large red numerals. Below it: a phone UI mockup showing a giant green 'YES — $9.99/MO' button alongside a tiny barely-visible 'no thanks, maybe later' link. Label: 'OF TOP APPS USE DARK PATTERNS'.",
-    "accent_color": "red"
+    "narration": "Here's why. Your brain literally can't process the word 'free' rationally. The moment you see it, the pain of paying shuts off completely — and retailers flip that switch on purpose.",
+    "visual": "Brain SVG on light background. Giant glowing orange 'FREE' text pulses. A 'pain of paying' meter bar drains to zero as the word FREE appears.",
+    "accent_color": "orange"
   },
   {
     "scene": 3,
-    "narration": "Number one: the free trial auto-upgrade. The cancel button is buried two menus deep on purpose — because 73% of users get charged before they ever find it.",
-    "visual": "A countdown timer ticking from 72:00:00 to 00:00:00. Below it, a credit card SVG. When the timer hits zero, 'CHARGED!' slams in with a red stamp. '73% NEVER CANCEL IN TIME' text below.",
-    "accent_color": "red"
+    "narration": "Here's the actual math. Three items at fourteen dollars each is forty-two dollars total. You 'saved' fourteen — but spent twenty-eight more than you ever planned to.",
+    "visual": "Three price tags appear one by one on dark background. Total $42 appears. Green 'Saved $14' vs red 'Overspent $28' side by side — overspent value pops to full scale.",
+    "accent_color": "orange"
   },
   {
     "scene": 4,
-    "narration": "Number two: confirm shaming. One button says 'Yes, sign me up!' in huge text. The other says 'No thanks, I don't want to save money' in tiny grey. Your guilt does the rest.",
-    "visual": "Large green button 'YES, SIGN ME UP!' springs onto screen. Below it, a tiny grey text 'no thanks, i don't want to save money'. An upward arrow highlights the shame button. Label: 'CONFIRM SHAMING' in red.",
-    "accent_color": "red"
+    "narration": "And stores love it. Retailers running BOGO deals profit twenty-five to forty percent more per transaction. They're not being generous — they're engineering your cart size.",
+    "visual": "Store front SVG on light background. Two-bar chart: regular sale bar vs BOGO bar — BOGO bar towers over the other. '+40%' label pops above it.",
+    "accent_color": "orange"
   },
   {
     "scene": 5,
-    "narration": "Number three: the impossible unsubscribe — five steps, then a phone call, then a guilt survey. The EU actually banned all three of these tricks in 2023. We haven't.",
-    "visual": "Vertical flowchart showing cancellation steps: SETTINGS → ACCOUNT → MEMBERSHIP → CANCEL? (highlighted red) → CALL US → SURVEY. Each box springs in one by one. EU flag badge with 'BANNED 2023 ✓' appears at the end.",
-    "accent_color": "red"
+    "narration": "The average shopper falls for four of these a month. At thirty-four dollars each, that's an extra hundred-thirty-six every month — over seventeen hundred dollars a year.",
+    "visual": "Four shopping bags pop in one by one. Monthly counter climbs to $136. Annual counter races up to $1,700 in red, oversized text.",
+    "accent_color": "orange"
   },
   {
     "scene": 6,
-    "narration": "Tonight, open your bank statement and find every subscription you don't remember signing up for. These three dark patterns are draining $840 a year from people exactly like you. Time to take it back.",
-    "visual": "Simplified bank statement with rows appearing — some flagged in red with an X mark. A green shield SVG springs in showing '$840 RECLAIMED'. CTA button: 'AUDIT YOUR APPS TONIGHT' in red.",
-    "accent_color": "red"
+    "narration": "Before you grab that extra item, ask yourself: would I buy this at full price? If the answer's no — walk away. That's seventeen hundred dollars back in your pocket every year.",
+    "visual": "Light background. Question text fades in. Big red NO button pops. Arrow pointing to piggy bank. Final text: 'That's $1,700 back' in large orange type.",
+    "accent_color": "orange"
   }
 ]

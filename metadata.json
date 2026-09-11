@@ -1,13 +1,16 @@
 {
   "tiktok": {
-    "caption": "Your apps are stealing $840/year using 3 tricks that are literally illegal in Europe. Here's what they look like.",
-    "hashtags": ["#darkpatterns", "#money", "#personalfinance", "#moneytips", "#finance", "#apptricks", "#savemoney", "#moneyhacks", "#consumerrights"]
+    "caption": "That 'free' item isn't free. 73% of BOGO shoppers only wanted one thing — here's what it actually costs you 👇",
+    "hashtags": ["#moneytips", "#personalfinance", "#savemoney", "#moneypsychology", "#financetok", "#shoppingsmart", "#budgeting", "#BOGO", "#moneyhacks", "#broke"]
   },
   "youtube_short": {
-    "title": "Your Apps Steal $840/Year From You",
-    "title_alternatives": ["3 App Tricks That Cost You $840 a Year", "Dark Patterns: How Your Apps Drain $840/Year"],
-    "description": "Your most-used apps were deliberately built to confuse you into spending money — and the average smartphone user loses $840 a year because of it. It's called dark patterns, and 95% of top apps use at least one. We break down the three worst: the free trial that auto-upgrades when you can't find the cancel button, confirm shaming buttons that guilt you into subscribing, and impossible unsubscribe flows that take five clicks plus a phone call. The EU banned all three in 2023. Tonight, open your bank statement and find every subscription you didn't mean to sign up for. #darkpatterns #personalfinance #moneytips #finance #appscam",
-    "tags": ["dark patterns", "app scam", "personal finance", "money tips", "save money", "finance", "subscription trap", "free trial scam", "confirm shaming", "consumer rights", "money hacks", "app tricks", "digital consumer rights", "mobile apps", "money psychology"]
+    "title": "Buy 2 Get 1 Free Is Costing You $1,700/Year",
+    "title_alternatives": [
+      "The BOGO Math That's Draining Your Wallet",
+      "Why 'Free' Items Cost You $1,700 Every Year"
+    ],
+    "description": "Buy two get one free feels like a win — but 73% of shoppers only wanted one item to begin with. The math is brutal: you 'save' $14 but overspend $28 every single trip. Four of these deals a month adds up to over $1,700 in unplanned spending every year. Retailers profit 25–40% more per transaction on BOGO deals. They're not being generous — they're engineering your cart size. Next time you see a BOGO, ask yourself: would I buy this at full price? If no, walk away. That's $1,700 back. #personalfinance #moneytips #savemoney #shoppingtricks #financetok",
+    "tags": ["personal finance", "money tips", "save money", "BOGO", "shopping psychology", "money hacks", "budgeting", "spending habits", "finance", "money psychology", "impulse buying", "frugal living"]
   },
-  "hook_line": "Your apps are stealing $840/year from you"
+  "hook_line": "73% of BOGO shoppers only wanted ONE item"
 }
