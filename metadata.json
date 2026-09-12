@@ -1,16 +1,13 @@
 {
   "tiktok": {
-    "caption": "That 'free' item isn't free. 73% of BOGO shoppers only wanted one thing — here's what it actually costs you 👇",
-    "hashtags": ["#moneytips", "#personalfinance", "#savemoney", "#moneypsychology", "#financetok", "#shoppingsmart", "#budgeting", "#BOGO", "#moneyhacks", "#broke"]
+    "caption": "Your bank charges $468/year just to hold your money — switch takes 20 mins 🏦",
+    "hashtags": ["#personalfinance", "#moneytips", "#bankingtips", "#savemoney", "#financialfreedom", "#moneyhacks", "#highyieldsavings", "#fyp"]
   },
   "youtube_short": {
-    "title": "Buy 2 Get 1 Free Is Costing You $1,700/Year",
-    "title_alternatives": [
-      "The BOGO Math That's Draining Your Wallet",
-      "Why 'Free' Items Cost You $1,700 Every Year"
-    ],
-    "description": "Buy two get one free feels like a win — but 73% of shoppers only wanted one item to begin with. The math is brutal: you 'save' $14 but overspend $28 every single trip. Four of these deals a month adds up to over $1,700 in unplanned spending every year. Retailers profit 25–40% more per transaction on BOGO deals. They're not being generous — they're engineering your cart size. Next time you see a BOGO, ask yourself: would I buy this at full price? If no, walk away. That's $1,700 back. #personalfinance #moneytips #savemoney #shoppingtricks #financetok",
-    "tags": ["personal finance", "money tips", "save money", "BOGO", "shopping psychology", "money hacks", "budgeting", "spending habits", "finance", "money psychology", "impulse buying", "frugal living"]
+    "title": "Your Bank Charges $468/Year For Nothing",
+    "title_alternatives": ["Banks Secretly Take $468 From You Every Year", "The $468 Fee Your Bank Hides in Fine Print"],
+    "description": "Your bank is charging you nearly $468 a year in fees while paying you 0.01% on your savings — and lending it out at 7%. Online banks like Ally, Marcus, and SoFi do the exact same thing for $0 in fees and 4.75% APY. Switching takes 20 minutes and saves you nearly $2,800 over 5 years. Search 'best high-yield savings account' today and stop handing your bank free money. #personalfinance #savemoney #highyieldsavings #bankingtips #moneyhacks",
+    "tags": ["personal finance", "banking", "high yield savings", "money tips", "save money", "bank fees", "online banking", "financial tips", "money hacks", "ally bank", "marcus bank", "sofi", "savings account"]
   },
-  "hook_line": "73% of BOGO shoppers only wanted ONE item"
+  "hook_line": "Your bank charges $468/year to hold your own money"
 }

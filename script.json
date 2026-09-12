@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Buy two get one free sounds like a win. But seventy-three percent of shoppers only wanted one item — and that 'free' product just cost you thirty-four bucks.",
-    "visual": "Large BOGO price tag springs down from top. Three product boxes slide in from sides. Third box gets a glowing FREE badge. Subtext: '73% only wanted 1 item'.",
+    "narration": "Your bank charges you nearly $468 a year just to hold your money. It's buried in the fine print — and almost nobody does the math.",
+    "visual": "Big bank building SVG springs up with dollar bills flying away from it, orange pediment, text overlay: YOUR BANK CHARGES $468/YEAR TO HOLD YOUR MONEY",
     "accent_color": "orange"
   },
   {
     "scene": 2,
-    "narration": "Here's why. Your brain literally can't process the word 'free' rationally. The moment you see it, the pain of paying shuts off completely — and retailers flip that switch on purpose.",
-    "visual": "Brain SVG on light background. Giant glowing orange 'FREE' text pulses. A 'pain of paying' meter bar drains to zero as the word FREE appears.",
+    "narration": "Number one: $15 a month in maintenance fees — $180 a year. Number two: $35 overdraft charge hits you three times — $105. Number three: $3 ATM fees five times a month — another $180.",
+    "visual": "Three fee line items sliding in one by one on light background — $15/mo maintenance → $180/yr, $35 overdraft → $105/yr, $3 ATM fee → $180/yr — with $468 total in red at bottom",
     "accent_color": "orange"
   },
   {
     "scene": 3,
-    "narration": "Here's the actual math. Three items at fourteen dollars each is forty-two dollars total. You 'saved' fourteen — but spent twenty-eight more than you ever planned to.",
-    "visual": "Three price tags appear one by one on dark background. Total $42 appears. Green 'Saved $14' vs red 'Overspent $28' side by side — overspent value pops to full scale.",
+    "narration": "And while they charge you fees, they're paying you 0.01% interest on your savings — while lending it out at 7%. That's $47 they earn for every dollar they give you.",
+    "visual": "Animated bar chart on dark background: tiny red bar for 0.01% big bank rate vs tall green bar for 4.75% online bank rate, both growing from zero",
     "accent_color": "orange"
   },
   {
     "scene": 4,
-    "narration": "And stores love it. Retailers running BOGO deals profit twenty-five to forty percent more per transaction. They're not being generous — they're engineering your cart size.",
-    "visual": "Store front SVG on light background. Two-bar chart: regular sale bar vs BOGO bar — BOGO bar towers over the other. '+40%' label pops above it.",
+    "narration": "Online banks like Ally, Marcus, and SoFi are FDIC insured, have real customer service, charge zero in monthly fees — and pay 4.75% on your savings.",
+    "visual": "Phone SVG with online banking app screen springing into view on light background, showing $0 monthly fee and 4.75% APY on savings",
     "accent_color": "orange"
   },
   {
     "scene": 5,
-    "narration": "The average shopper falls for four of these a month. At thirty-four dollars each, that's an extra hundred-thirty-six every month — over seventeen hundred dollars a year.",
-    "visual": "Four shopping bags pop in one by one. Monthly counter climbs to $136. Annual counter races up to $1,700 in red, oversized text.",
+    "narration": "Switch accounts and you save $468 in fees a year, plus earn way more interest — that's nearly $2,800 back in your pocket over five years. Switching takes 20 minutes.",
+    "visual": "Piggy bank SVG with coins dropping into coin slot, dollar counter animating up to $2,800 on dark background with orange accent",
     "accent_color": "orange"
   },
   {
     "scene": 6,
-    "narration": "Before you grab that extra item, ask yourself: would I buy this at full price? If the answer's no — walk away. That's seventeen hundred dollars back in your pocket every year.",
-    "visual": "Light background. Question text fades in. Big red NO button pops. Arrow pointing to piggy bank. Final text: 'That's $1,700 back' in large orange type.",
+    "narration": "Search 'best high-yield savings account' right now and open one today. Your bank has been counting on you never doing this math — now you have.",
+    "visual": "Person holding phone SVG on light background, checklist of $0 fees, 4.75% APY, FDIC insured, 20-minute setup appearing one by one — orange CTA banner: BEST HIGH-YIELD SAVINGS 2025",
     "accent_color": "orange"
   }
 ]
