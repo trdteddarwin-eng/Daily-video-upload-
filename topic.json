@@ -1,13 +1,7 @@
 {
-  "title": "Big Banks Quietly Charge $468/Year — For Nothing",
-  "hook": "Your bank is taking $468 from you every year for fees most people never notice — and a free alternative has existed for years.",
-  "angle": "Makes the hidden cost of big bank inertia concrete and personal, then presents the free switch as the obvious move any viewer can do today",
-  "audience": "Anyone with a checking or savings account at Chase, Bank of America, Wells Fargo, or Citi — 150+ million Americans",
-  "key_numbers": [
-    "$468 — average annual fees at the top 4 US banks (maintenance, overdraft, ATM)",
-    "0.01% — interest rate big banks pay on savings accounts",
-    "4.75% — what top online banks pay on high-yield savings",
-    "$0 — monthly fees at Ally, Marcus, SoFi, and similar online banks",
-    "$2,800 — 5-year savings from switching (fees saved + interest earned)"
-  ]
+  "title": "Round-Up Apps Are a 90% Fee Trap",
+  "hook": "That spare-change app isn't building wealth — it's charging $36 a year to save $30. The math is brutal.",
+  "angle": "Most coverage praises round-up apps; this exposes the fee math most users never calculate",
+  "audience": "Anyone using round-up savings apps like Acorns or Qapital",
+  "key_numbers": ["$3/month = $36/year in fees", "avg light user saves ~$30-40/year", "fee ratio up to 120%", "$36/yr invested directly for 30 yrs = $4,400"]
 }

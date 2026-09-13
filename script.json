@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Your bank charges you nearly $468 a year just to hold your money. It's buried in the fine print — and almost nobody does the math.",
-    "visual": "Big bank building SVG springs up with dollar bills flying away from it, orange pediment, text overlay: YOUR BANK CHARGES $468/YEAR TO HOLD YOUR MONEY",
-    "accent_color": "orange"
+    "narration": "You downloaded a round-up savings app and felt like a financial genius. But nobody told you to do the one math problem that changes everything.",
+    "visual": "Smartphone with round-up app icon, gold coins falling around it. Title text 'ROUND-UP TRAP' springs in. Dark background.",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Number one: $15 a month in maintenance fees — $180 a year. Number two: $35 overdraft charge hits you three times — $105. Number three: $3 ATM fees five times a month — another $180.",
-    "visual": "Three fee line items sliding in one by one on light background — $15/mo maintenance → $180/yr, $35 overdraft → $105/yr, $3 ATM fee → $180/yr — with $468 total in red at bottom",
-    "accent_color": "orange"
+    "narration": "Most of these apps charge three dollars a month — that's $36 every year just to use the app. The average light user rounds up about $30 to $40 total.",
+    "visual": "Large '$3/MO' fee label springs in red on light background. Calendar grid of 12 months appears, each labeled $3. '= $36/YEAR' reveals below. 'vs $30-40 SAVED' fades in.",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "And while they charge you fees, they're paying you 0.01% interest on your savings — while lending it out at 7%. That's $47 they earn for every dollar they give you.",
-    "visual": "Animated bar chart on dark background: tiny red bar for 0.01% big bank rate vs tall green bar for 4.75% online bank rate, both growing from zero",
-    "accent_color": "orange"
+    "narration": "Do the math — you're paying $36 in fees to save $35. That's basically a one-hundred-percent fee ratio. You're paying the app more than you're actually saving.",
+    "visual": "Balance scale SVG on dark background. Left pan tilts lower labeled '$36 FEES' in red, right pan rises labeled '$35 SAVED' in green. '100% FEE RATIO' text fades in below.",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Online banks like Ally, Marcus, and SoFi are FDIC insured, have real customer service, charge zero in monthly fees — and pay 4.75% on your savings.",
-    "visual": "Phone SVG with online banking app screen springing into view on light background, showing $0 monthly fee and 4.75% APY on savings",
-    "accent_color": "orange"
+    "narration": "Now to be fair — heavy card swippers can round up enough to clear the fee. But two-thirds of users are light spenders, and for them the app is just a subscription dressed up as savings.",
+    "visual": "Animated bar chart on light background. 'LIGHT SPENDER' bar falls short of the $36 fee line. 'HEAVY SPENDER' bar clears it. '2/3 of users' callout label fades in.",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Switch accounts and you save $468 in fees a year, plus earn way more interest — that's nearly $2,800 back in your pocket over five years. Switching takes 20 minutes.",
-    "visual": "Piggy bank SVG with coins dropping into coin slot, dollar counter animating up to $2,800 on dark background with orange accent",
-    "accent_color": "orange"
+    "narration": "Here's the real cost. That $36 a year, invested directly in an index fund for thirty years at eight percent, grows to four-thousand four-hundred dollars. The app didn't build your wealth — it ate it.",
+    "visual": "Side-by-side comparison on dark background. Left: small pink piggy bank labeled 'WITH APP — ≈$0 net'. Right: large green piggy bank labeled 'DIRECT INVEST — $4,400'. '30 YEARS LATER' header.",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Search 'best high-yield savings account' right now and open one today. Your bank has been counting on you never doing this math — now you have.",
-    "visual": "Person holding phone SVG on light background, checklist of $0 fees, 4.75% APY, FDIC insured, 20-minute setup appearing one by one — orange CTA banner: BEST HIGH-YIELD SAVINGS 2025",
-    "accent_color": "orange"
+    "narration": "Every major brokerage — Fidelity, Schwab, Vanguard — lets you auto-invest any amount for zero fees. Ditch the middleman. Your spare change deserves to work for you, not against you.",
+    "visual": "Light background. '$0 IN FEES' in large green text. Three circular brokerage logos appear. Green CTA button: 'DITCH THE MIDDLEMAN — Auto-invest free, keep 100% of your gains'.",
+    "accent_color": "red"
   }
 ]
