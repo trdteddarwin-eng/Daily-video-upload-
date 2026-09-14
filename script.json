@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You downloaded a round-up savings app and felt like a financial genius. But nobody told you to do the one math problem that changes everything.",
-    "visual": "Smartphone with round-up app icon, gold coins falling around it. Title text 'ROUND-UP TRAP' springs in. Dark background.",
-    "accent_color": "red"
+    "narration": "Amazon fought 20 years to protect one button. Every checkout step they remove makes you spend 12 percent more. Here's where your $1,300 goes.",
+    "visual": "Dark background. Large amber BUY NOW button springs in from below with three gold coins arcing outward. Counter animates to 12%. Text overlay: THE $1,300 BUTTON. Amber accent theme.",
+    "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "Most of these apps charge three dollars a month — that's $36 every year just to use the app. The average light user rounds up about $30 to $40 total.",
-    "visual": "Large '$3/MO' fee label springs in red on light background. Calendar grid of 12 months appears, each labeled $3. '= $36/YEAR' reveals below. 'vs $30-40 SAVED' fades in.",
-    "accent_color": "red"
+    "narration": "Researchers proved adding just one extra confirmation screen cuts impulse buying by 15 percent. So apps bury the cancel option in tiny gray text on purpose.",
+    "visual": "Light background. Three checkout step rectangles stack up, then two get crossed out with red X marks. Arrow points down to a single amber BUY NOW button. Bar chart grows showing spending increase as steps disappear.",
+    "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Do the math — you're paying $36 in fees to save $35. That's basically a one-hundred-percent fee ratio. You're paying the app more than you're actually saving.",
-    "visual": "Balance scale SVG on dark background. Left pan tilts lower labeled '$36 FEES' in red, right pan rises labeled '$35 SAVED' in green. '100% FEE RATIO' text fades in below.",
-    "accent_color": "red"
+    "narration": "Your confirm button is huge and bright amber. Your cancel button is tiny and gray. That single design decision boosts checkout rates by 35 percent.",
+    "visual": "Dark background. Giant amber CONFIRM ORDER button scales in from center. Small gray cancel text fades in below. Labels show size contrast. Stat: 35% MORE CHECKOUTS. Not an accident label.",
+    "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "Now to be fair — heavy card swippers can round up enough to clear the fee. But two-thirds of users are light spenders, and for them the app is just a subscription dressed up as savings.",
-    "visual": "Animated bar chart on light background. 'LIGHT SPENDER' bar falls short of the $36 fee line. 'HEAVY SPENDER' bar clears it. '2/3 of users' callout label fades in.",
-    "accent_color": "red"
+    "narration": "Netflix built a five-step cancellation maze for a reason. Apps that make it hard to cancel keep 68 percent of users paying three extra months they never intended.",
+    "visual": "Light background. Three app icons (circle badges with letters N, A, D) spring in. Padlock overlays appear on each. Counter animates to 68%. Three amber calendar squares show M1, M2, M3 — unintended months billed.",
+    "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "Here's the real cost. That $36 a year, invested directly in an index fund for thirty years at eight percent, grows to four-thousand four-hundred dollars. The app didn't build your wealth — it ate it.",
-    "visual": "Side-by-side comparison on dark background. Left: small pink piggy bank labeled 'WITH APP — ≈$0 net'. Right: large green piggy bank labeled 'DIRECT INVEST — $4,400'. '30 YEARS LATER' header.",
-    "accent_color": "red"
+    "narration": "The average American makes 246 impulse digital purchases a year. At 12 percent overspend per order, that's $1,300 flowing out of your wallet by design.",
+    "visual": "Dark background. Person silhouette (circle head, rectangle body) on left with wallet shape draining coins. Purchase counter animates to 246 then dollar counter grows to $1,300. Equation displayed: 246 × 12% = $1,300.",
+    "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "Every major brokerage — Fidelity, Schwab, Vanguard — lets you auto-invest any amount for zero fees. Ditch the middleman. Your spare change deserves to work for you, not against you.",
-    "visual": "Light background. '$0 IN FEES' in large green text. Three circular brokerage logos appear. Green CTA button: 'DITCH THE MIDDLEMAN — Auto-invest free, keep 100% of your gains'.",
-    "accent_color": "red"
+    "narration": "Here's the fix — add friction back yourself. Delete saved payment info from apps and use a 24-hour wish list rule. One small habit, $1,300 back in your pocket.",
+    "visual": "Light background. Person silhouette holding shield blocking a phone/device. Two checklist items appear: DELETE SAVED PAYMENT INFO and 24-HOUR WISH LIST RULE with amber checkmarks. $1,300 SAVED badge springs in. Follow CTA.",
+    "accent_color": "amber"
   }
 ]

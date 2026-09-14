@@ -1,7 +1,7 @@
 {
-  "title": "Round-Up Apps Are a 90% Fee Trap",
-  "hook": "That spare-change app isn't building wealth — it's charging $36 a year to save $30. The math is brutal.",
-  "angle": "Most coverage praises round-up apps; this exposes the fee math most users never calculate",
-  "audience": "Anyone using round-up savings apps like Acorns or Qapital",
-  "key_numbers": ["$3/month = $36/year in fees", "avg light user saves ~$30-40/year", "fee ratio up to 120%", "$36/yr invested directly for 30 yrs = $4,400"]
+  "title": "That 'Buy Now' Button Cost You $1,300 by Design",
+  "hook": "Amazon patented one-click ordering in 1999 and defended it in court for 20 years — every checkout step they strip away makes you spend 12 percent more, adding up to $1,300 a year.",
+  "angle": "Not just 'impulse buying is bad' — the specific engineering of checkout friction removal, documented spending increases per step removed, and deliberate UI design choices that extract money",
+  "audience": "Anyone who shops online or uses delivery apps — basically every adult under 60",
+  "key_numbers": ["12% more spent per checkout step removed", "35% higher checkout completion from large confirm buttons", "$1,300/year average impulse digital purchase cost", "246 impulse digital purchases per year (avg American)", "68% of subscribers pay 3 months longer when cancellation is hard"]
 }

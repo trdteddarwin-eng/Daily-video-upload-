@@ -1,13 +1,13 @@
 {
   "tiktok": {
-    "caption": "Your round-up savings app charges $36/year to save $35. You're literally paying the app more than you save.",
-    "hashtags": ["#personalfinance", "#moneytips", "#savingmoney", "#financetips", "#moneymindset", "#investing", "#financialfreedom", "#moneyhacks", "#fintech"]
+    "caption": "Amazon fought 20 years in court to protect one button — because every checkout step removed makes you spend 12% more. That's $1,300/year by design.",
+    "hashtags": ["#finance", "#money", "#personalfinance", "#moneytips", "#moneypsychology", "#savings", "#impulsebuying", "#amazon"]
   },
   "youtube_short": {
-    "title": "Round-Up Apps Are a 90% Fee Trap",
-    "title_alternatives": ["Your Savings App Is Draining Your Wallet", "The Round-Up App Scam Nobody Talks About"],
-    "description": "Most round-up savings apps charge $3 a month — that's $36 a year in fees. But the average light user only rounds up $30 to $40 total. You're paying more in fees than you're actually saving. That same $36 invested directly in an index fund for 30 years grows to $4,400. Every major brokerage lets you auto-invest for free. #personalfinance #investing #moneytips — Follow for daily money psychology breakdowns.",
-    "tags": ["personal finance", "money tips", "savings", "investing", "financial freedom", "money hacks", "round up app", "acorns", "fintech fees", "money psychology", "financial literacy", "wealth building"]
+    "title": "That 'Buy Now' Button Cost You $1,300",
+    "title_alternatives": ["How Amazon's Checkout Design Drains Your Wallet", "The $1,300 One-Click Patent Nobody Warned You About"],
+    "description": "Amazon patented one-click ordering in 1999 and defended it in court for 20 years — because removing each checkout step makes you spend 12% more. The average American racks up $1,300 a year in impulse purchases thanks to frictionless checkout design. Apps deliberately make confirm buttons huge and cancel buttons tiny, and 68% of subscribers pay 3 extra months because cancellation is a maze. Here's how to add friction back and keep your $1,300. #PersonalFinance #MoneyPsychology #SaveMoney\n\nFollow for daily money psychology breakdowns.",
+    "tags": ["personal finance", "money psychology", "impulse buying", "amazon", "online shopping", "save money", "one click", "checkout design", "behavioral economics", "frugal living"]
   },
-  "hook_line": "Your savings app charges more than it saves"
+  "hook_line": "Amazon fought 20 years for this button — it costs you $1,300/year"
 }
