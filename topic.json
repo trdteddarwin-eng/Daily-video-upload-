@@ -1,7 +1,7 @@
 {
-  "title": "That 'Buy Now' Button Cost You $1,300 by Design",
-  "hook": "Amazon patented one-click ordering in 1999 and defended it in court for 20 years — every checkout step they strip away makes you spend 12 percent more, adding up to $1,300 a year.",
-  "angle": "Not just 'impulse buying is bad' — the specific engineering of checkout friction removal, documented spending increases per step removed, and deliberate UI design choices that extract money",
-  "audience": "Anyone who shops online or uses delivery apps — basically every adult under 60",
-  "key_numbers": ["12% more spent per checkout step removed", "35% higher checkout completion from large confirm buttons", "$1,300/year average impulse digital purchase cost", "246 impulse digital purchases per year (avg American)", "68% of subscribers pay 3 months longer when cancellation is hard"]
+  "title": "The $1M Singles Tax Nobody Calculates",
+  "hook": "There's a tax on being single that nobody put in the tax code — but living alone costs over a million dollars more than being partnered, and most people never do the math.",
+  "angle": "Not just 'living alone is expensive' — the structural, multi-category financial penalty for single people: housing per-capita gap, married filing jointly tax savings you never get, insurance surcharges. Quantified over 30 years into one brutal total.",
+  "audience": "Single adults 25-45, especially career-focused people who plan their finances solo",
+  "key_numbers": ["$1M+ lifetime singles penalty vs. partnered households", "$400K more in housing over 30 years (100% rent alone vs. 50% split)", "$12,500/year married filing jointly tax advantage ($375K over 30 years)", "$3,400/year average insurance surcharge for single people", "54% of US adults now live alone — highest share in history"]
 }
