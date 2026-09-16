@@ -1,13 +1,16 @@
 {
   "tiktok": {
-    "caption": "There's a $1M tax on being single — and it's completely legal. Here's where your money goes.",
-    "hashtags": ["#finance", "#money", "#singlelife", "#personalfinance", "#moneytips", "#moneypsychology", "#financetok"]
+    "caption": "paying the minimum on your credit card costs $19,000 extra 😳 the bank designed it that way",
+    "hashtags": ["#creditcard", "#debtfree", "#moneytips", "#personalfinance", "#financialfreedom", "#debtpayoff", "#moneyhacks", "#creditcarddebt"]
   },
   "youtube_short": {
-    "title": "The $1M Singles Tax Nobody Calculates",
-    "title_alternatives": ["Living Alone Costs $1M More — Here's Why", "The Hidden Price of Being Single"],
-    "description": "Being single is one of the most expensive financial situations in America — and almost nobody does the math. Between housing costs (you pay 100% alone), the married filing jointly tax break you never get, and insurance surcharges that target single people, the lifetime penalty crosses $1 million. Here's where every dollar goes — and how to build around it. Follow for more money facts that change how you think. #personalfinance #moneytips #singletax #financefacts",
-    "tags": ["singles tax", "personal finance", "money psychology", "single life costs", "financial tips", "money facts", "wealth building", "finance", "money", "housing costs", "tax breaks"]
+    "title": "Minimum Payments Cost You $19,000 Extra",
+    "title_alternatives": [
+      "Your Credit Card Minimum Is a $19K Trap",
+      "Why Minimum Payments Take 22 Years to Clear"
+    ],
+    "description": "If you've ever paid just the minimum on a $5,000 credit card balance, you're looking at 22 years of payments and $19,000 in interest — by design. Banks calculate the minimum to maximize how much you pay them, not to help you escape debt. Adding just $50 extra a month cuts that down to 4 years and saves $15,000. #creditcarddebt #personalfinance #moneytips #debtfree Subscribe for more money traps banks hope you never find out about.",
+    "tags": ["credit card debt", "minimum payment trap", "personal finance", "money tips", "debt payoff", "financial freedom", "credit card tips", "money psychology", "debt free", "finance hacks"]
   },
-  "hook_line": "Being single costs $1M+ more than being married"
+  "hook_line": "Paying the minimum costs $19,000 more"
 }

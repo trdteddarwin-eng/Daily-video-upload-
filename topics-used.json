@@ -1,149 +1,734 @@
 {
   "topics": [
-    {"date": "2026-04-17", "title": "The Raise Trap: Why More Pay Makes You Broker", "hook": "Most people get a raise and end up poorer — here's the math that proves it."},
-    {"date": "2026-04-17", "title": "Your Card Makes You Spend 47% More", "hook": "Swiping a card literally shuts off the pain of spending in your brain — and it's costing you thousands."},
-    {"date": "2026-04-17", "title": "Buy Now Pay Later Costs 45% More Than You Think", "hook": "That 'four easy payments' button just hijacked your wallet — and the numbers prove it."},
-    {"date": "2026-04-17", "title": "The $400/Year Hidden Tax Inside Your Savings Account", "hook": "Your bank pays you almost nothing while inflation eats your savings alive — and they're counting on you not noticing."},
-    {"date": "2026-04-19", "title": "Your 12 Subscriptions Are Stealing $265,000 From You", "hook": "You can name 4 of your subscriptions. The other 8 are quietly wrecking your retirement."},
-    {"date": "2026-04-20", "title": "The $3,011 Tax Refund Trap Nobody Warns You About", "hook": "The IRS just sent you $3,011 — and statistically, you're about to waste every dollar of it."},
-    {"date": "2026-04-21", "title": "Your Brain Treats Tax Refunds Like Free Money", "hook": "You get $3,167 back from the IRS and spend 90% of it in a month — your brain's doing that on purpose."},
-    {"date": "2026-04-22", "title": "36% of $250K Earners Live Paycheck to Paycheck", "hook": "One-third of Americans earning $250,000 still run out of money before payday — here's the psychology that keeps even high earners broke."},
-    {"date": "2026-04-23", "title": "Your New Car Lost $9,600 Before You Made a Payment", "hook": "The moment you drove off the lot, your new car shed nearly ten thousand dollars in value — before you even got home."},
-    {"date": "2026-04-24", "title": "The 100% Return Investment 1 in 3 Workers Refuses", "hook": "Your employer is offering a 100% guaranteed return on your money right now — and millions of people are literally saying no."},
-    {"date": "2026-04-25", "title": "Banks Designed Your Minimum Payment to Trap You", "hook": "Your minimum payment wasn't random — it was engineered to keep you paying interest for 16 years."},
-    {"date": "2026-04-26", "title": "Paying Off Debt Can Drop Your Score 40 Points", "hook": "You just paid off a loan and your credit score dropped — that's not a glitch, it's the algorithm punishing you for doing the right thing."},
-    {"date": "2026-04-27", "title": "The 1% Fee Quietly Stealing $320K From Your 401k", "hook": "There's a fee inside your retirement account most people never look at — and over 40 years, it quietly steals more than the cost of a house."},
-    {"date": "2026-04-28", "title": "Grocery Stores Are Engineered to Steal $47 From You", "hook": "Every inch of your grocery store is a psychological trap — and the average American overspends $47 every single visit because of it."},
-    {"date": "2026-04-29", "title": "The Anchor Price Trick That Makes You Overpay", "hook": "Stores put a $400 item next to a $160 one so $160 feels like a steal — your brain falls for it every single time."},
-    {"date": "2026-04-29", "title": "The Diderot Effect: One Purchase Triggers $3,000", "hook": "You bought new sneakers and suddenly everything you own looks wrong — that cascading urge has a name, and a $3,000 price tag."},
-    {"date": "2026-04-30", "title": "Why 70% of Lottery Winners Go Broke in 5 Years", "hook": "You just won $50 million — and statistically, you're broke again in five years. Here's the psychology behind why jackpots destroy lives."},
-    {"date": "2026-05-01", "title": "The 72-Hour Rule That Stops $31,000 in Impulse Buys", "hook": "Millionaires don't have more willpower — they use one rule that makes impulse buying almost impossible."},
-    {"date": "2026-05-02", "title": "The Scarcity Mindset Tax That Costs You $1,800/Year", "hook": "Worrying about money actually makes you worse at managing it — and scientists have measured exactly how much it costs you."},
-    {"date": "2026-05-03", "title": "Mental Accounting: Why You Blow Your Bonus Every Time", "hook": "Your brain puts money in invisible buckets — and that one quirk costs you over six thousand dollars a year."},
-    {"date": "2026-05-04", "title": "Your '$55K Salary' Is Actually $17 an Hour", "hook": "Your employer says you make fifty-five thousand a year — but once you count what your job actually costs you, your real hourly wage might make you sick."},
-    {"date": "2026-05-05", "title": "The Sunk Cost Trap Secretly Costing You $4,700", "hook": "You keep paying for things you never use because you already spent money on them — and that mental glitch is draining thousands a year."},
-    {"date": "2026-05-06", "title": "The Joneses Effect Is Stealing $6,200 From You", "hook": "Your neighbor's new car just triggered a spending cascade in your brain — and it costs the average American over six thousand dollars a year."},
-    {"date": "2026-05-07", "title": "Your 'Free' Rewards Card Is Costing You $2,400", "hook": "That cashback card isn't rewarding you — it's training you to spend 23% more, and the math is brutal."},
-    {"date": "2026-05-08", "title": "The $0.01 Trick Stores Use to Empty Your Wallet", "hook": "That $9.99 price tag isn't saving you a penny — it's a tested psychological weapon costing you $1,400 a year."},
-    {"date": "2026-05-11", "title": "The Fake Price That Makes You Buy the Expensive One", "hook": "Stores add a fake middle option just to make the priciest choice feel like a steal — and MIT proved it triples premium sales."},
-    {"date": "2026-05-12", "title": "The Endowment Effect: You're Holding a $9,200 Mistake", "hook": "Your brain triples the value of anything you own — and that's keeping you in losing stocks, overpriced homes, and underpaid jobs."},
-    {"date": "2026-05-13", "title": "The 'Start Monday' Trap Is Costing You $187,000", "hook": "You've promised yourself you'd start saving 'next week' hundreds of times — and that one habit has a six-figure price tag."},
-    {"date": "2026-05-14", "title": "Cash Hurts to Spend — That Pain Is Worth $31,000", "hook": "Paying with cash literally activates your brain's pain center — and that discomfort could be the most underrated money hack alive."},
-    {"date": "2026-05-16", "title": "Your $200 Splurge Is a $1,400 Retirement Theft", "hook": "Every dollar you spend in your thirties is secretly worth seven in retirement — and that last impulse buy just robbed your future self."},
-    {"date": "2026-05-17", "title": "Splitting the Check Equally Costs You $1,100 a Year", "hook": "Every time you say 'let's just split it evenly,' your brain orders more — and researchers proved it costs you over a thousand dollars a year."},
-    {"date": "2026-05-18", "title": "Not Negotiating Your Salary Costs You $1,500,000", "hook": "You had one conversation you were too scared to have — and it just cost you a million and a half dollars."},
-    {"date": "2026-05-19", "title": "You Make Your Worst Money Moves After 9PM", "hook": "After 9PM your brain's willpower is basically gone — and every online retailer knows exactly when to hit you."},
-    {"date": "2026-05-21", "title": "Your Car Insurer Charges 19% More for Loyalty", "hook": "Your car insurance company's best rates go to strangers — loyal customers like you pay 19% more, and they're counting on your inertia."},
-    {"date": "2026-05-22", "title": "Why Sales Make You Spend $800 More Every Year", "hook": "You see 40% off and feel like you're winning — but researchers found sale shoppers spend more, not less."},
-    {"date": "2026-05-23", "title": "The 'Pay It Next Month' Lie That Costs $8,400", "hook": "You've said it a hundred times — 'I'll just pay it off next month.' Here's what that promise is actually costing you."},
-    {"date": "2026-05-24", "title": "Your Delivery Apps Charge a Secret $3,100/Year Tax", "hook": "You think you're paying for food — but delivery apps buried a $3,100 annual fee inside every order, and most people never do the math."},
-    {"date": "2026-05-25", "title": "Your 401k Default Setting Is Quietly Stealing $342K", "hook": "Your employer auto-enrolled you at 3% — and 68% of workers never change it. Here's what that silent setting is actually costing you."},
-    {"date": "2026-05-26", "title": "Banks Flip Your Transactions to Drain $12 Billion", "hook": "Your bank secretly reorders your transactions largest-to-smallest — one quiet trick that cost Americans $12 billion in overdraft fees last year."},
-    {"date": "2026-05-27", "title": "Being Broke Costs $1,300/Year More Than Being Rich", "hook": "Low-income Americans pay up to $1,300 extra a year for the exact same life — and the system designed it that way."},
-    {"date": "2026-05-28", "title": "TikTok Made You Buy It — $2,100 Silently Drained", "hook": "Your social media feed isn't entertainment — it's one of the most powerful stores ever built, draining $2,100 a year from Americans who never see it coming."},
-    {"date": "2026-05-28", "title": "You're Paying $558K Interest on a $400K House", "hook": "Nobody tells you the actual price tag on a 30-year mortgage — and when you see the real number, it changes everything."},
-    {"date": "2026-05-29", "title": "That Credit Limit Increase Is a $2,400 Debt Trap", "hook": "Your bank just 'rewarded' you with a higher credit limit — and that gift is statistically about to cost you $2,400."},
-    {"date": "2026-05-31", "title": "67% of Gym Members Never Go — You're Paying to Feel Healthy", "hook": "Gyms don't want you to show up — 67% of memberships are completely unused, and your monthly fee is their business model."},
-    {"date": "2026-06-01", "title": "Free Trials Are Engineered to Drain $1,200 From You", "hook": "That free trial form asked for your credit card for one reason — and it had nothing to do with your convenience."},
-    {"date": "2026-06-02", "title": "Retail Therapy Steals $3,200 — And Stores Plan It", "hook": "You think shopping cheers you up. Stores engineer that feeling — then bill you $3,200 a year for it."},
-    {"date": "2026-06-03", "title": "Overdraft 'Protection' Is a 17,000% Interest Rate", "hook": "You opted into overdraft protection to avoid embarrassment at checkout — and your bank is charging the equivalent of a 17,000% annual interest rate."},
-    {"date": "2026-06-04", "title": "Quitting Your Job Could Cost You $14,000", "hook": "Your 401k match is already in your account — but quit too soon and your company takes it all back. That's the vesting trap most workers never see coming."},
-    {"date": "2026-06-05", "title": "Why 'Invest Monthly' Costs You $23,000", "hook": "You've been told to invest a little each month — but Vanguard proved that habit is the wrong call two-thirds of the time."},
-    {"date": "2026-06-06", "title": "Paying Off Your Mortgage Early Costs You $1M", "hook": "Every finance guru says pay off your house early — but the math shows that habit costs most homeowners over a million dollars."},
-    {"date": "2026-06-07", "title": "Extended Warranties: The $40B Checkout Scam", "hook": "That 'protection plan' question at checkout is one of retail's most profitable tricks — and Americans fall for it to the tune of $40 billion every year."},
-    {"date": "2026-06-08", "title": "Your '0% APR' Deal Hides a $648 Bomb", "hook": "That 12-month zero-interest offer at checkout isn't free money — it's a trap 73% of shoppers walk right into."},
-    {"date": "2026-06-09", "title": "The 20% Down Myth Keeping Renters Trapped 14 Years", "hook": "Seventy-three percent of renters think they need twenty percent down to buy — and that single belief is costing them fourteen extra years of wealth-building."},
-    {"date": "2026-06-10", "title": "The Tax Bracket Myth That Makes You Refuse Money", "hook": "Millions of workers turn down raises because they think a higher bracket will leave them with less — and that belief is completely, mathematically wrong."},
-    {"date": "2026-06-11", "title": "The '$3/Day' Trick That Costs You $51,000", "hook": "Every subscription, gym membership, and app pitches itself as 'just a few dollars a day' — and that framing is engineered to make you blind to the real price tag."},
-    {"date": "2026-06-12", "title": "You're Paying $270 to File Taxes — When It's Free", "hook": "Sixty million Americans pay a tax preparer an average of $270 — for a service the IRS provides completely free."},
-    {"date": "2026-06-13", "title": "The Loser Stock Your Brain Won't Sell Costs $47K", "hook": "You're 1.7 times more likely to sell a winning stock than a losing one — and behavioral economists call that the most expensive habit in investing."},
-    {"date": "2026-06-14", "title": "Claiming Social Security at 62 Costs You $182,000", "hook": "Half of Americans claim Social Security the second they can — and it's one of the most expensive retirement mistakes you can make."},
-    {"date": "2026-06-15", "title": "92% of Fund Managers Can't Beat This One Move", "hook": "You're paying a 'professional' to manage your money — and 92% of the time, a simple computer program beats them."},
-    {"date": "2026-06-16", "title": "$408 of YOUR Money Vanishes Every December", "hook": "The government gave you a tax-free healthcare account — then buried a rule that deletes your own money if you forget about it."},
-    {"date": "2026-06-18", "title": "Your Side Hustle Has a Hidden 15% Tax Nobody Warns You", "hook": "You started a side hustle to get ahead — but the IRS has a secret tax most freelancers never see coming until the bill arrives."},
-    {"date": "2026-06-19", "title": "Why Checking Your Portfolio Daily Costs You $47,000", "hook": "You check your investment app every morning thinking you're being responsible — that one daily habit is quietly costing you forty-seven thousand dollars."},
-    {"date": "2026-06-20", "title": "Autopay Silently Drains $1,700 From You Every Year", "hook": "You turned on autopay to simplify life — and it just switched off the part of your brain that notices when you're being overcharged."},
-    {"date": "2026-06-21", "title": "Wrong Health Plan Costs You $2,100 Every Year", "hook": "Fifty-one percent of workers pick the wrong health insurance plan every open enrollment — and the average mistake costs them over $2,100 a year without them ever realizing it."},
-    {"date": "2026-06-22", "title": "The Tip Screen Is Engineered to Drain $1,040 From You", "hook": "That little screen spinning around at the coffee counter isn't asking for your generosity — it's a psychological weapon designed to extract money you never planned to give."},
-    {"date": "2026-06-23", "title": "The Rent Rule Every Guru Quotes Is From 1969", "hook": "Everyone tells you to spend 30% of your income on rent — but that rule was created for $8,400 annual salaries, and blindly following it today could be your biggest financial mistake."},
-    {"date": "2026-06-24", "title": "The 3-Year Car Lease Trap That Costs $22,000", "hook": "Everyone assumes leasing is the smart move for that lower monthly payment — but serial leasing costs $22,000 more than buying over a decade, and dealers know you'll never do the math."},
-    {"date": "2026-06-25", "title": "The HSA Triple Tax Trick Costing You $395,000", "hook": "Most people swipe their HSA card at the doctor and call it a day — but there's a triple tax-free trick inside it worth nearly $400,000, and 68% of Americans are leaving it on the table."},
-    {"date": "2026-06-26", "title": "Your 401k Loan Gets Taxed Twice — $152K Gone", "hook": "One in four people with a 401k has taken a loan from it — and almost none of them know the IRS double-taxes that money."},
-    {"date": "2026-06-27", "title": "The $221K Phone Upgrade Trap Nobody Talks About", "hook": "You upgrade your phone every 22 months — and nobody's done the math on what that's actually costing you at retirement."},
-    {"date": "2026-06-28", "title": "Your Brain Can't Do Compound Interest — $400K Gone", "hook": "Scientists asked people to estimate compound interest and the average guess was off by 65% — that one cognitive glitch is why most people will work until they die."},
-    {"date": "2026-06-29", "title": "Whole Life Insurance Is a $695K Trap", "hook": "Your insurance agent earned $5,700 the day you signed your whole life policy — and that money came from your future, not theirs."},
-    {"date": "2026-06-30", "title": "The Credit Balance Myth Draining $92K From You", "hook": "Most Americans think carrying a credit card balance builds their credit score faster — that's 100% false, and believing it could cost you $92,000."},
-    {"date": "2026-07-01", "title": "Why Saving Feels Like Pain — The $312K Brain Glitch", "hook": "Your brain literally cannot feel your future self's pain — that one glitch is why 56% of Americans have under $1,000 saved."},
-    {"date": "2026-07-02", "title": "Stores Designed Gift Cards to Steal $3 Billion From You", "hook": "There's probably $175 in gift cards buried in your home right now — and retailers deliberately built every obstacle to make sure you never spend it."},
-    {"date": "2026-07-03", "title": "Your Store Card Discount Is a $2,800 Debt Trap", "hook": "You saved $34 at checkout when you signed up for that store credit card — and that yes cost you $2,800."},
-    {"date": "2026-07-04", "title": "Retire in the Wrong Year and Lose $1M", "hook": "Two people retire the same month with identical savings — one runs out in sixteen years, the other never does. The only difference is when the market crashed."},
-    {"date": "2026-07-05", "title": "The 'I Deserve This' Trap Stealing $4,800/Year", "hook": "The moment you say 'I deserve this,' your brain has already switched off its spending filter — and that three-word phrase costs the average American $4,800 every single year."},
-    {"date": "2026-07-06", "title": "Shrinkflation Is Stealing $2,900 From Your Groceries", "hook": "Your grocery price went up — but your grocery bag got lighter. Shrinkflation quietly drains $2,900 from the average household every year."},
-    {"date": "2026-07-08", "title": "The $3,200 Friendship Tax Nobody Talks About", "hook": "Your friends are quietly one of your biggest hidden expenses — and you've never once questioned it."},
-    {"date": "2026-07-09", "title": "Your Emergency Fund Is Quietly Losing $3,400", "hook": "You built an emergency fund — but where you're keeping it is silently donating thousands to your bank every year."},
-    {"date": "2026-07-10", "title": "Missing 10 Market Days Costs You $38,000", "hook": "Investors who panic and pull out during crashes miss the 10 best days — and that one mistake turns $71,750 into $32,871."},
-    {"date": "2026-07-11", "title": "The Ultra-Rich Pay 8.2% Tax While You Pay 22%", "hook": "Billionaires found a legal strategy to live on millions tax-free while you hand over 22% — and it's been hiding in plain sight."},
-    {"date": "2026-07-12", "title": "Your Partner's Money Habits Will Cost You $760K", "hook": "If you and your partner don't agree on money, you're not just arguing — you're statistically losing three-quarters of a million dollars."},
-    {"date": "2026-07-13", "title": "Banks Charge $900 for a Trick You Can Do Free", "hook": "Your bank charges nine hundred dollars to enroll you in their 'biweekly mortgage program' — and that exact same trick costs you absolutely nothing to pull off yourself."},
-    {"date": "2026-07-14", "title": "Not Opening Your Bills Costs You $24,000", "hook": "Forty-two percent of Americans won't open their financial statements tonight — and that one habit of looking away has a $24,000 price tag."},
-    {"date": "2026-07-15", "title": "Decision Fatigue Is Silently Draining $1,400 From You", "hook": "By 4 PM your brain is making choices the same way it does when drunk — and every retailer on earth knows exactly when to hit you."},
-    {"date": "2026-07-16", "title": "Student Loan Forgiveness Hides a $21,000 Tax Bomb", "hook": "After 25 years of income-based payments, millions of borrowers get their loans 'forgiven' — then the IRS sends a bill for $21,000."},
-    {"date": "2026-07-17", "title": "Your Financial Advisor Can Legally Rip You Off", "hook": "Most financial advisors in America have zero legal obligation to act in your best interest — and that loophole costs Americans $17 billion every single year."},
-    {"date": "2026-07-18", "title": "Pay Your Credit Card on the Wrong Day, Lose $21K", "hook": "Almost everyone pays their credit card on the due date — but that's the worst possible day to pay if you want a high credit score."},
-    {"date": "2026-07-19", "title": "The Weekend Spending Trap Draining $4,300 From You", "hook": "You spend 30% more money on weekends than weekdays — and most budgets completely ignore the two days secretly wrecking your finances."},
-    {"date": "2026-07-20", "title": "'Free' Shipping Is Secretly Costing You $978 a Year", "hook": "You're not avoiding a shipping fee — you're spending $978 extra a year to skip a $5 charge."},
-    {"date": "2026-07-21", "title": "The $1M Retirement Goal Is $1.5M Short", "hook": "Everyone's chasing a million to retire — but at 4% withdrawal, that's forty grand a year. The average retiree needs $57,818 — and your million runs out in seventeen years."},
-    {"date": "2026-07-22", "title": "Maxing Your 401k Too Fast Costs You $4,300", "hook": "You hit your 401k max in October — and your employer legally stopped matching for the rest of the year. Nobody told you this."},
-    {"date": "2026-07-23", "title": "Lifestyle Creep Is Quietly Stealing $1.4M From You", "hook": "Every raise you've ever gotten — you spent it. That invisible upgrade has a $1.4 million price tag, and almost nobody talks about it."},
-    {"date": "2026-07-24", "title": "Your $80 Pill Is Identical to the $4 Generic", "hook": "The FDA requires generics to contain the exact same active ingredient as the brand name — but Big Pharma spends $6 billion a year making sure you don't believe it."},
-    {"date": "2026-07-25", "title": "The IRS Secretly Owns 22% of Your 401k", "hook": "You've been watching that 401k balance grow for years — but the IRS is the silent co-owner of every dollar in it, and nobody told you to plan for that."},
-    {"date": "2026-07-26", "title": "No Will Costs Your Family $47,000 and 18 Months", "hook": "Sixty percent of Americans have no will — and when they die, the government decides who gets everything, then sends your family a $47,000 bill for the privilege."},
-    {"date": "2026-07-27", "title": "Your Daily Coffee Isn't Why You're Broke — This Is", "hook": "Experts say skip the latte and retire rich. Nobel economists say that's mathematically absurd — and the real money drain is way bigger."},
-    {"date": "2026-07-28", "title": "97% of Day Traders Are Gone in 2 Years", "hook": "That trading app on your phone looks exactly like a game — and 97% of day traders lose money within two years."},
-    {"date": "2026-07-29", "title": "There's $892 of Forgotten Cash With Your Name on It", "hook": "You probably have forgotten money in a state treasury right now — and you can claim it for free in under five minutes."},
-    {"date": "2026-07-30", "title": "Job Loyalty Is Costing You $147,000", "hook": "Your loyalty to your employer is costing you six figures — and HR departments are literally banking on it."},
-    {"date": "2026-07-31", "title": "Saving Too Much in Your 401k Creates a $400K Tax Bomb", "hook": "You maxed your 401k for decades thinking you were winning — but the IRS built a mandatory withdrawal rule that could cost you $400,000 in taxes you never planned for."},
-    {"date": "2026-08-01", "title": "The $710K Mistake of Keeping Too Much Cash", "hook": "You've got fifty thousand in a savings account feeling smart — but over thirty years that 'safety' is quietly costing you seven hundred and ten thousand dollars."},
-    {"date": "2026-08-02", "title": "Your 4% Raise Is Actually a Pay Cut", "hook": "You celebrated your raise — but if inflation ran above that, your boss just handed you a pay cut wrapped in good news."},
-    {"date": "2026-08-03", "title": "Your Brain Is Wired to Stay Broke — $122K Proof", "hook": "Scientists proved your brain values $50 today the same as $100 next year — and that hardwired flaw has a six-figure price tag."},
-    {"date": "2026-08-04", "title": "Your Mortgage Refi Might Lose You $18,000", "hook": "You refinanced to cut your payment — but if you move before the break-even point, you've just handed the bank $18,000 for nothing."},
-    {"date": "2026-08-05", "title": "Your Morning Commute Is Stealing $12,800 a Year", "hook": "Your morning commute feels harmless — but most Americans have no idea it's quietly draining over twelve thousand dollars a year."},
-    {"date": "2026-08-06", "title": "Last Year's #1 Fund Is This Year's Biggest Trap", "hook": "You picked the fund with the best five-star rating — and you just made the most predictable mistake in investing."},
-    {"date": "2026-08-07", "title": "The Budget That Makes You Spend 20% MORE", "hook": "Every money guru says get on a budget — but research shows traditional budgets make four out of five people spend more, not less."},
-    {"date": "2026-08-08", "title": "Your Rent Is Building Your Landlord's $95K Nest Egg", "hook": "You've sent over $200,000 in rent checks and kept exactly zero of it — your landlord's bank account tells a very different story."},
-    {"date": "2026-08-13", "title": "Your Job Is Hiding $3,840 From You Right Now", "hook": "Your employer set aside thousands of dollars with your name on it — and you've never claimed a dollar of it."},
-    {"date": "2026-08-14", "title": "68% of Workers Are One Injury From Losing Everything", "hook": "You insure your car, your phone, even your pet — but 68% of workers have zero protection against the #1 cause of personal bankruptcy."},
-    {"date": "2026-08-15", "title": "70% of Inheritances Vanish in One Generation", "hook": "Seventy percent of inherited wealth is completely gone within one generation — and it has nothing to do with taxes."},
-    {"date": "2026-08-16", "title": "Waiting 10 Years to Invest Costs You $418,000", "hook": "Starting to invest at 35 instead of 25 doesn't cost you ten years — it costs you $418,000."},
-    {"date": "2026-08-17", "title": "Bulk Buying Is a $1,800 Trap That Feels Like Saving", "hook": "You think buying in bulk saves money — scientists proved it actually makes you spend $1,800 more every year."},
-    {"date": "2026-08-18", "title": "Paying Off Debt in the Wrong Order Costs $14,000", "hook": "You've been paying off your smallest debt first — and that feel-good strategy is costing you fourteen thousand dollars."},
-    {"date": "2026-08-19", "title": "Wrong IRA Beneficiary Wipes Out $380K For Your Family", "hook": "You've been saving for decades to pass wealth to your family — but a single outdated form can legally hand it all to the wrong person and trigger a $380,000 tax catastrophe."},
-    {"date": "2026-08-20", "title": "Rent-to-Own Stores Charge 311% — Legal Loan Sharking", "hook": "You walked in for a $499 TV and agreed to pay $1,554. Rent-to-own is the most expensive legal purchase in America — and they design every contract to hide it."},
-    {"date": "2026-08-21", "title": "Waiting for the 'Perfect Time' to Invest Costs $163K", "hook": "You got a bonus and swore you'd invest it 'when things calmed down' — that instinct has been studied, named, and it has a six-figure price tag."},
-    {"date": "2026-08-22", "title": "Your Loyalty Points Are Expiring — $512 Gone", "hook": "You've been collecting points for years thinking you're winning — and $512 of it is silently expiring before you ever use a dime."},
-    {"date": "2026-08-23", "title": "Websites Charge iPhone Users 30% More — Legally", "hook": "If you shopped online today on your iPhone, you might've paid 30% more than the person next to you — for the exact same item."},
-    {"date": "2026-08-24", "title": "The $9,120 Storage Unit Trap Nobody Talks About", "hook": "One in ten Americans is renting a storage unit right now — and sixty-five percent of them are paying more than the stuff inside is actually worth."},
-    {"date": "2026-08-25", "title": "Why Your Brain Will Never Feel Rich — The $500K Trap", "hook": "No matter how much more you earn, you adapt and want more — and scientists just proved this loop never stops."},
-    {"date": "2026-08-26", "title": "Your Unused PTO Is a $4,200 Gift to Your Boss", "hook": "55% of workers give their vacation days back to their employer every year — and that's worth $4,200 of your own earned pay, handed over for free."},
-    {"date": "2026-08-27", "title": "80% of Medical Bills Have a $1,300 Error Inside", "hook": "Your hospital quietly billed you for something you never received — and if you don't ask for the itemized list, you'll never know."},
-    {"date": "2026-08-28", "title": "The Found Money Rule Rich People Follow — $340K", "hook": "You get a bonus or tax refund — and 90% of us blow it within 30 days. Here's what that costs you over a lifetime."},
-    {"date": "2026-08-29", "title": "The 760 Score Secret Banks Won't Tell You — $23K", "hook": "Everyone's chasing 750 — but banks use a completely different cutoff, and missing it will cost you $23,000."},
-    {"date": "2026-08-30", "title": "Your HOA Is Hiding a $404K Secret Tax", "hook": "Your dream home's listing price left out one number — and that missing HOA fee has a $404,000 price tag nobody showed you."},
-    {"date": "2026-08-31", "title": "The $4,824 Kickback Hidden in Your Car Loan", "hook": "Your car dealer pocketed nearly five thousand dollars from your lender the day you drove home — and it came straight out of your interest rate."},
-    {"date": "2026-09-01", "title": "Your Emotions Are Stealing $14,000 From You Every Year", "hook": "Science says 90% of your purchases are emotional decisions — and retailers have an 18-billion-dollar system to make sure you never realize it."},
-    {"date": "2026-09-02", "title": "Restaurant Menus Are Engineered to Drain $3,000 From You", "hook": "Cornell University spent years studying restaurant menus — and found every inch is a psychological weapon designed to make you spend more than you planned."},
-    {"date": "2026-09-03", "title": "Dollar Stores Are the Most Expensive Store in America", "hook": "Fifty-four million Americans shop dollar stores every week to save money — but per ounce, per use, per serving, it's one of the most expensive places you can shop."},
-    {"date": "2026-09-04", "title": "Wrong 529 Plan? You Just Lost $23,000 for College", "hook": "Most parents pick their home state's 529 and never look back. But 16 states run plans so expensive that one decision quietly steals $23,000 from your kid's college fund."},
-    {"date": "2026-09-05", "title": "Your Retirement Calculator Is Lying — You're $847K Short", "hook": "You checked the calculator and it said you're on track — but it forgot four things that add up to an $847,000 gap."},
-    {"date": "2026-09-06", "title": "Property Taxes Mean You Never Own Your Home — $289K", "hook": "You'll pay off your mortgage and celebrate owning your home — but property taxes never stop. Most homeowners pay over $289,000 to the government for a home they supposedly own outright."},
-    {"date": "2026-09-07", "title": "Name Brands Are Stealing $2,100/Year From You", "hook": "The generic sitting next to it was made in the same factory — and people spend $2,100 more every year for the label alone."},
-    {"date": "2026-09-08", "title": "The 0% Balance Transfer Is a $4,600 Debt Trap", "hook": "You moved your credit card debt to a zero-percent deal thinking you outsmarted the bank — and 73% of people end up deeper in debt when that intro rate expires."},
-    {"date": "2026-09-09", "title": "Your Identity Sells for $12 — Free Fix Takes 5 Minutes", "hook": "Your complete financial identity is selling online right now for $12 — and there's a free five-minute move that blocks 90% of identity theft instantly."},
-    {"date": "2026-09-10", "title": "Your Apps Are Engineered to Steal $840/Year From You", "hook": "Your most-used apps were deliberately built to confuse you into spending money — and the average smartphone user loses $840 a year to tricks that were illegal in Europe by 2023."},
-    {"date": "2026-09-11", "title": "Buy 2 Get 1 Free Is Costing You $1,700 a Year", "hook": "That 'free' item isn't free — 73% of BOGO shoppers only wanted one thing, and the math on what that habit costs you annually is brutal."},
-    {"date": "2026-09-12", "title": "Big Banks Quietly Charge $468/Year — For Nothing", "hook": "Your bank is taking $468 from you every year for fees most people never notice — and a free alternative has existed for years."},
-    {"date": "2026-09-13", "title": "Round-Up Apps Are a 90% Fee Trap", "hook": "That spare-change app isn't building wealth — it's charging $36 a year to save $30. The math is brutal."},
-    {"date": "2026-09-14", "title": "That 'Buy Now' Button Cost You $1,300 by Design", "hook": "Amazon patented one-click ordering in 1999 and defended it in court for 20 years — every checkout step they strip away makes you spend 12 percent more, adding up to $1,300 a year."},
-    {"date": "2026-09-15", "title": "The $1M Singles Tax Nobody Calculates", "hook": "There's a tax on being single that nobody put in the tax code — but living alone costs over a million dollars more than being partnered, and most people never do the math."}
+    {
+      "date": "2026-04-17",
+      "title": "The Raise Trap: Why More Pay Makes You Broker",
+      "hook": "Most people get a raise and end up poorer \u2014 here's the math that proves it."
+    },
+    {
+      "date": "2026-04-17",
+      "title": "Your Card Makes You Spend 47% More",
+      "hook": "Swiping a card literally shuts off the pain of spending in your brain \u2014 and it's costing you thousands."
+    },
+    {
+      "date": "2026-04-17",
+      "title": "Buy Now Pay Later Costs 45% More Than You Think",
+      "hook": "That 'four easy payments' button just hijacked your wallet \u2014 and the numbers prove it."
+    },
+    {
+      "date": "2026-04-17",
+      "title": "The $400/Year Hidden Tax Inside Your Savings Account",
+      "hook": "Your bank pays you almost nothing while inflation eats your savings alive \u2014 and they're counting on you not noticing."
+    },
+    {
+      "date": "2026-04-19",
+      "title": "Your 12 Subscriptions Are Stealing $265,000 From You",
+      "hook": "You can name 4 of your subscriptions. The other 8 are quietly wrecking your retirement."
+    },
+    {
+      "date": "2026-04-20",
+      "title": "The $3,011 Tax Refund Trap Nobody Warns You About",
+      "hook": "The IRS just sent you $3,011 \u2014 and statistically, you're about to waste every dollar of it."
+    },
+    {
+      "date": "2026-04-21",
+      "title": "Your Brain Treats Tax Refunds Like Free Money",
+      "hook": "You get $3,167 back from the IRS and spend 90% of it in a month \u2014 your brain's doing that on purpose."
+    },
+    {
+      "date": "2026-04-22",
+      "title": "36% of $250K Earners Live Paycheck to Paycheck",
+      "hook": "One-third of Americans earning $250,000 still run out of money before payday \u2014 here's the psychology that keeps even high earners broke."
+    },
+    {
+      "date": "2026-04-23",
+      "title": "Your New Car Lost $9,600 Before You Made a Payment",
+      "hook": "The moment you drove off the lot, your new car shed nearly ten thousand dollars in value \u2014 before you even got home."
+    },
+    {
+      "date": "2026-04-24",
+      "title": "The 100% Return Investment 1 in 3 Workers Refuses",
+      "hook": "Your employer is offering a 100% guaranteed return on your money right now \u2014 and millions of people are literally saying no."
+    },
+    {
+      "date": "2026-04-25",
+      "title": "Banks Designed Your Minimum Payment to Trap You",
+      "hook": "Your minimum payment wasn't random \u2014 it was engineered to keep you paying interest for 16 years."
+    },
+    {
+      "date": "2026-04-26",
+      "title": "Paying Off Debt Can Drop Your Score 40 Points",
+      "hook": "You just paid off a loan and your credit score dropped \u2014 that's not a glitch, it's the algorithm punishing you for doing the right thing."
+    },
+    {
+      "date": "2026-04-27",
+      "title": "The 1% Fee Quietly Stealing $320K From Your 401k",
+      "hook": "There's a fee inside your retirement account most people never look at \u2014 and over 40 years, it quietly steals more than the cost of a house."
+    },
+    {
+      "date": "2026-04-28",
+      "title": "Grocery Stores Are Engineered to Steal $47 From You",
+      "hook": "Every inch of your grocery store is a psychological trap \u2014 and the average American overspends $47 every single visit because of it."
+    },
+    {
+      "date": "2026-04-29",
+      "title": "The Anchor Price Trick That Makes You Overpay",
+      "hook": "Stores put a $400 item next to a $160 one so $160 feels like a steal \u2014 your brain falls for it every single time."
+    },
+    {
+      "date": "2026-04-29",
+      "title": "The Diderot Effect: One Purchase Triggers $3,000",
+      "hook": "You bought new sneakers and suddenly everything you own looks wrong \u2014 that cascading urge has a name, and a $3,000 price tag."
+    },
+    {
+      "date": "2026-04-30",
+      "title": "Why 70% of Lottery Winners Go Broke in 5 Years",
+      "hook": "You just won $50 million \u2014 and statistically, you're broke again in five years. Here's the psychology behind why jackpots destroy lives."
+    },
+    {
+      "date": "2026-05-01",
+      "title": "The 72-Hour Rule That Stops $31,000 in Impulse Buys",
+      "hook": "Millionaires don't have more willpower \u2014 they use one rule that makes impulse buying almost impossible."
+    },
+    {
+      "date": "2026-05-02",
+      "title": "The Scarcity Mindset Tax That Costs You $1,800/Year",
+      "hook": "Worrying about money actually makes you worse at managing it \u2014 and scientists have measured exactly how much it costs you."
+    },
+    {
+      "date": "2026-05-03",
+      "title": "Mental Accounting: Why You Blow Your Bonus Every Time",
+      "hook": "Your brain puts money in invisible buckets \u2014 and that one quirk costs you over six thousand dollars a year."
+    },
+    {
+      "date": "2026-05-04",
+      "title": "Your '$55K Salary' Is Actually $17 an Hour",
+      "hook": "Your employer says you make fifty-five thousand a year \u2014 but once you count what your job actually costs you, your real hourly wage might make you sick."
+    },
+    {
+      "date": "2026-05-05",
+      "title": "The Sunk Cost Trap Secretly Costing You $4,700",
+      "hook": "You keep paying for things you never use because you already spent money on them \u2014 and that mental glitch is draining thousands a year."
+    },
+    {
+      "date": "2026-05-06",
+      "title": "The Joneses Effect Is Stealing $6,200 From You",
+      "hook": "Your neighbor's new car just triggered a spending cascade in your brain \u2014 and it costs the average American over six thousand dollars a year."
+    },
+    {
+      "date": "2026-05-07",
+      "title": "Your 'Free' Rewards Card Is Costing You $2,400",
+      "hook": "That cashback card isn't rewarding you \u2014 it's training you to spend 23% more, and the math is brutal."
+    },
+    {
+      "date": "2026-05-08",
+      "title": "The $0.01 Trick Stores Use to Empty Your Wallet",
+      "hook": "That $9.99 price tag isn't saving you a penny \u2014 it's a tested psychological weapon costing you $1,400 a year."
+    },
+    {
+      "date": "2026-05-11",
+      "title": "The Fake Price That Makes You Buy the Expensive One",
+      "hook": "Stores add a fake middle option just to make the priciest choice feel like a steal \u2014 and MIT proved it triples premium sales."
+    },
+    {
+      "date": "2026-05-12",
+      "title": "The Endowment Effect: You're Holding a $9,200 Mistake",
+      "hook": "Your brain triples the value of anything you own \u2014 and that's keeping you in losing stocks, overpriced homes, and underpaid jobs."
+    },
+    {
+      "date": "2026-05-13",
+      "title": "The 'Start Monday' Trap Is Costing You $187,000",
+      "hook": "You've promised yourself you'd start saving 'next week' hundreds of times \u2014 and that one habit has a six-figure price tag."
+    },
+    {
+      "date": "2026-05-14",
+      "title": "Cash Hurts to Spend \u2014 That Pain Is Worth $31,000",
+      "hook": "Paying with cash literally activates your brain's pain center \u2014 and that discomfort could be the most underrated money hack alive."
+    },
+    {
+      "date": "2026-05-16",
+      "title": "Your $200 Splurge Is a $1,400 Retirement Theft",
+      "hook": "Every dollar you spend in your thirties is secretly worth seven in retirement \u2014 and that last impulse buy just robbed your future self."
+    },
+    {
+      "date": "2026-05-17",
+      "title": "Splitting the Check Equally Costs You $1,100 a Year",
+      "hook": "Every time you say 'let's just split it evenly,' your brain orders more \u2014 and researchers proved it costs you over a thousand dollars a year."
+    },
+    {
+      "date": "2026-05-18",
+      "title": "Not Negotiating Your Salary Costs You $1,500,000",
+      "hook": "You had one conversation you were too scared to have \u2014 and it just cost you a million and a half dollars."
+    },
+    {
+      "date": "2026-05-19",
+      "title": "You Make Your Worst Money Moves After 9PM",
+      "hook": "After 9PM your brain's willpower is basically gone \u2014 and every online retailer knows exactly when to hit you."
+    },
+    {
+      "date": "2026-05-21",
+      "title": "Your Car Insurer Charges 19% More for Loyalty",
+      "hook": "Your car insurance company's best rates go to strangers \u2014 loyal customers like you pay 19% more, and they're counting on your inertia."
+    },
+    {
+      "date": "2026-05-22",
+      "title": "Why Sales Make You Spend $800 More Every Year",
+      "hook": "You see 40% off and feel like you're winning \u2014 but researchers found sale shoppers spend more, not less."
+    },
+    {
+      "date": "2026-05-23",
+      "title": "The 'Pay It Next Month' Lie That Costs $8,400",
+      "hook": "You've said it a hundred times \u2014 'I'll just pay it off next month.' Here's what that promise is actually costing you."
+    },
+    {
+      "date": "2026-05-24",
+      "title": "Your Delivery Apps Charge a Secret $3,100/Year Tax",
+      "hook": "You think you're paying for food \u2014 but delivery apps buried a $3,100 annual fee inside every order, and most people never do the math."
+    },
+    {
+      "date": "2026-05-25",
+      "title": "Your 401k Default Setting Is Quietly Stealing $342K",
+      "hook": "Your employer auto-enrolled you at 3% \u2014 and 68% of workers never change it. Here's what that silent setting is actually costing you."
+    },
+    {
+      "date": "2026-05-26",
+      "title": "Banks Flip Your Transactions to Drain $12 Billion",
+      "hook": "Your bank secretly reorders your transactions largest-to-smallest \u2014 one quiet trick that cost Americans $12 billion in overdraft fees last year."
+    },
+    {
+      "date": "2026-05-27",
+      "title": "Being Broke Costs $1,300/Year More Than Being Rich",
+      "hook": "Low-income Americans pay up to $1,300 extra a year for the exact same life \u2014 and the system designed it that way."
+    },
+    {
+      "date": "2026-05-28",
+      "title": "TikTok Made You Buy It \u2014 $2,100 Silently Drained",
+      "hook": "Your social media feed isn't entertainment \u2014 it's one of the most powerful stores ever built, draining $2,100 a year from Americans who never see it coming."
+    },
+    {
+      "date": "2026-05-28",
+      "title": "You're Paying $558K Interest on a $400K House",
+      "hook": "Nobody tells you the actual price tag on a 30-year mortgage \u2014 and when you see the real number, it changes everything."
+    },
+    {
+      "date": "2026-05-29",
+      "title": "That Credit Limit Increase Is a $2,400 Debt Trap",
+      "hook": "Your bank just 'rewarded' you with a higher credit limit \u2014 and that gift is statistically about to cost you $2,400."
+    },
+    {
+      "date": "2026-05-31",
+      "title": "67% of Gym Members Never Go \u2014 You're Paying to Feel Healthy",
+      "hook": "Gyms don't want you to show up \u2014 67% of memberships are completely unused, and your monthly fee is their business model."
+    },
+    {
+      "date": "2026-06-01",
+      "title": "Free Trials Are Engineered to Drain $1,200 From You",
+      "hook": "That free trial form asked for your credit card for one reason \u2014 and it had nothing to do with your convenience."
+    },
+    {
+      "date": "2026-06-02",
+      "title": "Retail Therapy Steals $3,200 \u2014 And Stores Plan It",
+      "hook": "You think shopping cheers you up. Stores engineer that feeling \u2014 then bill you $3,200 a year for it."
+    },
+    {
+      "date": "2026-06-03",
+      "title": "Overdraft 'Protection' Is a 17,000% Interest Rate",
+      "hook": "You opted into overdraft protection to avoid embarrassment at checkout \u2014 and your bank is charging the equivalent of a 17,000% annual interest rate."
+    },
+    {
+      "date": "2026-06-04",
+      "title": "Quitting Your Job Could Cost You $14,000",
+      "hook": "Your 401k match is already in your account \u2014 but quit too soon and your company takes it all back. That's the vesting trap most workers never see coming."
+    },
+    {
+      "date": "2026-06-05",
+      "title": "Why 'Invest Monthly' Costs You $23,000",
+      "hook": "You've been told to invest a little each month \u2014 but Vanguard proved that habit is the wrong call two-thirds of the time."
+    },
+    {
+      "date": "2026-06-06",
+      "title": "Paying Off Your Mortgage Early Costs You $1M",
+      "hook": "Every finance guru says pay off your house early \u2014 but the math shows that habit costs most homeowners over a million dollars."
+    },
+    {
+      "date": "2026-06-07",
+      "title": "Extended Warranties: The $40B Checkout Scam",
+      "hook": "That 'protection plan' question at checkout is one of retail's most profitable tricks \u2014 and Americans fall for it to the tune of $40 billion every year."
+    },
+    {
+      "date": "2026-06-08",
+      "title": "Your '0% APR' Deal Hides a $648 Bomb",
+      "hook": "That 12-month zero-interest offer at checkout isn't free money \u2014 it's a trap 73% of shoppers walk right into."
+    },
+    {
+      "date": "2026-06-09",
+      "title": "The 20% Down Myth Keeping Renters Trapped 14 Years",
+      "hook": "Seventy-three percent of renters think they need twenty percent down to buy \u2014 and that single belief is costing them fourteen extra years of wealth-building."
+    },
+    {
+      "date": "2026-06-10",
+      "title": "The Tax Bracket Myth That Makes You Refuse Money",
+      "hook": "Millions of workers turn down raises because they think a higher bracket will leave them with less \u2014 and that belief is completely, mathematically wrong."
+    },
+    {
+      "date": "2026-06-11",
+      "title": "The '$3/Day' Trick That Costs You $51,000",
+      "hook": "Every subscription, gym membership, and app pitches itself as 'just a few dollars a day' \u2014 and that framing is engineered to make you blind to the real price tag."
+    },
+    {
+      "date": "2026-06-12",
+      "title": "You're Paying $270 to File Taxes \u2014 When It's Free",
+      "hook": "Sixty million Americans pay a tax preparer an average of $270 \u2014 for a service the IRS provides completely free."
+    },
+    {
+      "date": "2026-06-13",
+      "title": "The Loser Stock Your Brain Won't Sell Costs $47K",
+      "hook": "You're 1.7 times more likely to sell a winning stock than a losing one \u2014 and behavioral economists call that the most expensive habit in investing."
+    },
+    {
+      "date": "2026-06-14",
+      "title": "Claiming Social Security at 62 Costs You $182,000",
+      "hook": "Half of Americans claim Social Security the second they can \u2014 and it's one of the most expensive retirement mistakes you can make."
+    },
+    {
+      "date": "2026-06-15",
+      "title": "92% of Fund Managers Can't Beat This One Move",
+      "hook": "You're paying a 'professional' to manage your money \u2014 and 92% of the time, a simple computer program beats them."
+    },
+    {
+      "date": "2026-06-16",
+      "title": "$408 of YOUR Money Vanishes Every December",
+      "hook": "The government gave you a tax-free healthcare account \u2014 then buried a rule that deletes your own money if you forget about it."
+    },
+    {
+      "date": "2026-06-18",
+      "title": "Your Side Hustle Has a Hidden 15% Tax Nobody Warns You",
+      "hook": "You started a side hustle to get ahead \u2014 but the IRS has a secret tax most freelancers never see coming until the bill arrives."
+    },
+    {
+      "date": "2026-06-19",
+      "title": "Why Checking Your Portfolio Daily Costs You $47,000",
+      "hook": "You check your investment app every morning thinking you're being responsible \u2014 that one daily habit is quietly costing you forty-seven thousand dollars."
+    },
+    {
+      "date": "2026-06-20",
+      "title": "Autopay Silently Drains $1,700 From You Every Year",
+      "hook": "You turned on autopay to simplify life \u2014 and it just switched off the part of your brain that notices when you're being overcharged."
+    },
+    {
+      "date": "2026-06-21",
+      "title": "Wrong Health Plan Costs You $2,100 Every Year",
+      "hook": "Fifty-one percent of workers pick the wrong health insurance plan every open enrollment \u2014 and the average mistake costs them over $2,100 a year without them ever realizing it."
+    },
+    {
+      "date": "2026-06-22",
+      "title": "The Tip Screen Is Engineered to Drain $1,040 From You",
+      "hook": "That little screen spinning around at the coffee counter isn't asking for your generosity \u2014 it's a psychological weapon designed to extract money you never planned to give."
+    },
+    {
+      "date": "2026-06-23",
+      "title": "The Rent Rule Every Guru Quotes Is From 1969",
+      "hook": "Everyone tells you to spend 30% of your income on rent \u2014 but that rule was created for $8,400 annual salaries, and blindly following it today could be your biggest financial mistake."
+    },
+    {
+      "date": "2026-06-24",
+      "title": "The 3-Year Car Lease Trap That Costs $22,000",
+      "hook": "Everyone assumes leasing is the smart move for that lower monthly payment \u2014 but serial leasing costs $22,000 more than buying over a decade, and dealers know you'll never do the math."
+    },
+    {
+      "date": "2026-06-25",
+      "title": "The HSA Triple Tax Trick Costing You $395,000",
+      "hook": "Most people swipe their HSA card at the doctor and call it a day \u2014 but there's a triple tax-free trick inside it worth nearly $400,000, and 68% of Americans are leaving it on the table."
+    },
+    {
+      "date": "2026-06-26",
+      "title": "Your 401k Loan Gets Taxed Twice \u2014 $152K Gone",
+      "hook": "One in four people with a 401k has taken a loan from it \u2014 and almost none of them know the IRS double-taxes that money."
+    },
+    {
+      "date": "2026-06-27",
+      "title": "The $221K Phone Upgrade Trap Nobody Talks About",
+      "hook": "You upgrade your phone every 22 months \u2014 and nobody's done the math on what that's actually costing you at retirement."
+    },
+    {
+      "date": "2026-06-28",
+      "title": "Your Brain Can't Do Compound Interest \u2014 $400K Gone",
+      "hook": "Scientists asked people to estimate compound interest and the average guess was off by 65% \u2014 that one cognitive glitch is why most people will work until they die."
+    },
+    {
+      "date": "2026-06-29",
+      "title": "Whole Life Insurance Is a $695K Trap",
+      "hook": "Your insurance agent earned $5,700 the day you signed your whole life policy \u2014 and that money came from your future, not theirs."
+    },
+    {
+      "date": "2026-06-30",
+      "title": "The Credit Balance Myth Draining $92K From You",
+      "hook": "Most Americans think carrying a credit card balance builds their credit score faster \u2014 that's 100% false, and believing it could cost you $92,000."
+    },
+    {
+      "date": "2026-07-01",
+      "title": "Why Saving Feels Like Pain \u2014 The $312K Brain Glitch",
+      "hook": "Your brain literally cannot feel your future self's pain \u2014 that one glitch is why 56% of Americans have under $1,000 saved."
+    },
+    {
+      "date": "2026-07-02",
+      "title": "Stores Designed Gift Cards to Steal $3 Billion From You",
+      "hook": "There's probably $175 in gift cards buried in your home right now \u2014 and retailers deliberately built every obstacle to make sure you never spend it."
+    },
+    {
+      "date": "2026-07-03",
+      "title": "Your Store Card Discount Is a $2,800 Debt Trap",
+      "hook": "You saved $34 at checkout when you signed up for that store credit card \u2014 and that yes cost you $2,800."
+    },
+    {
+      "date": "2026-07-04",
+      "title": "Retire in the Wrong Year and Lose $1M",
+      "hook": "Two people retire the same month with identical savings \u2014 one runs out in sixteen years, the other never does. The only difference is when the market crashed."
+    },
+    {
+      "date": "2026-07-05",
+      "title": "The 'I Deserve This' Trap Stealing $4,800/Year",
+      "hook": "The moment you say 'I deserve this,' your brain has already switched off its spending filter \u2014 and that three-word phrase costs the average American $4,800 every single year."
+    },
+    {
+      "date": "2026-07-06",
+      "title": "Shrinkflation Is Stealing $2,900 From Your Groceries",
+      "hook": "Your grocery price went up \u2014 but your grocery bag got lighter. Shrinkflation quietly drains $2,900 from the average household every year."
+    },
+    {
+      "date": "2026-07-08",
+      "title": "The $3,200 Friendship Tax Nobody Talks About",
+      "hook": "Your friends are quietly one of your biggest hidden expenses \u2014 and you've never once questioned it."
+    },
+    {
+      "date": "2026-07-09",
+      "title": "Your Emergency Fund Is Quietly Losing $3,400",
+      "hook": "You built an emergency fund \u2014 but where you're keeping it is silently donating thousands to your bank every year."
+    },
+    {
+      "date": "2026-07-10",
+      "title": "Missing 10 Market Days Costs You $38,000",
+      "hook": "Investors who panic and pull out during crashes miss the 10 best days \u2014 and that one mistake turns $71,750 into $32,871."
+    },
+    {
+      "date": "2026-07-11",
+      "title": "The Ultra-Rich Pay 8.2% Tax While You Pay 22%",
+      "hook": "Billionaires found a legal strategy to live on millions tax-free while you hand over 22% \u2014 and it's been hiding in plain sight."
+    },
+    {
+      "date": "2026-07-12",
+      "title": "Your Partner's Money Habits Will Cost You $760K",
+      "hook": "If you and your partner don't agree on money, you're not just arguing \u2014 you're statistically losing three-quarters of a million dollars."
+    },
+    {
+      "date": "2026-07-13",
+      "title": "Banks Charge $900 for a Trick You Can Do Free",
+      "hook": "Your bank charges nine hundred dollars to enroll you in their 'biweekly mortgage program' \u2014 and that exact same trick costs you absolutely nothing to pull off yourself."
+    },
+    {
+      "date": "2026-07-14",
+      "title": "Not Opening Your Bills Costs You $24,000",
+      "hook": "Forty-two percent of Americans won't open their financial statements tonight \u2014 and that one habit of looking away has a $24,000 price tag."
+    },
+    {
+      "date": "2026-07-15",
+      "title": "Decision Fatigue Is Silently Draining $1,400 From You",
+      "hook": "By 4 PM your brain is making choices the same way it does when drunk \u2014 and every retailer on earth knows exactly when to hit you."
+    },
+    {
+      "date": "2026-07-16",
+      "title": "Student Loan Forgiveness Hides a $21,000 Tax Bomb",
+      "hook": "After 25 years of income-based payments, millions of borrowers get their loans 'forgiven' \u2014 then the IRS sends a bill for $21,000."
+    },
+    {
+      "date": "2026-07-17",
+      "title": "Your Financial Advisor Can Legally Rip You Off",
+      "hook": "Most financial advisors in America have zero legal obligation to act in your best interest \u2014 and that loophole costs Americans $17 billion every single year."
+    },
+    {
+      "date": "2026-07-18",
+      "title": "Pay Your Credit Card on the Wrong Day, Lose $21K",
+      "hook": "Almost everyone pays their credit card on the due date \u2014 but that's the worst possible day to pay if you want a high credit score."
+    },
+    {
+      "date": "2026-07-19",
+      "title": "The Weekend Spending Trap Draining $4,300 From You",
+      "hook": "You spend 30% more money on weekends than weekdays \u2014 and most budgets completely ignore the two days secretly wrecking your finances."
+    },
+    {
+      "date": "2026-07-20",
+      "title": "'Free' Shipping Is Secretly Costing You $978 a Year",
+      "hook": "You're not avoiding a shipping fee \u2014 you're spending $978 extra a year to skip a $5 charge."
+    },
+    {
+      "date": "2026-07-21",
+      "title": "The $1M Retirement Goal Is $1.5M Short",
+      "hook": "Everyone's chasing a million to retire \u2014 but at 4% withdrawal, that's forty grand a year. The average retiree needs $57,818 \u2014 and your million runs out in seventeen years."
+    },
+    {
+      "date": "2026-07-22",
+      "title": "Maxing Your 401k Too Fast Costs You $4,300",
+      "hook": "You hit your 401k max in October \u2014 and your employer legally stopped matching for the rest of the year. Nobody told you this."
+    },
+    {
+      "date": "2026-07-23",
+      "title": "Lifestyle Creep Is Quietly Stealing $1.4M From You",
+      "hook": "Every raise you've ever gotten \u2014 you spent it. That invisible upgrade has a $1.4 million price tag, and almost nobody talks about it."
+    },
+    {
+      "date": "2026-07-24",
+      "title": "Your $80 Pill Is Identical to the $4 Generic",
+      "hook": "The FDA requires generics to contain the exact same active ingredient as the brand name \u2014 but Big Pharma spends $6 billion a year making sure you don't believe it."
+    },
+    {
+      "date": "2026-07-25",
+      "title": "The IRS Secretly Owns 22% of Your 401k",
+      "hook": "You've been watching that 401k balance grow for years \u2014 but the IRS is the silent co-owner of every dollar in it, and nobody told you to plan for that."
+    },
+    {
+      "date": "2026-07-26",
+      "title": "No Will Costs Your Family $47,000 and 18 Months",
+      "hook": "Sixty percent of Americans have no will \u2014 and when they die, the government decides who gets everything, then sends your family a $47,000 bill for the privilege."
+    },
+    {
+      "date": "2026-07-27",
+      "title": "Your Daily Coffee Isn't Why You're Broke \u2014 This Is",
+      "hook": "Experts say skip the latte and retire rich. Nobel economists say that's mathematically absurd \u2014 and the real money drain is way bigger."
+    },
+    {
+      "date": "2026-07-28",
+      "title": "97% of Day Traders Are Gone in 2 Years",
+      "hook": "That trading app on your phone looks exactly like a game \u2014 and 97% of day traders lose money within two years."
+    },
+    {
+      "date": "2026-07-29",
+      "title": "There's $892 of Forgotten Cash With Your Name on It",
+      "hook": "You probably have forgotten money in a state treasury right now \u2014 and you can claim it for free in under five minutes."
+    },
+    {
+      "date": "2026-07-30",
+      "title": "Job Loyalty Is Costing You $147,000",
+      "hook": "Your loyalty to your employer is costing you six figures \u2014 and HR departments are literally banking on it."
+    },
+    {
+      "date": "2026-07-31",
+      "title": "Saving Too Much in Your 401k Creates a $400K Tax Bomb",
+      "hook": "You maxed your 401k for decades thinking you were winning \u2014 but the IRS built a mandatory withdrawal rule that could cost you $400,000 in taxes you never planned for."
+    },
+    {
+      "date": "2026-08-01",
+      "title": "The $710K Mistake of Keeping Too Much Cash",
+      "hook": "You've got fifty thousand in a savings account feeling smart \u2014 but over thirty years that 'safety' is quietly costing you seven hundred and ten thousand dollars."
+    },
+    {
+      "date": "2026-08-02",
+      "title": "Your 4% Raise Is Actually a Pay Cut",
+      "hook": "You celebrated your raise \u2014 but if inflation ran above that, your boss just handed you a pay cut wrapped in good news."
+    },
+    {
+      "date": "2026-08-03",
+      "title": "Your Brain Is Wired to Stay Broke \u2014 $122K Proof",
+      "hook": "Scientists proved your brain values $50 today the same as $100 next year \u2014 and that hardwired flaw has a six-figure price tag."
+    },
+    {
+      "date": "2026-08-04",
+      "title": "Your Mortgage Refi Might Lose You $18,000",
+      "hook": "You refinanced to cut your payment \u2014 but if you move before the break-even point, you've just handed the bank $18,000 for nothing."
+    },
+    {
+      "date": "2026-08-05",
+      "title": "Your Morning Commute Is Stealing $12,800 a Year",
+      "hook": "Your morning commute feels harmless \u2014 but most Americans have no idea it's quietly draining over twelve thousand dollars a year."
+    },
+    {
+      "date": "2026-08-06",
+      "title": "Last Year's #1 Fund Is This Year's Biggest Trap",
+      "hook": "You picked the fund with the best five-star rating \u2014 and you just made the most predictable mistake in investing."
+    },
+    {
+      "date": "2026-08-07",
+      "title": "The Budget That Makes You Spend 20% MORE",
+      "hook": "Every money guru says get on a budget \u2014 but research shows traditional budgets make four out of five people spend more, not less."
+    },
+    {
+      "date": "2026-08-08",
+      "title": "Your Rent Is Building Your Landlord's $95K Nest Egg",
+      "hook": "You've sent over $200,000 in rent checks and kept exactly zero of it \u2014 your landlord's bank account tells a very different story."
+    },
+    {
+      "date": "2026-08-13",
+      "title": "Your Job Is Hiding $3,840 From You Right Now",
+      "hook": "Your employer set aside thousands of dollars with your name on it \u2014 and you've never claimed a dollar of it."
+    },
+    {
+      "date": "2026-08-14",
+      "title": "68% of Workers Are One Injury From Losing Everything",
+      "hook": "You insure your car, your phone, even your pet \u2014 but 68% of workers have zero protection against the #1 cause of personal bankruptcy."
+    },
+    {
+      "date": "2026-08-15",
+      "title": "70% of Inheritances Vanish in One Generation",
+      "hook": "Seventy percent of inherited wealth is completely gone within one generation \u2014 and it has nothing to do with taxes."
+    },
+    {
+      "date": "2026-08-16",
+      "title": "Waiting 10 Years to Invest Costs You $418,000",
+      "hook": "Starting to invest at 35 instead of 25 doesn't cost you ten years \u2014 it costs you $418,000."
+    },
+    {
+      "date": "2026-08-17",
+      "title": "Bulk Buying Is a $1,800 Trap That Feels Like Saving",
+      "hook": "You think buying in bulk saves money \u2014 scientists proved it actually makes you spend $1,800 more every year."
+    },
+    {
+      "date": "2026-08-18",
+      "title": "Paying Off Debt in the Wrong Order Costs $14,000",
+      "hook": "You've been paying off your smallest debt first \u2014 and that feel-good strategy is costing you fourteen thousand dollars."
+    },
+    {
+      "date": "2026-08-19",
+      "title": "Wrong IRA Beneficiary Wipes Out $380K For Your Family",
+      "hook": "You've been saving for decades to pass wealth to your family \u2014 but a single outdated form can legally hand it all to the wrong person and trigger a $380,000 tax catastrophe."
+    },
+    {
+      "date": "2026-08-20",
+      "title": "Rent-to-Own Stores Charge 311% \u2014 Legal Loan Sharking",
+      "hook": "You walked in for a $499 TV and agreed to pay $1,554. Rent-to-own is the most expensive legal purchase in America \u2014 and they design every contract to hide it."
+    },
+    {
+      "date": "2026-08-21",
+      "title": "Waiting for the 'Perfect Time' to Invest Costs $163K",
+      "hook": "You got a bonus and swore you'd invest it 'when things calmed down' \u2014 that instinct has been studied, named, and it has a six-figure price tag."
+    },
+    {
+      "date": "2026-08-22",
+      "title": "Your Loyalty Points Are Expiring \u2014 $512 Gone",
+      "hook": "You've been collecting points for years thinking you're winning \u2014 and $512 of it is silently expiring before you ever use a dime."
+    },
+    {
+      "date": "2026-08-23",
+      "title": "Websites Charge iPhone Users 30% More \u2014 Legally",
+      "hook": "If you shopped online today on your iPhone, you might've paid 30% more than the person next to you \u2014 for the exact same item."
+    },
+    {
+      "date": "2026-08-24",
+      "title": "The $9,120 Storage Unit Trap Nobody Talks About",
+      "hook": "One in ten Americans is renting a storage unit right now \u2014 and sixty-five percent of them are paying more than the stuff inside is actually worth."
+    },
+    {
+      "date": "2026-08-25",
+      "title": "Why Your Brain Will Never Feel Rich \u2014 The $500K Trap",
+      "hook": "No matter how much more you earn, you adapt and want more \u2014 and scientists just proved this loop never stops."
+    },
+    {
+      "date": "2026-08-26",
+      "title": "Your Unused PTO Is a $4,200 Gift to Your Boss",
+      "hook": "55% of workers give their vacation days back to their employer every year \u2014 and that's worth $4,200 of your own earned pay, handed over for free."
+    },
+    {
+      "date": "2026-08-27",
+      "title": "80% of Medical Bills Have a $1,300 Error Inside",
+      "hook": "Your hospital quietly billed you for something you never received \u2014 and if you don't ask for the itemized list, you'll never know."
+    },
+    {
+      "date": "2026-08-28",
+      "title": "The Found Money Rule Rich People Follow \u2014 $340K",
+      "hook": "You get a bonus or tax refund \u2014 and 90% of us blow it within 30 days. Here's what that costs you over a lifetime."
+    },
+    {
+      "date": "2026-08-29",
+      "title": "The 760 Score Secret Banks Won't Tell You \u2014 $23K",
+      "hook": "Everyone's chasing 750 \u2014 but banks use a completely different cutoff, and missing it will cost you $23,000."
+    },
+    {
+      "date": "2026-08-30",
+      "title": "Your HOA Is Hiding a $404K Secret Tax",
+      "hook": "Your dream home's listing price left out one number \u2014 and that missing HOA fee has a $404,000 price tag nobody showed you."
+    },
+    {
+      "date": "2026-08-31",
+      "title": "The $4,824 Kickback Hidden in Your Car Loan",
+      "hook": "Your car dealer pocketed nearly five thousand dollars from your lender the day you drove home \u2014 and it came straight out of your interest rate."
+    },
+    {
+      "date": "2026-09-01",
+      "title": "Your Emotions Are Stealing $14,000 From You Every Year",
+      "hook": "Science says 90% of your purchases are emotional decisions \u2014 and retailers have an 18-billion-dollar system to make sure you never realize it."
+    },
+    {
+      "date": "2026-09-02",
+      "title": "Restaurant Menus Are Engineered to Drain $3,000 From You",
+      "hook": "Cornell University spent years studying restaurant menus \u2014 and found every inch is a psychological weapon designed to make you spend more than you planned."
+    },
+    {
+      "date": "2026-09-03",
+      "title": "Dollar Stores Are the Most Expensive Store in America",
+      "hook": "Fifty-four million Americans shop dollar stores every week to save money \u2014 but per ounce, per use, per serving, it's one of the most expensive places you can shop."
+    },
+    {
+      "date": "2026-09-04",
+      "title": "Wrong 529 Plan? You Just Lost $23,000 for College",
+      "hook": "Most parents pick their home state's 529 and never look back. But 16 states run plans so expensive that one decision quietly steals $23,000 from your kid's college fund."
+    },
+    {
+      "date": "2026-09-05",
+      "title": "Your Retirement Calculator Is Lying \u2014 You're $847K Short",
+      "hook": "You checked the calculator and it said you're on track \u2014 but it forgot four things that add up to an $847,000 gap."
+    },
+    {
+      "date": "2026-09-06",
+      "title": "Property Taxes Mean You Never Own Your Home \u2014 $289K",
+      "hook": "You'll pay off your mortgage and celebrate owning your home \u2014 but property taxes never stop. Most homeowners pay over $289,000 to the government for a home they supposedly own outright."
+    },
+    {
+      "date": "2026-09-07",
+      "title": "Name Brands Are Stealing $2,100/Year From You",
+      "hook": "The generic sitting next to it was made in the same factory \u2014 and people spend $2,100 more every year for the label alone."
+    },
+    {
+      "date": "2026-09-08",
+      "title": "The 0% Balance Transfer Is a $4,600 Debt Trap",
+      "hook": "You moved your credit card debt to a zero-percent deal thinking you outsmarted the bank \u2014 and 73% of people end up deeper in debt when that intro rate expires."
+    },
+    {
+      "date": "2026-09-09",
+      "title": "Your Identity Sells for $12 \u2014 Free Fix Takes 5 Minutes",
+      "hook": "Your complete financial identity is selling online right now for $12 \u2014 and there's a free five-minute move that blocks 90% of identity theft instantly."
+    },
+    {
+      "date": "2026-09-10",
+      "title": "Your Apps Are Engineered to Steal $840/Year From You",
+      "hook": "Your most-used apps were deliberately built to confuse you into spending money \u2014 and the average smartphone user loses $840 a year to tricks that were illegal in Europe by 2023."
+    },
+    {
+      "date": "2026-09-11",
+      "title": "Buy 2 Get 1 Free Is Costing You $1,700 a Year",
+      "hook": "That 'free' item isn't free \u2014 73% of BOGO shoppers only wanted one thing, and the math on what that habit costs you annually is brutal."
+    },
+    {
+      "date": "2026-09-12",
+      "title": "Big Banks Quietly Charge $468/Year \u2014 For Nothing",
+      "hook": "Your bank is taking $468 from you every year for fees most people never notice \u2014 and a free alternative has existed for years."
+    },
+    {
+      "date": "2026-09-13",
+      "title": "Round-Up Apps Are a 90% Fee Trap",
+      "hook": "That spare-change app isn't building wealth \u2014 it's charging $36 a year to save $30. The math is brutal."
+    },
+    {
+      "date": "2026-09-14",
+      "title": "That 'Buy Now' Button Cost You $1,300 by Design",
+      "hook": "Amazon patented one-click ordering in 1999 and defended it in court for 20 years \u2014 every checkout step they strip away makes you spend 12 percent more, adding up to $1,300 a year."
+    },
+    {
+      "date": "2026-09-15",
+      "title": "The $1M Singles Tax Nobody Calculates",
+      "hook": "There's a tax on being single that nobody put in the tax code \u2014 but living alone costs over a million dollars more than being partnered, and most people never do the math."
+    },
+    {
+      "date": "2026-09-16",
+      "title": "Minimum Payments Are a $19,000 Trap by Design",
+      "hook": "Paying just the minimum on a $5,000 credit card balance costs you $19,000 in interest and takes 22 years \u2014 and the bank deliberately hid that math in the fine print."
+    }
   ]
 }

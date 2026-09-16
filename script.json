@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "There's a tax on being single — and nobody warned you about it. Living alone costs over a million dollars more than being partnered. Here's exactly where it goes.",
-    "visual": "Dark background. Single person silhouette (circle head, rect body) on left vs. couple silhouettes on right. Dollar signs float upward from the single person. Large $1M+ stat springs in center. Red warning bar: AND NOBODY WARNED YOU. Amber accent theme.",
-    "accent_color": "amber"
+    "narration": "There's a number on your credit card statement the bank hopes you never calculate. Pay just the minimum on a $5,000 balance and you'll spend the next 22 years paying it off.",
+    "visual": "Credit card floating in center of dark screen, statement paper unfurling below it. Minimum payment line highlighted in red with a dollar amount. '22 YEARS' text springs in large.",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Number one: housing. A couple splits rent two ways — you pay all of it alone. That per-capita gap adds up to four hundred thousand dollars more over thirty years.",
-    "visual": "Light background. Two house SVGs spring in — amber-roofed house labeled COUPLE on left, red-roofed house labeled SINGLE on right. Per-person cost tags below each house. Animated counter grows to $400K at bottom.",
-    "accent_color": "amber"
+    "narration": "Number one — the minimum is a trap, not a favor. Banks set it at 1 to 2 percent of your balance so it barely touches the principal. You're almost exclusively paying interest.",
+    "visual": "Pie chart showing $5,000 balance split: small green slice labeled 'PRINCIPAL' vs massive red slice labeled 'INTEREST'. Animated slice growing on the interest side.",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Number two: taxes. Married couples save up to twelve thousand five hundred dollars a year filing jointly. You get zero. Over thirty years, that's three hundred seventy-five thousand dollars gone.",
-    "visual": "Dark background. Two tax form rectangles — green-header married form with check mark on left, red-header single form with X on right. $12,500/yr saved label vs $0. $375K counter animates at bottom.",
-    "accent_color": "amber"
+    "narration": "Number two — at 24 percent APR, a $5,000 balance balloons to $24,000 paid total. That's $19,000 in pure interest — nearly four times what you originally charged.",
+    "visual": "Two stacked bars side by side: left bar '$5,000 original debt' in white, right bar '$24,000 total paid' in red towering above it. Dollar labels animate in.",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Number three: insurance. Auto, health, and home insurers all charge single people more — every single year. The average surcharge hits thirty-four hundred dollars, and they never explain why.",
-    "visual": "Light background. Car silhouette springs up from below. Two price tags: BASE RATE for couples, +$3,400/YR for singles in red. Three small icons below: auto, health cross, home — labeled by category.",
-    "accent_color": "amber"
+    "narration": "Number three — minimum payments shrink as your balance drops, which means your payoff date keeps moving further away. The bank engineered it that way. Wild, right?",
+    "visual": "Timeline arrow stretching right across the screen. Milestone markers at 5 years, 10 years, 15 years, 22 years. Red debt bar barely shrinking across the timeline.",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Add housing, taxes, insurance, and other solo premiums together — and the singles penalty hits one million dollars over thirty years. That's a house, paid in extras.",
-    "visual": "Dark background. Three animated bar chart bars grow upward from a baseline: HOUSING $400K tallest, TAXES $375K, OTHER COSTS $225K. Dollar labels appear above each bar. Total counter animates from $0 to $1M in amber.",
-    "accent_color": "amber"
+    "narration": "Number four — that convenience check your bank mailed you? It starts a new balance at an even higher rate. Each one resets the clock and adds thousands more. That's the cycle they want.",
+    "visual": "Envelope opening to reveal a paper check labeled 'CONVENIENCE CHECK'. Behind it, a clock face spinning forward, debt number incrementing upward.",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "You can't opt out of it — but you can build around it. Max your 401k, stack your HSA, invest like the system is working against you. Because statistically, it is.",
-    "visual": "Light background. Amber piggy bank SVG springs in with coins dropping into the slot. Three checklist items appear with amber accent bars: MAX YOUR 401(K), STACK YOUR HSA, BUILD YOUR OWN NET. Amber follow CTA button at bottom.",
-    "accent_color": "amber"
+    "narration": "Here's the fix: add just $50 extra to your payment every month. That alone cuts your 22-year payoff down to 4 years and saves over $15,000. Follow for more traps banks hide from you.",
+    "visual": "Split screen: left side shows long winding debt road labeled '22 years', right side shows short straight road labeled '4 years'. Piggy bank filling up on the right side. CTA text: 'ADD $50/MONTH'.",
+    "accent_color": "red"
   }
 ]
