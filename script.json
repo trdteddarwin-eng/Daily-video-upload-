@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "There's a number on your credit card statement the bank hopes you never calculate. Pay just the minimum on a $5,000 balance and you'll spend the next 22 years paying it off.",
-    "visual": "Credit card floating in center of dark screen, statement paper unfurling below it. Minimum payment line highlighted in red with a dollar amount. '22 YEARS' text springs in large.",
-    "accent_color": "red"
+    "narration": "You ran every number before buying your home — the mortgage, the taxes, the insurance. But there's one bill missing from every spreadsheet, and it's a lot.",
+    "visual": "House SVG rising from bottom of dark screen. Paper checklist showing 'mortgage', 'taxes', 'insurance' with checkmarks. Then an orange warning badge springs in: 'BUT MISSED ONE BIG BILL'.",
+    "accent_color": "orange"
   },
   {
     "scene": 2,
-    "narration": "Number one — the minimum is a trap, not a favor. Banks set it at 1 to 2 percent of your balance so it barely touches the principal. You're almost exclusively paying interest.",
-    "visual": "Pie chart showing $5,000 balance split: small green slice labeled 'PRINCIPAL' vs massive red slice labeled 'INTEREST'. Animated slice growing on the interest side.",
-    "accent_color": "red"
+    "narration": "Financial experts call it the one percent rule — budget one percent of your home's value every single year just for maintenance. On a $450,000 home, that's $4,500 every year.",
+    "visual": "Light background. House SVG with a bold '1%' badge. Animated counter climbing from $0 to $4,500. Label: 'EVERY YEAR'. Small caption: 'on a $450K home'.",
+    "accent_color": "orange"
   },
   {
     "scene": 3,
-    "narration": "Number two — at 24 percent APR, a $5,000 balance balloons to $24,000 paid total. That's $19,000 in pure interest — nearly four times what you originally charged.",
-    "visual": "Two stacked bars side by side: left bar '$5,000 original debt' in white, right bar '$24,000 total paid' in red towering above it. Dollar labels animate in.",
-    "accent_color": "red"
+    "narration": "And the repairs are real. A roof replacement runs eight to fifteen thousand dollars. Your HVAC goes out — that's ten to twelve thousand. Water heater failure? Another fifteen hundred to thirty-five hundred.",
+    "visual": "Dark background. Three repair cards slide in from the left: roof SVG with '$8K–$15K', HVAC unit SVG with '$10K–$12K', water heater SVG with '$1.5K–$3.5K'. Each springs in one after another.",
+    "accent_color": "orange"
   },
   {
     "scene": 4,
-    "narration": "Number three — minimum payments shrink as your balance drops, which means your payoff date keeps moving further away. The bank engineered it that way. Wild, right?",
-    "visual": "Timeline arrow stretching right across the screen. Milestone markers at 5 years, 10 years, 15 years, 22 years. Red debt bar barely shrinking across the timeline.",
-    "accent_color": "red"
+    "narration": "Run the math over twenty years and you're looking at ninety thousand dollars — and that's before any structural issue, flooded basement, or full electrical overhaul.",
+    "visual": "Light background. Year counter climbing 0 to 20. Progress bar filling. Dollar counter running from $0 up to $90,000 in orange. Label: 'BEFORE ANY MAJOR EMERGENCY'.",
+    "accent_color": "orange"
   },
   {
     "scene": 5,
-    "narration": "Number four — that convenience check your bank mailed you? It starts a new balance at an even higher rate. Each one resets the clock and adds thousands more. That's the cycle they want.",
-    "visual": "Envelope opening to reveal a paper check labeled 'CONVENIENCE CHECK'. Behind it, a clock face spinning forward, debt number incrementing upward.",
-    "accent_color": "red"
+    "narration": "Here's the wild part — sixty-four percent of homeowners say they were completely blindsided by repair costs. Banks don't tell you. Agents don't tell you. The inspection buries it on page forty-seven.",
+    "visual": "Dark background. Animated pie chart filling to 64% in orange. Center label '64% UNPREPARED'. Stacked text cards fade in: 'BANKS DON'T TELL YOU', 'AGENTS DON'T TELL YOU', 'THE INSPECTION BURIES IT'.",
+    "accent_color": "orange"
   },
   {
     "scene": 6,
-    "narration": "Here's the fix: add just $50 extra to your payment every month. That alone cuts your 22-year payoff down to 4 years and saves over $15,000. Follow for more traps banks hide from you.",
-    "visual": "Split screen: left side shows long winding debt road labeled '22 years', right side shows short straight road labeled '4 years'. Piggy bank filling up on the right side. CTA text: 'ADD $50/MONTH'.",
-    "accent_color": "red"
+    "narration": "Here's the fix: open a separate savings account today and auto-transfer $375 every month. That's one percent of a $450K home divided by twelve. Pay your house a salary before it sends you a surprise bill. Follow for more traps buyers miss.",
+    "visual": "Light background. Piggy bank SVG with animated coin dropping in. Steps fading in: 'OPEN A SEPARATE ACCOUNT', 'SET AN AUTO-TRANSFER'. Then large orange badge springs in: '$375 EVERY MONTH'. CTA: 'FOLLOW FOR MORE MONEY TRAPS'.",
+    "accent_color": "orange"
   }
 ]
