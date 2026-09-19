@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You ran every number before buying your home — the mortgage, the taxes, the insurance. But there's one bill missing from every spreadsheet, and it's a lot.",
-    "visual": "House SVG rising from bottom of dark screen. Paper checklist showing 'mortgage', 'taxes', 'insurance' with checkmarks. Then an orange warning badge springs in: 'BUT MISSED ONE BIG BILL'.",
-    "accent_color": "orange"
+    "narration": "That button promised 'cancel anytime.' When you tried, it was seven screens, a chat bot, and a guilt trip. Here's what that deliberate design is actually costing you.",
+    "visual": "Smartphone drops in from above showing a friendly green 'CANCEL ANYTIME' badge, then an animated chain of 7 labeled steps — ACCOUNT, REASONS?, DISCOUNT?, SURVEY, ARE YOU SURE?, CALL US, GIVE UP — builds down the screen, ending with a red 'BY DESIGN' badge",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Financial experts call it the one percent rule — budget one percent of your home's value every single year just for maintenance. On a $450,000 home, that's $4,500 every year.",
-    "visual": "Light background. House SVG with a bold '1%' badge. Animated counter climbing from $0 to $4,500. Label: 'EVERY YEAR'. Small caption: 'on a $450K home'.",
-    "accent_color": "orange"
+    "narration": "Companies pay UX designers specifically to make cancellation hard. It's called a dark pattern. In 2023 the FTC documented $1.2 billion in consumer harm from this one trick.",
+    "visual": "Light background with a flowchart: 'CANCEL ANYTIME' (green) -> 'WHY LEAVING?' -> 'WANT A DISCOUNT?' -> 'GIVE UP. PAY AGAIN.' (red), then a red FTC stamp crashes in showing '$1.2B IN CONSUMER HARM'",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "And the repairs are real. A roof replacement runs eight to fifteen thousand dollars. Your HVAC goes out — that's ten to twelve thousand. Water heater failure? Another fifteen hundred to thirty-five hundred.",
-    "visual": "Dark background. Three repair cards slide in from the left: roof SVG with '$8K–$15K', HVAC unit SVG with '$10K–$12K', water heater SVG with '$1.5K–$3.5K'. Each springs in one after another.",
-    "accent_color": "orange"
+    "narration": "A hard-cancel design keeps 15% more paying users who wanted to leave. That's not a bug — it's the whole business model. They're literally counting on you giving up.",
+    "visual": "Dark background: grid of 20 person silhouettes animates in row by row — 17 gray, 3 highlighted red with padlock icons — then '15%' in big red text with 'STAY TRAPPED' subtitle",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Run the math over twenty years and you're looking at ninety thousand dollars — and that's before any structural issue, flooded basement, or full electrical overhaul.",
-    "visual": "Light background. Year counter climbing 0 to 20. Progress bar filling. Dollar counter running from $0 up to $90,000 in orange. Label: 'BEFORE ANY MAJOR EMERGENCY'.",
-    "accent_color": "orange"
+    "narration": "The average person has four subscriptions they completely forgot about. At $25 a month each, that's $100 every month — $1,200 a year draining out of your account silently.",
+    "visual": "4 subscription cards (STREAMING, FITNESS APP, CLOUD STORAGE, NEWS SERVICE) each showing '$25/mo' slide in from left one by one, then a counter climbs from $0 to $1,200 labeled 'DRAINED PER YEAR'",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Here's the wild part — sixty-four percent of homeowners say they were completely blindsided by repair costs. Banks don't tell you. Agents don't tell you. The inspection buries it on page forty-seven.",
-    "visual": "Dark background. Animated pie chart filling to 64% in orange. Center label '64% UNPREPARED'. Stacked text cards fade in: 'BANKS DON'T TELL YOU', 'AGENTS DON'T TELL YOU', 'THE INSPECTION BURIES IT'.",
-    "accent_color": "orange"
+    "narration": "Most people spend 15 minutes trying to cancel a single subscription — and 40% give up before finishing. That quit attempt you abandoned? Another $25 charge lands next month.",
+    "visual": "Dark background: analog clock face with minute hand sweeping to 15 minutes past, confused person silhouette facing a looping loading circle on a phone screen, then a red '40% GIVE UP MID-CANCEL' badge springs in",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Here's the fix: open a separate savings account today and auto-transfer $375 every month. That's one percent of a $450K home divided by twelve. Pay your house a salary before it sends you a surprise bill. Follow for more traps buyers miss.",
-    "visual": "Light background. Piggy bank SVG with animated coin dropping in. Steps fading in: 'OPEN A SEPARATE ACCOUNT', 'SET AN AUTO-TRANSFER'. Then large orange badge springs in: '$375 EVERY MONTH'. CTA: 'FOLLOW FOR MORE MONEY TRAPS'.",
-    "accent_color": "orange"
+    "narration": "Open your bank statement and find every subscription charge. Cancel the ones you haven't used this month before the next billing date. That's $1,200 a year back in your pocket.",
+    "visual": "Light background: 4 bank statement rows slide in from right showing subscription charges, each gets a green checkmark one by one as it's cancelled, then a red '$1,200 BACK IN YOUR POCKET' badge springs in with 'FOLLOW FOR MORE MONEY TRAPS' CTA",
+    "accent_color": "red"
   }
 ]

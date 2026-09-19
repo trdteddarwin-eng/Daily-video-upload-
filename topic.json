@@ -1,7 +1,13 @@
 {
-  "title": "Your New Home Has a $90K Bill Nobody Warned You About",
-  "hook": "You calculated the mortgage, the taxes, the insurance — but there's one bill missing from every first-time buyer's spreadsheet, and it adds up to $90,000.",
-  "angle": "Exposes the 1% maintenance rule that almost every home-buying guide ignores — showing the exact compounding cost of skipping it over a 20-year ownership window",
-  "audience": "First-time homebuyers, current homeowners, and renters deciding whether to buy",
-  "key_numbers": ["1% of home value per year for maintenance", "$4,500/year on the median $450K home", "$90,000 over 20 years of ownership", "Roof $8K–$15K, HVAC $10K–$12K, water heater $1.5K–$3.5K", "64% of homeowners say they were blindsided by repair costs"]
+  "title": "The 'Cancel Anytime' Trap Is Stealing $1,200 From You",
+  "hook": "That button promised 'cancel anytime' — companies deliberately hide the cancel option 7 screens deep so you give up and keep paying. The FTC documented $1.2 billion in consumer harm from this one trick.",
+  "angle": "Exposes the deliberate UX dark pattern that traps subscribers — moving from psychology to FTC enforcement data to the personal cost math, then the simple bank-statement fix",
+  "audience": "Anyone 18-45 with streaming, app, gym, or software subscriptions",
+  "key_numbers": [
+    "FTC documented $1.2B in consumer harm from subscription dark patterns (2023)",
+    "Hard-cancel designs keep 15% more users who wanted to leave",
+    "Average person has 4 forgotten subscriptions at $25/month each",
+    "$1,200/year lost to unwanted subscriptions",
+    "40% of people give up trying to cancel mid-attempt"
+  ]
 }
