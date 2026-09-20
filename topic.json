@@ -1,13 +1,7 @@
 {
-  "title": "The 'Cancel Anytime' Trap Is Stealing $1,200 From You",
-  "hook": "That button promised 'cancel anytime' — companies deliberately hide the cancel option 7 screens deep so you give up and keep paying. The FTC documented $1.2 billion in consumer harm from this one trick.",
-  "angle": "Exposes the deliberate UX dark pattern that traps subscribers — moving from psychology to FTC enforcement data to the personal cost math, then the simple bank-statement fix",
-  "audience": "Anyone 18-45 with streaming, app, gym, or software subscriptions",
-  "key_numbers": [
-    "FTC documented $1.2B in consumer harm from subscription dark patterns (2023)",
-    "Hard-cancel designs keep 15% more users who wanted to leave",
-    "Average person has 4 forgotten subscriptions at $25/month each",
-    "$1,200/year lost to unwanted subscriptions",
-    "40% of people give up trying to cancel mid-attempt"
-  ]
+  "title": "The Fake 'Original Price' Is Stealing $2,600 From You",
+  "hook": "That 'was $199, now $97' tag? In most stores, the $199 was never real. Reference price fraud costs the average shopper $2,600 a year — and it's completely legal.",
+  "angle": "Reference price deception — stores set artificial 'original' prices almost never actually charged, then 'discount' to them to manipulate perceived value. The FTC has documented this extensively and Amazon settled a class action over it in 2022.",
+  "audience": "Online shoppers, bargain hunters, anyone who makes purchase decisions based on sale prices or 'was/now' tags",
+  "key_numbers": ["85% of reference prices were never actually charged (FTC investigation)", "$2,600 average annual overspend from reference price manipulation", "Amazon settled class action over fake reference prices in 2022", "Fake anchor raises perceived value by 40%"]
 }

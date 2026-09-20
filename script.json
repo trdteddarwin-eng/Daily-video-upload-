@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "That button promised 'cancel anytime.' When you tried, it was seven screens, a chat bot, and a guilt trip. Here's what that deliberate design is actually costing you.",
-    "visual": "Smartphone drops in from above showing a friendly green 'CANCEL ANYTIME' badge, then an animated chain of 7 labeled steps — ACCOUNT, REASONS?, DISCOUNT?, SURVEY, ARE YOU SURE?, CALL US, GIVE UP — builds down the screen, ending with a red 'BY DESIGN' badge",
-    "accent_color": "red"
+    "narration": "You see a sale tag — 'was $199, now just $97.' Your brain says deal. But here's the thing: that original price was never real.",
+    "visual": "Large sale tag SVG with crossed-out $199 and '$97 NOW', excited person silhouette below, 'NEVER REAL' badge springs in at end. Dark background, orange accent.",
+    "accent_color": "orange"
   },
   {
     "scene": 2,
-    "narration": "Companies pay UX designers specifically to make cancellation hard. It's called a dark pattern. In 2023 the FTC documented $1.2 billion in consumer harm from this one trick.",
-    "visual": "Light background with a flowchart: 'CANCEL ANYTIME' (green) -> 'WHY LEAVING?' -> 'WANT A DISCOUNT?' -> 'GIVE UP. PAY AGAIN.' (red), then a red FTC stamp crashes in showing '$1.2B IN CONSUMER HARM'",
-    "accent_color": "red"
+    "narration": "Retailers call it reference pricing. They set a high fake anchor, almost never sell at it, then slash it — so you feel like you're winning. You're not.",
+    "visual": "Three-step flowchart on light background: Step 1 set $199 (0 units sold), Step 2 mark as $97 sale, Step 3 profit. 'LEGAL. EVERYWHERE.' badge springs in.",
+    "accent_color": "orange"
   },
   {
     "scene": 3,
-    "narration": "A hard-cancel design keeps 15% more paying users who wanted to leave. That's not a bug — it's the whole business model. They're literally counting on you giving up.",
-    "visual": "Dark background: grid of 20 person silhouettes animates in row by row — 17 gray, 3 highlighted red with padlock icons — then '15%' in big red text with 'STAY TRAPPED' subtitle",
-    "accent_color": "red"
+    "narration": "The FTC investigated and found 85% of reference prices were never actually charged. Amazon settled a class action over this exact practice in 2022.",
+    "visual": "Gavel SVG dropping from top, legal document card with FTC findings text, 85% stat badge springs in. Dark background.",
+    "accent_color": "orange"
   },
   {
     "scene": 4,
-    "narration": "The average person has four subscriptions they completely forgot about. At $25 a month each, that's $100 every month — $1,200 a year draining out of your account silently.",
-    "visual": "4 subscription cards (STREAMING, FITNESS APP, CLOUD STORAGE, NEWS SERVICE) each showing '$25/mo' slide in from left one by one, then a counter climbs from $0 to $1,200 labeled 'DRAINED PER YEAR'",
-    "accent_color": "red"
+    "narration": "Here's why it works. Once your brain sees a number — even a fake one — it anchors to it. Then $97 feels tiny next to $199. That's the trap.",
+    "visual": "Brain SVG springs in, two animated horizontal comparison bars: $199 full-width gray vs $97 half-width orange. 'YOUR BRAIN IS HACKED' badge. Light background.",
+    "accent_color": "orange"
   },
   {
     "scene": 5,
-    "narration": "Most people spend 15 minutes trying to cancel a single subscription — and 40% give up before finishing. That quit attempt you abandoned? Another $25 charge lands next month.",
-    "visual": "Dark background: analog clock face with minute hand sweeping to 15 minutes past, confused person silhouette facing a looping loading circle on a phone screen, then a red '40% GIVE UP MID-CANCEL' badge springs in",
-    "accent_color": "red"
+    "narration": "Consumer research puts the average annual cost at $2,600 — across clothing, electronics, and home goods. That 'deal' feeling is costing you thousands.",
+    "visual": "Three shopping bags (clothing with shirt, electronics with laptop, home with house) rise from bottom one by one. Counter counts up to $2,600. Dark background.",
+    "accent_color": "orange"
   },
   {
     "scene": 6,
-    "narration": "Open your bank statement and find every subscription charge. Cancel the ones you haven't used this month before the next billing date. That's $1,200 a year back in your pocket.",
-    "visual": "Light background: 4 bank statement rows slide in from right showing subscription charges, each gets a green checkmark one by one as it's cancelled, then a red '$1,200 BACK IN YOUR POCKET' badge springs in with 'FOLLOW FOR MORE MONEY TRAPS' CTA",
-    "accent_color": "red"
+    "narration": "Before you buy, look up the item's actual price history. If that original price was never real — walk away. Follow for more tricks stores use to drain your wallet.",
+    "visual": "Phone SVG with price history chart showing fake inflated reference dotted line vs real price orange line. Two green-check tips. Orange CTA badge. Light background.",
+    "accent_color": "orange"
   }
 ]

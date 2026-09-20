@@ -1,16 +1,16 @@
 {
   "tiktok": {
-    "caption": "That 'cancel anytime' button? Companies bury the cancel option 7 screens deep on purpose. Here's the $1,200 price tag.",
-    "hashtags": ["#finance", "#money", "#moneytips", "#personalfinance", "#subscriptions", "#darkpatterns", "#moneyhacks", "#financetok", "#savemoney"]
+    "caption": "That 'was $199' price tag? It was never $199. The FTC proved it — and this trick costs you $2,600/year",
+    "hashtags": ["#moneytrap", "#finance", "#moneypsychology", "#savemoney", "#shoppinghacks", "#personalfinance", "#moneymindset", "#consumertips"]
   },
   "youtube_short": {
-    "title": "The 'Cancel Anytime' Trap Stealing $1,200 From You",
+    "title": "The Fake Sale Price Stealing $2,600/Year",
     "title_alternatives": [
-      "Companies DESIGNED Your Subscriptions to Be Impossible to Cancel",
-      "Why You Can't Cancel Your Subscriptions ($1,200 Reason)"
+      "That 'SALE' Price Was Never Real — $2,600/Year Trap",
+      "How Stores Fake 'Original' Prices to Steal Thousands From You"
     ],
-    "description": "That 'cancel anytime' button is a lie — companies pay UX designers specifically to hide the cancel option 7 screens deep so you give up and keep paying. The FTC documented $1.2 billion in consumer harm from this one dark pattern. You've got 4 forgotten subscriptions averaging $25/month each — that's $1,200 a year quietly draining out. Here's the one move that stops it: open your bank statement, find every recurring charge, and cancel the ones you haven't used this month. That's $1,200 back every year. Follow for more money traps. #personalfinance #money #subscriptions #moneytips #savemoney",
-    "tags": ["personal finance", "money", "subscriptions", "dark patterns", "cancel anytime", "money tips", "finance hack", "consumer rights", "FTC", "save money", "money psychology", "financial literacy"]
+    "description": "Retailers set prices they almost never actually charge — just to slash them and make you feel like you got a deal. The FTC found 85% of 'compare at' prices were never real. Amazon even settled a class action over it in 2022. This psychological trick costs the average shopper $2,600 a year across clothing, electronics, and home goods. Next time you see 'was $199 now $97', check the actual price history first. #finance #moneypsychology #moneytrap #shoppinghacks #personalfinance",
+    "tags": ["finance", "money", "personalfinance", "moneytrap", "shoppinghacks", "referenceprice", "moneypsychology", "savemoney", "moneytips", "consumertips", "pricingpsychology", "salestricks"]
   },
-  "hook_line": "That 'cancel anytime' button? It's a lie."
+  "hook_line": "That 'WAS $199' price was NEVER $199"
 }
