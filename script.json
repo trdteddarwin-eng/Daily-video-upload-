@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You see a sale tag — 'was $199, now just $97.' Your brain says deal. But here's the thing: that original price was never real.",
-    "visual": "Large sale tag SVG with crossed-out $199 and '$97 NOW', excited person silhouette below, 'NEVER REAL' badge springs in at end. Dark background, orange accent.",
+    "narration": "Every time you tap your phone to pay, something weird happens — your brain barely notices the money leaving. And that tiny glitch is costing you thousands a year.",
+    "visual": "Hand silhouette tapping phone to payment terminal SVG. Dollar signs float upward and fade. 'YOUR BRAIN BARELY NOTICES' badge springs in. Dark background, orange accent.",
     "accent_color": "orange"
   },
   {
     "scene": 2,
-    "narration": "Retailers call it reference pricing. They set a high fake anchor, almost never sell at it, then slash it — so you feel like you're winning. You're not.",
-    "visual": "Three-step flowchart on light background: Step 1 set $199 (0 units sold), Step 2 mark as $97 sale, Step 3 profit. 'LEGAL. EVERYWHERE.' badge springs in.",
+    "narration": "MIT researchers call it the pain of paying. Physical cash triggers real discomfort — it's a natural spending brake. Digital payments kill that friction entirely.",
+    "visual": "Brain SVG center frame. Left side: hand holding cash with red 'PAIN' pulse lines radiating. Right side: tap payment with green 'NO SIGNAL' flat line. Light background.",
     "accent_color": "orange"
   },
   {
     "scene": 3,
-    "narration": "The FTC investigated and found 85% of reference prices were never actually charged. Amazon settled a class action over this exact practice in 2022.",
-    "visual": "Gavel SVG dropping from top, legal document card with FTC findings text, 85% stat badge springs in. Dark background.",
+    "narration": "The numbers are wild. Same people, same products — but cashless shoppers spent 83% more than cash shoppers. Not a little more. Eighty-three percent more.",
+    "visual": "Two bar charts rise side by side. Left bar labeled 'CASH' rises to half height in gray. Right bar labeled 'CASHLESS' rises to full height in orange with '83% MORE' badge. Dark background.",
     "accent_color": "orange"
   },
   {
     "scene": 4,
-    "narration": "Here's why it works. Once your brain sees a number — even a fake one — it anchors to it. Then $97 feels tiny next to $199. That's the trap.",
-    "visual": "Brain SVG springs in, two animated horizontal comparison bars: $199 full-width gray vs $97 half-width orange. 'YOUR BRAIN IS HACKED' badge. Light background.",
+    "narration": "Think about your own week. Coffee, lunch, quick Amazon order, streaming add-on. Each tap felt like nothing. Add them up and the damage is real.",
+    "visual": "Four SVG icons appear sequentially: coffee cup, burger, delivery box, play button. Each pops in with a small price tag. A running total counter climbs at bottom. Light background.",
     "accent_color": "orange"
   },
   {
     "scene": 5,
-    "narration": "Consumer research puts the average annual cost at $2,600 — across clothing, electronics, and home goods. That 'deal' feeling is costing you thousands.",
-    "visual": "Three shopping bags (clothing with shirt, electronics with laptop, home with house) rise from bottom one by one. Counter counts up to $2,600. Dark background.",
+    "narration": "Across the year, researchers put the average cashless overspend at around $2,400. That's a flight to Europe. A month of rent. Just gone, one tap at a time.",
+    "visual": "Piggy bank SVG cracks open. Coins fly out forming $2,400 figure. Three comparison icons: airplane, house, stack of cash — each labeled. Dark background.",
     "accent_color": "orange"
   },
   {
     "scene": 6,
-    "narration": "Before you buy, look up the item's actual price history. If that original price was never real — walk away. Follow for more tricks stores use to drain your wallet.",
-    "visual": "Phone SVG with price history chart showing fake inflated reference dotted line vs real price orange line. Two green-check tips. Orange CTA badge. Light background.",
+    "narration": "You don't have to go full cash. Just use it for one spending category — groceries, eating out, whatever you overspend on. The discomfort kicks back in and you'll spend less without even trying.",
+    "visual": "Wallet SVG opens to show cash bills on one side, card on other. Arrow points to cash side with 'USE HERE' label and category icons. 'SAVE $200/MONTH' badge springs in. Light background.",
     "accent_color": "orange"
   }
 ]

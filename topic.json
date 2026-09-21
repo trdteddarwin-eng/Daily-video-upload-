@@ -1,7 +1,12 @@
 {
-  "title": "The Fake 'Original Price' Is Stealing $2,600 From You",
-  "hook": "That 'was $199, now $97' tag? In most stores, the $199 was never real. Reference price fraud costs the average shopper $2,600 a year — and it's completely legal.",
-  "angle": "Reference price deception — stores set artificial 'original' prices almost never actually charged, then 'discount' to them to manipulate perceived value. The FTC has documented this extensively and Amazon settled a class action over it in 2022.",
-  "audience": "Online shoppers, bargain hunters, anyone who makes purchase decisions based on sale prices or 'was/now' tags",
-  "key_numbers": ["85% of reference prices were never actually charged (FTC investigation)", "$2,600 average annual overspend from reference price manipulation", "Amazon settled class action over fake reference prices in 2022", "Fake anchor raises perceived value by 40%"]
+  "title": "The Cashless Effect: Why Tap-to-Pay Makes You Spend 83% More",
+  "hook": "Tapping your card or phone feels effortless — because your brain barely registers spending. MIT researchers found people spend 83% more with cashless payment than with physical cash. The most convenient payment is the most expensive one.",
+  "angle": "The 'pain of paying' — a concept from MIT and Carnegie Mellon research — shows physical cash triggers a mild discomfort that acts as a natural brake on spending. Digital payments eliminate that friction entirely, leading to consistent overspending across all income levels.",
+  "audience": "Anyone who uses contactless payments, debit/credit cards, or mobile wallets — basically almost everyone under 50",
+  "key_numbers": [
+    "83% more spending with cashless vs physical cash (MIT research)",
+    "Average American makes 4,200+ digital transactions per year",
+    "$2,400 estimated annual overspend from cashless convenience",
+    "'Pain of paying' activates the same neural pathways as physical pain (fMRI studies)"
+  ]
 }

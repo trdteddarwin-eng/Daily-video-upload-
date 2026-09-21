@@ -1,16 +1,16 @@
 {
   "tiktok": {
-    "caption": "That 'was $199' price tag? It was never $199. The FTC proved it — and this trick costs you $2,600/year",
-    "hashtags": ["#moneytrap", "#finance", "#moneypsychology", "#savemoney", "#shoppinghacks", "#personalfinance", "#moneymindset", "#consumertips"]
+    "caption": "Tapping your phone to pay? MIT found you spend 83% more than with cash — here's why",
+    "hashtags": ["#moneytips", "#personalfinance", "#cashlesssociety", "#spendinghabits", "#moneypsychology", "#financialliteracy", "#savemoney", "#tapandpay"]
   },
   "youtube_short": {
-    "title": "The Fake Sale Price Stealing $2,600/Year",
+    "title": "Why Tap-to-Pay Makes You Spend 83% More",
     "title_alternatives": [
-      "That 'SALE' Price Was Never Real — $2,600/Year Trap",
-      "How Stores Fake 'Original' Prices to Steal Thousands From You"
+      "The Dark Side of Contactless Payments Nobody Talks About",
+      "MIT Proved Cashless Payments Are Wrecking Your Budget"
     ],
-    "description": "Retailers set prices they almost never actually charge — just to slash them and make you feel like you got a deal. The FTC found 85% of 'compare at' prices were never real. Amazon even settled a class action over it in 2022. This psychological trick costs the average shopper $2,600 a year across clothing, electronics, and home goods. Next time you see 'was $199 now $97', check the actual price history first. #finance #moneypsychology #moneytrap #shoppinghacks #personalfinance",
-    "tags": ["finance", "money", "personalfinance", "moneytrap", "shoppinghacks", "referenceprice", "moneypsychology", "savemoney", "moneytips", "consumertips", "pricingpsychology", "salestricks"]
+    "description": "Every time you tap your card or phone, your brain barely registers the money leaving — and researchers call this the 'pain of paying.' MIT found people consistently spend 83% more with cashless payments versus physical cash. That convenience is costing the average person $2,400 a year. Try using cash for just one spending category — food, coffee, or shopping — and watch what happens. #moneypsychology #personalfinance #savemoney #cashlesssociety\n\nFollow for daily finance psychology videos.",
+    "tags": ["money psychology", "personal finance", "tap to pay", "cashless spending", "pain of paying", "MIT research", "save money", "spending habits", "financial literacy", "contactless payment"]
   },
-  "hook_line": "That 'WAS $199' price was NEVER $199"
+  "hook_line": "You spend 83% MORE when you tap to pay"
 }
