@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Every time you tap your phone to pay, something weird happens — your brain barely notices the money leaving. And that tiny glitch is costing you thousands a year.",
-    "visual": "Hand silhouette tapping phone to payment terminal SVG. Dollar signs float upward and fade. 'YOUR BRAIN BARELY NOTICES' badge springs in. Dark background, orange accent.",
-    "accent_color": "orange"
+    "narration": "Twelve million Americans walk into a payday loan shop every year thinking it's a quick fix. Here's the trap they walk into.",
+    "visual": "Person silhouette walking toward a neon-lit 'PAYDAY LOANS' storefront at night. '12 MILLION AMERICANS / TRAPPED YEARLY' text above in white and red.",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "MIT researchers call it the pain of paying. Physical cash triggers real discomfort — it's a natural spending brake. Digital payments kill that friction entirely.",
-    "visual": "Brain SVG center frame. Left side: hand holding cash with red 'PAIN' pulse lines radiating. Right side: tap payment with green 'NO SIGNAL' flat line. Light background.",
-    "accent_color": "orange"
+    "narration": "The average loan is $375 for two weeks with a $56 fee. Sounds fine — until you realize that's a 400% annual interest rate.",
+    "visual": "Receipt-style document slides in showing '$375 borrowed', '2 WEEK TERM', '$56 FEE' (counting up). Large red stamp '400% APR' rotates onto the screen.",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "The numbers are wild. Same people, same products — but cashless shoppers spent 83% more than cash shoppers. Not a little more. Eighty-three percent more.",
-    "visual": "Two bar charts rise side by side. Left bar labeled 'CASH' rises to half height in gray. Right bar labeled 'CASHLESS' rises to full height in orange with '83% MORE' badge. Dark background.",
-    "accent_color": "orange"
+    "narration": "Number one: 80% of borrowers can't pay it back on the due date. So they roll it over — and pay that fee all over again.",
+    "visual": "Calendar showing 14-day due date slides in on left. Circular rollover arrows spin on right with '$56' at center. 'ROLLOVER' text pulses in red.",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Think about your own week. Coffee, lunch, quick Amazon order, streaming add-on. Each tap felt like nothing. Add them up and the damage is real.",
-    "visual": "Four SVG icons appear sequentially: coffee cup, burger, delivery box, play button. Each pops in with a small price tag. A running total counter climbs at bottom. Light background.",
-    "accent_color": "orange"
+    "narration": "Number two: the average borrower takes out 8 loans per year, all trying to pay off the first one. That $375 emergency costs $521 in fees.",
+    "visual": "Eight loan document cards stack one by one. Running fee counter below climbs to $521. Most recent card highlighted in red.",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Across the year, researchers put the average cashless overspend at around $2,400. That's a flight to Europe. A month of rent. Just gone, one tap at a time.",
-    "visual": "Piggy bank SVG cracks open. Coins fly out forming $2,400 figure. Three comparison icons: airplane, house, stack of cash — each labeled. Dark background.",
-    "accent_color": "orange"
+    "narration": "Number three: payday lenders pull in $9 billion profit every year. They don't make money on fast repayers — just the ones stuck in the cycle.",
+    "visual": "Pink piggy bank with growing crack on left, money stream flows right to a bank building. '$9B / YEAR' counter animates up in red.",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "You don't have to go full cash. Just use it for one spending category — groceries, eating out, whatever you overspend on. The discomfort kicks back in and you'll spend less without even trying.",
-    "visual": "Wallet SVG opens to show cash bills on one side, card on other. Arrow points to cash side with 'USE HERE' label and category icons. 'SAVE $200/MONTH' badge springs in. Light background.",
-    "accent_color": "orange"
+    "narration": "Credit unions offer emergency loans at 18% APR — not 400%. Search 'emergency loan credit union' before you ever walk through that door.",
+    "visual": "Two side-by-side boxes: red 'PAYDAY LOAN 400% APR' with X mark vs green 'CREDIT UNION 18% APR' with checkmark. Black CTA bar at bottom.",
+    "accent_color": "red"
   }
 ]
