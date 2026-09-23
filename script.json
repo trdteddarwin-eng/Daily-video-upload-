@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Twelve million Americans walk into a payday loan shop every year thinking it's a quick fix. Here's the trap they walk into.",
-    "visual": "Person silhouette walking toward a neon-lit 'PAYDAY LOANS' storefront at night. '12 MILLION AMERICANS / TRAPPED YEARLY' text above in white and red.",
-    "accent_color": "red"
+    "narration": "Your 401k default fund looks fine from the outside. But for 72% of workers who never change it, it quietly destroys $127,000 in retirement money.",
+    "visual": "Person silhouette sitting at a desk, looking at a glowing tablet showing '401k | DEFAULT FUND | Target Date 2055 | Expense: 0.80%'. Dollar signs float up and drift off the right side of the screen. Dark background, amber dollar signs.",
+    "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "The average loan is $375 for two weeks with a $56 fee. Sounds fine — until you realize that's a 400% annual interest rate.",
-    "visual": "Receipt-style document slides in showing '$375 borrowed', '2 WEEK TERM', '$56 FEE' (counting up). Large red stamp '400% APR' rotates onto the screen.",
-    "accent_color": "red"
+    "narration": "Your target date fund charges 0.8% a year — sounds tiny, right? On a hundred thousand dollars, that's $800 silently drained every year, compounding forever.",
+    "visual": "A fund statement card springs up from below. It shows 'EXPENSE RATIO: 0.80%' in amber. A dollar counter animates from $0 to $800 labeled 'drained this year alone'. A magnifying glass SVG zooms in on the fee line. Light background.",
+    "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Number one: 80% of borrowers can't pay it back on the due date. So they roll it over — and pay that fee all over again.",
-    "visual": "Calendar showing 14-day due date slides in on left. Circular rollover arrows spin on right with '$56' at center. 'ROLLOVER' text pulses in red.",
-    "accent_color": "red"
+    "narration": "Right next to it: an index fund at 0.03%. Same market, nearly identical returns — 27 times cheaper. Your plan defaulted you into the expensive one.",
+    "visual": "Two bar charts grow upward side by side. A tall amber bar labeled 'TARGET DATE 0.80%' towers over a tiny green bar labeled 'INDEX FUND 0.03%'. '27× CHEAPER' text flashes in the center. Dark background.",
+    "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "Number two: the average borrower takes out 8 loans per year, all trying to pay off the first one. That $375 emergency costs $521 in fees.",
-    "visual": "Eight loan document cards stack one by one. Running fee counter below climbs to $521. Most recent card highlighted in red.",
-    "accent_color": "red"
+    "narration": "On $300,000 over 25 years, that fee gap compounds to $127,000 vanished. Not from bad picks — just from fees. And there's still one more hidden drain.",
+    "visual": "A line chart shows two diverging growth lines: a green line climbing higher (index fund) and an amber dashed line falling behind (target date). A dollar counter climbs from $0 to $127,000 showing the gap. Year label ticks 0 to 25. Light background.",
+    "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "Number three: payday lenders pull in $9 billion profit every year. They don't make money on fast repayers — just the ones stuck in the cycle.",
-    "visual": "Pink piggy bank with growing crack on left, money stream flows right to a bank building. '$9B / YEAR' counter animates up in red.",
-    "accent_color": "red"
+    "narration": "Target date funds load you with bonds even in your thirties. Bonds grow slower than stocks — that safe move costs another $40,000 in growth. Higher fees and slower returns: a double hit.",
+    "visual": "A donut pie chart springs in. Green slice labeled 'STOCKS 60%' and a pulsing amber slice labeled 'BONDS 40%'. '$40,000 SLOWER' stat appears below. Dark background.",
+    "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "Credit unions offer emergency loans at 18% APR — not 400%. Search 'emergency loan credit union' before you ever walk through that door.",
-    "visual": "Two side-by-side boxes: red 'PAYDAY LOAN 400% APR' with X mark vs green 'CREDIT UNION 18% APR' with checkmark. Black CTA bar at bottom.",
-    "accent_color": "red"
+    "narration": "Log into your 401k and check your fund's expense ratio. If it's above 0.1%, swap it for your plan's cheapest index fund. Ten minutes. A hundred twenty-seven thousand dollars.",
+    "visual": "Two phone cards side by side: amber-bordered card 'Current Fund 0.80%' with an arrow pointing to a green-bordered card 'Index Fund 0.03%' with an animated checkmark. '$127,000 SAVED' springs up large below. Light background.",
+    "accent_color": "amber"
   }
 ]

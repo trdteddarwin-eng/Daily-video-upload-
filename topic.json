@@ -1,13 +1,7 @@
 {
-  "title": "Payday Loans Are a 400% APR Trap — 80% Get Stuck",
-  "hook": "You borrowed $375 for two weeks — and a year later you've paid over a thousand dollars and still owe money.",
-  "angle": "Exposes how payday loan mechanics are specifically engineered to create a rollover debt cycle, not provide temporary relief",
-  "audience": "Anyone living paycheck-to-paycheck, considering a payday loan in an emergency, or unaware of credit union alternatives",
-  "key_numbers": [
-    "400% APR average on payday loans",
-    "80% of borrowers cannot repay on the due date",
-    "12 million Americans use payday loans every year",
-    "$521 in fees on the average $375 loan per year",
-    "$9 billion in annual lender profits"
-  ]
+  "title": "Your 401k Default Fund Is Draining $127K From You",
+  "hook": "Your employer auto-enrolled you in a 'safe' default fund — 72% of workers never change it, and that one oversight quietly destroys $127,000 in retirement money.",
+  "angle": "Target date funds (the default in most 401ks) charge 0.5–0.8% vs. index funds at 0.03%. Over 25 years on $300K that fee gap = $127K gone. Plus bonds added early cost another $40K in growth.",
+  "audience": "Working adults 25–55 with a 401k they've never actively managed",
+  "key_numbers": ["0.80% vs 0.03% expense ratio", "$127,000 fee gap over 25 years on $300K", "72% of auto-enrolled workers never change the default fund", "$40,000 lost to early bond allocation"]
 }

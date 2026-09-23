@@ -1,16 +1,16 @@
 {
   "tiktok": {
-    "caption": "Your $375 payday loan just became $521 in fees — and 80% of borrowers are still paying 6 months later. Here's the math.",
-    "hashtags": ["#paydayloan", "#moneytrap", "#financialliteracy", "#debtfree", "#moneytips", "#personalfinance", "#debtcycle", "#400percent"]
+    "caption": "Your 401k default fund charges 0.80%. The index fund right next to it charges 0.03%. Over 25 years that gap = $127,000 gone forever.",
+    "hashtags": ["#401k", "#retirementplanning", "#moneytips", "#personalfinance", "#investingtips", "#financialliteracy", "#moneymistakes", "#wealthbuilding"]
   },
   "youtube_short": {
-    "title": "Payday Loans: The 400% APR Trap Nobody Talks About",
+    "title": "Your 401k Default Fund Is Draining $127K",
     "title_alternatives": [
-      "Why 80% of Payday Loan Borrowers Get Stuck Forever",
-      "You Borrowed $375 — Now You Owe $1,000. Here's Why."
+      "72% of Workers Never Change This — It Costs $127,000",
+      "The 401k Default Trap Nobody Warns You About"
     ],
-    "description": "Payday loans average a 400% annual interest rate — and 80% of borrowers can't repay on the due date, so they roll it over and pay that fee all over again. The average borrower takes out 8 loans per year just trying to pay off the first one, racking up $521 in fees on a $375 loan. Meanwhile, the industry pulls in $9 billion in profit every year off people who can't escape the cycle. Before you ever walk into one of those stores, search 'emergency loan credit union' — they offer the same help at 18% APR, not 400%. #paydayloan #personalfinance #debtfree #moneytips #financialliteracy",
-    "tags": ["payday loan", "payday loan trap", "400 percent APR", "debt cycle", "personal finance", "money psychology", "credit union", "emergency loan", "financial literacy", "debt trap", "money tips", "broke", "payday lending"]
+    "description": "Most employers auto-enroll you into a target date fund charging around 0.80% per year. Right next to it in your plan sits an index fund at 0.03% — same market, nearly identical returns, 27 times cheaper in fees. On $300,000 over 25 years, that fee gap compounds to $127,000 gone — not from bad investments, just from fees. And target date funds pile you into bonds in your thirties, which grow slower than stocks and cost another $40,000 in growth. Log into your 401k, find your fund's expense ratio, and if it's above 0.1% — switch to your plan's lowest-fee index fund. Takes ten minutes. Could be worth six figures. #401k #retirementplanning #personalfinance #moneytips #financialliteracy",
+    "tags": ["401k", "retirement planning", "target date fund", "index fund", "expense ratio", "money tips", "personal finance", "financial literacy", "investing", "retirement savings", "money mistakes", "financial independence", "default fund", "401k tips", "wealth building"]
   },
-  "hook_line": "Your $375 loan becomes $521 in fees"
+  "hook_line": "Your 401k default is quietly draining $127,000"
 }
