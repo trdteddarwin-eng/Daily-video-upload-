@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Your 401k default fund looks fine from the outside. But for 72% of workers who never change it, it quietly destroys $127,000 in retirement money.",
-    "visual": "Person silhouette sitting at a desk, looking at a glowing tablet showing '401k | DEFAULT FUND | Target Date 2055 | Expense: 0.80%'. Dollar signs float up and drift off the right side of the screen. Dark background, amber dollar signs.",
+    "narration": "Every free sample you've ever accepted? That wasn't generosity. It was neuroscience — and it's quietly costing you $1,800 a year. Here's how.",
+    "visual": "Animated arm extending upward holding a small sample cup. 'FREE SAMPLE' stat text appears. Three dollar signs drift upward and to the right. Stats at bottom: '$1,800 per year' fades in.",
     "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "Your target date fund charges 0.8% a year — sounds tiny, right? On a hundred thousand dollars, that's $800 silently drained every year, compounding forever.",
-    "visual": "A fund statement card springs up from below. It shows 'EXPENSE RATIO: 0.80%' in amber. A dollar counter animates from $0 to $800 labeled 'drained this year alone'. A magnifying glass SVG zooms in on the fee line. Light background.",
+    "narration": "It's called the Reciprocity Principle. When someone gives you something, your brain fires an overwhelming urge to give back — even if you never asked for the gift.",
+    "visual": "Head/brain icon springs into frame. Three-step flow appears in sequence: green 'GIFT' box → red 'OBLIGATION' box → amber 'BUY' box. 'THE RECIPROCITY TRAP' stamps in at bottom.",
     "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Right next to it: an index fund at 0.03%. Same market, nearly identical returns — 27 times cheaper. Your plan defaulted you into the expensive one.",
-    "visual": "Two bar charts grow upward side by side. A tall amber bar labeled 'TARGET DATE 0.80%' towers over a tiny green bar labeled 'INDEX FUND 0.03%'. '27× CHEAPER' text flashes in the center. Dark background.",
+    "narration": "Costco's sample stations boost purchase rates by up to 300 percent for that item. One study tracked a single demo station generating $1.8 million in extra sales. That's not a snack — that's a sales machine.",
+    "visual": "Warehouse store with shelves and products animates in. Sample station visible at bottom. Counter counts from 0 to 300, then '%' pops in. 'MORE SALES' label below.",
     "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "On $300,000 over 25 years, that fee gap compounds to $127,000 vanished. Not from bad picks — just from fees. And there's still one more hidden drain.",
-    "visual": "A line chart shows two diverging growth lines: a green line climbing higher (index fund) and an amber dashed line falling behind (target date). A dollar counter climbs from $0 to $127,000 showing the gap. Year label ticks 0 to 25. Light background.",
+    "narration": "Wine stores, food courts, grocery demos — the reciprocity trigger is everywhere. And the average impulse purchase that follows a free taste runs about $47. Next scene has the real damage.",
+    "visual": "Wine bottle springs in on left side. Sample tray with small cups rises on right side. Large '$47' slams in below center. 'TRIGGERED PER SAMPLE' label below.",
     "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "Target date funds load you with bonds even in your thirties. Bonds grow slower than stocks — that safe move costs another $40,000 in growth. Higher fees and slower returns: a double hit.",
-    "visual": "A donut pie chart springs in. Green slice labeled 'STOCKS 60%' and a pulsing amber slice labeled 'BONDS 40%'. '$40,000 SLOWER' stat appears below. Dark background.",
+    "narration": "Add it up — Costco runs, grocery demos, wine tastings, food hall stops — and the average family spends $1,800 extra per year on purchases they never planned to make.",
+    "visual": "Person silhouette with arms out. Dollar signs float upward away from them. Counter animates from $0 to $1,800. '/YEAR DRAINED' label beneath the counter.",
     "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "Log into your 401k and check your fund's expense ratio. If it's above 0.1%, swap it for your plan's cheapest index fund. Ten minutes. A hundred twenty-seven thousand dollars.",
-    "visual": "Two phone cards side by side: amber-bordered card 'Current Fund 0.80%' with an arrow pointing to a green-bordered card 'Index Fund 0.03%' with an animated checkmark. '$127,000 SAVED' springs up large below. Light background.",
+    "narration": "Here's the fix. Go ahead, accept the sample — they're delicious. But pause before you buy anything and ask one question: did I plan this? That one second saves you $1,800 a year. Follow for more.",
+    "visual": "Shield with checkmark springs in. Three numbered steps appear in sequence: 'Accept the sample', 'Pause before buying', 'Ask: Did I plan this?'. Dark CTA box slides up at bottom: '$1,800 SAVED'.",
     "accent_color": "amber"
   }
 ]
