@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Your 401k default fund looks fine from the outside. But for 72% of workers who never change it, it quietly destroys $127,000 in retirement money.",
-    "visual": "Person silhouette sitting at a desk, looking at a glowing tablet showing '401k | DEFAULT FUND | Target Date 2055 | Expense: 0.80%'. Dollar signs float up and drift off the right side of the screen. Dark background, amber dollar signs.",
-    "accent_color": "amber"
+    "narration": "Zelle is built into almost every major banking app — looks totally safe. But there's a legal trap inside it, and if someone tricks you into sending money, your bank owes you absolutely nothing.",
+    "visual": "Phone with Zelle app on screen, animated thief hand reaching through the screen grabbing a money bag. Red ALERT badge pulses. 'ZERO PROTECTION' text appears below phone.",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Your target date fund charges 0.8% a year — sounds tiny, right? On a hundred thousand dollars, that's $800 silently drained every year, compounding forever.",
-    "visual": "A fund statement card springs up from below. It shows 'EXPENSE RATIO: 0.80%' in amber. A dollar counter animates from $0 to $800 labeled 'drained this year alone'. A magnifying glass SVG zooms in on the fee line. Light background.",
-    "accent_color": "amber"
+    "narration": "Last year Americans lost 1.9 billion dollars to peer-to-peer payment scams. That's more than all ATM fraud combined — and almost no one got their money back.",
+    "visual": "Animated bar chart growing to show $1.9B. Dollar coins fall into frame. Counter climbs from $0 to $1.9B. Light background with bold red bar filling up.",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Right next to it: an index fund at 0.03%. Same market, nearly identical returns — 27 times cheaper. Your plan defaulted you into the expensive one.",
-    "visual": "Two bar charts grow upward side by side. A tall amber bar labeled 'TARGET DATE 0.80%' towers over a tiny green bar labeled 'INDEX FUND 0.03%'. '27× CHEAPER' text flashes in the center. Dark background.",
-    "accent_color": "amber"
+    "narration": "Here's the thing — federal law only covers transactions you didn't authorize. The second a scammer tricks you into sending money yourself, banks legally call it authorized. They owe you zero.",
+    "visual": "Left column: credit card with green checkmark and '60-day dispute / Federal Law (Reg E)'. Right column: Zelle phone with large red X and 'ZERO days / No Protection'. Dark background, VS divider.",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "On $300,000 over 25 years, that fee gap compounds to $127,000 vanished. Not from bad picks — just from fees. And there's still one more hidden drain.",
-    "visual": "A line chart shows two diverging growth lines: a green line climbing higher (index fund) and an amber dashed line falling behind (target date). A dollar counter climbs from $0 to $127,000 showing the gap. Year label ticks 0 to 25. Light background.",
-    "accent_color": "amber"
+    "narration": "The most common setup: a fake text says your account's been compromised. A scammer posing as your bank walks you through 'protecting' your funds — by sending them to a 'secure' account. Yours.",
+    "visual": "Phone screen showing a fake 'Your Bank Security' text conversation — messages appear one by one. Final message shows red 'SEND $3,247 via Zelle'. Warning triangle pulses at bottom.",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Target date funds load you with bonds even in your thirties. Bonds grow slower than stocks — that safe move costs another $40,000 in growth. Higher fees and slower returns: a double hit.",
-    "visual": "A donut pie chart springs in. Green slice labeled 'STOCKS 60%' and a pulsing amber slice labeled 'BONDS 40%'. '$40,000 SLOWER' stat appears below. Dark background.",
-    "accent_color": "amber"
+    "narration": "Credit cards give you 60 days to dispute any charge — that's guaranteed by federal law. Zelle, Venmo, CashApp — zero days, zero protection. Scammers specifically ask for Zelle for exactly this reason.",
+    "visual": "Side-by-side: left shows credit card icon with '60-DAY PROTECTION' badge in green. Right shows Zelle phone with red '$0 PROTECTION'. Stats appear below: '87% of scams specify Zelle', 'Under 3% recovery rate'.",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Log into your 401k and check your fund's expense ratio. If it's above 0.1%, swap it for your plan's cheapest index fund. Ten minutes. A hundred twenty-seven thousand dollars.",
-    "visual": "Two phone cards side by side: amber-bordered card 'Current Fund 0.80%' with an arrow pointing to a green-bordered card 'Index Fund 0.03%' with an animated checkmark. '$127,000 SAVED' springs up large below. Light background.",
-    "accent_color": "amber"
+    "narration": "Rule one: never Zelle someone you haven't met face-to-face. Rule two: your real bank will never ask you to send Zelle. And if you've been scammed, file a complaint with the CFPB immediately.",
+    "visual": "Green shield SVG centered. Three rule cards spring in one by one: RULE 1 (never Zelle a stranger), RULE 2 (banks never ask for Zelle), RULE 3 (CFPB complaint). CTA slides up: 'FOLLOW FOR DAILY MONEY TRAPS'.",
+    "accent_color": "red"
   }
 ]
