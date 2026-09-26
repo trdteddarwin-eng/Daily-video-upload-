@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Zelle is built into almost every major banking app — looks totally safe. But there's a legal trap inside it, and if someone tricks you into sending money, your bank owes you absolutely nothing.",
-    "visual": "Phone with Zelle app on screen, animated thief hand reaching through the screen grabbing a money bag. Red ALERT badge pulses. 'ZERO PROTECTION' text appears below phone.",
-    "accent_color": "red"
+    "narration": "Here's a habit quietly destroying your retirement — waiting to save whatever's left at the end of the month. Most people do it. Almost none of them save anything.",
+    "visual": "Amber piggy bank centered on dark background with cash bills ($100, $50, $20) flying away from it. Hook text fades in: 'SAVE WHAT'S LEFT? This habit has a $384,000 price tag'",
+    "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "Last year Americans lost 1.9 billion dollars to peer-to-peer payment scams. That's more than all ATM fraud combined — and almost no one got their money back.",
-    "visual": "Animated bar chart growing to show $1.9B. Dollar coins fall into frame. Counter climbs from $0 to $1.9B. Light background with bold red bar filling up.",
-    "accent_color": "red"
+    "narration": "Your brain treats money still in your account as money that's already yours to spend. By the thirty-first, there's nothing left — not because you're bad with money, but because you're human.",
+    "visual": "Brain graphic on light background with three dashed arrows pointing down to icons: shopping bag, food plate, phone/subscriptions. Text: 'Available money = money to spend. By the 31st, nothing's left.'",
+    "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Here's the thing — federal law only covers transactions you didn't authorize. The second a scammer tricks you into sending money yourself, banks legally call it authorized. They owe you zero.",
-    "visual": "Left column: credit card with green checkmark and '60-day dispute / Federal Law (Reg E)'. Right column: Zelle phone with large red X and 'ZERO days / No Protection'. Dark background, VS divider.",
-    "accent_color": "red"
+    "narration": "Studies show people who save what's left average just $127 a month. People who auto-transfer first? $441 a month. The only difference is which one comes first.",
+    "visual": "Dark background with two animated bar charts growing side by side. Left gray bar labeled 'SAVE LAST — $127/mo', right amber bar labeled 'SAVE FIRST — $441/mo'. Bottom text: 'Only the ORDER is different'",
+    "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "The most common setup: a fake text says your account's been compromised. A scammer posing as your bank walks you through 'protecting' your funds — by sending them to a 'secure' account. Yours.",
-    "visual": "Phone screen showing a fake 'Your Bank Security' text conversation — messages appear one by one. Final message shows red 'SEND $3,247 via Zelle'. Warning triangle pulses at bottom.",
-    "accent_color": "red"
+    "narration": "Run that $314 monthly gap through thirty years at seven percent and you get $384,000. That's not a mistake — that's just math working against you.",
+    "visual": "Light background compound growth curve drawing in across a chart. Number counter rolls from $0 up to $384,000. Chart labeled '30 years @ 7% interest'. '$314/month gap' annotation.",
+    "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "Credit cards give you 60 days to dispute any charge — that's guaranteed by federal law. Zelle, Venmo, CashApp — zero days, zero protection. Scammers specifically ask for Zelle for exactly this reason.",
-    "visual": "Side-by-side: left shows credit card icon with '60-DAY PROTECTION' badge in green. Right shows Zelle phone with red '$0 PROTECTION'. Stats appear below: '87% of scams specify Zelle', 'Under 3% recovery rate'.",
-    "accent_color": "red"
+    "narration": "The fix is almost insultingly simple. Set up an automatic transfer on payday, before you touch a single dollar. Your brain can't spend what it never sees.",
+    "visual": "Dark background, smartphone springs in showing an auto-transfer interface. Toggle switches ON animating from gray to amber. '+$441' lights up in the savings row. Check mark appears. Text: 'Your brain can't spend what it never sees'",
+    "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "Rule one: never Zelle someone you haven't met face-to-face. Rule two: your real bank will never ask you to send Zelle. And if you've been scammed, file a complaint with the CFPB immediately.",
-    "visual": "Green shield SVG centered. Three rule cards spring in one by one: RULE 1 (never Zelle a stranger), RULE 2 (banks never ask for Zelle), RULE 3 (CFPB complaint). CTA slides up: 'FOLLOW FOR DAILY MONEY TRAPS'.",
-    "accent_color": "red"
+    "narration": "So here's the real question: are you saving what's left, or saving first? Because one of those builds $384,000 and the other one builds regret. Follow for more traps like this.",
+    "visual": "Dark background split screen: left panel shows gray empty sad piggy bank '$127/mo SAVE LAST', right panel shows amber happy piggy bank with coins '$441/mo SAVE FIRST'. Big '+$384K' counter in amber below. CTA text fades in.",
+    "accent_color": "amber"
   }
 ]

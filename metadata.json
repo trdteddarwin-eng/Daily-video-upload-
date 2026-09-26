@@ -1,13 +1,16 @@
 {
   "tiktok": {
-    "caption": "Zelle scams stole $1.9 BILLION last year — and banks aren't required to give it back. Here's the legal trap nobody warns you about.",
-    "hashtags": ["#personalfinance", "#moneytips", "#zelle", "#scamalert", "#banking", "#moneytrap", "#finance", "#financetok"]
+    "caption": "Waiting to save whatever's left each month? That one habit has a $384,000 price tag — and the fix takes 5 minutes.",
+    "hashtags": ["#moneytips", "#personalfinance", "#savingmoney", "#moneypsychology", "#financetips", "#wealthbuilding", "#payyourselffirst", "#moneyhabits"]
   },
   "youtube_short": {
-    "title": "Zelle Scams: Banks Keep $1.9B — Legally",
-    "title_alternatives": ["Why Zelle Victims Get Zero Refunds", "The Zelle Fraud Loophole Costing $1.9B/Year"],
-    "description": "Zelle is built into your banking app — but it has zero fraud protection. When a scammer tricks you into sending money, federal law calls it 'authorized' and your bank owes you nothing. Last year Americans lost $1.9 billion this way. Here's why scammers specifically ask for Zelle, and what you need to know. #personalfinance #moneytips #scam #banking #zelle\n\nFollow for a new money trap every day.",
-    "tags": ["finance", "money", "zelle", "scam", "banking", "personalfinance", "moneytips", "fraud", "venmo", "consumer protection", "financial literacy", "money psychology"]
+    "title": "The 'Save What's Left' Trap Is Stealing $384K",
+    "title_alternatives": [
+      "Why You Keep Running Out of Money to Save",
+      "The #1 Saving Mistake That Costs You $384,000"
+    ],
+    "description": "Most people save whatever's left at the end of the month — and statistically, that's almost nothing. Studies show leftover-savers average just $127/month, while people who auto-transfer on payday save $441/month. That $314 monthly gap compounds to $384,000 over 30 years at 7%. The fix is simple: automate your savings BEFORE you touch your paycheck. Your brain can't spend what it never sees. Follow for more money traps like this! #personalfinance #savingmoney #wealthbuilding #financetips #moneyhacks",
+    "tags": ["personal finance", "saving money", "wealth building", "money psychology", "financial tips", "save first", "pay yourself first", "compound interest", "money habits", "financial freedom", "payday savings", "auto transfer"]
   },
-  "hook_line": "Banks kept $1.9B of YOUR money — legally"
+  "hook_line": "Saving what's left each month? That habit costs $384K."
 }
