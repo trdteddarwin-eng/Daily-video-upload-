@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Here's wild — 55% of Americans have under five thousand dollars saved for retirement. And it's not because they don't earn enough. It's because of how your brain is literally wired.",
-    "visual": "Two person silhouettes side by side: left one bright amber labeled 'YOU TODAY', right one gray labeled 'YOU IN 30 YRS' with a red X disconnecting them. Stat card shows '55% HAVE UNDER $5K SAVED' in amber on dark background.",
-    "accent_color": "amber"
+    "narration": "Most mortgages hide a fee called PMI. It doesn't protect you — it covers your bank. And it costs the average homeowner fourteen hundred dollars every year.",
+    "visual": "Dark background. House silhouette (triangle roof, rectangle body, door, windows) springs in center. PMI badge (red circle) floats in over the rooftop. '$1,400/YR — PROTECTS YOUR BANK NOT YOU' text appears below.",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Stanford researchers scanned people's brains while showing them their own future faces. Here's the thing — the brain activated the same region it uses to think about total strangers. Not yourself. A stranger.",
-    "visual": "Brain SVG split down the middle: left half glowing amber labeled 'PRESENT — Feels real', right half gray labeled 'FUTURE — Feels like a stranger'. 'Stanford MRI confirmed it' callout card on light background.",
-    "accent_color": "amber"
+    "narration": "PMI kicks in when your down payment is under twenty percent. Average homeowners pay it for over seven years. That's over eight thousand dollars gone forever.",
+    "visual": "Light background. Seven horizontal red bars appear one by one (one per year), each labeled 'Yr 1–7 — $1,200'. Running total counter at bottom counts up to $8,400.",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Because of this glitch, your brain unconsciously discounts your future needs by up to 40%. On a sixty-thousand-dollar salary, that's a hundred and seventy-eight thousand dollars in retirement savings you'll never prioritize.",
-    "visual": "Two money stacks side by side: full amber stack labeled '$297K Should Save' vs a shorter gray stack that animates shrinking labeled '$119K Brain Says'. A red card drops in showing '$178,000 GAP on a $60K salary'.",
-    "accent_color": "amber"
+    "narration": "Here's what they don't tell you — at eighty percent equity, your bank is required to remove PMI. But they wait for you to ask, not act.",
+    "visual": "Dark background. LTV gauge bar animates from 95% down toward the 80% threshold. Dotted white line marks the 80% cutoff. 'PMI MUST BE REMOVED' above the line. 'YOUR BANK WAITS FOR YOU TO ASK' text below.",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "The fix is called auto-escalation, and it completely bypasses your brain's bias. You tell your 401k to bump contributions by one percent each year automatically — before your present brain can object.",
-    "visual": "Animated bar chart showing 401k contribution percentage growing year by year from 3% to 9% across 7 bars, each bar taller than the last, labeled Y1 through Y7. Amber gradient bars on light background with auto-arrow.",
-    "accent_color": "amber"
+    "narration": "You can force the removal. Get an appraisal showing your home's value, verify you're at eighty percent, then send one letter. One letter, thousands saved.",
+    "visual": "Light background. Document SVG (paper with corner fold and text lines). Three steps appear sequentially with slide-in: 1) Get an Appraisal, 2) Verify 80% Equity, 3) Send One Letter. Bold headline above.",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Workers who set this up end up with two hundred and seventeen thousand dollars more at retirement — same income, same job, same everything. The only difference is one automated setting running quietly in the background.",
-    "visual": "Side-by-side comparison: red bar '$340K WITHOUT' vs tall amber bar '$557K WITH AUTO-ESCALATION'. A '+$217,000 difference' amber badge animates in at the bottom on dark background.",
-    "accent_color": "amber"
+    "narration": "Two neighbors bought the same house same year. One sent a letter at year three and dropped PMI. The other stayed quiet and paid eleven thousand extra.",
+    "visual": "Dark background. Two small house icons side by side. Left: green border, 'NEIGHBOR — SENT LETTER YR 3 — $11K SAVED.' Right: red border, 'YOU — STAYED QUIET — $11K PAID EXTRA.'",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Go to your HR portal today and turn on contribution auto-escalation. It takes under two minutes. That one click is worth a hundred and seventy-eight thousand dollars to your future self — go do it right now.",
-    "visual": "Phone screen showing an HR portal with an 'Auto-Escalation ✓' button highlighted in amber. A pulsing '$178,000 WORTH TO YOUR FUTURE SELF' CTA badge on light background with a finger tap animation.",
-    "accent_color": "amber"
+    "narration": "Pull up your mortgage statement right now. If your balance is near eighty percent loan-to-value, PMI should be gone. That letter takes five minutes — write it today.",
+    "visual": "Light background. Smartphone SVG with dollar sign on screen. Three action bullets appear: Find Your Loan Balance, Calculate Your LTV, If Near 80% Write the Letter. Bold red 'FOLLOW FOR MORE MONEY SECRETS' CTA.",
+    "accent_color": "red"
   }
 ]
