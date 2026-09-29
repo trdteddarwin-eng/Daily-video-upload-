@@ -10,7 +10,7 @@ import {
 
 const BG_DARK = '#121212';
 const BG_LIGHT = '#F5F5F5';
-const ACCENT = '#EF4444';
+const ACCENT = '#10B981';
 const WHITE = '#F5F5F5';
 const BLACK = '#121212';
 const FONT = '"Arial Black", "Helvetica Neue", Arial, sans-serif';
@@ -38,25 +38,30 @@ const FadeScene: React.FC<{ children: React.ReactNode; bg: string; dur: number }
   return <AbsoluteFill style={{ background: bg, opacity }}>{children}</AbsoluteFill>;
 };
 
-// === SCENE 1 — PMI Revealed ===
+// === SCENE 1 — EITC Hook ===
 const Scene1: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  const houseIn = spring({ frame, fps, from: 0, to: 1, config: { damping: 14, stiffness: 80 } });
-  const badgeIn = spring({
-    frame: Math.max(0, frame - 28),
+  const titleIn = spring({ frame, fps, from: 0, to: 1, config: { damping: 14, stiffness: 80 } });
+  const envScale = spring({
+    frame: Math.max(0, frame - 18),
     fps,
     from: 0,
     to: 1,
-    config: { damping: 12, stiffness: 90 },
+    config: { damping: 12, stiffness: 70 },
   });
-  const costIn = spring({
-    frame: Math.max(0, frame - 58),
+  const amountIn = spring({
+    frame: Math.max(0, frame - 55),
     fps,
     from: 0,
     to: 1,
     config: { damping: 14, stiffness: 80 },
+  });
+
+  const envY = interpolate(frame, [18, 55], [80, 0], {
+    extrapolateLeft: 'clamp',
+    extrapolateRight: 'clamp',
   });
 
   return (
@@ -70,59 +75,56 @@ const Scene1: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
           padding: '0 80px',
         }}
       >
-        <p style={{ ...headline(46, WHITE), opacity: houseIn, marginBottom: 12 }}>
-          YOUR MORTGAGE
+        <p style={{ ...headline(40, WHITE), opacity: titleIn, marginBottom: 8 }}>
+          THE IRS CREDIT
         </p>
-        <p style={{ ...headline(34, ACCENT), opacity: houseIn, marginBottom: 56 }}>
-          HIDES A SECRET FEE
+        <p style={{ ...headline(36, ACCENT), opacity: titleIn, marginBottom: 44 }}>
+          NOBODY CLAIMS
         </p>
 
-        {/* House SVG with PMI badge */}
-        <svg
-          viewBox="0 0 220 210"
-          width={320}
-          height={305}
-          style={{ transform: `scale(${houseIn})`, display: 'block', overflow: 'visible' }}
-        >
-          {/* Roof */}
-          <polygon points="10,102 110,16 210,102" fill={WHITE} />
-          {/* Body */}
-          <rect x="35" y="100" width="150" height="110" fill={WHITE} rx={4} />
-          {/* Door */}
-          <rect x="90" y="148" width="40" height="62" fill={BG_DARK} rx={3} />
-          {/* Left window */}
-          <rect x="50" y="118" width="34" height="26" fill={BG_DARK} rx={3} />
-          {/* Right window */}
-          <rect x="136" y="118" width="34" height="26" fill={BG_DARK} rx={3} />
-          {/* PMI Badge */}
-          <circle cx="172" cy="34" r="34" fill={ACCENT} opacity={badgeIn} />
-          <text
-            x="172"
-            y="28"
-            textAnchor="middle"
-            fill={WHITE}
-            style={{ fontSize: 16, fontFamily: FONT, fontWeight: 900 }}
-            opacity={badgeIn}
+        {/* IRS Envelope SVG */}
+        <div style={{ transform: `translateY(${envY}px) scale(${envScale})` }}>
+          <svg
+            viewBox="0 0 300 200"
+            width={300}
+            height={200}
+            style={{ display: 'block', overflow: 'visible' }}
           >
-            PMI
-          </text>
-          <text
-            x="172"
-            y="50"
-            textAnchor="middle"
-            fill={WHITE}
-            style={{ fontSize: 12, fontFamily: FONT }}
-            opacity={badgeIn}
-          >
-            FEE
-          </text>
-        </svg>
+            {/* Envelope body */}
+            <rect x={10} y={40} width={280} height={150} rx={14} fill="#163020" stroke={ACCENT} strokeWidth={3} />
+            {/* Flap */}
+            <polygon points="10,40 150,125 290,40" fill="#0D2018" />
+            <polyline points="10,40 150,125 290,40" fill="none" stroke={ACCENT} strokeWidth={3} />
+            {/* Fold lines */}
+            <line x1={10} y1={190} x2={110} y2={130} stroke={ACCENT} strokeWidth={2} opacity={0.4} />
+            <line x1={290} y1={190} x2={190} y2={130} stroke={ACCENT} strokeWidth={2} opacity={0.4} />
+            {/* Dollar sign */}
+            <text
+              x={150}
+              y={183}
+              textAnchor="middle"
+              fill={ACCENT}
+              style={{ fontSize: 56, fontFamily: FONT, fontWeight: 900 }}
+            >
+              $
+            </text>
+            {/* IRS Stamp */}
+            <rect x={232} y={50} width={50} height={30} rx={5} fill={ACCENT} />
+            <text
+              x={257}
+              y={70}
+              textAnchor="middle"
+              fill={BLACK}
+              style={{ fontSize: 15, fontFamily: FONT, fontWeight: 900 }}
+            >
+              IRS
+            </text>
+          </svg>
+        </div>
 
-        <p style={{ ...headline(72, ACCENT), opacity: costIn, marginTop: 44 }}>
-          $1,400/YR
-        </p>
-        <p style={{ ...headline(22, WHITE), opacity: costIn * 0.85, marginTop: 12 }}>
-          PROTECTS YOUR BANK — NOT YOU
+        <p style={{ ...headline(80, ACCENT), opacity: amountIn, marginTop: 32 }}>$7,830</p>
+        <p style={{ ...headline(24, WHITE), opacity: amountIn * 0.9, marginTop: 8 }}>
+          UNCLAIMED — EVERY YEAR
         </p>
       </AbsoluteFill>
     </FadeScene>
@@ -130,21 +132,31 @@ const Scene1: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
 };
 // --- A ---
 
-// === SCENE 2 — 7 Years of Payments ===
+// === SCENE 2 — What Is the EITC (Direct Payment) ===
 const Scene2: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  const headerIn = spring({ frame, fps, from: 0, to: 1, config: { damping: 14, stiffness: 80 } });
+  const titleIn = spring({ frame, fps, from: 0, to: 1, config: { damping: 14, stiffness: 80 } });
+  const arrowIn = spring({
+    frame: Math.max(0, frame - 18),
+    fps,
+    from: 0,
+    to: 1,
+    config: { damping: 12, stiffness: 70 },
+  });
+  const labelIn = spring({
+    frame: Math.max(0, frame - 55),
+    fps,
+    from: 0,
+    to: 1,
+    config: { damping: 14, stiffness: 80 },
+  });
 
-  const NUM_YEARS = 7;
-  const ANNUAL_PMI = 1200;
-  const totalCounter = Math.floor(
-    interpolate(frame, [18, 168], [0, NUM_YEARS * ANNUAL_PMI], {
-      extrapolateLeft: 'clamp',
-      extrapolateRight: 'clamp',
-    })
-  );
+  const arrowWidth = interpolate(frame, [18, 95], [0, 280], {
+    extrapolateLeft: 'clamp',
+    extrapolateRight: 'clamp',
+  });
 
   return (
     <FadeScene bg={BG_LIGHT} dur={dur}>
@@ -157,78 +169,105 @@ const Scene2: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
           padding: '0 80px',
         }}
       >
-        <p style={{ ...headline(34, BLACK), opacity: headerIn, marginBottom: 8 }}>
-          AVERAGE PMI DURATION
+        <p style={{ ...headline(36, BLACK), opacity: titleIn, marginBottom: 8 }}>
+          NOT A DEDUCTION
         </p>
-        <p style={{ ...headline(52, ACCENT), opacity: headerIn, marginBottom: 44 }}>
-          7+ YEARS
+        <p style={{ ...headline(32, ACCENT), opacity: titleIn, marginBottom: 44 }}>
+          A DIRECT PAYMENT TO YOU
         </p>
 
-        {/* Year bars */}
-        <svg viewBox="0 0 560 272" width={560} height={272} style={{ display: 'block' }}>
-          {Array.from({ length: Math.max(0, Math.floor(NUM_YEARS)) }).map((_, i) => {
-            const barIn = interpolate(
+        {/* IRS → Person arrow animation */}
+        <svg
+          viewBox="0 0 560 200"
+          width={560}
+          height={200}
+          style={{ display: 'block', overflow: 'visible' }}
+        >
+          {/* IRS building */}
+          <rect x={0} y={60} width={100} height={80} fill="#333333" rx={6} />
+          <polygon points="0,60 50,20 100,60" fill="#555555" />
+          <text
+            x={50}
+            y={108}
+            textAnchor="middle"
+            fill={WHITE}
+            style={{ fontSize: 18, fontFamily: FONT, fontWeight: 900 }}
+          >
+            IRS
+          </text>
+          <rect x={37} y={112} width={26} height={28} fill={BLACK} rx={2} />
+
+          {/* Arrow growing right */}
+          <rect x={110} y={93} width={arrowWidth} height={14} fill={ACCENT} rx={4} />
+          {/* Arrowhead */}
+          <polygon
+            points={`${110 + arrowWidth},85 ${110 + arrowWidth + 24},100 ${110 + arrowWidth},115`}
+            fill={ACCENT}
+            opacity={arrowIn}
+          />
+
+          {/* Dollar signs floating above arrow */}
+          {[0.3, 0.55, 0.8].map((pct, i) => {
+            const xPos = 110 + pct * Math.min(arrowWidth, 280);
+            const floatY = interpolate(
               frame,
-              [18 + i * 14, 18 + i * 14 + 30],
+              [28 + i * 12, 58 + i * 12, 88 + i * 12],
+              [0, -22, 0],
+              { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }
+            );
+            const dOpacity = interpolate(
+              frame,
+              [28 + i * 12, 48 + i * 12],
               [0, 1],
               { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }
             );
-            const yPos = i * 36;
             return (
-              <g key={i} opacity={barIn}>
-                <rect x={0} y={yPos} width={340} height={28} fill={ACCENT} rx={4} />
-                <text
-                  x={354}
-                  y={yPos + 19}
-                  fill={BLACK}
-                  style={{ fontSize: 18, fontFamily: FONT, fontWeight: 900 }}
-                >
-                  Yr {i + 1} — $1,200
-                </text>
-              </g>
+              <text
+                key={i}
+                x={xPos}
+                y={76 + floatY}
+                textAnchor="middle"
+                fill={ACCENT}
+                opacity={dOpacity}
+                style={{ fontSize: 24, fontFamily: FONT, fontWeight: 900 }}
+              >
+                $
+              </text>
             );
           })}
+
+          {/* Person silhouette */}
+          <circle cx={490} cy={58} r={26} fill={ACCENT} opacity={arrowIn} />
+          <rect x={464} y={88} width={52} height={50} fill={ACCENT} rx={12} opacity={arrowIn} />
         </svg>
 
-        <p style={{ ...headline(76, ACCENT), marginTop: 16 }}>
-          ${totalCounter.toLocaleString()}
+        <p style={{ ...headline(28, BLACK), opacity: labelIn, marginTop: 30 }}>
+          YOU GET IT EVEN IF YOU
         </p>
-        <p style={{ ...headline(22, BLACK), marginTop: 10, opacity: 0.8 }}>
-          PAID TO THE BANK — GONE FOREVER
+        <p style={{ ...headline(30, ACCENT), opacity: labelIn, marginTop: 8 }}>
+          OWE ZERO IN TAXES
+        </p>
+        <p style={{ ...headline(20, '#888888'), opacity: labelIn * 0.85, marginTop: 16 }}>
+          REFUNDABLE = DIRECT DEPOSIT
         </p>
       </AbsoluteFill>
     </FadeScene>
   );
 };
 
-// === SCENE 3 — LTV Gauge / Bank Waits ===
+// === SCENE 3 — Who Qualifies (Income Limits) ===
 const Scene3: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
   const titleIn = spring({ frame, fps, from: 0, to: 1, config: { damping: 14, stiffness: 80 } });
-  const gaugeIn = spring({
-    frame: Math.max(0, frame - 20),
-    fps,
-    from: 0,
-    to: 1,
-    config: { damping: 12, stiffness: 70 },
-  });
-  const bankIn = spring({
-    frame: Math.max(0, frame - 65),
-    fps,
-    from: 0,
-    to: 1,
-    config: { damping: 14, stiffness: 80 },
-  });
 
-  const ltvValue = interpolate(frame, [30, 148], [95, 80], {
-    extrapolateLeft: 'clamp',
-    extrapolateRight: 'clamp',
-  });
-  const BAR_TOTAL = 400;
-  const barWidth = (ltvValue / 100) * BAR_TOTAL;
-  const thresholdX = (80 / 100) * BAR_TOTAL; // 320px
+  const groups = [
+    { label: 'NO KIDS', limit: '$18,600' },
+    { label: '1 CHILD', limit: '$49,000' },
+    { label: '2 CHILDREN', limit: '$55,800' },
+    { label: '3+ CHILDREN', limit: '$59,900' },
+  ];
 
   return (
     <FadeScene bg={BG_DARK} dur={dur}>
@@ -241,78 +280,73 @@ const Scene3: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
           padding: '0 80px',
         }}
       >
-        <p style={{ ...headline(38, WHITE), opacity: titleIn, marginBottom: 8 }}>
-          AT 80% EQUITY
+        <p style={{ ...headline(34, WHITE), opacity: titleIn, marginBottom: 8 }}>
+          DO YOU QUALIFY?
         </p>
-        <p style={{ ...headline(34, ACCENT), opacity: titleIn, marginBottom: 60 }}>
-          PMI MUST BE REMOVED
+        <p style={{ ...headline(28, ACCENT), opacity: titleIn, marginBottom: 36 }}>
+          ANNUAL INCOME UNDER:
         </p>
 
-        {/* LTV Gauge */}
-        <svg viewBox="0 0 460 180" width={460} height={180} style={{ opacity: gaugeIn }}>
-          {/* Track */}
-          <rect x={0} y={68} width={BAR_TOTAL} height={44} fill="#2A2A2A" rx={8} />
-          {/* Filled bar (current LTV) */}
-          <rect x={0} y={68} width={barWidth} height={44} fill={ACCENT} rx={8} />
-          {/* Threshold dashed line */}
-          <line
-            x1={thresholdX}
-            y1={52}
-            x2={thresholdX}
-            y2={124}
-            stroke={WHITE}
-            strokeWidth={3}
-            strokeDasharray="6 4"
-          />
-          {/* Threshold label */}
-          <text
-            x={thresholdX}
-            y={44}
-            textAnchor="middle"
-            fill={WHITE}
-            style={{ fontSize: 15, fontFamily: FONT }}
-          >
-            80% — REMOVE PMI
-          </text>
-          {/* Current LTV label inside bar */}
-          <text
-            x={barWidth - 44}
-            y={95}
-            textAnchor="middle"
-            fill={WHITE}
-            style={{ fontSize: 22, fontFamily: FONT, fontWeight: 900 }}
-          >
-            {Math.round(ltvValue)}%
-          </text>
-          {/* Axis labels */}
-          <text x={0} y={148} fill="#666666" style={{ fontSize: 14, fontFamily: FONT }}>
-            0%
-          </text>
-          <text
-            x={BAR_TOTAL}
-            y={148}
-            textAnchor="end"
-            fill="#666666"
-            style={{ fontSize: 14, fontFamily: FONT }}
-          >
-            100%
-          </text>
-          <text
-            x={200}
-            y={170}
-            textAnchor="middle"
-            fill="#666666"
-            style={{ fontSize: 15, fontFamily: FONT }}
-          >
-            LOAN-TO-VALUE RATIO
-          </text>
-        </svg>
+        <div style={{ width: '100%' }}>
+          {groups.map((group, i) => {
+            const itemIn = spring({
+              frame: Math.max(0, frame - 18 - i * 22),
+              fps,
+              from: 0,
+              to: 1,
+              config: { damping: 14, stiffness: 80 },
+            });
+            const barW = interpolate(
+              frame,
+              [18 + i * 22, 58 + i * 22],
+              [0, 100],
+              { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }
+            );
+            return (
+              <div
+                key={i}
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  marginBottom: 26,
+                  opacity: itemIn,
+                }}
+              >
+                <div style={{ width: 150, marginRight: 16, flexShrink: 0 }}>
+                  <p style={{ ...headline(20, WHITE), textAlign: 'left' as const }}>
+                    {group.label}
+                  </p>
+                </div>
+                <div
+                  style={{
+                    flex: 1,
+                    height: 34,
+                    background: '#222222',
+                    borderRadius: 6,
+                    overflow: 'hidden' as const,
+                  }}
+                >
+                  <div
+                    style={{
+                      width: `${barW}%`,
+                      height: '100%',
+                      background: ACCENT,
+                      borderRadius: 6,
+                    }}
+                  />
+                </div>
+                <div style={{ width: 110, marginLeft: 16, flexShrink: 0 }}>
+                  <p style={{ ...headline(22, ACCENT), textAlign: 'right' as const }}>
+                    {group.limit}
+                  </p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
 
-        <p style={{ ...headline(28, WHITE), opacity: bankIn, marginTop: 44 }}>
-          YOUR BANK KNOWS THIS
-        </p>
-        <p style={{ ...headline(28, ACCENT), opacity: bankIn, marginTop: 10 }}>
-          BUT WAITS FOR YOU TO ASK
+        <p style={{ ...headline(18, '#888888'), marginTop: 16 }}>
+          GIG WORKERS AND PART-TIMERS QUALIFY TOO
         </p>
       </AbsoluteFill>
     </FadeScene>
@@ -320,21 +354,19 @@ const Scene3: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
 };
 // --- B ---
 
-// === SCENE 4 — How to Force Removal ===
+// === SCENE 4 — The Dollar Amounts ===
 const Scene4: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
   const titleIn = spring({ frame, fps, from: 0, to: 1, config: { damping: 14, stiffness: 80 } });
-  const docIn = spring({
-    frame: Math.max(0, frame - 18),
-    fps,
-    from: 0,
-    to: 1,
-    config: { damping: 12, stiffness: 70 },
-  });
 
-  const steps = ['GET AN APPRAISAL', 'VERIFY 80% EQUITY', 'SEND ONE LETTER'];
+  const tiers = [
+    { label: 'NO KIDS', amount: '$632', pct: 8 },
+    { label: '1 CHILD', amount: '$3,995', pct: 51 },
+    { label: '2 KIDS', amount: '$6,604', pct: 84 },
+    { label: '3+ KIDS', amount: '$7,830', pct: 100 },
+  ];
 
   return (
     <FadeScene bg={BG_LIGHT} dur={dur}>
@@ -347,37 +379,133 @@ const Scene4: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
           padding: '0 80px',
         }}
       >
-        <p style={{ ...headline(42, BLACK), opacity: titleIn, marginBottom: 8 }}>
-          YOU CAN FORCE REMOVAL
+        <p style={{ ...headline(36, BLACK), opacity: titleIn, marginBottom: 8 }}>
+          HOW MUCH YOU COULD OWE
         </p>
-        <p style={{ ...headline(30, ACCENT), opacity: titleIn, marginBottom: 44 }}>
-          ONE LETTER. THOUSANDS SAVED.
+        <p style={{ ...headline(28, ACCENT), opacity: titleIn, marginBottom: 40 }}>
+          DIRECT DEPOSIT EVERY APRIL
         </p>
 
-        {/* Document SVG */}
-        <svg viewBox="0 0 220 260" width={180} height={212} style={{ opacity: docIn, display: 'block' }}>
-          {/* Paper */}
-          <rect x={0} y={0} width={200} height={260} fill={WHITE} rx={8} stroke="#CCCCCC" strokeWidth={2} />
-          {/* Corner fold */}
-          <polygon points="150,0 200,0 200,50" fill="#EEEEEE" stroke="#CCCCCC" strokeWidth={2} />
-          <polygon points="150,0 200,50 150,50" fill="#CCCCCC" />
-          {/* Text lines */}
-          {Array.from({ length: Math.max(0, Math.floor(6)) }).map((_, i) => (
-            <rect key={i} x={20} y={30 + i * 22} width={110 + (i % 3) * 20} height={7} fill="#DDDDDD" rx={3} />
-          ))}
-          {/* Highlight line = the important letter */}
-          <rect x={20} y={180} width={160} height={16} fill={ACCENT} rx={4} opacity={0.2} />
-          <rect x={20} y={183} width={80} height={6} fill={ACCENT} rx={3} />
-          {/* Pen icon */}
-          <rect x={150} y={220} width={32} height={8} fill={ACCENT} rx={2} style={{ transform: 'rotate(-30deg)', transformOrigin: '166px 224px' }} />
-          <polygon points="150,224 142,236 154,232" fill={ACCENT} />
-        </svg>
+        <div style={{ width: '100%' }}>
+          {tiers.map((tier, i) => {
+            const rowIn = spring({
+              frame: Math.max(0, frame - 14 - i * 22),
+              fps,
+              from: 0,
+              to: 1,
+              config: { damping: 14, stiffness: 80 },
+            });
+            const barW = interpolate(
+              frame,
+              [14 + i * 22, 60 + i * 22],
+              [0, tier.pct],
+              { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }
+            );
+            return (
+              <div
+                key={i}
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  marginBottom: 28,
+                  opacity: rowIn,
+                }}
+              >
+                <div style={{ width: 120, marginRight: 16, flexShrink: 0 }}>
+                  <p style={{ ...headline(19, BLACK), textAlign: 'left' as const }}>
+                    {tier.label}
+                  </p>
+                </div>
+                <div
+                  style={{
+                    flex: 1,
+                    height: 38,
+                    background: '#E0E0E0',
+                    borderRadius: 6,
+                    overflow: 'hidden' as const,
+                  }}
+                >
+                  <div
+                    style={{
+                      width: `${barW}%`,
+                      height: '100%',
+                      background: ACCENT,
+                      borderRadius: 6,
+                    }}
+                  />
+                </div>
+                <div style={{ width: 100, marginLeft: 16, flexShrink: 0 }}>
+                  <p style={{ ...headline(22, ACCENT), textAlign: 'right' as const }}>
+                    {tier.amount}
+                  </p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
 
-        {/* Three steps */}
-        <div style={{ marginTop: 32, width: '100%' }}>
-          {steps.map((step, i) => {
-            const stepIn = spring({
-              frame: Math.max(0, frame - 35 - i * 22),
+        <p style={{ ...headline(20, '#888888'), marginTop: 20 }}>
+          MAX CREDIT — 2024 TAX YEAR
+        </p>
+      </AbsoluteFill>
+    </FadeScene>
+  );
+};
+
+// === SCENE 5 — Why 5M People Miss It ===
+const Scene5: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+
+  const titleIn = spring({ frame, fps, from: 0, to: 1, config: { damping: 14, stiffness: 80 } });
+  const bigIn = spring({
+    frame: Math.max(0, frame - 16),
+    fps,
+    from: 0,
+    to: 1,
+    config: { damping: 10, stiffness: 65 },
+  });
+
+  const RED = '#EF4444';
+
+  const reasons = [
+    'BURIED IN TAX SOFTWARE',
+    'GIG WORKERS THINK EXCLUDED',
+    'IRS NEVER SENDS A REMINDER',
+  ];
+
+  return (
+    <FadeScene bg={BG_DARK} dur={dur}>
+      <AbsoluteFill
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+          padding: '0 80px',
+        }}
+      >
+        <p style={{ ...headline(32, WHITE), opacity: titleIn, marginBottom: 4 }}>
+          WHY DO
+        </p>
+        <p
+          style={{
+            ...headline(100, RED),
+            transform: `scale(${bigIn})`,
+            display: 'block',
+            marginBottom: 4,
+          }}
+        >
+          5M
+        </p>
+        <p style={{ ...headline(30, WHITE), opacity: titleIn, marginBottom: 40 }}>
+          WORKERS MISS IT?
+        </p>
+
+        <div style={{ width: '100%' }}>
+          {reasons.map((reason, i) => {
+            const itemIn = spring({
+              frame: Math.max(0, frame - 52 - i * 20),
               fps,
               from: 0,
               to: 1,
@@ -389,22 +517,22 @@ const Scene4: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
                 style={{
                   display: 'flex',
                   alignItems: 'center',
-                  marginBottom: 22,
-                  opacity: stepIn,
-                  transform: `translateX(${(1 - stepIn) * -40}px)`,
+                  marginBottom: 20,
+                  opacity: itemIn,
+                  transform: `translateX(${(1 - itemIn) * -44}px)`,
                 }}
               >
                 <div
                   style={{
-                    width: 44,
-                    height: 44,
+                    width: 40,
+                    height: 40,
                     borderRadius: '50%',
-                    background: ACCENT,
+                    background: RED,
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
                     fontFamily: FONT,
-                    fontSize: 20,
+                    fontSize: 18,
                     fontWeight: 900,
                     color: WHITE,
                     marginRight: 20,
@@ -413,109 +541,10 @@ const Scene4: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
                 >
                   {i + 1}
                 </div>
-                <p style={{ ...headline(28, BLACK), textAlign: 'left' as const }}>{step}</p>
+                <p style={{ ...headline(22, WHITE), textAlign: 'left' as const }}>{reason}</p>
               </div>
             );
           })}
-        </div>
-      </AbsoluteFill>
-    </FadeScene>
-  );
-};
-
-// === SCENE 5 — Neighbor Comparison ===
-const Scene5: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
-  const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
-
-  const titleIn = spring({ frame, fps, from: 0, to: 1, config: { damping: 14, stiffness: 80 } });
-  const leftIn = spring({
-    frame: Math.max(0, frame - 22),
-    fps,
-    from: 0,
-    to: 1,
-    config: { damping: 14, stiffness: 80 },
-  });
-  const rightIn = spring({
-    frame: Math.max(0, frame - 52),
-    fps,
-    from: 0,
-    to: 1,
-    config: { damping: 14, stiffness: 80 },
-  });
-
-  const GREEN = '#10B981';
-
-  return (
-    <FadeScene bg={BG_DARK} dur={dur}>
-      <AbsoluteFill
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center',
-          padding: '0 60px',
-        }}
-      >
-        <p style={{ ...headline(36, WHITE), opacity: titleIn, marginBottom: 8 }}>
-          SAME HOUSE. SAME YEAR.
-        </p>
-        <p style={{ ...headline(30, ACCENT), opacity: titleIn, marginBottom: 40 }}>
-          VERY DIFFERENT OUTCOME
-        </p>
-
-        <div style={{ display: 'flex', width: '100%', gap: 24 }}>
-          {/* Neighbor A — asked */}
-          <div
-            style={{
-              flex: 1,
-              opacity: leftIn,
-              background: '#1A1A1A',
-              borderRadius: 16,
-              padding: '28px 20px',
-              border: `3px solid ${GREEN}`,
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-            }}
-          >
-            <svg viewBox="0 0 100 90" width={100} height={90}>
-              <polygon points="5,50 50,8 95,50" fill={GREEN} />
-              <rect x="15" y="48" width="70" height="42" fill={GREEN} opacity={0.85} />
-              <rect x="40" y="64" width="20" height="26" fill={BG_DARK} rx={2} />
-            </svg>
-            <p style={{ ...headline(20, GREEN), marginTop: 16 }}>NEIGHBOR</p>
-            <p style={{ ...headline(16, WHITE), marginTop: 10, opacity: 0.85 }}>SENT LETTER</p>
-            <p style={{ ...headline(16, WHITE), opacity: 0.85 }}>AT YEAR 3</p>
-            <p style={{ ...headline(40, GREEN), marginTop: 16 }}>$11K</p>
-            <p style={{ ...headline(18, GREEN) }}>SAVED</p>
-          </div>
-
-          {/* You — stayed quiet */}
-          <div
-            style={{
-              flex: 1,
-              opacity: rightIn,
-              background: '#1A1A1A',
-              borderRadius: 16,
-              padding: '28px 20px',
-              border: `3px solid ${ACCENT}`,
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-            }}
-          >
-            <svg viewBox="0 0 100 90" width={100} height={90}>
-              <polygon points="5,50 50,8 95,50" fill={ACCENT} />
-              <rect x="15" y="48" width="70" height="42" fill={ACCENT} opacity={0.85} />
-              <rect x="40" y="64" width="20" height="26" fill={BG_DARK} rx={2} />
-            </svg>
-            <p style={{ ...headline(20, ACCENT), marginTop: 16 }}>YOU</p>
-            <p style={{ ...headline(16, WHITE), marginTop: 10, opacity: 0.85 }}>STAYED</p>
-            <p style={{ ...headline(16, WHITE), opacity: 0.85 }}>QUIET</p>
-            <p style={{ ...headline(40, ACCENT), marginTop: 16 }}>$11K</p>
-            <p style={{ ...headline(18, ACCENT) }}>PAID EXTRA</p>
-          </div>
         </div>
       </AbsoluteFill>
     </FadeScene>
@@ -530,7 +559,7 @@ const Scene6: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
 
   const titleIn = spring({ frame, fps, from: 0, to: 1, config: { damping: 14, stiffness: 80 } });
   const phoneIn = spring({
-    frame: Math.max(0, frame - 20),
+    frame: Math.max(0, frame - 18),
     fps,
     from: 0,
     to: 1,
@@ -544,10 +573,10 @@ const Scene6: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
     config: { damping: 14, stiffness: 80 },
   });
 
-  const actions = [
-    'FIND YOUR LOAN BALANCE',
-    'CALCULATE YOUR LTV',
-    'IF NEAR 80% — WRITE THE LETTER',
+  const steps = [
+    'SEARCH "EITC ASSISTANT" AT IRS.GOV',
+    'FILL IN YOUR INFO — 2 MINUTES',
+    'FILE AMENDED RETURNS UP TO 3 YRS BACK',
   ];
 
   return (
@@ -561,49 +590,74 @@ const Scene6: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
           padding: '0 80px',
         }}
       >
-        <p style={{ ...headline(42, BLACK), opacity: titleIn, marginBottom: 8 }}>
-          DO THIS TODAY
+        <p style={{ ...headline(40, BLACK), opacity: titleIn, marginBottom: 8 }}>
+          CHECK RIGHT NOW
         </p>
-        <p style={{ ...headline(32, ACCENT), opacity: titleIn, marginBottom: 44 }}>
-          5 MINUTES. FREE.
+        <p style={{ ...headline(28, ACCENT), opacity: titleIn, marginBottom: 32 }}>
+          FREE. TAKES 2 MINUTES.
         </p>
 
         {/* Phone SVG */}
-        <svg viewBox="0 0 200 320" width={150} height={240} style={{ opacity: phoneIn, display: 'block' }}>
+        <svg
+          viewBox="0 0 200 320"
+          width={140}
+          height={224}
+          style={{ opacity: phoneIn, display: 'block' }}
+        >
           {/* Phone body */}
           <rect x={10} y={0} width={180} height={320} rx={22} fill={BLACK} />
           {/* Screen */}
-          <rect x={20} y={18} width={160} height={248} rx={10} fill="#1A1A1A" />
+          <rect x={20} y={18} width={160} height={248} rx={10} fill="#1A3A2A" />
           {/* Notch */}
-          <rect x={70} y={12} width={60} height={14} rx={7} fill="#333333" />
-          {/* Dollar sign on screen */}
+          <rect x={72} y={12} width={56} height={13} rx={6} fill="#333333" />
+          {/* EITC label */}
           <text
             x={100}
-            y={126}
+            y={92}
             textAnchor="middle"
             fill={ACCENT}
-            style={{ fontSize: 76, fontFamily: FONT, fontWeight: 900 }}
+            style={{ fontSize: 22, fontFamily: FONT, fontWeight: 900 }}
+          >
+            EITC
+          </text>
+          <text
+            x={100}
+            y={122}
+            textAnchor="middle"
+            fill={WHITE}
+            style={{ fontSize: 14, fontFamily: FONT }}
+          >
+            ASSISTANT
+          </text>
+          {/* Dollar */}
+          <text
+            x={100}
+            y={192}
+            textAnchor="middle"
+            fill={ACCENT}
+            style={{ fontSize: 52, fontFamily: FONT, fontWeight: 900 }}
           >
             $
           </text>
-          <text
-            x={100}
-            y={188}
-            textAnchor="middle"
-            fill={WHITE}
-            style={{ fontSize: 20, fontFamily: FONT, fontWeight: 900 }}
-          >
-            CHECK LTV
-          </text>
+          {/* Check circle */}
+          <circle cx={100} cy={228} r={16} fill={ACCENT} />
+          <polyline
+            points="91,228 97,235 111,220"
+            fill="none"
+            stroke={WHITE}
+            strokeWidth={3}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
           {/* Home bar */}
           <rect x={75} y={290} width={50} height={6} rx={3} fill="#444444" />
         </svg>
 
-        {/* Action bullets */}
-        <div style={{ marginTop: 36, width: '100%' }}>
-          {actions.map((action, i) => {
+        {/* Action steps */}
+        <div style={{ marginTop: 26, width: '100%' }}>
+          {steps.map((step, i) => {
             const itemIn = spring({
-              frame: Math.max(0, frame - 58 - i * 18),
+              frame: Math.max(0, frame - 48 - i * 18),
               fps,
               from: 0,
               to: 1,
@@ -615,28 +669,37 @@ const Scene6: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
                 style={{
                   display: 'flex',
                   alignItems: 'center',
-                  marginBottom: 22,
+                  marginBottom: 18,
                   opacity: itemIn,
                 }}
               >
                 <div
                   style={{
-                    width: 14,
-                    height: 14,
+                    width: 36,
+                    height: 36,
                     borderRadius: '50%',
                     background: ACCENT,
-                    marginRight: 20,
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontFamily: FONT,
+                    fontSize: 16,
+                    fontWeight: 900,
+                    color: WHITE,
+                    marginRight: 16,
                     flexShrink: 0,
                   }}
-                />
-                <p style={{ ...headline(22, BLACK), textAlign: 'left' as const }}>{action}</p>
+                >
+                  {i + 1}
+                </div>
+                <p style={{ ...headline(18, BLACK), textAlign: 'left' as const }}>{step}</p>
               </div>
             );
           })}
         </div>
 
-        <p style={{ ...headline(28, ACCENT), opacity: ctaIn, marginTop: 20 }}>
-          FOLLOW FOR MORE MONEY SECRETS
+        <p style={{ ...headline(26, ACCENT), opacity: ctaIn, marginTop: 18 }}>
+          FOLLOW FOR MORE HIDDEN MONEY
         </p>
       </AbsoluteFill>
     </FadeScene>

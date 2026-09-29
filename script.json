@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Most mortgages hide a fee called PMI. It doesn't protect you — it covers your bank. And it costs the average homeowner fourteen hundred dollars every year.",
-    "visual": "Dark background. House silhouette (triangle roof, rectangle body, door, windows) springs in center. PMI badge (red circle) floats in over the rooftop. '$1,400/YR — PROTECTS YOUR BANK NOT YOU' text appears below.",
-    "accent_color": "red"
+    "narration": "There's a credit on your tax return worth up to $7,830. About five million Americans who qualify never collect it. The IRS never sends you a reminder.",
+    "visual": "Dark background. Green IRS envelope with dollar sign springs in from above. '$7,830 — UNCLAIMED' text appears below. Bold white title: 'THE IRS CREDIT NOBODY CLAIMS'.",
+    "accent_color": "green"
   },
   {
     "scene": 2,
-    "narration": "PMI kicks in when your down payment is under twenty percent. Average homeowners pay it for over seven years. That's over eight thousand dollars gone forever.",
-    "visual": "Light background. Seven horizontal red bars appear one by one (one per year), each labeled 'Yr 1–7 — $1,200'. Running total counter at bottom counts up to $8,400.",
-    "accent_color": "red"
+    "narration": "It's called the Earned Income Credit. Unlike a deduction, it's refundable — meaning you get a direct deposit even if you owe zero in taxes. The IRS literally sends you money.",
+    "visual": "Light background. IRS building icon on left, green arrow grows across to person silhouette on right with dollar signs floating above. 'DIRECT DEPOSIT — EVEN WITH ZERO TAX OWED' text.",
+    "accent_color": "green"
   },
   {
     "scene": 3,
-    "narration": "Here's what they don't tell you — at eighty percent equity, your bank is required to remove PMI. But they wait for you to ask, not act.",
-    "visual": "Dark background. LTV gauge bar animates from 95% down toward the 80% threshold. Dotted white line marks the 80% cutoff. 'PMI MUST BE REMOVED' above the line. 'YOUR BANK WAITS FOR YOU TO ASK' text below.",
-    "accent_color": "red"
+    "narration": "Here's who qualifies. Single with no kids — under $18,600 a year. One child — under $49,000. Two kids — under $55,800. Gig workers and part-timers count too.",
+    "visual": "Dark background. Four rows for NO KIDS, 1 CHILD, 2 CHILDREN, 3+ CHILDREN with income limit labels. Green bars animate in one by one.",
+    "accent_color": "green"
   },
   {
     "scene": 4,
-    "narration": "You can force the removal. Get an appraisal showing your home's value, verify you're at eighty percent, then send one letter. One letter, thousands saved.",
-    "visual": "Light background. Document SVG (paper with corner fold and text lines). Three steps appear sequentially with slide-in: 1) Get an Appraisal, 2) Verify 80% Equity, 3) Send One Letter. Bold headline above.",
-    "accent_color": "red"
+    "narration": "The amounts are serious money. No kids: $632. One child: $3,995. Two kids: $6,604. Three or more kids: $7,830 deposited directly into your account.",
+    "visual": "Light background. Four horizontal bars grow proportionally: NO KIDS $632, 1 CHILD $3,995, 2 KIDS $6,604, 3+ KIDS $7,830. Amounts appear beside each bar.",
+    "accent_color": "green"
   },
   {
     "scene": 5,
-    "narration": "Two neighbors bought the same house same year. One sent a letter at year three and dropped PMI. The other stayed quiet and paid eleven thousand extra.",
-    "visual": "Dark background. Two small house icons side by side. Left: green border, 'NEIGHBOR — SENT LETTER YR 3 — $11K SAVED.' Right: red border, 'YOU — STAYED QUIET — $11K PAID EXTRA.'",
-    "accent_color": "red"
+    "narration": "Why do five million eligible workers miss it? It's buried in tax software. Gig workers falsely think they can't qualify. And the IRS has no obligation to tell you what you're leaving behind.",
+    "visual": "Dark background. '5M' in red pops in large. Three numbered reasons slide in: 1) Buried in tax software, 2) Gig workers think excluded, 3) IRS never sends a reminder.",
+    "accent_color": "green"
   },
   {
     "scene": 6,
-    "narration": "Pull up your mortgage statement right now. If your balance is near eighty percent loan-to-value, PMI should be gone. That letter takes five minutes — write it today.",
-    "visual": "Light background. Smartphone SVG with dollar sign on screen. Three action bullets appear: Find Your Loan Balance, Calculate Your LTV, If Near 80% Write the Letter. Bold red 'FOLLOW FOR MORE MONEY SECRETS' CTA.",
-    "accent_color": "red"
+    "narration": "Search 'EITC Assistant' at IRS dot gov — it's free and takes two minutes. Missed it last year? Amended returns let you collect up to three years back. Follow for more hidden money.",
+    "visual": "Light background. Smartphone SVG with 'EITC ASSISTANT' on screen and a green check circle. Three action steps appear. Bold green 'FOLLOW FOR MORE MONEY SECRETS' CTA.",
+    "accent_color": "green"
   }
 ]

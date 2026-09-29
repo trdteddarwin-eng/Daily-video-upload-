@@ -1,13 +1,13 @@
 {
-  "title": "PMI: The $1,400/Year Fee Protecting Your Bank, Not You",
-  "hook": "There's a hidden fee inside most mortgage payments that protects your bank — not you — and it's costing the average homeowner fourteen hundred dollars every single year.",
-  "angle": "PMI is sold as 'mortgage insurance' but it insures the lender, not the borrower — and lenders are legally required to remove it at 80% LTV but never proactively notify you",
-  "audience": "First-time homebuyers and existing homeowners who put down less than 20% and have never checked whether PMI can be removed",
+  "title": "The IRS Credit Worth $7,830 That 5M Workers Skip",
+  "hook": "The IRS has a credit worth up to $7,830 that millions of qualifying workers never claim — because nobody tells you it exists.",
+  "angle": "The EITC is refundable — you get a check even if you owe zero in taxes — but 5 million eligible workers skip it every year because it's buried and the IRS never reminds you",
+  "audience": "Low-to-moderate income workers, gig workers, part-timers, recently divorced people, and anyone who has never heard of the Earned Income Tax Credit",
   "key_numbers": [
-    "Average PMI cost: $1,200–$1,800 per year ($100–$150/month)",
-    "Average PMI duration before removal: 7+ years",
-    "Total PMI paid on average: $8,400–$12,600",
-    "Removal threshold: 80% loan-to-value ratio",
-    "Lenders required to cancel at 78% LTV automatically — but you can request it at 80%"
+    "Maximum EITC for 3+ kids: $7,830",
+    "Average EITC claimed: $2,541",
+    "Eligible workers who skip it: ~5 million per year (about 20%)",
+    "Income limit: up to $59,899 for families with 3+ children",
+    "Unclaimed EITC nationally: billions left on the table annually"
   ]
 }
