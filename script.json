@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "There's a credit on your tax return worth up to $7,830. About five million Americans who qualify never collect it. The IRS never sends you a reminder.",
-    "visual": "Dark background. Green IRS envelope with dollar sign springs in from above. '$7,830 — UNCLAIMED' text appears below. Bold white title: 'THE IRS CREDIT NOBODY CLAIMS'.",
-    "accent_color": "green"
+    "narration": "Your parent left you their IRA as a gift. But a 2020 law quietly turned that inheritance into a tax bomb most families never see coming.",
+    "visual": "Piggy bank with a gift bow on top — springs in from center. A red crack slowly spreads across the piggy bank body. Title 'IRA INHERITANCE' fades up, subtitle 'TAX BOMB HIDDEN INSIDE' in red below.",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "It's called the Earned Income Credit. Unlike a deduction, it's refundable — meaning you get a direct deposit even if you owe zero in taxes. The IRS literally sends you money.",
-    "visual": "Light background. IRS building icon on left, green arrow grows across to person silhouette on right with dollar signs floating above. 'DIRECT DEPOSIT — EVEN WITH ZERO TAX OWED' text.",
-    "accent_color": "green"
+    "narration": "Before 2020, heirs used the stretch IRA — spread withdrawals over a lifetime, pay a little tax each year. It was one of the greatest inheritance hacks in tax law.",
+    "visual": "Light background. A horizontal timeline stretching across the screen with small calendar icons at each decade. Person silhouette with tiny equal withdrawal bars distributed evenly. 'STRETCH IRA' label in green. 'LIFETIME WITHDRAWALS' subtitle.",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Here's who qualifies. Single with no kids — under $18,600 a year. One child — under $49,000. Two kids — under $55,800. Gig workers and part-timers count too.",
-    "visual": "Dark background. Four rows for NO KIDS, 1 CHILD, 2 CHILDREN, 3+ CHILDREN with income limit labels. Green bars animate in one by one.",
-    "accent_color": "green"
+    "narration": "Then the SECURE Act hit in 2020. Now every non-spouse heir must drain the entire account within ten years — no exceptions. That rule is costing heirs billions.",
+    "visual": "Dark background. Large calendar shape center stage. Giant '10' springs in inside the calendar. Red timer/countdown bars tick across the bottom. 'SECURE ACT 2020' label. Red X marks over a lifetime icon.",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "The amounts are serious money. No kids: $632. One child: $3,995. Two kids: $6,604. Three or more kids: $7,830 deposited directly into your account.",
-    "visual": "Light background. Four horizontal bars grow proportionally: NO KIDS $632, 1 CHILD $3,995, 2 KIDS $6,604, 3+ KIDS $7,830. Amounts appear beside each bar.",
-    "accent_color": "green"
+    "narration": "Here's why that's brutal — if you inherit a $107,000 IRA and dump it in one year, it stacks on top of your income and pushes you into a higher bracket — costing $85,000 more.",
+    "visual": "Light background. Stacked tax bracket bars labeled 10%, 22%, 32%, 37% from bottom to top in shades from green to red. An arrow bounces up the brackets. '$85,000 EXTRA' counter animates up in red at the top.",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Why do five million eligible workers miss it? It's buried in tax software. Gig workers falsely think they can't qualify. And the IRS has no obligation to tell you what you're leaving behind.",
-    "visual": "Dark background. '5M' in red pops in large. Three numbered reasons slide in: 1) Buried in tax software, 2) Gig workers think excluded, 3) IRS never sends a reminder.",
-    "accent_color": "green"
+    "narration": "Most heirs wait and dump everything in year ten — the worst possible move. One giant taxable spike versus ten equal withdrawals is the difference between keeping thousands or handing them to the IRS.",
+    "visual": "Dark background. Two side-by-side bar charts: left 'WRONG WAY' has nine tiny bars then one massive red spike in year 10. Right 'SMART WAY' has ten equal green bars. Each animates in dramatically.",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Search 'EITC Assistant' at IRS dot gov — it's free and takes two minutes. Missed it last year? Amended returns let you collect up to three years back. Follow for more hidden money.",
-    "visual": "Light background. Smartphone SVG with 'EITC ASSISTANT' on screen and a green check circle. Three action steps appear. Bold green 'FOLLOW FOR MORE MONEY SECRETS' CTA.",
-    "accent_color": "green"
+    "narration": "Spread your inherited IRA withdrawals evenly across all ten years. And if you inherit a Roth IRA, it's completely tax-free — that's the golden ticket. Follow for more tax traps like this.",
+    "visual": "Light background. Ten evenly spaced green bars animate in one by one. A golden Roth IRA shield icon appears with 'TAX FREE' label. CTA text 'SPREAD IT. SAVE $85K.' at the bottom in red.",
+    "accent_color": "red"
   }
 ]
