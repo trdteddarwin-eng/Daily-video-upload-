@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Your parent left you their IRA as a gift. But a 2020 law quietly turned that inheritance into a tax bomb most families never see coming.",
-    "visual": "Piggy bank with a gift bow on top — springs in from center. A red crack slowly spreads across the piggy bank body. Title 'IRA INHERITANCE' fades up, subtitle 'TAX BOMB HIDDEN INSIDE' in red below.",
+    "narration": "Today is October 1st — and retailers just activated a 92-day plan to drain $3,400 from your account. Here's exactly how it works.",
+    "visual": "Dark background. Large October calendar page springs in center. Beneath it, three holiday icons animate in one by one: a glowing jack-o-lantern, a turkey, a Christmas tree. '92 DAYS' blazes in large red text at the bottom.",
     "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Before 2020, heirs used the stretch IRA — spread withdrawals over a lifetime, pay a little tax each year. It was one of the greatest inheritance hacks in tax law.",
-    "visual": "Light background. A horizontal timeline stretching across the screen with small calendar icons at each decade. Person silhouette with tiny equal withdrawal bars distributed evenly. 'STRETCH IRA' label in green. 'LIFETIME WITHDRAWALS' subtitle.",
+    "narration": "The average American overspends $3,400 above their normal monthly budget during the holiday season. And only 32% ever set a single dollar limit before it starts.",
+    "visual": "Light background. A cracked piggy bank center stage with coins springing out in all directions. A dollar counter animates from $0 up to $3,400. Below: stat line '68% WING IT AND OVERSPEND' in bold.",
     "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Then the SECURE Act hit in 2020. Now every non-spouse heir must drain the entire account within ten years — no exceptions. That rule is costing heirs billions.",
-    "visual": "Dark background. Large calendar shape center stage. Giant '10' springs in inside the calendar. Red timer/countdown bars tick across the bottom. 'SECURE ACT 2020' label. Red X marks over a lifetime icon.",
+    "narration": "It starts Halloween. Americans now spend $108 per person on candy, costumes, and decorations — that's up 70% in just ten years. The season is designed to escalate.",
+    "visual": "Dark background. Large glowing jack-o-lantern SVG springs in. A price tag swings in showing '$108 PER PERSON'. A green upward arrow labeled '+70% SINCE 2014' slides in from the left.",
     "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Here's why that's brutal — if you inherit a $107,000 IRA and dump it in one year, it stacks on top of your income and pushes you into a higher bracket — costing $85,000 more.",
-    "visual": "Light background. Stacked tax bracket bars labeled 10%, 22%, 32%, 37% from bottom to top in shades from green to red. An arrow bounces up the brackets. '$85,000 EXTRA' counter animates up in red at the top.",
+    "narration": "Then Thanksgiving hits — travel, food, and hosting adds $621 on average. Here's the real trap: after six weeks of spending, your brain stops registering the pain.",
+    "visual": "Light background. A turkey silhouette with fan tail takes center. '$621 AVERAGE' springs in below. A horizontal bar labeled 'BRAIN SPENDING SENSITIVITY' drains from full to nearly empty as the scene plays.",
     "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Most heirs wait and dump everything in year ten — the worst possible move. One giant taxable spike versus ten equal withdrawals is the difference between keeping thousands or handing them to the IRS.",
-    "visual": "Dark background. Two side-by-side bar charts: left 'WRONG WAY' has nine tiny bars then one massive red spike in year 10. Right 'SMART WAY' has ten equal green bars. Each animates in dramatically.",
+    "narration": "December is where the system finishes you. Gifts alone average $1,048. Most people swipe through December on autopilot — and wake up in January with nothing.",
+    "visual": "Dark background. A Christmas tree with gift boxes beneath it. A credit card slides across the scene in a swiping motion. '$1,048 IN GIFTS' pulses in red. A small calendar flips to 'JAN' with a warning icon.",
     "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Spread your inherited IRA withdrawals evenly across all ten years. And if you inherit a Roth IRA, it's completely tax-free — that's the golden ticket. Follow for more tax traps like this.",
-    "visual": "Light background. Ten evenly spaced green bars animate in one by one. A golden Roth IRA shield icon appears with 'TAX FREE' label. CTA text 'SPREAD IT. SAVE $85K.' at the bottom in red.",
+    "narration": "Here's the fix. The 32% who write a holiday budget before October ends spend 47% less — without feeling deprived. One number, written down, right now.",
+    "visual": "Light background. Two animated bar charts side by side: tall red bar '$3,400 No Budget' vs. shorter green bar '$1,802 With Budget'. A green checkmark springs in. CTA: 'START TODAY' blazes at the bottom.",
     "accent_color": "red"
   }
 ]
