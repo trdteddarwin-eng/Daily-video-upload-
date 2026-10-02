@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Today is October 1st — and retailers just activated a 92-day plan to drain $3,400 from your account. Here's exactly how it works.",
-    "visual": "Dark background. Large October calendar page springs in center. Beneath it, three holiday icons animate in one by one: a glowing jack-o-lantern, a turkey, a Christmas tree. '92 DAYS' blazes in large red text at the bottom.",
-    "accent_color": "red"
+    "narration": "Your fund returned ten percent last year. You personally earned four. That gap isn't bad luck — it's a documented pattern costing you hundreds of thousands.",
+    "visual": "Two side-by-side bar charts on dark background: tall green bar labeled FUND 10% vs short amber bar labeled YOU 4%. Person silhouette between them looking shocked. Title text 'YOUR FUND vs YOU' in white at top.",
+    "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "The average American overspends $3,400 above their normal monthly budget during the holiday season. And only 32% ever set a single dollar limit before it starts.",
-    "visual": "Light background. A cracked piggy bank center stage with coins springing out in all directions. A dollar counter animates from $0 up to $3,400. Below: stat line '68% WING IT AND OVERSPEND' in bold.",
-    "accent_color": "red"
+    "narration": "DALBAR has tracked this for thirty years. They call it the behavior gap — the difference between what your fund earns and what you actually pocket. It averages 3.1 percent every single year.",
+    "visual": "Two diverging line charts on light background over a 30-year timeline. Steep green line labeled FUND, shallow amber line labeled YOU. Gap between them shaded in red. '3.1% GAP' label with arrow pointing to the space between lines.",
+    "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "It starts Halloween. Americans now spend $108 per person on candy, costumes, and decorations — that's up 70% in just ten years. The season is designed to escalate.",
-    "visual": "Dark background. Large glowing jack-o-lantern SVG springs in. A price tag swings in showing '$108 PER PERSON'. A green upward arrow labeled '+70% SINCE 2014' slides in from the left.",
-    "accent_color": "red"
+    "narration": "Number one cause: panic selling. Markets drop twenty percent and you pull out. Then they bounce back — but you locked in the loss and missed the entire recovery.",
+    "visual": "Dark background. Line chart plunging downward with a red SELL arrow at the bottom. Person silhouette running away from the chart. Line recovers sharply upward — but the person is gone. 'MISSED THE BOUNCE' text overlay.",
+    "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "Then Thanksgiving hits — travel, food, and hosting adds $621 on average. Here's the real trap: after six weeks of spending, your brain stops registering the pain.",
-    "visual": "Light background. A turkey silhouette with fan tail takes center. '$621 AVERAGE' springs in below. A horizontal bar labeled 'BRAIN SPENDING SENSITIVITY' drains from full to nearly empty as the scene plays.",
-    "accent_color": "red"
+    "narration": "Number two: chasing winners. You see a fund up forty percent and jump in right at the peak. You buy high, it corrects, and you're underwater before you even started.",
+    "visual": "Light background. Line chart with a rocket rising steeply, labeled +40%. Person silhouette leaping onto the line at the peak with BUY arrow. Line drops sharply after. 'BOUGHT THE TOP' text in red at bottom.",
+    "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "December is where the system finishes you. Gifts alone average $1,048. Most people swipe through December on autopilot — and wake up in January with nothing.",
-    "visual": "Dark background. A Christmas tree with gift boxes beneath it. A credit card slides across the scene in a swiping motion. '$1,048 IN GIFTS' pulses in red. A small calendar flips to 'JAN' with a warning icon.",
-    "accent_color": "red"
+    "narration": "Three percent a year sounds tiny — but compound that gap over thirty years on a two hundred thousand dollar portfolio, and you've quietly handed away three hundred and forty thousand dollars.",
+    "visual": "Dark background. Two large piggy banks side by side. Left bank labeled FUND fills up to $540K in green. Right bank labeled YOU fills to $200K in amber. '$340K GONE' appears in bold red between them.",
+    "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "Here's the fix. The 32% who write a holiday budget before October ends spend 47% less — without feeling deprived. One number, written down, right now.",
-    "visual": "Light background. Two animated bar charts side by side: tall red bar '$3,400 No Budget' vs. shorter green bar '$1,802 With Budget'. A green checkmark springs in. CTA: 'START TODAY' blazes at the bottom.",
-    "accent_color": "red"
+    "narration": "The fix is almost embarrassingly simple. Automate your contributions, diversify, and don't touch it. Investors who stay put beat active movers ninety-four percent of the time. Set it and forget it.",
+    "visual": "Light background. Person silhouette sitting calmly in a chair. Green money tree growing tall behind them. '94% WIN RATE' in large amber text. Bottom CTA: 'FOLLOW FOR MORE MONEY MOVES'.",
+    "accent_color": "amber"
   }
 ]
