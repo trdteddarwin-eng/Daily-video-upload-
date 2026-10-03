@@ -1,7 +1,11 @@
 {
-  "title": "Why You Earn 3% Less Than Your Own Fund — $340K Gone",
-  "hook": "Your fund returned 10% last year. You personally made 4%. That gap has a name, a cause, and a six-figure price tag.",
-  "angle": "The DALBAR behavior gap — 30 years of data proving investors systematically underperform their own funds by panic-selling and FOMO-buying, costing hundreds of thousands in compounded losses",
-  "audience": "Anyone with a 401k, IRA, or brokerage account who has ever moved money in reaction to market news",
-  "key_numbers": ["3.1% average annual behavior gap (DALBAR)", "$340,000 lost over 30 years on $200K portfolio", "94% of buy-and-hold investors beat active traders"]
+  "title": "The Monthly Payment Trap Costs You $8,700",
+  "hook": "The second a car dealer asks 'what monthly payment works for you?' — the trap is already set, and it costs you $8,700.",
+  "angle": "Car dealers deliberately frame every negotiation around monthly payment to hide the total cost, stretching loans to 84 months while buyers celebrate 'affordable' payments they can't escape",
+  "audience": "Anyone who has bought or is about to buy a car — and anyone who has ever said 'I just need it under $400 a month'",
+  "key_numbers": [
+    "$8,700 extra paid on average by monthly-payment-focused buyers",
+    "84-month loans cost $3,200 more in interest than 60-month loans",
+    "1 in 3 new car buyers is underwater (owes more than the car is worth) by month 18"
+  ]
 }

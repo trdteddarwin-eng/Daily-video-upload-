@@ -3,11 +3,10 @@ import { AbsoluteFill, Series, useCurrentFrame, useVideoConfig, interpolate, spr
 
 const BG_DARK = '#121212';
 const BG_LIGHT = '#F5F5F5';
-const ACCENT = '#F59E0B';
-const GREEN = '#10B981';
-const RED = '#EF4444';
+const ACCENT = '#EF4444';
 const WHITE = '#F5F5F5';
 const BLACK = '#121212';
+const BLUE = '#1E3A5C';
 const FONT = '"Arial Black", "Helvetica Neue", Arial, sans-serif';
 
 const headline = (size: number, color: string): React.CSSProperties => ({
@@ -43,45 +42,75 @@ const Person: React.FC<{ x: number; y: number; scale?: number; color?: string }>
   </g>
 );
 
+// ─── Scene 2 & 3 appended below Scene1 ───
+
 const Scene1: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
 
-  const titleY = interpolate(frame, [0, 20], [80, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const titleOpacity = interpolate(frame, [0, 20], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const fundH = interpolate(frame, [20, 60], [0, 480], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic) });
-  const youH = interpolate(frame, [40, 80], [0, 192], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic) });
-  const labelOpacity = interpolate(frame, [80, 100], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const shockOpacity = interpolate(frame, [100, 120], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const barBaseY = 1400;
+  const titleOp = interpolate(frame, [0, 20], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const carX = interpolate(frame, [0, 38], [-700, 0], {
+    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
+    easing: Easing.out(Easing.cubic),
+  });
+  const bubbleOp = interpolate(frame, [50, 72], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const tagS = spring({ frame: frame - 90, fps: 30, config: { mass: 0.5, damping: 10 } });
+  const tagScale = Math.min(tagS, 1.15);
 
   return (
     <FadeScene bg={BG_DARK} dur={dur}>
       <svg width={1080} height={1920} viewBox="0 0 1080 1920">
-        <g transform={`translate(0, ${titleY})`} opacity={titleOpacity}>
-          <text x={540} y={180} style={headline(52, WHITE)} textAnchor="middle">YOUR FUND</text>
-          <text x={540} y={248} style={headline(52, ACCENT)} textAnchor="middle">VS YOU</text>
+        {/* Title */}
+        <g opacity={titleOp}>
+          <text x={540} y={155} style={headline(68, ACCENT)} textAnchor="middle">THE MONTHLY</text>
+          <text x={540} y={240} style={headline(68, WHITE)} textAnchor="middle">PAYMENT TRAP</text>
         </g>
-        <rect x={180} y={barBaseY - fundH} width={240} height={fundH} rx={16} fill={GREEN} />
-        <rect x={660} y={barBaseY - youH} width={240} height={youH} rx={16} fill={ACCENT} />
-        <g opacity={labelOpacity}>
-          <text x={300} y={barBaseY - fundH - 24} style={headline(52, GREEN)} textAnchor="middle">10%</text>
-          <text x={780} y={barBaseY - youH - 24} style={headline(52, ACCENT)} textAnchor="middle">4%</text>
-          <text x={300} y={barBaseY + 60} style={headline(36, WHITE)} textAnchor="middle">FUND</text>
-          <text x={780} y={barBaseY + 60} style={headline(36, WHITE)} textAnchor="middle">YOU</text>
+
+        {/* Car sliding in from left */}
+        <g transform={`translate(${carX}, 0)`}>
+          <rect x={100} y={430} width={740} height={175} rx={30} fill={BLUE} />
+          <rect x={210} y={300} width={470} height={155} rx={20} fill={BLUE} />
+          <rect x={228} y={316} width={172} height={110} rx={10} fill="#87CEEB" opacity={0.72} />
+          <rect x={428} y={316} width={172} height={110} rx={10} fill="#87CEEB" opacity={0.72} />
+          <circle cx={270} cy={610} r={72} fill="#1A1A1A" />
+          <circle cx={270} cy={610} r={48} fill="#2A2A2A" />
+          <circle cx={270} cy={610} r={18} fill="#999" />
+          <circle cx={720} cy={610} r={72} fill="#1A1A1A" />
+          <circle cx={720} cy={610} r={48} fill="#2A2A2A" />
+          <circle cx={720} cy={610} r={18} fill="#999" />
+          <rect x={100} y={480} width={54} height={26} rx={6} fill="#FFE566" opacity={0.9} />
         </g>
-        <g opacity={shockOpacity}>
-          <Person x={540} y={1060} scale={1.4} color={WHITE} />
-          {[0, 45, 90, 135, 180, 225, 270, 315].map((angle, i) => {
-            const rad = (angle * Math.PI) / 180;
-            return (
-              <line key={i}
-                x1={540 + 80 * Math.cos(rad)} y1={1000 + 80 * Math.sin(rad)}
-                x2={540 + 110 * Math.cos(rad)} y2={1000 + 110 * Math.sin(rad)}
-                stroke={ACCENT} strokeWidth={5} strokeLinecap="round" />
-            );
-          })}
+
+        {/* Salesperson + buyer */}
+        <g opacity={bubbleOp}>
+          <Person x={820} y={740} scale={1.3} color="#AAAAAA" />
+          <Person x={958} y={750} scale={1.15} color="#777777" />
         </g>
-        <line x1={120} y1={barBaseY} x2={960} y2={barBaseY} stroke={WHITE} strokeWidth={3} opacity={0.3} />
+
+        {/* Speech bubble */}
+        <g opacity={bubbleOp}>
+          <rect x={80} y={855} width={920} height={240} rx={26} fill={WHITE} />
+          <text x={540} y={960} style={headline(48, BLACK)} textAnchor="middle">"What monthly payment</text>
+          <text x={540} y={1055} style={headline(48, BLACK)} textAnchor="middle">works for you?"</text>
+        </g>
+
+        {/* Cost badge springs in */}
+        <g transform={`translate(540, 1215) scale(${tagScale})`}>
+          <rect x={-450} y={-72} width={900} height={144} rx={22} fill={ACCENT} />
+          <text x={0} y={-8} style={headline(44, WHITE)} textAnchor="middle">THIS QUESTION COSTS</text>
+          <text x={0} y={58} style={headline(58, WHITE)} textAnchor="middle">YOU $8,700</text>
+        </g>
+
+        {/* Price pills: total vs monthly */}
+        <g opacity={bubbleOp}>
+          <rect x={55} y={1415} width={435} height={155} rx={18} fill="#1E1E1E" />
+          <text x={272} y={1466} style={headline(28, "#666")} textAnchor="middle">TOTAL PRICE</text>
+          <text x={272} y={1548} style={headline(62, "#555")} textAnchor="middle">$32,500</text>
+          <line x1={75} y1={1540} x2={460} y2={1540} stroke="#666" strokeWidth={7} />
+          <text x={540} y={1506} style={headline(42, WHITE)} textAnchor="middle">VS</text>
+          <rect x={590} y={1415} width={435} height={155} rx={18} fill={ACCENT} />
+          <text x={807} y={1466} style={headline(28, WHITE)} textAnchor="middle">MONTHLY</text>
+          <text x={807} y={1548} style={headline(62, WHITE)} textAnchor="middle">$399</text>
+        </g>
       </svg>
     </FadeScene>
   );
@@ -90,48 +119,66 @@ const Scene1: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
 const Scene2: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
 
-  const titleOpacity = interpolate(frame, [0, 18], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const drawProgress = interpolate(frame, [15, 110], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.quad) });
-  const labelOpacity = interpolate(frame, [110, 135], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const gapOpacity = interpolate(frame, [130, 155], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-
-  const chartX = 100; const chartY = 500; const chartW = 880; const chartH = 900;
-  const steps = Math.max(0, Math.floor(drawProgress * 30));
-  const fundPts: string[] = [];
-  const youPts: string[] = [];
-  for (let i = 0; i <= steps; i++) {
-    const px = chartX + (i / 30) * chartW;
-    const fundFrac = 1 - Math.pow(1.1, i) / Math.pow(1.1, 30);
-    const youFrac = 1 - Math.pow(1.068, i) / Math.pow(1.068, 30);
-    fundPts.push(`${px},${chartY + chartH * fundFrac + 50}`);
-    youPts.push(`${px},${chartY + chartH * youFrac + 50}`);
-  }
+  const titleOp = interpolate(frame, [0, 20], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const brainOp = interpolate(frame, [18, 45], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const totalOp = interpolate(frame, [45, 70], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const mS = spring({ frame: frame - 75, fps: 30, config: { mass: 0.5, damping: 9 } });
+  const monthlyScale = Math.min(mS, 1.12);
+  const arrowOp = interpolate(frame, [80, 105], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const bottomOp = interpolate(frame, [148, 172], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
 
   return (
     <FadeScene bg={BG_LIGHT} dur={dur}>
       <svg width={1080} height={1920} viewBox="0 0 1080 1920">
-        <g opacity={titleOpacity}>
-          <text x={540} y={160} style={headline(48, BLACK)} textAnchor="middle">THE BEHAVIOR</text>
-          <text x={540} y={220} style={headline(48, RED)} textAnchor="middle">GAP</text>
-          <text x={540} y={310} style={{ fontFamily: FONT, fontSize: 34, color: BLACK, letterSpacing: '0.05em' } as React.CSSProperties} textAnchor="middle">30 YEARS OF PROOF</text>
+        <g opacity={titleOp}>
+          <text x={540} y={150} style={headline(54, BLACK)} textAnchor="middle">YOUR BRAIN</text>
+          <text x={540} y={228} style={headline(54, ACCENT)} textAnchor="middle">IGNORES THE TOTAL</text>
         </g>
-        <line x1={chartX} y1={chartY + 50} x2={chartX} y2={chartY + chartH + 50} stroke={BLACK} strokeWidth={3} opacity={0.3} />
-        <line x1={chartX} y1={chartY + chartH + 50} x2={chartX + chartW} y2={chartY + chartH + 50} stroke={BLACK} strokeWidth={3} opacity={0.3} />
-        {fundPts.length > 1 && <polyline points={fundPts.join(' ')} fill="none" stroke={GREEN} strokeWidth={8} strokeLinecap="round" strokeLinejoin="round" />}
-        {youPts.length > 1 && <polyline points={youPts.join(' ')} fill="none" stroke={ACCENT} strokeWidth={8} strokeLinecap="round" strokeLinejoin="round" />}
-        <g opacity={gapOpacity}>
-          <text x={540} y={1000} style={headline(54, RED)} textAnchor="middle">3.1% GAP</text>
-          <text x={540} y={1075} style={headline(34, BLACK)} textAnchor="middle">EVERY SINGLE YEAR</text>
+
+        {/* Brain outline — two lobes */}
+        <g opacity={brainOp}>
+          <ellipse cx={435} cy={490} rx={148} ry={118} fill="none" stroke="#888" strokeWidth={6} />
+          <ellipse cx={605} cy={490} rx={148} ry={118} fill="none" stroke="#888" strokeWidth={6} />
+          <path d="M 375 455 Q 395 415 440 440 Q 452 458 432 476" fill="none" stroke="#888" strokeWidth={4} opacity={0.5} />
+          <path d="M 648 455 Q 665 415 658 442 Q 648 462 640 478" fill="none" stroke="#888" strokeWidth={4} opacity={0.5} />
+          <rect x={500} y={600} width={60} height={68} rx={14} fill="none" stroke="#888" strokeWidth={5} />
+          <line x1={516} y1={390} x2={516} y2={598} stroke="#888" strokeWidth={3} strokeDasharray="12 8" opacity={0.4} />
+          <circle cx={634} cy={494} r={26} fill={ACCENT} opacity={0.9} />
+          <text x={634} y={503} style={{ fontFamily: FONT, fontSize: 26, color: WHITE } as React.CSSProperties} textAnchor="middle">$</text>
         </g>
-        <g opacity={labelOpacity}>
-          <rect x={820} y={chartY + 70} width={160} height={48} rx={8} fill={GREEN} />
-          <text x={900} y={chartY + 103} style={headline(28, WHITE)} textAnchor="middle">FUND</text>
-          <rect x={820} y={chartY + 290} width={160} height={48} rx={8} fill={ACCENT} />
-          <text x={900} y={chartY + 323} style={headline(28, BLACK)} textAnchor="middle">YOU</text>
+
+        {/* Arrows from brain to boxes */}
+        <g opacity={arrowOp}>
+          <line x1={390} y1={700} x2={285} y2={940} stroke="#AAAAAA" strokeWidth={5} strokeDasharray="16 10" />
+          <polygon points="278,962 264,922 306,932" fill="#AAAAAA" />
+          <line x1={635} y1={700} x2={762} y2={940} stroke={ACCENT} strokeWidth={7} />
+          <polygon points="772,962 752,924 793,928" fill={ACCENT} />
         </g>
-        <text x={chartX} y={chartY + chartH + 110} style={headline(28, BLACK)} textAnchor="middle">0</text>
-        <text x={chartX + chartW / 2} y={chartY + chartH + 110} style={headline(28, BLACK)} textAnchor="middle">15 YRS</text>
-        <text x={chartX + chartW} y={chartY + chartH + 110} style={headline(28, BLACK)} textAnchor="middle">30 YRS</text>
+
+        {/* Total price box — faded/struck */}
+        <g opacity={totalOp}>
+          <rect x={55} y={968} width={440} height={215} rx={18} fill="#DDDDDD" />
+          <text x={275} y={1035} style={headline(30, "#999")} textAnchor="middle">TOTAL PRICE</text>
+          <text x={275} y={1130} style={headline(66, "#AAA")} textAnchor="middle">$32,500</text>
+          <line x1={75} y1={1124} x2={455} y2={1124} stroke="#999" strokeWidth={8} />
+          <text x={275} y={1172} style={headline(26, "#AAA")} textAnchor="middle">IGNORED</text>
+        </g>
+
+        {/* Monthly box — springs in */}
+        <g transform={`translate(790, 1075) scale(${monthlyScale})`}>
+          <rect x={-290} y={-125} width={580} height={310} rx={24} fill={ACCENT} />
+          <text x={0} y={-50} style={headline(36, WHITE)} textAnchor="middle">MONTHLY</text>
+          <text x={0} y={88} style={headline(88, WHITE)} textAnchor="middle">$399</text>
+          <text x={0} y={152} style={headline(30, WHITE)} textAnchor="middle">BRAIN FOCUSES HERE</text>
+        </g>
+
+        {/* Bottom insight */}
+        <g opacity={bottomOp}>
+          <rect x={55} y={1360} width={970} height={240} rx={22} fill={BLACK} />
+          <text x={540} y={1440} style={headline(42, WHITE)} textAnchor="middle">$399 FEELS SMALL.</text>
+          <text x={540} y={1512} style={headline(42, ACCENT)} textAnchor="middle">$32,500 FEELS HUGE.</text>
+          <text x={540} y={1578} style={headline(30, WHITE)} textAnchor="middle">DEALERS KNOW THIS. IT'S THE TRAP.</text>
+        </g>
       </svg>
     </FadeScene>
   );
@@ -140,47 +187,69 @@ const Scene2: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
 const Scene3: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
 
-  const titleOpacity = interpolate(frame, [0, 18], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const lineProgress = interpolate(frame, [15, 80], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const personX = interpolate(frame, [70, 110], [440, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.in(Easing.quad) });
-  const personOpacity = interpolate(frame, [105, 120], [1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const bounceProgress = interpolate(frame, [100, 180], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic) });
-  const labelOpacity = interpolate(frame, [160, 185], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const sellOpacity = interpolate(frame, [55, 75], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const titleOp = interpolate(frame, [0, 18], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const barGrow = interpolate(frame, [22, 115], [0, 1], {
+    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
+    easing: Easing.out(Easing.cubic),
+  });
+  const labelOp = interpolate(frame, [118, 142], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const diffOp = interpolate(frame, [145, 168], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
 
-  const cx = 100; const cy = 900;
-  const allPoints: [number, number][] = [
-    [0, 0], [100, -80], [200, -150], [280, -200], [360, -120],
-    [440, 60], [520, 180], [600, 100], [700, -20], [780, -130], [880, -220],
-  ];
-  const visibleCount = Math.max(0, Math.floor(lineProgress * (allPoints.length - 1)));
-  const mainPts = allPoints.slice(0, visibleCount + 1).map(([dx, dy]) => `${cx + dx},${cy + dy}`).join(' ');
-  const bouncePts = allPoints.slice(5).slice(0, Math.max(0, Math.floor(bounceProgress * 6))).map(([dx, dy]) => `${cx + dx},${cy + dy}`).join(' ');
-  const sellX = cx + allPoints[5][0];
-  const sellY = cy + allPoints[5][1];
+  const base = 1545;
+  const barW = 225;
+  const principalH = barGrow * 500;
+  const int60H = barGrow * 118;
+  const int84H = barGrow * 284;
 
   return (
     <FadeScene bg={BG_DARK} dur={dur}>
       <svg width={1080} height={1920} viewBox="0 0 1080 1920">
-        <g opacity={titleOpacity}>
-          <text x={540} y={160} style={headline(48, WHITE)} textAnchor="middle">CAUSE #1</text>
-          <text x={540} y={230} style={headline(58, RED)} textAnchor="middle">PANIC SELLING</text>
+        <g opacity={titleOp}>
+          <text x={540} y={152} style={headline(54, WHITE)} textAnchor="middle">60 MONTHS</text>
+          <text x={540} y={225} style={headline(54, ACCENT)} textAnchor="middle">VS 84 MONTHS</text>
+          <text x={540} y={312} style={headline(32, WHITE)} textAnchor="middle">SAME CAR. SAME PRICE. MORE INTEREST.</text>
         </g>
-        {mainPts.length > 1 && <polyline points={mainPts} fill="none" stroke={GREEN} strokeWidth={8} strokeLinecap="round" strokeLinejoin="round" />}
-        <g opacity={sellOpacity}>
-          <polygon points={`${sellX},${sellY - 20} ${sellX - 24},${sellY - 60} ${sellX + 24},${sellY - 60}`} fill={RED} />
-          <rect x={sellX - 60} y={sellY - 100} width={120} height={44} rx={8} fill={RED} />
-          <text x={sellX} y={sellY - 68} style={headline(30, WHITE)} textAnchor="middle">SELL!</text>
+
+        {/* Legend */}
+        <g opacity={labelOp}>
+          <rect x={155} y={360} width={46} height={30} rx={5} fill={BLUE} />
+          <text x={212} y={382} style={{ fontFamily: FONT, fontSize: 28, color: WHITE } as React.CSSProperties}>PRINCIPAL</text>
+          <rect x={565} y={360} width={46} height={30} rx={5} fill={ACCENT} />
+          <text x={622} y={382} style={{ fontFamily: FONT, fontSize: 28, color: WHITE } as React.CSSProperties}>INTEREST</text>
         </g>
-        {bouncePts.length > 1 && <polyline points={bouncePts} fill="none" stroke={GREEN} strokeWidth={8} strokeDasharray="20 10" strokeLinecap="round" strokeLinejoin="round" />}
-        <g opacity={personOpacity}>
-          <Person x={personX} y={1150} scale={1.2} color={WHITE} />
+
+        {/* 60-month bars (center x=265) */}
+        <rect x={153} y={base - principalH} width={barW} height={principalH} rx={12} fill={BLUE} />
+        <rect x={153} y={base - principalH - int60H} width={barW} height={int60H} rx={12} fill={ACCENT} />
+        <g opacity={labelOp}>
+          <text x={265} y={base + 58} style={headline(38, WHITE)} textAnchor="middle">60 MO</text>
+          <text x={265} y={base + 114} style={headline(32, '#10B981')} textAnchor="middle">$3,800</text>
+          <text x={265} y={base + 158} style={headline(26, WHITE)} textAnchor="middle">INTEREST</text>
+          <text x={265} y={base - principalH - int60H - 28} style={headline(32, ACCENT)} textAnchor="middle">$33,800</text>
         </g>
-        <g opacity={labelOpacity}>
-          <text x={540} y={1360} style={headline(44, WHITE)} textAnchor="middle">MISSED THE</text>
-          <text x={540} y={1420} style={headline(44, ACCENT)} textAnchor="middle">BOUNCE</text>
-          <text x={540} y={1520} style={headline(34, WHITE)} textAnchor="middle">LOSS LOCKED IN</text>
+
+        {/* 84-month bars (center x=817) */}
+        <rect x={704} y={base - principalH} width={barW} height={principalH} rx={12} fill={BLUE} />
+        <rect x={704} y={base - principalH - int84H} width={barW} height={int84H} rx={12} fill={ACCENT} />
+        <g opacity={labelOp}>
+          <text x={817} y={base + 58} style={headline(38, WHITE)} textAnchor="middle">84 MO</text>
+          <text x={817} y={base + 114} style={headline(32, ACCENT)} textAnchor="middle">$7,000</text>
+          <text x={817} y={base + 158} style={headline(26, WHITE)} textAnchor="middle">INTEREST</text>
+          <text x={817} y={base - principalH - int84H - 28} style={headline(32, ACCENT)} textAnchor="middle">$37,000</text>
         </g>
+
+        {/* Difference badge */}
+        <g opacity={diffOp}>
+          <line x1={382} y1={base - principalH - int84H} x2={700} y2={base - principalH - int84H}
+            stroke={ACCENT} strokeWidth={4} strokeDasharray="14 7" />
+          <g transform={`translate(540, ${base - principalH - int84H - 110})`}>
+            <rect x={-178} y={-52} width={356} height={104} rx={18} fill={ACCENT} />
+            <text x={0} y={-4} style={headline(48, WHITE)} textAnchor="middle">+$3,200</text>
+            <text x={0} y={44} style={headline(26, WHITE)} textAnchor="middle">MORE IN INTEREST</text>
+          </g>
+        </g>
+
+        <line x1={100} y1={base} x2={980} y2={base} stroke={WHITE} strokeWidth={3} opacity={0.22} />
       </svg>
     </FadeScene>
   );
@@ -189,50 +258,83 @@ const Scene3: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
 const Scene4: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
 
-  const titleOpacity = interpolate(frame, [0, 18], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const lineProgress = interpolate(frame, [15, 80], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic) });
-  const personY = interpolate(frame, [75, 100], [600, 820], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.in(Easing.quad) });
-  const personOpacity = interpolate(frame, [72, 85], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const dropProgress = interpolate(frame, [100, 180], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.in(Easing.cubic) });
-  const labelOpacity = interpolate(frame, [160, 185], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const buyOpacity = interpolate(frame, [78, 95], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const titleOp = interpolate(frame, [0, 18], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const carOp = interpolate(frame, [20, 45], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const loanGrow = interpolate(frame, [42, 112], [0, 1], {
+    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
+    easing: Easing.out(Easing.cubic),
+  });
+  const valueGrow = interpolate(frame, [56, 118], [0, 1], {
+    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
+    easing: Easing.out(Easing.cubic),
+  });
+  const gapOp = interpolate(frame, [122, 148], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const bottomOp = interpolate(frame, [158, 182], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
 
-  const cx = 100; const cy = 1050;
-  const risePoints: [number, number][] = [[0, 0], [120, -100], [240, -220], [360, -360], [480, -480]];
-  const dropPoints: [number, number][] = [[480, -480], [580, -340], [680, -180], [780, -60], [880, 20]];
-
-  const riseCount = Math.max(0, Math.floor(lineProgress * risePoints.length));
-  const risePts = risePoints.slice(0, riseCount).map(([dx, dy]) => `${cx + dx},${cy + dy}`).join(' ');
-  const dropCount = Math.max(0, Math.floor(dropProgress * dropPoints.length));
-  const dropPts = dropPoints.slice(0, dropCount).map(([dx, dy]) => `${cx + dx},${cy + dy}`).join(' ');
-  const peakX = cx + risePoints[risePoints.length - 1][0];
-  const peakY = cy + risePoints[risePoints.length - 1][1];
+  const maxBarW = 750;
+  const loanBarW = loanGrow * maxBarW;
+  const valueBarW = valueGrow * (maxBarW * 22 / 26);
+  const loanDollars = Math.floor(loanGrow * 26000);
+  const valueDollars = Math.floor(valueGrow * 22000);
 
   return (
     <FadeScene bg={BG_LIGHT} dur={dur}>
       <svg width={1080} height={1920} viewBox="0 0 1080 1920">
-        <g opacity={titleOpacity}>
-          <text x={540} y={160} style={headline(48, BLACK)} textAnchor="middle">CAUSE #2</text>
-          <text x={540} y={230} style={headline(58, RED)} textAnchor="middle">FOMO BUYING</text>
+        <g opacity={titleOp}>
+          <text x={540} y={152} style={headline(52, BLACK)} textAnchor="middle">BY MONTH 18</text>
+          <text x={540} y={232} style={headline(52, ACCENT)} textAnchor="middle">YOU'RE UNDERWATER</text>
         </g>
-        {risePts.length > 1 && <polyline points={risePts} fill="none" stroke={GREEN} strokeWidth={8} strokeLinecap="round" strokeLinejoin="round" />}
-        {riseCount >= risePoints.length && (
-          <g>
-            <rect x={peakX - 70} y={peakY - 80} width={160} height={60} rx={12} fill={GREEN} />
-            <text x={peakX + 10} y={peakY - 38} style={headline(34, WHITE)} textAnchor="middle">+40%</text>
-          </g>
-        )}
-        {dropPts.length > 1 && <polyline points={dropPts} fill="none" stroke={RED} strokeWidth={8} strokeLinecap="round" strokeLinejoin="round" />}
-        <g opacity={personOpacity}>
-          <Person x={peakX - 10} y={personY} scale={1.2} color={BLACK} />
-          <g opacity={buyOpacity}>
-            <rect x={peakX + 20} y={personY - 140} width={140} height={52} rx={10} fill={ACCENT} />
-            <text x={peakX + 90} y={personY - 104} style={headline(30, BLACK)} textAnchor="middle">BUY!</text>
+
+        {/* Car icon */}
+        <g opacity={carOp}>
+          <rect x={170} y={330} width={620} height={148} rx={26} fill={BLUE} />
+          <rect x={258} y={212} width={406} height={138} rx={18} fill={BLUE} />
+          <rect x={274} y={226} width={154} height={92} rx={9} fill="#87CEEB" opacity={0.72} />
+          <rect x={444} y={226} width={154} height={92} rx={9} fill="#87CEEB" opacity={0.72} />
+          <circle cx={268} cy={478} r={62} fill="#1A1A1A" />
+          <circle cx={268} cy={478} r={41} fill="#2A2A2A" />
+          <circle cx={268} cy={478} r={15} fill="#888" />
+          <circle cx={712} cy={478} r={62} fill="#1A1A1A" />
+          <circle cx={712} cy={478} r={41} fill="#2A2A2A" />
+          <circle cx={712} cy={478} r={15} fill="#888" />
+          <rect x={170} y={376} width={48} height={22} rx={5} fill="#FFE566" opacity={0.9} />
+          {/* Down arrow on car */}
+          <polygon points="540,560 505,515 575,515" fill={ACCENT} opacity={0.85} />
+        </g>
+
+        {/* Loan balance bar */}
+        <text x={165} y={648} style={headline(32, ACCENT)} textAnchor="start">LOAN BALANCE</text>
+        <rect x={165} y={665} width={loanBarW} height={82} rx={12} fill={ACCENT} />
+        <text x={165 + loanBarW + 14} y={718} style={headline(42, ACCENT)} textAnchor="start">
+          ${loanDollars.toLocaleString()}
+        </text>
+
+        {/* Car value bar */}
+        <text x={165} y={832} style={headline(32, '#1565C0')} textAnchor="start">CAR VALUE</text>
+        <rect x={165} y={848} width={valueBarW} height={82} rx={12} fill="#1565C0" />
+        <text x={165 + valueBarW + 14} y={902} style={headline(42, '#1565C0')} textAnchor="start">
+          ${valueDollars.toLocaleString()}
+        </text>
+
+        {/* Gap bracket */}
+        <g opacity={gapOp}>
+          <line x1={165 + valueBarW} y1={768} x2={165 + loanBarW} y2={768}
+            stroke={ACCENT} strokeWidth={5} strokeDasharray="14 7" />
+          <line x1={165 + valueBarW} y1={744} x2={165 + valueBarW} y2={792} stroke={ACCENT} strokeWidth={5} />
+          <line x1={165 + loanBarW} y1={744} x2={165 + loanBarW} y2={792} stroke={ACCENT} strokeWidth={5} />
+          <g transform={`translate(540, 1020)`}>
+            <rect x={-300} y={-72} width={600} height={144} rx={20} fill={ACCENT} />
+            <text x={0} y={-12} style={headline(40, WHITE)} textAnchor="middle">UNDERWATER BY</text>
+            <text x={0} y={58} style={headline(58, WHITE)} textAnchor="middle">$4,000</text>
           </g>
         </g>
-        <g opacity={labelOpacity}>
-          <text x={540} y={1480} style={headline(44, RED)} textAnchor="middle">BOUGHT THE TOP</text>
-          <text x={540} y={1560} style={headline(36, BLACK)} textAnchor="middle">DOWN BEFORE IT STARTS</text>
+
+        {/* Bottom label */}
+        <g opacity={bottomOp}>
+          <rect x={55} y={1250} width={970} height={210} rx={22} fill={BLACK} />
+          <text x={540} y={1322} style={headline(38, WHITE)} textAnchor="middle">1 IN 3 NEW CAR BUYERS</text>
+          <text x={540} y={1392} style={headline(38, ACCENT)} textAnchor="middle">IS UNDERWATER</text>
+          <text x={540} y={1448} style={headline(28, WHITE)} textAnchor="middle">AND ROLLING DEBT INTO THEIR NEXT LOAN</text>
         </g>
       </svg>
     </FadeScene>
@@ -242,59 +344,88 @@ const Scene4: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
 const Scene5: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
 
-  const titleOpacity = interpolate(frame, [0, 18], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const fillFund = interpolate(frame, [25, 130], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic) });
-  const fillYou = interpolate(frame, [40, 130], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic) });
-  const gapOpacity = interpolate(frame, [140, 165], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const titleOp = interpolate(frame, [0, 18], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const receiptOp = interpolate(frame, [22, 55], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const arrowProg = interpolate(frame, [62, 105], [0, 1], {
+    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
+    easing: Easing.out(Easing.cubic),
+  });
+  const nS = spring({ frame: frame - 110, fps: 30, config: { mass: 0.5, damping: 9 } });
+  const newScale = Math.min(nS, 1.12);
+  const bottomOp = interpolate(frame, [160, 185], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
 
-  const fundDollars = Math.floor(fillFund * 540);
-  const youDollars = Math.floor(fillYou * 200);
-
-  const PiggyBank: React.FC<{ pcx: number; pcy: number; fillRatio: number; color: string; label: string; amount: string }> = ({
-    pcx, pcy, fillRatio, color, label, amount,
-  }) => {
-    const bodyW = 200; const bodyH = 160;
-    const clipH = bodyH * fillRatio;
-    const clipY = pcy + bodyH / 2 - clipH;
-    const clipId = `clip-${label}`;
-    return (
-      <g>
-        <defs>
-          <clipPath id={clipId}>
-            <rect x={pcx - bodyW / 2} y={clipY} width={bodyW} height={clipH} />
-          </clipPath>
-        </defs>
-        <ellipse cx={pcx} cy={pcy} rx={bodyW / 2} ry={bodyH / 2} fill={WHITE} stroke={color} strokeWidth={6} />
-        <ellipse cx={pcx} cy={pcy} rx={bodyW / 2} ry={bodyH / 2} fill={color} clipPath={`url(#${clipId})`} opacity={0.7} />
-        <ellipse cx={pcx + bodyW / 2 - 10} cy={pcy + 10} rx={34} ry={26} fill={WHITE} stroke={color} strokeWidth={5} />
-        <circle cx={pcx + bodyW / 2 - 20} cy={pcy + 6} r={7} fill={color} />
-        <circle cx={pcx + bodyW / 2 + 2} cy={pcy + 14} r={7} fill={color} />
-        <ellipse cx={pcx - 50} cy={pcy - bodyH / 2 + 10} rx={26} ry={20} fill={WHITE} stroke={color} strokeWidth={5} />
-        <circle cx={pcx + 30} cy={pcy - 30} r={10} fill={color} />
-        {([-70, -30, 30, 70] as number[]).map((lx, i) => (
-          <rect key={i} x={pcx + lx - 15} y={pcy + bodyH / 2 - 10} width={28} height={50} rx={10} fill={WHITE} stroke={color} strokeWidth={5} />
-        ))}
-        <rect x={pcx - 20} y={pcy - bodyH / 2 - 12} width={40} height={14} rx={5} fill={color} />
-        <text x={pcx} y={pcy + bodyH / 2 + 90} style={headline(34, color)} textAnchor="middle">{label}</text>
-        <text x={pcx} y={pcy + bodyH / 2 + 140} style={headline(48, color)} textAnchor="middle">{amount}</text>
-      </g>
-    );
-  };
+  const arrowX2 = 530 + arrowProg * 430;
 
   return (
     <FadeScene bg={BG_DARK} dur={dur}>
       <svg width={1080} height={1920} viewBox="0 0 1080 1920">
-        <g opacity={titleOpacity}>
-          <text x={540} y={160} style={headline(46, WHITE)} textAnchor="middle">3% SOUNDS SMALL...</text>
-          <text x={540} y={240} style={headline(38, ACCENT)} textAnchor="middle">UNTIL YOU SEE THE MATH</text>
+        <g opacity={titleOp}>
+          <text x={540} y={150} style={headline(52, WHITE)} textAnchor="middle">THE TRADE-IN</text>
+          <text x={540} y={230} style={headline(52, ACCENT)} textAnchor="middle">CYCLE TRAP</text>
         </g>
-        <PiggyBank pcx={280} pcy={820} fillRatio={fillFund} color={GREEN} label="FUND" amount={`$${fundDollars}K`} />
-        <PiggyBank pcx={780} pcy={820} fillRatio={fillYou} color={ACCENT} label="YOU" amount={`$${youDollars}K`} />
-        <text x={540} y={840} style={headline(52, WHITE)} textAnchor="middle">VS</text>
-        <g opacity={gapOpacity}>
-          <rect x={260} y={1320} width={560} height={100} rx={20} fill={RED} />
-          <text x={540} y={1385} style={headline(48, WHITE)} textAnchor="middle">$340K GONE</text>
-          <text x={540} y={1480} style={headline(34, WHITE)} textAnchor="middle">OVER 30 YEARS</text>
+
+        {/* Old car (left, faded) */}
+        <g opacity={receiptOp}>
+          <g opacity={0.62}>
+            <rect x={50} y={308} width={450} height={110} rx={18} fill="#334455" />
+            <rect x={118} y={222} width={282} height={100} rx={14} fill="#334455" />
+            <rect x={132} y={234} width={102} height={70} rx={7} fill="#87CEEB" opacity={0.5} />
+            <rect x={250} y={234} width={102} height={70} rx={7} fill="#87CEEB" opacity={0.5} />
+            <circle cx={140} cy={418} r={44} fill="#1A1A1A" />
+            <circle cx={140} cy={418} r={28} fill="#2A2A2A" />
+            <circle cx={140} cy={418} r={11} fill="#666" />
+            <circle cx={420} cy={418} r={44} fill="#1A1A1A" />
+            <circle cx={420} cy={418} r={28} fill="#2A2A2A" />
+            <circle cx={420} cy={418} r={11} fill="#666" />
+          </g>
+          <text x={275} y={275} style={headline(28, WHITE)} textAnchor="middle">OLD CAR</text>
+
+          {/* Trade-in receipt */}
+          <rect x={50} y={480} width={450} height={360} rx={18} fill="#1C1C1C" />
+          <text x={275} y={540} style={headline(28, WHITE)} textAnchor="middle">TRADE-IN VALUE</text>
+          <text x={275} y={605} style={headline(50, '#10B981')} textAnchor="middle">$22,000</text>
+          <line x1={70} y1={625} x2={480} y2={625} stroke="#333" strokeWidth={2} />
+          <text x={275} y={672} style={headline(28, WHITE)} textAnchor="middle">YOU STILL OWE</text>
+          <text x={275} y={736} style={headline(50, ACCENT)} textAnchor="middle">$26,000</text>
+          <line x1={70} y1={756} x2={480} y2={756} stroke="#444" strokeWidth={3} />
+          <rect x={148} y={770} width={254} height={62} rx={12} fill={ACCENT} />
+          <text x={275} y={812} style={headline(36, WHITE)} textAnchor="middle">–$4,000</text>
+        </g>
+
+        {/* Animated arrow */}
+        <line x1={530} y1={650} x2={arrowX2} y2={650} stroke={ACCENT} strokeWidth={8} strokeLinecap="round" />
+        {arrowProg > 0.88 && (
+          <polygon points={`${arrowX2 + 30},650 ${arrowX2 - 6},625 ${arrowX2 - 6},675`} fill={ACCENT} />
+        )}
+        <g opacity={arrowProg}>
+          <rect x={598} y={605} width={268} height={58} rx={10} fill={ACCENT} />
+          <text x={732} y={642} style={headline(26, WHITE)} textAnchor="middle">+$4K ROLLED IN</text>
+        </g>
+
+        {/* New loan card springs in */}
+        <g transform={`translate(840, 680) scale(${newScale})`}>
+          <rect x={-218} y={-240} width={436} height={540} rx={20} fill="#162032" stroke={ACCENT} strokeWidth={4} />
+          <g opacity={0.7}>
+            <rect x={-160} y={-210} width={320} height={80} rx={14} fill={BLUE} />
+            <rect x={-100} y={-272} width={200} height={74} rx={10} fill={BLUE} />
+            <circle cx={-100} cy={-132} r={28} fill="#1A1A1A" />
+            <circle cx={100} cy={-132} r={28} fill="#1A1A1A" />
+          </g>
+          <text x={0} y={-54} style={headline(24, WHITE)} textAnchor="middle">NEW CAR LOAN</text>
+          <text x={0} y={12} style={headline(28, WHITE)} textAnchor="middle">CAR PRICE</text>
+          <text x={0} y={70} style={headline(44, WHITE)} textAnchor="middle">$30,000</text>
+          <text x={0} y={130} style={headline(28, ACCENT)} textAnchor="middle">+ ROLLED DEBT</text>
+          <text x={0} y={186} style={headline(44, ACCENT)} textAnchor="middle">$4,000</text>
+          <line x1={-178} y1={208} x2={178} y2={208} stroke={ACCENT} strokeWidth={3} />
+          <rect x={-178} y={218} width={356} height={68} rx={12} fill={ACCENT} />
+          <text x={0} y={262} style={headline(46, WHITE)} textAnchor="middle">$34,000</text>
+        </g>
+
+        {/* Bottom */}
+        <g opacity={bottomOp}>
+          <rect x={55} y={1540} width={970} height={195} rx={22} fill="#1A0000" />
+          <text x={540} y={1612} style={headline(38, WHITE)} textAnchor="middle">MOST PEOPLE DO THIS</text>
+          <text x={540} y={1682} style={headline(40, ACCENT)} textAnchor="middle">6–8 TIMES IN THEIR LIFE</text>
         </g>
       </svg>
     </FadeScene>
@@ -303,80 +434,64 @@ const Scene5: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
 
 const Scene6: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
 
-  const titleOpacity = interpolate(frame, [0, 18], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const treeGrow = spring({ frame, fps, config: { stiffness: 40, damping: 14 }, from: 0, to: 1, delay: 20 });
-  const treeH = treeGrow * 560;
-  const personOpacity = interpolate(frame, [15, 35], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const statOpacity = interpolate(frame, [80, 105], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const ctaOpacity = interpolate(frame, [140, 165], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-
-  const trunkH = Math.min(treeH * 0.35, 180);
-  const foliageH = Math.max(0, treeH - trunkH);
-
-  const coinPositions = [
-    { x: 380, baseY: 1180, delay: 30 },
-    { x: 540, baseY: 1140, delay: 50 },
-    { x: 700, baseY: 1160, delay: 45 },
-    { x: 450, baseY: 1100, delay: 65 },
-    { x: 630, baseY: 1120, delay: 60 },
-  ];
+  const titleOp = interpolate(frame, [0, 18], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const wrongOp = interpolate(frame, [22, 50], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const rS = spring({ frame: frame - 65, fps: 30, config: { mass: 0.5, damping: 9 } });
+  const rightScale = Math.min(rS, 1.12);
+  const savingsVal = interpolate(frame, [92, 188], [0, 8700], {
+    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
+    easing: Easing.out(Easing.quad),
+  });
+  const ctaOp = interpolate(frame, [168, 192], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const savings = Math.floor(savingsVal);
 
   return (
     <FadeScene bg={BG_LIGHT} dur={dur}>
       <svg width={1080} height={1920} viewBox="0 0 1080 1920">
-        <g opacity={titleOpacity}>
-          <text x={540} y={140} style={headline(44, BLACK)} textAnchor="middle">THE FIX IS SIMPLE</text>
+        <g opacity={titleOp}>
+          <text x={540} y={150} style={headline(56, BLACK)} textAnchor="middle">THE $8,700 FIX</text>
+          <text x={540} y={228} style={headline(40, ACCENT)} textAnchor="middle">ONE QUESTION CHANGES EVERYTHING</text>
         </g>
-        <rect x={510} y={1300 - trunkH} width={60} height={trunkH} rx={12} fill="#8B4513" />
-        {foliageH > 0 && (
-          <g>
-            <polygon
-              points={`540,${1300 - trunkH - Math.min(foliageH * 0.45, 200)} ${540 - Math.min(foliageH * 0.3, 200)},${1300 - trunkH} ${540 + Math.min(foliageH * 0.3, 200)},${1300 - trunkH}`}
-              fill={GREEN} opacity={0.9}
-            />
-            {foliageH > 100 && (
-              <polygon
-                points={`540,${1300 - trunkH - Math.min(foliageH * 0.7, 360)} ${540 - Math.min(foliageH * 0.22, 155)},${1300 - trunkH - Math.min(foliageH * 0.25, 120)} ${540 + Math.min(foliageH * 0.22, 155)},${1300 - trunkH - Math.min(foliageH * 0.25, 120)}`}
-                fill={GREEN} opacity={0.95}
-              />
-            )}
-            {foliageH > 250 && (
-              <polygon
-                points={`540,${1300 - trunkH - Math.min(foliageH, 520)} ${540 - Math.min(foliageH * 0.14, 90)},${1300 - trunkH - Math.min(foliageH * 0.58, 310)} ${540 + Math.min(foliageH * 0.14, 90)},${1300 - trunkH - Math.min(foliageH * 0.58, 310)}`}
-                fill={GREEN}
-              />
-            )}
-          </g>
-        )}
-        {coinPositions.map((c, i) => {
-          const coinY = interpolate(frame, [c.delay, c.delay + 80], [c.baseY, c.baseY - 180], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-          const coinOpacity = interpolate(frame, [c.delay, c.delay + 20, c.delay + 70, c.delay + 80], [0, 1, 1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-          return (
-            <g key={i} opacity={coinOpacity}>
-              <circle cx={c.x} cy={coinY} r={22} fill={ACCENT} />
-              <text x={c.x} y={coinY + 10} style={{ fontFamily: FONT, fontSize: 22, fill: BLACK } as React.CSSProperties} textAnchor="middle">$</text>
-            </g>
-          );
-        })}
-        <g opacity={personOpacity}>
-          <rect x={460} y={1320} width={120} height={14} rx={7} fill="#555" />
-          <rect x={456} y={1334} width={14} height={60} rx={6} fill="#555" />
-          <rect x={570} y={1334} width={14} height={60} rx={6} fill="#555" />
-          <rect x={446} y={1280} width={14} height={54} rx={6} fill="#555" />
-          <rect x={580} y={1280} width={14} height={54} rx={6} fill="#555" />
-          <circle cx={540} cy={1260} r={36} fill={BLACK} />
-          <rect x={508} y={1296} width={64} height={28} rx={8} fill={BLACK} />
+
+        {/* Wrong question */}
+        <g opacity={wrongOp}>
+          <rect x={55} y={308} width={970} height={200} rx={20} fill="#DDDDDD" />
+          <circle cx={140} cy={408} r={52} fill="#CC0000" />
+          <line x1={113} y1={380} x2={167} y2={436} stroke={WHITE} strokeWidth={11} strokeLinecap="round" />
+          <line x1={167} y1={380} x2={113} y2={436} stroke={WHITE} strokeWidth={11} strokeLinecap="round" />
+          <text x={586} y={386} style={headline(30, '#888')} textAnchor="middle">WRONG QUESTION:</text>
+          <text x={586} y={462} style={headline(38, BLACK)} textAnchor="middle">"What's my monthly?"</text>
+          <line x1={272} y1={458} x2={922} y2={458} stroke={ACCENT} strokeWidth={7} />
         </g>
-        <g opacity={statOpacity}>
-          <rect x={200} y={1440} width={680} height={130} rx={24} fill={ACCENT} />
-          <text x={540} y={1515} style={headline(62, BLACK)} textAnchor="middle">94% WIN RATE</text>
-          <text x={540} y={1580} style={headline(30, BLACK)} textAnchor="middle">FOR BUY-AND-HOLD INVESTORS</text>
+
+        {/* Right question springs in */}
+        <g transform={`translate(540, 750) scale(${rightScale})`}>
+          <rect x={-490} y={-158} width={980} height={316} rx={26} fill={BLACK} />
+          <circle cx={-370} cy={0} r={58} fill="#10B981" />
+          <polyline points="-400,-12 -372,24 -318,-34"
+            fill="none" stroke={WHITE} strokeWidth={13} strokeLinecap="round" strokeLinejoin="round" />
+          <text x={60} y={-38} style={headline(32, '#AAA')} textAnchor="middle">ASK THIS INSTEAD:</text>
+          <text x={60} y={58} style={headline(46, WHITE)} textAnchor="middle">"What's the TOTAL price?"</text>
         </g>
-        <g opacity={ctaOpacity}>
-          <text x={540} y={1700} style={headline(36, BLACK)} textAnchor="middle">SET IT. FORGET IT. GET RICH.</text>
-          <text x={540} y={1780} style={headline(30, GREEN)} textAnchor="middle">FOLLOW FOR MORE MONEY MOVES</text>
+
+        {/* Savings counter */}
+        <rect x={90} y={1068} width={900} height={228} rx={26} fill={ACCENT} />
+        <text x={540} y={1148} style={headline(44, WHITE)} textAnchor="middle">YOU SAVE UP TO</text>
+        <text x={540} y={1262} style={headline(90, WHITE)} textAnchor="middle">
+          ${savings.toLocaleString()}
+        </text>
+
+        {/* CTA */}
+        <g opacity={ctaOp}>
+          <rect x={55} y={1390} width={970} height={188} rx={22} fill={BLACK} />
+          <text x={540} y={1462} style={headline(40, WHITE)} textAnchor="middle">FOLLOW FOR MORE</text>
+          <text x={540} y={1538} style={headline(40, ACCENT)} textAnchor="middle">MONEY TRAPS TO AVOID</text>
+
+          {/* Row of person icons */}
+          {[0, 1, 2, 3, 4].map((i) => (
+            <Person key={i} x={190 + i * 165} y={1740} scale={0.95} color={i < 3 ? ACCENT : WHITE} />
+          ))}
         </g>
       </svg>
     </FadeScene>
@@ -384,6 +499,7 @@ const Scene6: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
 };
 
 export default function DAILY() {
+  void useVideoConfig;
   return (
     <AbsoluteFill style={{ background: BG_DARK }}>
       <Series>
