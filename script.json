@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Every time a car dealer asks 'what monthly payment works for you,' you're about to lose thousands. That one question is engineered to cost you $8,700 more.",
-    "visual": "Side-view SVG car slides in, salesperson and buyer silhouettes face each other, speech bubble with the dealer question appears, red warning badge springs in showing '$8,700', two price pills side by side: '$32,500 TOTAL' crossed out vs '$399 MONTHLY' highlighted red",
+    "narration": "You just quit your job, and your old 401k is just sitting there. Here's what 35% of people do next — and it costs them a fortune.",
+    "visual": "Piggy bank with a briefcase beside it on dark background. A bold '35%' stat badge springs in. Person silhouette walking away from a building.",
     "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Here's why it works. Your brain literally stops doing math once it hears a monthly number. Four hundred bucks feels easy. Thirty-two thousand feels scary.",
-    "visual": "Brain outline with two lobes, left side '$32,500 TOTAL PRICE' in gray with strikethrough showing it's ignored, right side '$399/MONTH' in red glowing large with spring animation, bottom insight box: '$399 FEELS SMALL. $32,500 FEELS HUGE.'",
+    "narration": "They cash it out. Say you've got $20,000 saved. The IRS hits you with a 10% penalty right away, then takes another 20% in taxes. You walk away with $14,000.",
+    "visual": "A $20,000 check getting sliced — red scissors animation cutting it down. Two labeled segments showing penalty bite and tax bite, remainder highlighted. $14,000 remaining badge.",
     "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Dealers exploit this by stretching your loan to eighty-four months. Same car, same price — but you pay $3,200 more in interest. And it gets worse from there.",
-    "visual": "Side-by-side animated bar charts: 60-month loan (short red interest bar) vs 84-month loan (tall red interest bar), both with same-height blue principal bar, '+$3,200 MORE' label in a red badge between them",
+    "narration": "That's $6,000 gone on the spot. And three million people do this exact thing every year without realizing what they're really giving up.",
+    "visual": "Grid of 100 person silhouettes. 35 turn red one-by-one, then a '3 Million / Year' counter animates in.",
     "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "By month eighteen, your car is worth $22,000 but you still owe $26,000. You're officially underwater — and that $4,000 gap is about to follow you.",
-    "visual": "SVG car icon above two animated horizontal bars: red 'Loan Balance' bar extending to $26,000 longer than blue 'Car Value' bar at $22,000, bracket between them labeled 'Underwater by $4,000'",
+    "narration": "Here's the part nobody shows you. That $20,000 left invested at 7% grows to $152,000 in 30 years. You didn't just lose $6,000 — you gave up $138,000.",
+    "visual": "Two side-by-side bars growing: red bar stopping at $14,000 (cashed out), green bar growing tall to $152,000 (invested). Year counter: 0 → 30.",
     "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "When you trade in that car, the dealer rolls your $4,000 shortfall right into your new loan. That's thirty-four thousand dollars for a thirty-thousand-dollar car. Most people do this six to eight times.",
-    "visual": "Old car with trade-in receipt showing Trade-In Value $22,000, Owed $26,000, Shortfall -$4,000; arrow pointing right; new loan card showing $30,000 + $4,000 = $34,000 total",
+    "narration": "The fix is a free five-minute phone call. Roll it over to an IRA or your new employer's plan. Zero taxes, zero penalty — your money keeps compounding.",
+    "visual": "Arrow animation showing money flowing from an old briefcase-labeled box into a new piggy bank labeled 'ROLLOVER IRA'. Green checkmarks appearing. '$0 in penalties' badge.",
     "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "The fix is one question. Stop answering theirs. Instead ask: what is the total price, out the door? That single shift saves you $8,700 and puts you back in control. Share this before your friend buys a car.",
-    "visual": "Wrong question crossed out with X, right question 'What's the TOTAL price?' with green checkmark, savings counter animating from $0 to $8,700, follow CTA with person icons",
+    "narration": "So check right now — do you have any old 401ks floating around? A five-minute rollover today could mean $100,000 more at retirement.",
+    "visual": "Phone screen showing a retirement account app with a notification badge. '$100K+ SAVED' stamp animates in. Follow/subscribe CTA at the bottom.",
     "accent_color": "red"
   }
 ]
