@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You paid off most of your credit card last month. Left a tiny balance on it. That one move just broke a rule most people never knew existed.",
-    "visual": "Large credit card SVG in center with '$50 DUE' highlighted in red. The card slides in with a spring animation. A pulsing red badge reads 'JUST $50 LEFT'. Title: THE BALANCE TRAP.",
-    "accent_color": "red"
+    "narration": "One in five Americans has an error on their credit report right now. Most have no idea it's there — and it's quietly costing them real money.",
+    "visual": "Dark background. Giant '1 IN 5' text springs in. Below it, a credit report document SVG with three red X error marks appearing one by one on report lines.",
+    "accent_color": "green"
   },
   {
     "scene": 2,
-    "narration": "Credit cards come with a 25-day grace period — the window where new purchases don't accrue interest. Carry any balance over, and that window slams shut completely.",
-    "visual": "A 25-cell calendar grid. Cells glow green, then turn red one by one with an X, representing the grace period disappearing. Text: GRACE PERIOD GONE. Calendar with a big red X overlay.",
-    "accent_color": "red"
+    "narration": "Errors creep in when creditors report wrong balances, accounts get mixed up, or paid debts stay marked unpaid. Nobody ever tells you when it happens.",
+    "visual": "Light background. Three card rows slide in one by one — 'Wrong Balance', 'Account Mix-Up', 'Paid Debt Still Active' — each with a red icon and description.",
+    "accent_color": "green"
   },
   {
     "scene": 3,
-    "narration": "Now every swipe you make — groceries, gas, dinner — starts accruing interest from day one. Not from the due date. Day. One. There's no buffer anymore.",
-    "visual": "Shopping cart SVG with a credit card being swiped. A clock shows '0 days' with the hand jumping immediately to the 12. Dollar signs grow from the cart. Text: INTEREST STARTS NOW.",
-    "accent_color": "red"
+    "narration": "Here's the real cost. A 100-point score drop quietly adds $47,000 to a 30-year mortgage. That number isn't a typo — it's the math.",
+    "visual": "Dark background. House SVG with a dollar counter animating from $0 up to $47,000. Label: 'Extra you pay on your mortgage.' Red warning badge at bottom.",
+    "accent_color": "green"
   },
   {
     "scene": 4,
-    "narration": "At today's average rate of 28%, households that occasionally carry a balance pay an extra $3,200 a year in interest they thought they'd escaped. That's not a rounding error.",
-    "visual": "Two bar charts side by side: 'WHAT YOU THINK' (small green bar, $0 extra) vs 'WHAT YOU PAY' (tall red bar animating up to $3,200). 28% APR badge pulsing. Text: $3,200 INVISIBLE.",
-    "accent_color": "red"
+    "narration": "The fix is completely free. By law you get three free credit report checks every year at AnnualCreditReport.com. Most Americans use zero of them.",
+    "visual": "Light background. Title '3 FREE checks every year'. Three calendar icons appear with checkmarks for JAN, MAY, SEP. Big green '100% FREE' badge bounces in.",
+    "accent_color": "green"
   },
   {
     "scene": 5,
-    "narration": "Here's the wild part — 55% of cardholders carry a balance at least once a year. Banks designed this rule knowing exactly when you'd slip. They make billions off that single moment.",
-    "visual": "Bank building SVG in the center. Six person silhouettes arranged around it with money arrows flowing from them to the bank. '55%' statistic pulses. Text: DESIGNED THIS WAY.",
-    "accent_color": "red"
+    "narration": "Find an error? Disputing it is free and fast. Bureaus legally have 30 days to respond — and your score can jump 50 points or more.",
+    "visual": "Dark background. Person at computer SVG. Credit score bar animates from 620 up to 720. Green '30 days' badge. Tagline: 'Score can jump 50-100 points fast.'",
+    "accent_color": "green"
   },
   {
     "scene": 6,
-    "narration": "The fix is specific: pay the full statement balance every month. Not the minimum. Not 99%. The whole thing. That one habit restores your grace period and keeps $3,200 in your pocket.",
-    "visual": "Calendar with a bold 'PAID IN FULL' stamp animating onto it. A wallet SVG fills with coin icons. '$3,200 SAVED' text springs up. Text: THE $3,200 FIX.",
-    "accent_color": "red"
+    "narration": "So here's your move: go to AnnualCreditReport.com, pull your free report, scan for anything off. Three minutes could save you forty-seven thousand dollars.",
+    "visual": "Light background. Phone SVG with website on screen. Three numbered steps appear: 1) AnnualCreditReport.com, 2) Pull free report, 3) Scan for errors. Green CTA badge: 'Could save you $47,000'.",
+    "accent_color": "green"
   }
 ]
