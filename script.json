@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "One in five Americans has an error on their credit report right now. Most have no idea it's there — and it's quietly costing them real money.",
-    "visual": "Dark background. Giant '1 IN 5' text springs in. Below it, a credit report document SVG with three red X error marks appearing one by one on report lines.",
-    "accent_color": "green"
+    "narration": "You probably overpaid today — and never knew it. An algorithm quietly charged you more than the person right next to you. That's dynamic pricing.",
+    "visual": "A large hexagonal price tag with a price counter rapidly cycling between $4.99, $12.49, $8.99, $15.99 — same item label underneath. Upward red arrow pulses. 'DYNAMIC PRICING IS WATCHING YOU' appears.",
+    "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "Errors creep in when creditors report wrong balances, accounts get mixed up, or paid debts stay marked unpaid. Nobody ever tells you when it happens.",
-    "visual": "Light background. Three card rows slide in one by one — 'Wrong Balance', 'Account Mix-Up', 'Paid Debt Still Active' — each with a red icon and description.",
-    "accent_color": "green"
+    "narration": "Airlines invented it back in 1983. Same seat, same flight — the person next to you paid 73% less. It all depended on when they booked.",
+    "visual": "Two airplane seats side by side — blue seat labeled $180 'TUESDAY BOOKING', red seat labeled $520 'FRIDAY BOOKING'. Both slide in from opposite sides. '73% MORE — SAME SEAT' badge springs in below.",
+    "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Here's the real cost. A 100-point score drop quietly adds $47,000 to a 30-year mortgage. That number isn't a typo — it's the math.",
-    "visual": "Dark background. House SVG with a dollar counter animating from $0 up to $47,000. Label: 'Extra you pay on your mortgage.' Red warning badge at bottom.",
-    "accent_color": "green"
+    "narration": "Now it's in fast food, groceries, and concert tickets. McDonald's digital menus change prices based on demand. The price literally updates while you watch.",
+    "visual": "SVG burger icon beside a glowing digital price board showing $5.99 → $7.49 → $8.99 cycling. List of industries fades in one by one: Fast Food, Grocery Stores, Ride Apps, Concert Tickets.",
+    "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "The fix is completely free. By law you get three free credit report checks every year at AnnualCreditReport.com. Most Americans use zero of them.",
-    "visual": "Light background. Title '3 FREE checks every year'. Three calendar icons appear with checkmarks for JAN, MAY, SEP. Big green '100% FREE' badge bounces in.",
-    "accent_color": "green"
+    "narration": "The algorithm knows your device, your location, and your purchase history. It builds a profile and prices you on desperation. You're not a customer — you're a target.",
+    "visual": "Phone silhouette in center of frame. Three data icons orbit it — LOCATION pin (amber), EYE/DEVICE (blue), SHOPPING CART/HISTORY (red). Animated lines connect them to phone. Arrow extends right to a server box labeled PRICE ENGINE.",
+    "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "Find an error? Disputing it is free and fast. Bureaus legally have 30 days to respond — and your score can jump 50 points or more.",
-    "visual": "Dark background. Person at computer SVG. Credit score bar animates from 620 up to 720. Green '30 days' badge. Tagline: 'Score can jump 50-100 points fast.'",
-    "accent_color": "green"
+    "narration": "Studies show dynamic pricing costs the average shopper twenty-four hundred dollars every single year. Peak prices run 300% above normal. That's not a coincidence — it's a system.",
+    "visual": "Bar chart: green 'NORMAL' bar at $10 grows first, then red 'PEAK' bar at $30 grows to 3x height. '300%' badge springs onto the peak bar. $2,400 counter animates up to show annual cost.",
+    "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "So here's your move: go to AnnualCreditReport.com, pull your free report, scan for anything off. Three minutes could save you forty-seven thousand dollars.",
-    "visual": "Light background. Phone SVG with website on screen. Three numbered steps appear: 1) AnnualCreditReport.com, 2) Pull free report, 3) Scan for errors. Green CTA badge: 'Could save you $47,000'.",
-    "accent_color": "green"
+    "narration": "Here's how to fight back. Shop off-peak, search in incognito mode, and never rush a purchase. That urgency you feel is engineered — don't buy into it. Follow for more.",
+    "visual": "Person silhouette with amber shield and checkmark. Four checklist items appear one by one: Search incognito / clear cookies, Shop off-peak hours, Compare prices before buying, Never rush — urgency is engineered. Dark CTA bar at bottom: FOLLOW FOR MORE MONEY MOVES.",
+    "accent_color": "amber"
   }
 ]

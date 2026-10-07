@@ -1,11 +1,7 @@
 {
-  "title": "Your Credit Report Has a $47K Error — Check It Free",
-  "hook": "One in five Americans has an error on their credit report right now — and that invisible mistake could be adding $47,000 to your next mortgage.",
-  "angle": "Most people know free credit report checks exist but never use them — this shows the exact dollar cost of ignoring it and how to fix it in three minutes for free",
-  "audience": "Anyone with credit cards, loans, or plans to buy a home — especially 25-45 year-olds actively building credit",
-  "key_numbers": [
-    "1 in 5 credit reports contain at least one error",
-    "A 100-point score drop adds $47,000 to a 30-year mortgage",
-    "3 free credit report checks per year — most Americans use zero"
-  ]
+  "title": "Dynamic Pricing Is Charging You 300% More Right Now",
+  "hook": "Uber does it. Airlines invented it. Now your grocery store does it too — and the algorithm charged you 300% more today while you had no idea.",
+  "angle": "Algorithmic dynamic pricing has exploded from airlines to everyday purchases including fast food, groceries, and concert tickets — most people don't know it happens",
+  "audience": "Anyone who shops online, uses delivery apps, buys groceries, or travels",
+  "key_numbers": ["300% markup at peak times", "$2,400 average annual overspend", "Dynamic pricing now used by over 87% of major US retailers"]
 }
