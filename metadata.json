@@ -1,16 +1,13 @@
 {
   "tiktok": {
-    "caption": "The algorithm that charged you 300% more today — and you had no idea it was happening",
-    "hashtags": ["#money", "#finance", "#personalfinance", "#dynamicpricing", "#savemoney", "#consumerrights", "#pricingscam", "#moneypsychology"]
+    "caption": "Your 401k is secretly doubling down on your employer — and most people have no idea until it's too late",
+    "hashtags": ["#personalfinance", "#401k", "#investing", "#retirementplanning", "#moneytips", "#financialfreedom", "#moneypsychology", "#wealthbuilding"]
   },
   "youtube_short": {
-    "title": "Dynamic Pricing Is Stealing 300% Extra From You",
-    "title_alternatives": [
-      "The Algorithm Charging You 300% More Right Now",
-      "Why You Overpay Every Single Day (And Don't Know It)"
-    ],
-    "description": "Uber does it. Airlines invented it. Now your grocery store does it too. Dynamic pricing algorithms are charging the average person $2,400 extra every year — at the exact moment you need something most. Here's what it looks like, how it works, and exactly how to stop overpaying.\n\n#dynamicpricing #surgepricing #money #finance #personalfinance #savemoney #pricingscam #consumerrights",
-    "tags": ["dynamic pricing", "surge pricing", "personal finance", "money", "save money", "pricing scam", "consumer rights", "algorithmic pricing", "money psychology", "finance tips"]
+    "title": "Your Company Stock Is a $47K 401k Bomb",
+    "title_alternatives": ["The 401k Mistake That Destroyed Enron Workers", "Why Your 401k Has a Hidden $47,000 Risk"],
+    "description": "Most workers hold 14% of their 401k in their own company's stock — financial advisors say 5% is the max safe limit. When Enron collapsed in 2001, employees lost their jobs AND their retirement savings at the same time — $2 billion wiped out overnight. Your 401k might have the exact same hidden time bomb sitting in it right now. Log into your account today, find your company's ticker, and if it's over 5% move it to a broad index fund — it takes five minutes and could protect $47,000 of your future. #401k #personalfinance #investing #retirementplanning #moneytips",
+    "tags": ["401k", "personal finance", "investing", "retirement", "company stock", "Enron", "financial literacy", "money", "wealth building", "index funds", "retirement planning", "money psychology"]
   },
-  "hook_line": "The algorithm just charged you 300% more"
+  "hook_line": "YOUR 401K IS BETTING ON YOUR BOSS"
 }

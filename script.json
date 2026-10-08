@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You probably overpaid today — and never knew it. An algorithm quietly charged you more than the person right next to you. That's dynamic pricing.",
-    "visual": "A large hexagonal price tag with a price counter rapidly cycling between $4.99, $12.49, $8.99, $15.99 — same item label underneath. Upward red arrow pulses. 'DYNAMIC PRICING IS WATCHING YOU' appears.",
-    "accent_color": "amber"
+    "narration": "You're already betting your job on your employer every single day. But millions of workers are quietly betting their entire retirement on them too — and don't even know it.",
+    "visual": "Two coin stacks labeled SALARY and 401K on opposite sides, arrows pointing from both toward a company building in the center",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Airlines invented it back in 1983. Same seat, same flight — the person next to you paid 73% less. It all depended on when they booked.",
-    "visual": "Two airplane seats side by side — blue seat labeled $180 'TUESDAY BOOKING', red seat labeled $520 'FRIDAY BOOKING'. Both slide in from opposite sides. '73% MORE — SAME SEAT' badge springs in below.",
-    "accent_color": "amber"
+    "narration": "The average worker holds 14% of their 401k in their own company's stock. Financial advisors cap it at 5%. That gap is a $47,000 ticking time bomb sitting in your portfolio.",
+    "visual": "Animated bar comparison showing 14% red bar vs 5% green bar, then a '$47,000 AT RISK' badge springs in",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Now it's in fast food, groceries, and concert tickets. McDonald's digital menus change prices based on demand. The price literally updates while you watch.",
-    "visual": "SVG burger icon beside a glowing digital price board showing $5.99 → $7.49 → $8.99 cycling. List of industries fades in one by one: Fast Food, Grocery Stores, Ride Apps, Concert Tickets.",
-    "accent_color": "amber"
+    "narration": "Enron employees had 62% of their 401k in Enron stock in 2001. When it collapsed, they lost their job AND their retirement — $2 billion in savings wiped out overnight.",
+    "visual": "Stock chart line crashing from $90 down to near zero, piggy bank cracking apart with a jagged fracture line",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "The algorithm knows your device, your location, and your purchase history. It builds a profile and prices you on desperation. You're not a customer — you're a target.",
-    "visual": "Phone silhouette in center of frame. Three data icons orbit it — LOCATION pin (amber), EYE/DEVICE (blue), SHOPPING CART/HISTORY (red). Animated lines connect them to phone. Arrow extends right to a server box labeled PRICE ENGINE.",
-    "accent_color": "amber"
+    "narration": "Here's what makes it so dangerous — if your company hits hard times, your paycheck stops AND your retirement tanks at the exact same moment. One bullet, hitting you twice.",
+    "visual": "Company building in center with SALARY badge top-left and 401K badge bottom-right, both connected by dashed lines, crack appears in building",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Studies show dynamic pricing costs the average shopper twenty-four hundred dollars every single year. Peak prices run 300% above normal. That's not a coincidence — it's a system.",
-    "visual": "Bar chart: green 'NORMAL' bar at $10 grows first, then red 'PEAK' bar at $30 grows to 3x height. '300%' badge springs onto the peak bar. $2,400 counter animates up to show annual cost.",
-    "accent_color": "amber"
+    "narration": "Log into your 401k right now and find your company's ticker. If it's over 5% of your total, move it to a broad index fund today — and it takes literally five minutes.",
+    "visual": "Phone mockup showing 401k dashboard, employer stock percentage animating down from 14% to 4%, color shifting from red to green as bar shrinks",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Here's how to fight back. Shop off-peak, search in incognito mode, and never rush a purchase. That urgency you feel is engineered — don't buy into it. Follow for more.",
-    "visual": "Person silhouette with amber shield and checkmark. Four checklist items appear one by one: Search incognito / clear cookies, Shop off-peak hours, Compare prices before buying, Never rush — urgency is engineered. Dark CTA bar at bottom: FOLLOW FOR MORE MONEY MOVES.",
-    "accent_color": "amber"
+    "narration": "Your paycheck is already your biggest bet on your employer. Don't let your retirement be a second one. Three steps, five minutes, and your future self will thank you.",
+    "visual": "Person silhouette with green shield checkmark, three numbered action steps fading in: log in, find ticker, move to index fund. Bold CTA at bottom.",
+    "accent_color": "red"
   }
 ]
