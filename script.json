@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You're already betting your job on your employer every single day. But millions of workers are quietly betting their entire retirement on them too — and don't even know it.",
-    "visual": "Two coin stacks labeled SALARY and 401K on opposite sides, arrows pointing from both toward a company building in the center",
+    "narration": "You've been paying home insurance every month thinking you're covered. But 60% of American homes have a hidden gap that shows up only after disaster. Here's what your policy is actually hiding.",
+    "visual": "Dark background. SVG house with a glowing red warning triangle on the roof. Bold text: '60% OF HOMES UNDERINSURED'. Red accent bar slides in from the left.",
     "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "The average worker holds 14% of their 401k in their own company's stock. Financial advisors cap it at 5%. That gap is a $47,000 ticking time bomb sitting in your portfolio.",
-    "visual": "Animated bar comparison showing 14% red bar vs 5% green bar, then a '$47,000 AT RISK' badge springs in",
+    "narration": "Most policies come in two types: ACV — actual cash value — and RCV — replacement cost value. Yours almost certainly says ACV. And that difference is everything.",
+    "visual": "Light background. Two insurance document cards side by side. Left card labeled 'ACV' with a red X. Right card labeled 'RCV' with a green check. Cards spring in from opposite sides.",
     "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Enron employees had 62% of their 401k in Enron stock in 2001. When it collapsed, they lost their job AND their retirement — $2 billion in savings wiped out overnight.",
-    "visual": "Stock chart line crashing from $90 down to near zero, piggy bank cracking apart with a jagged fracture line",
+    "narration": "Here's the math. Your five-year-old TV cost $800 new. ACV pays you what it's worth today — about $120. Your $1,500 laptop? The check is $200. Your insurance company pockets the gap.",
+    "visual": "Dark background. SVG television on left. Arrow pointing right to a money bag with '$120' in red. '$800' crossed out above. Counter animates from $800 down to $120.",
     "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Here's what makes it so dangerous — if your company hits hard times, your paycheck stops AND your retirement tanks at the exact same moment. One bullet, hitting you twice.",
-    "visual": "Company building in center with SALARY badge top-left and 401K badge bottom-right, both connected by dashed lines, crack appears in building",
+    "narration": "Scale that across every appliance, piece of furniture, and item in a typical home fire — and the average ACV shortfall is $63,000. That's sixty-three thousand dollars you'd owe out of pocket.",
+    "visual": "Light background. SVG house outline with orange-red flame shapes. Large bold counter animates up to '$63,000' in red. Label underneath: 'AVERAGE CLAIM SHORTFALL'.",
     "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Log into your 401k right now and find your company's ticker. If it's over 5% of your total, move it to a broad index fund today — and it takes literally five minutes.",
-    "visual": "Phone mockup showing 401k dashboard, employer stock percentage animating down from 14% to 4%, color shifting from red to green as bar shrinks",
+    "narration": "Upgrading to replacement cost coverage typically adds about $120 a year to your premium. That's 33 cents a day to close a $63,000 gap. It's the cheapest fix you'll ever make.",
+    "visual": "Dark background. SVG calendar with '365 DAYS' label. Coin icon with '$0.33/day'. Large text: '$120/YEAR' springs in. Arrow pointing to shield icon: '$63K PROTECTED'.",
     "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Your paycheck is already your biggest bet on your employer. Don't let your retirement be a second one. Three steps, five minutes, and your future self will thank you.",
-    "visual": "Person silhouette with green shield checkmark, three numbered action steps fading in: log in, find ticker, move to index fund. Bold CTA at bottom.",
+    "narration": "Pull up your policy tonight and search for 'actual cash value' or 'ACV.' If you see it, call your agent and ask for replacement cost value. Don't wait until the check comes up short.",
+    "visual": "Light background. SVG document with magnifying glass. Text highlights 'ACV' in red, then an arrow replaces it with 'RCV' in green. Bold CTA: 'CHECK YOUR POLICY TONIGHT'.",
     "accent_color": "red"
   }
 ]

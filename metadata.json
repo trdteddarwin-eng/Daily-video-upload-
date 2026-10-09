@@ -1,13 +1,16 @@
 {
   "tiktok": {
-    "caption": "Your 401k is secretly doubling down on your employer — and most people have no idea until it's too late",
-    "hashtags": ["#personalfinance", "#401k", "#investing", "#retirementplanning", "#moneytips", "#financialfreedom", "#moneypsychology", "#wealthbuilding"]
+    "caption": "Your home insurance has a hidden word that could cost you $63,000. Most people find out way too late.",
+    "hashtags": ["#homeinsurance", "#moneytips", "#personalfinance", "#insurance", "#financetok", "#moneyhacks", "#realestate", "#adulting"]
   },
   "youtube_short": {
-    "title": "Your Company Stock Is a $47K 401k Bomb",
-    "title_alternatives": ["The 401k Mistake That Destroyed Enron Workers", "Why Your 401k Has a Hidden $47,000 Risk"],
-    "description": "Most workers hold 14% of their 401k in their own company's stock — financial advisors say 5% is the max safe limit. When Enron collapsed in 2001, employees lost their jobs AND their retirement savings at the same time — $2 billion wiped out overnight. Your 401k might have the exact same hidden time bomb sitting in it right now. Log into your account today, find your company's ticker, and if it's over 5% move it to a broad index fund — it takes five minutes and could protect $47,000 of your future. #401k #personalfinance #investing #retirementplanning #moneytips",
-    "tags": ["401k", "personal finance", "investing", "retirement", "company stock", "Enron", "financial literacy", "money", "wealth building", "index funds", "retirement planning", "money psychology"]
+    "title": "Your Home Insurance Is Missing $63,000",
+    "title_alternatives": [
+      "The Hidden Word in Your Policy That Costs $63K",
+      "ACV vs RCV: The Insurance Trap Nobody Warns You About"
+    ],
+    "description": "60% of American homes are underinsured — and most people don't find out until after a disaster. Your policy probably says 'ACV' (actual cash value), which pays out what your stuff is worth today, not what it costs to replace it. A 5-year-old TV that cost $800? You're getting $120. The average shortfall after a typical claim is $63,000 out of pocket. Upgrading to replacement cost value (RCV) costs about $120/year more — that's 33 cents a day to close a $63,000 gap. Check your policy tonight. #homeinsurance #personalfinance #insurance #moneytips",
+    "tags": ["home insurance", "insurance tips", "ACV vs RCV", "personal finance", "money tips", "homeowners insurance", "financial literacy", "insurance trap", "save money", "adulting"]
   },
-  "hook_line": "YOUR 401K IS BETTING ON YOUR BOSS"
+  "hook_line": "Your home insurance is hiding a $63,000 gap"
 }
