@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You've been paying home insurance every month thinking you're covered. But 60% of American homes have a hidden gap that shows up only after disaster. Here's what your policy is actually hiding.",
-    "visual": "Dark background. SVG house with a glowing red warning triangle on the roof. Bold text: '60% OF HOMES UNDERINSURED'. Red accent bar slides in from the left.",
+    "narration": "You signed your name next to theirs to help them get a loan. Seemed like a kind thing to do. Here's what that one signature actually means for you.",
+    "visual": "Dark background. Two person silhouettes shaking hands over a co-sign contract document. Title: 'THE CO-SIGN TRAP'. Subtitle: 'One signature. Someone else's debt.'",
     "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Most policies come in two types: ACV — actual cash value — and RCV — replacement cost value. Yours almost certainly says ACV. And that difference is everything.",
-    "visual": "Light background. Two insurance document cards side by side. Left card labeled 'ACV' with a red X. Right card labeled 'RCV' with a green check. Cards spring in from opposite sides.",
+    "narration": "As the co-signer, you're 100% legally responsible for every dollar — not just if they can't pay, but the second they miss any payment at all.",
+    "visual": "Light background. SVG balance scale with 'BORROWER' on one side and 'YOU' on the other, both showing '$21K'. Bold text: 'EQUALLY LIABLE'. Sub-text: 'MISS ONE PAYMENT → YOUR CREDIT PAYS'.",
     "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Here's the math. Your five-year-old TV cost $800 new. ACV pays you what it's worth today — about $120. Your $1,500 laptop? The check is $200. Your insurance company pockets the gap.",
-    "visual": "Dark background. SVG television on left. Arrow pointing right to a money bag with '$120' in red. '$800' crossed out above. Counter animates from $800 down to $120.",
+    "narration": "Here's what nobody tells you before you sign — nearly one in three co-signers ends up being asked to pay the full loan themselves. Number three is the one you don't see coming.",
+    "visual": "Dark background. Grid of 10 person silhouettes, 3 highlighted in red with dollar signs. Large animated counter rolling up to '28%'. Text: 'OF CO-SIGNERS PAY THE DEBT'.",
     "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Scale that across every appliance, piece of furniture, and item in a typical home fire — and the average ACV shortfall is $63,000. That's sixty-three thousand dollars you'd owe out of pocket.",
-    "visual": "Light background. SVG house outline with orange-red flame shapes. Large bold counter animates up to '$63,000' in red. Label underneath: 'AVERAGE CLAIM SHORTFALL'.",
+    "narration": "And if they're even one day late? Your credit score takes the hit immediately — we're talking forty to eighty points, wiping out years of work you did.",
+    "visual": "Light background. Animated credit score gauge dropping from 750 to 670. Red alert notification: 'LATE PAYMENT REPORTED'. Bold red stamp: '-80 PTS'.",
     "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Upgrading to replacement cost coverage typically adds about $120 a year to your premium. That's 33 cents a day to close a $63,000 gap. It's the cheapest fix you'll ever make.",
-    "visual": "Dark background. SVG calendar with '365 DAYS' label. Coin icon with '$0.33/day'. Large text: '$120/YEAR' springs in. Arrow pointing to shield icon: '$63K PROTECTED'.",
+    "narration": "The money damage is bad enough — but 38% of co-signers say it permanently damaged or destroyed that relationship with the person they tried to help.",
+    "visual": "Dark background. Two person silhouettes starting close together then slowly drifting apart with a jagged rift line between them. '38%' springs in large in red. Text: 'SAY IT DAMAGED THE RELATIONSHIP'.",
     "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Pull up your policy tonight and search for 'actual cash value' or 'ACV.' If you see it, call your agent and ask for replacement cost value. Don't wait until the check comes up short.",
-    "visual": "Light background. SVG document with magnifying glass. Text highlights 'ACV' in red, then an arrow replaces it with 'RCV' in green. Bold CTA: 'CHECK YOUR POLICY TONIGHT'.",
+    "narration": "Next time someone asks you to co-sign? Offer them a gift instead. Your credit score is worth more than the favor — follow for more money traps they never taught you.",
+    "visual": "Light background. Side-by-side comparison: green gift box labeled 'GIVE $500' with checkmark vs red contract labeled 'CO-SIGN $21K' with X. CTA: 'HELP WITHOUT RISKING YOUR CREDIT'.",
     "accent_color": "red"
   }
 ]
