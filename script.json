@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You saved for years, got the keys, and felt incredible. Then month two hit — and nobody warned you about the other twenty-three thousand dollars that comes with owning a home.",
-    "visual": "House SVG with keys on dark background. Bills labeled 'Repair Bill,' 'Property Tax,' 'Insurance' float in around the house. Big amber $23,400 text appears.",
-    "accent_color": "amber"
+    "narration": "You just got a two-dollar raise. Your boss is proud. Your coworkers are jealous. And you're about to quietly lose twelve thousand dollars.",
+    "visual": "Person silhouette receives paycheck with '+$2/HR' glowing in amber. Then red warning signs and dollar bills flying away animate in.",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Number one: maintenance. Financial experts say budget one percent of your home's value every single year. On a $350,000 house, that's $3,500 — and that's the floor, not the ceiling.",
-    "visual": "House SVG on light background. Repair icons spring in — water drop for roof leak, HVAC unit, plumbing pipes. Counter animates up to $3,500/yr.",
-    "accent_color": "amber"
+    "narration": "Here's why. If you earn below a certain amount, the government helps with groceries, healthcare, childcare, and rent. Together that's worth over thirteen thousand dollars a year.",
+    "visual": "Four benefit cards spring onto screen: SNAP $6,000 | Medicaid $3,200 | Childcare $7,200 | Housing $3,400. Total banner: $19,800/year.",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Number two: property taxes and insurance. Both go up every single year. The average American pays thirty-seven-eighty-five in property taxes — and home insurance jumped twenty-one percent in just two years.",
-    "visual": "Dark background. Tax bill document and insurance shield SVGs spring in side by side with dollar amounts. '+21%' badge animates in at the bottom.",
-    "accent_color": "amber"
+    "narration": "But cross one specific income line — even by a single dollar — and all of it disappears overnight. That's called the benefits cliff. And it hits like a wall.",
+    "visual": "Animated cliff chart: income bar grows left to right, then at a threshold line the net income bar sharply drops off a cliff edge.",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Number three: utilities, HOA fees, and your appliances all have expiration dates. A fridge, washer, water heater, HVAC — add it up and you're looking at five to eight thousand dollars a year, minimum.",
-    "visual": "Light background. Fridge, washer, water heater, HVAC icons spring in one by one. '$5K–$8K/YR in hidden costs' callout box appears.",
-    "accent_color": "amber"
+    "narration": "Do the math. A two-dollar raise on forty hours a week adds about four thousand dollars a year. But you just lost thirteen thousand in benefits. You're down nine grand.",
+    "visual": "Animated equation: +$4,000 (raise) minus $13,000 (benefits lost) equals a big red -$9,000 counter that ticks down.",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Add it all up and the average homeowner spends twenty-three thousand four hundred dollars a year beyond their mortgage. Over thirty years, that's seven hundred thousand dollars that never shows up in any rent-versus-buy calculator.",
-    "visual": "Dark background. Line items appear one by one — maintenance, taxes, insurance, utilities. Running counter animates up to $23,400. Red '$700,000 over 30 years' badge springs in.",
-    "accent_color": "amber"
+    "narration": "This isn't rare. It traps thirteen million American households. People turn down overtime, refuse promotions, and stay stuck. They're not lazy — they're doing the actual math.",
+    "visual": "Grid of 13 person silhouettes. Several have red X marks over upward arrows labeled 'PROMOTION' and 'OVERTIME'.",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Before you buy, run the real numbers. Add the one percent rule, your taxes, insurance, and utilities to your mortgage payment. That's your actual housing cost — and for most people, it changes everything.",
-    "visual": "Light background. Checklist with four items ticking in — maintenance, property taxes, home insurance, utilities. Final callout box: 'Add $1,950/month — THAT'S YOUR REAL COST.'",
-    "accent_color": "amber"
+    "narration": "Before you say yes to your next raise, check your income against benefit thresholds at benefits dot gov. That two-dollar bump might literally cost you more than it pays.",
+    "visual": "Phone shape with screen showing a simple threshold meter and 'benefits.gov' label. Checkmark animation and 'KNOW YOUR CLIFF' headline.",
+    "accent_color": "red"
   }
 ]
