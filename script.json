@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You just got a two-dollar raise. Your boss is proud. Your coworkers are jealous. And you're about to quietly lose twelve thousand dollars.",
-    "visual": "Person silhouette receives paycheck with '+$2/HR' glowing in amber. Then red warning signs and dollar bills flying away animate in.",
+    "narration": "Your mutual fund lost fifteen percent last year. Then the IRS sent you a tax bill for thirty-two hundred dollars. Here's the trap nobody warns you about.",
+    "visual": "Downward-trending line chart in red on dark background. An IRS tax notice envelope slides in from the right labeled 'YOU OWE $3,200'. Big bold headline: YOUR FUND DROPPED 15%.",
     "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Here's why. If you earn below a certain amount, the government helps with groceries, healthcare, childcare, and rent. Together that's worth over thirteen thousand dollars a year.",
-    "visual": "Four benefit cards spring onto screen: SNAP $6,000 | Medicaid $3,200 | Childcare $7,200 | Housing $3,400. Total banner: $19,800/year.",
+    "narration": "All year, your fund manager is buying and selling stocks inside the fund. Those trades create capital gains — and at year end, they pass that tax bill directly to you.",
+    "visual": "Person silhouette (fund manager) at a desk with stock papers. Arrow flows from stack of sold stocks to a second person silhouette (investor) who receives a tax envelope. Label: CAPITAL GAINS DISTRIBUTION.",
     "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "But cross one specific income line — even by a single dollar — and all of it disappears overnight. That's called the benefits cliff. And it hits like a wall.",
-    "visual": "Animated cliff chart: income bar grows left to right, then at a threshold line the net income bar sharply drops off a cliff edge.",
+    "narration": "In 2022, the average mutual fund distributed eight point three percent of its value. On a hundred thousand dollar portfolio, that's over eight thousand dollars of taxable income you never actually made.",
+    "visual": "Bar chart growing from zero to 8.3% labeled 'AVERAGE DISTRIBUTION'. Below it: a $100K money stack with $8,300 peeling off labeled 'SURPRISE TAX BILL'. Counter animating up from $0 to $8,300.",
     "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Do the math. A two-dollar raise on forty hours a week adds about four thousand dollars a year. But you just lost thirteen thousand in benefits. You're down nine grand.",
-    "visual": "Animated equation: +$4,000 (raise) minus $13,000 (benefits lost) equals a big red -$9,000 counter that ticks down.",
+    "narration": "Here's the wild part — they can do this even when the fund lost money. Number one, your fund drops fifteen percent. Number two, you still owe taxes. Both. At the same time. Completely legal.",
+    "visual": "Split screen on light background. Left side: downward arrow with '-15%' in red. Right side: upward tax bill arrow with '$3,200' in red. Equal sign in center with 'BOTH' label. Scale/balance visual underneath.",
     "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "This isn't rare. It traps thirteen million American households. People turn down overtime, refuse promotions, and stay stuck. They're not lazy — they're doing the actual math.",
-    "visual": "Grid of 13 person silhouettes. Several have red X marks over upward arrows labeled 'PROMOTION' and 'OVERTIME'.",
+    "narration": "ETFs hold the exact same stocks as mutual funds — but their structure means almost zero distributions. Vanguard's S&P 500 ETF averaged point zero four percent. That's the fix.",
+    "visual": "Two side-by-side cards on dark background. Left card: MUTUAL FUND with '8.3% distributions' and a red X. Right card: ETF with '0.04% distributions' and a green checkmark. Green arrow pointing to ETF card.",
     "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Before you say yes to your next raise, check your income against benefit thresholds at benefits dot gov. That two-dollar bump might literally cost you more than it pays.",
-    "visual": "Phone shape with screen showing a simple threshold meter and 'benefits.gov' label. Checkmark animation and 'KNOW YOUR CLIFF' headline.",
+    "narration": "Log into your brokerage account. If you own mutual funds outside an IRA, you're paying this every year. Switching to the equivalent ETF takes five minutes and saves thousands. Don't leave that money on the table.",
+    "visual": "Smartphone silhouette with brokerage app screen visible. Three checklist items animate in one by one: 'Taxable account?', 'Owns mutual funds?', 'Switch to ETF'. Large green checkmark at bottom with 'TAKES 5 MINUTES'.",
     "accent_color": "red"
   }
 ]

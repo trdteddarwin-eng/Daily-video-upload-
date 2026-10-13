@@ -1,16 +1,16 @@
 {
   "tiktok": {
-    "caption": "Getting a raise can literally make you poorer. Here's the $12,000 math nobody talks about 👇",
-    "hashtags": ["#personalfinance", "#moneytips", "#financetok", "#benefitscliff", "#poverty", "#money", "#financialfreedom", "#workingclass"]
+    "caption": "Your fund lost money last year — and the IRS STILL sent you a tax bill. Here's the legal trap fund companies use on you 👇",
+    "hashtags": ["#personalfinance", "#investing", "#moneytips", "#financetok", "#mutualfunds", "#ETF", "#taxstrategy", "#money", "#wealthbuilding", "#financialeducation"]
   },
   "youtube_short": {
-    "title": "Why Your $2 Raise Actually Costs You $12,000",
+    "title": "Your Fund Lost Money — IRS Still Wants $3,200",
     "title_alternatives": [
-      "The Raise That Makes You Poorer — The Benefits Cliff Explained",
-      "Getting a Raise Can Cost You $9,000 — Here's Why"
+      "The Mutual Fund Tax Trap Nobody Warns You About",
+      "Why Your Fund Loss Still Triggers an IRS Bill"
     ],
-    "description": "Millions of workers are quietly turning down raises and promotions — not because they're lazy, but because of something called the benefits cliff. Cross one government income threshold and you can lose $13,000+ in SNAP, Medicaid, childcare subsidies, and housing aid. A $2/hr raise adds about $4,000/year. Losing your benefits package costs $13,000. That's a $9,000 net loss for accepting a promotion. Before your next raise, check your numbers at benefits.gov. #personalfinance #moneytips #benefitscliff #money #financialfreedom",
-    "tags": ["personal finance", "benefits cliff", "money tips", "poverty trap", "government benefits", "raise trap", "SNAP", "Medicaid", "financial education", "money psychology"]
+    "description": "Most investors have no idea their mutual fund can create a taxable event even when it loses money. It's called a capital gains distribution — the fund manager's trades inside the fund get passed to you as a tax bill every December. In 2022, the average mutual fund distributed 8.3% of its value while markets were down. On a $100K portfolio that's $8,300 in surprise taxable income. The fix? ETFs. Same stocks, near-zero distributions. Check your brokerage account and switch — it takes five minutes. #personalfinance #investing #mutualfunds #etf #taxstrategy #moneytips",
+    "tags": ["mutual fund tax", "capital gains distribution", "ETF vs mutual fund", "investing tax trap", "phantom income tax", "personal finance", "money tips", "brokerage account", "tax drag", "passive investing"]
   },
-  "hook_line": "Getting a raise can cost you $12,000"
+  "hook_line": "Your fund lost money — and the IRS still sent you a bill"
 }

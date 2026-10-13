@@ -1,7 +1,7 @@
 {
-  "title": "Why Your $2 Raise Actually Costs You $12,000",
-  "hook": "Millions of workers are turning down promotions on purpose — and when you see the math, it's actually the smartest move they can make.",
-  "angle": "The benefits cliff trap: crossing a government income threshold by even $1 can eliminate $13,000+ in annual benefits, making a raise a net financial loss",
-  "audience": "Low-to-middle income workers, parents on assistance, anyone near a government benefit threshold",
-  "key_numbers": ["$2 raise = ~$4,000/year extra pay", "$13,000+ in benefits at risk (SNAP, Medicaid, childcare, housing)", "13 million households affected", "net loss of $9,000 for accepting a raise"]
+  "title": "Your Fund Lost 15% — IRS Still Wants $3,200",
+  "hook": "Your mutual fund lost money last year. Then the IRS sent you a tax bill. Here's the legal trick fund companies use to dump taxes on you.",
+  "angle": "Mutual fund capital gains distributions: fund managers' trades inside the fund create taxable events that get passed to shareholders — even when the fund loses value. ETFs are immune. Most investors have no idea this exists.",
+  "audience": "Brokerage account holders with actively managed mutual funds (not in an IRA); anyone surprised by a 1099-DIV capital gains distribution",
+  "key_numbers": ["Average 2022 mutual fund distribution: 8.3% of NAV", "$8,300 in phantom taxable income on a $100K portfolio", "70% of actively managed funds distributed capital gains in down years", "ETF equivalent: under 0.1% average distribution", "Americans paid ~$14 billion in unnecessary mutual fund taxes"]
 }
