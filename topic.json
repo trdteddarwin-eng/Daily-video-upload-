@@ -1,7 +1,7 @@
 {
-  "title": "Your Fund Lost 15% — IRS Still Wants $3,200",
-  "hook": "Your mutual fund lost money last year. Then the IRS sent you a tax bill. Here's the legal trick fund companies use to dump taxes on you.",
-  "angle": "Mutual fund capital gains distributions: fund managers' trades inside the fund create taxable events that get passed to shareholders — even when the fund loses value. ETFs are immune. Most investors have no idea this exists.",
-  "audience": "Brokerage account holders with actively managed mutual funds (not in an IRA); anyone surprised by a 1099-DIV capital gains distribution",
-  "key_numbers": ["Average 2022 mutual fund distribution: 8.3% of NAV", "$8,300 in phantom taxable income on a $100K portfolio", "70% of actively managed funds distributed capital gains in down years", "ETF equivalent: under 0.1% average distribution", "Americans paid ~$14 billion in unnecessary mutual fund taxes"]
+  "title": "The Salary Band Secret Costing You $14,000",
+  "hook": "Your boss already knows the exact max they'd pay you — and they're legally allowed to hide that number while you stay thousands below it.",
+  "angle": "Most employers use salary bands with 40-80% spreads between floor and ceiling. 60% of workers are paid below the midpoint. Pay-transparent states show workers earn $14K more on average. Most workers don't even know salary bands exist — let alone that they can ask for them.",
+  "audience": "Full-time employees who have never asked about or been shown their salary band — especially those who've accepted an offer without negotiating using range data",
+  "key_numbers": ["60% of workers are paid below their salary band midpoint", "Salary bands span 40-80% from floor to ceiling", "Workers in pay-transparent states earn $14K more on average", "10 states now require salary ranges in job postings", "$5,500+ more per year for workers who negotiate using band data"]
 }

@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Your mutual fund lost fifteen percent last year. Then the IRS sent you a tax bill for thirty-two hundred dollars. Here's the trap nobody warns you about.",
-    "visual": "Downward-trending line chart in red on dark background. An IRS tax notice envelope slides in from the right labeled 'YOU OWE $3,200'. Big bold headline: YOUR FUND DROPPED 15%.",
-    "accent_color": "red"
+    "narration": "Your boss already knows the max they'd ever pay you. It's called a salary band — and they're allowed to keep it hidden while you sit thousands below your ceiling.",
+    "visual": "Worker silhouette at desk, boss figure behind them holding a document labeled SALARY BANDS with a redacted line. Question mark floats above the worker's head.",
+    "accent_color": "blue"
   },
   {
     "scene": 2,
-    "narration": "All year, your fund manager is buying and selling stocks inside the fund. Those trades create capital gains — and at year end, they pass that tax bill directly to you.",
-    "visual": "Person silhouette (fund manager) at a desk with stock papers. Arrow flows from stack of sold stocks to a second person silhouette (investor) who receives a tax envelope. Label: CAPITAL GAINS DISTRIBUTION.",
-    "accent_color": "red"
+    "narration": "Every job has a salary band — a floor, a midpoint, and a ceiling. That range can span forty to eighty percent from bottom to top. Most workers are sitting near the floor.",
+    "visual": "Horizontal band/ruler graphic growing from left to right. Three markers appear: FLOOR at left, MIDPOINT in center, CEILING at right. A person marker appears near the floor end labeled YOU.",
+    "accent_color": "blue"
   },
   {
     "scene": 3,
-    "narration": "In 2022, the average mutual fund distributed eight point three percent of its value. On a hundred thousand dollar portfolio, that's over eight thousand dollars of taxable income you never actually made.",
-    "visual": "Bar chart growing from zero to 8.3% labeled 'AVERAGE DISTRIBUTION'. Below it: a $100K money stack with $8,300 peeling off labeled 'SURPRISE TAX BILL'. Counter animating up from $0 to $8,300.",
-    "accent_color": "red"
+    "narration": "Research shows sixty percent of workers are paid below their salary band midpoint. Your company already planned to pay more — they're waiting for you to ask. Wild, right?",
+    "visual": "Ten by ten grid of 100 person icons. Sixty icons highlight red labeled BELOW MIDPOINT. Forty stay green labeled AT OR ABOVE. Counter shows 60%.",
+    "accent_color": "blue"
   },
   {
     "scene": 4,
-    "narration": "Here's the wild part — they can do this even when the fund lost money. Number one, your fund drops fifteen percent. Number two, you still owe taxes. Both. At the same time. Completely legal.",
-    "visual": "Split screen on light background. Left side: downward arrow with '-15%' in red. Right side: upward tax bill arrow with '$3,200' in red. Equal sign in center with 'BOTH' label. Scale/balance visual underneath.",
-    "accent_color": "red"
+    "narration": "Ten states now require employers to post salary ranges in job listings. Workers in those states earn an average of fourteen thousand dollars more per year. The rest are flying blind.",
+    "visual": "Ten state abbreviation badges pop in one by one. Large dollar amount +$14K animates in below. Label: PAY-TRANSPARENT STATES.",
+    "accent_color": "blue"
   },
   {
     "scene": 5,
-    "narration": "ETFs hold the exact same stocks as mutual funds — but their structure means almost zero distributions. Vanguard's S&P 500 ETF averaged point zero four percent. That's the fix.",
-    "visual": "Two side-by-side cards on dark background. Left card: MUTUAL FUND with '8.3% distributions' and a red X. Right card: ETF with '0.04% distributions' and a green checkmark. Green arrow pointing to ETF card.",
-    "accent_color": "red"
+    "narration": "Asking for your band costs absolutely nothing. Workers who use band data in salary talks earn over five thousand five hundred more on average. Your boss expects the question — they're surprised when you don't ask.",
+    "visual": "Worker figure with speech bubble asking WHAT'S THE SALARY BAND? HR figure on right. Counter animates from $0 to $5,500. Label: AVERAGE GAIN FROM ASKING.",
+    "accent_color": "blue"
   },
   {
     "scene": 6,
-    "narration": "Log into your brokerage account. If you own mutual funds outside an IRA, you're paying this every year. Switching to the equivalent ETF takes five minutes and saves thousands. Don't leave that money on the table.",
-    "visual": "Smartphone silhouette with brokerage app screen visible. Three checklist items animate in one by one: 'Taxable account?', 'Owns mutual funds?', 'Switch to ETF'. Large green checkmark at bottom with 'TAKES 5 MINUTES'.",
-    "accent_color": "red"
+    "narration": "Before your next review, ask HR one question: what's the salary band for my role? It's legal, it's expected, and it might be the most profitable sentence you say all year.",
+    "visual": "Blue quote box with the question WHAT'S THE SALARY BAND FOR MY ROLE? Checklist items animate in: Ask HR, Know your ceiling, Negotiate to midpoint. CTA: FOLLOW FOR MORE HIDDEN MONEY MOVES.",
+    "accent_color": "blue"
   }
 ]
