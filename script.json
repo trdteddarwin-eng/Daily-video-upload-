@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Your boss already knows the max they'd ever pay you. It's called a salary band — and they're allowed to keep it hidden while you sit thousands below your ceiling.",
-    "visual": "Worker silhouette at desk, boss figure behind them holding a document labeled SALARY BANDS with a redacted line. Question mark floats above the worker's head.",
-    "accent_color": "blue"
+    "narration": "Banks want you terrified of your credit card. But that fear is costing you over a thousand dollars a year — there's a legal trick hiding inside it.",
+    "visual": "Dark background. Giant SVG credit card centered. Scared person silhouette with dollar signs floating away. Title text: 'THE $1,100 TRICK BANKS HIDE'.",
+    "accent_color": "green"
   },
   {
     "scene": 2,
-    "narration": "Every job has a salary band — a floor, a midpoint, and a ceiling. That range can span forty to eighty percent from bottom to top. Most workers are sitting near the floor.",
-    "visual": "Horizontal band/ruler graphic growing from left to right. Three markers appear: FLOOR at left, MIDPOINT in center, CEILING at right. A person marker appears near the floor end labeled YOU.",
-    "accent_color": "blue"
+    "narration": "Every credit card gives you up to 55 days to pay with zero interest. That window is called the float — and most people waste it completely.",
+    "visual": "Light background. Horizontal timeline with 'PURCHASE' on left, 'DUE DATE' on right, '55 DAYS FREE' highlighted in green arc above. Calendar blocks animate in.",
+    "accent_color": "green"
   },
   {
     "scene": 3,
-    "narration": "Research shows sixty percent of workers are paid below their salary band midpoint. Your company already planned to pay more — they're waiting for you to ask. Wild, right?",
-    "visual": "Ten by ten grid of 100 person icons. Sixty icons highlight red labeled BELOW MIDPOINT. Forty stay green labeled AT OR ABOVE. Counter shows 60%.",
-    "accent_color": "blue"
+    "narration": "Instead of paying from checking, charge everything to your card. Then park that money in a high-yield savings account earning 4.5% interest.",
+    "visual": "Dark background. SVG credit card on left with arrow pointing right to a piggy bank. '4.5% APY' label grows above the piggy bank. Coins flow along the arrow.",
+    "accent_color": "green"
   },
   {
     "scene": 4,
-    "narration": "Ten states now require employers to post salary ranges in job listings. Workers in those states earn an average of fourteen thousand dollars more per year. The rest are flying blind.",
-    "visual": "Ten state abbreviation badges pop in one by one. Large dollar amount +$14K animates in below. Label: PAY-TRANSPARENT STATES.",
-    "accent_color": "blue"
+    "narration": "On $2,500 in monthly spending, that float earns $93 a month. Across a full year, that's $1,116 — from money you were going to spend anyway.",
+    "visual": "Light background. 12 rising bar chart columns animate up one by one labeled Jan–Dec. Dollar counter ticks up to $1,116 at the end. Green accent bars.",
+    "accent_color": "green"
   },
   {
     "scene": 5,
-    "narration": "Asking for your band costs absolutely nothing. Workers who use band data in salary talks earn over five thousand five hundred more on average. Your boss expects the question — they're surprised when you don't ask.",
-    "visual": "Worker figure with speech bubble asking WHAT'S THE SALARY BAND? HR figure on right. Counter animates from $0 to $5,500. Label: AVERAGE GAIN FROM ASKING.",
-    "accent_color": "blue"
+    "narration": "There's one rule that makes this work: set autopay for the full balance every month. Carry even one dollar over and you lose all the gains instantly.",
+    "visual": "Dark background. SVG calendar with a green checkmark animating in. Shield icon below. Warning text: 'AUTOPAY FULL BALANCE' flashes in. Credit card with lock icon.",
+    "accent_color": "green"
   },
   {
     "scene": 6,
-    "narration": "Before your next review, ask HR one question: what's the salary band for my role? It's legal, it's expected, and it might be the most profitable sentence you say all year.",
-    "visual": "Blue quote box with the question WHAT'S THE SALARY BAND FOR MY ROLE? Checklist items animate in: Ask HR, Know your ceiling, Negotiate to midpoint. CTA: FOLLOW FOR MORE HIDDEN MONEY MOVES.",
-    "accent_color": "blue"
+    "narration": "Open a high-yield account today and set up autopay. You just turned your bank's own weapon against them. Follow for more moves like this.",
+    "visual": "Dark background. Piggy bank SVG fills up with coins spring-animating in. 'START TODAY' bold text. Person silhouette giving thumbs up. Green glow effect.",
+    "accent_color": "green"
   }
 ]
