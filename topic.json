@@ -1,7 +1,13 @@
 {
-  "title": "Credit Card Float: The $1,100 Trick Rich People Use",
-  "hook": "Banks give you 55 free days to pay — and wealthy Americans earn $1,100 a year just by using that window strategically.",
-  "angle": "Most credit card content is fear-based. This flips it — how to weaponize the float against the bank instead of letting the bank use fear against you.",
-  "audience": "Anyone who pays their credit card in full monthly and has access to a high-yield savings account",
-  "key_numbers": ["55 days of free float", "$1,100/year earned on average monthly spend", "4.5% HYSA rate", "$2,500 monthly spending baseline"]
+  "title": "You Waste $1,600/Year in Food — Stores Plan It",
+  "hook": "You think you're bad at grocery shopping. You're not — grocery chains spend billions engineering the exact purchases you're about to throw away.",
+  "angle": "Reframes food waste as a corporate strategy, not personal failure — exposes three specific store tricks that guarantee overbuy",
+  "audience": "Anyone who buys groceries and has ever thrown away leftovers or expired food — essentially everyone",
+  "key_numbers": [
+    "$1,600/year average household food waste",
+    "40% of purchased food goes uneaten",
+    "Bulk buying increases purchase 50% but consumption only 30%",
+    "$218 billion wasted annually in the US",
+    "80 billion pounds of food trashed from retailer-set expiration dates"
+  ]
 }

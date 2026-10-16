@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Banks want you terrified of your credit card. But that fear is costing you over a thousand dollars a year — there's a legal trick hiding inside it.",
-    "visual": "Dark background. Giant SVG credit card centered. Scared person silhouette with dollar signs floating away. Title text: 'THE $1,100 TRICK BANKS HIDE'.",
-    "accent_color": "green"
+    "narration": "You think you're bad at grocery shopping. You're not — stores spend billions designing the exact purchases you're about to throw away.",
+    "visual": "Person silhouette pushing a shopping cart; food items (apple, bread, milk) inside the cart with red X marks appearing one by one; dollar bills drifting toward a trash can below",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Every credit card gives you up to 55 days to pay with zero interest. That window is called the float — and most people waste it completely.",
-    "visual": "Light background. Horizontal timeline with 'PURCHASE' on left, 'DUE DATE' on right, '55 DAYS FREE' highlighted in green arc above. Calendar blocks animate in.",
-    "accent_color": "green"
+    "narration": "The average family wastes $1,600 in food every single year. That's 40 percent of everything you bought, straight into the trash.",
+    "visual": "Animated dollar counter ticking up to $1,600; side-by-side bar chart — green bar labeled EATEN 60% and red bar labeled WASTED 40%; subtly growing trash can icon",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Instead of paying from checking, charge everything to your card. Then park that money in a high-yield savings account earning 4.5% interest.",
-    "visual": "Dark background. SVG credit card on left with arrow pointing right to a piggy bank. '4.5% APY' label grows above the piggy bank. Coins flow along the arrow.",
-    "accent_color": "green"
+    "narration": "It's not a willpower problem. Stores use three specific psychological tricks to guarantee you overbuy every single time. Here's number one.",
+    "visual": "Dark background with 'STORES USE 3 TRICKS' headline; three numbered circles spring in one by one labeled: BULK PACKS, LOSS LEADERS, EXP. DATES; circle 1 highlighted in red",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "On $2,500 in monthly spending, that float earns $93 a month. Across a full year, that's $1,116 — from money you were going to spend anyway.",
-    "visual": "Light background. 12 rising bar chart columns animate up one by one labeled Jan–Dec. Dollar counter ticks up to $1,116 at the end. Green accent bars.",
-    "accent_color": "green"
+    "narration": "Number one — bulk packs. They feel like a deal. Buying in bulk raises how much you purchase by 50 percent, but how much you eat by only 30.",
+    "visual": "Small grocery bag vs oversized CLUB PACK bag side by side; two animated progress bars — BOUGHT +50% in red, EATEN +30% in green; gap between them labeled WASTE",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "There's one rule that makes this work: set autopay for the full balance every month. Carry even one dollar over and you lose all the gains instantly.",
-    "visual": "Dark background. SVG calendar with a green checkmark animating in. Shield icon below. Warning text: 'AUTOPAY FULL BALANCE' flashes in. Credit card with lock icon.",
-    "accent_color": "green"
+    "narration": "Number two — loss leaders. Stores price milk and eggs below cost just to get you through the door. The six unplanned items in your cart? All profit.",
+    "visual": "SVG storefront with entrance; milk jug and egg carton icons at entry with red SALE tags; shopping cart fills with 3 extra impulse items appearing one at a time",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Open a high-yield account today and set up autopay. You just turned your bank's own weapon against them. Follow for more moves like this.",
-    "visual": "Dark background. Piggy bank SVG fills up with coins spring-animating in. 'START TODAY' bold text. Person silhouette giving thumbs up. Green glow effect.",
-    "accent_color": "green"
+    "narration": "Number three — expiration dates aren't safety deadlines. Retailers pick the date. Eighty billion pounds of good food gets trashed because of a number stores chose. Track what you toss for just seven days.",
+    "visual": "Cereal box with a prominent expiration date label and a trash can icon; large stat '80 BILLION LBS WASTED/YEAR'; CTA button: 'Track your waste — save $800 this year'",
+    "accent_color": "red"
   }
 ]
