@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You think you're bad at grocery shopping. You're not — stores spend billions designing the exact purchases you're about to throw away.",
-    "visual": "Person silhouette pushing a shopping cart; food items (apple, bread, milk) inside the cart with red X marks appearing one by one; dollar bills drifting toward a trash can below",
-    "accent_color": "red"
+    "narration": "Here's something nobody tells you — most people don't choose when they retire. Half of all retirees are pushed out before they planned.",
+    "visual": "Dark background. Person silhouette at a desk with a calendar showing '65'. Text: 'YOU THINK YOU CONTROL WHEN YOU RETIRE'. A red strikethrough line slashes across the text, followed by the word 'WRONG.' appearing in red.",
+    "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "The average family wastes $1,600 in food every single year. That's 40 percent of everything you bought, straight into the trash.",
-    "visual": "Animated dollar counter ticking up to $1,600; side-by-side bar chart — green bar labeled EATEN 60% and red bar labeled WASTED 40%; subtly growing trash can icon",
-    "accent_color": "red"
+    "narration": "The Employee Benefit Research Institute tracked it. Fifty percent retire involuntarily — layoffs, health problems, family emergencies. The average forced exit hits three years early.",
+    "visual": "Light background. Ten stick figure icons in two rows of five. The top five glow amber — representing the 50% forced out. The bottom five are gray. Large stat text: '50% RETIRE INVOLUNTARILY — AVG 3 YEARS EARLY'.",
+    "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "It's not a willpower problem. Stores use three specific psychological tricks to guarantee you overbuy every single time. Here's number one.",
-    "visual": "Dark background with 'STORES USE 3 TRICKS' headline; three numbered circles spring in one by one labeled: BULK PACKS, LOSS LEADERS, EXP. DATES; circle 1 highlighted in red",
-    "accent_color": "red"
+    "narration": "Number one cost: Social Security. Claiming at sixty-two instead of sixty-seven permanently cuts your check by thirty percent — every single month, for the rest of your life.",
+    "visual": "Dark background. SVG Social Security card showing $1,800/month. Then a red '-30%' spring-in animation, with text: 'EARLY CLAIM PENALTY — EVERY MONTH · FOREVER. $1,800 → $1,260/mo'.",
+    "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "Number one — bulk packs. They feel like a deal. Buying in bulk raises how much you purchase by 50 percent, but how much you eat by only 30.",
-    "visual": "Small grocery bag vs oversized CLUB PACK bag side by side; two animated progress bars — BOUGHT +50% in red, EATEN +30% in green; gap between them labeled WASTE",
-    "accent_color": "red"
+    "narration": "Number two: three fewer years of savings compounding at seven percent adds up to over a hundred and forty thousand dollars in lost investment growth alone.",
+    "visual": "Light background. Animated piggy bank SVG with an amber coin dropping in the slot. Two growing bar chart columns side by side — amber bar labeled PLANNED taller than red bar labeled FORCED. Stat: '-$140K IN GROWTH'.",
+    "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "Number two — loss leaders. Stores price milk and eggs below cost just to get you through the door. The six unplanned items in your cart? All profit.",
-    "visual": "SVG storefront with entrance; milk jug and egg carton icons at entry with red SALE tags; shopping cart fills with 3 extra impulse items appearing one at a time",
-    "accent_color": "red"
+    "narration": "Add those two hits together over a twenty-year retirement and you're looking at three hundred and twelve thousand dollars — that's the real price tag of an unplanned early exit.",
+    "visual": "Dark background. Two horizontal bars growing: 'LOST SS INCOME $172K' in red and 'LOST INVESTMENT GROWTH $140K' in amber. Then a large white '$312K' springs in with label: 'TOTAL FORCED RETIREMENT COST'.",
+    "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "Number three — expiration dates aren't safety deadlines. Retailers pick the date. Eighty billion pounds of good food gets trashed because of a number stores chose. Track what you toss for just seven days.",
-    "visual": "Cereal box with a prominent expiration date label and a trash can icon; large stat '80 BILLION LBS WASTED/YEAR'; CTA button: 'Track your waste — save $800 this year'",
-    "accent_color": "red"
+    "narration": "The fix: build a bridge fund — two years of expenses in cash. That way you control when you claim Social Security, even when you can't control when you stop working.",
+    "visual": "Light background. A savings jar SVG filling up with green liquid. Label on jar: 'BRIDGE FUND'. Text overlay: '2 YEARS OF EXPENSES IN CASH = POWER OVER TIMING'. Bottom text: 'PLAN FOR 62 · HOPE FOR 67'.",
+    "accent_color": "amber"
   }
 ]

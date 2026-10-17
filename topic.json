@@ -1,13 +1,7 @@
 {
-  "title": "You Waste $1,600/Year in Food — Stores Plan It",
-  "hook": "You think you're bad at grocery shopping. You're not — grocery chains spend billions engineering the exact purchases you're about to throw away.",
-  "angle": "Reframes food waste as a corporate strategy, not personal failure — exposes three specific store tricks that guarantee overbuy",
-  "audience": "Anyone who buys groceries and has ever thrown away leftovers or expired food — essentially everyone",
-  "key_numbers": [
-    "$1,600/year average household food waste",
-    "40% of purchased food goes uneaten",
-    "Bulk buying increases purchase 50% but consumption only 30%",
-    "$218 billion wasted annually in the US",
-    "80 billion pounds of food trashed from retailer-set expiration dates"
-  ]
+  "title": "Half of Retirees Were Forced Out — $312K Gone",
+  "hook": "You've been planning to retire at 65, but statistically you'll stop working at 62 — and you won't choose when.",
+  "angle": "Involuntary early retirement is the most common retirement outcome, yet nobody plans for it — the forced exit triggers SS cuts and kills compounding, costing $312K on average",
+  "audience": "Workers 45-60 who are planning for retirement but not planning for an involuntary early exit",
+  "key_numbers": ["50% of retirees exit involuntarily", "average 3 years before planned", "30% permanent SS cut at 62 vs 67", "$312,000 total average loss"]
 }
