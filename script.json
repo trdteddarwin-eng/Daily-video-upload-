@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Here's something nobody tells you — most people don't choose when they retire. Half of all retirees are pushed out before they planned.",
-    "visual": "Dark background. Person silhouette at a desk with a calendar showing '65'. Text: 'YOU THINK YOU CONTROL WHEN YOU RETIRE'. A red strikethrough line slashes across the text, followed by the word 'WRONG.' appearing in red.",
-    "accent_color": "amber"
+    "narration": "Half of all American marriages end in divorce. And when they do, the average couple silently destroys a quarter million dollars — most of it with zero warning.",
+    "visual": "Two wedding rings on dark background, one with a diamond. Red crack appears between them and the right ring slides away. '$250K' title fades in at top.",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "The Employee Benefit Research Institute tracked it. Fifty percent retire involuntarily — layoffs, health problems, family emergencies. The average forced exit hits three years early.",
-    "visual": "Light background. Ten stick figure icons in two rows of five. The top five glow amber — representing the 50% forced out. The bottom five are gray. Large stat text: '50% RETIRE INVOLUNTARILY — AVG 3 YEARS EARLY'.",
-    "accent_color": "amber"
+    "narration": "Number one — legal fees. The average divorce costs fifteen thousand dollars per spouse in attorney fees alone. That's thirty thousand dollars gone before a single asset is divided.",
+    "visual": "Two stacks of green cash bills on light background, labeled 'Your Fees $15,000' and 'Their Fees $15,000'. A red '$30,000 GONE' banner flies up and off screen.",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Number one cost: Social Security. Claiming at sixty-two instead of sixty-seven permanently cuts your check by thirty percent — every single month, for the rest of your life.",
-    "visual": "Dark background. SVG Social Security card showing $1,800/month. Then a red '-30%' spring-in animation, with text: 'EARLY CLAIM PENALTY — EVERY MONTH · FOREVER. $1,800 → $1,260/mo'.",
-    "accent_color": "amber"
+    "narration": "Number two — your retirement. Splitting a 401k takes a QDRO court order, and taxes plus early withdrawal penalties can eat up to forty percent of every dollar transferred out.",
+    "visual": "Pink piggy bank on dark background cracks down the middle. Coins fall from the crack. A red '40% LOST TO TAXES' badge appears at the bottom.",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Number two: three fewer years of savings compounding at seven percent adds up to over a hundred and forty thousand dollars in lost investment growth alone.",
-    "visual": "Light background. Animated piggy bank SVG with an amber coin dropping in the slot. Two growing bar chart columns side by side — amber bar labeled PLANNED taller than red bar labeled FORCED. Stat: '-$140K IN GROWTH'.",
-    "accent_color": "amber"
+    "narration": "Number three — two households instead of one. Studies show living solo costs eighty percent more per person than shared living. Your utility bills, rent, and groceries just doubled.",
+    "visual": "One house on light background splits into two smaller houses sliding apart, each labeled '$2,100/mo'. A red '80% MORE EXPENSIVE' badge springs in at the bottom.",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Add those two hits together over a twenty-year retirement and you're looking at three hundred and twelve thousand dollars — that's the real price tag of an unplanned early exit.",
-    "visual": "Dark background. Two horizontal bars growing: 'LOST SS INCOME $172K' in red and 'LOST INVESTMENT GROWTH $140K' in amber. Then a large white '$312K' springs in with label: 'TOTAL FORCED RETIREMENT COST'.",
-    "accent_color": "amber"
+    "narration": "And here's the part nobody talks about — the compounding gap. Over twenty years, divorced households build two hundred and fifty thousand dollars less in net worth than married ones starting from the same point.",
+    "visual": "Two diverging line chart on dark background. Green 'Together' line rises steeply, red 'After Divorce' line rises slowly. A '$250K GAP' annotation appears with a bracket.",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "The fix: build a bridge fund — two years of expenses in cash. That way you control when you claim Social Security, even when you can't control when you stop working.",
-    "visual": "Light background. A savings jar SVG filling up with green liquid. Label on jar: 'BRIDGE FUND'. Text overlay: '2 YEARS OF EXPENSES IN CASH = POWER OVER TIMING'. Bottom text: 'PLAN FOR 62 · HOPE FOR 67'.",
-    "accent_color": "amber"
+    "narration": "A prenup costs about twenty-five hundred dollars and can protect hundreds of thousands. Knowing the real numbers changes every conversation. Follow for more money truths they don't teach in school.",
+    "visual": "Green shield with dollar sign on light background. '$2,500 PRENUP' badge springs in. Red 'FOLLOW FOR MORE' button pulses at bottom.",
+    "accent_color": "red"
   }
 ]

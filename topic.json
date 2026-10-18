@@ -1,7 +1,13 @@
 {
-  "title": "Half of Retirees Were Forced Out — $312K Gone",
-  "hook": "You've been planning to retire at 65, but statistically you'll stop working at 62 — and you won't choose when.",
-  "angle": "Involuntary early retirement is the most common retirement outcome, yet nobody plans for it — the forced exit triggers SS cuts and kills compounding, costing $312K on average",
-  "audience": "Workers 45-60 who are planning for retirement but not planning for an involuntary early exit",
-  "key_numbers": ["50% of retirees exit involuntarily", "average 3 years before planned", "30% permanent SS cut at 62 vs 67", "$312,000 total average loss"]
+  "title": "The Hidden $250K Bill Inside Every Divorce",
+  "hook": "Half of marriages end in divorce — and the average couple destroys $250,000 in wealth nobody warned them about.",
+  "angle": "Not just legal fees — the QDRO taxes, dual-household costs, and compounding wealth gap that permanently alter retirement trajectories",
+  "audience": "Anyone married, getting married, or thinking about marriage who has never calculated the full financial cost of divorce",
+  "key_numbers": [
+    "50% divorce rate in America",
+    "$15,000 average legal fees per spouse",
+    "Up to 40% of 401k lost to QDRO taxes and penalties",
+    "80% higher solo living costs per person",
+    "$250,000 average wealth gap at retirement vs. married peers"
+  ]
 }
