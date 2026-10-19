@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Half of all American marriages end in divorce. And when they do, the average couple silently destroys a quarter million dollars — most of it with zero warning.",
-    "visual": "Two wedding rings on dark background, one with a diamond. Red crack appears between them and the right ring slides away. '$250K' title fades in at top.",
-    "accent_color": "red"
+    "narration": "Here's something nobody ever explains — to actually spend $100, you had to earn over $150 first. Let's break that down.",
+    "visual": "A $100 bill SVG springs onto dark screen, question mark appears above it, then an amber badge reveals 'EARN $153' below — hooking the viewer into the math",
+    "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "Number one — legal fees. The average divorce costs fifteen thousand dollars per spouse in attorney fees alone. That's thirty thousand dollars gone before a single asset is divided.",
-    "visual": "Two stacks of green cash bills on light background, labeled 'Your Fees $15,000' and 'Their Fees $15,000'. A red '$30,000 GONE' banner flies up and off screen.",
-    "accent_color": "red"
+    "narration": "It starts the second you get paid. In the 22% federal bracket, the IRS takes 22 cents from every dollar before you even see it.",
+    "visual": "Person silhouette with green income bar rising, IRS government building slides in from right, amber chunk of the bar breaks off and flies to the building on light background",
+    "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Number two — your retirement. Splitting a 401k takes a QDRO court order, and taxes plus early withdrawal penalties can eat up to forty percent of every dollar transferred out.",
-    "visual": "Pink piggy bank on dark background cracks down the middle. Coins fall from the crack. A red '40% LOST TO TAXES' badge appears at the bottom.",
-    "accent_color": "red"
+    "narration": "But that's not all. On top of that, 7.65% goes to payroll taxes — Social Security and Medicare. Most people barely even notice this one.",
+    "visual": "Pay stub SVG card showing GROSS PAY, FEDERAL TAX, and FICA lines fading in sequentially, FICA row glows amber on dark background",
+    "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "Number three — two households instead of one. Studies show living solo costs eighty percent more per person than shared living. Your utility bills, rent, and groceries just doubled.",
-    "visual": "One house on light background splits into two smaller houses sliding apart, each labeled '$2,100/mo'. A red '80% MORE EXPENSIVE' badge springs in at the bottom.",
-    "accent_color": "red"
+    "narration": "Now you've got money to spend — but the register adds one more layer. Sales tax averages 7.5% nationwide, right at checkout.",
+    "visual": "Shopping bag and receipt SVG sliding up with three line items: SUBTOTAL $93, TAX (7.5%) $6.98, TOTAL $100 — tax line pulses amber on light background",
+    "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "And here's the part nobody talks about — the compounding gap. Over twenty years, divorced households build two hundred and fifty thousand dollars less in net worth than married ones starting from the same point.",
-    "visual": "Two diverging line chart on dark background. Green 'Together' line rises steeply, red 'After Divorce' line rises slowly. A '$250K GAP' annotation appears with a bracket.",
-    "accent_color": "red"
+    "narration": "Add it all up. Earn $153. Federal takes $34. FICA takes $12. State takes $7. Sales tax takes $7.50. That's $60 gone and $100 to spend.",
+    "visual": "Tall stacked bar chart builds bottom-to-top: green kept portion, then red federal, orange FICA, yellow state, amber sales tax — labels reveal beside each segment on dark background",
+    "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "A prenup costs about twenty-five hundred dollars and can protect hundreds of thousands. Knowing the real numbers changes every conversation. Follow for more money truths they don't teach in school.",
-    "visual": "Green shield with dollar sign on light background. '$2,500 PRENUP' badge springs in. Red 'FOLLOW FOR MORE' button pulses at bottom.",
-    "accent_color": "red"
+    "narration": "The fix? Pre-tax accounts. A 401k, HSA, or FSA spends money before income taxes hit — turning $100 you put in into $153 worth of buying power.",
+    "visual": "Three shield icons spring in labeled 401k, HSA, FSA with dollar signs protected inside each, CTA button 'FOLLOW FOR MORE' fades in at bottom on light background",
+    "accent_color": "amber"
   }
 ]
