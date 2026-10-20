@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Here's something nobody ever explains — to actually spend $100, you had to earn over $150 first. Let's break that down.",
-    "visual": "A $100 bill SVG springs onto dark screen, question mark appears above it, then an amber badge reveals 'EARN $153' below — hooking the viewer into the math",
-    "accent_color": "amber"
+    "narration": "Your credit score doesn't just affect loans. In 47 states, it secretly controls your car insurance rate — and the gap is absolutely massive.",
+    "visual": "Credit score gauge (semi-circular meter) with five color zones from red to green. Animated needle springs from the far left to the orange-yellow zone at score 520. '47 STATES' badge below. '$999/YEAR GAP' text fades in.",
+    "accent_color": "blue"
   },
   {
     "scene": 2,
-    "narration": "It starts the second you get paid. In the 22% federal bracket, the IRS takes 22 cents from every dollar before you even see it.",
-    "visual": "Person silhouette with green income bar rising, IRS government building slides in from right, amber chunk of the bar breaks off and flies to the building on light background",
-    "accent_color": "amber"
+    "narration": "A driver with poor credit pays $1,867 a year for car insurance. Same driver, great credit? Just $868. That thousand-dollar gap is completely invisible to you.",
+    "visual": "Simple car SVG (body, roof, two wheels, windshield) centered on light background. Two animated price bars grow up below it — tall red bar labeled POOR CREDIT ($1,867) and short green bar labeled GREAT CREDIT ($868). '$999 ANNUAL GAP' badge at bottom.",
+    "accent_color": "blue"
   },
   {
     "scene": 3,
-    "narration": "But that's not all. On top of that, 7.65% goes to payroll taxes — Social Security and Medicare. Most people barely even notice this one.",
-    "visual": "Pay stub SVG card showing GROSS PAY, FEDERAL TAX, and FICA lines fading in sequentially, FICA row glows amber on dark background",
-    "accent_color": "amber"
+    "narration": "Over ten years that gap quietly stacks to nearly $10,000. Your insurer isn't going to tell you they're doing this — and most people have absolutely no idea.",
+    "visual": "Dark background. Ten bars grow in with stagger, each taller than the last. Large dollar counter at top animates from $0 to $9,990. Year labels (Y1-Y10) below each bar. Bridge text: 'YOUR INSURER WON'T TELL YOU THIS. BUT YOU CAN FIX IT IN 30 DAYS.'",
+    "accent_color": "blue"
   },
   {
     "scene": 4,
-    "narration": "Now you've got money to spend — but the register adds one more layer. Sales tax averages 7.5% nationwide, right at checkout.",
-    "visual": "Shopping bag and receipt SVG sliding up with three line items: SUBTOTAL $93, TAX (7.5%) $6.98, TOTAL $100 — tax line pulses amber on light background",
-    "accent_color": "amber"
+    "narration": "It's called a credit-based insurance score, legal in 47 states. And 42% of drivers never knew it existed. Your insurer is quietly counting on that ignorance.",
+    "visual": "Light background. Person silhouette with question mark bubble springs in. Large '42%' statistic animates up. Subtitle: 'HAD NO IDEA / IT AFFECTED THEIR INSURANCE'. Blue badge: '47 STATES — IT'S ALL LEGAL'.",
+    "accent_color": "blue"
   },
   {
     "scene": 5,
-    "narration": "Add it all up. Earn $153. Federal takes $34. FICA takes $12. State takes $7. Sales tax takes $7.50. That's $60 gone and $100 to spend.",
-    "visual": "Tall stacked bar chart builds bottom-to-top: green kept portion, then red federal, orange FICA, yellow state, amber sales tax — labels reveal beside each segment on dark background",
-    "accent_color": "amber"
+    "narration": "Here's the fix — get your credit card balance under 10% utilization. That alone can move you a full tier in just 30 days, and your next renewal will reflect it.",
+    "visual": "Dark background. Credit card SVG (blue card, chip, masked card number). Below it, a utilization bar animates from 80% (red) down to 10% (green). Percentage label updates in real time. '80% = HIGH RISK' → '10% = SWEET SPOT' transition.",
+    "accent_color": "blue"
   },
   {
     "scene": 6,
-    "narration": "The fix? Pre-tax accounts. A 401k, HSA, or FSA spends money before income taxes hit — turning $100 you put in into $153 worth of buying power.",
-    "visual": "Three shield icons spring in labeled 401k, HSA, FSA with dollar signs protected inside each, CTA button 'FOLLOW FOR MORE' fades in at bottom on light background",
-    "accent_color": "amber"
+    "narration": "The average savings for moving one credit tier is $503 a year. Check your utilization tonight — your insurance renewal is waiting on whether you know this.",
+    "visual": "Light background. Piggy bank SVG (yellow/amber body, head, snout, four legs, curly tail). Coin drops into coin slot. Dollar counter animates from $0 to $503. Black CTA bar: 'CHECK YOUR UTILIZATION TONIGHT'. Final text: 'FOLLOW FOR MORE MONEY MOVES.'",
+    "accent_color": "blue"
   }
 ]

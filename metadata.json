@@ -1,16 +1,13 @@
 {
   "tiktok": {
-    "caption": "To spend $100 you actually had to earn $153. The hidden tax math nobody teaches you.",
-    "hashtags": ["#personalfinance", "#taxes", "#moneytips", "#financetok", "#moneypsychology", "#investing", "#401k", "#savemoney"]
+    "caption": "Your credit score secretly sets your car insurance in 47 states — poor vs excellent is a $999/year gap 😳 #creditscores #carinsurance #moneytips",
+    "hashtags": ["#creditscores", "#carinsurance", "#moneytips", "#personalfinance", "#finance", "#moneyhacks", "#creditscore", "#savemoney", "#financetips"]
   },
   "youtube_short": {
-    "title": "You Earn $153 to Spend $100 (The Hidden Tax)",
-    "title_alternatives": [
-      "Why $100 Costs $153 to Earn — Tax Math Nobody Shows",
-      "The 3 Tax Layers Eating Every Dollar You Spend"
-    ],
-    "description": "Nobody tells you this. Every dollar you spend went through three layers of taxation before it got to your wallet — federal income tax, payroll FICA tax, and sales tax. Add them up and spending $100 actually required you to earn $153. The fix is using pre-tax accounts like your 401k, HSA, or FSA. Follow for daily money psychology drops. #taxes #personalfinance #moneytips",
-    "tags": ["personal finance", "taxes", "money tips", "income tax", "FICA", "sales tax", "true cost", "money psychology", "financial literacy", "401k", "HSA"]
+    "title": "Your Credit Score Sets Your Car Insurance Rate",
+    "title_alternatives": ["Credit Score Secretly Controls Your Insurance Bill", "47 States Let Insurers Use Your Credit Score Against You"],
+    "description": "Most people have no idea their credit score is being used to set their car insurance premium — but it's completely legal in 47 states. A driver with poor credit pays $1,867/year on average while the same driver with excellent credit pays just $868. That's a $999 annual gap. Over ten years, that's nearly $10,000 quietly drained. The fix is simpler than you think: get your credit card utilization under 10% and you can move up a tier in as little as 30 days — and your next renewal will reflect it. #creditscores #carinsurance #personalfinance #moneypsychology #savemoney #creditscoretips",
+    "tags": ["credit score", "car insurance", "personal finance", "money tips", "finance hacks", "save money", "credit card utilization", "insurance tips", "money psychology", "credit based insurance score"]
   },
-  "hook_line": "To spend $100 you had to earn $153"
+  "hook_line": "Your credit score secretly sets your car insurance"
 }
