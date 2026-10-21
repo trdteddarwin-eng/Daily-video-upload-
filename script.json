@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Your credit score doesn't just affect loans. In 47 states, it secretly controls your car insurance rate — and the gap is absolutely massive.",
-    "visual": "Credit score gauge (semi-circular meter) with five color zones from red to green. Animated needle springs from the far left to the orange-yellow zone at score 520. '47 STATES' badge below. '$999/YEAR GAP' text fades in.",
-    "accent_color": "blue"
+    "narration": "If your kid got a scholarship or didn't use their full 529, most parents think that money's basically stuck. But there's a $35,000 escape hatch most people have never heard of.",
+    "visual": "529 document icon springs in on dark background. Large '529' label with a dollar sign. Question mark pops up. Text overlay: '529 LEFTOVER? THERE'S A $35,000 ESCAPE HATCH'",
+    "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "A driver with poor credit pays $1,867 a year for car insurance. Same driver, great credit? Just $868. That thousand-dollar gap is completely invisible to you.",
-    "visual": "Simple car SVG (body, roof, two wheels, windshield) centered on light background. Two animated price bars grow up below it — tall red bar labeled POOR CREDIT ($1,867) and short green bar labeled GREAT CREDIT ($868). '$999 ANNUAL GAP' badge at bottom.",
-    "accent_color": "blue"
+    "narration": "Old rule was brutal — 529 money had to go to education or you'd pay taxes plus a 10% penalty to pull it out. Billions of dollars sat trapped in accounts families couldn't touch.",
+    "visual": "Light background. Money bag with padlock SVG. 'EDUCATION ONLY' and '10% PENALTY TO EXIT' warning text. 'BILLIONS TRAPPED' subtext.",
+    "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Over ten years that gap quietly stacks to nearly $10,000. Your insurer isn't going to tell you they're doing this — and most people have absolutely no idea.",
-    "visual": "Dark background. Ten bars grow in with stagger, each taller than the last. Large dollar counter at top animates from $0 to $9,990. Year labels (Y1-Y10) below each bar. Bridge text: 'YOUR INSURER WON'T TELL YOU THIS. BUT YOU CAN FIX IT IN 30 DAYS.'",
-    "accent_color": "blue"
+    "narration": "In 2024, SECURE 2.0 changed the game completely. Now you can roll unused 529 money straight into a Roth IRA — no taxes, no penalties, completely free. That's a big deal.",
+    "visual": "Dark background. SECURE 2.0 scroll document. Animated arrow moving from '529' box to 'ROTH IRA' box. 'NO TAXES. NO PENALTIES. COMPLETELY FREE.' text overlay.",
+    "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "It's called a credit-based insurance score, legal in 47 states. And 42% of drivers never knew it existed. Your insurer is quietly counting on that ignorance.",
-    "visual": "Light background. Person silhouette with question mark bubble springs in. Large '42%' statistic animates up. Subtitle: 'HAD NO IDEA / IT AFFECTED THEIR INSURANCE'. Blue badge: '47 STATES — IT'S ALL LEGAL'.",
-    "accent_color": "blue"
+    "narration": "Here are the three rules: number one, the 529 must be at least 15 years old. Number two, max $7,000 per year. Number three, the lifetime limit is $35,000 total.",
+    "visual": "Light background. Three numbered rule cards spring in one by one — calendar icon '15-YEAR ACCOUNT MIN AGE', dollar icon '$7,000/YEAR MAX ROLLOVER', trophy icon '$35,000 LIFETIME LIMIT'.",
+    "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "Here's the fix — get your credit card balance under 10% utilization. That alone can move you a full tier in just 30 days, and your next renewal will reflect it.",
-    "visual": "Dark background. Credit card SVG (blue card, chip, masked card number). Below it, a utilization bar animates from 80% (red) down to 10% (green). Percentage label updates in real time. '80% = HIGH RISK' → '10% = SWEET SPOT' transition.",
-    "accent_color": "blue"
+    "narration": "Here's why it matters: $35,000 in a Roth IRA at 25 grows to $533,000 by retirement — completely tax-free forever. That's one of the most powerful moves in the entire tax code.",
+    "visual": "Dark background. Animated bar grows from a small '$35K AGE 25' bar to a tall green '$533,000 AGE 65' bar. Final callout: '$533,000 TAX-FREE FOREVER'.",
+    "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "The average savings for moving one credit tier is $503 a year. Check your utilization tonight — your insurance renewal is waiting on whether you know this.",
-    "visual": "Light background. Piggy bank SVG (yellow/amber body, head, snout, four legs, curly tail). Coin drops into coin slot. Dollar counter animates from $0 to $503. Black CTA bar: 'CHECK YOUR UTILIZATION TONIGHT'. Final text: 'FOLLOW FOR MORE MONEY MOVES.'",
-    "accent_color": "blue"
+    "narration": "Nine out of ten 529 owners have no idea this rule even exists. If there's leftover money sitting in a 529, this is the move. Follow for more money moves they never taught you.",
+    "visual": "Light background. Giant '90%' springs in. Animated '529 → ROTH IRA' arrow diagram. Dark card CTA: 'FOLLOW FOR MORE MONEY MOVES THEY NEVER TAUGHT YOU'.",
+    "accent_color": "amber"
   }
 ]
