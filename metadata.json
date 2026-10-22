@@ -1,13 +1,16 @@
 {
   "tiktok": {
-    "caption": "Your credit score secretly sets your car insurance in 47 states — poor vs excellent is a $999/year gap 😳 #creditscores #carinsurance #moneytips",
-    "hashtags": ["#creditscores", "#carinsurance", "#moneytips", "#personalfinance", "#finance", "#moneyhacks", "#creditscore", "#savemoney", "#financetips"]
+    "caption": "Everyone uses the 4% rule to plan retirement. The guy who invented it says it's wrong — you're $250K short.",
+    "hashtags": ["#finance", "#retirement", "#personalfinance", "#moneytips", "#investing", "#retirementplanning", "#financialliteracy", "#wealthbuilding"]
   },
   "youtube_short": {
-    "title": "Your Credit Score Sets Your Car Insurance Rate",
-    "title_alternatives": ["Credit Score Secretly Controls Your Insurance Bill", "47 States Let Insurers Use Your Credit Score Against You"],
-    "description": "Most people have no idea their credit score is being used to set their car insurance premium — but it's completely legal in 47 states. A driver with poor credit pays $1,867/year on average while the same driver with excellent credit pays just $868. That's a $999 annual gap. Over ten years, that's nearly $10,000 quietly drained. The fix is simpler than you think: get your credit card utilization under 10% and you can move up a tier in as little as 30 days — and your next renewal will reflect it. #creditscores #carinsurance #personalfinance #moneypsychology #savemoney #creditscoretips",
-    "tags": ["credit score", "car insurance", "personal finance", "money tips", "finance hacks", "save money", "credit card utilization", "insurance tips", "money psychology", "credit based insurance score"]
+    "title": "The 4% Rule Is Broken (You're $250K Short)",
+    "title_alternatives": [
+      "Why Your Retirement Number Is $250,000 Wrong",
+      "The Broken Retirement Rule Nobody Told You About"
+    ],
+    "description": "The 4% safe withdrawal rule that everyone uses to plan retirement was calculated in 1994 when bonds paid nearly 7%. Today bonds pay half that, and people live a full decade longer — so the updated safe rate is 3.3%. That means you need $1.21 million, not $1 million, to safely pull $40,000 a year. That's a $210,000 gap most retirement calculators never show you. Follow for more money moves they don't teach you in school. #retirement #personalfinance #finance #moneytips #investing #retirementplanning",
+    "tags": ["retirement planning", "personal finance", "4% rule", "retirement savings", "financial literacy", "investing", "safe withdrawal rate", "retirement calculator", "money tips", "financial independence", "wealth building", "retire early"]
   },
-  "hook_line": "Your credit score secretly sets your car insurance"
+  "hook_line": "Your retirement number is $250K short"
 }

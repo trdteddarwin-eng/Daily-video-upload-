@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Your credit score doesn't just affect loans. In 47 states, it secretly controls your car insurance rate — and the gap is absolutely massive.",
-    "visual": "Credit score gauge (semi-circular meter) with five color zones from red to green. Animated needle springs from the far left to the orange-yellow zone at score 520. '47 STATES' badge below. '$999/YEAR GAP' text fades in.",
-    "accent_color": "blue"
+    "narration": "Millions use one rule to plan their entire retirement — divide your spending by four percent. That's your number. But the guy who invented it now says it's broken.",
+    "visual": "Calculator SVG displaying '$40K ÷ 4% = $1,000,000' springs in. Large '4% RULE' text fades in. Red banner labeled 'IS BROKEN' with crack lines appears. Sub-text 'you're $250K short' fades in below.",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "A driver with poor credit pays $1,867 a year for car insurance. Same driver, great credit? Just $868. That thousand-dollar gap is completely invisible to you.",
-    "visual": "Simple car SVG (body, roof, two wheels, windshield) centered on light background. Two animated price bars grow up below it — tall red bar labeled POOR CREDIT ($1,867) and short green bar labeled GREAT CREDIT ($868). '$999 ANNUAL GAP' badge at bottom.",
-    "accent_color": "blue"
+    "narration": "Back in 1994, Bill Bengen crunched decades of market data to build this rule. Bonds were paying nearly seven percent back then — and it worked perfectly for that world.",
+    "visual": "Calendar SVG showing 1994 springs in. Bond certificate card shows '6.8% annual yield' in green. Animated progress bar grows to represent the high bond yield era.",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Over ten years that gap quietly stacks to nearly $10,000. Your insurer isn't going to tell you they're doing this — and most people have absolutely no idea.",
-    "visual": "Dark background. Ten bars grow in with stagger, each taller than the last. Large dollar counter at top animates from $0 to $9,990. Year labels (Y1-Y10) below each bar. Bridge text: 'YOUR INSURER WON'T TELL YOU THIS. BUT YOU CAN FIX IT IN 30 DAYS.'",
-    "accent_color": "blue"
+    "narration": "Here's what broke it: bonds now pay half what they did then, and people live a full decade longer. That gives a four percent withdrawal roughly a one-in-three shot at running out before you do.",
+    "visual": "Side-by-side boxes: '6.8% bonds 1994' in green vs '3.5% bonds today' in red, with downward arrow. Two lifespan bars: 1994 to age 80 (shorter), now to age 90+ (longer). Red warning box: '1 IN 3 CHANCE YOUR MONEY RUNS OUT'.",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "It's called a credit-based insurance score, legal in 47 states. And 42% of drivers never knew it existed. Your insurer is quietly counting on that ignorance.",
-    "visual": "Light background. Person silhouette with question mark bubble springs in. Large '42%' statistic animates up. Subtitle: 'HAD NO IDEA / IT AFFECTED THEIR INSURANCE'. Blue badge: '47 STATES — IT'S ALL LEGAL'.",
-    "accent_color": "blue"
+    "narration": "New research says the safe rate now is three-point-three percent. On a million dollars that's only thirty-three grand a year. To safely pull forty thousand, you actually need one-point-two million.",
+    "visual": "Two columns: left '$1M → $40K/year' with red X labeled RISKY, right '$1.21M → $40K/year' with green checkmark labeled SAFE (3.3%). Dark card below: 'MOST CALCULATORS STILL USE 4%'.",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Here's the fix — get your credit card balance under 10% utilization. That alone can move you a full tier in just 30 days, and your next renewal will reflect it.",
-    "visual": "Dark background. Credit card SVG (blue card, chip, masked card number). Below it, a utilization bar animates from 80% (red) down to 10% (green). Percentage label updates in real time. '80% = HIGH RISK' → '10% = SWEET SPOT' transition.",
-    "accent_color": "blue"
+    "narration": "That's a two-hundred-ten-thousand dollar gap between what your calculator shows and what you actually need. And almost every retirement app is still using the old number.",
+    "visual": "Animated bar chart: red bar grows to $1M, green bar grows taller to $1.21M. Dashed gap line and '+$210K GAP' label appear at the top between the bars.",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "The average savings for moving one credit tier is $503 a year. Check your utilization tonight — your insurance renewal is waiting on whether you know this.",
-    "visual": "Light background. Piggy bank SVG (yellow/amber body, head, snout, four legs, curly tail). Coin drops into coin slot. Dollar counter animates from $0 to $503. Black CTA bar: 'CHECK YOUR UTILIZATION TONIGHT'. Final text: 'FOLLOW FOR MORE MONEY MOVES.'",
-    "accent_color": "blue"
+    "narration": "The fix: target three-point-three percent. Add income streams so you pull less. Delay Social Security to 70 and you lock in a permanent thirty-two percent raise every month for life. Follow for more.",
+    "visual": "Three action items spring in: 1) Target icon with '3.3%', 2) House and laptop icons with 'INCOME STREAMS', 3) Social security card icon 'DELAY TO 70'. Red CTA card: 'FOLLOW FOR MORE MONEY MOVES THEY HIDE FROM YOU'.",
+    "accent_color": "red"
   }
 ]

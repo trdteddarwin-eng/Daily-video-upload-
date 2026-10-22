@@ -1,13 +1,7 @@
 {
-  "title": "Your Credit Score Sets Your Car Insurance — $2,300 Gap",
-  "hook": "Your credit score doesn't just affect loans — in 47 states, it secretly sets your car insurance rate, and the gap between poor and excellent is nearly $1,000 a year.",
-  "angle": "Most people never connect credit scores to insurance costs — but insurers in 47 states legally price your premium based on a credit-based insurance score, creating a gap up to $999/year that punishes people who already have less",
-  "audience": "Anyone who pays car insurance and has a credit score under 750 — especially renters and younger earners who don't know the connection exists",
-  "key_numbers": [
-    "47 states allow credit-based insurance scoring",
-    "Poor credit: avg $1,867/year premium vs. excellent credit: $868/year",
-    "$999 annual gap — nearly $10,000 over ten years",
-    "42% of drivers didn't know their credit affects their insurance premium",
-    "Paying credit card balance below 10% utilization can move a tier in 30 days"
-  ]
+  "title": "The 4% Rule Is Broken — Retire $250K Short",
+  "hook": "The rule everyone uses to plan retirement was calculated in 1994 — and the financial planner who created it now says it's dangerously wrong.",
+  "angle": "The 4% safe withdrawal rate was built on 1994 bond yields of 6-7%; today's lower yields and decade-longer lifespans mean 3.3% is the new safe rate, leaving a $210K gap in most retirement plans",
+  "audience": "Anyone age 30-60 planning retirement, especially those using online retirement calculators",
+  "key_numbers": ["4% rule created in 1994 by Bill Bengen", "Updated safe rate: 3.3% based on current conditions", "Need $1.21M — not $1M — to pull $40K/year safely", "$210,000 gap most calculators never show you", "~32% failure rate at 4% over a 35-year retirement"]
 }
