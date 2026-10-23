@@ -1,7 +1,13 @@
 {
-  "title": "The 4% Rule Is Broken — Retire $250K Short",
-  "hook": "The rule everyone uses to plan retirement was calculated in 1994 — and the financial planner who created it now says it's dangerously wrong.",
-  "angle": "The 4% safe withdrawal rate was built on 1994 bond yields of 6-7%; today's lower yields and decade-longer lifespans mean 3.3% is the new safe rate, leaving a $210K gap in most retirement plans",
-  "audience": "Anyone age 30-60 planning retirement, especially those using online retirement calculators",
-  "key_numbers": ["4% rule created in 1994 by Bill Bengen", "Updated safe rate: 3.3% based on current conditions", "Need $1.21M — not $1M — to pull $40K/year safely", "$210,000 gap most calculators never show you", "~32% failure rate at 4% over a 35-year retirement"]
+  "title": "The $35K Wedding Is Stealing $266K From Your Future",
+  "hook": "The average American wedding costs $35,000 — invest that instead and it becomes $266,000 by retirement. Nobody tells you that at the cake tasting.",
+  "angle": "Reframes wedding spending as opportunity cost: the standard American $35K wedding sacrifices $266K in retirement wealth. Contrarian take in a culture that normalizes wedding debt.",
+  "audience": "Couples ages 22-35 planning weddings, or anyone who spent big on one and wonders if it was worth it",
+  "key_numbers": [
+    "Average US wedding: $35,000 (The Knot 2023)",
+    "$35K at 7% for 30 years = $266,420",
+    "Global average wedding: ~$13,000",
+    "1 in 5 couples takes on wedding debt averaging $11,700",
+    "Americans spend $90 billion per year on weddings"
+  ]
 }

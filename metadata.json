@@ -1,16 +1,16 @@
 {
   "tiktok": {
-    "caption": "Everyone uses the 4% rule to plan retirement. The guy who invented it says it's wrong — you're $250K short.",
-    "hashtags": ["#finance", "#retirement", "#personalfinance", "#moneytips", "#investing", "#retirementplanning", "#financialliteracy", "#wealthbuilding"]
+    "caption": "The average wedding costs $35K. Invested at 7% for 30 years? That's $266,000 gone. Nobody tells you this at the engagement party 💍",
+    "hashtags": ["#personalfinance", "#moneytips", "#weddingplanning", "#investing", "#financetok", "#moneymindset", "#weddingcosts", "#financialfreedom", "#richvsbroketips", "#moneypsychology"]
   },
   "youtube_short": {
-    "title": "The 4% Rule Is Broken (You're $250K Short)",
+    "title": "The $35K Wedding Steals $266K From Your Future",
     "title_alternatives": [
-      "Why Your Retirement Number Is $250,000 Wrong",
-      "The Broken Retirement Rule Nobody Told You About"
+      "Your Wedding Costs Way More Than $35,000",
+      "Nobody Tells You This At The Cake Tasting"
     ],
-    "description": "The 4% safe withdrawal rule that everyone uses to plan retirement was calculated in 1994 when bonds paid nearly 7%. Today bonds pay half that, and people live a full decade longer — so the updated safe rate is 3.3%. That means you need $1.21 million, not $1 million, to safely pull $40,000 a year. That's a $210,000 gap most retirement calculators never show you. Follow for more money moves they don't teach you in school. #retirement #personalfinance #finance #moneytips #investing #retirementplanning",
-    "tags": ["retirement planning", "personal finance", "4% rule", "retirement savings", "financial literacy", "investing", "safe withdrawal rate", "retirement calculator", "money tips", "financial independence", "wealth building", "retire early"]
+    "description": "The average American wedding costs $35,000. But that's not the real price — invest that same money at 7% for 30 years and you're looking at $266,000. Americans spend 3x the global average on weddings, and 1 in 5 couples even borrows to do it. This video breaks down the actual opportunity cost of the average American wedding and what that money could fund instead. #personalfinance #investing #weddingplanning #moneypsychology #financialfreedom — Follow for more money moves they don't teach you in school.",
+    "tags": ["personal finance", "wedding costs", "investing", "money psychology", "opportunity cost", "compound interest", "financial freedom", "wedding planning", "money tips", "wealth building"]
   },
-  "hook_line": "Your retirement number is $250K short"
+  "hook_line": "Your $35K wedding = $266K gone by retirement"
 }

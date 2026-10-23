@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Millions use one rule to plan their entire retirement — divide your spending by four percent. That's your number. But the guy who invented it now says it's broken.",
-    "visual": "Calculator SVG displaying '$40K ÷ 4% = $1,000,000' springs in. Large '4% RULE' text fades in. Red banner labeled 'IS BROKEN' with crack lines appears. Sub-text 'you're $250K short' fades in below.",
-    "accent_color": "red"
+    "narration": "The average American wedding costs thirty-five thousand dollars. Here's what nobody says at the engagement party — that's two hundred sixty-six thousand out of your retirement.",
+    "visual": "Two interlocked wedding rings SVG springs in with amber diamond sparkle. '$35,000' fades in below with downward arrow. '$266K' number springs in large in amber — 'BY RETIREMENT' sub-label fades in.",
+    "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "Back in 1994, Bill Bengen crunched decades of market data to build this rule. Bonds were paying nearly seven percent back then — and it worked perfectly for that world.",
-    "visual": "Calendar SVG showing 1994 springs in. Bond certificate card shows '6.8% annual yield' in green. Animated progress bar grows to represent the high bond yield era.",
-    "accent_color": "red"
+    "narration": "Americans spend nearly three times the global average on weddings. The rest of the world gets it done for around thirteen thousand dollars — and nobody at those parties feels shortchanged.",
+    "visual": "Bar chart with two columns: US '$35,000' (taller, amber) vs Global '$13,000' (shorter, gray). '3X MORE' callout arrow fades in pointing to the gap between bars.",
+    "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Here's what broke it: bonds now pay half what they did then, and people live a full decade longer. That gives a four percent withdrawal roughly a one-in-three shot at running out before you do.",
-    "visual": "Side-by-side boxes: '6.8% bonds 1994' in green vs '3.5% bonds today' in red, with downward arrow. Two lifespan bars: 1994 to age 80 (shorter), now to age 90+ (longer). Red warning box: '1 IN 3 CHANCE YOUR MONEY RUNS OUT'.",
-    "accent_color": "red"
+    "narration": "Here's the compound math. Thirty-five thousand invested at seven percent annually. Year ten: sixty-nine thousand. Year twenty: one hundred thirty-five thousand. Year thirty: two hundred sixty-six thousand.",
+    "visual": "Four animated bars growing sequentially — Year 0, Year 10, Year 20, Year 30 — with dollar labels above each bar. '$266K' label and 'AT 7% FOR 30 YEARS' text appear at end.",
+    "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "New research says the safe rate now is three-point-three percent. On a million dollars that's only thirty-three grand a year. To safely pull forty thousand, you actually need one-point-two million.",
-    "visual": "Two columns: left '$1M → $40K/year' with red X labeled RISKY, right '$1.21M → $40K/year' with green checkmark labeled SAFE (3.3%). Dark card below: 'MOST CALCULATORS STILL USE 4%'.",
-    "accent_color": "red"
+    "narration": "One in five couples borrows money for their wedding — eleven thousand dollars on average. They spend the next three years paying it back while the market keeps running without them.",
+    "visual": "Two person silhouettes side by side. A heavy weight bar labeled '$11,700 DEBT' hangs below them with downward arrow. Counter shows '3 YEARS OF PAYMENTS' ticking up. Red X through a growth chart beside them.",
+    "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "That's a two-hundred-ten-thousand dollar gap between what your calculator shows and what you actually need. And almost every retirement app is still using the old number.",
-    "visual": "Animated bar chart: red bar grows to $1M, green bar grows taller to $1.21M. Dashed gap line and '+$210K GAP' label appear at the top between the bars.",
-    "accent_color": "red"
+    "narration": "That two hundred sixty-six thousand dollars could fund four years of private college, a full down payment on a starter home, or four extra years of early retirement. For one party.",
+    "visual": "Three items spring in one by one: graduation cap SVG + '4 YEARS OF COLLEGE', house SVG + 'HOME DOWN PAYMENT', alarm clock SVG + '4 YEARS EARLY RETIREMENT'. '$266K =' header above all three.",
+    "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "The fix: target three-point-three percent. Add income streams so you pull less. Delay Social Security to 70 and you lock in a permanent thirty-two percent raise every month for life. Follow for more.",
-    "visual": "Three action items spring in: 1) Target icon with '3.3%', 2) House and laptop icons with 'INCOME STREAMS', 3) Social security card icon 'DELAY TO 70'. Red CTA card: 'FOLLOW FOR MORE MONEY MOVES THEY HIDE FROM YOU'.",
-    "accent_color": "red"
+    "narration": "Have a wedding you can actually afford without debt, and invest the difference. That one choice compounds for decades. Share this before someone you know writes a thirty-five thousand dollar check.",
+    "visual": "Two side-by-side paths: left path shows '$35K → party icon → $0' (declining), right path shows '$35K → investment chart → $266K' (growing). Amber CTA card at bottom: 'SHARE BEFORE THEY SIGN THE CONTRACT'.",
+    "accent_color": "amber"
   }
 ]
