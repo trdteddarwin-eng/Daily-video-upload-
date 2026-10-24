@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "The average American wedding costs thirty-five thousand dollars. Here's what nobody says at the engagement party — that's two hundred sixty-six thousand out of your retirement.",
-    "visual": "Two interlocked wedding rings SVG springs in with amber diamond sparkle. '$35,000' fades in below with downward arrow. '$266K' number springs in large in amber — 'BY RETIREMENT' sub-label fades in.",
-    "accent_color": "amber"
+    "narration": "Your income is too high for a Roth IRA — or so you've been told. The IRS built a legal backdoor right into the tax code, and 88% of high earners have never heard of it.",
+    "visual": "A large ROTH IRA door with an arch top and a red NO ENTRY sign + padlock. A smaller glowing blue BACKDOOR door appears beside it, swinging open with a glow effect. Arrow points to the backdoor.",
+    "accent_color": "blue"
   },
   {
     "scene": 2,
-    "narration": "Americans spend nearly three times the global average on weddings. The rest of the world gets it done for around thirteen thousand dollars — and nobody at those parties feels shortchanged.",
-    "visual": "Bar chart with two columns: US '$35,000' (taller, amber) vs Global '$13,000' (shorter, gray). '3X MORE' callout arrow fades in pointing to the gap between bars.",
-    "accent_color": "amber"
+    "narration": "Here's the problem. Earn over $161,000 single or $240,000 married and the IRS completely blocks you from a Roth — the account where your money grows tax-free forever. And next scene shows your move.",
+    "visual": "Vertical income thermometer with fill rising. Dashed threshold lines at $161K (single) and $240K (married). When bar crosses $161K, a padlock snaps onto a piggy bank labeled ROTH IRA on the right side.",
+    "accent_color": "blue"
   },
   {
     "scene": 3,
-    "narration": "Here's the compound math. Thirty-five thousand invested at seven percent annually. Year ten: sixty-nine thousand. Year twenty: one hundred thirty-five thousand. Year thirty: two hundred sixty-six thousand.",
-    "visual": "Four animated bars growing sequentially — Year 0, Year 10, Year 20, Year 30 — with dollar labels above each bar. '$266K' label and 'AT 7% FOR 30 YEARS' text appear at end.",
-    "accent_color": "amber"
+    "narration": "Number one: open a traditional IRA and drop in up to $7,000. Because this contribution is non-deductible, there's literally no income limit — anybody can do this step, no matter what you earn.",
+    "visual": "Two side-by-side buckets labeled TRADITIONAL IRA and ROTH IRA. Coins animate falling into the Traditional bucket. A $7,000 counter ticks up. A green checkmark badge: NO INCOME LIMIT.",
+    "accent_color": "blue"
   },
   {
     "scene": 4,
-    "narration": "One in five couples borrows money for their wedding — eleven thousand dollars on average. They spend the next three years paying it back while the market keeps running without them.",
-    "visual": "Two person silhouettes side by side. A heavy weight bar labeled '$11,700 DEBT' hangs below them with downward arrow. Counter shows '3 YEARS OF PAYMENTS' ticking up. Red X through a growth chart beside them.",
-    "accent_color": "amber"
+    "narration": "Number two: within a day or two, you convert that traditional IRA straight into a Roth. The IRS specifically allows this at any income level — no limits, no tricks, completely legal.",
+    "visual": "Two labeled account boxes connected by an animated arrow. Blue coins travel from TRADITIONAL IRA to ROTH IRA along the arrow. ROTH CONVERSION label appears. Green LEGAL AT ANY INCOME badge.",
+    "accent_color": "blue"
   },
   {
     "scene": 5,
-    "narration": "That two hundred sixty-six thousand dollars could fund four years of private college, a full down payment on a starter home, or four extra years of early retirement. For one party.",
-    "visual": "Three items spring in one by one: graduation cap SVG + '4 YEARS OF COLLEGE', house SVG + 'HOME DOWN PAYMENT', alarm clock SVG + '4 YEARS EARLY RETIREMENT'. '$266K =' header above all three.",
-    "accent_color": "amber"
+    "narration": "Do this every year and that $7,000 compounds inside a Roth — completely tax-free. Over 20 years at 7%, you've built $287,000. At withdrawal, you owe zero. That's $89,000 saved in taxes.",
+    "visual": "Two growing bar charts: BACKDOOR ROTH (blue) rising to $287K and TAXABLE (gray) stopping at $198K. Dollar counters animate. A '$89K SAVED' gold badge pulses between the bars.",
+    "accent_color": "blue"
   },
   {
     "scene": 6,
-    "narration": "Have a wedding you can actually afford without debt, and invest the difference. That one choice compounds for decades. Share this before someone you know writes a thirty-five thousand dollar check.",
-    "visual": "Two side-by-side paths: left path shows '$35K → party icon → $0' (declining), right path shows '$35K → investment chart → $266K' (growing). Amber CTA card at bottom: 'SHARE BEFORE THEY SIGN THE CONTRACT'.",
-    "accent_color": "amber"
+    "narration": "The backdoor Roth is one of the cleanest loopholes in the tax code. If your financial advisor hasn't mentioned it, ask them why. Follow for more moves the wealthy quietly use.",
+    "visual": "Person silhouette in center with a glowing blue checkmark halo overhead. Text: BACKDOOR ROTH glows in blue above. ASK YOUR ADVISOR TODAY below. A bouncing FOLLOW arrow at the screen bottom.",
+    "accent_color": "blue"
   }
 ]
