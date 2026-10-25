@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Your income is too high for a Roth IRA — or so you've been told. The IRS built a legal backdoor right into the tax code, and 88% of high earners have never heard of it.",
-    "visual": "A large ROTH IRA door with an arch top and a red NO ENTRY sign + padlock. A smaller glowing blue BACKDOOR door appears beside it, swinging open with a glow effect. Arrow points to the backdoor.",
-    "accent_color": "blue"
+    "narration": "Your net worth number might be off by six figures — and it's not your fault. Here's the math behind the illusion that's quietly wrecking your retirement plan.",
+    "visual": "Person silhouette at a glowing laptop showing '$500,000'. The number pulses, then a bold red 'FAKE' stamp crashes down over it with a spring animation.",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Here's the problem. Earn over $161,000 single or $240,000 married and the IRS completely blocks you from a Roth — the account where your money grows tax-free forever. And next scene shows your move.",
-    "visual": "Vertical income thermometer with fill rising. Dashed threshold lines at $161K (single) and $240K (married). When bar crosses $161K, a padlock snaps onto a piggy bank labeled ROTH IRA on the right side.",
-    "accent_color": "blue"
+    "narration": "Number one: your 401k balance. If yours says $400,000, that's not your money yet. The IRS takes 22 to 32 percent on withdrawal — up to $88,000 gone before you spend a dollar.",
+    "visual": "Piggy bank labeled '401K' springs in. An amber bar fills to '$400,000'. A red section peels off showing 'IRS: $88,000' (22%). Green label 'YOU KEEP: $312,000' appears below.",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Number one: open a traditional IRA and drop in up to $7,000. Because this contribution is non-deductible, there's literally no income limit — anybody can do this step, no matter what you earn.",
-    "visual": "Two side-by-side buckets labeled TRADITIONAL IRA and ROTH IRA. Coins animate falling into the Traditional bucket. A $7,000 counter ticks up. A green checkmark badge: NO INCOME LIMIT.",
-    "accent_color": "blue"
+    "narration": "Number two: your home equity. You see $180,000 — but selling costs 8 to 9 percent in agent fees and closing costs. That's $16,000 that never actually hits your account.",
+    "visual": "House SVG with '$180,000 EQUITY' label. A suited agent figure walks in and carries away a money bag labeled '$16K'. Updated label reads '$164,000 REAL VALUE' in green.",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Number two: within a day or two, you convert that traditional IRA straight into a Roth. The IRS specifically allows this at any income level — no limits, no tricks, completely legal.",
-    "visual": "Two labeled account boxes connected by an animated arrow. Blue coins travel from TRADITIONAL IRA to ROTH IRA along the arrow. ROTH CONVERSION label appears. Green LEGAL AT ANY INCOME badge.",
-    "accent_color": "blue"
+    "narration": "Number three: your car. You wrote down $28,000 — but it lost five grand last year and four this year. It's not an asset. It's a melting ice cube on your spreadsheet.",
+    "visual": "Car SVG on a light background. A year counter advances (Year 1 → Year 2 → Year 3) while the value ticks down from $28,000 to $19,000. Ice cube icon melts beneath the car.",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Do this every year and that $7,000 compounds inside a Roth — completely tax-free. Over 20 years at 7%, you've built $287,000. At withdrawal, you owe zero. That's $89,000 saved in taxes.",
-    "visual": "Two growing bar charts: BACKDOOR ROTH (blue) rising to $287K and TAXABLE (gray) stopping at $198K. Dollar counters animate. A '$89K SAVED' gold badge pulses between the bars.",
-    "accent_color": "blue"
+    "narration": "Add those adjustments up and your $500,000 paper net worth drops to around $370,000. That's a $130,000 gap between what feels true and what actually is.",
+    "visual": "Table animates in row by row: 401K ($400K → $312K), Home Equity ($180K → $164K), Car ($28K → $19K). Totals appear: PAPER $608K vs REAL $495K. Red box highlights 'GAP: -$113,000'.",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "The backdoor Roth is one of the cleanest loopholes in the tax code. If your financial advisor hasn't mentioned it, ask them why. Follow for more moves the wealthy quietly use.",
-    "visual": "Person silhouette in center with a glowing blue checkmark halo overhead. Text: BACKDOOR ROTH glows in blue above. ASK YOUR ADVISOR TODAY below. A bouncing FOLLOW arrow at the screen bottom.",
-    "accent_color": "blue"
+    "narration": "The fix is simple — track your after-tax, after-cost net worth instead. Free apps do it automatically. Your real number is smaller, but it's the only one your retirement plan can count on.",
+    "visual": "Phone with budgeting app showing after-tax values in green. Bold text: 'TRACK YOUR REAL NET WORTH'. Checkmark badge springs in. Follow prompt with green circle appears.",
+    "accent_color": "red"
   }
 ]
