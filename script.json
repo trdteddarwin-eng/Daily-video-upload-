@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Your net worth number might be off by six figures — and it's not your fault. Here's the math behind the illusion that's quietly wrecking your retirement plan.",
-    "visual": "Person silhouette at a glowing laptop showing '$500,000'. The number pulses, then a bold red 'FAKE' stamp crashes down over it with a spring animation.",
-    "accent_color": "red"
+    "narration": "You've got losing stocks right now and most investors just sit on them. But the IRS actually built you a legal shortcut — it turns those losses into real money back.",
+    "visual": "Dark background. Three stock ticker cards (TSLA -22%, META -8%, NVDA -15%) reveal one by one in red. An animated arrow points down to a green 'TAX SAVINGS' badge that springs in.",
+    "accent_color": "green"
   },
   {
     "scene": 2,
-    "narration": "Number one: your 401k balance. If yours says $400,000, that's not your money yet. The IRS takes 22 to 32 percent on withdrawal — up to $88,000 gone before you spend a dollar.",
-    "visual": "Piggy bank labeled '401K' springs in. An amber bar fills to '$400,000'. A red section peels off showing 'IRS: $88,000' (22%). Green label 'YOU KEEP: $312,000' appears below.",
-    "accent_color": "red"
+    "narration": "It's called tax-loss harvesting. Sell a loser and you can cancel out the taxes you owe on winning trades — dollar for dollar. Capital gains tax goes to zero.",
+    "visual": "Light background. Two stock cards side by side: red LOSER card with downward chart line (-$4,200) and green WINNER card with upward chart line (+$4,200). Two arrows converge to a green 'CAPITAL GAINS TAX = $0' badge.",
+    "accent_color": "green"
   },
   {
     "scene": 3,
-    "narration": "Number two: your home equity. You see $180,000 — but selling costs 8 to 9 percent in agent fees and closing costs. That's $16,000 that never actually hits your account.",
-    "visual": "House SVG with '$180,000 EQUITY' label. A suited agent figure walks in and carries away a money bag labeled '$16K'. Updated label reads '$164,000 REAL VALUE' in green.",
-    "accent_color": "red"
+    "narration": "Even better — no gains to offset? The IRS still lets you deduct three thousand dollars straight from your regular salary income. Every single year.",
+    "visual": "Dark background. Left side: simplified IRS Form 1040 illustration with a highlighted green 'DEDUCTION: -$3,000' row. Right side: animated stack of five green money bills building upward, $3,000 label appears below.",
+    "accent_color": "green"
   },
   {
     "scene": 4,
-    "narration": "Number three: your car. You wrote down $28,000 — but it lost five grand last year and four this year. It's not an asset. It's a melting ice cube on your spreadsheet.",
-    "visual": "Car SVG on a light background. A year counter advances (Year 1 → Year 2 → Year 3) while the value ticks down from $28,000 to $19,000. Ice cube icon melts beneath the car.",
-    "accent_color": "red"
+    "narration": "Lost more than three thousand? No problem. Those extra losses carry forward to future years and never expire — they just stack up until you've used every dollar.",
+    "visual": "Light background. Three year rows (2024 lost -$8,000, 2025 used $3K carry fwd $2K, 2026 used $2K carry fwd $0) reveal sequentially. A green 'YOUR LOSSES NEVER EXPIRE' badge springs in below.",
+    "accent_color": "green"
   },
   {
     "scene": 5,
-    "narration": "Add those adjustments up and your $500,000 paper net worth drops to around $370,000. That's a $130,000 gap between what feels true and what actually is.",
-    "visual": "Table animates in row by row: 401K ($400K → $312K), Home Equity ($180K → $164K), Car ($28K → $19K). Totals appear: PAPER $608K vs REAL $495K. Red box highlights 'GAP: -$113,000'.",
-    "accent_color": "red"
+    "narration": "One catch you need to know: the wash-sale rule. Sell a loser and buy that same stock back within 30 days — the IRS cancels your entire deduction. Wait 31 days to stay safe.",
+    "visual": "Dark background. A 'SELL LOSING STOCK' card appears. Below it: a 31-day calendar grid where Day 30 shows a red X (Deduction VOIDED) and Day 31 shows a green checkmark (Deduction SAFE).",
+    "accent_color": "green"
   },
   {
     "scene": 6,
-    "narration": "The fix is simple — track your after-tax, after-cost net worth instead. Free apps do it automatically. Your real number is smaller, but it's the only one your retirement plan can count on.",
-    "visual": "Phone with budgeting app showing after-tax values in green. Bold text: 'TRACK YOUR REAL NET WORTH'. Checkmark badge springs in. Follow prompt with green circle appears.",
-    "accent_color": "red"
+    "narration": "Over thirty years, using this trick saves the average investor forty-seven thousand dollars. Check your portfolio today — your red positions are actually worth something.",
+    "visual": "Light background. Large green counter animates up to $47,000. Below it: three portfolio rows (TSLA -22%, META -8%, NVDA -15%) each with a green 'HARVEST' button. A dark 'CHECK YOUR PORTFOLIO NOW' CTA badge springs in.",
+    "accent_color": "green"
   }
 ]
