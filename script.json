@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You've got losing stocks right now and most investors just sit on them. But the IRS actually built you a legal shortcut — it turns those losses into real money back.",
-    "visual": "Dark background. Three stock ticker cards (TSLA -22%, META -8%, NVDA -15%) reveal one by one in red. An animated arrow points down to a green 'TAX SAVINGS' badge that springs in.",
-    "accent_color": "green"
+    "narration": "If you've been married, there's a hidden Social Security benefit most people never know about. The average couple misses $400,000 by never claiming it.",
+    "visual": "Two interlocking wedding rings (SVG circles) on dark background spring into view. Large amber dollar sign and title 'SPOUSAL BENEFIT' fade in below. Subtext: 'The $400K Secret'.",
+    "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "It's called tax-loss harvesting. Sell a loser and you can cancel out the taxes you owe on winning trades — dollar for dollar. Capital gains tax goes to zero.",
-    "visual": "Light background. Two stock cards side by side: red LOSER card with downward chart line (-$4,200) and green WINNER card with upward chart line (+$4,200). Two arrows converge to a green 'CAPITAL GAINS TAX = $0' badge.",
-    "accent_color": "green"
+    "narration": "You can claim up to 50% of your partner's Social Security — even if you never worked a day in your life. That's up to $1,900 a month, just for being married.",
+    "visual": "Social Security card SVG (dark rectangle with amber header reading 'SOCIAL SECURITY') slides in. Dollar amount counter animates from $0 to $1,900/mo. '50% OF SPOUSE' badge appears.",
+    "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Even better — no gains to offset? The IRS still lets you deduct three thousand dollars straight from your regular salary income. Every single year.",
-    "visual": "Dark background. Left side: simplified IRS Form 1040 illustration with a highlighted green 'DEDUCTION: -$3,000' row. Right side: animated stack of five green money bills building upward, $3,000 label appears below.",
-    "accent_color": "green"
+    "narration": "Wild part — it also works if you're divorced. Marriage lasted ten years? You still qualify, your ex is never notified, and their benefit doesn't shrink one dollar.",
+    "visual": "Calendar SVG springs in showing '10 YEARS'. Scissors SVG slides in from left, symbolizing divorce. Text reveals: 'DIVORCED? YOU STILL QUALIFY'.",
+    "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "Lost more than three thousand? No problem. Those extra losses carry forward to future years and never expire — they just stack up until you've used every dollar.",
-    "visual": "Light background. Three year rows (2024 lost -$8,000, 2025 used $3K carry fwd $2K, 2026 used $2K carry fwd $0) reveal sequentially. A green 'YOUR LOSSES NEVER EXPIRE' badge springs in below.",
-    "accent_color": "green"
+    "narration": "But 40% of eligible spouses never claim this benefit. Social Security won't volunteer the information — and that silence costs the average qualifying couple $400,000.",
+    "visual": "Ten stick-figure people SVGs appear. Four of them grayed out with red X marks (representing 40%). Dollar counter climbs from $0 to $400K. Title: '40% NEVER CLAIM IT'.",
+    "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "One catch you need to know: the wash-sale rule. Sell a loser and buy that same stock back within 30 days — the IRS cancels your entire deduction. Wait 31 days to stay safe.",
-    "visual": "Dark background. A 'SELL LOSING STOCK' card appears. Below it: a 31-day calendar grid where Day 30 shows a red X (Deduction VOIDED) and Day 31 shows a green checkmark (Deduction SAFE).",
-    "accent_color": "green"
+    "narration": "Timing matters though. Claim at 62 and you only get 32.5%. Wait until 67 — your full retirement age — and you collect the full 50%. That gap is worth $200,000.",
+    "visual": "Horizontal timeline bar animating from age 62 to 67. Percentage badge tracks along bar rising from 32.5% to 50%. Labels show 'EARLY' at left, 'FULL' at right.",
+    "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "Over thirty years, using this trick saves the average investor forty-seven thousand dollars. Check your portfolio today — your red positions are actually worth something.",
-    "visual": "Light background. Large green counter animates up to $47,000. Below it: three portfolio rows (TSLA -22%, META -8%, NVDA -15%) each with a green 'HARVEST' button. A dark 'CHECK YOUR PORTFOLIO NOW' CTA badge springs in.",
-    "accent_color": "green"
+    "narration": "Check yours for free at ssa.gov — log in and see your statement. If you qualify, this might be the easiest $400,000 decision you ever make. Follow for more moves like this.",
+    "visual": "Phone SVG displaying 'ssa.gov' screen with a green checkmark and sample benefit amount. CTA button: 'FREE AT SSA.GOV'. Text: 'Follow for more money moves the system won't tell you'.",
+    "accent_color": "amber"
   }
 ]
