@@ -1,15 +1,13 @@
 {
-  "title": "Getting Laid Off Has a $10,668 Hidden Bill",
-  "hook": "You planned for the income gap when you lost your job — but 65% of workers have no idea about the $1,778/month health insurance bill that hits immediately.",
-  "angle": "COBRA health insurance is the invisible financial catastrophe of job loss that nobody prepares for — your employer was silently paying 70% of your premium, and the moment you leave, every dollar becomes yours",
-  "audience": "Workers in their 30s-50s with employer-sponsored health insurance who have any emergency fund",
+  "title": "The $3,400 Medicare Trap Hiding in Your Retirement Income",
+  "hook": "Earning just $1 too much in retirement triggers a Medicare surcharge most people never see coming — and it can cost you $3,400 more every single year.",
+  "angle": "IRMAA (Income-Related Monthly Adjustment Amount) silently penalizes retirees who cross an income threshold — even by accident through a Roth conversion, home sale, or Required Minimum Distribution. The IRS uses income from two years prior, so by the time the bill arrives it's too late to reverse.",
+  "audience": "Pre-retirees and recent retirees aged 55–70 with employer retirement accounts or investment income",
   "key_numbers": [
-    "$1,778/month average family COBRA premium",
-    "$534/month average individual COBRA premium",
-    "Employer pays ~70% of premium while employed",
-    "Average job search: 4-6 months",
-    "$10,668 in COBRA costs during a 6-month family job search",
-    "65% of laid-off workers skip COBRA entirely",
-    "Average ER visit without insurance: $2,200-$30,000+"
+    "$103,000 single / $206,000 joint income threshold (2024)",
+    "$3,400+ annual surcharge for crossing the first IRMAA bracket",
+    "IRS looks back 2 years — today's Roth conversion hits 2026 Medicare",
+    "Part B surcharge: up to $2,800/yr; Part D: up to $612/yr",
+    "8% of Medicare beneficiaries pay IRMAA — most unaware until the bill"
   ]
 }

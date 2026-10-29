@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You got laid off. Savings? Ready. Resume? Polished. But there's one bill almost nobody budgets for — and it hits within two weeks.",
-    "visual": "Person silhouette sitting at office desk, a termination letter floats down and lands. Dark background, amber accent lighting on the desk. Person looks up at the letter with shock.",
+    "narration": "Most people think Medicare in retirement is basically free. But the IRS built a hidden trap that can cost you $3,400 more every single year — and almost nobody warns you it exists.",
+    "visual": "Medicare card SVG animates in, large red warning triangle pulses above it, '$3,400' drops down in accent red. Dark background.",
     "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "It's your COBRA health insurance bill. For a family of four, the average monthly premium is $1,778. Most people had zero idea coverage cost that much.",
-    "visual": "Large white envelope opens to reveal a bill. The number $1,778 in bold red fills the screen. '/month' appears beneath it. Light background.",
+    "narration": "It's called IRMAA. If your income tops $103,000 as a single retiree, Medicare charges you a surcharge on top of your normal premium. Just one dollar over and the penalty kicks in immediately.",
+    "visual": "Light background. Animated income bar chart — blue bar grows upward, crosses a dashed red line labeled '$103K THRESHOLD,' bar flashes red. Warning icon appears above the line.",
     "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "At work, your employer quietly paid 70% of that premium. The second you leave, every dollar becomes yours — plus a two-percent admin fee on top.",
-    "visual": "Pie chart splits: large sector labeled EMPLOYER (70%) in gray, small sector labeled YOU (30%) in red. Then the employer slice disappears, leaving only the YOU slice filling 100%. Dark background.",
+    "narration": "And here's the wild part — you can trigger it by accident. Selling your home, taking a Required Minimum Distribution, or doing a Roth conversion can each push you right over that line without any warning.",
+    "visual": "Dark background. Three icons spring in one by one: a house with a dollar sign, a jar labeled 'IRA' with an arrow, and a box labeled 'IRA' converting to 'ROTH' with a warning triangle.",
     "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Job searches take four to six months on average. At $1,778 a month, that's nearly eleven thousand dollars before you land your next paycheck.",
-    "visual": "Six calendar pages line up across the screen, each flipping in sequence. Below them, a piggy bank visibly drains as a dollar counter climbs to $10,668. Light background.",
+    "narration": "Number one, the surcharge hits Medicare Part B. Number two, it hits Part D too. Combined, you could owe over three thousand four hundred dollars more — every single year.",
+    "visual": "Light background. Two horizontal bars animate in labeled 'MEDICARE PART B' ($2,800/yr) and 'MEDICARE PART D' ($612/yr). A red box animates in showing 'TOTAL EXTRA COST: $3,412/yr'.",
     "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "So 65% of laid-off workers just skip COBRA entirely. But one ER visit without insurance averages $2,200 for something minor — and $30,000 for anything serious.",
-    "visual": "Hospital cross icon pulses. Two bill papers drop: one says $2,200, one says $30,000. A person silhouette sits in a waiting room chair, looking worried. Dark background.",
+    "narration": "What's brutal is the IRS charges you based on income from two years ago. So a Roth conversion you do today could hit your Medicare bill in 2026 — and by then, there's nothing you can do.",
+    "visual": "Dark background. Two calendar icons: '2024' in blue with 'Roth conversion' text, an arrow labeled '2 YEARS,' and '2026' in red with '$3,400 surcharge hits you NOW.' Red text below: 'By then, it's too late.'",
     "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "The fix: build your emergency fund to cover six months of COBRA, not just living expenses. Calculate your real number — it's probably twice what you think.",
-    "visual": "Piggy bank with a red health cross on it fills up as a progress bar labeled 'COBRA FUND' grows from 0 to 6 months. Final text overlay: 'Your real emergency number.' Light background.",
+    "narration": "The fix is simple — plan your retirement income to stay just under that threshold. One conversation with a CPA before you convert could save you thousands. Follow for more money traps like this.",
+    "visual": "Dark background. Three icons spring in: a suited person (CPA), a calculator showing '$103K,' and a pink piggy bank with a coin. A pulsing red CTA button: 'FOLLOW FOR MORE MONEY TRAPS LIKE THIS.'",
     "accent_color": "red"
   }
 ]

@@ -1,15 +1,16 @@
 {
   "tiktok": {
-    "caption": "Getting laid off has a $10,668 bill nobody tells you about 😬 your employer was quietly paying 70% of your health insurance",
-    "hashtags": ["#personalfinance", "#moneytips", "#layoff", "#cobra", "#healthinsurance", "#emergencyfund", "#financetok", "#moneymindset", "#jobsearch", "#financialfreedom"]
+    "caption": "Earn $1 too much in retirement and Medicare charges you $3,400 more — most people trigger this by accident 😳",
+    "hashtags": ["#medicare", "#retirement", "#personalfinance", "#moneytrap", "#financetok", "#retirementplanning", "#IRMAA", "#taxplanning"]
   },
   "youtube_short": {
-    "title": "Getting Laid Off Has a $10,668 Hidden Bill",
+    "title": "The $3,400 Medicare Trap Hiding in Your Retirement",
     "title_alternatives": [
-      "Your Job Was Paying 70% of Your Health Insurance",
-      "COBRA: The $1,778/Month Bill Nobody Warns You About"
+      "Earn $1 Too Much in Retirement — Pay $3,400 More",
+      "Why Your Roth Conversion Could Blow Up Your Medicare Bill"
     ],
-    "description": "Most people plan for the income gap when they lose their job — but almost nobody budgets for COBRA health insurance, and it costs a family $1,778 every single month. Your employer was quietly covering 70% of that premium while you worked there. Lose the job, lose the subsidy. With the average job search taking 4-6 months, that's nearly $11,000 in health insurance alone before your next paycheck. Here's how to calculate your real emergency fund number. #personalfinance #cobra #healthinsurance #emergencyfund #layoff"
+    "description": "There's a hidden Medicare surcharge called IRMAA that hits retirees who earn even $1 over the income threshold. Most people trigger it by accident — through a Roth conversion, selling their home, or a Required Minimum Distribution. And the brutal part? The IRS looks back TWO years, so by the time you get the bill it's already too late to undo it. Plan your retirement income before you pull any triggers. One conversation with a CPA could save you thousands. #retirement #medicare #IRMAA #personalfinance #moneytrap",
+    "tags": ["medicare", "IRMAA", "retirement", "personal finance", "money trap", "retirement planning", "roth conversion", "tax planning", "finance tips", "money"]
   },
-  "hook_line": "Your employer was paying 70% of your health insurance. Now it's all on you."
+  "hook_line": "Earn $1 too much → pay $3,400 more for Medicare"
 }
