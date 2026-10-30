@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Most people think Medicare in retirement is basically free. But the IRS built a hidden trap that can cost you $3,400 more every single year — and almost nobody warns you it exists.",
-    "visual": "Medicare card SVG animates in, large red warning triangle pulses above it, '$3,400' drops down in accent red. Dark background.",
-    "accent_color": "red"
+    "narration": "That countdown timer on your screen isn't real. Seventy-three percent of online retailers fake them — and here's what that one trick is actually costing you.",
+    "visual": "Fake product deal page with large red countdown timer ticking down (9:47...), 'ONLY 2 LEFT IN STOCK' warning flashing in red, product box SVG with amber price tag. Dark background.",
+    "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "It's called IRMAA. If your income tops $103,000 as a single retiree, Medicare charges you a surcharge on top of your normal premium. Just one dollar over and the penalty kicks in immediately.",
-    "visual": "Light background. Animated income bar chart — blue bar grows upward, crosses a dashed red line labeled '$103K THRESHOLD,' bar flashes red. Warning icon appears above the line.",
-    "accent_color": "red"
+    "narration": "Here's the science. That ticking clock triggers your amygdala — your brain's fear center — in under 340 milliseconds. Your wallet opens before you even think.",
+    "visual": "SVG brain diagram on light background, amygdala region glowing red and pulsing, panic signals radiating outward, '340ms' counter animating upward. Label: 'FEAR CENTER: ACTIVATED'.",
+    "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "And here's the wild part — you can trigger it by accident. Selling your home, taking a Required Minimum Distribution, or doing a Roth conversion can each push you right over that line without any warning.",
-    "visual": "Dark background. Three icons spring in one by one: a house with a dollar sign, a jar labeled 'IRA' with an arrow, and a box labeled 'IRA' converting to 'ROTH' with a warning triangle.",
-    "accent_color": "red"
+    "narration": "And the scale is wild. Amazon runs 200,000 Lightning Deals a year — every single one with a ticking clock. That one trick generates twelve billion dollars annually.",
+    "visual": "Large amber lightning bolt SVG, '$12B' counter animating upward on dark background, small deal cards with red timers appearing beneath it. Text: '200,000 DEALS/YEAR'.",
+    "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "Number one, the surcharge hits Medicare Part B. Number two, it hits Part D too. Combined, you could owe over three thousand four hundred dollars more — every single year.",
-    "visual": "Light background. Two horizontal bars animate in labeled 'MEDICARE PART B' ($2,800/yr) and 'MEDICARE PART D' ($612/yr). A red box animates in showing 'TOTAL EXTRA COST: $3,412/yr'.",
-    "accent_color": "red"
+    "narration": "When urgency kicks in, you make 23 percent more impulse purchases. For the average American, that adds up to $2,800 a year you never planned to spend.",
+    "visual": "Wallet SVG with money arrows flowing out on light background, bar chart growing to $2,800 with red fill, '23%' stat animating in below. Counter: $0 → $2,800.",
+    "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "What's brutal is the IRS charges you based on income from two years ago. So a Roth conversion you do today could hit your Medicare bill in 2026 — and by then, there's nothing you can do.",
-    "visual": "Dark background. Two calendar icons: '2024' in blue with 'Roth conversion' text, an arrow labeled '2 YEARS,' and '2026' in red with '$3,400 surcharge hits you NOW.' Red text below: 'By then, it's too late.'",
-    "accent_color": "red"
+    "narration": "Here's the fix. When you feel that urgency, wait 24 hours. The deal will almost always still be there — or a better one will appear. Screenshot the timer and check back.",
+    "visual": "Countdown timer with large green X crossing it out on dark background, SVG calendar with '24H' highlighted day. Checkmark SVG animating in. Text: 'THE DEAL WILL STILL BE THERE'.",
+    "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "The fix is simple — plan your retirement income to stay just under that threshold. One conversation with a CPA before you convert could save you thousands. Follow for more money traps like this.",
-    "visual": "Dark background. Three icons spring in: a suited person (CPA), a calculator showing '$103K,' and a pink piggy bank with a coin. A pulsing red CTA button: 'FOLLOW FOR MORE MONEY TRAPS LIKE THIS.'",
-    "accent_color": "red"
+    "narration": "Next time you see that ticking clock, screenshot it and come back tomorrow. You'll catch the fake almost every time. Follow for more retail tricks they don't want you to know.",
+    "visual": "Phone SVG showing screenshot capture flash, 'SCREENSHOT TAKEN' badge in green, reminder notification set for 24 hours. '↑ FOLLOW' text bouncing up in amber. Dark background.",
+    "accent_color": "amber"
   }
 ]
