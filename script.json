@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "That countdown timer on your screen isn't real. Seventy-three percent of online retailers fake them — and here's what that one trick is actually costing you.",
-    "visual": "Fake product deal page with large red countdown timer ticking down (9:47...), 'ONLY 2 LEFT IN STOCK' warning flashing in red, product box SVG with amber price tag. Dark background.",
-    "accent_color": "amber"
+    "narration": "Your old debt legally died. The statute of limitations ran out — collectors can't sue you. But here's the thing: it can rise from the dead.",
+    "visual": "Dark background. A tombstone labeled 'DEBT $4,200' rises from the ground, cracks form, glowing red eyes appear. Hook text overlay: 'YOUR DEBT ISN'T DEAD'.",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Here's the science. That ticking clock triggers your amygdala — your brain's fear center — in under 340 milliseconds. Your wallet opens before you even think.",
-    "visual": "SVG brain diagram on light background, amygdala region glowing red and pulsing, panic signals radiating outward, '340ms' counter animating upward. Label: 'FEAR CENTER: ACTIVATED'.",
-    "accent_color": "amber"
+    "narration": "Debt collectors buy your expired debt for one to four cents on the dollar. An $4,200 debt? They paid maybe eighty bucks for it. Then they come for the full amount.",
+    "visual": "Light background. SVG dollar bill labeled '$4,200' being sold with a price tag showing '$84'. Stack of files/folders representing debt portfolios. Counter animating from $0 to $88B label showing market size.",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "And the scale is wild. Amazon runs 200,000 Lightning Deals a year — every single one with a ticking clock. That one trick generates twelve billion dollars annually.",
-    "visual": "Large amber lightning bolt SVG, '$12B' counter animating upward on dark background, small deal cards with red timers appearing beneath it. Text: '200,000 DEALS/YEAR'.",
-    "accent_color": "amber"
+    "narration": "Here's the trap. One payment — even five dollars — legally resets the clock. Suddenly you owe again, for another three to seven years. That's zombie debt.",
+    "visual": "Dark background. A calendar resets from year 7 back to year 1 with a red reset arrow. Clock hand spinning backward. Warning label 'CLOCK RESETS' in bold red flashing text.",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "When urgency kicks in, you make 23 percent more impulse purchases. For the average American, that adds up to $2,800 a year you never planned to spend.",
-    "visual": "Wallet SVG with money arrows flowing out on light background, bar chart growing to $2,800 with red fill, '23%' stat animating in below. Counter: $0 → $2,800.",
-    "accent_color": "amber"
+    "narration": "They'll call at odd hours, use fake urgency, say 'just pay a little to show good faith.' Don't. That phrase is designed to resurrect your liability.",
+    "visual": "Light background. SVG phone ringing with red vibration lines. Speech bubble showing 'Just pay $5 to show good faith!' with a red X over it. Person silhouette backing away from phone.",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Here's the fix. When you feel that urgency, wait 24 hours. The deal will almost always still be there — or a better one will appear. Screenshot the timer and check back.",
-    "visual": "Countdown timer with large green X crossing it out on dark background, SVG calendar with '24H' highlighted day. Checkmark SVG animating in. Text: 'THE DEAL WILL STILL BE THERE'.",
-    "accent_color": "amber"
+    "narration": "Here's how you protect yourself: never acknowledge the debt verbally. Ask for everything in writing. Request debt validation within thirty days — it's your legal right.",
+    "visual": "Dark background. SVG shield with a checkmark. Three numbered steps appearing one by one: '1. Don't acknowledge', '2. Request writing', '3. Demand validation'. Each step springs in with animation.",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Next time you see that ticking clock, screenshot it and come back tomorrow. You'll catch the fake almost every time. Follow for more retail tricks they don't want you to know.",
-    "visual": "Phone SVG showing screenshot capture flash, 'SCREENSHOT TAKEN' badge in green, reminder notification set for 24 hours. '↑ FOLLOW' text bouncing up in amber. Dark background.",
-    "accent_color": "amber"
+    "narration": "The FDCPA gives you real power. If they break the rules, you can sue them. Know your rights — zombie debt dies permanently when you stop being scared of it.",
+    "visual": "Light background. SVG document labeled 'FDCPA' with a shield icon. Text: 'YOUR RIGHTS' in large bold. Tombstone with 'ZOMBIE DEBT' crumbling to dust. CTA: 'Check your state's statute of limitations'.",
+    "accent_color": "red"
   }
 ]
