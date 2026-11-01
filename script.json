@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Your old debt legally died. The statute of limitations ran out — collectors can't sue you. But here's the thing: it can rise from the dead.",
-    "visual": "Dark background. A tombstone labeled 'DEBT $4,200' rises from the ground, cracks form, glowing red eyes appear. Hook text overlay: 'YOUR DEBT ISN'T DEAD'.",
-    "accent_color": "red"
+    "narration": "Most people think they've done everything right — maxed their 401k, maxed their Roth IRA. But there's a third door nobody told you about, and it's worth $43,500 a year.",
+    "visual": "Person silhouette stands before three doors labeled 401K, ROTH IRA, and ??? — the third door glows blue and pulses. '$43,500/YEAR' text reveals at the end.",
+    "accent_color": "blue"
   },
   {
     "scene": 2,
-    "narration": "Debt collectors buy your expired debt for one to four cents on the dollar. An $4,200 debt? They paid maybe eighty bucks for it. Then they come for the full amount.",
-    "visual": "Light background. SVG dollar bill labeled '$4,200' being sold with a price tag showing '$84'. Stack of files/folders representing debt portfolios. Counter animating from $0 to $88B label showing market size.",
-    "accent_color": "red"
+    "narration": "Here's what everyone knows: $23,000 into your 401k, $7,000 into a Roth IRA. Thirty grand total, right? There's actually a $46,000 gap your plan is hiding from you.",
+    "visual": "Two animated piggy banks side by side — one labeled 401K with $23,000 counting up, one labeled ROTH IRA with $7,000. Total '= $30,000 MAX?' appears, then 'NOT EVEN CLOSE' in red.",
+    "accent_color": "blue"
   },
   {
     "scene": 3,
-    "narration": "Here's the trap. One payment — even five dollars — legally resets the clock. Suddenly you owe again, for another three to seven years. That's zombie debt.",
-    "visual": "Dark background. A calendar resets from year 7 back to year 1 with a red reset arrow. Clock hand spinning backward. Warning label 'CLOCK RESETS' in bold red flashing text.",
-    "accent_color": "red"
+    "narration": "Your 401k has a total annual limit of $69,000 — not $23,000. The difference is a $46,000 after-tax contribution gap your employer already set aside, and almost nobody uses it.",
+    "visual": "Horizontal progress bar splits into two segments: '$23K YOURS' in grey and '$46K THE GAP' in blue animating in from left. Label 'TOTAL LIMIT: $69,000' appears below.",
+    "accent_color": "blue"
   },
   {
     "scene": 4,
-    "narration": "They'll call at odd hours, use fake urgency, say 'just pay a little to show good faith.' Don't. That phrase is designed to resurrect your liability.",
-    "visual": "Light background. SVG phone ringing with red vibration lines. Speech bubble showing 'Just pay $5 to show good faith!' with a red X over it. Person silhouette backing away from phone.",
-    "accent_color": "red"
+    "narration": "Here's the move: you contribute after-tax dollars to fill that gap, then immediately convert them to Roth. It's called the Mega Backdoor Roth — the IRS says it's completely legal.",
+    "visual": "Two buckets: 'AFTER-TAX 401K' (grey) and 'ROTH TAX-FREE' (blue). Arrow animates between them with coins flying across. Green '100% LEGAL' stamp springs in.",
+    "accent_color": "blue"
   },
   {
     "scene": 5,
-    "narration": "Here's how you protect yourself: never acknowledge the debt verbally. Ask for everything in writing. Request debt validation within thirty days — it's your legal right.",
-    "visual": "Dark background. SVG shield with a checkmark. Three numbered steps appearing one by one: '1. Don't acknowledge', '2. Request writing', '3. Demand validation'. Each step springs in with animation.",
-    "accent_color": "red"
+    "narration": "That move lets you add up to $43,500 of Roth money every single year — six times the regular Roth limit. Over 30 years, that compounds into over four million dollars, completely tax-free.",
+    "visual": "Counter animates from $0 up to $43,500 in blue. Calendar pages cycle as years pass. '$4,000,000+' springs in large with 'TAX-FREE GROWTH' label.",
+    "accent_color": "blue"
   },
   {
     "scene": 6,
-    "narration": "The FDCPA gives you real power. If they break the rules, you can sue them. Know your rights — zombie debt dies permanently when you stop being scared of it.",
-    "visual": "Light background. SVG document labeled 'FDCPA' with a shield icon. Text: 'YOUR RIGHTS' in large bold. Tombstone with 'ZOMBIE DEBT' crumbling to dust. CTA: 'Check your state's statute of limitations'.",
-    "accent_color": "red"
+    "narration": "About 20% of 401k plans allow this right now. Open your plan documents today and search for 'after-tax contributions' or 'in-plan Roth conversion.' If it's there, you've been leaving a fortune behind.",
+    "visual": "Phone SVG showing a search screen typing 'after-tax contributions' with plan document results. 'CHECK TODAY' button springs in. 'MEGA BACKDOOR ROTH' title at top.",
+    "accent_color": "blue"
   }
 ]
