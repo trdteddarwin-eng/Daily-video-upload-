@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Most people think they've done everything right — maxed their 401k, maxed their Roth IRA. But there's a third door nobody told you about, and it's worth $43,500 a year.",
-    "visual": "Person silhouette stands before three doors labeled 401K, ROTH IRA, and ??? — the third door glows blue and pulses. '$43,500/YEAR' text reveals at the end.",
-    "accent_color": "blue"
+    "narration": "Seventy-three percent of people get a tax refund every year and feel like they won. But a refund means you overpaid — and the IRS gave you zero percent interest on that loan.",
+    "visual": "Envelope opening to reveal a refund check for $2,753. A glowing badge appears: '0% INTEREST'. Red X through 'WINNING'.",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Here's what everyone knows: $23,000 into your 401k, $7,000 into a Roth IRA. Thirty grand total, right? There's actually a $46,000 gap your plan is hiding from you.",
-    "visual": "Two animated piggy banks side by side — one labeled 401K with $23,000 counting up, one labeled ROTH IRA with $7,000. Total '= $30,000 MAX?' appears, then 'NOT EVEN CLOSE' in red.",
-    "accent_color": "blue"
+    "narration": "Here's how it works. Your W-4 form tells your employer how much to withhold from every paycheck. Most people fill it out once when they're hired — and never touch it again.",
+    "visual": "A W-4 document icon. Person silhouette sitting at desk signing it. Calendar pages fast-forward through years. W-4 collects dust.",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Your 401k has a total annual limit of $69,000 — not $23,000. The difference is a $46,000 after-tax contribution gap your employer already set aside, and almost nobody uses it.",
-    "visual": "Horizontal progress bar splits into two segments: '$23K YOURS' in grey and '$46K THE GAP' in blue animating in from left. Label 'TOTAL LIMIT: $69,000' appears below.",
-    "accent_color": "blue"
+    "narration": "The average refund is $2,753 — that's $229 sitting with the government every single month. Meanwhile, if you're carrying credit card debt at 22%, you're literally paying to give them a free loan.",
+    "visual": "Two side-by-side bars: 'YOUR REFUND: $2,753' and 'CREDIT CARD RATE: 22%'. Credit card SVG with flames growing upward.",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Here's the move: you contribute after-tax dollars to fill that gap, then immediately convert them to Roth. It's called the Mega Backdoor Roth — the IRS says it's completely legal.",
-    "visual": "Two buckets: 'AFTER-TAX 401K' (grey) and 'ROTH TAX-FREE' (blue). Arrow animates between them with coins flying across. Green '100% LEGAL' stamp springs in.",
-    "accent_color": "blue"
+    "narration": "Here's the real cost. That $2,753 invested every January instead of waiting for April — at eight percent returns — grows to four hundred and seventeen thousand dollars over forty years.",
+    "visual": "Coin stack growing into a mountain. Counter animating from $2,753 up to $417,000. Arrow curving steeply upward.",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "That move lets you add up to $43,500 of Roth money every single year — six times the regular Roth limit. Over 30 years, that compounds into over four million dollars, completely tax-free.",
-    "visual": "Counter animates from $0 up to $43,500 in blue. Calendar pages cycle as years pass. '$4,000,000+' springs in large with 'TAX-FREE GROWTH' label.",
-    "accent_color": "blue"
+    "narration": "You can fix this in five minutes. Go to the IRS Tax Withholding Estimator, update your W-4, and submit it to HR. Your very next paycheck gets bigger — permanently.",
+    "visual": "Phone screen showing IRS logo. W-4 form with a checkmark. Paycheck graphic showing amount increasing with upward arrow.",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "About 20% of 401k plans allow this right now. Open your plan documents today and search for 'after-tax contributions' or 'in-plan Roth conversion.' If it's there, you've been leaving a fortune behind.",
-    "visual": "Phone SVG showing a search screen typing 'after-tax contributions' with plan document results. 'CHECK TODAY' button springs in. 'MEGA BACKDOOR ROTH' title at top.",
-    "accent_color": "blue"
+    "narration": "Most people spend their whole career handing the government free loans and calling refunds a gift. The fix is completely free, takes five minutes, and starts this pay period. Go do it.",
+    "visual": "Person silhouette holding a growing stack of coins. Bold text: 'UPDATE YOUR W-4 TODAY'. Red arrow pointing up. Piggy bank filling up.",
+    "accent_color": "red"
   }
 ]
