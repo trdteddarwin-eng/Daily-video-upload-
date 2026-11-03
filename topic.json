@@ -1,13 +1,15 @@
 {
-  "title": "73% of Workers Give the IRS an Interest-Free $2,500 Loan",
-  "hook": "Your employer's been taking too much from every paycheck — and you've been handing the IRS a $2,500 interest-free loan while paying 22% on your credit card.",
-  "angle": "Not generic tax advice. Exposes the withholding trap most workers never question — getting a refund isn't winning, it's proof you overpaid all year and earned zero interest on your own money.",
-  "audience": "Working adults 25-55 who get a tax refund every year and think it's a bonus",
+  "title": "Your Emergency Fund Is Secretly Costing You $106K",
+  "hook": "Everybody says keep six months of expenses in cash — but nobody tells you that 'safe' pile of money has a six-figure price tag attached to it.",
+  "angle": "Not generic 'save more' advice. Exposes the opportunity cost of over-hoarding cash in a low-yield account when smarter tiered alternatives keep you just as protected at far better returns.",
+  "audience": "Adults 25-55 who have a traditional 6-month emergency fund sitting in a big bank savings account earning almost nothing",
   "key_numbers": [
-    "73% of workers over-withhold every year",
-    "$2,753 — average tax refund in 2024",
-    "0% — interest the IRS pays you on that money",
-    "22% — average credit card interest rate",
-    "$417,000 — what $2,753 invested yearly grows to in 40 years at 8%"
+    "$30,000 — average 6-month emergency fund",
+    "0.5% — typical big bank savings rate",
+    "$150 — what that earns per year at 0.5%",
+    "$2,400 — what 8% market returns on $30K look like annually",
+    "$106,618 — 20-year opportunity cost gap ($33,148 vs $139,828)",
+    "1 in 4 — people who never touch their emergency fund",
+    "$1,400 — average cost of an actual emergency"
   ]
 }

@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Seventy-three percent of people get a tax refund every year and feel like they won. But a refund means you overpaid — and the IRS gave you zero percent interest on that loan.",
-    "visual": "Envelope opening to reveal a refund check for $2,753. A glowing badge appears: '0% INTEREST'. Red X through 'WINNING'.",
-    "accent_color": "red"
+    "narration": "Everybody says keep six months of expenses in cash for emergencies — about thirty thousand dollars for most families, just sitting there. Sounds responsible, right? But nobody tells you what that safe pile of money is secretly costing you.",
+    "visual": "Piggy bank SVG spring-in animation. Counter animates from $0 to $30,000. Red badge fades in: 'EARNING 0.5% A YEAR'. Dark background.",
+    "accent_color": "green"
   },
   {
     "scene": 2,
-    "narration": "Here's how it works. Your W-4 form tells your employer how much to withhold from every paycheck. Most people fill it out once when they're hired — and never touch it again.",
-    "visual": "A W-4 document icon. Person silhouette sitting at desk signing it. Calendar pages fast-forward through years. W-4 collects dust.",
-    "accent_color": "red"
+    "narration": "At the average big bank, that thirty thousand earns about one hundred fifty dollars a year — that's the rate they give loyal customers. Meanwhile, the market historically returns eight percent — that's twenty-four hundred dollars from the same money.",
+    "visual": "Two animated bar charts growing side by side. Left bar (short, gray): 'BIG BANK $150/yr'. Right bar (tall, green): 'MARKET $2,400/yr'. Bank building SVG icon vs upward growth arrow. Light background.",
+    "accent_color": "green"
   },
   {
     "scene": 3,
-    "narration": "The average refund is $2,753 — that's $229 sitting with the government every single month. Meanwhile, if you're carrying credit card debt at 22%, you're literally paying to give them a free loan.",
-    "visual": "Two side-by-side bars: 'YOUR REFUND: $2,753' and 'CREDIT CARD RATE: 22%'. Credit card SVG with flames growing upward.",
-    "accent_color": "red"
+    "narration": "Over twenty years, your savings account grows thirty thousand to just thirty-three thousand. That same money in the market becomes a hundred and forty thousand. That's a hundred-and-seven-thousand-dollar gap — from doing what everyone told you.",
+    "visual": "Two animated bars on dark background. Gray bar ($33,148) vs tall green bar ($139,828). Red badge fades in: '$106,618 GAP — FROM PLAYING IT SAFE'.",
+    "accent_color": "green"
   },
   {
     "scene": 4,
-    "narration": "Here's the real cost. That $2,753 invested every January instead of waiting for April — at eight percent returns — grows to four hundred and seventeen thousand dollars over forty years.",
-    "visual": "Coin stack growing into a mountain. Counter animating from $2,753 up to $417,000. Arrow curving steeply upward.",
-    "accent_color": "red"
+    "narration": "Here's the wild part — studies show one in four people with an emergency fund never actually use it. And when emergencies do hit, the average one costs only fourteen hundred dollars. Your thirty-thousand fund is massively overstocked.",
+    "visual": "Semi-transparent piggy bank with padlock SVG. Three stat cards fade in sequentially: '1 IN 4 NEVER TOUCH THEIRS', 'AVG EMERGENCY: $1,400', 'YOUR FUND: $30,000'. Light background.",
+    "accent_color": "green"
   },
   {
     "scene": 5,
-    "narration": "You can fix this in five minutes. Go to the IRS Tax Withholding Estimator, update your W-4, and submit it to HR. Your very next paycheck gets bigger — permanently.",
-    "visual": "Phone screen showing IRS logo. W-4 form with a checkmark. Paycheck graphic showing amount increasing with upward arrow.",
-    "accent_color": "red"
+    "narration": "Here's what smart money people do instead. Keep one month liquid in a high-yield account earning four to five percent. Park the rest in T-bills or a money market fund — you stay protected and your money actually grows.",
+    "visual": "Three-tier horizontal bars revealing left to right: narrow bar 'HYSA 4-5%', medium bar 'T-BILLS 5%+', wide bar 'INDEX FUND 8%'. Each tier animates width growth. Dark background.",
+    "accent_color": "green"
   },
   {
     "scene": 6,
-    "narration": "Most people spend their whole career handing the government free loans and calling refunds a gift. The fix is completely free, takes five minutes, and starts this pay period. Go do it.",
-    "visual": "Person silhouette holding a growing stack of coins. Bold text: 'UPDATE YOUR W-4 TODAY'. Red arrow pointing up. Piggy bank filling up.",
-    "accent_color": "red"
+    "narration": "You did the hard part — you actually saved. Now make that money work for you instead of sitting there gathering dust. Move the excess to a high-yield account today and start earning real returns on your own savings.",
+    "visual": "Person silhouette holding growing coin stack. Coins animate stacking upward. Bold green CTA: 'OPTIMIZE YOUR EMERGENCY FUND'. Upward arrow animation. Light background.",
+    "accent_color": "green"
   }
 ]
