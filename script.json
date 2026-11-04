@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Everybody says keep six months of expenses in cash for emergencies — about thirty thousand dollars for most families, just sitting there. Sounds responsible, right? But nobody tells you what that safe pile of money is secretly costing you.",
-    "visual": "Piggy bank SVG spring-in animation. Counter animates from $0 to $30,000. Red badge fades in: 'EARNING 0.5% A YEAR'. Dark background.",
-    "accent_color": "green"
+    "narration": "Black Friday is three weeks away — and stores are already setting the trap. Ninety-two percent of those deals are actually cheaper at other times of the year.",
+    "visual": "Store exterior at night with giant BLACK FRIDAY SALE banner in amber, animated crowd silhouettes rushing through the doors, '92%' stat counting up in large bold text",
+    "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "At the average big bank, that thirty thousand earns about one hundred fifty dollars a year — that's the rate they give loyal customers. Meanwhile, the market historically returns eight percent — that's twenty-four hundred dollars from the same money.",
-    "visual": "Two animated bar charts growing side by side. Left bar (short, gray): 'BIG BANK $150/yr'. Right bar (tall, green): 'MARKET $2,400/yr'. Bank building SVG icon vs upward growth arrow. Light background.",
-    "accent_color": "green"
+    "narration": "Here's the trick: retailers quietly raise prices thirty to forty-five days before Black Friday, then 'slash' them back to normal. That fifty-percent-off tag? It was fifty percent higher last month.",
+    "visual": "Animated price tag showing price climbing to $400 with an 'OCTOBER PRICE' label, then a '50% OFF — $200' sticker slapping on to reveal the original price was always $200",
+    "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Over twenty years, your savings account grows thirty thousand to just thirty-three thousand. That same money in the market becomes a hundred and forty thousand. That's a hundred-and-seven-thousand-dollar gap — from doing what everyone told you.",
-    "visual": "Two animated bars on dark background. Gray bar ($33,148) vs tall green bar ($139,828). Red badge fades in: '$106,618 GAP — FROM PLAYING IT SAFE'.",
-    "accent_color": "green"
+    "narration": "That door-buster deal and 'only two left' warning trigger your brain's fear center in under three hundred milliseconds — faster than you can read the price. Stores know exactly what they're doing.",
+    "visual": "Simple brain silhouette with amygdala highlighted in amber, countdown timer ticking fast, pulsing red 'ONLY 2 LEFT!' warning box below",
+    "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "Here's the wild part — studies show one in four people with an emergency fund never actually use it. And when emergencies do hit, the average one costs only fourteen hundred dollars. Your thirty-thousand fund is massively overstocked.",
-    "visual": "Semi-transparent piggy bank with padlock SVG. Three stat cards fade in sequentially: '1 IN 4 NEVER TOUCH THEIRS', 'AVG EMERGENCY: $1,400', 'YOUR FUND: $30,000'. Light background.",
-    "accent_color": "green"
+    "narration": "You plan to spend two hundred dollars. The average Black Friday shopper actually spends four hundred ninety-six. Every element of the sale — the timers, the layout, the crowds — is calibrated to do exactly that.",
+    "visual": "Animated bar chart side by side: green '$200 Planned' bar and amber '$496 Actual' bar growing upward with dollar amounts counting up",
+    "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "Here's what smart money people do instead. Keep one month liquid in a high-yield account earning four to five percent. Park the rest in T-bills or a money market fund — you stay protected and your money actually grows.",
-    "visual": "Three-tier horizontal bars revealing left to right: narrow bar 'HYSA 4-5%', medium bar 'T-BILLS 5%+', wide bar 'INDEX FUND 8%'. Each tier animates width growth. Dark background.",
-    "accent_color": "green"
+    "narration": "And it doesn't stop there. That one day of deals bleeds into weeks of holiday spending. The total? The average American spends fourteen hundred dollars more than they planned, every single holiday season.",
+    "visual": "Piggy bank SVG with coins falling in from above, dollar counter building from $0 up to $1,400, 'EXTRA EVERY HOLIDAY SEASON' label appearing",
+    "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "You did the hard part — you actually saved. Now make that money work for you instead of sitting there gathering dust. Move the excess to a high-yield account today and start earning real returns on your own savings.",
-    "visual": "Person silhouette holding growing coin stack. Coins animate stacking upward. Bold green CTA: 'OPTIMIZE YOUR EMERGENCY FUND'. Upward arrow animation. Light background.",
-    "accent_color": "green"
+    "narration": "Here's the hack: screenshot your wishlist today. In January, sixty percent of those items will be the same price or cheaper — and you'll keep eight hundred dollars in your pocket. Save this.",
+    "visual": "Phone SVG with screenshot action, arrow pointing to January calendar page, piggy bank filling up in green, '$800 SAVED' badge springing into view",
+    "accent_color": "amber"
   }
 ]
