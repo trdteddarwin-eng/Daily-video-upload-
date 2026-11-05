@@ -1,13 +1,16 @@
 {
   "tiktok": {
-    "caption": "92% of Black Friday 'deals' are cheaper other times of year. Here's how retailers manufacture the trap.",
-    "hashtags": ["#BlackFriday", "#moneytips", "#financetok", "#savemoney", "#consumerpsychology", "#personalfinance", "#shoppinghacks"]
+    "caption": "You said yes to your first offer to 'get experience.' That one number quietly followed every paycheck you've earned since 👀",
+    "hashtags": ["#salary", "#personalfinance", "#moneytips", "#negotiate", "#careeradvice", "#financetok", "#wealthbuilding"]
   },
   "youtube_short": {
-    "title": "Your Black Friday Deal Is Fake",
-    "title_alternatives": ["How Black Friday Steals $1,400 From You Every Year", "The Price Inflation Trick Behind Every Black Friday Sale"],
-    "description": "92% of Black Friday 'deals' are cheaper or the same price at other times of year — and retailers spend months engineering the trap. They quietly inflate prices in October, then 'slash' them back on Black Friday while your FOMO brain can't think straight. The average shopper plans $200 and spends $496. Over the holiday season, that's $1,400 more than you budgeted. Here's the simple hack to beat it. #BlackFriday #personalfinance #moneytips #savemoney",
-    "tags": ["black friday", "consumer psychology", "money tips", "personal finance", "shopping hacks", "save money", "black friday deals", "retail psychology", "holiday shopping", "finance"]
+    "title": "Your First Salary Follows You Forever",
+    "title_alternatives": [
+      "The Salary Anchor That's Costing You $347K",
+      "Why Accepting a Low First Offer Is a 30-Year Mistake"
+    ],
+    "description": "You got your first job offer, it felt a little low, but you took it to get your foot in the door. Seemed fine at the time — but here's what nobody told you. Raises are percentage-based, so a low starting salary means every single raise is calculated off that same low number. Start just $5,000 below market at 22 and over a 30-year career, that one gap compounds into $347,000. And 72% of employers base your next offer on what you currently make, so the anchor just travels with you to every new job. The fix? Job-hoppers earn 50% more lifetime, and just negotiating once on your first offer can recover $5K to $10K on the spot. Only 37% of people even ask. #salary #personalfinance #moneytips #negotiate",
+    "tags": ["salary negotiation", "personal finance", "career advice", "money tips", "first job salary", "wealth building", "finance", "job hopping", "money psychology"]
   },
-  "hook_line": "92% of Black Friday deals are cheaper elsewhere"
+  "hook_line": "Your first 'YES' just cost you $347,000"
 }
