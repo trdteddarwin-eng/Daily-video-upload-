@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You got your first job offer, it felt a little low, but you said yes to get experience. That one number just locked in a tax on your entire career.",
-    "visual": "Person silhouette receiving an offer letter that drops in from above. A heavy chain-anchor appears below, connected to the letter with chain links.",
-    "accent_color": "amber"
+    "narration": "Here's something wild — you can earn more and actually take home less. It's not a tax bracket myth. It's a benefit cliff, and millions of people are standing right on one without knowing it.",
+    "visual": "Person silhouette receives a 'YOU GOT A RAISE +$2,000' notification on a phone, but the wallet behind them drains to empty. Text overlay: 'MORE PAY = LESS MONEY?' in bold white.",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Here's the trap — raises are almost always a percentage of what you already make. Start low, every raise stays low. The gap compounds every single year.",
-    "visual": "Side-by-side bar chart for Year 1, Year 10, Year 20. Market Rate bars (amber) versus Underpaid bars (gray) show a widening gap.",
-    "accent_color": "amber"
+    "narration": "If your income is under 400% of the federal poverty line, you qualify for health insurance subsidies worth thousands. Earn one dollar over that line and the government claws back every cent. Zero. Gone.",
+    "visual": "Person silhouette walking toward a cliff labeled '400% FPL = $58,320/yr'. Dollar signs float upward and away as the person reaches the edge. Light background.",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Start just $5,000 below market at 22, and over a 30-year career, that one gap compounds into $347,000 out of your pocket. Wild, right?",
-    "visual": "Giant amber counter counting up to $347,000. Age timeline below runs from 22 to 60 with amber fill growing across it.",
-    "accent_color": "amber"
+    "narration": "For a single person in 2026, that cliff sits at $58,320. Earn $58,321 and you lose around $3,200 a year in subsidies. Your employer gave you a raise — the government immediately took $3,200 more.",
+    "visual": "Side-by-side comparison: left box '$58,320' with green border and '+$3,200 SUBSIDY'. Right box '$58,321' with red border and '-$3,200 NO SUBSIDY'. Center shows '+$1 →' arrow. Dark background.",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "And 72% of employers base your new offer on what you already make. So if you're underpaid now, that anchor just follows you to your next job.",
-    "visual": "Office desk scene with boss figure passing an offer letter to employee. An anchor drops below the letter connected by chain links.",
-    "accent_color": "amber"
+    "narration": "And it's not just health insurance. SNAP food benefits, Medicaid, housing vouchers, and childcare subsidies all have their own cliffs. Stack them together and one promotion can cost you over twelve thousand dollars a year.",
+    "visual": "Four benefit cards sliding in one by one: HEALTH ($3,200), FOOD ($2,100), HOUSING ($4,800), CHILDCARE ($2,400). Total box at bottom shows '-$12,500'. Light background.",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Workers who job-hop every two to three years earn 50% more over their lifetime. Each switch resets the anchor to market rate — that's the actual fix.",
-    "visual": "Three buildings at increasing heights representing Jobs 1, 2, 3. Person silhouette jumps between them. Salary labels ($60K, $78K, $95K) above each building.",
-    "accent_color": "amber"
+    "narration": "Over fifty million Americans live near at least one benefit cliff. The fix isn't turning down the raise — it's knowing your numbers first. A raise smaller than your benefit loss is a pay cut disguised as good news.",
+    "visual": "Grid of 50 small person silhouettes, the right column highlighted in red near a dotted cliff line. Text: '50 MILLION AT RISK'. Then: 'A RAISE SMALLER THAN YOUR LOSS IS A PAY CUT'. Dark background.",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Only 37% of people negotiate their very first offer. One conversation can recover $5,000 to $10,000. That gap takes 30 years to close otherwise — start negotiating now.",
-    "visual": "Handshake between two figures. Small money bag (before) next to large amber money bag (after). Bold CTA box: ASK ONCE = $347K.",
-    "accent_color": "amber"
+    "narration": "Before you say yes to your next raise, search 'benefit cliff calculator' — they're completely free. Know what income level keeps you whole. Because more money on paper doesn't always mean more money in your pocket.",
+    "visual": "Phone screen showing a search bar typing out 'benefit cliff calculator', then search results appearing with free tools. CTA text: 'SEARCH: BENEFIT CLIFF CALCULATOR'. Light background.",
+    "accent_color": "red"
   }
 ]
