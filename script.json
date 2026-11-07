@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Here's something wild — you can earn more and actually take home less. It's not a tax bracket myth. It's a benefit cliff, and millions of people are standing right on one without knowing it.",
-    "visual": "Person silhouette receives a 'YOU GOT A RAISE +$2,000' notification on a phone, but the wallet behind them drains to empty. Text overlay: 'MORE PAY = LESS MONEY?' in bold white.",
-    "accent_color": "red"
+    "narration": "Here's a money trick that takes under two minutes and works nine times out of ten. Most people overpay their bills for years — just because they never asked.",
+    "visual": "Animated phone SVG in center with dollar signs floating upward around it, large '$1,400/YEAR' stat text spring-animating in at bottom",
+    "accent_color": "green"
   },
   {
     "scene": 2,
-    "narration": "If your income is under 400% of the federal poverty line, you qualify for health insurance subsidies worth thousands. Earn one dollar over that line and the government claws back every cent. Zero. Gone.",
-    "visual": "Person silhouette walking toward a cliff labeled '400% FPL = $58,320/yr'. Dollar signs float upward and away as the person reaches the edge. Light background.",
-    "accent_color": "red"
+    "narration": "Every cable company, internet provider, and gym has a secret retention department. Their only job is to keep you — and they can cut your bill by up to forty percent.",
+    "visual": "Person silhouette with headset at desk, 'RETENTION DEPT' badge appearing with spring animation, counter rising to show 40% discount available",
+    "accent_color": "green"
   },
   {
     "scene": 3,
-    "narration": "For a single person in 2026, that cliff sits at $58,320. Earn $58,321 and you lose around $3,200 a year in subsidies. Your employer gave you a raise — the government immediately took $3,200 more.",
-    "visual": "Side-by-side comparison: left box '$58,320' with green border and '+$3,200 SUBSIDY'. Right box '$58,321' with red border and '-$3,200 NO SUBSIDY'. Center shows '+$1 →' arrow. Dark background.",
-    "accent_color": "red"
+    "narration": "Number one: cable and internet. Number two: insurance. Number three: gym memberships. Those three bills alone could save you eight hundred dollars this year.",
+    "visual": "Three icons spring in with staggered timing: cable box icon, shield icon, barbell icon — each with label and yearly savings amount beneath",
+    "accent_color": "green"
   },
   {
     "scene": 4,
-    "narration": "And it's not just health insurance. SNAP food benefits, Medicaid, housing vouchers, and childcare subsidies all have their own cliffs. Stack them together and one promotion can cost you over twelve thousand dollars a year.",
-    "visual": "Four benefit cards sliding in one by one: HEALTH ($3,200), FOOD ($2,100), HOUSING ($4,800), CHILDCARE ($2,400). Total box at bottom shows '-$12,500'. Light background.",
-    "accent_color": "red"
+    "narration": "The script is dead simple. Just say 'I love the service, but I need to lower my bills.' That phrase gets the discount department on the phone every single time.",
+    "visual": "Large speech bubble with the script phrase inside, phone handset SVG, '9 OUT OF 10' success badge appearing",
+    "accent_color": "green"
   },
   {
     "scene": 5,
-    "narration": "Over fifty million Americans live near at least one benefit cliff. The fix isn't turning down the raise — it's knowing your numbers first. A raise smaller than your benefit loss is a pay cut disguised as good news.",
-    "visual": "Grid of 50 small person silhouettes, the right column highlighted in red near a dotted cliff line. Text: '50 MILLION AT RISK'. Then: 'A RAISE SMALLER THAN YOUR LOSS IS A PAY CUT'. Dark background.",
-    "accent_color": "red"
+    "narration": "Medical bills are your biggest win. Eighty percent have billing errors, and hospitals expect negotiation. Just ask for the itemized bill and a cash-pay rate.",
+    "visual": "Hospital bill/document SVG with red X marks and green checkmarks appearing on line items to show errors found, '80%' large stat text",
+    "accent_color": "green"
   },
   {
     "scene": 6,
-    "narration": "Before you say yes to your next raise, search 'benefit cliff calculator' — they're completely free. Know what income level keeps you whole. Because more money on paper doesn't always mean more money in your pocket.",
-    "visual": "Phone screen showing a search bar typing out 'benefit cliff calculator', then search results appearing with free tools. CTA text: 'SEARCH: BENEFIT CLIFF CALCULATOR'. Light background.",
-    "accent_color": "red"
+    "narration": "Pick one bill today and make the two-minute call. That's it. Five minutes of uncomfortable conversation could put fourteen hundred dollars back in your pocket this year.",
+    "visual": "Calendar with today (Nov 7) highlighted in green, stack of gold coins growing upward beside it, CTA text animating in at bottom",
+    "accent_color": "green"
   }
 ]
