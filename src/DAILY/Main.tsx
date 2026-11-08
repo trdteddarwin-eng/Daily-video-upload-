@@ -3,7 +3,7 @@ import { AbsoluteFill, Series, useCurrentFrame, useVideoConfig, interpolate, spr
 
 const BG_DARK = '#0A0A0A';
 const BG_LIGHT = '#F7F7F7';
-const ACCENT = '#10B981';
+const ACCENT = '#EF4444';
 const WHITE = '#F5F5F5';
 const FONT = '"Arial Black", "Helvetica Neue", Arial, sans-serif';
 
@@ -30,55 +30,49 @@ const Scene1: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  const phoneIn = spring({ frame, fps, config: { damping: 14, stiffness: 160 } });
-  const titleIn = spring({ frame: Math.max(0, frame - 15), fps, config: { damping: 14, stiffness: 140 } });
-  const statIn = spring({ frame: Math.max(0, frame - 45), fps, config: { damping: 10, stiffness: 200 } });
-
-  const dollars = [
-    { x: 430, delay: 20 },
-    { x: 540, delay: 38 },
-    { x: 650, delay: 54 },
-    { x: 490, delay: 12 },
-  ];
+  const titleIn = spring({ frame, fps, config: { damping: 14, stiffness: 140 } });
+  const docIn = spring({ frame: Math.max(0, frame - 15), fps, config: { damping: 13, stiffness: 150 } });
+  const statIn = spring({ frame: Math.max(0, frame - 70), fps, config: { damping: 10, stiffness: 200 } });
 
   return (
     <FadeScene bg={BG_DARK} dur={dur}>
       <AbsoluteFill>
         <div style={{
-          position: 'absolute', top: 220, left: 0, right: 0,
+          position: 'absolute', top: 200, left: 0, right: 0,
           opacity: titleIn,
-          transform: `translateY(${interpolate(titleIn, [0, 1], [50, 0])}px)`,
+          transform: `translateY(${interpolate(titleIn, [0, 1], [40, 0])}px)`,
         }}>
-          <p style={headline(84, ACCENT)}>THE 2-MINUTE</p>
-          <p style={{ ...headline(84, WHITE), marginTop: 10 }}>MONEY TRICK</p>
+          <p style={headline(80, WHITE)}>YOUR FUND</p>
+          <p style={{ ...headline(80, ACCENT), marginTop: 8 }}>LOST MONEY</p>
         </div>
 
         <svg width="1080" height="1920" viewBox="0 0 1080 1920"
           style={{ position: 'absolute', top: 0, left: 0 }}>
-          <g transform={`translate(540,960) scale(${phoneIn * 2.8})`}>
-            <rect x="-55" y="-100" width="110" height="200" rx="14" ry="14" fill={ACCENT} />
-            <rect x="-46" y="-88" width="92" height="168" rx="9" ry="9" fill="#0a1628" />
-            <circle cx="0" cy="86" r="10" fill={ACCENT} opacity="0.5" />
-            <rect x="-18" y="-96" width="36" height="5" rx="2" fill="#000" opacity="0.3" />
-            <text x="0" y="12" textAnchor="middle" fontFamily="Arial Black" fontSize="52" fill={ACCENT}>$</text>
+          <g transform={`translate(540,970) scale(${docIn})`}>
+            <rect x="-210" y="-270" width="420" height="540" rx="14" fill="#fff" />
+            <rect x="-210" y="-270" width="420" height="78" rx="14" fill={ACCENT} />
+            <rect x="-210" y="-228" width="420" height="36" fill={ACCENT} />
+            <text x="0" y="-234" textAnchor="middle" fontFamily="Arial Black" fontSize="28" fill="#fff">IRS NOTICE</text>
+            <text x="0" y="-195" textAnchor="middle" fontFamily="Arial Black" fontSize="20" fill="#fff">CAPITAL GAINS TAX DUE</text>
+            <rect x="-170" y="-158" width="340" height="10" rx="5" fill="#ddd" />
+            <rect x="-170" y="-128" width="260" height="10" rx="5" fill="#ddd" />
+            <rect x="-170" y="-98" width="300" height="10" rx="5" fill="#ddd" />
+            <rect x="-170" y="-68" width="230" height="10" rx="5" fill="#ddd" />
+            <line x1="-170" y1="-28" x2="170" y2="-28" stroke="#ccc" strokeWidth="2" />
+            <text x="-168" y="22" fontFamily="Arial Black" fontSize="20" fill="#888">AMOUNT DUE:</text>
+            <text x="0" y="96" textAnchor="middle" fontFamily="Arial Black" fontSize="62" fill={ACCENT}>$1,842</text>
+            <polyline points="-158,186 -106,174 -54,180 2,158 58,142 110,118 155,92 170,78"
+              stroke={ACCENT} strokeWidth="4" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+            <polygon points="186,66 158,96 144,78" fill={ACCENT} />
           </g>
-          {dollars.map((d, i) => {
-            const df = Math.max(0, frame - d.delay);
-            const yPos = interpolate(df, [0, 85], [1080, 720], { extrapolateRight: 'clamp' });
-            const op = interpolate(df, [0, 12, 65, 85], [0, 1, 1, 0], { extrapolateRight: 'clamp' });
-            return (
-              <text key={i} x={d.x} y={yPos} textAnchor="middle"
-                fontFamily="Arial Black" fontSize="56" fill={ACCENT} opacity={op}>$</text>
-            );
-          })}
         </svg>
 
         <div style={{
-          position: 'absolute', bottom: 300, left: 0, right: 0, textAlign: 'center',
+          position: 'absolute', bottom: 200, left: 0, right: 0, textAlign: 'center',
           opacity: statIn, transform: `scale(${statIn})`,
         }}>
-          <p style={headline(128, WHITE)}>$1,400</p>
-          <p style={{ ...headline(48, ACCENT), marginTop: 8 }}>SAVED PER YEAR</p>
+          <p style={headline(44, '#777')}>IRS STILL WANTS</p>
+          <p style={{ ...headline(102, ACCENT), marginTop: 4 }}>$1,842</p>
         </div>
       </AbsoluteFill>
     </FadeScene>
@@ -90,51 +84,75 @@ const Scene2: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const { fps } = useVideoConfig();
 
   const titleIn = spring({ frame, fps, config: { damping: 14, stiffness: 140 } });
-  const personIn = spring({ frame: Math.max(0, frame - 10), fps, config: { damping: 14, stiffness: 150 } });
-  const badgeIn = spring({ frame: Math.max(0, frame - 35), fps, config: { damping: 11, stiffness: 190 } });
-  const statIn = spring({ frame: Math.max(0, frame - 55), fps, config: { damping: 10, stiffness: 200 } });
+  const managerIn = spring({ frame: Math.max(0, frame - 10), fps, config: { damping: 14, stiffness: 150 } });
+  const arrow1In = spring({ frame: Math.max(0, frame - 40), fps, config: { damping: 11, stiffness: 180 } });
+  const arrow2In = spring({ frame: Math.max(0, frame - 56), fps, config: { damping: 11, stiffness: 180 } });
+  const arrow3In = spring({ frame: Math.max(0, frame - 72), fps, config: { damping: 11, stiffness: 180 } });
+  const taglineIn = spring({ frame: Math.max(0, frame - 90), fps, config: { damping: 10, stiffness: 200 } });
 
-  const pct = Math.round(interpolate(frame, [55, 115], [0, 40], {
-    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
-  }));
+  const investors = [
+    { x: -280, arrowIn: arrow1In },
+    { x: 0, arrowIn: arrow2In },
+    { x: 280, arrowIn: arrow3In },
+  ];
 
   return (
     <FadeScene bg={BG_LIGHT} dur={dur}>
       <AbsoluteFill>
         <div style={{
-          position: 'absolute', top: 220, left: 0, right: 0,
+          position: 'absolute', top: 200, left: 0, right: 0,
           opacity: titleIn,
           transform: `translateY(${interpolate(titleIn, [0, 1], [40, 0])}px)`,
         }}>
-          <p style={headline(72, '#111')}>SECRET</p>
-          <p style={{ ...headline(72, ACCENT), marginTop: 8 }}>RETENTION DEPT</p>
+          <p style={headline(76, '#111')}>HOW IT</p>
+          <p style={{ ...headline(76, ACCENT), marginTop: 8 }}>WORKS</p>
         </div>
 
         <svg width="1080" height="1920" viewBox="0 0 1080 1920"
           style={{ position: 'absolute', top: 0, left: 0 }}>
-          <g transform={`translate(540,920) scale(${personIn * 1.7})`}>
-            <circle cx="0" cy="-110" r="52" fill="#666" />
-            <rect x="-58" y="-54" width="116" height="130" rx="12" fill="#666" />
-            <path d="M -54,-110 Q 0,-178 54,-110" stroke={ACCENT} strokeWidth="8" fill="none" />
-            <circle cx="-56" cy="-108" r="13" fill={ACCENT} />
-            <circle cx="56" cy="-108" r="13" fill={ACCENT} />
-            <path d="M -56,-95 L -70,-58 L -58,-58" stroke={ACCENT} strokeWidth="6" fill="none" />
-            <circle cx="-58" cy="-56" r="9" fill={ACCENT} />
-            <rect x="-120" y="78" width="240" height="10" rx="4" fill="#999" />
+          {/* Fund manager */}
+          <g transform={`translate(540,680) scale(${managerIn * 1.5})`}>
+            <circle cx="0" cy="-60" r="48" fill="#555" />
+            <rect x="-52" y="-10" width="104" height="110" rx="12" fill="#555" />
+            <rect x="-90" y="-72" width="180" height="30" rx="8" fill={ACCENT} />
+            <text x="0" y="-50" textAnchor="middle" fontFamily="Arial Black" fontSize="20" fill="#fff">FUND MANAGER</text>
           </g>
-          <g transform={`translate(760,740) scale(${badgeIn})`}>
-            <rect x="-100" y="-52" width="200" height="104" rx="16" fill={ACCENT} />
-            <text x="0" y="-12" textAnchor="middle" fontFamily="Arial Black" fontSize="22" fill="#fff">YOUR BILL</text>
-            <text x="0" y="24" textAnchor="middle" fontFamily="Arial Black" fontSize="28" fill="#fff">-{pct}% OFF</text>
-          </g>
+
+          {investors.map((inv, i) => (
+            <g key={i}>
+              <line
+                x1="540" y1="816"
+                x2={540 + inv.x} y2="1150"
+                stroke={ACCENT}
+                strokeWidth={interpolate(inv.arrowIn, [0, 1], [0, 5])}
+                strokeLinecap="round"
+                strokeDasharray="12 8"
+                opacity={inv.arrowIn}
+              />
+              <text
+                x={540 + inv.x * 0.48}
+                y={960}
+                textAnchor="middle"
+                fontFamily="Arial Black"
+                fontSize="36"
+                fill={ACCENT}
+                opacity={inv.arrowIn}
+              >$</text>
+              <g transform={`translate(${540 + inv.x},1230) scale(${inv.arrowIn * 1.2})`}>
+                <circle cx="0" cy="-40" r="30" fill="#777" />
+                <rect x="-32" y="-8" width="64" height="68" rx="8" fill="#777" />
+              </g>
+            </g>
+          ))}
         </svg>
 
         <div style={{
-          position: 'absolute', bottom: 290, left: 0, right: 0, textAlign: 'center',
-          opacity: statIn, transform: `scale(${statIn})`,
+          position: 'absolute', bottom: 230, left: 0, right: 0, textAlign: 'center',
+          opacity: taglineIn,
+          transform: `translateY(${interpolate(taglineIn, [0, 1], [20, 0])}px)`,
         }}>
-          <p style={headline(120, '#111')}>40%</p>
-          <p style={{ ...headline(44, ACCENT), marginTop: 4 }}>DISCOUNT AVAILABLE</p>
+          <p style={headline(46, '#333')}>YOU DIDN'T SELL.</p>
+          <p style={{ ...headline(46, ACCENT), marginTop: 8 }}>YOU STILL OWE.</p>
         </div>
       </AbsoluteFill>
     </FadeScene>
@@ -146,12 +164,13 @@ const Scene3: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const { fps } = useVideoConfig();
 
   const titleIn = spring({ frame, fps, config: { damping: 14, stiffness: 140 } });
+  const chartIn = interpolate(frame, [15, 95], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const docIn = spring({ frame: Math.max(0, frame - 90), fps, config: { damping: 11, stiffness: 175 } });
+  const statIn = spring({ frame: Math.max(0, frame - 115), fps, config: { damping: 10, stiffness: 200 } });
 
-  const items = [
-    { label: 'CABLE & INTERNET', amount: '$340/YR', delay: 20 },
-    { label: 'INSURANCE', amount: '$280/YR', delay: 55 },
-    { label: 'GYM', amount: '$180/YR', delay: 90 },
-  ];
+  const chartXs = [160, 240, 320, 400, 480, 560, 640, 720, 800, 880];
+  const chartYs = [720, 710, 740, 718, 755, 806, 872, 975, 1072, 1182];
+  const visibleCount = Math.max(2, Math.floor(chartIn * chartXs.length));
 
   return (
     <FadeScene bg={BG_DARK} dur={dur}>
@@ -161,47 +180,43 @@ const Scene3: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
           opacity: titleIn,
           transform: `translateY(${interpolate(titleIn, [0, 1], [40, 0])}px)`,
         }}>
-          <p style={headline(78, WHITE)}>3 BILLS TO</p>
-          <p style={{ ...headline(78, ACCENT), marginTop: 8 }}>NEGOTIATE NOW</p>
+          <p style={headline(78, WHITE)}>2022: DOWN 18%</p>
+          <p style={{ ...headline(78, ACCENT), marginTop: 8 }}>TAXED ANYWAY</p>
         </div>
 
         <svg width="1080" height="1920" viewBox="0 0 1080 1920"
           style={{ position: 'absolute', top: 0, left: 0 }}>
-          {items.map((item, i) => {
-            const itemIn = spring({ frame: Math.max(0, frame - item.delay), fps, config: { damping: 13, stiffness: 160 } });
-            const yPos = 640 + i * 320;
-            return (
-              <g key={i} transform={`translate(540,${yPos}) scale(${itemIn})`}>
-                <rect x="-400" y="-75" width="800" height="150" rx="20" fill="#1a1a1a" />
-                <rect x="-400" y="-75" width="8" height="150" rx="4" fill={ACCENT} />
-                {i === 0 && (
-                  <g transform="translate(-300,0)">
-                    <rect x="-40" y="-28" width="80" height="56" rx="6" fill={ACCENT} />
-                    <rect x="-28" y="-20" width="12" height="12" rx="2" fill="#000" opacity="0.5" />
-                    <rect x="-8" y="-20" width="12" height="12" rx="2" fill="#000" opacity="0.5" />
-                    <rect x="12" y="-20" width="12" height="12" rx="2" fill="#000" opacity="0.5" />
-                    <circle cx="0" cy="12" r="8" fill="#000" opacity="0.4" />
-                  </g>
-                )}
-                {i === 1 && (
-                  <g transform="translate(-300,0)">
-                    <path d="M 0,-42 L 36,-20 L 36,16 Q 36,46 0,58 Q -36,46 -36,16 L -36,-20 Z" fill={ACCENT} />
-                    <path d="M -13,2 L -4,14 L 15,-10" stroke="#fff" strokeWidth="5" fill="none" strokeLinecap="round" />
-                  </g>
-                )}
-                {i === 2 && (
-                  <g transform="translate(-300,0)">
-                    <rect x="-46" y="-8" width="92" height="16" rx="8" fill={ACCENT} />
-                    <rect x="-52" y="-24" width="16" height="48" rx="6" fill={ACCENT} />
-                    <rect x="36" y="-24" width="16" height="48" rx="6" fill={ACCENT} />
-                  </g>
-                )}
-                <text x="-160" y="-14" fontFamily="Arial Black" fontSize="32" fill={WHITE}>{item.label}</text>
-                <text x="-160" y="32" fontFamily="Arial Black" fontSize="46" fill={ACCENT}>{item.amount}</text>
-              </g>
-            );
-          })}
+          <line x1="140" y1="680" x2="140" y2="1210" stroke="#444" strokeWidth="3" />
+          <line x1="140" y1="1210" x2="910" y2="1210" stroke="#444" strokeWidth="3" />
+          <text x="130" y="650" textAnchor="end" fontFamily="Arial" fontSize="22" fill="#666">HIGH</text>
+          <text x="910" y="1250" textAnchor="middle" fontFamily="Arial" fontSize="22" fill="#666">2022</text>
+
+          {visibleCount >= 2 && (
+            <polyline
+              points={chartXs.slice(0, visibleCount).map((x, i) => `${x},${chartYs[i]}`).join(' ')}
+              stroke={ACCENT} strokeWidth="7" fill="none"
+              strokeLinecap="round" strokeLinejoin="round"
+            />
+          )}
+
+          <g transform={`translate(770,1120) scale(${docIn})`}>
+            <rect x="-180" y="-130" width="360" height="260" rx="14" fill="#fff" />
+            <rect x="-180" y="-130" width="360" height="62" rx="14" fill={ACCENT} />
+            <rect x="-180" y="-96" width="360" height="28" fill={ACCENT} />
+            <text x="0" y="-100" textAnchor="middle" fontFamily="Arial Black" fontSize="22" fill="#fff">IRS NOTICE</text>
+            <text x="0" y="-66" textAnchor="middle" fontFamily="Arial Black" fontSize="17" fill="#fff">YOU OWE TAXES</text>
+            <text x="0" y="34" textAnchor="middle" fontFamily="Arial Black" fontSize="48" fill={ACCENT}>$1,842</text>
+          </g>
         </svg>
+
+        <div style={{
+          position: 'absolute', bottom: 200, left: 0, right: 0, textAlign: 'center',
+          opacity: statIn, transform: `scale(${statIn})`,
+        }}>
+          <p style={headline(40, '#777')}>FUNDS DISTRIBUTED</p>
+          <p style={{ ...headline(102, ACCENT), marginTop: 4 }}>$1.3T</p>
+          <p style={{ ...headline(40, '#777'), marginTop: 4 }}>IN CAPITAL GAINS</p>
+        </div>
       </AbsoluteFill>
     </FadeScene>
   );
@@ -212,9 +227,12 @@ const Scene4: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const { fps } = useVideoConfig();
 
   const titleIn = spring({ frame, fps, config: { damping: 14, stiffness: 140 } });
-  const bubbleIn = spring({ frame: Math.max(0, frame - 18), fps, config: { damping: 12, stiffness: 150 } });
-  const badgeIn = spring({ frame: Math.max(0, frame - 65), fps, config: { damping: 10, stiffness: 220 } });
-  const ctaIn = spring({ frame: Math.max(0, frame - 80), fps, config: { damping: 14, stiffness: 140 } });
+  const personIn = spring({ frame: Math.max(0, frame - 10), fps, config: { damping: 14, stiffness: 150 } });
+  const lossIn = spring({ frame: Math.max(0, frame - 40), fps, config: { damping: 11, stiffness: 175 } });
+  const taxIn = spring({ frame: Math.max(0, frame - 65), fps, config: { damping: 11, stiffness: 175 } });
+  const statIn = spring({ frame: Math.max(0, frame - 92), fps, config: { damping: 10, stiffness: 200 } });
+
+  const coinCount = 4;
 
   return (
     <FadeScene bg={BG_LIGHT} dur={dur}>
@@ -224,37 +242,53 @@ const Scene4: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
           opacity: titleIn,
           transform: `translateY(${interpolate(titleIn, [0, 1], [40, 0])}px)`,
         }}>
-          <p style={headline(68, '#111')}>THE MAGIC</p>
-          <p style={{ ...headline(68, ACCENT), marginTop: 8 }}>SCRIPT</p>
+          <p style={headline(78, '#111')}>YOU LOSE</p>
+          <p style={{ ...headline(78, ACCENT), marginTop: 8 }}>TWICE</p>
         </div>
 
         <svg width="1080" height="1920" viewBox="0 0 1080 1920"
           style={{ position: 'absolute', top: 0, left: 0 }}>
-          <g transform={`translate(540,900) scale(${bubbleIn})`}>
-            <rect x="-440" y="-180" width="880" height="360" rx="40" fill={ACCENT} />
-            <polygon points="60,180 160,180 110,260" fill={ACCENT} />
-            <text x="0" y="-90" textAnchor="middle" fontFamily="Arial Black" fontSize="38" fill="#fff">"I LOVE THE SERVICE,</text>
-            <text x="0" y="-36" textAnchor="middle" fontFamily="Arial Black" fontSize="38" fill="#fff">BUT I NEED TO LOWER</text>
-            <text x="0" y="18" textAnchor="middle" fontFamily="Arial Black" fontSize="38" fill="#fff">MY BILLS..."</text>
+          <g transform={`translate(540,760) scale(${personIn * 1.5})`}>
+            <circle cx="0" cy="-80" r="52" fill="#555" />
+            <rect x="-56" y="-26" width="112" height="130" rx="14" fill="#555" />
+            <rect x="-24" y="-96" width="48" height="40" rx="4" fill="#888" />
           </g>
-          <g transform={`translate(380,1150) scale(${badgeIn * 1.3})`}>
-            <rect x="-30" y="-80" width="60" height="140" rx="30" fill="#444" />
-            <rect x="-24" y="-68" width="48" height="20" rx="8" fill="#666" />
-            <rect x="-24" y="30" width="48" height="20" rx="8" fill="#666" />
+
+          <g opacity={lossIn}>
+            <line x1="462" y1="1002" x2="228" y2="1202"
+              stroke={ACCENT} strokeWidth="8" strokeLinecap="round" />
+            <polygon points="206,1218 254,1186 242,1230" fill={ACCENT} />
+            <rect x="78" y="1218" width="230" height="76" rx="12" fill={ACCENT} />
+            <text x="193" y="1270" textAnchor="middle" fontFamily="Arial Black" fontSize="34" fill="#fff">-18% LOSS</text>
           </g>
-          <g transform={`translate(720,1140) scale(${badgeIn})`}>
-            <circle cx="0" cy="0" r="88" fill={ACCENT} />
-            <text x="0" y="-16" textAnchor="middle" fontFamily="Arial Black" fontSize="30" fill="#fff">9 OUT</text>
-            <text x="0" y="22" textAnchor="middle" fontFamily="Arial Black" fontSize="30" fill="#fff">OF 10</text>
+
+          <g opacity={taxIn}>
+            <line x1="618" y1="1002" x2="852" y2="1202"
+              stroke="#222" strokeWidth="8" strokeLinecap="round" />
+            <polygon points="874,1218 826,1186 838,1230" fill="#222" />
+            <rect x="722" y="1218" width="250" height="76" rx="12" fill="#222" />
+            <text x="847" y="1270" textAnchor="middle" fontFamily="Arial Black" fontSize="30" fill={ACCENT}>$1,842 TAX</text>
           </g>
+
+          {Array.from({ length: Math.max(0, Math.floor(coinCount)) }).map((_, i) => {
+            const df = Math.max(0, frame - (45 + i * 14));
+            const coinOp = interpolate(df, [0, 8], [0, 1], { extrapolateRight: 'clamp' });
+            return (
+              <g key={i} opacity={coinOp}
+                transform={`translate(${198 + i * 28},${1118 + i * 24})`}>
+                <ellipse cx="0" cy="0" rx="22" ry="8" fill="#C8930A" />
+                <text x="0" y="4" textAnchor="middle" fontFamily="Arial Black" fontSize="12" fill="#8B6914">$</text>
+              </g>
+            );
+          })}
         </svg>
 
         <div style={{
-          position: 'absolute', bottom: 240, left: 0, right: 0, textAlign: 'center',
-          opacity: ctaIn,
-          transform: `translateY(${interpolate(ctaIn, [0, 1], [30, 0])}px)`,
+          position: 'absolute', bottom: 200, left: 0, right: 0, textAlign: 'center',
+          opacity: statIn, transform: `scale(${statIn})`,
         }}>
-          <p style={headline(44, '#333')}>TRIGGERS A DISCOUNT EVERY TIME</p>
+          <p style={headline(44, '#333')}>ZERO CHOICES.</p>
+          <p style={{ ...headline(44, ACCENT), marginTop: 8 }}>100% YOUR PROBLEM.</p>
         </div>
       </AbsoluteFill>
     </FadeScene>
@@ -266,15 +300,9 @@ const Scene5: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const { fps } = useVideoConfig();
 
   const titleIn = spring({ frame, fps, config: { damping: 14, stiffness: 140 } });
-  const billIn = spring({ frame: Math.max(0, frame - 12), fps, config: { damping: 13, stiffness: 150 } });
-  const statIn = spring({ frame: Math.max(0, frame - 55), fps, config: { damping: 10, stiffness: 200 } });
-
-  const marks = [
-    { x: 490, y: 740, delay: 60, good: false },
-    { x: 590, y: 800, delay: 76, good: true },
-    { x: 510, y: 860, delay: 92, good: false },
-    { x: 620, y: 920, delay: 108, good: true },
-  ];
+  const etfIn = spring({ frame: Math.max(0, frame - 20), fps, config: { damping: 13, stiffness: 160 } });
+  const fundIn = spring({ frame: Math.max(0, frame - 55), fps, config: { damping: 13, stiffness: 160 } });
+  const statIn = spring({ frame: Math.max(0, frame - 85), fps, config: { damping: 10, stiffness: 200 } });
 
   return (
     <FadeScene bg={BG_DARK} dur={dur}>
@@ -284,46 +312,41 @@ const Scene5: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
           opacity: titleIn,
           transform: `translateY(${interpolate(titleIn, [0, 1], [40, 0])}px)`,
         }}>
-          <p style={headline(68, WHITE)}>MEDICAL BILLS:</p>
-          <p style={{ ...headline(68, ACCENT), marginTop: 8 }}>YOUR BIGGEST WIN</p>
+          <p style={headline(76, WHITE)}>THE FIX:</p>
+          <p style={{ ...headline(76, ACCENT), marginTop: 8 }}>USE ETFs</p>
         </div>
 
         <svg width="1080" height="1920" viewBox="0 0 1080 1920"
           style={{ position: 'absolute', top: 0, left: 0 }}>
-          <g transform={`translate(540,900) scale(${billIn})`}>
-            <rect x="-220" y="-300" width="440" height="560" rx="12" fill="#fff" />
-            <polygon points="220,-300 220,-258 178,-300" fill="#ddd" />
-            <text x="0" y="-266" textAnchor="middle" fontFamily="Arial Black" fontSize="26" fill="#444">HOSPITAL BILL</text>
-            <rect x="-180" y="-238" width="360" height="10" rx="5" fill="#ddd" />
-            <rect x="-180" y="-198" width="280" height="10" rx="5" fill="#ddd" />
-            <rect x="-180" y="-158" width="320" height="10" rx="5" fill="#ddd" />
-            <rect x="-180" y="-118" width="260" height="10" rx="5" fill="#ddd" />
-            <rect x="-180" y="-78" width="300" height="10" rx="5" fill="#ddd" />
-            <rect x="-180" y="-38" width="240" height="10" rx="5" fill="#ddd" />
-            <text x="60" y="160" fontFamily="Arial Black" fontSize="34" fill="#333">$2,847.00</text>
+          <g transform={`translate(260,960) scale(${etfIn})`}>
+            <rect x="-220" y="-300" width="440" height="560" rx="20" fill="#0a1f15" stroke="#10B981" strokeWidth="6" />
+            <rect x="-220" y="-300" width="440" height="80" rx="20" fill="#10B981" />
+            <rect x="-220" y="-258" width="440" height="36" fill="#10B981" />
+            <text x="0" y="-266" textAnchor="middle" fontFamily="Arial Black" fontSize="38" fill="#fff">ETF</text>
+            <text x="0" y="-228" textAnchor="middle" fontFamily="Arial Black" fontSize="18" fill="#fff">EXCHANGE TRADED FUND</text>
+            <path d="M -58,20 L -18,72 L 68,-28" stroke="#10B981" strokeWidth="16" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+            <text x="0" y="144" textAnchor="middle" fontFamily="Arial Black" fontSize="52" fill="#10B981">NEAR 0%</text>
+            <text x="0" y="196" textAnchor="middle" fontFamily="Arial Black" fontSize="20" fill="#aaa">DISTRIBUTIONS</text>
           </g>
-          {marks.map((m, i) => {
-            const df = Math.max(0, frame - m.delay);
-            const markOp = interpolate(df, [0, 8], [0, 1], { extrapolateRight: 'clamp' });
-            const markScale = interpolate(df, [0, 10], [0.4, 1], { extrapolateRight: 'clamp' });
-            const color = m.good ? '#10B981' : '#EF4444';
-            return (
-              <g key={i} opacity={markOp} transform={`translate(${m.x},${m.y}) scale(${markScale})`}>
-                {m.good
-                  ? <path d="M -18,0 L -6,14 L 20,-14" stroke={color} strokeWidth="7" fill="none" strokeLinecap="round" />
-                  : <path d="M -14,-14 L 14,14 M 14,-14 L -14,14" stroke={color} strokeWidth="7" strokeLinecap="round" />
-                }
-              </g>
-            );
-          })}
+
+          <g transform={`translate(820,960) scale(${fundIn})`}>
+            <rect x="-220" y="-300" width="440" height="560" rx="20" fill="#1f0a0a" stroke={ACCENT} strokeWidth="6" />
+            <rect x="-220" y="-300" width="440" height="80" rx="20" fill={ACCENT} />
+            <rect x="-220" y="-258" width="440" height="36" fill={ACCENT} />
+            <text x="0" y="-266" textAnchor="middle" fontFamily="Arial Black" fontSize="28" fill="#fff">MUTUAL</text>
+            <text x="0" y="-228" textAnchor="middle" fontFamily="Arial Black" fontSize="28" fill="#fff">FUND</text>
+            <path d="M -50,-28 L 50,72 M 50,-28 L -50,72" stroke={ACCENT} strokeWidth="16" strokeLinecap="round" />
+            <text x="0" y="144" textAnchor="middle" fontFamily="Arial Black" fontSize="52" fill={ACCENT}>80%</text>
+            <text x="0" y="196" textAnchor="middle" fontFamily="Arial Black" fontSize="20" fill="#aaa">DISTRIBUTE GAINS</text>
+          </g>
         </svg>
 
         <div style={{
-          position: 'absolute', bottom: 270, left: 0, right: 0, textAlign: 'center',
-          opacity: statIn, transform: `scale(${statIn})`,
+          position: 'absolute', bottom: 200, left: 0, right: 0, textAlign: 'center',
+          opacity: statIn,
+          transform: `translateY(${interpolate(statIn, [0, 1], [20, 0])}px)`,
         }}>
-          <p style={headline(120, '#EF4444')}>80%</p>
-          <p style={{ ...headline(44, WHITE), marginTop: 4 }}>HAVE BILLING ERRORS</p>
+          <p style={headline(44, '#888')}>SAME MARKET. WAY LESS TAX.</p>
         </div>
       </AbsoluteFill>
     </FadeScene>
@@ -335,10 +358,9 @@ const Scene6: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
   const { fps } = useVideoConfig();
 
   const titleIn = spring({ frame, fps, config: { damping: 14, stiffness: 140 } });
-  const calIn = spring({ frame: Math.max(0, frame - 12), fps, config: { damping: 12, stiffness: 150 } });
-  const ctaIn = spring({ frame: Math.max(0, frame - 65), fps, config: { damping: 10, stiffness: 200 } });
-
-  const coinDelays = [40, 56, 72, 88, 104];
+  const formIn = spring({ frame: Math.max(0, frame - 12), fps, config: { damping: 13, stiffness: 150 } });
+  const highlightIn = spring({ frame: Math.max(0, frame - 55), fps, config: { damping: 11, stiffness: 180 } });
+  const ctaIn = spring({ frame: Math.max(0, frame - 88), fps, config: { damping: 10, stiffness: 200 } });
 
   return (
     <FadeScene bg={BG_LIGHT} dur={dur}>
@@ -348,59 +370,50 @@ const Scene6: React.FC<{ dur?: number }> = ({ dur = 225 }) => {
           opacity: titleIn,
           transform: `translateY(${interpolate(titleIn, [0, 1], [40, 0])}px)`,
         }}>
-          <p style={headline(80, '#111')}>TRY IT</p>
-          <p style={{ ...headline(80, ACCENT), marginTop: 8 }}>TODAY</p>
+          <p style={headline(68, '#111')}>CHECK YOUR</p>
+          <p style={{ ...headline(68, ACCENT), marginTop: 8 }}>1099-DIV</p>
         </div>
 
         <svg width="1080" height="1920" viewBox="0 0 1080 1920"
           style={{ position: 'absolute', top: 0, left: 0 }}>
-          <g transform={`translate(360,900) scale(${calIn})`}>
-            <rect x="-150" y="-160" width="300" height="320" rx="18" fill="#fff" stroke={ACCENT} strokeWidth="6" />
-            <rect x="-150" y="-160" width="300" height="68" rx="18" fill={ACCENT} />
-            <rect x="-150" y="-120" width="300" height="28" fill={ACCENT} />
-            <text x="0" y="-116" textAnchor="middle" fontFamily="Arial Black" fontSize="24" fill="#fff">NOVEMBER</text>
-            <circle cx="-60" cy="-162" r="13" fill="#fff" stroke={ACCENT} strokeWidth="4" />
-            <circle cx="60" cy="-162" r="13" fill="#fff" stroke={ACCENT} strokeWidth="4" />
-            {(['S','M','T','W','T','F','S'] as const).map((d, col) => (
-              <text key={col} x={-114 + col * 40} y="-72"
-                textAnchor="middle" fontFamily="Arial" fontSize="18" fill="#fff" opacity="0.9">{d}</text>
-            ))}
-            {[1,2,3,4,5,6,7].map((day) => (
-              <text key={day} x={-114 + (day - 1) * 40} y="-28"
-                textAnchor="middle" fontFamily="Arial" fontSize="22" fill="#555">{day}</text>
-            ))}
-            {[8,9,10,11,12,13,14].map((day) => (
-              <text key={day} x={-114 + (day - 8) * 40} y="18"
-                textAnchor="middle" fontFamily="Arial" fontSize="22"
-                fill={day === 7 ? '#fff' : '#555'}>{day}</text>
-            ))}
-            <circle cx="34" cy="4" r="24" fill={ACCENT} />
-            <text x="34" y="12" textAnchor="middle" fontFamily="Arial Black" fontSize="22" fill="#fff">7</text>
+          <g transform={`translate(540,920) scale(${formIn})`}>
+            <rect x="-300" y="-330" width="600" height="600" rx="12" fill="#fff" stroke="#ddd" strokeWidth="3" />
+            <rect x="-300" y="-330" width="600" height="68" rx="12" fill="#1a365d" />
+            <rect x="-300" y="-294" width="600" height="32" fill="#1a365d" />
+            <text x="0" y="-296" textAnchor="middle" fontFamily="Arial Black" fontSize="22" fill="#fff">FORM 1099-DIV</text>
+            <text x="0" y="-260" textAnchor="middle" fontFamily="Arial Black" fontSize="16" fill="#aaa">DIVIDENDS AND DISTRIBUTIONS</text>
+            <text x="-270" y="-190" fontFamily="Arial" fontSize="18" fill="#555">1a. Total ordinary dividends</text>
+            <rect x="-270" y="-172" width="540" height="38" rx="6" fill="#f5f5f5" stroke="#ddd" strokeWidth="2" />
+            <text x="-248" y="-146" fontFamily="Arial" fontSize="22" fill="#999">$0.00</text>
+            <text x="-270" y="-90" fontFamily="Arial" fontSize="18" fill="#555">1b. Qualified dividends</text>
+            <rect x="-270" y="-72" width="540" height="38" rx="6" fill="#f5f5f5" stroke="#ddd" strokeWidth="2" />
+            <text x="-248" y="-46" fontFamily="Arial" fontSize="22" fill="#999">$0.00</text>
+            <text x="-270" y="12" fontFamily="Arial Black" fontSize="20" fill="#333">2a. Capital gain distributions</text>
+            <rect x="-270" y="30" width="540" height="52" rx="6" fill="#fff5f5" stroke={ACCENT}
+              strokeWidth={interpolate(highlightIn, [0, 1], [1, 4])} />
+            <rect x="-270" y="30" width="540" height="52" rx="6" fill={ACCENT}
+              opacity={interpolate(highlightIn, [0, 1], [0, 0.18])} />
+            <text x="-248" y="68" fontFamily="Arial Black" fontSize="30" fill={ACCENT}>$1,842.00</text>
+            <text x="250" y="68" textAnchor="end" fontFamily="Arial Black" fontSize="18" fill="#888">BOX 2a</text>
           </g>
 
-          {coinDelays.map((delay, i) => {
-            const df = Math.max(0, frame - delay);
-            const coinOp = interpolate(df, [0, 8], [0, 1], { extrapolateRight: 'clamp' });
-            const coinY = 1180 - i * 26;
-            return (
-              <g key={i} opacity={coinOp}>
-                <ellipse cx="750" cy={coinY} rx="62" ry="16" fill="#C8930A" />
-                <rect x="688" y={coinY - 12} width="124" height="12" fill="#D4A017" />
-                <ellipse cx="750" cy={coinY - 12} rx="62" ry="16" fill="#FFD700" />
-                <text x="750" y={coinY - 6} textAnchor="middle" fontFamily="Arial Black" fontSize="14" fill="#8B6914">$</text>
-              </g>
-            );
-          })}
+          <g opacity={ctaIn}>
+            <polyline points="160,1555 300,1482 440,1502 580,1422 720,1358 860,1278 920,1240"
+              stroke="#10B981" strokeWidth="8" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M 920,1340 L 920,1200 L 876,1240 M 920,1200 L 964,1240"
+              stroke="#10B981" strokeWidth="8" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+            <text x="540" y="1618" textAnchor="middle" fontFamily="Arial Black" fontSize="36" fill="#10B981">ETF: NEAR 0% TAX</text>
+          </g>
         </svg>
 
         <div style={{
-          position: 'absolute', bottom: 230, left: 0, right: 0, textAlign: 'center',
+          position: 'absolute', bottom: 160, left: 0, right: 0, textAlign: 'center',
           opacity: ctaIn,
           transform: `translateY(${interpolate(ctaIn, [0, 1], [30, 0])}px)`,
         }}>
-          <p style={headline(60, '#111')}>2 MINUTES.</p>
-          <p style={{ ...headline(60, ACCENT), marginTop: 8 }}>$1,400 BACK.</p>
-          <p style={{ ...headline(40, '#555'), marginTop: 24 }}>FOLLOW FOR MORE MONEY MOVES</p>
+          <p style={headline(54, '#111')}>STOP PAYING</p>
+          <p style={{ ...headline(54, ACCENT), marginTop: 8 }}>PHANTOM TAXES</p>
+          <p style={{ ...headline(38, '#555'), marginTop: 24 }}>FOLLOW FOR MORE MONEY MOVES</p>
         </div>
       </AbsoluteFill>
     </FadeScene>

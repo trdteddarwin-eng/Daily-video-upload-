@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Here's a money trick that takes under two minutes and works nine times out of ten. Most people overpay their bills for years — just because they never asked.",
-    "visual": "Animated phone SVG in center with dollar signs floating upward around it, large '$1,400/YEAR' stat text spring-animating in at bottom",
-    "accent_color": "green"
+    "narration": "Here's something wild. Your mutual fund lost eighteen percent last year — and the IRS still sent you a $1,842 tax bill. It's called phantom income, and it's been quietly hitting your account for years.",
+    "visual": "IRS tax notice document with $1,842 amount due, overlaid on a small downward stock chart line",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Every cable company, internet provider, and gym has a secret retention department. Their only job is to keep you — and they can cut your bill by up to forty percent.",
-    "visual": "Person silhouette with headset at desk, 'RETENTION DEPT' badge appearing with spring animation, counter rising to show 40% discount available",
-    "accent_color": "green"
+    "narration": "Here's how it works. When your fund manager sells winning stocks inside the fund, those gains flow to every investor — including you. You didn't sell a single share, but you still owe the taxes.",
+    "visual": "Fund manager person at top distributing dollar-sign arrows to three investor silhouettes below",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Number one: cable and internet. Number two: insurance. Number three: gym memberships. Those three bills alone could save you eight hundred dollars this year.",
-    "visual": "Three icons spring in with staggered timing: cable box icon, shield icon, barbell icon — each with label and yearly savings amount beneath",
-    "accent_color": "green"
+    "narration": "In 2022, the market crashed eighteen percent. But fund companies still distributed one point three trillion dollars in capital gains. Investors were losing money and getting IRS bills at the exact same time.",
+    "visual": "Stock chart line dropping sharply left to right, IRS tax notice document appearing over the low point",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "The script is dead simple. Just say 'I love the service, but I need to lower my bills.' That phrase gets the discount department on the phone every single time.",
-    "visual": "Large speech bubble with the script phrase inside, phone handset SVG, '9 OUT OF 10' success badge appearing",
-    "accent_color": "green"
+    "narration": "It gets worse. That tax bill is real cash out of your pocket even if you reinvest the distribution. You lose on the fund drop, then pay taxes on gains you didn't choose to take. Two hits, zero wins.",
+    "visual": "Person silhouette in center with two red arrows draining outward — left labeled LOSS, right labeled TAX, coins falling from both",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Medical bills are your biggest win. Eighty percent have billing errors, and hospitals expect negotiation. Just ask for the itemized bill and a cash-pay rate.",
-    "visual": "Hospital bill/document SVG with red X marks and green checkmarks appearing on line items to show errors found, '80%' large stat text",
-    "accent_color": "green"
+    "narration": "Number one fix — use ETFs in your taxable accounts. Eighty percent of active mutual funds distribute capital gains every single year. ETFs? Near zero. Same market exposure, dramatically less phantom tax.",
+    "visual": "Side-by-side cards: ETF card with green checkmark and NEAR 0% DISTRIBUTIONS vs MUTUAL FUND card with red X and 80% DISTRIBUTE",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Pick one bill today and make the two-minute call. That's it. Five minutes of uncomfortable conversation could put fourteen hundred dollars back in your pocket this year.",
-    "visual": "Calendar with today (Nov 7) highlighted in green, stack of gold coins growing upward beside it, CTA text animating in at bottom",
-    "accent_color": "green"
+    "narration": "Pull up your 1099-DIV from last year. If box 2a has a number, that's phantom income you paid taxes on. Switch your taxable accounts to low-cost ETFs and stop paying for money you never actually received.",
+    "visual": "1099-DIV tax form with box 2a highlighted in red showing $1,842, then rising ETF trend line and follow CTA",
+    "accent_color": "red"
   }
 ]

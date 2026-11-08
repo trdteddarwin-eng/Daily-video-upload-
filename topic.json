@@ -1,13 +1,12 @@
 {
-  "title": "Just Asking Gets You $1,400 Back From Your Bills",
-  "hook": "Nine out of ten people who call their cable company to cancel get a discount instantly — and most Americans never make that one call.",
-  "angle": "Bill negotiation is a systematic, repeatable move that takes two minutes but most people never try because they assume bills are fixed",
-  "audience": "Anyone paying cable, internet, insurance, gym memberships, or medical bills — basically everyone",
+  "title": "Your Losing Fund Still Sent the IRS a $1,842 Bill",
+  "hook": "Your mutual fund lost 18% last year — then you got an IRS tax bill for $1,842 anyway. It's called phantom income, and 80% of fund investors have no idea it's happening.",
+  "angle": "Mutual fund capital gains distributions blindside investors with tax bills even in down years — a structural flaw ETFs don't share",
+  "audience": "Anyone with mutual funds in a taxable brokerage account",
   "key_numbers": [
-    "$1,400 average annual savings from bill negotiation",
-    "90% of retention calls result in a discount",
-    "80% of hospital bills contain billing errors",
-    "Up to 40% off available from cable/internet retention departments",
-    "76% of Americans have never tried to negotiate a recurring bill"
+    "$1,842 average unexpected capital gains distribution",
+    "$1.3 trillion distributed in 2022 during an 18% market crash",
+    "80% of active mutual funds distribute capital gains annually",
+    "ETFs distribute near-zero capital gains due to in-kind redemptions"
   ]
 }
