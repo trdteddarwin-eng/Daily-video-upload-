@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Here's something wild. Your mutual fund lost eighteen percent last year — and the IRS still sent you a $1,842 tax bill. It's called phantom income, and it's been quietly hitting your account for years.",
-    "visual": "IRS tax notice document with $1,842 amount due, overlaid on a small downward stock chart line",
-    "accent_color": "red"
+    "narration": "You paid into Social Security your whole career — 40 straight years of deductions. What nobody told you is what happens when you try to collect.",
+    "visual": "Social Security card SVG slides in center screen. Dollar coins rain down from top. Text at bottom: 'THEN THE IRS SENDS A BILL'",
+    "accent_color": "blue"
   },
   {
     "scene": 2,
-    "narration": "Here's how it works. When your fund manager sells winning stocks inside the fund, those gains flow to every investor — including you. You didn't sell a single share, but you still owe the taxes.",
-    "visual": "Fund manager person at top distributing dollar-sign arrows to three investor silhouettes below",
-    "accent_color": "red"
+    "narration": "Here's the kicker: up to 85% of your Social Security benefits are classified as taxable income. Wild, right? Most retirees find out way too late to fix it.",
+    "visual": "Giant '85%' springs in. Animated progress bar fills to 85% of full width. Bottom text reveals the callout.",
+    "accent_color": "blue"
   },
   {
     "scene": 3,
-    "narration": "In 2022, the market crashed eighteen percent. But fund companies still distributed one point three trillion dollars in capital gains. Investors were losing money and getting IRS bills at the exact same time.",
-    "visual": "Stock chart line dropping sharply left to right, IRS tax notice document appearing over the low point",
-    "accent_color": "red"
+    "narration": "Congress set the income thresholds in 1983 and never touched them. That $34,000 cutoff is frozen while inflation quietly dragged everyone over the line.",
+    "visual": "'1983' in massive text. Two animated lines draw: inflation arrow rising, threshold line staying dead flat. 'FROZEN FOR 40+ YEARS' fades in.",
+    "accent_color": "blue"
   },
   {
     "scene": 4,
-    "narration": "It gets worse. That tax bill is real cash out of your pocket even if you reinvest the distribution. You lose on the fund drop, then pay taxes on gains you didn't choose to take. Two hits, zero wins.",
-    "visual": "Person silhouette in center with two red arrows draining outward — left labeled LOSS, right labeled TAX, coins falling from both",
-    "accent_color": "red"
+    "narration": "In 1983, only 10% of Social Security recipients paid this tax. Now it's 56% — and not because anyone changed the rules. Inflation moved everyone over.",
+    "visual": "Side-by-side animated bar chart. Left bar (gray) rises to 10% labeled '1983'. Right bar (blue) rises to 56% labeled 'TODAY'. Bars animate from zero.",
+    "accent_color": "blue"
   },
   {
     "scene": 5,
-    "narration": "Number one fix — use ETFs in your taxable accounts. Eighty percent of active mutual funds distribute capital gains every single year. ETFs? Near zero. Same market exposure, dramatically less phantom tax.",
-    "visual": "Side-by-side cards: ETF card with green checkmark and NEAR 0% DISTRIBUTIONS vs MUTUAL FUND card with red X and 80% DISTRIBUTE",
-    "accent_color": "red"
+    "narration": "The average affected retiree pays $4,200 extra every year — on money already taxed once. Over a 20-year retirement, that's $84,000 out the door.",
+    "visual": "Pink piggy bank SVG with coins leaking out. Counter animates from $0 up to $84,000. Breakdown text '$4,200/YEAR × 20 YEARS' fades in below.",
+    "accent_color": "blue"
   },
   {
     "scene": 6,
-    "narration": "Pull up your 1099-DIV from last year. If box 2a has a number, that's phantom income you paid taxes on. Switch your taxable accounts to low-cost ETFs and stop paying for money you never actually received.",
-    "visual": "1099-DIV tax form with box 2a highlighted in red showing $1,842, then rising ETF trend line and follow CTA",
-    "accent_color": "red"
+    "narration": "The fix? Roth conversions in your fifties, before you start claiming SS. Lower your combined income and keep tens of thousands in benefits tax-free. Start the math today.",
+    "visual": "Roth IRA jar with green coins inside. Three numbered action items slide in one by one. CTA 'START THE MATH TODAY' springs in at bottom.",
+    "accent_color": "blue"
   }
 ]
