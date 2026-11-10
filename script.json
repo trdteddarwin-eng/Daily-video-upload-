@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Here's a money trick that takes under two minutes and works nine times out of ten. Most people overpay their bills for years — just because they never asked.",
-    "visual": "Animated phone SVG in center with dollar signs floating upward around it, large '$1,400/YEAR' stat text spring-animating in at bottom",
-    "accent_color": "green"
+    "narration": "Here's the bank trick nobody talks about. Your savings account pays you 0.03% — that's twelve dollars a year. Your bank turns around and lends your money out at seven percent.",
+    "visual": "Dark background. SVG bank building springs in from center. Two stat columns appear: YOU (0.03%, $12/yr in white) vs BANK (7%+, $3,400/yr in red). Bold uppercase text 'THE BANK SECRET' at top.",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Every cable company, internet provider, and gym has a secret retention department. Their only job is to keep you — and they can cut your bill by up to forty percent.",
-    "visual": "Person silhouette with headset at desk, 'RETENTION DEPT' badge appearing with spring animation, counter rising to show 40% discount available",
-    "accent_color": "green"
+    "narration": "The average American keeps $41,600 in checking and savings combined. At the big-bank rate of 0.03%, that earns you exactly twelve dollars and forty-eight cents a year. Wild, right?",
+    "visual": "Light background. Person silhouette next to a pink piggy bank SVG. Animated counter counts up to $41,600. Then a red box appears showing '$12.48 PER YEAR' highlighted in shock contrast.",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Number one: cable and internet. Number two: insurance. Number three: gym memberships. Those three bills alone could save you eight hundred dollars this year.",
-    "visual": "Three icons spring in with staggered timing: cable box icon, shield icon, barbell icon — each with label and yearly savings amount beneath",
-    "accent_color": "green"
+    "narration": "Your bank bundles all those deposits and lends them out as mortgages, car loans, and credit cards. The gap between what they earn and what they pay you has a name — it's called the net interest margin.",
+    "visual": "Dark background. Two money bag SVGs side by side: a small gray bag labeled 'YOUR SHARE $12/yr' and a large red bag labeled 'BANK'S SHARE $1,373/yr'. Size contrast is dramatic.",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "The script is dead simple. Just say 'I love the service, but I need to lower my bills.' That phrase gets the discount department on the phone every single time.",
-    "visual": "Large speech bubble with the script phrase inside, phone handset SVG, '9 OUT OF 10' success badge appearing",
-    "accent_color": "green"
+    "narration": "Big banks averaged a 3.3% net interest margin last year. On your $41,600, that's over thirteen hundred dollars in pure bank profit — from your own money — every single year.",
+    "visual": "Light background. Animated bar chart grows: a tiny gray bar for YOU ($12) next to a tall red bar for BANK ($1,373). Numbers animate up as bars grow. Callout: '3.3% NET INTEREST MARGIN' at bottom.",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Medical bills are your biggest win. Eighty percent have billing errors, and hospitals expect negotiation. Just ask for the itemized bill and a cash-pay rate.",
-    "visual": "Hospital bill/document SVG with red X marks and green checkmarks appearing on line items to show errors found, '80%' large stat text",
-    "accent_color": "green"
+    "narration": "High-yield savings accounts are paying 4.5% right now — same FDIC protection, same access to your cash. On $41,600 that's $1,872 a year. Over ten years, the compounding difference is twenty-two thousand dollars.",
+    "visual": "Dark background. Two vertical bars animate up: a short gray bar for 'BIG BANK 0.03%' and a tall green bar for 'HYSA 4.5%'. Earnings animate as bars grow. '$22,000' appears large in green.",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Pick one bill today and make the two-minute call. That's it. Five minutes of uncomfortable conversation could put fourteen hundred dollars back in your pocket this year.",
-    "visual": "Calendar with today (Nov 7) highlighted in green, stack of gold coins growing upward beside it, CTA text animating in at bottom",
-    "accent_color": "green"
+    "narration": "Your bank isn't your friend — it's a business profiting from your inertia. Open a high-yield savings account today and take that money back. It takes about five minutes.",
+    "visual": "Dark background. SVG shows faded bank building on left, red arrow pointing right, bright pink piggy bank on right labeled '4.5%'. Bold CTA text: 'OPEN A HIGH-YIELD SAVINGS TODAY'. Smaller text: 'ALLY · MARCUS · SoFi · DISCOVER'. Follow prompt at bottom.",
+    "accent_color": "red"
   }
 ]
