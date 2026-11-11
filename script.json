@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Here's the bank trick nobody talks about. Your savings account pays you 0.03% — that's twelve dollars a year. Your bank turns around and lends your money out at seven percent.",
-    "visual": "Dark background. SVG bank building springs in from center. Two stat columns appear: YOU (0.03%, $12/yr in white) vs BANK (7%+, $3,400/yr in red). Bold uppercase text 'THE BANK SECRET' at top.",
-    "accent_color": "red"
+    "narration": "You've been making mortgage payments feeling like a homeowner. But there's a chart your bank has never shown you — and it changes everything.",
+    "visual": "Dark background. House outline in amber rises from bottom. Pulsing question mark appears next to house. White text: 'YOUR BANK HAS NEVER SHOWN YOU THIS CHART'.",
+    "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "The average American keeps $41,600 in checking and savings combined. At the big-bank rate of 0.03%, that earns you exactly twelve dollars and forty-eight cents a year. Wild, right?",
-    "visual": "Light background. Person silhouette next to a pink piggy bank SVG. Animated counter counts up to $41,600. Then a red box appears showing '$12.48 PER YEAR' highlighted in shock contrast.",
-    "accent_color": "red"
+    "narration": "On a 30-year mortgage at today's rates, 86% of your first payment is pure interest. Only 14 cents of every dollar actually reduces what you owe.",
+    "visual": "Light background. Animated bar chart split: massive red bar labeled '86% BANK / INTEREST', tiny amber bar labeled '14% YOUR HOME / PRINCIPAL'. Bank icon and house icon flank the bars.",
+    "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Your bank bundles all those deposits and lends them out as mortgages, car loans, and credit cards. The gap between what they earn and what they pay you has a name — it's called the net interest margin.",
-    "visual": "Dark background. Two money bag SVGs side by side: a small gray bag labeled 'YOUR SHARE $12/yr' and a large red bag labeled 'BANK'S SHARE $1,373/yr'. Size contrast is dramatic.",
-    "accent_color": "red"
+    "narration": "After five full years on a $350,000 loan, you've sent the bank $136,000. Your actual balance has only dropped by $20,500. Here's what that looks like.",
+    "visual": "Dark background. Two animated bars growing from zero: tall red bar ($136K PAID) vs tiny amber bar ($20,500 EQUITY). Counter animates up. Text: 'YOU KEPT LESS THAN 15%'.",
+    "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "Big banks averaged a 3.3% net interest margin last year. On your $41,600, that's over thirteen hundred dollars in pure bank profit — from your own money — every single year.",
-    "visual": "Light background. Animated bar chart grows: a tiny gray bar for YOU ($12) next to a tall red bar for BANK ($1,373). Numbers animate up as bars grow. Callout: '3.3% NET INTEREST MARGIN' at bottom.",
-    "accent_color": "red"
+    "narration": "Banks front-load interest on purpose so they get paid first. They're counting on you selling or refinancing before the math ever flips in your favor.",
+    "visual": "Light background. SVG house on left, animated red arrows and dollar signs flowing right to bank building. Text: 'THIS ISN'T AN ACCIDENT'.",
+    "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "High-yield savings accounts are paying 4.5% right now — same FDIC protection, same access to your cash. On $41,600 that's $1,872 a year. Over ten years, the compounding difference is twenty-two thousand dollars.",
-    "visual": "Dark background. Two vertical bars animate up: a short gray bar for 'BIG BANK 0.03%' and a tall green bar for 'HYSA 4.5%'. Earnings animate as bars grow. '$22,000' appears large in green.",
-    "accent_color": "red"
+    "narration": "Here's the flip side. Paying just $200 extra per month saves $51,000 in interest and cuts six years off your loan. Same math, different direction.",
+    "visual": "Dark background. Calculator icon. '+$200/MONTH' label. Two animated counters tick up: '$51,000 SAVED' in green and '6 YRS SOONER'. Text: 'THE MATH WORKS IN REVERSE TOO'.",
+    "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "Your bank isn't your friend — it's a business profiting from your inertia. Open a high-yield savings account today and take that money back. It takes about five minutes.",
-    "visual": "Dark background. SVG shows faded bank building on left, red arrow pointing right, bright pink piggy bank on right labeled '4.5%'. Bold CTA text: 'OPEN A HIGH-YIELD SAVINGS TODAY'. Smaller text: 'ALLY · MARCUS · SoFi · DISCOVER'. Follow prompt at bottom.",
-    "accent_color": "red"
+    "narration": "Pull up your mortgage statement and demand the full amortization table. What you see will change how you think about every payment you've ever made.",
+    "visual": "Light background. SVG phone showing amortization table rows with tiny principal vs large interest columns. Text: 'PULL UP YOUR MORTGAGE STATEMENT RIGHT NOW'. CTA button: 'DEMAND THE FULL AMORTIZATION TABLE'.",
+    "accent_color": "amber"
   }
 ]

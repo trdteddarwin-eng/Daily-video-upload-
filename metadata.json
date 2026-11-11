@@ -1,16 +1,16 @@
 {
   "tiktok": {
-    "caption": "Your bank earns $1,373/year on your $41K savings. You earn $12. Here's the trick they're pulling on you.",
-    "hashtags": ["#personalfinance", "#money", "#banking", "#savings", "#HYSA", "#financetips", "#moneyhacks", "#financialliteracy", "#wealth", "#savingmoney"]
+    "caption": "86% of your first mortgage payment goes to the bank, not your house. Here's the chart they never show you.",
+    "hashtags": ["#mortgage", "#homebuying", "#realestate", "#personalfinance", "#moneytips", "#financetok", "#homeowner", "#mortgagetips"]
   },
   "youtube_short": {
-    "title": "Your Bank Earns $1,373 on Your Money — You Get $12",
+    "title": "Your Mortgage Has Been Lying to You",
     "title_alternatives": [
-      "How Banks Profit $1,373/Year From Your Savings Account",
-      "The Net Interest Margin Secret Your Bank Hides From You"
+      "86% of Your Mortgage Payment Goes to the Bank",
+      "The Mortgage Chart Banks Never Show You"
     ],
-    "description": "Your bank takes your deposits and lends them out at 7%, while paying you 0.03%. On the average American's $41,600 in savings, your big bank pockets over $1,373 a year from your own money — while you earn $12. High-yield savings accounts pay 4.5% right now, with the same FDIC protection and same access to your cash. Over 10 years, that compounding difference adds up to $22,000. It takes five minutes to open a HYSA. #personalfinance #banking #savings #HYSA #money #financetips",
-    "tags": ["personal finance", "savings account", "high yield savings", "HYSA", "net interest margin", "banking", "money tips", "financial literacy", "wealth building", "Chase bank", "bank fees", "save money", "compound interest"]
+    "description": "In the first years of a 30-year mortgage, 86% of every payment goes to interest — not your home. After 5 years on a $350K loan you've paid $136,000 but only own $20,500 more of your house. Banks front-load it on purpose. The flip side: paying just $200 extra per month saves $51,000 and cuts 6 years off your loan. Pull up your amortization schedule today. #mortgage #personalfinance #homebuying #realestate #moneytips",
+    "tags": ["mortgage", "home buying", "amortization", "personal finance", "money tips", "real estate", "homeowner", "mortgage tips", "finance", "wealth building"]
   },
-  "hook_line": "Your bank earns $1,373 on your money. You get $12."
+  "hook_line": "86% of Your Mortgage Goes to the Bank"
 }
