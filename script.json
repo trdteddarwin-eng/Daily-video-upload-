@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "December 31st is seven weeks away — and there's $2,800 sitting on the table most people just walk away from. Four legal moves, all expiring midnight New Year's Eve.",
-    "visual": "Dark background. Calendar showing November flipping to December with animated pages. Bold '7 WEEKS' counter spring-zooms in. Stack of cash SVG fades in underneath. Subtitle: 'THESE DOORS CLOSE DEC 31ST'",
-    "accent_color": "green"
+    "narration": "You were $7 short of free shipping and threw one more item in the cart. Feels smart, right? This habit is quietly draining $890 from your wallet every single year.",
+    "visual": "Dark background. SVG shopping cart with items inside. Amber 'ADD $7 MORE FOR FREE DELIVERY' badge springs into view. Progress bar crawling toward the $35 threshold.",
+    "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "Number one: spend your FSA before it burns. The average worker leaves $1,250 in their flexible spending account — and on January 1st, it's legally gone. It's your money. Use it.",
-    "visual": "Light background. FSA credit card SVG with orange flame animation rising from it. Animated counter counts up to $1,250. Calendar date 'JAN 1' with an X through it. Medicine bottle and glasses SVGs at bottom.",
-    "accent_color": "green"
+    "narration": "Free shipping minimums weren't designed to help you. Amazon actually patented threshold incentives to trigger that exact add-to-cart reflex — and every major retailer copied it.",
+    "visual": "Light background. Three-step flow diagram: amber badge lure → brain icon (loss aversion) → shopping bag with dollar sign. Arrows between each step spring in with text 'ENGINEERED BY DESIGN'.",
+    "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Number two: top off your HSA. It's the only account with a triple tax benefit — money goes in pre-tax, grows tax-free, and comes out tax-free. The 2026 limit is $4,150 if you haven't hit it.",
-    "visual": "Dark background. Three shield icons spring in one by one labeled 'PRE-TAX IN', 'TAX-FREE GROWTH', 'TAX-FREE OUT'. Piggy bank SVG below with animated fill. '$4,150 LIMIT' text in green.",
-    "accent_color": "green"
+    "narration": "Here's the math nobody does. You spend $7 to unlock free shipping worth $5.99. That's a dollar lost on something you never planned to buy in the first place.",
+    "visual": "Dark background. Two vertical bars side by side: left bar '$5.99 SHIPPING' shorter in green, right bar '$7.00 ITEM' taller in red. Arrow pointing to difference: '$1.01 WASTED' in amber.",
+    "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "Number three: harvest your losers. Any stocks sitting in the red in a taxable account — sell before December 31st to offset gains and cut your tax bill by up to $1,500.",
-    "visual": "Light background. SVG line chart with descending red line. Animated scissors SVG slides across cutting the chart. '$1,500 TAX SAVINGS' counter animates in green. Arrow reverses to point upward.",
-    "accent_color": "green"
+    "narration": "Now scale it up. Americans average 276 online orders a year — and every single one has that same threshold trap waiting to drain your wallet a few dollars at a time.",
+    "visual": "Light background. Grid of 24 shopping bag SVG icons (6 columns × 4 rows) representing monthly orders. Counter at bottom animates up to 276. Text: '23 ORDERS/MONTH × 12'.",
+    "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "Number four: bunch your charitable donations. Give three years of donations in one year — you blow past the standard deduction, you itemize, and you save up to $400 in real taxes.",
-    "visual": "Dark background. Bar chart showing three tiny $200 bars labeled 'YEAR 1/2/3' vs one large $600 bar labeled 'BUNCHED'. Heart/charity person SVG springs in. '$400 SAVED' text in green.",
-    "accent_color": "green"
+    "narration": "Add just $3.22 extra per order and you've spent $890 more than you planned — to avoid $168 in shipping fees. That's a $722 net loss every year. Wild, right?",
+    "visual": "Dark background. Large '$890' counter animates from $0 upward with spring effect. Below it two comparison bars: '$168 shipping avoided' (small) vs '$890 extra spent' (large, in red). '$722 NET LOSS' label.",
+    "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "Four moves, seven weeks, $2,800 back in your pocket. Do it this weekend — January 1st hits and every one of these doors closes for good for 2026.",
-    "visual": "Dark background. Four checklist items spring in one by one: FSA, HSA, Tax Loss, Donations — each with an animated checkmark. '$2,800 TOTAL' springs in large and green. Bold CTA: 'DO IT THIS WEEKEND'",
-    "accent_color": "green"
+    "narration": "Next time you're a few bucks short of free delivery, just pay the shipping fee — it's almost always cheaper than the item you'd throw in the cart. Follow for more of this.",
+    "visual": "Light background. Person silhouette holding phone. Two choice buttons: 'ADD ITEM' crossed out in red, 'PAY $5.99 SHIPPING' with green checkmark. Piggy bank SVG grows in size as savings accumulate.",
+    "accent_color": "amber"
   }
 ]
