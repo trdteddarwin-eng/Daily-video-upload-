@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You were $7 short of free shipping and threw one more item in the cart. Feels smart, right? This habit is quietly draining $890 from your wallet every single year.",
-    "visual": "Dark background. SVG shopping cart with items inside. Amber 'ADD $7 MORE FOR FREE DELIVERY' badge springs into view. Progress bar crawling toward the $35 threshold.",
+    "narration": "Here's something your landlord will never tell you. Their insurance covers the building — not a single thing you own inside it. If your apartment burned down tonight, you'd lose everything.",
+    "visual": "Split screen: building exterior with green checkmark (landlord covered), apartment interior with couch and laptop with red X (your stuff not covered). Fire animation at bottom.",
     "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "Free shipping minimums weren't designed to help you. Amazon actually patented threshold incentives to trigger that exact add-to-cart reflex — and every major retailer copied it.",
-    "visual": "Light background. Three-step flow diagram: amber badge lure → brain icon (loss aversion) → shopping bag with dollar sign. Arrows between each step spring in with text 'ENGINEERED BY DESIGN'.",
+    "narration": "Wild, right? Fifty-five percent of renters have zero insurance on their stuff. That's more than half, one fire or one break-in away from losing it all. And the fix costs almost nothing.",
+    "visual": "10 person silhouettes in a row, 6 shown in red with X marks (unprotected). Giant '55%' counter springs in. Text: 'OF RENTERS HAVE ZERO COVERAGE'.",
     "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Here's the math nobody does. You spend $7 to unlock free shipping worth $5.99. That's a dollar lost on something you never planned to buy in the first place.",
-    "visual": "Dark background. Two vertical bars side by side: left bar '$5.99 SHIPPING' shorter in green, right bar '$7.00 ITEM' taller in red. Arrow pointing to difference: '$1.01 WASTED' in amber.",
+    "narration": "Think about what you actually own. The average renter's got thirty-five thousand dollars in personal property. Add up your furniture, electronics, clothes, and appliances — it adds up fast.",
+    "visual": "Animated inventory list: Furniture $8,500, Electronics $7,200, Clothing $5,000, Jewelry $6,300, Appliances $5,000, Other $3,000. Running total counter climbs to $35,000.",
     "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "Now scale it up. Americans average 276 online orders a year — and every single one has that same threshold trap waiting to drain your wallet a few dollars at a time.",
-    "visual": "Light background. Grid of 24 shopping bag SVG icons (6 columns × 4 rows) representing monthly orders. Counter at bottom animates up to 276. Text: '23 ORDERS/MONTH × 12'.",
+    "narration": "So what does it cost to protect all of that? About fourteen dollars a month. That's literally less than a streaming subscription — for coverage on everything you own.",
+    "visual": "Side-by-side cards: Streaming service at $16/month (covers zero of your stuff) versus Renter's Insurance at $14/month (covers $35,000+). Arrow pointing to insurance card.",
     "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "Add just $3.22 extra per order and you've spent $890 more than you planned — to avoid $168 in shipping fees. That's a $722 net loss every year. Wild, right?",
-    "visual": "Dark background. Large '$890' counter animates from $0 upward with spring effect. Below it two comparison bars: '$168 shipping avoided' (small) vs '$890 extra spent' (large, in red). '$722 NET LOSS' label.",
+    "narration": "And that fourteen bucks also covers your liability — up to one hundred thousand dollars if someone gets hurt in your place. Plus hotel costs if you're forced out. Three coverages, one policy.",
+    "visual": "Three coverage cards spring in: amber shield (Your Property $35,000+), blue person icon (Liability $100,000), green house icon (Temp Housing Included). Each animates in sequentially.",
     "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "Next time you're a few bucks short of free delivery, just pay the shipping fee — it's almost always cheaper than the item you'd throw in the cart. Follow for more of this.",
-    "visual": "Light background. Person silhouette holding phone. Two choice buttons: 'ADD ITEM' crossed out in red, 'PAY $5.99 SHIPPING' with green checkmark. Piggy bank SVG grows in size as savings accumulate.",
+    "narration": "Takes ten minutes online, starts the same day. If you're renting and you don't have this, get it today. It's the cheapest financial protection most people are skipping.",
+    "visual": "Phone screen showing insurance app with coverage summary: Personal Property $35K, Liability $100K, $14/month. Big green checkmark. Text overlay: '10 minutes. Same-day coverage. Get covered today.'",
     "accent_color": "amber"
   }
 ]

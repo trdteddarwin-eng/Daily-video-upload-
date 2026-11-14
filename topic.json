@@ -1,7 +1,13 @@
 {
-  "title": "The 'Free Shipping' Trick That Costs You $890/Year",
-  "hook": "You added one more item to hit the free shipping minimum — stores engineered exactly that moment, and it costs you $890 a year.",
-  "angle": "The math shows that trying to avoid shipping fees actually costs more than just paying them, thanks to a patented retail psychological trigger",
-  "audience": "Anyone who shops online and adds items to reach free shipping minimums",
-  "key_numbers": ["$890/year in unplanned spending", "$168 in shipping fees avoided", "$722 net loss per year", "276 average online orders per year", "$3.22 extra per order average"]
+  "title": "55% of Renters Are One Fire From Losing Everything",
+  "hook": "Your landlord's insurance covers the building — not a single thing you own. And 55% of renters have zero protection for it.",
+  "angle": "Most renters assume their landlord's insurance protects their stuff — it doesn't, and the coverage that does costs less than a streaming subscription",
+  "audience": "Renters who assume they're covered or think renter's insurance isn't worth it",
+  "key_numbers": [
+    "55% of renters have no renter's insurance",
+    "$35,000 average value of a renter's possessions",
+    "$14/month average cost of renter's insurance",
+    "$20,000 average renter's insurance claim payout",
+    "$100,000 liability coverage included"
+  ]
 }
