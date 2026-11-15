@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Here's something your landlord will never tell you. Their insurance covers the building — not a single thing you own inside it. If your apartment burned down tonight, you'd lose everything.",
-    "visual": "Split screen: building exterior with green checkmark (landlord covered), apartment interior with couch and laptop with red X (your stuff not covered). Fire animation at bottom.",
-    "accent_color": "amber"
+    "narration": "Your company hid a money machine inside your benefits portal. It guarantees a 17% return with zero risk. And four in ten workers have never turned it on.",
+    "visual": "Smartphone showing HR benefits portal — Health, 401k, Dental all enrolled, but ESPP row glowing red with 'NOT ENROLLED'. A red badge in corner shows '40% skip it'.",
+    "accent_color": "green"
   },
   {
     "scene": 2,
-    "narration": "Wild, right? Fifty-five percent of renters have zero insurance on their stuff. That's more than half, one fire or one break-in away from losing it all. And the fix costs almost nothing.",
-    "visual": "10 person silhouettes in a row, 6 shown in red with X marks (unprotected). Giant '55%' counter springs in. Text: 'OF RENTERS HAVE ZERO COVERAGE'.",
-    "accent_color": "amber"
+    "narration": "It's called an ESPP — Employee Stock Purchase Plan. You set aside part of your paycheck, and your company buys you stock at a 15% discount. That's literally all there is to it.",
+    "visual": "Money bag with '$6,000 YOUR MONEY' on the left, arrow pointing right to a stock certificate labeled '$7,059 COMPANY STOCK' with a bright red 15% OFF badge.",
+    "accent_color": "green"
   },
   {
     "scene": 3,
-    "narration": "Think about what you actually own. The average renter's got thirty-five thousand dollars in personal property. Add up your furniture, electronics, clothes, and appliances — it adds up fast.",
-    "visual": "Animated inventory list: Furniture $8,500, Electronics $7,200, Clothing $5,000, Jewelry $6,300, Appliances $5,000, Other $3,000. Running total counter climbs to $35,000.",
-    "accent_color": "amber"
+    "narration": "Here's the math: you pay 85 cents for every dollar of stock. Sell it immediately and you've made 17.6 cents profit. That return is locked in before the market even opens.",
+    "visual": "Large '85¢' coin on left, animated arrow, '$1.00' coin on right. Below: '+17.6% GUARANTEED' badge. Three comparison bars: Savings 0.05%, S&P avg 10%, ESPP 17.6%.",
+    "accent_color": "green"
   },
   {
     "scene": 4,
-    "narration": "So what does it cost to protect all of that? About fourteen dollars a month. That's literally less than a streaming subscription — for coverage on everything you own.",
-    "visual": "Side-by-side cards: Streaming service at $16/month (covers zero of your stuff) versus Renter's Insurance at $14/month (covers $35,000+). Arrow pointing to insurance card.",
-    "accent_color": "amber"
+    "narration": "It gets even better. Most plans include a lookback provision. Stock went up? You buy at the original lower price. Stock went down? You still get 15% off today's price. You win either way.",
+    "visual": "Stock chart splits into two paths — green arrow going up, red going down. Both paths end with green checkmarks and 'YOU WIN'. Text shows both discount scenarios.",
+    "accent_color": "green"
   },
   {
     "scene": 5,
-    "narration": "And that fourteen bucks also covers your liability — up to one hundred thousand dollars if someone gets hurt in your place. Plus hotel costs if you're forced out. Three coverages, one policy.",
-    "visual": "Three coverage cards spring in: amber shield (Your Property $35,000+), blue person icon (Liability $100,000), green house icon (Temp Housing Included). Each animates in sequentially.",
-    "accent_color": "amber"
+    "narration": "Number five: four in ten eligible workers never enroll. On a sixty-thousand-dollar salary contributing just ten percent, that's over a thousand dollars in free profit left on the table every year.",
+    "visual": "Ten person silhouettes in a grid — six green with checkmarks, four gray with red X marks labeled 'SKIP'. Below: '$6,000 in → $7,059 out = $1,059 FREE' calculation.",
+    "accent_color": "green"
   },
   {
     "scene": 6,
-    "narration": "Takes ten minutes online, starts the same day. If you're renting and you don't have this, get it today. It's the cheapest financial protection most people are skipping.",
-    "visual": "Phone screen showing insurance app with coverage summary: Personal Property $35K, Liability $100K, $14/month. Big green checkmark. Text overlay: '10 minutes. Same-day coverage. Get covered today.'",
-    "accent_color": "amber"
+    "narration": "Open your HR portal and search for ESPP in your benefits. Enrolling takes fifteen minutes. That fifteen minutes could pay you over a thousand dollars a year — free money that's already yours.",
+    "visual": "Smartphone showing ESPP enrollment form with green 'ENROLL NOW' button, big checkmark appearing. CTA card: 'FREE MONEY IS WAITING — GO CLAIM IT TODAY'.",
+    "accent_color": "green"
   }
 ]
