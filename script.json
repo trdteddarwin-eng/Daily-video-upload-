@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Your company hid a money machine inside your benefits portal. It guarantees a 17% return with zero risk. And four in ten workers have never turned it on.",
-    "visual": "Smartphone showing HR benefits portal — Health, 401k, Dental all enrolled, but ESPP row glowing red with 'NOT ENROLLED'. A red badge in corner shows '40% skip it'.",
-    "accent_color": "green"
+    "narration": "Right now, you're walking into the most expensive six weeks of the year. Seventy-three percent of Americans will fund it entirely on credit.",
+    "visual": "Dark background with countdown calendar to Christmas, credit card center stage with '$1,463' debt counter animating upward from zero",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "It's called an ESPP — Employee Stock Purchase Plan. You set aside part of your paycheck, and your company buys you stock at a 15% discount. That's literally all there is to it.",
-    "visual": "Money bag with '$6,000 YOUR MONEY' on the left, arrow pointing right to a stock certificate labeled '$7,059 COMPANY STOCK' with a bright red 15% OFF badge.",
-    "accent_color": "green"
+    "narration": "Here's the thing — you're not overspending because you're generous. Retailers deliberately engineer holiday guilt, and it's worth twenty-three billion dollars to them.",
+    "visual": "Light background with three gift boxes containing dollar signs popping in one by one, '$23 BILLION' label appears below",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Here's the math: you pay 85 cents for every dollar of stock. Sell it immediately and you've made 17.6 cents profit. That return is locked in before the market even opens.",
-    "visual": "Large '85¢' coin on left, animated arrow, '$1.00' coin on right. Below: '+17.6% GUARANTEED' badge. Three comparison bars: Savings 0.05%, S&P avg 10%, ESPP 17.6%.",
-    "accent_color": "green"
+    "narration": "Seventy-three percent of Americans use credit to fund the holidays. The average balance they're carrying into January is fourteen hundred and sixty-three dollars.",
+    "visual": "Dark background with large credit card SVG, animated 73% progress bar filling left to right, balance counter counting up to $1,463",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "It gets even better. Most plans include a lookback provision. Stock went up? You buy at the original lower price. Stock went down? You still get 15% off today's price. You win either way.",
-    "visual": "Stock chart splits into two paths — green arrow going up, red going down. Both paths end with green checkmarks and 'YOU WIN'. Text shows both discount scenarios.",
-    "accent_color": "green"
+    "narration": "By February, most people are still paying for December. The average holiday debt doesn't get paid off until April — four full months of interest.",
+    "visual": "Light background with four calendar icons for January through April, each showing a dollar sign with a downward arrow draining",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Number five: four in ten eligible workers never enroll. On a sixty-thousand-dollar salary contributing just ten percent, that's over a thousand dollars in free profit left on the table every year.",
-    "visual": "Ten person silhouettes in a grid — six green with checkmarks, four gray with red X marks labeled 'SKIP'. Below: '$6,000 in → $7,059 out = $1,059 FREE' calculation.",
-    "accent_color": "green"
+    "narration": "And here's the kicker — this cycle plays out every year without fail. Retailers are already engineering next November's spending right now.",
+    "visual": "Dark background with circular spinning arrows showing the annual loop: NOV, DEC, JAN-APR, OCT labeled around the cycle",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Open your HR portal and search for ESPP in your benefits. Enrolling takes fifteen minutes. That fifteen minutes could pay you over a thousand dollars a year — free money that's already yours.",
-    "visual": "Smartphone showing ESPP enrollment form with green 'ENROLL NOW' button, big checkmark appearing. CTA card: 'FREE MONEY IS WAITING — GO CLAIM IT TODAY'.",
-    "accent_color": "green"
+    "narration": "Set your gift cap before you even open the shopping app — not after. Families who do this keep four hundred and ten dollars in their pockets.",
+    "visual": "Light background with piggy bank growing in size, savings counter animating to $410, text overlay 'Set Your Limit BEFORE You Shop'",
+    "accent_color": "red"
   }
 ]
