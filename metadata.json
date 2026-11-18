@@ -1,16 +1,16 @@
 {
   "tiktok": {
-    "caption": "Your hospital bill isn't final — it's an opening offer. 90% are negotiable, 80% have errors. One call saves you $2,400.",
-    "hashtags": ["#moneytips", "#hospitalBill", "#medicaldebt", "#personalfinance", "#savemoney", "#moneyhacks", "#financetips", "#debtfree", "#healthcarecosts", "#moneymindset"]
+    "caption": "Your carrier advertised $45. Your actual bill is $73. That $28 gap is fully legal — and carriers pocket $12 billion a year from it.",
+    "hashtags": ["#phonebill", "#hiddenfees", "#moneytips", "#savemoney", "#personalfinance", "#wireless", "#moneyhacks", "#financialliteracy"]
   },
   "youtube_short": {
-    "title": "90% of Hospital Bills Are Negotiable — Most People Never Ask",
+    "title": "Your Phone Bill Hides $28 in Illegal-Looking Fees",
     "title_alternatives": [
-      "Your Hospital Bill Is an Opening Offer — Save $2,400",
-      "One Phone Call Gets $2,400 Off Your Medical Bill"
+      "11 Hidden Fees Stealing $3,360 From Your Phone Bill",
+      "Your Carrier Advertised $45 — Your Real Bill Is $73"
     ],
-    "description": "That hospital bill sitting on your counter? It's not a final number — it's an opening offer. 80% of medical bills have at least one billing error averaging $1,300. 90% can be negotiated down. And hospitals are legally required to have charity care programs for anyone who asks. The average savings from negotiating is 30–40%, which on a $6,900 bill is $2,400 back in your pocket. All it takes is one call: 'Can I see the itemized bill? What can you do about the balance?' Follow for a fresh money insight every day. #hospitalBill #medicaldebt #moneytips #personalfinance #savemoney",
-    "tags": ["hospital bill", "medical debt", "negotiate medical bills", "money tips", "personal finance", "save money", "medical billing errors", "healthcare costs", "money hacks", "financial tips", "medical bills", "charity care", "money psychology"]
+    "description": "Your wireless carrier advertised $45 a month — but your actual bill hits $73. That $28 gap isn't a mistake, it's a strategy. There are 11 separate fees buried in the fine print: Universal Service Fund, E911, Administrative Fee, Regulatory Recovery, state taxes — none of them in the headline price. At 350 million Americans paying this every month, carriers collect nearly $12 billion a year above what they advertised. The fix? Switch to a prepaid carrier that shows you the all-in price. Same towers, $35 total. That $28 saved every month becomes over $5,000 in 10 years if you invest it. Check your bill tonight. #phonebill #hiddenfees #personalfinance #savemoney #moneytips",
+    "tags": ["phone bill", "hidden fees", "save money", "personal finance", "wireless carriers", "prepaid phone", "money tips", "financial literacy", "cell phone", "budget"]
   },
-  "hook_line": "Your hospital bill is an opening offer"
+  "hook_line": "Your carrier advertised $45. Your bill is $73."
 }

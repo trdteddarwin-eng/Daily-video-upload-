@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You just got a $6,900 hospital bill and it feels like a final number. Here's the thing — it was never final to begin with.",
-    "visual": "Hospital bill document SVG with $6,900 counter animating up. A blue 'NEGOTIABLE' stamp appears rotated over the bill. Dark background with blue radial gradient.",
-    "accent_color": "blue"
+    "narration": "Your carrier advertised forty-five dollars a month. Your actual bill is seventy-three. That twenty-eight dollar gap isn't a mistake — it's a strategy.",
+    "visual": "Phone screen showing '$45/mo' ad next to real bill showing '$73.00 DUE'. Animated counter ticks from 45 up to 73.",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Number one: eighty percent of medical bills have at least one billing error. The average mistake quietly adds $1,300 to what you owe.",
-    "visual": "Light background. A bill with 5 line items; red warning circles appear on 3 of them one by one with exclamation marks. '$1,300 avg error' counter springs in at the bottom.",
-    "accent_color": "blue"
+    "narration": "There are eleven separate fees hiding inside the fine print. Universal Service Fund, E911, Administrative Fee, Regulatory Recovery — none of these were in the headline price.",
+    "visual": "List of five fee line items appearing one by one with dollar amounts: USF $7.49, E911 $3.50, Admin Fee $3.99, Regulatory $2.74, State Tax $5.28. Running total climbs.",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Number two: hospitals are legally required to offer charity care programs — but only to patients who ask. And most people never do.",
-    "visual": "Dark background. Hospital building SVG with a cross sign on the roof. A person silhouette walks toward the door. A speech bubble appears: 'Can I apply for financial assistance?'",
-    "accent_color": "blue"
+    "narration": "Here's the thing — carriers aren't lying. They legally separate the 'base plan' from fees so they can advertise the lower number. The FCC gets over 100,000 complaints about this every single year.",
+    "visual": "Split comparison: left side 'ADVERTISED' with $45 label, right side 'ACTUAL' with $73 label. A red gap bar between them labeled '$28 GAP'.",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Number three: always demand the itemized bill. Hospitals charge $47 for a Tylenol and $286 for a toothbrush — the breakdown exposes everything.",
-    "visual": "Light background. Itemized bill SVG with pill icon labeled $47, toothbrush labeled $286, bandage labeled $129 — each line item reveals one by one with accent highlight.",
-    "accent_color": "blue"
+    "narration": "And it's not just you. Three hundred fifty million Americans are on wireless plans. At twenty-eight dollars a month per line, carriers collect nearly twelve billion dollars a year in fees above what they advertised.",
+    "visual": "Silhouettes of people filling the frame, then a large $12B label appearing. Bar chart showing fee revenue growing year over year.",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Negotiating saves an average of thirty to forty percent. On a $6,900 bill, that's $2,400 back — without a lawyer and without a fight.",
-    "visual": "Dark background. Two animated bars growing up side by side: 'No Ask' in red at $6,900, 'Negotiated' in blue at $4,500. '$2,400 saved' springs in below.",
-    "accent_color": "blue"
+    "narration": "The fix is simpler than you think. Prepaid carriers — Mint Mobile, Visible, US Mobile — advertise the all-in price. That exact same coverage for thirty-five dollars total, no surprises.",
+    "visual": "Two phones side by side: one labeled 'BIG CARRIER $73' and one labeled 'PREPAID $35 ALL-IN'. A green checkmark appears on the prepaid phone.",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "Before you pay any medical bill, call and ask for the itemized list, then ask what they can do about the balance. That one call is worth $2,400.",
-    "visual": "Light background. Phone SVG with a call animation, arrow pointing to piggy bank with coins falling in. Bold text 'ASK. EVERY. TIME.' springs in at the bottom.",
-    "accent_color": "blue"
+    "narration": "Twenty-eight dollars a month is three hundred thirty-six dollars a year. Over ten years, invested at eight percent, that's over five thousand dollars — just from switching your phone plan.",
+    "visual": "Piggy bank SVG filling up with coins. '$336/yr' label, then '10 YEARS' label, then '$5,000+' bursting out. CTA text: 'Check your bill tonight.'",
+    "accent_color": "red"
   }
 ]
