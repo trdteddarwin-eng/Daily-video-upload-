@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Your carrier advertised forty-five dollars a month. Your actual bill is seventy-three. That twenty-eight dollar gap isn't a mistake — it's a strategy.",
-    "visual": "Phone screen showing '$45/mo' ad next to real bill showing '$73.00 DUE'. Animated counter ticks from 45 up to 73.",
-    "accent_color": "red"
+    "narration": "There's a rule buried in the tax code that lets you give your kids $19,000 this year, completely tax-free. No forms, no lawyers, no catch — and 95% of Americans have never heard of it.",
+    "visual": "Tax document SVG with lines of text, large '95%' springs in with amber color, '$19,000 TAX FREE' revealed in amber box at bottom",
+    "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "There are eleven separate fees hiding inside the fine print. Universal Service Fund, E911, Administrative Fee, Regulatory Recovery — none of these were in the headline price.",
-    "visual": "List of five fee line items appearing one by one with dollar amounts: USF $7.49, E911 $3.50, Admin Fee $3.99, Regulatory $2.74, State Tax $5.28. Running total climbs.",
-    "accent_color": "red"
+    "narration": "Here's the thing — when you die with over $13 million, the IRS legally takes 40 cents of every dollar above that. Wealthy families spend fortunes trying to get around it. But there's a legal shortcut hiding in plain sight.",
+    "visual": "Two animated bar charts side by side: 'YOUR FAMILY KEEPS' in amber growing tall, 'IRS TAKES 40%' in red growing next to it, threshold label '$13 MILLION' appears below",
+    "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Here's the thing — carriers aren't lying. They legally separate the 'base plan' from fees so they can advertise the lower number. The FCC gets over 100,000 complaints about this every single year.",
-    "visual": "Split comparison: left side 'ADVERTISED' with $45 label, right side 'ACTUAL' with $73 label. A red gap bar between them labeled '$28 GAP'.",
-    "accent_color": "red"
+    "narration": "It's called the annual gift tax exclusion. Number one rule you need to know: give any person up to $19,000 per year — zero taxes, zero paperwork. The IRS literally put this loophole in the code themselves.",
+    "visual": "SVG gift box with lid that springs open upward revealing '$19,000' inside, then three bullet rows fade in: 'ZERO TAXES', 'ZERO PAPERWORK', 'ZERO LIMITS'",
+    "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "And it's not just you. Three hundred fifty million Americans are on wireless plans. At twenty-eight dollars a month per line, carriers collect nearly twelve billion dollars a year in fees above what they advertised.",
-    "visual": "Silhouettes of people filling the frame, then a large $12B label appearing. Bar chart showing fee revenue growing year over year.",
-    "accent_color": "red"
+    "narration": "If you're married, you each get your own $19,000 limit. So a couple can give each child $38,000 per year, completely tax-free. Got three kids? That's $114,000 walking out of your estate every single year.",
+    "visual": "Two adult person silhouettes on left with '$19K each' labels, arrow pointing to three smaller child silhouettes on right, '$38,000 per child' box and '$114,000/year total' highlighted in amber",
+    "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "The fix is simpler than you think. Prepaid carriers — Mint Mobile, Visible, US Mobile — advertise the all-in price. That exact same coverage for thirty-five dollars total, no surprises.",
-    "visual": "Two phones side by side: one labeled 'BIG CARRIER $73' and one labeled 'PREPAID $35 ALL-IN'. A green checkmark appears on the prepaid phone.",
-    "accent_color": "red"
+    "narration": "Do this for 20 years and you've moved $2.28 million completely outside your estate. At the 40% tax rate, you just saved your family $912,000 — from a loophole the IRS wrote themselves.",
+    "visual": "20 amber bars grow one by one like a bar chart, animated counter counting up to '$2.28M MOVED', then savings counter reveals '$912K SAVED FROM TAXES'",
+    "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "Twenty-eight dollars a month is three hundred thirty-six dollars a year. Over ten years, invested at eight percent, that's over five thousand dollars — just from switching your phone plan.",
-    "visual": "Piggy bank SVG filling up with coins. '$336/yr' label, then '10 YEARS' label, then '$5,000+' bursting out. CTA text: 'Check your bill tonight.'",
-    "accent_color": "red"
+    "narration": "Start this holiday season — write a check or bank transfer to each of your kids. They don't pay taxes on it, you don't file anything. It's the simplest wealth-transfer move that exists. Follow for more.",
+    "visual": "SVG Christmas tree with gift box underneath, two numbered step cards: '1. WRITE A CHECK OR TRANSFER' and '2. NO TAXES. NO FORMS. DONE.', dark CTA box at bottom: 'FOLLOW FOR MONEY MOVES THE IRS WON'T TELL YOU ABOUT'",
+    "accent_color": "amber"
   }
 ]
