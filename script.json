@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You set up auto-invest, sat back, and watched that number go up. That feels smart. But here's what's quietly happening inside your account.",
-    "visual": "Dark background. Phone screen mockup showing portfolio balance animating up to $193,241 with a mini bar chart. Text overlay: 'YOU SET IT AND FORGOT IT'. Warning glow appears at bottom of phone.",
-    "accent_color": "blue"
+    "narration": "Open enrollment is happening right now — and there's a $5,000 benefit hiding in your packet that 60% of parents completely skip. Here's the one you can't afford to miss.",
+    "visual": "Parent and child silhouettes holding hands, green glow behind them. Large $5,000 TAX-FREE badge springs in at the bottom. Headline: OPEN ENROLLMENT IS HAPPENING RIGHT NOW.",
+    "accent_color": "green"
   },
   {
     "scene": 2,
-    "narration": "Number one — when stocks grow faster than bonds, your whole allocation drifts. That 60-40 split you set up? It's probably 76-24 now. Way more risk than you signed up for.",
-    "visual": "Light background. Two stacked vertical bars side by side: 'THEN' showing 60% blue stocks + 40% gray bonds, 'NOW' showing 76% blue + 24% gray. Arrow between them. Labels animate in.",
-    "accent_color": "blue"
+    "narration": "It's called a Dependent Care FSA — a tax-free account your employer offers to cover childcare costs. You contribute pre-tax, which means the government never touches that money.",
+    "visual": "Animated folder opening to reveal three stacked dollar bills totaling $5,000. Text overlay: DEPENDENT CARE FSA — PRE-TAX MONEY THE GOVERNMENT NEVER TAKES A CUT.",
+    "accent_color": "green"
   },
   {
     "scene": 3,
-    "narration": "Number two — when markets crash, that drift bites hard. A drifted portfolio drops 24% while a balanced one only drops 18%. And it takes years to claw that back.",
-    "visual": "Dark background. Two animated bars dropping during a crash — green 'BALANCED' bar falls less, red 'DRIFTED' bar falls more. Labels -18% and -24% appear with spring animation.",
-    "accent_color": "blue"
+    "narration": "And here's the wild part — it covers way more than just daycare. After-school programs, summer day camps, preschool. Any care for a child under thirteen while you work.",
+    "visual": "Three icons spring in one by one: a house (daycare), school building (after-school), smiling sun (summer camp). Each has a green checkmark. ANY CHILD UNDER 13 WHILE YOU WORK.",
+    "accent_color": "green"
   },
   {
     "scene": 4,
-    "narration": "Number three — here's the crazy part. Rebalancing automatically forces you to sell high and buy low. It's the whole investing game, happening in one click.",
-    "visual": "Light background. Two cards spring in: green 'SELL HIGH' card with stock chart SVG and upward arrow, blue 'BUY LOW' card with bond SVG and downward arrow. Stat appears: '+0.35% every year'.",
-    "accent_color": "blue"
+    "narration": "Put in $5,000 and you're saving $1,100 to $2,250 in real taxes — depending on your bracket. That's money your government would've taken that now pays for your kid's afterschool instead.",
+    "visual": "Three growing bar chart columns: 22% bracket ($1,100 saved), 24% bracket ($1,600 saved), 32% bracket ($2,250 saved). Each bar springs up with dollar amounts above. Bottom: IN REAL TAX SAVINGS EVERY YEAR.",
+    "accent_color": "green"
   },
   {
     "scene": 5,
-    "narration": "Vanguard ran the numbers. On a $200,000 portfolio, that 0.35% annual boost from rebalancing compounds into $46,000 extra over 30 years. Wild, right? For 15 minutes of work.",
-    "visual": "Dark background. Piggy bank SVG in center. Animated counter below ticking up from $0 to $46,000 in green. Total shown as $246,000. Text: 'ONCE A YEAR' pulses in.",
-    "accent_color": "blue"
+    "narration": "So why do 60% of eligible parents skip it? They don't know it exists — and open enrollment closes December 31st. Miss that deadline and you wait an entire year to sign up again.",
+    "visual": "December calendar with Dec 31 circled in red and an X through it. Animated clock sweeping. '60% SKIP IT' badge pops in. DEADLINE: DEC 31.",
+    "accent_color": "green"
   },
   {
     "scene": 6,
-    "narration": "The fix takes 15 minutes once a year. Log in, click rebalance, done. Set a reminder for January 1st — go reclaim your $46,000.",
-    "visual": "Light background. Calendar SVG with January 1st circled in blue. Phone mockup with 'REBALANCE' button. CTA text springs in: 'SET A REMINDER. CLICK REBALANCE. CLAIM YOUR $46K.'",
-    "accent_color": "blue"
+    "narration": "Go to your benefits portal right now — search for Dependent Care FSA and click enroll. Five minutes today could put $2,000 back in your pocket this year. Don't be in the 60%.",
+    "visual": "Smartphone showing benefits portal with Dependent Care FSA row highlighted green and 'ENROLL NOW' button. Tap ripple animation. Green checkmark springs in. Bottom: 5 MINUTES TODAY = $2,000 BACK.",
+    "accent_color": "green"
   }
 ]
