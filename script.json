@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Open enrollment is happening right now — and there's a $5,000 benefit hiding in your packet that 60% of parents completely skip. Here's the one you can't afford to miss.",
-    "visual": "Parent and child silhouettes holding hands, green glow behind them. Large $5,000 TAX-FREE badge springs in at the bottom. Headline: OPEN ENROLLMENT IS HAPPENING RIGHT NOW.",
-    "accent_color": "green"
+    "narration": "Your $3,000 holiday bonus just hit your bank — but it's only $2,340. That $660 didn't just vanish. The IRS has a flat rule most workers never see coming.",
+    "visual": "Dark background. Envelope labeled '$3,000' springs in, then a bank display counter animates from $3,000 down to $2,340. Text below: 'WHERE DID $660 GO?'",
+    "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "It's called a Dependent Care FSA — a tax-free account your employer offers to cover childcare costs. You contribute pre-tax, which means the government never touches that money.",
-    "visual": "Animated folder opening to reveal three stacked dollar bills totaling $5,000. Text overlay: DEPENDENT CARE FSA — PRE-TAX MONEY THE GOVERNMENT NEVER TAKES A CUT.",
-    "accent_color": "green"
+    "narration": "It's called the supplemental wage rate. The IRS tells every company to withhold a flat 22% from bonuses before the money ever reaches you. It's not your actual tax bracket — it's just a preset rule.",
+    "visual": "Light background. Giant '22%' in amber springs into center. SVG tax document below with 'SUPPLEMENTAL RATE' highlighted. Text: 'FLAT RATE. NO EXCEPTIONS.'",
+    "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "And here's the wild part — it covers way more than just daycare. After-school programs, summer day camps, preschool. Any care for a child under thirteen while you work.",
-    "visual": "Three icons spring in one by one: a house (daycare), school building (after-school), smiling sun (summer camp). Each has a green checkmark. ANY CHILD UNDER 13 WHILE YOU WORK.",
-    "accent_color": "green"
+    "narration": "Here's the thing — if your bonus clears a million dollars, that rate jumps all the way to 37%. But even at 22%, most people assume their boss just took too much and never look into getting it back.",
+    "visual": "Dark background. Two money bags side by side: left labeled '$3,000 BONUS -22%', right labeled '$1M+ BONUS -37%'. Text below: 'BOTH AREN'T YOUR REAL TAX RATE.'",
+    "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "Put in $5,000 and you're saving $1,100 to $2,250 in real taxes — depending on your bracket. That's money your government would've taken that now pays for your kid's afterschool instead.",
-    "visual": "Three growing bar chart columns: 22% bracket ($1,100 saved), 24% bracket ($1,600 saved), 32% bracket ($2,250 saved). Each bar springs up with dollar amounts above. Bottom: IN REAL TAX SAVINGS EVERY YEAR.",
-    "accent_color": "green"
+    "narration": "Number one — if your company allows it, redirect part of your bonus straight into your 401k before taxes touch it. You move money into retirement, and the IRS can't tax what it never sees.",
+    "visual": "Light background. '01' in large amber text. Animated arrow from paycheck SVG to piggy bank labeled '401K'. Text: 'REDIRECT BEFORE TAXES BITE.'",
+    "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "So why do 60% of eligible parents skip it? They don't know it exists — and open enrollment closes December 31st. Miss that deadline and you wait an entire year to sign up again.",
-    "visual": "December calendar with Dec 31 circled in red and an X through it. Animated clock sweeping. '60% SKIP IT' badge pops in. DEADLINE: DEC 31.",
-    "accent_color": "green"
+    "narration": "Number two — even if you can't do that, your tax return will true everything up at the end of the year. If your real effective rate is under 22%, the IRS actually owes you the difference back.",
+    "visual": "Dark background. '02' in amber. Animated arrow from '1040 TAX RETURN' form SVG to wallet with '$418 BACK' emerging from it. Text: 'IF YOUR REAL RATE IS UNDER 22%, THEY GIVE IT BACK.'",
+    "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "Go to your benefits portal right now — search for Dependent Care FSA and click enroll. Five minutes today could put $2,000 back in your pocket this year. Don't be in the 60%.",
-    "visual": "Smartphone showing benefits portal with Dependent Care FSA row highlighted green and 'ENROLL NOW' button. Tap ripple animation. Green checkmark springs in. Bottom: 5 MINUTES TODAY = $2,000 BACK.",
-    "accent_color": "green"
+    "narration": "Your bonus isn't fake money — but it won't feel full-sized until you understand this rule. Know the withholding trap, make one of these moves, and keep more of what your boss actually gave you.",
+    "visual": "Light background. Person silhouette holding a money bag with green checkmark badge. CTA box: 'KNOW YOUR BONUS TAX. KEEP MORE.' Follow prompt at bottom.",
+    "accent_color": "amber"
   }
 ]
