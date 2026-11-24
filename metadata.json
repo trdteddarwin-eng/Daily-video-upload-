@@ -1,16 +1,13 @@
 {
   "tiktok": {
-    "caption": "Your $3,000 bonus hit your bank as $2,340. That $660 didn't vanish by accident — here's the IRS rule nobody tells you about.",
-    "hashtags": ["#moneytips", "#personalfinance", "#bonustax", "#taxhacks", "#moneypsychology", "#financetok", "#irs", "#moneymoves", "#worksmart", "#financialfreedom"]
+    "caption": "Your $100K in home equity isn't $100K. 4 cuts nobody adds up before they sell 🏡",
+    "hashtags": ["#realestate", "#homeequity", "#personalfinance", "#sellinghome", "#moneytips", "#financetips", "#homebuying", "#realestatetips", "#wealthbuilding", "#moneypsychology"]
   },
   "youtube_short": {
-    "title": "Your Bonus Gets Taxed at 22% — Here's the Fix",
-    "title_alternatives": [
-      "Why Your $3,000 Bonus Only Deposits $2,340",
-      "The IRS Bonus Tax Rule Your Boss Never Explains"
-    ],
-    "description": "Every time your company pays you a bonus, the IRS forces them to withhold a flat 22% — not your actual tax rate. That means a $3,000 bonus hits your bank as $2,340. But there are two legal moves most workers never know about. #moneytips #bonustax #personalfinance #irs #financehacks\n\nFollow for daily money psychology and finance moves that actually matter.",
-    "tags": ["bonus tax", "supplemental wage", "22 percent withholding", "401k bonus", "tax refund", "IRS rules", "personal finance", "money tips", "finance hacks", "year end bonus", "salary tips", "money psychology", "financial literacy", "tax bracket myth", "money moves"]
+    "title": "Your $100K Home Equity Is Really $54,500",
+    "title_alternatives": ["The 4 Hidden Costs Eating Your Home Equity", "What Your Home Equity REALLY Means When You Sell"],
+    "description": "Everyone watches their Zillow estimate climb — but almost nobody adds up the four cuts waiting when you sell. Realtor commissions alone take $23,100 off the median home. Add closing costs, pre-sale repairs, and potential capital gains tax and your $100K in paper equity becomes around $54,500. Know your real number before you make your next move. #realestate #homeequity #personalfinance #moneytips #sellinghome",
+    "tags": ["real estate", "home equity", "selling a house", "realtor commission", "home sale costs", "personal finance", "money tips", "capital gains", "home buying", "financial education", "wealth building", "money psychology"]
   },
-  "hook_line": "Your $3,000 bonus became $2,340 on purpose."
+  "hook_line": "Your $100K equity is really $54,500"
 }
