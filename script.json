@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You've been watching your Zillow estimate climb for years. You're sitting on a hundred thousand dollars in equity — but here's what that number actually means when you sell.",
-    "visual": "Dark background. SVG house springs in from below. Rising equity chart animates to the right. '$100K EQUITY' label animates in with spring effect. '4 CUTS INCOMING' hint at the bottom.",
-    "accent_color": "green"
+    "narration": "You use your debit card daily thinking it's the responsible choice. But if someone drains your account tonight, you might not get a dollar back.",
+    "visual": "Debit card SVG centered on dark background with pulsing red warning triangle badge top-right. 'WAIT.' in red text above, 'YOUR DEBIT CARD HAS A DANGEROUS SECRET' in white. Hook text animates in below: 'IF SOMEONE DRAINS YOUR ACCOUNT TONIGHT... YOU MIGHT GET NOTHING BACK' in red.",
+    "accent_color": "red"
   },
   {
     "scene": 2,
-    "narration": "Number one: the second you list, five to six percent is gone. That's $23,100 to real estate agents on the median American home — before you've packed a single box.",
-    "visual": "Light background. Badge '1' + 'REALTOR COMMISSION' header. Two agent silhouettes with money bags spring in. '-$23,100' in red animates. Running tally: $100,000 → $76,900.",
-    "accent_color": "green"
+    "narration": "Credit cards give you something debit doesn't — federal law limits your fraud liability to fifty dollars, and most cards make it zero.",
+    "visual": "Credit card SVG on light background with green shield-and-checkmark badge springing in from top right. '$50' counts up to full amount in large green text. 'MAX LIABILITY' and 'FEDERAL LAW · ZERO ON MOST CARDS' labels below. Card-shaped info box: 'It's not your money yet — so thieves can't take it.'",
+    "accent_color": "red"
   },
   {
     "scene": 3,
-    "narration": "Number two: seller closing costs — transfer taxes, title insurance, attorney fees. That's another one to three percent. Knock off $8,400 more.",
-    "visual": "Dark background. Badge '2' + 'CLOSING COSTS' header. Stack of three layered documents with FEES stamp. '-$8,400' in red. Running tally: $76,900 → $68,500.",
-    "accent_color": "green"
+    "narration": "Debit is different — that's your real cash. Report fraud within two days: fifty-dollar liability. Wait sixty days? Unlimited. Your bank keeps everything — legally.",
+    "visual": "Piggy bank SVG on dark background that slowly drains in color from orange to grey. Three animated timeline cards reveal one by one: WITHIN 2 DAYS ($50 green border), 2 TO 60 DAYS ($500 amber border), AFTER 60 DAYS (UNLIMITED red border).",
+    "accent_color": "red"
   },
   {
     "scene": 4,
-    "narration": "Number three: buyers demand repairs. Inspectors find things. The average seller spends $14,000 getting a house market-ready — and that comes off your equity, not theirs.",
-    "visual": "Light background. Badge '3' + 'PRE-SALE REPAIRS' header. House SVG with hammer and wrench beside it. '-$14,000' in red. Running tally: $68,500 → $54,500.",
-    "accent_color": "green"
+    "narration": "Even if you report quickly, your bank has ten full business days to investigate while your money stays frozen. No rent, no groceries — just waiting.",
+    "visual": "Calendar SVG on light background with 10 day-cells filling red one by one. 'YOUR CASH: FROZEN' badge springs in below calendar once all 10 days are red. Supporting text: 'Can't pay rent. Can't buy groceries. That's your real money — just gone.'",
+    "accent_color": "red"
   },
   {
     "scene": 5,
-    "narration": "Number four: if your gains clear $250,000 for a single filer, the IRS wants fifteen to twenty percent of everything above that. Capital gains tax most sellers never saw coming.",
-    "visual": "Dark background. Badge '4' + 'CAPITAL GAINS TAX' in red. Warning triangle SVG. '15-20%' badge. '$250K threshold for singles, $500K for couples' explanation panel.",
-    "accent_color": "green"
+    "narration": "The average unauthorized debit transaction is four thousand nine hundred dollars. Sixty-five percent of Americans use debit as their main card, thinking it's the safer option.",
+    "visual": "Side-by-side bar chart on dark background. CREDIT bar (small, green) grows first showing $50. DEBIT bar (tall, red) grows to full height showing $4,900. '65% OF AMERICANS USE DEBIT AS THEIR PRIMARY CARD' stat box fades in below.",
+    "accent_color": "red"
   },
   {
     "scene": 6,
-    "narration": "So that $100,000 in equity? After the guaranteed three cuts, most sellers walk away with $54,500 — sometimes less. Know your real number before you decide to sell.",
-    "visual": "Light background. '$100,000' with strikethrough. Four line items animating in with amounts. Final '$54,500' springs in large in green. 'KNOW YOUR REAL NUMBER' CTA box.",
-    "accent_color": "green"
+    "narration": "Here's the fix — and it's completely free. Use a credit card for all purchases and pay it off every month. Full protection, your cash stays safe.",
+    "visual": "Green credit card SVG springs in with white checkmark badge. Three icons spring in below: green shield (FRAUD PROTECTED), blue graph (BUILD CREDIT), orange piggy bank (CASH STAYS SAFE). 'USE CREDIT. PAY IT OFF.' green CTA button. 'Follow for more money moves →' text.",
+    "accent_color": "red"
   }
 ]
