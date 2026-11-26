@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "You use your debit card daily thinking it's the responsible choice. But if someone drains your account tonight, you might not get a dollar back.",
-    "visual": "Debit card SVG centered on dark background with pulsing red warning triangle badge top-right. 'WAIT.' in red text above, 'YOUR DEBIT CARD HAS A DANGEROUS SECRET' in white. Hook text animates in below: 'IF SOMEONE DRAINS YOUR ACCOUNT TONIGHT... YOU MIGHT GET NOTHING BACK' in red.",
-    "accent_color": "red"
+    "narration": "The average American spends $1,463 on holiday gifts this season. Here's the number nobody's ever calculated — and it'll change how you shop.",
+    "visual": "Three shopping bags with handles spring up from bottom in staggered sequence (amber / dark amber / brown). Dollar counter animates from $0 to $1,463 in large amber text. Subtitle fades in at bottom.",
+    "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "Credit cards give you something debit doesn't — federal law limits your fraud liability to fifty dollars, and most cards make it zero.",
-    "visual": "Credit card SVG on light background with green shield-and-checkmark badge springing in from top right. '$50' counts up to full amount in large green text. 'MAX LIABILITY' and 'FEDERAL LAW · ZERO ON MOST CARDS' labels below. Card-shaped info box: 'It's not your money yet — so thieves can't take it.'",
-    "accent_color": "red"
+    "narration": "Cornell researchers found gift recipients value presents at just fifty cents for every dollar you spend. You bought love — they kept half the receipt.",
+    "visual": "Gift box SVG (amber with brown bow and ribbon) springs in on light background. Two price tags appear: YOU SPEND $100 on left with strikethrough, THEY VALUE AT $50 on right connected by arrow.",
+    "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "Debit is different — that's your real cash. Report fraud within two days: fifty-dollar liability. Wait sixty days? Unlimited. Your bank keeps everything — legally.",
-    "visual": "Piggy bank SVG on dark background that slowly drains in color from orange to grey. Three animated timeline cards reveal one by one: WITHIN 2 DAYS ($50 green border), 2 TO 60 DAYS ($500 amber border), AFTER 60 DAYS (UNLIMITED red border).",
-    "accent_color": "red"
+    "narration": "36% of Americans go into debt just for holiday gifts. They'll spend all of February paying it off — plus interest they never counted.",
+    "visual": "Dark background. Credit card SVG with red accent stripe springs in with rotation. Large red 36% stat springs in. Progress bar fills to 36% mark. Subtitle fades in about February.",
+    "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "Even if you report quickly, your bank has ten full business days to investigate while your money stays frozen. No rent, no groceries — just waiting.",
-    "visual": "Calendar SVG on light background with 10 day-cells filling red one by one. 'YOUR CASH: FROZEN' badge springs in below calendar once all 10 days are red. Supporting text: 'Can't pay rent. Can't buy groceries. That's your real money — just gone.'",
-    "accent_color": "red"
+    "narration": "Here's what changes if you invest that $1,463 instead. At 7% a year for 30 years — it grows to $147,500. That's the real price tag on your gift list.",
+    "visual": "Light background. 6 bars grow sequentially left to right (Yr 5 through Yr 30). Dollar counter climbs from $1,463 to $147,500 above the bars in large amber text.",
+    "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "The average unauthorized debit transaction is four thousand nine hundred dollars. Sixty-five percent of Americans use debit as their main card, thinking it's the safer option.",
-    "visual": "Side-by-side bar chart on dark background. CREDIT bar (small, green) grows first showing $50. DEBIT bar (tall, red) grows to full height showing $4,900. '65% OF AMERICANS USE DEBIT AS THEIR PRIMARY CARD' stat box fades in below.",
-    "accent_color": "red"
+    "narration": "That $147,500 is a home down payment, four years of college, or five extra years of retirement. You gave it away one Amazon box at a time.",
+    "visual": "Dark background. Three icons spring in staggered: house (triangle roof + rectangle body), diploma scroll with star seal, palm tree with trunk and leaves. Labels below each icon.",
+    "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "Here's the fix — and it's completely free. Use a credit card for all purchases and pay it off every month. Full protection, your cash stays safe.",
-    "visual": "Green credit card SVG springs in with white checkmark badge. Three icons spring in below: green shield (FRAUD PROTECTED), blue graph (BUILD CREDIT), orange piggy bank (CASH STAYS SAFE). 'USE CREDIT. PAY IT OFF.' green CTA button. 'Follow for more money moves →' text.",
-    "accent_color": "red"
+    "narration": "This year, propose a $20 gift cap to your family. It feels weird for about two minutes — then everyone's relieved. Follow for more money moves.",
+    "visual": "Light background. Pink piggy bank SVG with amber coin slot. Coins drop in one by one above the slot. '$20 GIFT CAP PER PERSON' text animates in. CTA line fades in at bottom.",
+    "accent_color": "amber"
   }
 ]
