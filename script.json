@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "The average American spends $1,463 on holiday gifts this season. Here's the number nobody's ever calculated — and it'll change how you shop.",
-    "visual": "Three shopping bags with handles spring up from bottom in staggered sequence (amber / dark amber / brown). Dollar counter animates from $0 to $1,463 in large amber text. Subtitle fades in at bottom.",
+    "narration": "Cyber Monday was invented by a marketing firm in 2005 to extend Black Friday online. It's not a shopping event — it's a psychological operation. And today, it fires all at once.",
+    "visual": "Shopping cart SVG with pulsing amber '70% OFF' badge, 'CYBER MONDAY WAS INVENTED BY MARKETERS' title animating in with spring effect, dark background",
     "accent_color": "amber"
   },
   {
     "scene": 2,
-    "narration": "Cornell researchers found gift recipients value presents at just fifty cents for every dollar you spend. You bought love — they kept half the receipt.",
-    "visual": "Gift box SVG (amber with brown bow and ribbon) springs in on light background. Two price tags appear: YOU SPEND $100 on left with strikethrough, THEY VALUE AT $50 on right connected by arrow.",
+    "narration": "Here's the thing — 92% of Cyber Monday deals were the same price or cheaper just weeks ago. That 'was $249' label was never $249. It's a reference price, and it's completely legal.",
+    "visual": "Two price tags side by side — 'October' showing $89, 'Cyber Monday' showing $89 with animated strikethrough over fake $249 original price. Light background.",
     "accent_color": "amber"
   },
   {
     "scene": 3,
-    "narration": "36% of Americans go into debt just for holiday gifts. They'll spend all of February paying it off — plus interest they never counted.",
-    "visual": "Dark background. Credit card SVG with red accent stripe springs in with rotation. Large red 36% stat springs in. Progress bar fills to 36% mark. Subtitle fades in about February.",
+    "narration": "That countdown timer ticking at the top? It resets the second it hits zero. The '2 left in stock' warning shows whether there are 2 or 2,000. Urgency is manufactured, not real.",
+    "visual": "Animated countdown timer ticking down in monospace font, pulsing red 'ONLY 2 LEFT IN STOCK' badge below it, dark background with amber accent glow",
     "accent_color": "amber"
   },
   {
     "scene": 4,
-    "narration": "Here's what changes if you invest that $1,463 instead. At 7% a year for 30 years — it grows to $147,500. That's the real price tag on your gift list.",
-    "visual": "Light background. 6 bars grow sequentially left to right (Yr 5 through Yr 30). Dollar counter climbs from $1,463 to $147,500 above the bars in large amber text.",
+    "narration": "You abandoned your cart on purpose to test the price. Fifteen minutes later your phone buzzes: 10% off, just for you. That discount was always available — they were waiting for you to walk away.",
+    "visual": "Phone silhouette with red notification badge, popup showing cart abandonment email with '10% OFF — JUST FOR YOU' message, light background",
     "accent_color": "amber"
   },
   {
     "scene": 5,
-    "narration": "That $147,500 is a home down payment, four years of college, or five extra years of retirement. You gave it away one Amazon box at a time.",
-    "visual": "Dark background. Three icons spring in staggered: house (triangle roof + rectangle body), diploma scroll with star seal, palm tree with trunk and leaves. Labels below each icon.",
+    "narration": "The average shopper plans to spend $400 on Cyber Monday and walks away having spent $1,900. That $1,500 gap isn't bad math — it's the precise result of decades of behavioral engineering.",
+    "visual": "Dollar counter animating from $400 to $1,900 in large amber text, two progress bars comparing planned vs actual spend, person silhouette with empty wallet, dark background",
     "accent_color": "amber"
   },
   {
     "scene": 6,
-    "narration": "This year, propose a $20 gift cap to your family. It feels weird for about two minutes — then everyone's relieved. Follow for more money moves.",
-    "visual": "Light background. Pink piggy bank SVG with amber coin slot. Coins drop in one by one above the slot. '$20 GIFT CAP PER PERSON' text animates in. CTA line fades in at bottom.",
+    "narration": "Before you click buy now, check the price history. CamelCamelCamel for Amazon, Google Shopping everywhere else. The deal ending in two hours will be back — usually for less. Now you know.",
+    "visual": "Magnifying glass SVG over a price chart showing peaks and dips, three animated checklist steps sliding in: Check price history, Compare on Google Shopping, Wait 24 hours. Light background.",
     "accent_color": "amber"
   }
 ]
