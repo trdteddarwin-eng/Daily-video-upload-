@@ -1,38 +1,38 @@
 [
   {
     "scene": 1,
-    "narration": "Cyber Monday was invented by a marketing firm in 2005 to extend Black Friday online. It's not a shopping event — it's a psychological operation. And today, it fires all at once.",
-    "visual": "Shopping cart SVG with pulsing amber '70% OFF' badge, 'CYBER MONDAY WAS INVENTED BY MARKETERS' title animating in with spring effect, dark background",
-    "accent_color": "amber"
+    "narration": "Your credit card has over twelve hundred dollars in free benefits — but 73% of cardholders have never filed a single claim. The money's just sitting there.",
+    "visual": "Dark background. Credit card SVG slides up from bottom with green glow. Dollar counter animates from $0 to $1,200. Text: '73% OF CARDHOLDERS NEVER CLAIM THEM'.",
+    "accent_color": "green"
   },
   {
     "scene": 2,
-    "narration": "Here's the thing — 92% of Cyber Monday deals were the same price or cheaper just weeks ago. That 'was $249' label was never $249. It's a reference price, and it's completely legal.",
-    "visual": "Two price tags side by side — 'October' showing $89, 'Cyber Monday' showing $89 with animated strikethrough over fake $249 original price. Light background.",
-    "accent_color": "amber"
+    "narration": "Number one: cell phone protection. Many premium cards cover up to $800 if your screen cracks or your phone's stolen — just pay your monthly bill with the card.",
+    "visual": "Light background. SVG phone with cracked red screen. Green shield animates sliding up over the phone with a checkmark. '$800' in large text.",
+    "accent_color": "green"
   },
   {
     "scene": 3,
-    "narration": "That countdown timer ticking at the top? It resets the second it hits zero. The '2 left in stock' warning shows whether there are 2 or 2,000. Urgency is manufactured, not real.",
-    "visual": "Animated countdown timer ticking down in monospace font, pulsing red 'ONLY 2 LEFT IN STOCK' badge below it, dark background with amber accent glow",
-    "accent_color": "amber"
+    "narration": "Number two: travel delay insurance. Flight stuck over six hours? Your card can cover hotel and meals — up to $350 per ticket. Wild, right?",
+    "visual": "Dark background. Airplane SVG moves across frame toward a red clock showing delay. Hotel building animates rising up below. '$350' highlighted in green.",
+    "accent_color": "green"
   },
   {
     "scene": 4,
-    "narration": "You abandoned your cart on purpose to test the price. Fifteen minutes later your phone buzzes: 10% off, just for you. That discount was always available — they were waiting for you to walk away.",
-    "visual": "Phone silhouette with red notification badge, popup showing cart abandonment email with '10% OFF — JUST FOR YOU' message, light background",
-    "accent_color": "amber"
+    "narration": "Number three: purchase protection. Buy something and it breaks within 90 days — your card repairs or replaces it. No fighting with the store.",
+    "visual": "Light background. Shopping bag SVG drops in with an X mark inside (broken item). Green shield scales in over the bag with checkmark. '90-DAY COVERAGE'.",
+    "accent_color": "green"
   },
   {
     "scene": 5,
-    "narration": "The average shopper plans to spend $400 on Cyber Monday and walks away having spent $1,900. That $1,500 gap isn't bad math — it's the precise result of decades of behavioral engineering.",
-    "visual": "Dollar counter animating from $400 to $1,900 in large amber text, two progress bars comparing planned vs actual spend, person silhouette with empty wallet, dark background",
-    "accent_color": "amber"
+    "narration": "Number four: price protection. If the price drops within 90 days of buying, your card refunds the difference. Average claim? Over $60 back in your pocket.",
+    "visual": "Dark background. Price tag SVG shows $199 animating down to $129. Down arrow appears. Green badge pops in showing 'YOU GET BACK $70'.",
+    "accent_color": "green"
   },
   {
     "scene": 6,
-    "narration": "Before you click buy now, check the price history. CamelCamelCamel for Amazon, Google Shopping everywhere else. The deal ending in two hours will be back — usually for less. Now you know.",
-    "visual": "Magnifying glass SVG over a price chart showing peaks and dips, three animated checklist steps sliding in: Check price history, Compare on Google Shopping, Wait 24 hours. Light background.",
-    "accent_color": "amber"
+    "narration": "Here's the move: flip your card over and call the number on the back. Ask what benefits are included — five minutes to find an invisible safety net you've had for years.",
+    "visual": "Light background. Credit card SVG flips to show back with phone number. CTA box: 'FLIP YOUR CARD OVER / CALL THE NUMBER'. Phone icon and prompt text.",
+    "accent_color": "green"
   }
 ]
